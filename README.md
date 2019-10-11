@@ -8,14 +8,11 @@ We could start with the BiLSTM + CRF model I used for sentence-level classificat
 
 ## Datasets
 # Sentiment
-1. SemEval 2016 Aspect-based datasets (EN, AR, CH, DU, FR, RU, ES, TU)
-2. Multibooked (CA, EU)
-3. USAGE (DE)
+1. SemEval 2016 Aspect-based datasets (EN, ES)
 
 # Negation
 1. EN - ConanDoyleNeg, SFU Review Corpus
 2. ES - SFU Spanish
-Look for more??
 
 
 ### Requirements
