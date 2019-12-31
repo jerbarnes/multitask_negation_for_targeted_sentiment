@@ -107,13 +107,15 @@ def update_label_list_count(label_list: List[str], possible_labels: Set[str],
         raise ValueError(label_error)
     return label_list_counter
 
-def get_label_length_counter(data_path: Path, dataset_name: str, label_type: str) -> Tuple[int, Counter]:
+def get_label_length_counter(data_path: Path, dataset_name: str, label_type: str
+                             ) -> Tuple[int, int, Counter]:
     '''
     :param data_path: The path to the negation or speculation dataset to parse
     :param dataset_name: The name of the dataset
     :param label_type: Either negation or speculation labels
-    :returns: A tuple of 1. Number of sentence in the dataset and 
-              2. A python Counter where the 
+    :returns: A tuple of 1. Number of label sentences in the dataset, 
+              2. Number of sentences in the dataset, and 
+              3. A python Counter where the 
               keys are the length of the label span and the value is the number 
               of times that label span length has occured in the dataset given.
     '''
@@ -129,15 +131,24 @@ def get_label_length_counter(data_path: Path, dataset_name: str, label_type: str
         possible_classes = {'O', 'B_scope', 'I_scope', 'B_cue', 'I_cue'}
     
     number_of_sentences = 0
+    contain_label_in_sentence = []
     in_sentence = False
     current_sentence = ''
     current_label: List[str] = []
     label_lengths = defaultdict(lambda: Counter())
     
     with data_path.open('r') as lines:
+        sentence_contain_label = False
         for line_index, line in enumerate(lines):
-            if re.search(r'^# .*', line):
+            if re.search(r'^#token.*', line):
+                continue
+            elif re.search(r'^# .*', line):
                 in_sentence = True
+                if sentence_contain_label:
+                    contain_label_in_sentence.append(1)
+                else:
+                    contain_label_in_sentence.append(0)
+                sentence_contain_label = False
                 current_sentence = line
                 number_of_sentences += 1
                 if len(current_label):
@@ -181,6 +192,7 @@ def get_label_length_counter(data_path: Path, dataset_name: str, label_type: str
                         current_label.append(the_label)
                 else:
                     if label_encoding == 'B':
+                        sentence_contain_label = True
                         current_label.append(the_label)
                     elif label_encoding == 'I':
                         raise ValueError('This does not conform to the label ')
@@ -194,7 +206,15 @@ def get_label_length_counter(data_path: Path, dataset_name: str, label_type: str
                 value_error = (f'This line should not exist: {line}, '
                                f'line index {line_index}')
                 raise ValueError(value_error)
-    return number_of_sentences, label_lengths
+    # Remove the first sentence that is supposedly not contain a label as the way a 
+    # sentence is detected as containing a label is based on its previous sentence of which
+    # a previous sentence does not exist for the first sentence thus it is always 
+    # not containing a label.
+    if contain_label_in_sentence[0] == 0:
+        contain_label_in_sentence.pop(0)
+    number_negated_sentences = sum(contain_label_in_sentence)
+    number_of_sentences = number_of_sentences - 1
+    return number_negated_sentences, number_of_sentences, label_lengths
 
 if __name__ == '__main__':
     label_type_help = ("Label to get the statistics for. Either `negation` "
@@ -212,7 +232,7 @@ if __name__ == '__main__':
 
     output = get_label_length_counter(args.data_path, args.dataset_name, 
                                       args.label_type)
-    number_sentences, label_span_counter = output
+    number_label_sentences, number_sentences, label_span_counter = output
 
     print(f'Dataset: {args.dataset_name}')
     print(f'Label: {args.label_type}')
@@ -220,4 +240,5 @@ if __name__ == '__main__':
     print(f'Number of cues: {sum(label_span_counter["cue"].values())}')
     print(f'Number of scope token labels: {total_label_tokens(label_span_counter["scope"])}')
     print(f'Number of scopes: {sum(label_span_counter["scope"].values())}')
+    print(f'Number of sentences that contain {args.label_type}: {number_label_sentences}')
     print(f'Number of sentences: {number_sentences}')
