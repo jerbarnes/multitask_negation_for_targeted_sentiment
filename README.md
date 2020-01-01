@@ -77,13 +77,14 @@ The table below states the complete dataset statistics, if the dataset like Cona
 | Conan Doyle | Negation    | 1,197 (1,222)     | 2,220 (9,761)       | 1,220         | 1,220               |
 
 No. = Number
+
 No. Label Sentences = Number of sentences from all of the sentences that contain at least one negation/speculation cue or scope token.
 
 The number of scopes and cues states the number of complete BIO label spans where as the tokens defines the number of individual labels for instance [example 1](#example-1) from above contains 2 cues, 2 cue tokens, 2 scopes, and 3 scope tokens.
 
 To generate the data statistics in the table above run the following bash script:
 ``` bash
-./analysis/dataset/negation_statistics.sh
+./scripts/negation_statistics.sh
 ```
 
 
