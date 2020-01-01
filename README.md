@@ -6,6 +6,16 @@ The idea is to use multitask learning to incorporate negation information into a
 ## Model
 We could start with the BiLSTM + CRF model I used for sentence-level classification, but adapted to targeted sentiment. Other models could be cool too though.
 
+## Resources
+We assume any resource mentioned here is stored within `./resources`.
+### Word Embeddings
+All embeddings mentioned here have to be downloaded into their respective directories as they are too large for the repository.
+#### English
+Here we used the [300D 840B token GloVe embedding](https://nlp.stanford.edu/projects/glove/) of which we assume this can be found at the following path `./resources/embeddings/en/glove.840B.300d.txt`.
+
+### Model Configurations
+All the model configurations can be found within `./resources/model_configs`
+
 ## Datasets
 # Sentiment
 1. SemEval 2016 Aspect-based datasets (EN, ES)
