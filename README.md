@@ -72,8 +72,8 @@ The table below states the complete dataset statistics, if the dataset like Cona
 
 | Dataset     | Label       | No. Cues (tokens) | No. Scopes (tokens) | No. Sentences | No. Label Sentences |
 |-------------|-------------|-------------------|---------------------|---------------|---------------------|
-| SFU         | Negation    | 1,263 (2,156)     | 1,446 (8,215)       | 17,528        | 1,165               |
-| SFU         | Speculation | 513 (562)         | 586 (3,483)         | 17,528        | 405                 |
+| SFU         | Negation    | 1,263 (2,156)     | 1,446 (8,215)       | 17,128        | 1,165               |
+| SFU         | Speculation | 513 (562)         | 586 (3,483)         | 17,128        | 405                 |
 | Conan Doyle | Negation    | 1,197 (1,222)     | 2,220 (9,761)       | 1,221         | 1,221               |
 
 No. = Number

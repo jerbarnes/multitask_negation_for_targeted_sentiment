@@ -140,7 +140,7 @@ def get_label_length_counter(data_path: Path, dataset_name: str, label_type: str
     with data_path.open('r') as lines:
         sentence_contain_label = False
         for line_index, line in enumerate(lines):
-            if re.search(r'^#token.*', line):
+            if re.search(r'^#token.*', line) or re.search(r'# document - .', line):
                 continue
             elif re.search(r'^# .*', line):
                 in_sentence = True
