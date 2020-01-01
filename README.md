@@ -128,8 +128,12 @@ To generate the data for this table above run `./scripts/negation_split_statisti
 
 To generate the data for this table above run `./scripts/negation_split_statistics.sh conandoyle negation`
 
-### Requirements
+## Requirements
 
 1. Python >= 3.6
-2. sklearn  ```pip install -U scikit-learn```
-3. Pytorch ```pip install torch torchvision```
+2. `pip install -r requirements.txt`
+3. sklearn  ```pip install -U scikit-learn```
+4. Pytorch ```pip install torch torchvision```
+
+## Run the tests:
+`python -m pytest`

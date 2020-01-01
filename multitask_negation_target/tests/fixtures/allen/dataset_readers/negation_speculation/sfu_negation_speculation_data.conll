@@ -1,0 +1,51 @@
+# domain - BOOKS
+# sentence - I bought and read " A Painted House " as soon as it came out as I do with all John Grisham books .
+I	O	B_spec
+bought	O	O
+and	O	O
+read	O	O
+"	O	O
+A	O	O
+Painted	O	O
+House	O	O
+"	O	O
+as	O	O
+soon	O	O
+as	O	O
+it	O	O
+came	O	O
+out	O	O
+as	O	O
+I	O	O
+do	O	O
+with	O	O
+all	O	O
+John	O	O
+Grisham	O	O
+books	O	O
+.	O	O
+
+# domain - CARS
+# sentence - 
+
+# domain - BOOKS
+# sentence - I was interested to read how he treated a story that did not revolve around a legal case .
+I	B_negcue	O
+was	I_negcue	O
+interested	O	B_spec
+to	O	I_spec
+read	O	B_speccue
+how	O	O
+he	O	B_speccue
+treated	O	I_speccue
+a	O	O
+story	O	B_spec
+that	B_neg	O
+did	O	O
+not	B_negcue	O
+revolve	B_neg	O
+around	I_neg	O
+a	I_neg	O
+legal	I_neg	O
+case	I_neg	O
+.	O	O

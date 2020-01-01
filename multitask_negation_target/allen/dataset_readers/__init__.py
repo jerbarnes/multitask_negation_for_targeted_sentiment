@@ -1,0 +1,1 @@
+from multitask_negation_target.allen.dataset_readers import negation_speculation

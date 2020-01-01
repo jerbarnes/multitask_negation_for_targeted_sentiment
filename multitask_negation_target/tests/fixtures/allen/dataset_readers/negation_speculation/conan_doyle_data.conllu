@@ -1,0 +1,31 @@
+#token	negation_scope
+# No woman would ever send a reply-paid telegram .
+No	B_cue
+woman	B_scope
+would	I_scope
+ever	I_scope
+send	I_scope
+a	I_scope
+reply-paid	I_scope
+telegram	I_scope
+.	O
+
+# `` I have had a most singular and unpleasant experience , Mr. Holmes , '' said he .
+``	O
+I	B_scope
+have	I_scope
+had	I_scope
+a	I_scope
+most	I_scope
+singular	O
+and	O
+unpleasant	B_scope
+experience	I_scope
+,	O
+Mr.	O
+Holmes	O
+,	O
+''	O
+said	O
+he	O
+.	O
