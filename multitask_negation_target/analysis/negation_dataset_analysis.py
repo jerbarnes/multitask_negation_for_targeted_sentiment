@@ -144,9 +144,7 @@ def get_label_length_counter(data_path: Path, dataset_name: str, label_type: str
                 continue
             elif re.search(r'^# .*', line):
                 in_sentence = True
-                if sentence_contain_label:
-                    contain_label_in_sentence.append(1)
-                else:
+                if not sentence_contain_label:
                     contain_label_in_sentence.append(0)
                 sentence_contain_label = False
                 current_sentence = line
@@ -192,7 +190,9 @@ def get_label_length_counter(data_path: Path, dataset_name: str, label_type: str
                         current_label.append(the_label)
                 else:
                     if label_encoding == 'B':
-                        sentence_contain_label = True
+                        if not sentence_contain_label:
+                            sentence_contain_label = True
+                            contain_label_in_sentence.append(1)
                         current_label.append(the_label)
                     elif label_encoding == 'I':
                         raise ValueError('This does not conform to the label ')
@@ -206,14 +206,9 @@ def get_label_length_counter(data_path: Path, dataset_name: str, label_type: str
                 value_error = (f'This line should not exist: {line}, '
                                f'line index {line_index}')
                 raise ValueError(value_error)
-    # Remove the first sentence that is supposedly not contain a label as the way a 
-    # sentence is detected as containing a label is based on its previous sentence of which
-    # a previous sentence does not exist for the first sentence thus it is always 
-    # not containing a label.
-    if contain_label_in_sentence[0] == 0:
-        contain_label_in_sentence.pop(0)
+    if not sentence_contain_label:
+        contain_label_in_sentence.append(0)
     number_negated_sentences = sum(contain_label_in_sentence)
-    number_of_sentences = number_of_sentences - 1
     return number_negated_sentences, number_of_sentences, label_lengths
 
 if __name__ == '__main__':
