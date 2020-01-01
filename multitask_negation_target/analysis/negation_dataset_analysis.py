@@ -140,7 +140,9 @@ def get_label_length_counter(data_path: Path, dataset_name: str, label_type: str
     with data_path.open('r') as lines:
         sentence_contain_label = False
         for line_index, line in enumerate(lines):
-            if re.search(r'^#token.*', line) or re.search(r'# document - .', line):
+            if (re.search(r'^#token.*', line) or 
+                re.search(r'^# document - .', line) or 
+                re.search(r'^# domain - .', line)):
                 continue
             elif re.search(r'^# .*', line):
                 in_sentence = True
@@ -196,12 +198,6 @@ def get_label_length_counter(data_path: Path, dataset_name: str, label_type: str
                         current_label.append(the_label)
                     elif label_encoding == 'I':
                         raise ValueError('This does not conform to the label ')
-            elif re.search(r'^# document.*', line):
-                if len(current_label):
-                    label_lengths = update_label_list_count(current_label, possible_classes,
-                                                            label_lengths, current_sentence)
-                    current_label = []
-                in_sentence = False
             else:
                 value_error = (f'This line should not exist: {line}, '
                                f'line index {line_index}')

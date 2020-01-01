@@ -66,6 +66,12 @@ and	O	O
 '''
 ```
 
+## SFU Dataset Splitting
+To create the 80%, 10%, and 10% train, development, and test splits for the [SFU dataset](./data/auxiliary_tasks/en/SFU.conll) run the following bash script which will create `SFU_train.conll`, `SFU_dev.conll`, and `SFU_test.conll` files within [`./data/auxiliary_tasks/en/`](./data/auxiliary_tasks/en/) directory:
+``` bash
+./scripts/sfu_data_splits.sh
+```
+
 ## Negation and Speculation Dataset Statistics
 
 The table below states the complete dataset statistics, if the dataset like Conan Doyle has specified train, development, and test splits these are all combined and the combined statistics are stated below.
@@ -87,6 +93,40 @@ To generate the data statistics in the table above run the following bash script
 ./scripts/negation_statistics.sh
 ```
 
+### Dataset split statistics
+The tables below states the dataset **split** statistics:
+#### SFU Negation
+
+| Split    | No. Cues (tokens) | No. Scopes (tokens) | No. Sentences | No. Label Sentences |
+|----------|-------------------|---------------------|---------------|---------------------|
+| Train    | 1,018 (1,749)     | 1,155 (6,562)       | 13,712        | 934                 |
+| Dev      | 121 (198)         | 154 (861)           | 1,713         | 114                 |
+| Test     | 124 (209)         | 137 (792)           | 1,703         | 117                 |
+| Combined | 1,263 (2,156)     | 1,446 (8,215)       | 17,128        | 1,165               |
+
+To generate the data for this table above run `./scripts/negation_split_statistics.sh SFU negation`
+
+#### SFU Speculation
+
+| Split    | No. Cues (tokens) | No. Scopes (tokens) | No. Sentences | No. Label Sentences |
+|----------|-------------------|---------------------|---------------|---------------------|
+| Train    | 390 (425)         | 446 (2,623)         | 13,712        | 309                 |
+| Dev      | 58 (63)           | 66 (402)            | 1,713         | 45                  |
+| Test     | 65 (74)           | 74 (458)            | 1,703         | 51                  |
+| Combined | 513 (562)         | 586 (3,483)         | 17,128        | 405                 |
+
+To generate the data for this table above run `./scripts/negation_split_statistics.sh SFU speculation`
+
+#### Conan Doyle Negation
+
+| Split    | No. Cues (tokens) | No. Scopes (tokens) | No. Sentences | No. Label Sentences |
+|----------|-------------------|---------------------|---------------|---------------------|
+| Train    | 821 (838)         | 1,507 (6,756)       | 842           | 842                 |
+| Dev      | 143 (146)         | 284 (1,283)         | 144           | 144                 |
+| Test     | 233 (238)         | 429 (1,722)         | 235           | 235                 |
+| Combined | 1,197 (1,222)     | 2,220 (9,761)       | 1,221         | 1,221               |
+
+To generate the data for this table above run `./scripts/negation_split_statistics.sh conandoyle negation`
 
 ### Requirements
 

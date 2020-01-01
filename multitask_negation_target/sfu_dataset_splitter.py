@@ -18,7 +18,8 @@ def choose_file_write_lines(file_paths: List[Path], file_probabilities: List[flo
     data_fp = random.choices(file_paths, weights=file_probabilities)[0]
     with data_fp.open('a+') as data_file:
         for line in lines:
-            line = f'{line.strip()}\n'
+            line = line.strip('\n')
+            line = f'{line}\n'
             data_file.write(line)
         data_file.write('\n')
 
