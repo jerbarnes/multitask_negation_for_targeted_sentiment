@@ -12,7 +12,7 @@ import torch
 
 from multitask_negation_target.allen.dataset_readers.negation_speculation import NegationSpeculationDatasetReader
 
-params: Params = Params.from_file(str(Path("./resources/model_configs/test.jsonnet").resolve()))
+params: Params = Params.from_file(str(Path("./resources/model_configs/negation_baseline.jsonnet").resolve()))
 # Load the datasets
 reader = DatasetReader.from_params(params['dataset_reader'])
 train_instances = reader.read(params['train_data_path'])
@@ -64,5 +64,6 @@ with tempfile.TemporaryDirectory() as temp_dir:
                            cuda_device=evaluate_cuda, batch_weight_key=None)
     #dev_result = evaluate(negation_tagger, dev_instances, iterator, 
     #                      cuda_device=0, batch_weight_key=None)
-    print(f'Best epoch {best_epoch} best validation span f1 {best_validation_span_f1}')
+    print(f'Best epoch {best_epoch}')
+    print(f'Best validation span f1 {best_validation_span_f1}')
     print(f'Test span f1 result {test_result["f1-measure-overall"]}')

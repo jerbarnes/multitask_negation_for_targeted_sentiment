@@ -6,6 +6,8 @@ The idea is to use multitask learning to incorporate negation information into a
 ## Model
 We could start with the BiLSTM + CRF model I used for sentence-level classification, but adapted to targeted sentiment. Other models could be cool too though.
 
+The model currently is a BiLSTM + CRF model where BiLSTM has a 50 dimension hidden state.
+
 ## Resources
 We assume any resource mentioned here is stored within `./resources`.
 ### Word Embeddings
@@ -138,10 +140,21 @@ To generate the data for this table above run `./scripts/negation_split_statisti
 
 To generate the data for this table above run `./scripts/negation_split_statistics.sh conandoyle negation`
 
+## Baselines
+### Negation Conan Doyle
+Run: `python scripts/negation_baseline.py`
+
+Generates:
+``` python
+Best epoch 24
+Best validation span f1 0.8431137724550396
+Test span f1 result 0.847611827141724
+```
 ## Requirements
 
 1. Python >= 3.6
-2. `pip install -r requirements.txt`
+2. `pip install .` 
+3. If you are developing or want to run the tests `pip install -r requirements.txt`
 3. sklearn  ```pip install -U scikit-learn```
 4. Pytorch ```pip install torch torchvision```
 
