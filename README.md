@@ -150,6 +150,25 @@ Best epoch 24
 Best validation span f1 0.8431137724550396
 Test span f1 result 0.847611827141724
 ```
+
+### Targeted Sentiment
+If we base the model roughly on the work of [Li et al. 2019](https://www.aaai.org/ojs/index.php/AAAI/article/view/4643) which is a Bi-LSTM with CRF tagger but the Bi-LSTM contains two layers.
+On the laptop
+``` python
+Best epoch 20
+Best validation span f1 0.5855513307984289
+Test span f1 result 0.5526315789473184
+```
+
+When the Bi-LSTM only contains one layer:
+``` python
+Best epoch 13
+Best validation span f1 0.5317460317459816
+Test span f1 result 0.4922826969942635
+```
+
+To generate the above results run: `python scripts/targeted_sentiment_baseline.py`
+
 ## Requirements
 
 1. Python >= 3.6
