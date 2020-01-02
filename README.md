@@ -141,14 +141,37 @@ To generate the data for this table above run `./scripts/negation_split_statisti
 To generate the data for this table above run `./scripts/negation_split_statistics.sh conandoyle negation`
 
 ## Baselines
-### Negation Conan Doyle
-Run: `python scripts/negation_baseline.py`
+### Negation 
+#### Conan Doyle
+Run: `python scripts/negation_baseline.py ./resources/model_configs/negation_baseline.jsonnet`
 
 Generates:
 ``` python
 Best epoch 24
 Best validation span f1 0.8431137724550396
 Test span f1 result 0.847611827141724
+```
+
+With a Bi-LSTM with 2 layers:
+``` python
+Best epoch 14
+Best validation span f1 0.8382526564344245
+Test span f1 result 0.8369646882043076
+```
+
+Bi-LSTM with 2 layers not training the embedding
+``` python
+Best epoch 50
+Best validation span f1 0.847980997624653
+Test span f1 result 0.8593155893535621
+```
+
+#### SFU
+Run: `python scripts/negation_baseline.py ./resources/model_configs/negation_sfu_baseline.jsonnet`
+
+Bi-LSTM with 2 layers not training the embedding
+``` python
+
 ```
 
 ### Targeted Sentiment
@@ -167,7 +190,41 @@ Best validation span f1 0.5317460317459816
 Test span f1 result 0.4922826969942635
 ```
 
-To generate the above results run: `python scripts/targeted_sentiment_baseline.py`
+Bi-LSTM with 2 layers but not training the embeddings
+``` python
+Best epoch 45
+Best validation span f1 0.581967213114704
+Test span f1 result 0.561551433389495
+```
+
+To generate the above results run: `python scripts/targeted_sentiment_baseline.py ./resources/model_configs/targeted_sentiment_laptop_baseline.jsonnet`
+
+### Transfer Learning
+First train negation and then targeted sentiment where the transfer is the Bi-LSTM only embedding not trainable:
+``` python
+Negation
+Best epoch 34
+Best validation span f1 0.8519855595667369
+Test span f1 result 0.8666666666666166
+
+Sentiment
+Best epoch 22
+Best validation span f1 0.577437858508554
+Test span f1 result 0.5481002425221811
+```
+
+Using both bi-lstm and embedding
+``` python
+Negation
+Best epoch 18
+Best validation span f1 0.8349056603773083
+Test span f1 result 0.8355957767721972
+
+Sentiment
+Best epoch 7
+Best validation span f1 0.5309381237524449
+Test span f1 result 0.4885993485341519
+```
 
 ## Requirements
 

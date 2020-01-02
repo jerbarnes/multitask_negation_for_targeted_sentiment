@@ -12,58 +12,68 @@ import torch
 
 from multitask_negation_target.allen.dataset_readers.negation_speculation import NegationSpeculationDatasetReader
 
-params: Params = Params.from_file(str(Path("./resources/model_configs/negation_baseline.jsonnet").resolve()))
-# Load the datasets
-reader = DatasetReader.from_params(params['dataset_reader'])
-train_instances = reader.read(params['train_data_path'])
-dev_instances = reader.read(params['validation_data_path'])
-test_instances = reader.read(params['test_data_path'])
-all_instances = train_instances + dev_instances + test_instances
+def parse_path(path_string: str) -> Path:
+    path_string = Path(path_string).resolve()
+    return path_string
 
-# Create the vocab
-vocab = Vocabulary.from_instances(all_instances)
+if __name__ == '__main__':
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("model_config_fp", type=parse_path,
+                        help='File Path to negation model configuration')
+    args = parser.parse_args()
+    params: Params = Params.from_file(str(args.model_config_fp))
+    # Load the datasets
+    reader = DatasetReader.from_params(params['dataset_reader'])
+    train_instances = reader.read(params['train_data_path'])
+    dev_instances = reader.read(params['validation_data_path'])
+    test_instances = reader.read(params['test_data_path'])
+    all_instances = train_instances + dev_instances + test_instances
 
-iterator = DataIterator.from_params(params.pop("iterator"))
-iterator.index_with(vocab)
+    # Create the vocab
+    vocab = Vocabulary.from_instances(all_instances)
 
-# Model parameters that are taken from the config file
-label_namespace =  params['model'].pop('label_namespace')
-label_encoding = 'BIO'
-dropout = params['model'].pop('dropout')
-calculate_span_f1 = params['model'].pop('calculate_span_f1')
-constrain_crf_decoding = params['model'].pop('constrain_crf_decoding')
-include_start_end_transitions = params['model'].pop('include_start_end_transitions')
-text_embedder_params = params['model'].pop('text_field_embedder')
-text_embedder = TextFieldEmbedder.from_params(params=text_embedder_params, vocab=vocab)
-encoder_params = params['model'].pop('encoder')
-encoder = Seq2SeqEncoder.from_params(params=encoder_params)
+    iterator = DataIterator.from_params(params.pop("iterator"))
+    iterator.index_with(vocab)
 
-negation_tagger = CrfTagger(vocab=vocab, text_field_embedder=text_embedder, 
-                            encoder=encoder, label_namespace=label_namespace, 
-                            feedforward=None, label_encoding=label_encoding, 
-                            include_start_end_transitions=include_start_end_transitions, 
-                            constrain_crf_decoding=constrain_crf_decoding, 
-                            calculate_span_f1=calculate_span_f1, dropout=dropout)
+    # Model parameters that are taken from the config file
+    label_namespace =  params['model'].pop('label_namespace')
+    label_encoding = 'BIO'
+    dropout = params['model'].pop('dropout')
+    calculate_span_f1 = params['model'].pop('calculate_span_f1')
+    constrain_crf_decoding = params['model'].pop('constrain_crf_decoding')
+    include_start_end_transitions = params['model'].pop('include_start_end_transitions')
+    text_embedder_params = params['model'].pop('text_field_embedder')
+    text_embedder = TextFieldEmbedder.from_params(params=text_embedder_params, vocab=vocab)
+    encoder_params = params['model'].pop('encoder')
+    encoder = Seq2SeqEncoder.from_params(params=encoder_params)
 
-with tempfile.TemporaryDirectory() as temp_dir:
-    trainer = Trainer.from_params(params=params.pop('trainer'), 
-                                  model=negation_tagger,
-                                  serialization_dir=temp_dir,
-                                  iterator=iterator,
-                                  validation_data=dev_instances,
-                                  train_data=train_instances)
-    interesting_metrics = trainer.train()
-    best_epoch = interesting_metrics['best_epoch']
-    best_validation_span_f1 = interesting_metrics['best_validation_f1-measure-overall']
-    best_model_weights = Path(temp_dir, 'best.th')
-    best_model_state = torch.load(best_model_weights)
-    negation_tagger.load_state_dict(best_model_state)
+    negation_tagger = CrfTagger(vocab=vocab, text_field_embedder=text_embedder, 
+                                encoder=encoder, label_namespace=label_namespace, 
+                                feedforward=None, label_encoding=label_encoding, 
+                                include_start_end_transitions=include_start_end_transitions, 
+                                constrain_crf_decoding=constrain_crf_decoding, 
+                                calculate_span_f1=calculate_span_f1, dropout=dropout)
 
-    evaluate_cuda = params['evaluate'].pop("cuda_device")
-    test_result = evaluate(negation_tagger, test_instances, iterator, 
-                           cuda_device=evaluate_cuda, batch_weight_key=None)
-    #dev_result = evaluate(negation_tagger, dev_instances, iterator, 
-    #                      cuda_device=0, batch_weight_key=None)
-    print(f'Best epoch {best_epoch}')
-    print(f'Best validation span f1 {best_validation_span_f1}')
-    print(f'Test span f1 result {test_result["f1-measure-overall"]}')
+    with tempfile.TemporaryDirectory() as temp_dir:
+        trainer = Trainer.from_params(params=params.pop('trainer'), 
+                                    model=negation_tagger,
+                                    serialization_dir=temp_dir,
+                                    iterator=iterator,
+                                    validation_data=dev_instances,
+                                    train_data=train_instances)
+        interesting_metrics = trainer.train()
+        best_epoch = interesting_metrics['best_epoch']
+        best_validation_span_f1 = interesting_metrics['best_validation_f1-measure-overall']
+        best_model_weights = Path(temp_dir, 'best.th')
+        best_model_state = torch.load(best_model_weights)
+        negation_tagger.load_state_dict(best_model_state)
+
+        evaluate_cuda = params['evaluate'].pop("cuda_device")
+        test_result = evaluate(negation_tagger, test_instances, iterator, 
+                            cuda_device=evaluate_cuda, batch_weight_key=None)
+        #dev_result = evaluate(negation_tagger, dev_instances, iterator, 
+        #                      cuda_device=0, batch_weight_key=None)
+        print(f'Best epoch {best_epoch}')
+        print(f'Best validation span f1 {best_validation_span_f1}')
+        print(f'Test span f1 result {test_result["f1-measure-overall"]}')

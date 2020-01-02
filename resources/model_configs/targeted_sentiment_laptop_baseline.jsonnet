@@ -24,7 +24,7 @@
           "type": "embedding",
           "pretrained_file": "./resources/embeddings/en/glove.840B.300d.txt",
           "embedding_dim": 300,
-          "trainable": true
+          "trainable": false
         }
       },
       "encoder": {

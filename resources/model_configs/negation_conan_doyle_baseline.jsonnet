@@ -23,7 +23,7 @@
           "type": "embedding",
           "pretrained_file": "./resources/embeddings/en/glove.840B.300d.txt",
           "embedding_dim": 300,
-          "trainable": true
+          "trainable": false
         }
       },
       "encoder": {
@@ -31,7 +31,7 @@
         "input_size": 300,
         "hidden_size": 50,
         "bidirectional": true,
-        "num_layers": 1
+        "num_layers": 2
       }
     },
     "iterator": {
