@@ -171,7 +171,9 @@ Run: `python scripts/negation_baseline.py ./resources/model_configs/negation_sfu
 
 Bi-LSTM with 2 layers not training the embedding
 ``` python
-
+Best epoch 17
+Best validation span f1 0.6978417266186547
+Test span f1 result 0.6840277777777279
 ```
 
 ### Targeted Sentiment
@@ -201,6 +203,7 @@ To generate the above results run: `python scripts/targeted_sentiment_baseline.p
 
 ### Transfer Learning
 First train negation and then targeted sentiment where the transfer is the Bi-LSTM only embedding not trainable:
+Conan Doyle
 ``` python
 Negation
 Best epoch 34
@@ -225,6 +228,24 @@ Best epoch 7
 Best validation span f1 0.5309381237524449
 Test span f1 result 0.4885993485341519
 ```
+
+To generate the above run: `python scripts/transfer_baseline.py ./resources/model_configs/transfer_conan_laptop_baseline.jsonnet`
+
+With SFU
+Bi-LSTM 2 layers not training embedding
+``` python
+Negation
+Best epoch 18
+Best validation span f1 0.6886446886446385
+Test span f1 result 0.6768189509305765
+
+Sentiment
+Best epoch 12
+Best validation span f1 0.5346534653464844
+Test span f1 result 0.5078318219290514
+```
+
+To generate the above run: `python scripts/transfer_baseline.py ./resources/model_configs/transfer_sfu_laptop_baseline.jsonnet`
 
 ## Requirements
 
