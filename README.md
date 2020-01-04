@@ -278,6 +278,23 @@ Test span f1 result 0.5078318219290514
 
 To generate the above run: `python scripts/transfer_baseline.py ./resources/model_configs/transfer_sfu_laptop_baseline.jsonnet`
 
+### Multi Task Learning
+In the Multi task learning setup each epoch involves first training the negation model for one epoch and then training the sentiment model for an epoch. This is repeated until early stopping is applied based on the sentiment model score.
+
+Conan Doyle and Laptop
+``` python
+Best epoch 21
+Negation Results
+Validation F1 measure: 0.8252080856123161
+Test F1 measure: 0.8474576271185941
+
+Sentiment Results
+Validation F1 measure: 0.5571142284568636
+Test F1 measure: 0.5413533834585967
+```
+
+To generate the above run: `python scripts/multi_task_baseline.py ./resources/model_configs/transfer_conan_laptop_baseline.jsonnet`
+
 ## Requirements
 
 1. Python >= 3.6
@@ -288,3 +305,8 @@ To generate the above run: `python scripts/transfer_baseline.py ./resources/mode
 
 ## Run the tests:
 `python -m pytest`
+
+## Other ideas
+1. Having a shared and task specific Bi-LSTM layers at the moment all Bi-LSTM layers are shared
+2. The affect of having very little sentiment data and all of the negated data
+3. The affect of pre-trained word embeddings, if random does multi-task/transfer help a lot more.
