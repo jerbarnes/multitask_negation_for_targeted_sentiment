@@ -201,9 +201,22 @@ Test span f1 result 0.561551433389495
 
 To generate the above results run: `python scripts/targeted_sentiment_baseline.py ./resources/model_configs/targeted_sentiment_laptop_baseline.jsonnet`
 
+On Restaurant
+
+Bi-LSTM with 2 layers but not training the embeddings
+``` python
+Best epoch 30
+Best validation span f1 0.6232558139534383
+Test span f1 result 0.6484342379957747
+```
+
+To generate the above results run: `python scripts/targeted_sentiment_baseline.py ./resources/model_configs/targeted_sentiment_restaurant_baseline.jsonnet`
+
 ### Transfer Learning
+In transfer learning there are no task specific Bi-LSTM layers which might be a good idea to add.
+
 First train negation and then targeted sentiment where the transfer is the Bi-LSTM only embedding not trainable:
-Conan Doyle
+Conan Doyle and Laptop
 ``` python
 Negation
 Best epoch 34
@@ -231,7 +244,25 @@ Test span f1 result 0.4885993485341519
 
 To generate the above run: `python scripts/transfer_baseline.py ./resources/model_configs/transfer_conan_laptop_baseline.jsonnet`
 
-With SFU
+Conan Doyle and Restaurant
+
+Bi-LSTM 2 layers and not training embedding
+``` python
+Negation
+Best epoch 43
+Best validation span f1 0.8446026097271147
+Test span f1 result 0.8497330282226806
+
+Sentiment
+Best epoch 11
+Best validation span f1 0.6014319809068711
+Test span f1 result 0.6257100778455214
+```
+
+To generate the above run: `python scripts/transfer_baseline.py ./resources/model_configs/transfer_conan_restaurant_baseline.jsonnet`
+
+SFU and Laptop
+
 Bi-LSTM 2 layers not training embedding
 ``` python
 Negation

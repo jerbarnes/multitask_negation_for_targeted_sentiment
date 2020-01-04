@@ -9,16 +9,16 @@
       },
       "label_namespace": "sentiment_labels"
     },
-    "train_data_path": "https://raw.githubusercontent.com/lixin4ever/E2E-TBSA/master/data_conll/laptop14_train.txt", 
-    "validation_data_path": "https://raw.githubusercontent.com/lixin4ever/E2E-TBSA/master/data_conll/laptop14_dev.txt",
-    "test_data_path": "https://raw.githubusercontent.com/lixin4ever/E2E-TBSA/master/data_conll/laptop14_test.txt",
+    "train_data_path": "https://raw.githubusercontent.com/lixin4ever/E2E-TBSA/master/data_conll/rest_total_train.txt", 
+    "validation_data_path": "https://raw.githubusercontent.com/lixin4ever/E2E-TBSA/master/data_conll/rest_total_dev.txt",
+    "test_data_path": "https://raw.githubusercontent.com/lixin4ever/E2E-TBSA/master/data_conll/rest_total_test.txt",
     "model": {
       "constrain_crf_decoding": true,
       "calculate_span_f1": true,
       "dropout": 0.5,
       "include_start_end_transitions": false,
       "label_namespace": "sentiment_labels",
-      "label_encoding": "BIO",
+      "label_encoding": "BIOUL",
       "text_field_embedder": {
         "tokens": {
           "type": "embedding",

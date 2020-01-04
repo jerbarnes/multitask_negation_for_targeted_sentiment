@@ -9,9 +9,9 @@
       },
       "label_namespace": "sentiment_labels"
     },
-    "target_sentiment_train_data_path": "https://raw.githubusercontent.com/lixin4ever/E2E-TBSA/master/data_conll/laptop14_train.txt", 
-    "target_sentiment_validation_data_path": "https://raw.githubusercontent.com/lixin4ever/E2E-TBSA/master/data_conll/laptop14_dev.txt",
-    "target_sentiment_test_data_path": "https://raw.githubusercontent.com/lixin4ever/E2E-TBSA/master/data_conll/laptop14_test.txt",
+    "target_sentiment_train_data_path": "https://raw.githubusercontent.com/lixin4ever/E2E-TBSA/master/data_conll/rest_total_train.txt", 
+    "target_sentiment_validation_data_path": "https://raw.githubusercontent.com/lixin4ever/E2E-TBSA/master/data_conll/rest_total_dev.txt",
+    "target_sentiment_test_data_path": "https://raw.githubusercontent.com/lixin4ever/E2E-TBSA/master/data_conll/rest_total_test.txt",
     "negation_dataset_reader": {
       "type": "negation_speculation",
       "token_indexers": {
@@ -22,9 +22,9 @@
       },
       "label_namespace": "negation_labels"
     },
-    "negation_train_data_path": "./data/auxiliary_tasks/en/SFU_train.conll", 
-    "negation_validation_data_path": "./data/auxiliary_tasks/en/SFU_dev.conll",
-    "negation_test_data_path": "./data/auxiliary_tasks/en/SFU_test.conll",
+    "negation_train_data_path": "./data/auxiliary_tasks/en/conandoyle_train.conllu", 
+    "negation_validation_data_path": "./data/auxiliary_tasks/en/conandoyle_dev.conllu",
+    "negation_test_data_path": "./data/auxiliary_tasks/en/conandoyle_test.conllu",
     "negation_model": {
       "label_namespace": "negation_labels",
       "label_encoding": "BIO"

@@ -12,10 +12,6 @@
     "target_sentiment_train_data_path": "https://raw.githubusercontent.com/lixin4ever/E2E-TBSA/master/data_conll/laptop14_train.txt", 
     "target_sentiment_validation_data_path": "https://raw.githubusercontent.com/lixin4ever/E2E-TBSA/master/data_conll/laptop14_dev.txt",
     "target_sentiment_test_data_path": "https://raw.githubusercontent.com/lixin4ever/E2E-TBSA/master/data_conll/laptop14_test.txt",
-    "target_model": {
-      "label_namespace": "sentiment_labels",
-      "label_encoding": "BIOUL"
-    },
     "negation_dataset_reader": {
       "type": "negation_speculation",
       "token_indexers": {
