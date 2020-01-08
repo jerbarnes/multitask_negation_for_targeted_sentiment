@@ -27,12 +27,19 @@
           "trainable": false
         }
       },
-      "encoder": {
+      "task_encoder": {
+        "type": "lstm",
+        "input_size": 400,
+        "hidden_size": 50,
+        "bidirectional": true,
+        "num_layers": 1
+      },
+      "shared_encoder": {
         "type": "lstm",
         "input_size": 300,
         "hidden_size": 50,
         "bidirectional": true,
-        "num_layers": 2
+        "num_layers": 1
       }
     },
     "iterator": {

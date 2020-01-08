@@ -15,6 +15,7 @@ import torch
 
 from multitask_negation_target.allen.dataset_readers.negation_speculation import NegationSpeculationDatasetReader
 from multitask_negation_target import utils
+from multitask_negation_target.allen.models.shared_crf_tagger import SharedCrfTagger
 
 def parse_path(path_string: str) -> Path:
     path_string = Path(path_string).resolve()
@@ -75,8 +76,8 @@ if __name__ == '__main__':
         include_start_end_transitions = params['shared_model'].pop('include_start_end_transitions')
         text_embedder_params = params['shared_model'].pop('text_field_embedder')
         text_embedder = TextFieldEmbedder.from_params(params=text_embedder_params, vocab=vocab)
-        encoder_params = params['shared_model'].pop('encoder')
-        encoder = Seq2SeqEncoder.from_params(params=encoder_params)
+        encoder_params = params['shared_model'].pop('shared_encoder')
+        shared_encoder = Seq2SeqEncoder.from_params(params=encoder_params)
         trainer = params.pop('trainer')
         negation_trainer = copy.deepcopy(trainer)
         sentiment_trainer = copy.deepcopy(trainer)
@@ -85,25 +86,31 @@ if __name__ == '__main__':
         # Negation parameters
         negation_label_namespace =  params['negation_model'].pop('label_namespace')
         negation_label_encoding = params['negation_model'].pop('label_encoding')
+        negation_encoder_params = params['negation_model'].pop('task_encoder')
+        negation_encoder = Seq2SeqEncoder.from_params(params=negation_encoder_params)
 
         # Negation model
-        negation_tagger = CrfTagger(vocab=vocab, text_field_embedder=text_embedder, 
-                                    encoder=encoder, label_namespace=negation_label_namespace, 
+        negation_tagger = SharedCrfTagger(vocab=vocab, text_field_embedder=text_embedder, 
+                                    shared_encoder=shared_encoder, label_namespace=negation_label_namespace, 
                                     feedforward=None, label_encoding=negation_label_encoding, 
                                     include_start_end_transitions=include_start_end_transitions, 
                                     constrain_crf_decoding=constrain_crf_decoding, 
-                                    calculate_span_f1=calculate_span_f1, dropout=dropout)
+                                    calculate_span_f1=calculate_span_f1, dropout=dropout,
+                                    task_encoder=negation_encoder, skip_connections=True)
         # Sentiment parameters
         sentiment_label_namespace =  params['sentiment_model'].pop('label_namespace')
         sentiment_label_encoding = params['sentiment_model'].pop('label_encoding')
+        sentiment_encoder_params = params['sentiment_model'].pop('task_encoder')
+        sentiment_encoder = Seq2SeqEncoder.from_params(params=sentiment_encoder_params)
 
         # Sentiment model
-        sentiment_tagger = CrfTagger(vocab=vocab, text_field_embedder=text_embedder, 
-                                    encoder=encoder, label_namespace=sentiment_label_namespace, 
+        sentiment_tagger = SharedCrfTagger(vocab=vocab, text_field_embedder=text_embedder, 
+                                    shared_encoder=shared_encoder, label_namespace=sentiment_label_namespace, 
                                     feedforward=None, label_encoding=sentiment_label_encoding, 
                                     include_start_end_transitions=include_start_end_transitions, 
                                     constrain_crf_decoding=constrain_crf_decoding, 
-                                    calculate_span_f1=calculate_span_f1, dropout=dropout)
+                                    calculate_span_f1=calculate_span_f1, dropout=dropout,
+                                    task_encoder=sentiment_encoder, skip_connections=True)
         # Train Negation model
         print('Training Negation model')
         with tempfile.TemporaryDirectory() as temp_dir:

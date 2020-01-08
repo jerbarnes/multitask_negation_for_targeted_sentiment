@@ -198,6 +198,24 @@ Best epoch 45
 Best validation span f1 0.581967213114704
 Test span f1 result 0.561551433389495
 ```
+Second run of the above:
+```
+Best epoch 21
+Best validation span f1 0.5594989561586139
+Test span f1 result 0.5358361774743531
+```
+Bi LSTM with 2 layers where the second layer has a skip connection from the word embedding
+```
+Best epoch 53
+Best validation span f1 0.5968379446639813
+Test span f1 result 0.5704918032786386
+```
+Second run of the above
+```
+Best epoch 47
+Best validation span f1 0.593625498007918
+Test span f1 result 0.5468227424748665
+```
 
 To generate the above results run: `python scripts/targeted_sentiment_baseline.py ./resources/model_configs/targeted_sentiment_laptop_baseline.jsonnet`
 
@@ -208,6 +226,18 @@ Bi-LSTM with 2 layers but not training the embeddings
 Best epoch 30
 Best validation span f1 0.6232558139534383
 Test span f1 result 0.6484342379957747
+```
+Bi-LSTM with 2 layers but not training the embeddings, skip connections between layer 1 and 2
+```
+Best epoch 39
+Best validation span f1 0.6419161676646206
+Test span f1 result 0.663265306122399
+```
+Run 2
+```
+Best epoch 22
+Best validation span f1 0.6265356265355764
+Test span f1 result 0.6460081773186503
 ```
 
 To generate the above results run: `python scripts/targeted_sentiment_baseline.py ./resources/model_configs/targeted_sentiment_restaurant_baseline.jsonnet`
@@ -294,6 +324,110 @@ Test F1 measure: 0.5413533834585967
 ```
 
 To generate the above run: `python scripts/multi_task_baseline.py ./resources/model_configs/transfer_conan_laptop_baseline.jsonnet`
+
+
+`python scripts/transfer_baseline.py ./resources/model_configs/transfer_conan_laptop_shared_baseline.jsonnet`
+1 layer Bi-LSTM shared, 1 layer Bi-LSTM task specific
+```
+Negation
+Best epoch 22
+Best validation span f1 0.8466111771699856
+Test span f1 result 0.8439393939393438
+
+Sentiment
+Best epoch 19
+Best validation span f1 0.5461847389557731
+Test span f1 result 0.5063505503809832
+```
+1 layer Bi-LSTM shared, 2 layer Bi-LSTM task specific
+```
+Negation
+Best epoch 27
+Best validation span f1 0.8485576923076421
+Test span f1 result 0.849805447470767
+
+Sentiment
+Best epoch 16
+Best validation span f1 0.5606361829025344
+Test span f1 result 0.5637254901960285
+```
+
+
+`python scripts/multi_task_baseline.py ./resources/model_configs/transfer_conan_laptop_shared_baseline.jsonnet`
+1 layer Bi-LSTM shared, 2 layer Bi-LSTM task specific
+```
+Best epoch 12
+Negation Results
+Validation F1 measure: 0.8533653846153345
+Test F1 measure: 0.8604471858133655
+Sentiment Results
+Validation F1 measure: 0.5595238095237594
+Test F1 measure: 0.503728251864076
+```
+
+1 layer Bi-LSTM shared, 1 layer Bi-LSTM task specific
+```
+Best epoch 37
+Negation Results
+Validation F1 measure: 0.8399999999999498
+Test F1 measure: 0.8549618320610186
+Sentiment Results
+Validation F1 measure: 0.5875251509053824
+Test F1 measure: 0.5714285714285215
+```
+Second run of the above
+```
+Best epoch 68
+Negation Results
+Validation F1 measure: 0.8481927710842873
+Test F1 measure: 0.8597986057319406
+Sentiment Results
+Validation F1 measure: 0.6012024048095691
+Test F1 measure: 0.5875613747953674
+```
+
+1 layer Bi-LSTM shared, 1 layer Bi-LSTM task specific (only for sentiment, negation has no task specific Bi-LSTM)
+```
+Best epoch 19
+Negation Results
+Validation F1 measure: 0.8087167070217415
+Test F1 measure: 0.855813953488322
+Sentiment Results
+Validation F1 measure: 0.570841889116993
+Test F1 measure: 0.5091225021719747
+```
+
+Restaurant and Conan Doyle
+`python scripts/multi_task_baseline.py resources/model_configs/transfer_conan_restaurant_shared_baseline.jsonnet`
+```
+Best epoch 33
+Negation Results
+Validation F1 measure: 0.835322195704007
+Test F1 measure: 0.8604471858133655
+Sentiment Results
+Validation F1 measure: 0.6260454002388985
+Test F1 measure: 0.6604611804526686
+```
+Second Run
+```
+Best epoch 21
+Negation Results
+Validation F1 measure: 0.8602409638553716
+Test F1 measure: 0.8707165109033768
+Sentiment Results
+Validation F1 measure: 0.6263345195729035
+Test F1 measure: 0.6414700354979664
+```
+Third Run
+```
+Best epoch 30
+Negation Results
+Validation F1 measure: 0.8341346153845652
+Test F1 measure: 0.8558282208588457
+Sentiment Results
+Validation F1 measure: 0.6210153482880255
+Test F1 measure: 0.6539188905231693
+```
 
 ## Requirements
 

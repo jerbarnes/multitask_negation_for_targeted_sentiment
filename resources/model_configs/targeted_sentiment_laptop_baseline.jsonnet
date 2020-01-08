@@ -18,7 +18,7 @@
       "dropout": 0.5,
       "include_start_end_transitions": false,
       "label_namespace": "sentiment_labels",
-      "label_encoding": "BIO",
+      "label_encoding": "BIOUL",
       "text_field_embedder": {
         "tokens": {
           "type": "embedding",
@@ -27,12 +27,19 @@
           "trainable": false
         }
       },
-      "encoder": {
+      "task_encoder": {
+        "type": "lstm",
+        "input_size": 400,
+        "hidden_size": 50,
+        "bidirectional": true,
+        "num_layers": 1
+      },
+      "shared_encoder": {
         "type": "lstm",
         "input_size": 300,
         "hidden_size": 50,
         "bidirectional": true,
-        "num_layers": 2
+        "num_layers": 1
       }
     },
     "iterator": {

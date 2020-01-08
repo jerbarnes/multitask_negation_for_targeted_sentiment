@@ -14,6 +14,7 @@ import torch
 
 from multitask_negation_target.allen.dataset_readers.negation_speculation import NegationSpeculationDatasetReader
 from multitask_negation_target import utils
+from multitask_negation_target.allen.models.shared_crf_tagger import SharedCrfTagger
 
 
 def parse_path(path_string: str) -> Path:
@@ -67,15 +68,18 @@ if __name__ == '__main__':
         include_start_end_transitions = params['model'].pop('include_start_end_transitions')
         text_embedder_params = params['model'].pop('text_field_embedder')
         text_embedder = TextFieldEmbedder.from_params(params=text_embedder_params, vocab=vocab)
-        encoder_params = params['model'].pop('encoder')
-        encoder = Seq2SeqEncoder.from_params(params=encoder_params)
+        task_encoder_params = params['model'].pop('task_encoder')
+        task_encoder = Seq2SeqEncoder.from_params(params=task_encoder_params)
+        shared_encoder_params = params['model'].pop('shared_encoder')
+        shared_encoder = Seq2SeqEncoder.from_params(params=shared_encoder_params)
 
-        sentiment_tagger = CrfTagger(vocab=vocab, text_field_embedder=text_embedder, 
-                                    encoder=encoder, label_namespace=label_namespace, 
+        sentiment_tagger = SharedCrfTagger(vocab=vocab, text_field_embedder=text_embedder, 
+                                    task_encoder=task_encoder, label_namespace=label_namespace, 
                                     feedforward=None, label_encoding=label_encoding, 
                                     include_start_end_transitions=include_start_end_transitions, 
                                     constrain_crf_decoding=constrain_crf_decoding, 
-                                    calculate_span_f1=calculate_span_f1, dropout=dropout)
+                                    calculate_span_f1=calculate_span_f1, dropout=dropout,
+                                    skip_connections=True, shared_encoder=shared_encoder)
 
         with tempfile.TemporaryDirectory() as temp_dir:
             trainer = Trainer.from_params(params=params.pop('trainer'), 
