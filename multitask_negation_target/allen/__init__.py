@@ -1,1 +1,1 @@
-from multitask_negation_target.allen import dataset_readers, utils
+from multitask_negation_target.allen import dataset_readers, utils, models
