@@ -87,8 +87,32 @@ if __name__ == '__main__':
         # Negation parameters
         negation_label_namespace =  params['negation_model'].pop('label_namespace')
         negation_label_encoding = params['negation_model'].pop('label_encoding')
-        negation_encoder_params = params['negation_model'].pop('task_encoder')
-        negation_encoder = Seq2SeqEncoder.from_params(params=negation_encoder_params)
+        negation_skip_connection = False
+        if 'skip_connections' in params['negation_model']:
+            negation_skip_connection = params['negation_model'].pop('skip_connections')
+        negation_encoder = None
+        if 'task_encoder' in params['negation_model']:
+            negation_encoder_params = params['negation_model'].pop('task_encoder')
+            negation_encoder = Seq2SeqEncoder.from_params(params=negation_encoder_params)
+
+        # Sentiment parameters
+        sentiment_label_namespace =  params['sentiment_model'].pop('label_namespace')
+        sentiment_label_encoding = params['sentiment_model'].pop('label_encoding')
+        sentiment_encoder = None
+        if 'task_encoder' in params['sentiment_model']:
+            sentiment_encoder_params = params['sentiment_model'].pop('task_encoder')
+            sentiment_encoder = Seq2SeqEncoder.from_params(params=sentiment_encoder_params)
+        sentiment_skip_connection = False
+        if 'skip_connections' in params['sentiment_model']:
+            sentiment_skip_connection = params['sentiment_model'].pop('skip_connections')
+
+        # The shared encoder level becomes the task encoder of both and the 
+        # shared encoder is removed. Skip connection cannot be used in this 
+        # case.
+        if sentiment_encoder is None and negation_encoder is None:
+            sentiment_encoder = shared_encoder
+            negation_encoder = shared_encoder
+            shared_encoder = None
 
         # Negation model
         negation_tagger = SharedCrfTagger(vocab=vocab, text_field_embedder=text_embedder, 
@@ -97,12 +121,7 @@ if __name__ == '__main__':
                                     include_start_end_transitions=include_start_end_transitions, 
                                     constrain_crf_decoding=constrain_crf_decoding, 
                                     calculate_span_f1=calculate_span_f1, dropout=dropout,
-                                    task_encoder=negation_encoder, skip_connections=True)
-        # Sentiment parameters
-        sentiment_label_namespace =  params['sentiment_model'].pop('label_namespace')
-        sentiment_label_encoding = params['sentiment_model'].pop('label_encoding')
-        sentiment_encoder_params = params['sentiment_model'].pop('task_encoder')
-        sentiment_encoder = Seq2SeqEncoder.from_params(params=sentiment_encoder_params)
+                                    task_encoder=negation_encoder, skip_connections=negation_skip_connection)
 
         # Sentiment model
         sentiment_tagger = SharedCrfTagger(vocab=vocab, text_field_embedder=text_embedder, 
@@ -111,7 +130,7 @@ if __name__ == '__main__':
                                     include_start_end_transitions=include_start_end_transitions, 
                                     constrain_crf_decoding=constrain_crf_decoding, 
                                     calculate_span_f1=calculate_span_f1, dropout=dropout,
-                                    task_encoder=sentiment_encoder, skip_connections=True)
+                                    task_encoder=sentiment_encoder, skip_connections=sentiment_skip_connection)
         # Train Negation and Sentiment model in a multi task fashion
         print('Training Negation and Sentiment model')
         with tempfile.TemporaryDirectory() as negation_temp_dir:

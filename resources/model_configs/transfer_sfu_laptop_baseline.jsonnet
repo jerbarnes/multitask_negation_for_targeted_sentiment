@@ -46,7 +46,7 @@
           "trainable": false
         }
       },
-      "encoder": {
+      "shared_encoder": {
         "type": "lstm",
         "input_size": 300,
         "hidden_size": 50,

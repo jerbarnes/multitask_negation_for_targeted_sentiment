@@ -143,7 +143,7 @@ To generate the data for this table above run `./scripts/negation_split_statisti
 ## Baselines
 ### Negation 
 #### Conan Doyle
-Run: `python scripts/negation_baseline.py ./resources/model_configs/negation_baseline.jsonnet`
+Run: `python scripts/negation_baseline.py ./resources/model_configs/negation_conan_doyle_baseline.jsonnet`
 
 Generates:
 ``` python

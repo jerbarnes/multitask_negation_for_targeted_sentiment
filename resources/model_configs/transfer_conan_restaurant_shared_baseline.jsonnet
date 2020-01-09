@@ -28,6 +28,7 @@
     "negation_model": {
       "label_namespace": "negation_labels",
       "label_encoding": "BIO",
+      "skip_connections": true,
       "task_encoder": {
         "type": "lstm",
         "input_size": 400,
@@ -39,6 +40,7 @@
     "sentiment_model": {
       "label_namespace": "sentiment_labels",
       "label_encoding": "BIOUL",
+      "skip_connections": true,
       "task_encoder": {
         "type": "lstm",
         "input_size": 400,
@@ -51,7 +53,6 @@
       "constrain_crf_decoding": true,
       "calculate_span_f1": true,
       "dropout": 0.5,
-      "skip_connections": true,
       "include_start_end_transitions": false,
       "text_field_embedder": {
         "tokens": {
