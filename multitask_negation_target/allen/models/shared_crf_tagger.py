@@ -14,6 +14,7 @@ from allennlp.nn import InitializerApplicator, RegularizerApplicator
 import allennlp.nn.util as util
 from allennlp.training.metrics import CategoricalAccuracy, SpanBasedF1Measure
 
+from negation_metrics import ScopeTokensMetric
 
 @Model.register("shared_crf_tagger")
 class SharedCrfTagger(Model):
@@ -21,18 +22,18 @@ class SharedCrfTagger(Model):
     The ``SharedCrfTagger`` encodes a sequence of text with a ``Seq2SeqEncoder``,
     then uses a Conditional Random Field model to predict a tag for each token in the sequence.
 
-    Furthermore it has two additional options which could be useful for transfer 
-    or multi task learning: 
-    
-    1. The option to have a shared ``Seq2SeqEncoder`` which can 
+    Furthermore it has two additional options which could be useful for transfer
+    or multi task learning:
+
+    1. The option to have a shared ``Seq2SeqEncoder`` which can
        be used for a different task
     2. A skip connection between the text field embedder and task ``Seq2SeqEncoder``
-       which sits above the shared within the neural network. The skip connection 
-       will therefore allow the task sepcific model to have the information 
-       from both the embedding and the shared ``Seq2SeqEncoder``. Without the 
-       skip connection the task layer will only have information from the 
+       which sits above the shared within the neural network. The skip connection
+       will therefore allow the task sepcific model to have the information
+       from both the embedding and the shared ``Seq2SeqEncoder``. Without the
+       skip connection the task layer will only have information from the
        shared ``Seq2SeqEncoder``.
-    
+
     Parameters
     ----------
     vocab : ``Vocabulary``, required
@@ -41,7 +42,7 @@ class SharedCrfTagger(Model):
         Used to embed the tokens ``TextField`` we get as input to the model.
     task_encoder : ``Seq2SeqEncoder``
         The encoder that we will use in between embedding tokens and predicting output tags.
-        This is also the encoder that will be used after the `shared_encoder` if 
+        This is also the encoder that will be used after the `shared_encoder` if
         the `shared_encoder` is used.
     label_namespace : ``str``, optional (default=``labels``)
         This is needed to compute the SpanBasedF1Measure metric.
@@ -49,7 +50,7 @@ class SharedCrfTagger(Model):
     shared_encoder : ``Seq2SeqEncoder``, optional, (default = None).
         The encoder that is used between the embedding tokens and the `task_encoder`.
     skip_connections :  ``bool``, optional (default=``False``)
-        If True will concatenate the output from the embedding layer to the 
+        If True will concatenate the output from the embedding layer to the
         output from the `shared_encoder` before inputting to the `task_encoder`
     feedforward : ``FeedForward``, optional, (default = None).
         An optional feedforward layer to apply after the encoder.
@@ -96,7 +97,7 @@ class SharedCrfTagger(Model):
         constrain_crf_decoding: bool = None,
         calculate_span_f1: bool = None,
         dropout: Optional[float] = None,
-        verbose_metrics: bool = False,
+        verbose_metrics: bool = True,
         initializer: InitializerApplicator = InitializerApplicator(),
         regularizer: Optional[RegularizerApplicator] = None,
     ) -> None:
@@ -155,14 +156,17 @@ class SharedCrfTagger(Model):
                 raise ConfigurationError(
                     "calculate_span_f1 is True, but " "no label_encoding was specified."
                 )
-            self._f1_metric = SpanBasedF1Measure(
+            self._span_f1_metric = SpanBasedF1Measure(
                 vocab, tag_namespace=label_namespace, label_encoding=label_encoding
             )
+
+        self._f1_metric = ScopeTokensMetric(
+                vocab, tag_namespace=label_namespace, label_encoding=label_encoding)
 
         if skip_connections and shared_encoder is None:
             raise ValueError('Cannot use skip connections useless there '
                              'is a shared encoder')
-        
+
         if feedforward is not None:
             check_dimensions_match(
                 task_encoder.get_output_dim(),
@@ -170,10 +174,10 @@ class SharedCrfTagger(Model):
                 "task encoder output dim",
                 "feedforward input dim",
             )
-        
+
         if shared_encoder is not None:
             if skip_connections:
-                shared_encoder_out = (shared_encoder.get_output_dim() + 
+                shared_encoder_out = (shared_encoder.get_output_dim() +
                                       text_field_embedder.get_output_dim())
                 shared_encoder_out_msg = ("shared encoder output dim AND skip "
                                           "connection thus text field embedding"
@@ -201,7 +205,7 @@ class SharedCrfTagger(Model):
             task_encoder.get_input_dim(),
             "text field embedding dim",
             "task encoder input dim",)
-        
+
         initializer(self)
 
     @overrides
@@ -256,7 +260,7 @@ class SharedCrfTagger(Model):
 
         if self.skip_connections:
             encoded_text = torch.cat([encoded_text, embedded_text_input], dim=-1)
-        
+
         encoded_text = self.task_encoder(encoded_text, mask)
         if self.dropout:
             encoded_text = self.dropout(encoded_text)
@@ -288,7 +292,8 @@ class SharedCrfTagger(Model):
             for metric in self.metrics.values():
                 metric(class_probabilities, tags, mask.float())
             if self.calculate_span_f1:
-                self._f1_metric(class_probabilities, tags, mask.float())
+                self._span_f1_metric(class_probabilities, tags, mask.float())
+            self._f1_metric(class_probabilities, tags, mask.float())
         if metadata is not None:
             output["words"] = [x["words"] for x in metadata]
         return output
@@ -314,10 +319,20 @@ class SharedCrfTagger(Model):
             metric_name: metric.get_metric(reset) for metric_name, metric in self.metrics.items()
         }
 
+        # span level metrics
+        """
         if self.calculate_span_f1:
-            f1_dict = self._f1_metric.get_metric(reset=reset)
+            f1_dict = self._span_f1_metric.get_metric(reset=reset)
             if self._verbose_metrics:
                 metrics_to_return.update(f1_dict)
             else:
                 metrics_to_return.update({x: y for x, y in f1_dict.items() if "overall" in x})
+        """
+
+        # token level metrics
+        token_f1_dict = self._f1_metric.get_metric(reset=reset)
+        if self._verbose_metrics:
+            metrics_to_return.update(token_f1_dict)
+        else:
+            metrics_to_return.update({x: y for x, y in token_f1_dict.items() if "overall" in x})
         return metrics_to_return
