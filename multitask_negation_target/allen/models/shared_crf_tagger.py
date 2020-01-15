@@ -14,7 +14,7 @@ from allennlp.nn import InitializerApplicator, RegularizerApplicator
 import allennlp.nn.util as util
 from allennlp.training.metrics import CategoricalAccuracy, SpanBasedF1Measure
 
-from negation_metrics import ScopeTokensMetric
+from multitask_negation_target.allen.models.negation_metrics import ScopeTokensMetric
 
 @Model.register("shared_crf_tagger")
 class SharedCrfTagger(Model):
@@ -320,14 +320,13 @@ class SharedCrfTagger(Model):
         }
 
         # span level metrics
-        """
+        
         if self.calculate_span_f1:
             f1_dict = self._span_f1_metric.get_metric(reset=reset)
             if self._verbose_metrics:
                 metrics_to_return.update(f1_dict)
             else:
                 metrics_to_return.update({x: y for x, y in f1_dict.items() if "overall" in x})
-        """
 
         # token level metrics
         token_f1_dict = self._f1_metric.get_metric(reset=reset)

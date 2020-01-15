@@ -1,5 +1,6 @@
 from typing import Dict, List, Optional, Set, Callable
 from collections import defaultdict
+import re
 
 import torch
 
@@ -20,7 +21,9 @@ from allennlp.data.dataset_readers.dataset_utils.span_utils import (
 class  ScopeTokensMetric(Metric):
 
     """
-    Implements a relaxed version of the scope tokens metric from StarSem 2012 shared task for negation detection. While the original metric required the correct identification of the cue, here we only count the scopes.
+    Implements a relaxed version of the scope tokens metric from StarSem 2012 
+    shared task for negation detection. While the original metric required the 
+    correct identification of the cue, here we only count the scopes.
     """
 
     def __init__(
@@ -128,7 +131,15 @@ class  ScopeTokensMetric(Metric):
                                   gold_string_labels):
                 # only take into account the scopes, not the cues
                 # Note this only works for the auxiliary tasks
-                if "scope" in gold or "neg" in gold or "spec" in gold:
+                if (re.search(r"scope$", gold) or re.search(r"neg$", gold) or 
+                    re.search(r"spec$", gold)):
+                    if pred == gold:
+                        self._true_positives[gold[2:]] += 1
+                    elif pred != gold and pred == "O":
+                        self._false_negatives[gold[2:]] += 1
+                    elif pred != gold and gold == "O":
+                        self._false_positives[pred[2:]] += 1
+                elif re.search(r"cue$", gold):
                     if pred == gold:
                         self._true_positives[gold[2:]] += 1
                     elif pred != gold and pred == "O":
