@@ -131,15 +131,7 @@ class  ScopeTokensMetric(Metric):
                                   gold_string_labels):
                 # only take into account the scopes, not the cues
                 # Note this only works for the auxiliary tasks
-                if (re.search(r"scope$", gold) or re.search(r"neg$", gold) or 
-                    re.search(r"spec$", gold)):
-                    if pred == gold:
-                        self._true_positives[gold[2:]] += 1
-                    elif pred != gold and pred == "O":
-                        self._false_negatives[gold[2:]] += 1
-                    elif pred != gold and gold == "O":
-                        self._false_positives[pred[2:]] += 1
-                elif re.search(r"cue$", gold):
+                if gold[2:].strip() or pred[2:].strip():
                     if pred == gold:
                         self._true_positives[gold[2:]] += 1
                     elif pred != gold and pred == "O":
