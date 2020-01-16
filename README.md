@@ -22,6 +22,11 @@ All the model configurations can be found within `./resources/model_configs`
 # Sentiment
 1. SemEval 2016 Aspect-based datasets (EN, ES)
 
+The sentiment datasets need to be downloaded and converted from BIOSE to BIOUL format. The format change is only label differences e.g. S==U and L==E. The sentiment datasets are from [Li et al. 2019](https://www.aaai.org/ojs/index.php/AAAI/article/view/4643) and they are the SemEval 2014 Laptop dataset and the SemEval 2014, 2015, and 2016 combined Restaurant dataset. The downloaded datasets will go into the following folders `./data/main_task/en/laptop` and `./data/main_task/en/restaurant`. To download run the following script:
+``` bash
+python targeted_sentiment_downloader_converter.py
+```
+
 # Negation
 1. EN - [ConanDoyleNeg](https://www.aclweb.org/anthology/S12-1035.pdf), [SFU Review Corpus](https://www.aclweb.org/anthology/L12-1298/)
 2. ES - SFU Spanish
@@ -427,6 +432,30 @@ Test F1 measure: 0.8558282208588457
 Sentiment Results
 Validation F1 measure: 0.6210153482880255
 Test F1 measure: 0.6539188905231693
+```
+
+## Cross domain
+Idea on the cross domain would be to train the negation model and then apply it to some texts within the target domain and then train on those texts, similar type of idea to Semi-Supervised Learning
+
+Train on laptop with negation as auxilary and then test on Restaurant
+`python scripts/multi_task_baseline.py ./resources/model_configs/transfer_conan_laptop_restaurant_shared_baseline.jsonnet`
+```
+Best epoch 51
+Negation Results
+Validation F1 measure: 0.8419782870928328
+Test F1 measure: 0.849230769230719
+Sentiment Results
+Validation F1 measure: 0.6309278350514963
+Test F1 measure: 0.1962209302325301
+```
+
+
+Train on laptop and test on restaurant
+`python scripts/targeted_sentiment_baseline.py ./resources/model_configs/targeted_sentiment_laptop_restaurant_baseline.jsonnet`
+```
+Best epoch 34
+Best validation span f1 0.581443298969022
+Test span f1 result 0.19215545160126632
 ```
 
 ## Requirements
