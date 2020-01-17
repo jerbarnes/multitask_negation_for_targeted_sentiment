@@ -41,5 +41,5 @@
             1e-1
         ]
     },
-    "CUDA_DEVICE": -1
+    "CUDA_DEVICE": 0
 }

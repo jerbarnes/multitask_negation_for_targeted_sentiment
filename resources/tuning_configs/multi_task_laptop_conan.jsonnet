@@ -23,9 +23,9 @@ local NEGATION_DROPOUT = std.extVar("NEGATION_DROPOUT");
             },
             "label_namespace": "negation_labels"
         },
-        "train_data_path": "/Users/andrew/Desktop/multitask_negation_for_targeted_sentiment/data/auxiliary_tasks/en/conandoyle_train.conllu", 
-        "validation_data_path": "/Users/andrew/Desktop/multitask_negation_for_targeted_sentiment/data/auxiliary_tasks/en/conandoyle_dev.conllu",
-        "test_data_path": "/Users/andrew/Desktop/multitask_negation_for_targeted_sentiment/data/auxiliary_tasks/en/conandoyle_test.conllu",
+        "train_data_path": "/home/andrew/Desktop/multitask_negation_for_targeted_sentiment/data/auxiliary_tasks/en/conandoyle_train.conllu", 
+        "validation_data_path": "/home/andrew/Desktop/multitask_negation_for_targeted_sentiment/data/auxiliary_tasks/en/conandoyle_dev.conllu",
+        "test_data_path": "/home/andrew/Desktop/multitask_negation_for_targeted_sentiment/data/auxiliary_tasks/en/conandoyle_test.conllu",
         "model": {
             "type": "shared_crf",
             "constrain_crf_decoding": true,
@@ -69,9 +69,9 @@ local NEGATION_DROPOUT = std.extVar("NEGATION_DROPOUT");
             },
             "label_namespace": "sentiment_labels"
         },
-        "train_data_path": "/Users/andrew/Desktop/multitask_negation_for_targeted_sentiment/data/main_task/en/laptop/train.conll", 
-        "validation_data_path": "/Users/andrew/Desktop/multitask_negation_for_targeted_sentiment/data/main_task/en/laptop/dev.conll",
-        "test_data_path": "/Users/andrew/Desktop/multitask_negation_for_targeted_sentiment/data/main_task/en/laptop/test.conll",
+        "train_data_path": "/home/andrew/Desktop/multitask_negation_for_targeted_sentiment/data/main_task/en/laptop/train.conll", 
+        "validation_data_path": "/home/andrew/Desktop/multitask_negation_for_targeted_sentiment/data/main_task/en/laptop/dev.conll",
+        "test_data_path": "/home/andrew/Desktop/multitask_negation_for_targeted_sentiment/data/main_task/en/laptop/test.conll",
         "model": {
             "type": "shared_crf",
             "constrain_crf_decoding": true,
@@ -109,6 +109,7 @@ local NEGATION_DROPOUT = std.extVar("NEGATION_DROPOUT");
             "tokens": {
                 "type": "embedding",
                 "embedding_dim": 300,
+                "pretrained_file": "/home/andrew/Desktop/multitask_negation_for_targeted_sentiment/resources/embeddings/en/glove.840B.300d.txt",
                 "trainable": GLOVE_TRAINABLE
             }
         },
