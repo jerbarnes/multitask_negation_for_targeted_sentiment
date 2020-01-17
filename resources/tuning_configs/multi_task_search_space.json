@@ -17,7 +17,7 @@
         "sampling strategy": "integer",
         "bounds": [
             30,
-            200
+            150
         ]
     },
     "SENTIMENT_DROPOUT": {
