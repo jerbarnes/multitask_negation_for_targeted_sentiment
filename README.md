@@ -252,10 +252,10 @@ In the Multi task learning setup each epoch involves first training the negation
 
 #### Hyperparameter tuning
 Before running any of the experiments we first perform some hyperparameter tuning. The tuning is performed on the smallest datasets of both tasks which are the Laptop dataset for the Sentiment/Main task and the Conan Doyle for the Negation/Auxiliary task. The parameters we tune for are the following:
-1. main/aux dropout rate
-2. hidden size for shared encoder
-3. batch_size 
-4. starting learning rate for adam
+1. Main/Auxiliary dropout rate - between 0 and 0.5
+2. Hidden size for shared encoder - between 30 and 150
+3. If the word vectors should be trained - Yes or No
+4. Starting learning rate for adam - between 0.1 (1e-1) and 0.0001 (1e-4)
 
 Run the following:
 ``` bash
