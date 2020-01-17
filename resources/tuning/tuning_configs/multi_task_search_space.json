@@ -37,7 +37,7 @@
     "LEARNING_RATE": {
         "sampling strategy": "loguniform",
         "bounds": [
-            1e-4,
+            1e-6,
             1e-1
         ]
     },

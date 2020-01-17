@@ -255,7 +255,7 @@ Before running any of the experiments we first perform some hyperparameter tunin
 1. Main/Auxiliary dropout rate - between 0 and 0.5
 2. Hidden size for shared encoder - between 30 and 150
 3. If the word vectors should be trained - Yes or No
-4. Starting learning rate for adam - between 0.1 (1e-1) and 0.0001 (1e-4)
+4. Starting learning rate for adam - between 0.1 (1e-1) and 0.000001 (1e-6)
 
 Run the following:
 ``` bash
