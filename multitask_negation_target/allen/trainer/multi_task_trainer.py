@@ -132,8 +132,8 @@ class MultiTaskTrainer(TrainerBase):
             # If not setting for cuda or not then cuda is assumed.
             self.task_cuda_evaluation[task] = 0
             if 'evaluate' in params.get(task):
-                if 'cuda' in params.get(task).get('evaluate'):
-                    is_cuda = params.get(task).pop('evaluate')['cuda']
+                if 'cuda_device' in params.get(task).get('evaluate'):
+                    is_cuda = params.get(task).pop('evaluate')['cuda_device']
                     self.task_cuda_evaluation[task] = is_cuda 
             if task != main_task:
                 self.auxiliary_task_validation_data[task] = all_task_data[task]['validation']
