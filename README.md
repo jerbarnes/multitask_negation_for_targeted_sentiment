@@ -265,10 +265,22 @@ allentune search \
     --num-gpus 1 \
     --cpus-per-trial 5 \
     --gpus-per-trial 1 \
-    --search-space resources/tuning_configs/multi_task_search_space.json \
+    --search-space resources/tuning/tuning_configs/multi_task_search_space.json \
     --num-samples 30 \
-    --base-config resources/tuning_configs/multi_task_laptop_conan.jsonnet \
+    --base-config resources/tuning/tuning_configs/multi_task_laptop_conan.jsonnet \
     --include-package multitask_negation_target
+allentune report \
+    --log-dir logs/multi_task_laptop_conan_search/ \
+    --performance-metric best_validation_f1-measure-overall \
+    --model multi-task
+allentune plot \
+    --data-name Laptop \
+    --subplot 1 1 \
+    --figsize 10 10 \
+    --result-file logs/multi_task_laptop_conan_search/results.jsonl \
+    --output-file tuning/multi_task_tuning_laptop_performance.pdf \
+    --performance-metric-field best_validation_f1-measure-overall \
+    --performance-metric F1-Span
 ```
 
 #### Example of how to run the Multi-Task System
