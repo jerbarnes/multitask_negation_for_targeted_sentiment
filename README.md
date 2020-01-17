@@ -261,14 +261,20 @@ Run the following:
 ``` bash
 allentune search \
     --experiment-name multi_task_laptop_conan_search \
-    --num-cpus 1 \
+    --num-cpus 5 \
     --num-gpus 1 \
-    --cpus-per-trial 1 \
+    --cpus-per-trial 5 \
     --gpus-per-trial 1 \
     --search-space resources/tuning_configs/multi_task_search_space.json \
     --num-samples 30 \
     --base-config resources/tuning_configs/multi_task_laptop_conan.jsonnet \
     --include-package multitask_negation_target
+```
+
+#### Example of how to run the Multi-Task System
+You can use the allennlp train command here:
+```
+allennlp train resources/model_configs/multi_task_trainer.jsonnet -s /tmp/any --include-package multitask_negation_target
 ```
 
 ## Cross domain (Ignore this)
