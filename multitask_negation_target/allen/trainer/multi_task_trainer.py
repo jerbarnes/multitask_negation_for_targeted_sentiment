@@ -1,4 +1,6 @@
 import logging
+import datetime
+import time
 from typing import Optional, Dict, List, Any
 from pathlib import Path
 import itertools
@@ -158,7 +160,11 @@ class MultiTaskTrainer(TrainerBase):
         auxiliary_task_trainers = [self.task_trainers[task_name] 
                                    for task_name in auxiliary_task_names]
         auxiliary_trainers_names = (auxiliary_task_trainers, auxiliary_task_names)
+        training_start_time = time.time()
+        # Training
         training_metrics = multi_task_training(main_trainer_name, auxiliary_trainers_names)
+        training_elapsed_time = time.time() - training_start_time
+        training_metrics["training_duration"] = str(datetime.timedelta(seconds=training_elapsed_time))
         
         all_metrics = {**training_metrics}
         logger.info('Evaluating the Auxiliary tasks on their validation and test data')
