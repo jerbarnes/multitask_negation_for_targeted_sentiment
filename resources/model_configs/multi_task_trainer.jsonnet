@@ -14,10 +14,11 @@
         "validation_data_path": "./data/auxiliary_tasks/en/conandoyle_dev.conllu",
         "test_data_path": "./data/auxiliary_tasks/en/conandoyle_test.conllu",
         "model": {
-            "type": "shared_crf",
+            "type": "shared_crf_tagger",
             "constrain_crf_decoding": true,
             "calculate_span_f1": true,
             "dropout": 0.5,
+            "regularizer": [[".*", {"type": "l2", "alpha": 0.0001}]],
             "include_start_end_transitions": false,
             "label_namespace": "negation_labels",
             "label_encoding": "BIO",
@@ -25,7 +26,7 @@
             "verbose_metrics": false,
             "task_encoder": {
                 "type": "lstm",
-                "input_size": 400,
+                "input_size": 500,
                 "hidden_size": 50,
                 "bidirectional": true,
                 "num_layers": 2
@@ -58,10 +59,11 @@
         "validation_data_path": "./data/main_task/en/laptop/dev.conll",
         "test_data_path": "./data/main_task/en/laptop/test.conll",
         "model": {
-            "type": "shared_crf",
+            "type": "shared_crf_tagger",
             "constrain_crf_decoding": true,
             "calculate_span_f1": true,
             "dropout": 0.5,
+            "regularizer": [[".*", {"type": "l2", "alpha": 0.0001}]],
             "include_start_end_transitions": false,
             "label_namespace": "sentiment_labels",
             "label_encoding": "BIOUL",
@@ -69,7 +71,7 @@
             "verbose_metrics": false,
             "task_encoder": {
                 "type": "lstm",
-                "input_size": 400,
+                "input_size": 500,
                 "hidden_size": 50,
                 "bidirectional": true,
                 "num_layers": 1
@@ -77,7 +79,8 @@
         },
         "trainer": {
             "optimizer": {
-                "type": "adam"
+                "type": "adam",
+                "lr": 0.0028
             },
             "validation_metric": "+f1-measure-overall",
             "num_epochs": 150,
@@ -99,7 +102,7 @@
         "shared_encoder": {
             "type": "lstm",
             "input_size": 300,
-            "hidden_size": 50,
+            "hidden_size": 100,
             "bidirectional": true,
             "num_layers": 1
         },

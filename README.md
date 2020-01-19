@@ -278,7 +278,7 @@ allentune plot \
     --subplot 1 1 \
     --figsize 10 10 \
     --result-file logs/multi_task_laptop_conan_search/results.jsonl \
-    --output-file tuning/multi_task_tuning_laptop_performance.pdf \
+    --output-file resources/tuning/multi_task_tuning_laptop_performance.pdf \
     --performance-metric-field best_validation_f1-measure-overall \
     --performance-metric F1-Span
 ```

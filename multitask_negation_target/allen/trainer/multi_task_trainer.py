@@ -102,7 +102,7 @@ class MultiTaskTrainer(TrainerBase):
                 task_text_embedder = TextFieldEmbedder.from_params(params=task_text_embedder_params, 
                                                                    vocab=vocab)
 
-            if task_model_params.pop('type') != 'shared_crf':
+            if task_model_params.pop('type') != 'shared_crf_tagger':
                 raise ConfigurationError('The SharedCRF tagger model is the '
                                          f'only supported model. Error task {task}')
             task_models[task] = SharedCrfTagger.from_params(vocab=vocab, 

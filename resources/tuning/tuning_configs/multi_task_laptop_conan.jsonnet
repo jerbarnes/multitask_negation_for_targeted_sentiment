@@ -1,12 +1,10 @@
 local SEED = std.parseInt(std.extVar("SEED"));
-local GLOVE_TRAINABLE = std.parseInt(std.extVar("GLOVE_TRAINABLE"))== 1;
 local LEARNING_RATE = std.extVar("LEARNING_RATE");
 local CUDA_DEVICE = std.parseInt(std.extVar("CUDA_DEVICE"));
 local SHARED_HIDDEN_SIZE = std.parseInt(std.extVar("SHARED_HIDDEN_SIZE"));
 # Multiple by 2 because of bi-directional LSTM
 local TASK_ENCODER_INPUT_SIZE = SHARED_HIDDEN_SIZE * 2 + 300;
-local SENTIMENT_DROPOUT = std.extVar("SENTIMENT_DROPOUT");
-local NEGATION_DROPOUT = std.extVar("NEGATION_DROPOUT");
+local DROPOUT = std.extVar("DROPOUT");
 
 {
     "numpy_seed": SEED,
@@ -27,10 +25,11 @@ local NEGATION_DROPOUT = std.extVar("NEGATION_DROPOUT");
         "validation_data_path": "/home/andrew/Desktop/multitask_negation_for_targeted_sentiment/data/auxiliary_tasks/en/conandoyle_dev.conllu",
         "test_data_path": "/home/andrew/Desktop/multitask_negation_for_targeted_sentiment/data/auxiliary_tasks/en/conandoyle_test.conllu",
         "model": {
-            "type": "shared_crf",
+            "type": "shared_crf_tagger",
             "constrain_crf_decoding": true,
+            "regularizer": [[".*", {"type": "l2", "alpha": 0.0001}]],
             "calculate_span_f1": true,
-            "dropout": NEGATION_DROPOUT,
+            "dropout": DROPOUT,
             "include_start_end_transitions": false,
             "label_namespace": "negation_labels",
             "label_encoding": "BIO",
@@ -73,10 +72,11 @@ local NEGATION_DROPOUT = std.extVar("NEGATION_DROPOUT");
         "validation_data_path": "/home/andrew/Desktop/multitask_negation_for_targeted_sentiment/data/main_task/en/laptop/dev.conll",
         "test_data_path": "/home/andrew/Desktop/multitask_negation_for_targeted_sentiment/data/main_task/en/laptop/test.conll",
         "model": {
-            "type": "shared_crf",
+            "type": "shared_crf_tagger",
             "constrain_crf_decoding": true,
             "calculate_span_f1": true,
-            "dropout": SENTIMENT_DROPOUT,
+            "dropout": DROPOUT,
+            "regularizer": [[".*", {"type": "l2", "alpha": 0.0001}]],
             "include_start_end_transitions": false,
             "label_namespace": "sentiment_labels",
             "label_encoding": "BIOUL",
@@ -110,7 +110,7 @@ local NEGATION_DROPOUT = std.extVar("NEGATION_DROPOUT");
                 "type": "embedding",
                 "embedding_dim": 300,
                 "pretrained_file": "/home/andrew/Desktop/multitask_negation_for_targeted_sentiment/resources/embeddings/en/glove.840B.300d.txt",
-                "trainable": GLOVE_TRAINABLE
+                "trainable": false
             }
         },
         "shared_encoder": {

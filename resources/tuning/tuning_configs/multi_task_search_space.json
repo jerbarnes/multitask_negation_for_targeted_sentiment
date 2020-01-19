@@ -6,28 +6,14 @@
             100000
         ]
     },
-    "GLOVE_TRAINABLE": {
-        "sampling strategy": "choice",
-        "choices": [
-            0,
-            1
-        ]
-    },
     "SHARED_HIDDEN_SIZE": {
         "sampling strategy": "integer",
         "bounds": [
             30,
-            150
+            110
         ]
     },
-    "SENTIMENT_DROPOUT": {
-        "sampling strategy": "uniform",
-        "bounds": [
-            0,
-            0.5
-        ]
-    },
-    "NEGATION_DROPOUT": {
+    "DROPOUT": {
         "sampling strategy": "uniform",
         "bounds": [
             0,
@@ -37,8 +23,8 @@
     "LEARNING_RATE": {
         "sampling strategy": "loguniform",
         "bounds": [
-            1e-6,
-            1e-1
+            1e-4,
+            1e-2
         ]
     },
     "CUDA_DEVICE": 0
