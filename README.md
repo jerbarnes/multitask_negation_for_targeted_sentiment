@@ -189,8 +189,7 @@ The multi-task model found the following as the best parameters from run number 
 1. lr = 0.0028
 2. shared/first layer hidden size = 100
 3. dropout = 0.5
-Of which the plot of the F1-Span metric on the validation set against the number of runs can be seen below:
-![alt text](./resources/tuning/multi_task_tuning_laptop_performance.pdf "Multi-Task learning validation metric against number of runs")
+Of which the plot of the F1-Span metric on the validation set against the number of runs can be seen [here](./resources/tuning/multi_task_tuning_laptop_performance.pdf).
 
 #### Single Task Learning Tuning
 
@@ -225,8 +224,7 @@ The single-task model found the following as the best parameters from run number
 1. lr = 0.0015
 2. shared/first layer hidden size = 60
 3. dropout = 0.5
-Of which the plot of the F1-Span metric on the validation set against the number of runs can be seen below:
-![alt text](./resources/tuning/single_task_tuning_laptop_performance.pdf "Multi-Task learning validation metric against number of runs")
+Of which the plot of the F1-Span metric on the validation set against the number of runs can be seen [here](./resources/tuning/single_task_tuning_laptop_performance.pdf).
 
 ### Example of how to run the Single-Task System
 You can use the allennlp train command here:
