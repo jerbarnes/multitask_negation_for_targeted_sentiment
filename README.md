@@ -16,7 +16,7 @@ All embeddings mentioned here have to be downloaded into their respective direct
 Here we used the [300D 840B token GloVe embedding](https://nlp.stanford.edu/projects/glove/) of which we assume this can be found at the following path `./resources/embeddings/en/glove.840B.300d.txt`.
 
 ### Model Configurations
-All the model configurations can be found within `./resources/model_configs`
+All the model configurations used in the main experiments can be found within `./resources/model_configs`.
 
 ## Datasets
 # Sentiment
@@ -145,117 +145,20 @@ To generate the data for this table above run `./scripts/negation_split_statisti
 
 To generate the data for this table above run `./scripts/negation_split_statistics.sh conandoyle negation`
 
-## Baselines
-### Negation 
-#### Conan Doyle
-Run: `python scripts/negation_baseline.py ./resources/model_configs/negation_conan_doyle_baseline.jsonnet`
+## Experiments
+The experiments are performed to find out if using negation helps targeted sentiment analysis. The multi-task model will be a Bi-LSTM with 2 layers that feeds into a CRF, where the first layer is a shared layer between the tasks, the second and CRF layer will be task specific. The single task model will be the same Bi-LSTM with 2 layers that feeds into a CRF. Each model will also have a skip connection from the embedding layer to the second layer of the Bi-LSTM.
 
-Generates:
-``` python
-Best epoch 24
-Best validation span f1 0.8431137724550396
-Test span f1 result 0.847611827141724
-```
+Before running any of the experiments for the single and multi task models we perform a hyperparameter search for both models.
 
-With a Bi-LSTM with 2 layers:
-``` python
-Best epoch 14
-Best validation span f1 0.8382526564344245
-Test span f1 result 0.8369646882043076
-```
+### Hyperparameter tuning
+The tuning is performed on the smallest datasets which are the Laptop dataset for the Sentiment/Main task and the Conan Doyle for the Negation/Auxiliary task when tuning the multi and single task models. The parameters we tune for are the following:
+1. Dropout rate - between 0 and 0.5
+2. Hidden size for shared/first layer of the Bi-LSTM  - between 30 and 110
+3. Starting learning rate for adam - between 0.01 (1e-2) and 0.0001 (1e-4)
 
-Bi-LSTM with 2 layers not training the embedding
-``` python
-Best epoch 50
-Best validation span f1 0.847980997624653
-Test span f1 result 0.8593155893535621
-```
+The tuning is performed separately for the single and multi-task models. The single task model will only be tuned for the sentiment task and not the negation. Furthermore we tune the models by randomly sampling the parameters stated above within the range specified changining the random seed each time, of which these parameters are sampled 30 times in total for each model. From the 30 model runs the parameters from the best run based on the F1-Span measure from the validation set are selected for all of the experiments for that model.
 
-#### SFU
-Run: `python scripts/negation_baseline.py ./resources/model_configs/negation_sfu_baseline.jsonnet`
-
-Bi-LSTM with 2 layers not training the embedding
-``` python
-Best epoch 17
-Best validation span f1 0.6978417266186547
-Test span f1 result 0.6840277777777279
-```
-
-### Targeted Sentiment
-If we base the model roughly on the work of [Li et al. 2019](https://www.aaai.org/ojs/index.php/AAAI/article/view/4643) which is a Bi-LSTM with CRF tagger but the Bi-LSTM contains two layers.
-On the laptop
-``` python
-Best epoch 20
-Best validation span f1 0.5855513307984289
-Test span f1 result 0.5526315789473184
-```
-
-When the Bi-LSTM only contains one layer:
-``` python
-Best epoch 13
-Best validation span f1 0.5317460317459816
-Test span f1 result 0.4922826969942635
-```
-
-Bi-LSTM with 2 layers but not training the embeddings
-``` python
-Best epoch 45
-Best validation span f1 0.581967213114704
-Test span f1 result 0.561551433389495
-```
-Second run of the above:
-```
-Best epoch 21
-Best validation span f1 0.5594989561586139
-Test span f1 result 0.5358361774743531
-```
-Bi LSTM with 2 layers where the second layer has a skip connection from the word embedding
-```
-Best epoch 53
-Best validation span f1 0.5968379446639813
-Test span f1 result 0.5704918032786386
-```
-Second run of the above
-```
-Best epoch 47
-Best validation span f1 0.593625498007918
-Test span f1 result 0.5468227424748665
-```
-
-To generate the above results run: `python scripts/targeted_sentiment_baseline.py ./resources/model_configs/targeted_sentiment_laptop_baseline.jsonnet`
-
-On Restaurant
-
-Bi-LSTM with 2 layers but not training the embeddings
-``` python
-Best epoch 30
-Best validation span f1 0.6232558139534383
-Test span f1 result 0.6484342379957747
-```
-Bi-LSTM with 2 layers but not training the embeddings, skip connections between layer 1 and 2
-```
-Best epoch 39
-Best validation span f1 0.6419161676646206
-Test span f1 result 0.663265306122399
-```
-Run 2
-```
-Best epoch 22
-Best validation span f1 0.6265356265355764
-Test span f1 result 0.6460081773186503
-```
-
-To generate the above results run: `python scripts/targeted_sentiment_baseline.py ./resources/model_configs/targeted_sentiment_restaurant_baseline.jsonnet`
-
-### Multi Task Learning
-In the Multi task learning setup each epoch involves first training the negation model for one epoch and then training the sentiment model for an epoch. This is repeated until early stopping is applied based on the sentiment model score. NOTE that the multi task framework can support any number of additional task.
-
-#### Hyperparameter tuning
-Before running any of the experiments we first perform some hyperparameter tuning. The tuning is performed on the smallest datasets of both tasks which are the Laptop dataset for the Sentiment/Main task and the Conan Doyle for the Negation/Auxiliary task. The parameters we tune for are the following:
-1. Main/Auxiliary dropout rate - between 0 and 0.5
-2. Hidden size for shared encoder - between 30 and 150
-3. If the word vectors should be trained - Yes or No
-4. Starting learning rate for adam - between 0.1 (1e-1) and 0.000001 (1e-6)
+#### Multi Task Learning Tuning
 
 Run the following:
 ``` bash
@@ -282,35 +185,59 @@ allentune plot \
     --performance-metric-field best_validation_f1-measure-overall \
     --performance-metric F1-Span
 ```
+The multi-task model found the following as the best parameters from run number 7 with a validation F1-Span score of 61.23%:
+1. lr = 0.0028
+2. shared/first layer hidden size = 100
+3. dropout = 0.5
+Of which the plot of the F1-Span metric on the validation set against the number of runs can be seen below:
+![alt text](./resources/tuning/multi_task_tuning_laptop_performance.pdf "Multi-Task learning validation metric against number of runs")
 
-#### Example of how to run the Multi-Task System
+#### Single Task Learning Tuning
+
+Single Task Laptop
+Run the following:
+``` bash
+allentune search \
+    --experiment-name single_task_laptop_search \
+    --num-cpus 5 \
+    --num-gpus 1 \
+    --cpus-per-trial 5 \
+    --gpus-per-trial 1 \
+    --search-space resources/tuning/tuning_configs/single_task_search_space.json \
+    --num-samples 30 \
+    --base-config resources/tuning/tuning_configs/single_task_laptop.jsonnet \
+    --include-package multitask_negation_target
+allentune report \
+    --log-dir logs/single_task_laptop_search/ \
+    --performance-metric best_validation_f1-measure-overall \
+    --model single-task
+allentune plot \
+    --data-name Laptop \
+    --subplot 1 1 \
+    --figsize 10 10 \
+    --result-file logs/single_task_laptop_search/results.jsonl \
+    --output-file resources/tuning/single_task_tuning_laptop_performance.pdf \
+    --performance-metric-field best_validation_f1-measure-overall \
+    --performance-metric F1-Span
+```
+
+The single-task model found the following as the best parameters from run number 7 with a validation F1-Span score of 61.56%:
+1. lr = 0.0015
+2. shared/first layer hidden size = 60
+3. dropout = 0.5
+Of which the plot of the F1-Span metric on the validation set against the number of runs can be seen below:
+![alt text](./resources/tuning/single_task_tuning_laptop_performance.pdf "Multi-Task learning validation metric against number of runs")
+
+### Example of how to run the Single-Task System
+You can use the allennlp train command here:
+```
+allennlp train resources/model_configs/targeted_sentiment_laptop_baseline.jsonnet -s /tmp/any --include-package multitask_negation_target
+```
+
+### Example of how to run the Multi-Task System
 You can use the allennlp train command here:
 ```
 allennlp train resources/model_configs/multi_task_trainer.jsonnet -s /tmp/any --include-package multitask_negation_target
-```
-
-## Cross domain (Ignore this)
-Idea on the cross domain would be to train the negation model and then apply it to some texts within the target domain and then train on those texts, similar type of idea to Semi-Supervised Learning
-
-Train on laptop with negation as auxilary and then test on Restaurant
-`python scripts/multi_task_baseline.py ./resources/model_configs/transfer_conan_laptop_restaurant_shared_baseline.jsonnet`
-```
-Best epoch 51
-Negation Results
-Validation F1 measure: 0.8419782870928328
-Test F1 measure: 0.849230769230719
-Sentiment Results
-Validation F1 measure: 0.6309278350514963
-Test F1 measure: 0.1962209302325301
-```
-
-
-Train on laptop and test on restaurant
-`python scripts/targeted_sentiment_baseline.py ./resources/model_configs/targeted_sentiment_laptop_restaurant_baseline.jsonnet`
-```
-Best epoch 34
-Best validation span f1 0.581443298969022
-Test span f1 result 0.19215545160126632
 ```
 
 ## Requirements
