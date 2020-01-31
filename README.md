@@ -240,6 +240,51 @@ You can use the allennlp train command here:
 allennlp train resources/model_configs/multi_task_trainer.jsonnet -s /tmp/any --include-package multitask_negation_target
 ```
 
+### Single task models
+In all of the experiments the python script has the following argument signature:
+1. Model config file path
+2. Main task test data file path
+3. Main task development/validation data file path
+4. Folder to save the results too. This folder will contain two files a `test.conll` and `dev.conll` each of these files will contain the predicted results for the associated data split. The files will have the following structure: `Token#Gold Label#Predicted Label 1#Predicted Label 2`. Where the `#` indicates whitespace and the number of predicted labels is determined by the number of times the model has been ran.
+5. Number of times to run the model to overcome the random seed problem. In all of the experiments below they are ran 5 times.
+
+#### Targeted Sentiment
+
+For the laptop dataset:
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/stl/en/laptop.jsonnet ./data/main_task/en/laptop/test.conll ./data/main_task/en/laptop/dev.conll ./data/results/en/stl/laptop 5
+```
+For the Restaurant dataset:
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/stl/en/restaurant.jsonnet ./data/main_task/en/restaurant/test.conll ./data/main_task/en/restaurant/dev.conll ./data/results/en/stl/restaurant 5
+```
+
+### Multi task models
+#### Conan Doyle
+For the laptop dataset:
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/conan_doyle/laptop.jsonnet ./data/main_task/en/laptop/test.conll ./data/main_task/en/laptop/dev.conll ./data/results/en/mtl/conan_doyle/laptop 5
+```
+For the Restaurant dataset:
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/conan_doyle/restaurant.jsonnet ./data/main_task/en/restaurant/test.conll ./data/main_task/en/restaurant/dev.conll ./data/results/en/mtl/conan_doyle/restaurant 5
+```
+
+#### SFU
+For the laptop dataset:
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu/laptop.jsonnet ./data/main_task/en/laptop/test.conll ./data/main_task/en/laptop/dev.conll ./data/results/en/mtl/sfu/laptop 5
+```
+For the Restaurant dataset:
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu/restaurant.jsonnet ./data/main_task/en/restaurant/test.conll ./data/main_task/en/restaurant/dev.conll ./data/results/en/mtl/sfu/restaurant 5
+```
+
+To run all of the experiments use the following script:
+```
+./run_all.sh
+```
+
 ## Requirements
 
 1. Python >= 3.6
