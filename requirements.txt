@@ -1,3 +1,4 @@
 allennlp
 pylint
 pytest
+-e git+git://github.com/allenai/allentune@master#egg=allentune

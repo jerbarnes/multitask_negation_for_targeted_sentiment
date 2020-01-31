@@ -16,11 +16,16 @@ All embeddings mentioned here have to be downloaded into their respective direct
 Here we used the [300D 840B token GloVe embedding](https://nlp.stanford.edu/projects/glove/) of which we assume this can be found at the following path `./resources/embeddings/en/glove.840B.300d.txt`.
 
 ### Model Configurations
-All the model configurations can be found within `./resources/model_configs`
+All the model configurations used in the main experiments can be found within `./resources/model_configs`.
 
 ## Datasets
 # Sentiment
 1. SemEval 2016 Aspect-based datasets (EN, ES)
+
+The sentiment datasets need to be downloaded and converted from BIOSE to BIOUL format. The format change is only label differences e.g. S==U and L==E. The sentiment datasets are from [Li et al. 2019](https://www.aaai.org/ojs/index.php/AAAI/article/view/4643) and they are the SemEval 2014 Laptop dataset and the SemEval 2014, 2015, and 2016 combined Restaurant dataset. The downloaded datasets will go into the following folders `./data/main_task/en/laptop` and `./data/main_task/en/restaurant`. To download run the following script:
+``` bash
+python targeted_sentiment_downloader_converter.py
+```
 
 # Negation
 1. EN - [ConanDoyleNeg](https://www.aclweb.org/anthology/S12-1035.pdf), [SFU Review Corpus](https://www.aclweb.org/anthology/L12-1298/)
@@ -140,293 +145,142 @@ To generate the data for this table above run `./scripts/negation_split_statisti
 
 To generate the data for this table above run `./scripts/negation_split_statistics.sh conandoyle negation`
 
-## Baselines
-### Negation 
+## Experiments
+The experiments are performed to find out if using negation helps targeted sentiment analysis. The multi-task model will be a Bi-LSTM with 2 layers that feeds into a CRF, where the first layer is a shared layer between the tasks, the second and CRF layer will be task specific. The single task model will be the same Bi-LSTM with 2 layers that feeds into a CRF. Each model will also have a skip connection from the embedding layer to the second layer of the Bi-LSTM.
+
+Before running any of the experiments for the single and multi task models we perform a hyperparameter search for both models.
+
+### Hyperparameter tuning
+The tuning is performed on the smallest datasets which are the Laptop dataset for the Sentiment/Main task and the Conan Doyle for the Negation/Auxiliary task when tuning the multi and single task models. The parameters we tune for are the following:
+1. Dropout rate - between 0 and 0.5
+2. Hidden size for shared/first layer of the Bi-LSTM  - between 30 and 110
+3. Starting learning rate for adam - between 0.01 (1e-2) and 0.0001 (1e-4)
+
+The tuning is performed separately for the single and multi-task models. The single task model will only be tuned for the sentiment task and not the negation. Furthermore we tune the models by randomly sampling the parameters stated above within the range specified changining the random seed each time, of which these parameters are sampled 30 times in total for each model. From the 30 model runs the parameters from the best run based on the F1-Span measure from the validation set are selected for all of the experiments for that model.
+
+#### Multi Task Learning Tuning
+
+Run the following:
+``` bash
+allentune search \
+    --experiment-name multi_task_laptop_conan_search \
+    --num-cpus 5 \
+    --num-gpus 1 \
+    --cpus-per-trial 5 \
+    --gpus-per-trial 1 \
+    --search-space resources/tuning/tuning_configs/multi_task_search_space.json \
+    --num-samples 30 \
+    --base-config resources/tuning/tuning_configs/multi_task_laptop_conan.jsonnet \
+    --include-package multitask_negation_target
+allentune report \
+    --log-dir logs/multi_task_laptop_conan_search/ \
+    --performance-metric best_validation_f1-measure-overall \
+    --model multi-task
+allentune plot \
+    --data-name Laptop \
+    --subplot 1 1 \
+    --figsize 10 10 \
+    --result-file logs/multi_task_laptop_conan_search/results.jsonl \
+    --output-file resources/tuning/multi_task_tuning_laptop_performance.pdf \
+    --performance-metric-field best_validation_f1-measure-overall \
+    --performance-metric F1-Span
+```
+The multi-task model found the following as the best parameters from run number 7 with a validation F1-Span score of 61.23%:
+1. lr = 0.0028
+2. shared/first layer hidden size = 100
+3. dropout = 0.5
+Of which the plot of the F1-Span metric on the validation set against the number of runs can be seen [here](./resources/tuning/multi_task_tuning_laptop_performance.pdf).
+
+#### Single Task Learning Tuning
+
+Single Task Laptop
+Run the following:
+``` bash
+allentune search \
+    --experiment-name single_task_laptop_search \
+    --num-cpus 5 \
+    --num-gpus 1 \
+    --cpus-per-trial 5 \
+    --gpus-per-trial 1 \
+    --search-space resources/tuning/tuning_configs/single_task_search_space.json \
+    --num-samples 30 \
+    --base-config resources/tuning/tuning_configs/single_task_laptop.jsonnet \
+    --include-package multitask_negation_target
+allentune report \
+    --log-dir logs/single_task_laptop_search/ \
+    --performance-metric best_validation_f1-measure-overall \
+    --model single-task
+allentune plot \
+    --data-name Laptop \
+    --subplot 1 1 \
+    --figsize 10 10 \
+    --result-file logs/single_task_laptop_search/results.jsonl \
+    --output-file resources/tuning/single_task_tuning_laptop_performance.pdf \
+    --performance-metric-field best_validation_f1-measure-overall \
+    --performance-metric F1-Span
+```
+
+The single-task model found the following as the best parameters from run number 7 with a validation F1-Span score of 61.56%:
+1. lr = 0.0015
+2. shared/first layer hidden size = 60
+3. dropout = 0.5
+Of which the plot of the F1-Span metric on the validation set against the number of runs can be seen [here](./resources/tuning/single_task_tuning_laptop_performance.pdf).
+
+### Example of how to run the Single-Task System
+You can use the allennlp train command here:
+```
+allennlp train resources/model_configs/targeted_sentiment_laptop_baseline.jsonnet -s /tmp/any --include-package multitask_negation_target
+```
+
+### Example of how to run the Multi-Task System
+You can use the allennlp train command here:
+```
+allennlp train resources/model_configs/multi_task_trainer.jsonnet -s /tmp/any --include-package multitask_negation_target
+```
+
+### Single task models
+In all of the experiments the python script has the following argument signature:
+1. Model config file path
+2. Main task test data file path
+3. Main task development/validation data file path
+4. Folder to save the results too. This folder will contain two files a `test.conll` and `dev.conll` each of these files will contain the predicted results for the associated data split. The files will have the following structure: `Token#Gold Label#Predicted Label 1#Predicted Label 2`. Where the `#` indicates whitespace and the number of predicted labels is determined by the number of times the model has been ran.
+5. Number of times to run the model to overcome the random seed problem. In all of the experiments below they are ran 5 times.
+
+#### Targeted Sentiment
+
+For the laptop dataset:
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/stl/en/laptop.jsonnet ./data/main_task/en/laptop/test.conll ./data/main_task/en/laptop/dev.conll ./data/results/en/stl/laptop 5
+```
+For the Restaurant dataset:
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/stl/en/restaurant.jsonnet ./data/main_task/en/restaurant/test.conll ./data/main_task/en/restaurant/dev.conll ./data/results/en/stl/restaurant 5
+```
+
+### Multi task models
 #### Conan Doyle
-Run: `python scripts/negation_baseline.py ./resources/model_configs/negation_conan_doyle_baseline.jsonnet`
-
-Generates:
-``` python
-Best epoch 24
-Best validation span f1 0.8431137724550396
-Test span f1 result 0.847611827141724
+For the laptop dataset:
 ```
-
-With a Bi-LSTM with 2 layers:
-``` python
-Best epoch 14
-Best validation span f1 0.8382526564344245
-Test span f1 result 0.8369646882043076
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/conan_doyle/laptop.jsonnet ./data/main_task/en/laptop/test.conll ./data/main_task/en/laptop/dev.conll ./data/results/en/mtl/conan_doyle/laptop 5
 ```
-
-Bi-LSTM with 2 layers not training the embedding
-``` python
-Best epoch 50
-Best validation span f1 0.847980997624653
-Test span f1 result 0.8593155893535621
+For the Restaurant dataset:
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/conan_doyle/restaurant.jsonnet ./data/main_task/en/restaurant/test.conll ./data/main_task/en/restaurant/dev.conll ./data/results/en/mtl/conan_doyle/restaurant 5
 ```
 
 #### SFU
-Run: `python scripts/negation_baseline.py ./resources/model_configs/negation_sfu_baseline.jsonnet`
-
-Bi-LSTM with 2 layers not training the embedding
-``` python
-Best epoch 17
-Best validation span f1 0.6978417266186547
-Test span f1 result 0.6840277777777279
+For the laptop dataset:
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu/laptop.jsonnet ./data/main_task/en/laptop/test.conll ./data/main_task/en/laptop/dev.conll ./data/results/en/mtl/sfu/laptop 5
+```
+For the Restaurant dataset:
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu/restaurant.jsonnet ./data/main_task/en/restaurant/test.conll ./data/main_task/en/restaurant/dev.conll ./data/results/en/mtl/sfu/restaurant 5
 ```
 
-### Targeted Sentiment
-If we base the model roughly on the work of [Li et al. 2019](https://www.aaai.org/ojs/index.php/AAAI/article/view/4643) which is a Bi-LSTM with CRF tagger but the Bi-LSTM contains two layers.
-On the laptop
-``` python
-Best epoch 20
-Best validation span f1 0.5855513307984289
-Test span f1 result 0.5526315789473184
+To run all of the experiments use the following script:
 ```
-
-When the Bi-LSTM only contains one layer:
-``` python
-Best epoch 13
-Best validation span f1 0.5317460317459816
-Test span f1 result 0.4922826969942635
-```
-
-Bi-LSTM with 2 layers but not training the embeddings
-``` python
-Best epoch 45
-Best validation span f1 0.581967213114704
-Test span f1 result 0.561551433389495
-```
-Second run of the above:
-```
-Best epoch 21
-Best validation span f1 0.5594989561586139
-Test span f1 result 0.5358361774743531
-```
-Bi LSTM with 2 layers where the second layer has a skip connection from the word embedding
-```
-Best epoch 53
-Best validation span f1 0.5968379446639813
-Test span f1 result 0.5704918032786386
-```
-Second run of the above
-```
-Best epoch 47
-Best validation span f1 0.593625498007918
-Test span f1 result 0.5468227424748665
-```
-
-To generate the above results run: `python scripts/targeted_sentiment_baseline.py ./resources/model_configs/targeted_sentiment_laptop_baseline.jsonnet`
-
-On Restaurant
-
-Bi-LSTM with 2 layers but not training the embeddings
-``` python
-Best epoch 30
-Best validation span f1 0.6232558139534383
-Test span f1 result 0.6484342379957747
-```
-Bi-LSTM with 2 layers but not training the embeddings, skip connections between layer 1 and 2
-```
-Best epoch 39
-Best validation span f1 0.6419161676646206
-Test span f1 result 0.663265306122399
-```
-Run 2
-```
-Best epoch 22
-Best validation span f1 0.6265356265355764
-Test span f1 result 0.6460081773186503
-```
-
-To generate the above results run: `python scripts/targeted_sentiment_baseline.py ./resources/model_configs/targeted_sentiment_restaurant_baseline.jsonnet`
-
-### Transfer Learning
-In transfer learning there are no task specific Bi-LSTM layers which might be a good idea to add.
-
-First train negation and then targeted sentiment where the transfer is the Bi-LSTM only embedding not trainable:
-Conan Doyle and Laptop
-``` python
-Negation
-Best epoch 34
-Best validation span f1 0.8519855595667369
-Test span f1 result 0.8666666666666166
-
-Sentiment
-Best epoch 22
-Best validation span f1 0.577437858508554
-Test span f1 result 0.5481002425221811
-```
-
-Using both bi-lstm and embedding
-``` python
-Negation
-Best epoch 18
-Best validation span f1 0.8349056603773083
-Test span f1 result 0.8355957767721972
-
-Sentiment
-Best epoch 7
-Best validation span f1 0.5309381237524449
-Test span f1 result 0.4885993485341519
-```
-
-To generate the above run: `python scripts/transfer_baseline.py ./resources/model_configs/transfer_conan_laptop_baseline.jsonnet`
-
-Conan Doyle and Restaurant
-
-Bi-LSTM 2 layers and not training embedding
-``` python
-Negation
-Best epoch 43
-Best validation span f1 0.8446026097271147
-Test span f1 result 0.8497330282226806
-
-Sentiment
-Best epoch 11
-Best validation span f1 0.6014319809068711
-Test span f1 result 0.6257100778455214
-```
-
-To generate the above run: `python scripts/transfer_baseline.py ./resources/model_configs/transfer_conan_restaurant_baseline.jsonnet`
-
-SFU and Laptop
-
-Bi-LSTM 2 layers not training embedding
-``` python
-Negation
-Best epoch 18
-Best validation span f1 0.6886446886446385
-Test span f1 result 0.6768189509305765
-
-Sentiment
-Best epoch 12
-Best validation span f1 0.5346534653464844
-Test span f1 result 0.5078318219290514
-```
-
-To generate the above run: `python scripts/transfer_baseline.py ./resources/model_configs/transfer_sfu_laptop_baseline.jsonnet`
-
-### Multi Task Learning
-In the Multi task learning setup each epoch involves first training the negation model for one epoch and then training the sentiment model for an epoch. This is repeated until early stopping is applied based on the sentiment model score.
-
-Conan Doyle and Laptop
-``` python
-Best epoch 21
-Negation Results
-Validation F1 measure: 0.8252080856123161
-Test F1 measure: 0.8474576271185941
-
-Sentiment Results
-Validation F1 measure: 0.5571142284568636
-Test F1 measure: 0.5413533834585967
-```
-
-To generate the above run: `python scripts/multi_task_baseline.py ./resources/model_configs/transfer_conan_laptop_baseline.jsonnet`
-
-
-`python scripts/transfer_baseline.py ./resources/model_configs/transfer_conan_laptop_shared_baseline.jsonnet`
-1 layer Bi-LSTM shared, 1 layer Bi-LSTM task specific
-```
-Negation
-Best epoch 22
-Best validation span f1 0.8466111771699856
-Test span f1 result 0.8439393939393438
-
-Sentiment
-Best epoch 19
-Best validation span f1 0.5461847389557731
-Test span f1 result 0.5063505503809832
-```
-1 layer Bi-LSTM shared, 2 layer Bi-LSTM task specific
-```
-Negation
-Best epoch 27
-Best validation span f1 0.8485576923076421
-Test span f1 result 0.849805447470767
-
-Sentiment
-Best epoch 16
-Best validation span f1 0.5606361829025344
-Test span f1 result 0.5637254901960285
-```
-
-
-`python scripts/multi_task_baseline.py ./resources/model_configs/transfer_conan_laptop_shared_baseline.jsonnet`
-1 layer Bi-LSTM shared, 2 layer Bi-LSTM task specific
-```
-Best epoch 12
-Negation Results
-Validation F1 measure: 0.8533653846153345
-Test F1 measure: 0.8604471858133655
-Sentiment Results
-Validation F1 measure: 0.5595238095237594
-Test F1 measure: 0.503728251864076
-```
-
-1 layer Bi-LSTM shared, 1 layer Bi-LSTM task specific
-```
-Best epoch 37
-Negation Results
-Validation F1 measure: 0.8399999999999498
-Test F1 measure: 0.8549618320610186
-Sentiment Results
-Validation F1 measure: 0.5875251509053824
-Test F1 measure: 0.5714285714285215
-```
-Second run of the above
-```
-Best epoch 68
-Negation Results
-Validation F1 measure: 0.8481927710842873
-Test F1 measure: 0.8597986057319406
-Sentiment Results
-Validation F1 measure: 0.6012024048095691
-Test F1 measure: 0.5875613747953674
-```
-
-1 layer Bi-LSTM shared, 1 layer Bi-LSTM task specific (only for sentiment, negation has no task specific Bi-LSTM)
-```
-Best epoch 19
-Negation Results
-Validation F1 measure: 0.8087167070217415
-Test F1 measure: 0.855813953488322
-Sentiment Results
-Validation F1 measure: 0.570841889116993
-Test F1 measure: 0.5091225021719747
-```
-
-Restaurant and Conan Doyle
-`python scripts/multi_task_baseline.py resources/model_configs/transfer_conan_restaurant_shared_baseline.jsonnet`
-```
-Best epoch 33
-Negation Results
-Validation F1 measure: 0.835322195704007
-Test F1 measure: 0.8604471858133655
-Sentiment Results
-Validation F1 measure: 0.6260454002388985
-Test F1 measure: 0.6604611804526686
-```
-Second Run
-```
-Best epoch 21
-Negation Results
-Validation F1 measure: 0.8602409638553716
-Test F1 measure: 0.8707165109033768
-Sentiment Results
-Validation F1 measure: 0.6263345195729035
-Test F1 measure: 0.6414700354979664
-```
-Third Run
-```
-Best epoch 30
-Negation Results
-Validation F1 measure: 0.8341346153845652
-Test F1 measure: 0.8558282208588457
-Sentiment Results
-Validation F1 measure: 0.6210153482880255
-Test F1 measure: 0.6539188905231693
+./run_all.sh
 ```
 
 ## Requirements

@@ -83,8 +83,7 @@ class TargetedSentimentDatasetReader(DatasetReader):
         sequence = TextField(tokens, self._token_indexers)
         instance_fields: Dict[str, Field] = {"tokens": sequence}
         instance_fields["metadata"] = MetadataField({"words": [x.text for x in tokens]})
-
-
-        instance_fields["tags"] = SequenceLabelField(sentiment_tags, sequence, 
-                                                     self.label_namespace)
+        if sentiment_tags is not None:
+            instance_fields["tags"] = SequenceLabelField(sentiment_tags, sequence, 
+                                                         self.label_namespace)
         return Instance(instance_fields)

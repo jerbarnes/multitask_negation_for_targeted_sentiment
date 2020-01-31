@@ -1,4 +1,4 @@
-from typing import Dict, Any, Tuple
+from typing import Dict, Any, Tuple, List
 import os
 import logging
 
@@ -70,14 +70,16 @@ def multi_task_checkpoint_saver(trainer: Trainer, best_so_far: bool, epoch: int)
             model_state=trainer.model.state_dict(),
             epoch=epoch,
             training_states=training_states,
-            is_best_so_far=trainer._metric_tracker.is_best_so_far())
+            is_best_so_far=best_so_far)
 
     # Restore the original values for parameters so that training will not be affected.
     if trainer._moving_average is not None:
         trainer._moving_average.restore()
 
 
-def multi_task_training(main_trainer: Trainer, aux_trainer: Trainer) -> Dict[str, Any]:
+def multi_task_training(main_trainer_name: Tuple[Trainer, str], 
+                        aux_trainers_names: Tuple[List[Trainer], List[str]]
+                        ) -> Dict[str, Any]:
     '''
     Performs as many epochs as the main task requires and if early stopping 
     is set then it is defined by the main task. The way that multi task is run
@@ -86,34 +88,43 @@ def multi_task_training(main_trainer: Trainer, aux_trainer: Trainer) -> Dict[str
     needs to happen and if so then no more training else it goes for another 
     epoch on auxiliary then main task.
 
-    :returns: Metrics for both auxiliary and main tasks
+    :param main_trainer_name: A tuple of 1. Trainer and 2. name of task.
+    :param aux_trainers_names: A tuple of 1. A list of auxiliary trainers and 
+                               2. A list of names associated to those trainers.
+    :returns: Metrics for both auxiliary and main tasks 
+                
     '''
+    main_trainer = main_trainer_name[0]
+    main_task_name = main_trainer_name[1]
     training_util.enable_gradient_clipping(main_trainer.model, 
                                            main_trainer._grad_clipping)
-    training_util.enable_gradient_clipping(aux_trainer.model, 
-                                           aux_trainer._grad_clipping)
+    for aux_trainer in aux_trainers_names[0]:
+        training_util.enable_gradient_clipping(aux_trainer.model, 
+                                               aux_trainer._grad_clipping)
     
     all_metrics: Dict[str, Any] = {}
+    # need to deal with the metrics the format could be `split name, auxiliary or not, task name,`
 
     for epoch in range(main_trainer._num_epochs):
-        aux_train_metrics, aux_val_metrics = train_one_epoch(aux_trainer, epoch)
+        aux_name_validation_metrics: Dict[str, float] = {}
+        for aux_trainer, aux_name in zip(*aux_trainers_names):
+            logger.warning(f'Training Auxiliary task {aux_name}')
+            aux_metrics = train_one_epoch(aux_trainer, epoch)
+            all_metrics[f'training_aux_{aux_name}'] = aux_metrics[0]
+            all_metrics[f'validation_aux_{aux_name}'] = aux_metrics[1]
+            aux_name_validation_metrics[aux_name] = aux_metrics[1]
+        logger.warning(f'Training Main task {main_task_name}')
         main_train_metrics, main_val_metrics = train_one_epoch(main_trainer, epoch)
+        all_metrics[f'training_main_{main_task_name}'] = main_train_metrics
+        all_metrics[f'validation_main_{main_task_name}'] = main_val_metrics
         # Early stopping if applicable (main task) and tracking the best metric
         main_validation_metric_name = main_trainer._validation_metric
         main_validation_metric = main_val_metrics[main_validation_metric_name]
         main_trainer._metric_tracker.add_metric(main_validation_metric)
 
-        multi_task_checkpoint_saver(aux_trainer, main_trainer._metric_tracker.is_best_so_far(), epoch)
+        for aux_trainer in aux_trainers_names[0]:
+            multi_task_checkpoint_saver(aux_trainer, main_trainer._metric_tracker.is_best_so_far(), epoch)
         multi_task_checkpoint_saver(main_trainer, main_trainer._metric_tracker.is_best_so_far(), epoch)
-
-        for task_name, train_metrics in [('aux', aux_train_metrics), 
-                                         ('main', main_train_metrics)]:
-            for key, value in train_metrics.items():
-                all_metrics[f"training_{task_name}_{key}"] = value
-        for task_name, val_metrics in [('aux', aux_val_metrics), 
-                                       ('main', main_val_metrics)]:
-            for key, value in val_metrics.items():
-                all_metrics[f"validation_{task_name}_{key}"] = value
 
         if main_trainer._metric_tracker.should_stop_early():
             logger.info("Ran out of patience.  Stopping training.")
@@ -125,16 +136,15 @@ def multi_task_training(main_trainer: Trainer, aux_trainer: Trainer) -> Dict[str
             all_metrics['best_epoch'] = epoch
             for key, value in main_val_metrics.items():
                 all_metrics["best_validation_" + key] = value
-            for key, value in aux_val_metrics.items():
-                all_metrics["aux_best_validation_" + key] = value
             main_trainer._metric_tracker.best_epoch_metrics = main_val_metrics
     # Load the best model state before returning
     main_best_model_state = main_trainer._checkpointer.best_model_state()
     if main_best_model_state:
         main_trainer.model.load_state_dict(main_best_model_state)
     
-    aux_best_model_state = aux_trainer._checkpointer.best_model_state()
-    if aux_best_model_state:
-        aux_trainer.model.load_state_dict(aux_best_model_state)
+    for aux_trainer in aux_trainers_names[0]:
+        aux_best_model_state = aux_trainer._checkpointer.best_model_state()
+        if aux_best_model_state:
+            aux_trainer.model.load_state_dict(aux_best_model_state)
 
     return all_metrics
