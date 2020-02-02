@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 
-setup(name='negation_for_targeted_sentiment',
+setup(name='multitask_negation_target',
       version='0.0.1',
       description='Multi-Task negation and targeted sentiment',
       long_description=long_description,
