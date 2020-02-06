@@ -57,7 +57,7 @@
         "lr": 0.0015
       },
       "validation_metric": "+f1-measure-overall",
-      "num_epochs": 2,
+      "num_epochs": 150,
       "num_serialized_models_to_keep": 1,
       "grad_norm": 5.0,
       "patience": 10,
