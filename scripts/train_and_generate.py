@@ -6,7 +6,6 @@ import tempfile
 import shutil
 
 from allennlp.commands.train import train_model_from_file
-from allennlp.predictors.sentence_tagger import SentenceTaggerPredictor
 from allennlp.common import from_params, Params
 from allennlp.data import DatasetReader, Token
 

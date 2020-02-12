@@ -283,6 +283,12 @@ To run all of the experiments use the following script:
 ./run_all.sh
 ```
 
+### Predicting on the Negation corpus
+The Laptop and Restaurant development/validation dataset splits have been re-annotated so that targets have been negated when possible. These two negation developments splits can be found [`./data/main_task/en/laptop/dev_neg.conll`](./data/main_task/en/laptop/dev_neg.conll) and [`./data/main_task/en/restaurant/dev_neg.conll`](./data/main_task/en/restaurant/dev_neg.conll) for the laptop and restaurant datasets respectively. These splits can therefore to some extent test how well the models perform on a large amount of negated target data. Therefore both the MTL and STL models that were trained in the previous section will now be tested on these two splits. To get these result run the following:
+``` bash
+./scripts/generate_negation_predictions.sh
+```
+
 ## Requirements
 
 1. Python >= 3.6
