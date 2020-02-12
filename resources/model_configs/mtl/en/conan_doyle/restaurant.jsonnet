@@ -40,6 +40,7 @@
             "num_epochs": 150,
             "grad_norm": 5.0,
             "patience": 10,
+            "num_serialized_models_to_keep": 1,
             "cuda_device": 0
         },
         "evaluate": {"cuda_device": 0}
@@ -86,6 +87,7 @@
             "num_epochs": 150,
             "grad_norm": 5.0,
             "patience": 10,
+            "num_serialized_models_to_keep": 1,
             "cuda_device": 0
         },
         "evaluate": {"cuda_device": 0}
