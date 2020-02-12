@@ -3,11 +3,18 @@ from typing import Dict, Any, Iterable, List
 import random
 import json
 import tempfile
+import shutil
 
 from allennlp.commands.train import train_model_from_file
 from allennlp.predictors.sentence_tagger import SentenceTaggerPredictor
 from allennlp.common import from_params, Params
 from allennlp.data import DatasetReader, Token
+
+if __name__ == '__main__':
+    import sys
+    from pathlib import Path
+    package_path = str(Path(__file__, '..', '..').resolve())
+    sys.path.insert(0, package_path)
 
 import multitask_negation_target
 
@@ -62,6 +69,9 @@ def count_number_runs(conll_fp: Path) -> int:
                 return number_runs
 
 if __name__ == '__main__':
+    mtl_help = 'Whether or not the model being ran is a Multi Task Learning model'
+    save_model_dir_help = ('Directory to save all models, there will be one '
+                           'directory for each run containing the model')
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument("model_config_fp", type=parse_path,
@@ -71,6 +81,9 @@ if __name__ == '__main__':
     parser.add_argument('save_results_dir', type=parse_path, 
                         help='Directory to save the test and validation prediction results')
     parser.add_argument('number_runs', type=int, help='Number of model runs')
+    parser.add_argument('save_model_dir', type=parse_path, help=save_model_dir_help)
+    parser.add_argument('--mtl', action='store_true', 
+                        help=mtl_help)
     args = parser.parse_args()
     save_results_dir = args.save_results_dir
     # create save directory if it does not exist
@@ -97,6 +110,8 @@ if __name__ == '__main__':
                          f'Number of runs completed {runs_already_done}')
     random.seed(a=None)
     print(f'Number of runs to perform {runs_to_do}')
+    model_dir = args.save_model_dir
+    model_dir.mkdir(parents=True, exist_ok=True)
     for run_number in range(runs_to_do):
         print(f'Run number {run_number}')
         np_seed = random.randint(0, 9999)
@@ -105,6 +120,16 @@ if __name__ == '__main__':
         overrides_string = {"numpy_seed": np_seed, "pytorch_seed": py_seed, 
                             "random_seed": rand_seed}
         overrides_string = json.dumps(overrides_string)
+        model_save_fp = Path(model_dir, f'model_{run_number}.tar.gz')
+        if model_save_fp.exists():
+            raise FileExistsError(f'The model run file {model_save_fp} '
+                                  'cannot already exist for you to save a model to it')
+        aux_model_save_fp = None
+        if args.mtl:
+            aux_model_save_fp = Path(model_dir, f'task_negation_model_{run_number}.tar.gz')
+            if aux_model_save_fp.exists():
+                raise FileExistsError(f'The model run file {aux_model_save_fp} '
+                                      'cannot already exist for you to save a model to it')
         with tempfile.TemporaryDirectory() as temp_data_dir:
             results = train_model_from_file(args.model_config_fp, 
                                             serialization_dir=temp_data_dir,
@@ -128,3 +153,14 @@ if __name__ == '__main__':
                     predicted_tags.append(tags)
                 write_tags_to_file(save_fp, predicted_tags)
                 print('done')
+            temp_save_model_fp = Path(temp_data_dir, 'model.tar.gz')
+            if not Path(temp_data_dir).exists():
+                raise FileNotFoundError('The model was not saved in the temp '
+                                        f'directory {temp_save_model_fp}')
+            if args.mtl:
+                temp_aux_save_model_fp = Path(temp_data_dir, 'task_negation_model.tar.gz')
+                if not Path(temp_aux_save_model_fp).exists():
+                    raise FileNotFoundError('The model was not saved in the temp '
+                                            f'directory {temp_aux_save_model_fp}')
+                shutil.move(temp_aux_save_model_fp, aux_model_save_fp)
+            shutil.move(temp_save_model_fp, model_save_fp)

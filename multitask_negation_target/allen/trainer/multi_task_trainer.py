@@ -4,7 +4,11 @@ import time
 from typing import Optional, Dict, List, Any
 from pathlib import Path
 import itertools
+import tempfile
+import shutil
 
+from allennlp.training import util as training_util
+from allennlp.models.archival import archive_model, CONFIG_NAME
 from allennlp.data import Vocabulary, DatasetReader, Instance
 from allennlp.data.iterators.data_iterator import DataIterator
 from allennlp.common.checks import ConfigurationError
@@ -21,9 +25,16 @@ logger = logging.getLogger(__name__)
 
 @TrainerBase.register("multi_task_trainer")
 class MultiTaskTrainer(TrainerBase):
+    '''
+    Model saving. All models are saved in their serialization format within the
+    given `serialization_dir`. Each task is saved as `{task name}_model.tar.gz`
+    apart from the main task which is saved as `model.tar.gz`.
+    '''
     def __init__(self, params: Params,  serialization_dir: str, 
                  recover: bool = False, cache_directory: Optional[str] = None, 
                  cache_prefix: Optional[str] = None):
+        self.original_params = params.duplicate()
+        self.main_serialization_dir = serialization_dir
         if recover or cache_directory or cache_prefix:
             raise NotImplementedError(f'Currently do not support `recover` {recover}, '
                                       f'`cache_directory` {cache_directory}, or '
@@ -47,10 +58,12 @@ class MultiTaskTrainer(TrainerBase):
         # Get dataset information
         # task name: dataset split name: data
         all_task_data: Dict[str, Dict[str, List[Instance]]] = {}
+        self.task_params = {} 
         for task in task_order:
             logger.warning(f'Loading dataset for {task}')
             task_data = {}
             task_params = params.get(task)
+            self.task_params[task] = task_params.duplicate()
             
             dataset_reader = DatasetReader.from_params(task_params.pop('dataset_reader'))
             
@@ -111,9 +124,11 @@ class MultiTaskTrainer(TrainerBase):
                                                             params=task_model_params)
         # Task specific trainers
         task_trainers: Dict[str, Trainer] = {}
+        self.task_serialization_dir = {}
         for task in task_order:
             logger.warning(f'Creating {task} trainer')
             task_serialization_dir = str(Path(serialization_dir, task))
+            self.task_serialization_dir[task] = task_serialization_dir
             logger.warning(f'Task {task} serialization directory: {task_serialization_dir}')
 
             task_trainer_params = params.get(task).pop('trainer')
@@ -170,6 +185,7 @@ class MultiTaskTrainer(TrainerBase):
         logger.info('Evaluating the Auxiliary tasks on their validation and test data')
         
         self.aux_models: List[SharedCrfTagger] = []
+        self.all_models = {}
         for aux_trainer, aux_name in zip(*auxiliary_trainers_names):
             logger.info(f'Evaluating {aux_name} on their validation data')
             validation_instances = self.auxiliary_task_validation_data[aux_name]
@@ -188,7 +204,9 @@ class MultiTaskTrainer(TrainerBase):
             for key, value in results.items():
                 all_metrics[f"aux_{aux_name}_best_test_{key}"] = value
             self.aux_models.append(aux_trainer.model)
-        
+            self.all_models[aux_name] = aux_trainer.model
+        self.all_models[self.task_order[-1]] = main_task_trainer.model
+
         logger.info(f'Evaluating the main task {main_task_name} on their test data')
         test_instances = self.all_task_test_data[main_task_name]
         cuda_device = self.task_cuda_evaluation[main_task_name]
@@ -198,6 +216,26 @@ class MultiTaskTrainer(TrainerBase):
         for key, value in results.items():
             all_metrics[f"test_{key}"] = value
 
+        # Saving the models in serialization format
+        for task in self.task_order:
+            serialization_dir = self.task_serialization_dir[task]
+            best_weights_fp = str(Path(serialization_dir, 'best.th').resolve())
+            task_params = self.task_params[task]
+            del task_params['evaluate']
+            task_params['model']['text_field_embedder'] = self.original_params['shared_values']['text_field_embedder'].duplicate().as_ordered_dict()
+            task_params['model']['shared_encoder'] = self.original_params['shared_values']['shared_encoder'].duplicate().as_ordered_dict()
+            task_params['iterator'] = self.original_params['shared_values']['iterator'].duplicate().as_ordered_dict()
+            with tempfile.TemporaryDirectory() as temp_dir:
+                task_params.to_file(str(Path(temp_dir, CONFIG_NAME).resolve()))
+                self.all_models[task].vocab.save_to_files(str(Path(temp_dir, "vocabulary").resolve()))
+                archive_model(temp_dir, weights=best_weights_fp)
+                saved_model_fp = str(Path(temp_dir, 'model.tar.gz').resolve())
+                new_saved_model_fp = Path(self.main_serialization_dir, f'{task}_model.tar.gz')
+                # main task does not require name of the task
+                if task == self.task_order[-1]:
+                    new_saved_model_fp = Path(self.main_serialization_dir, 'model.tar.gz')
+                new_saved_model_fp = str(new_saved_model_fp.resolve())
+                shutil.move(saved_model_fp, new_saved_model_fp)
         self.model = main_task_trainer.model
         return all_metrics
 
