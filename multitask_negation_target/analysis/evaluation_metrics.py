@@ -100,7 +100,7 @@ def get_labels(result_fp: Path, gold: bool, run_number: Optional[int] = None
                          f'{gold} and run_number {type(run_number)}')
     with result_fp.open('r') as result_file:
         labels = []
-        for line in result_file:
+        for line_index, line in enumerate(result_file):
             line = line.strip()
             if line:
                 values = line.split()
@@ -109,7 +109,10 @@ def get_labels(result_fp: Path, gold: bool, run_number: Optional[int] = None
                     gold = values[1]
                     labels.append(gold)
                 elif run_number is not None:
-                    pred = values[2 + run_number]
+                    try:
+                        pred = values[2 + run_number]
+                    except:
+                        raise IndexError(f'{line} {line_index} {run_number}')
                     labels.append(pred)
             else:
                 yield labels
