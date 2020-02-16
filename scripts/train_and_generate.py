@@ -8,6 +8,7 @@ import shutil
 from allennlp.commands.train import train_model_from_file
 from allennlp.common import from_params, Params
 from allennlp.data import DatasetReader, Token
+import target_extraction
 
 if __name__ == '__main__':
     import sys
@@ -111,7 +112,7 @@ if __name__ == '__main__':
     print(f'Number of runs to perform {runs_to_do}')
     model_dir = args.save_model_dir
     model_dir.mkdir(parents=True, exist_ok=True)
-    for run_number in range(runs_to_do):
+    for run_number in range(runs_already_done, args.number_runs):
         print(f'Run number {run_number}')
         np_seed = random.randint(0, 9999)
         py_seed = random.randint(0, 9999)

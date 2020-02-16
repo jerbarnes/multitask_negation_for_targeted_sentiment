@@ -1,8 +1,11 @@
 from pathlib import Path
-
-from multitask_negation_target import utils
+import tempfile
 
 from allennlp.common.file_utils import cached_path
+from target_extraction.dataset_parsers import multi_aspect_multi_sentiment_atsa
+from target_extraction.tokenizers import spacy_tokenizer
+
+from multitask_negation_target import utils
 
 laptop_train_url = "https://raw.githubusercontent.com/lixin4ever/E2E-TBSA/master/data_conll/laptop14_train.txt"
 laptop_dev_url = "https://raw.githubusercontent.com/lixin4ever/E2E-TBSA/master/data_conll/laptop14_dev.txt"
@@ -29,3 +32,19 @@ for data_dir, urls in data_dir_urls:
         new_fp = Path(data_dir, file_name)
         new_fp.parent.mkdir(parents=True, exist_ok=True)
         utils.from_biose_to_bioul(Path(downloaded_fp), new_fp)
+
+mams_data_dir = Path(sentiment_data_dir, 'MAMS')
+mams_data_dir.mkdir(parents=True, exist_ok=True)
+split_names = ['train', 'val', 'test']
+for split_name, file_name in zip(split_names, common_file_names):
+    if split_name == 'train':
+        collection = multi_aspect_multi_sentiment_atsa(split_name, original=False)
+    else:
+        collection = multi_aspect_multi_sentiment_atsa(split_name)
+    collection.tokenize(spacy_tokenizer())
+    collection.sequence_labels(label_key='target_sentiments')
+    conll_fp = Path(mams_data_dir, file_name)
+    with tempfile.TemporaryDirectory() as temp_dir:
+        temp_fp = Path(temp_dir, 'temp_file.conll')
+        collection.to_conll_file(temp_fp, gold_label_key='sequence_labels')
+        utils.from_bio_to_bioul(temp_fp, conll_fp)
