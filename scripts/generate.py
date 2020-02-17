@@ -6,6 +6,7 @@ import re
 from allennlp.common import from_params
 from allennlp.data import DatasetReader, Token
 from allennlp.models.archival import load_archive
+import target_extraction
 
 if __name__ == '__main__':
     import sys
