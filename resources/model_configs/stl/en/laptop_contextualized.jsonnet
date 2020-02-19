@@ -1,17 +1,17 @@
 {
     "dataset_reader": {
-      "type": "target_conll",
+      "type": "targeted_sentiment",
       "token_indexers": {
-        "tokens": {
-          "type": "single_id",
-          "lowercase_tokens": true
+        "elmo": {
+          "type": "elmo_characters",
+          "token_min_padding_length": 1
         }
       },
       "label_namespace": "sentiment_labels"
     },
-    "train_data_path": "./data/main_task/en/MAMS/train.conll",
-    "validation_data_path": "./data/main_task/en/MAMS/dev.conll",
-    "test_data_path": "./data/main_task/en/MAMS/test.conll",
+    "train_data_path": "./data/main_task/en/laptop/train.conll",
+    "validation_data_path": "./data/main_task/en/laptop/dev.conll",
+    "test_data_path": "./data/main_task/en/laptop/test.conll",
     "evaluate_on_test": true,
     "model": {
       "type": "shared_crf_tagger",
@@ -25,23 +25,24 @@
       "skip_connections": true,
       "verbose_metrics": false,
       "text_field_embedder": {
-        "tokens": {
-          "type": "embedding",
-          "pretrained_file": "./resources/embeddings/en/glove.840B.300d.txt",
-          "embedding_dim": 300,
-          "trainable": false
+        "elmo": {
+          "type": "bidirectional_lm_token_embedder",
+          "archive_file": "./resources/embeddings/en/laptop_model.tar.gz",
+          "bos_eos_tokens": ["<S>", "</S>"],
+          "remove_bos_eos": true,
+          "requires_grad": false
         }
       },
       "task_encoder": {
         "type": "lstm",
-        "input_size": 420,
+        "input_size": 1144,
         "hidden_size": 50,
         "bidirectional": true,
         "num_layers": 1
       },
       "shared_encoder": {
         "type": "lstm",
-        "input_size": 300,
+        "input_size": 1024,
         "hidden_size": 60,
         "bidirectional": true,
         "num_layers": 1

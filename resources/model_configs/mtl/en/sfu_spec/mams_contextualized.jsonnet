@@ -3,16 +3,17 @@
         "dataset_reader": {
             "type": "negation_speculation",
             "token_indexers": {
-                "tokens": {
-                "type": "single_id",
-                "lowercase_tokens": true
+                "elmo": {
+                "type": "elmo_characters",
+                "token_min_padding_length": 1
                 }
             },
-            "label_namespace": "negation_labels"
+            "tag_label": "speculation",
+            "label_namespace": "speculation_labels"
         },
-        "train_data_path": "./data/auxiliary_tasks/en/conandoyle_train.conllu",
-        "validation_data_path": "./data/auxiliary_tasks/en/conandoyle_dev.conllu",
-        "test_data_path": "./data/auxiliary_tasks/en/conandoyle_test.conllu",
+        "train_data_path": "./data/auxiliary_tasks/en/SFU_train.conllu",
+        "validation_data_path": "./data/auxiliary_tasks/en/SFU_dev.conllu",
+        "test_data_path": "./data/auxiliary_tasks/en/SFU_test.conllu",
         "model": {
             "type": "shared_crf_tagger",
             "constrain_crf_decoding": true,
@@ -20,13 +21,13 @@
             "dropout": 0.29,
             "regularizer": [[".*", {"type": "l2", "alpha": 0.0001}]],
             "include_start_end_transitions": false,
-            "label_namespace": "negation_labels",
+            "label_namespace": "speculation_labels",
             "label_encoding": "BIO",
             "skip_connections": true,
             "verbose_metrics": false,
             "task_encoder": {
                 "type": "lstm",
-                "input_size": 360,
+                "input_size": 1084,
                 "hidden_size": 50,
                 "bidirectional": true,
                 "num_layers": 1
@@ -49,16 +50,16 @@
         "dataset_reader": {
             "type": "targeted_sentiment",
             "token_indexers": {
-                "tokens": {
-                "type": "single_id",
-                "lowercase_tokens": true
+                "elmo": {
+                "type": "elmo_characters",
+                "token_min_padding_length": 1
                 }
             },
             "label_namespace": "sentiment_labels"
         },
-        "train_data_path": "./data/main_task/en/restaurant/train.conll",
-        "validation_data_path": "./data/main_task/en/restaurant/dev.conll",
-        "test_data_path": "./data/main_task/en/restaurant/test.conll",
+        "train_data_path": "./data/main_task/en/MAMS/train.conll",
+        "validation_data_path": "./data/main_task/en/MAMS/dev.conll",
+        "test_data_path": "./data/main_task/en/MAMS/test.conll",
         "model": {
             "type": "shared_crf_tagger",
             "constrain_crf_decoding": true,
@@ -72,7 +73,7 @@
             "verbose_metrics": false,
             "task_encoder": {
                 "type": "lstm",
-                "input_size": 360,
+                "input_size": 1084,
                 "hidden_size": 50,
                 "bidirectional": true,
                 "num_layers": 1
@@ -94,16 +95,17 @@
     },
     "shared_values": {
         "text_field_embedder": {
-            "tokens": {
-                "type": "embedding",
-                "pretrained_file": "./resources/embeddings/en/glove.840B.300d.txt",
-                "embedding_dim": 300,
-                "trainable": false
-            }
+            "elmo": {
+            "type": "bidirectional_lm_token_embedder",
+            "archive_file": "./resources/embeddings/en/restaurant_model.tar.gz",
+            "bos_eos_tokens": ["<S>", "</S>"],
+            "remove_bos_eos": true,
+            "requires_grad": false
+        }
         },
         "shared_encoder": {
             "type": "lstm",
-            "input_size": 300,
+            "input_size": 1024,
             "hidden_size": 30,
             "bidirectional": true,
             "num_layers": 1
@@ -115,7 +117,7 @@
     },
     "trainer": {
         "type": "multi_task_trainer",
-        "task_order": ["task_negation", "task_sentiment"],
+        "task_order": ["task_speculation", "task_sentiment"],
         "main_task": "task_sentiment"
     }
 }
