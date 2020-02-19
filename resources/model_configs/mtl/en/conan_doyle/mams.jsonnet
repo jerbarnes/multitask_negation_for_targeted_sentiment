@@ -17,7 +17,7 @@
             "type": "shared_crf_tagger",
             "constrain_crf_decoding": true,
             "calculate_span_f1": true,
-            "dropout": 0.5,
+            "dropout": 0.29,
             "regularizer": [[".*", {"type": "l2", "alpha": 0.0001}]],
             "include_start_end_transitions": false,
             "label_namespace": "negation_labels",
@@ -26,10 +26,10 @@
             "verbose_metrics": false,
             "task_encoder": {
                 "type": "lstm",
-                "input_size": 500,
+                "input_size": 360,
                 "hidden_size": 50,
                 "bidirectional": true,
-                "num_layers": 2
+                "num_layers": 1
             }
         },
         "trainer": {
@@ -63,7 +63,7 @@
             "type": "shared_crf_tagger",
             "constrain_crf_decoding": true,
             "calculate_span_f1": true,
-            "dropout": 0.5,
+            "dropout": 0.29,
             "regularizer": [[".*", {"type": "l2", "alpha": 0.0001}]],
             "include_start_end_transitions": false,
             "label_namespace": "sentiment_labels",
@@ -72,7 +72,7 @@
             "verbose_metrics": false,
             "task_encoder": {
                 "type": "lstm",
-                "input_size": 500,
+                "input_size": 360,
                 "hidden_size": 50,
                 "bidirectional": true,
                 "num_layers": 1
@@ -81,7 +81,7 @@
         "trainer": {
             "optimizer": {
                 "type": "adam",
-                "lr": 0.0028
+                "lr": 0.0011
             },
             "validation_metric": "+f1-measure-overall",
             "num_epochs": 150,
@@ -104,7 +104,7 @@
         "shared_encoder": {
             "type": "lstm",
             "input_size": 300,
-            "hidden_size": 100,
+            "hidden_size": 30,
             "bidirectional": true,
             "num_layers": 1
         },

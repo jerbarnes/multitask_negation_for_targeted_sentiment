@@ -164,6 +164,11 @@ The tuning is performed separately for the single and multi-task models. The sin
 
 #### Multi Task Learning Tuning
 
+As [stanford-nlp](https://github.com/stanfordnlp/stanfordnlp) package is installed and due to [Ray](https://ray.readthedocs.io/en/latest/) that is used in [allentune](https://github.com/allenai/allentune), the `STANFORDNLP_TEST_HOME` environment variable has to be set before using `allentune` thus I did the following:
+``` bash
+export STANFORDNLP_TEST_HOME=~/stanfordnlp_test
+```
+
 Run the following:
 ``` bash
 allentune search \
@@ -189,10 +194,10 @@ allentune plot \
     --performance-metric-field best_validation_f1-measure-overall \
     --performance-metric F1-Span
 ```
-The multi-task model found the following as the best parameters from run number 7 with a validation F1-Span score of 61.23%:
-1. lr = 0.0028
-2. shared/first layer hidden size = 100
-3. dropout = 0.5
+The multi-task model found the following as the best parameters from run number 24 with a validation F1-Span score of 59.84%:
+1. lr = 0.0011
+2. shared/first layer hidden size = 30
+3. dropout = 0.29
 Of which the plot of the F1-Span metric on the validation set against the number of runs can be seen [here](./resources/tuning/multi_task_tuning_laptop_performance.pdf).
 
 #### Single Task Learning Tuning
@@ -282,7 +287,7 @@ For the MAMS dataset:
 python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/conan_doyle/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/conan_doyle/MAMS 5 ./data/models/en/mtl/conan_doyle/MAMS --mtl
 ```
 
-#### SFU
+#### SFU (Negation)
 For the laptop dataset:
 ```
 python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu/laptop.jsonnet ./data/main_task/en/laptop/test.conll ./data/main_task/en/laptop/dev.conll ./data/results/en/mtl/sfu/laptop 5 ./data/models/en/mtl/sfu/laptop --mtl
@@ -294,6 +299,20 @@ python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu/rest
 For the MAMS dataset:
 ```
 python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/sfu/MAMS 5 ./data/models/en/mtl/sfu/MAMS --mtl
+```
+
+#### SFU (Speculation)
+For the laptop dataset:
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu_spec/laptop.jsonnet ./data/main_task/en/laptop/test.conll ./data/main_task/en/laptop/dev.conll ./data/results/en/mtl/sfu_spec/laptop 5 ./data/models/en/mtl/sfu_spec/laptop --mtl
+```
+For the Restaurant dataset:
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu_spec/restaurant.jsonnet ./data/main_task/en/restaurant/test.conll ./data/main_task/en/restaurant/dev.conll ./data/results/en/mtl/sfu_spec/restaurant 5 ./data/models/en/mtl/sfu_spec/restaurant --mtl
+```
+For the MAMS dataset:
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu_spec/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/sfu_spec/MAMS 5 ./data/models/en/mtl/sfu_spec/MAMS --mtl
 ```
 
 To run all of the experiments use the following script:
