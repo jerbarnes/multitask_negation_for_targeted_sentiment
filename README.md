@@ -114,6 +114,38 @@ To generate the data statistics in the table above run the following bash script
 ./scripts/negation_statistics.sh
 ```
 
+## Create dataset statistics for the U-POS, X-POS, Dependency Relations, SMWE, and Super Sense tagging
+In these auxilary tasks to get the vocabularly dataset statistics run the following:
+
+For the Streusle we included empty nodes which are tokens that have a decimal numbered `ID`.
+
+For U-POS
+
+``` bash
+allennlp dry-run ./resources/statistic_configs/en/streusle_u_pos.jsonnet -s /tmp/dry --include-package multitask_negation_target
+```
+
+For X-POS
+``` bash
+allennlp dry-run ./resources/statistic_configs/en/streusle_x_pos.jsonnet -s /tmp/dry --include-package multitask_negation_target
+```
+
+For Dependency Relations
+``` bash
+allennlp dry-run ./resources/statistic_configs/en/streusle_dr.jsonnet -s /tmp/dry --include-package multitask_negation_target
+```
+
+For SMWE
+``` bash
+allennlp dry-run ./resources/statistic_configs/en/streusle_smwe.jsonnet -s /tmp/dry --include-package multitask_negation_target
+```
+Predicting True or False on the SMWE is highly in-balanced for the False class with 6987 in the True and 48598 in the False.
+
+For SS
+``` bash
+allennlp dry-run ./resources/statistic_configs/en/streusle_ss.jsonnet -s /tmp/dry --include-package multitask_negation_target
+```
+
 ### Dataset split statistics
 The tables below states the dataset **split** statistics:
 #### SFU Negation
@@ -150,7 +182,7 @@ To generate the data for this table above run `./scripts/negation_split_statisti
 To generate the data for this table above run `./scripts/negation_split_statistics.sh conandoyle negation`
 
 ## Experiments
-The experiments are performed to find out if using negation helps targeted sentiment analysis. The multi-task model will be a Bi-LSTM with 2 layers that feeds into a CRF, where the first layer is a shared layer between the tasks, the second and CRF layer will be task specific. The single task model will be the same Bi-LSTM with 2 layers that feeds into a CRF. Each model will also have a skip connection from the embedding layer to the second layer of the Bi-LSTM.
+The single task model uses a 2 layer Bi-LSTM with a projection layer that goes into CRF decoding layer, further there is a skip connection between the embedding and the 2nd layer Bi-LSTM layer. The multi task model uses the same 2 layer Bi-LSTM model but the auxiliary tasks only have access to the embedding and first Bi-LSTM layer which then feeds into a task specific projection layer which then uses either Softmax or CRF for decoding.
 
 Before running any of the experiments for the single and multi task models we perform a hyperparameter search for both models.
 
@@ -194,10 +226,10 @@ allentune plot \
     --performance-metric-field best_validation_f1-measure-overall \
     --performance-metric F1-Span
 ```
-The multi-task model found the following as the best parameters from run number 24 with a validation F1-Span score of 59.84%:
-1. lr = 0.0011
-2. shared/first layer hidden size = 30
-3. dropout = 0.29
+The multi-task model found the following as the best parameters from run number 24 with a validation F1-Span score of 60.17%:
+1. lr = 0.0019
+2. shared/first layer hidden size = 65
+3. dropout = 0.27
 Of which the plot of the F1-Span metric on the validation set against the number of runs can be seen [here](./resources/tuning/multi_task_tuning_laptop_performance.pdf).
 
 #### Single Task Learning Tuning
@@ -319,6 +351,15 @@ To run all of the experiments use the following script:
 ```
 ./run_all.sh
 ```
+
+### The [Streusle data](https://github.com/nert-nlp/streusle/blob/master/CONLLULEX.md)
+
+Dry run command in AllenNlp will produce a load of stats for us.
+
+4. UPOS
+8. Dep Relations
+11. Strong multi word expressions
+14. Super Sense tagging.
 
 ### Predicting on the Negation corpus
 The Laptop and Restaurant development/validation dataset splits have been re-annotated so that targets have been negated when possible. These two negation developments splits can be found [`./data/main_task/en/laptop/dev_neg.conll`](./data/main_task/en/laptop/dev_neg.conll) and [`./data/main_task/en/restaurant/dev_neg.conll`](./data/main_task/en/restaurant/dev_neg.conll) for the laptop and restaurant datasets respectively. These splits can therefore to some extent test how well the models perform on a large amount of negated target data. Therefore both the MTL and STL models that were trained in the previous section will now be tested on these two splits. To get these result run the following:

@@ -1,0 +1,35 @@
+# newdoc id = reviews-001961
+# sent_id = reviews-001961-0001
+# text = Buyer Beware!!
+# streusle_sent_id = ewtb.r.001961.1
+# mwe = Buyer~Beware !!
+1	Buyer	buyer	NOUN	NN	Number=Sing	2	nsubj	2:nsubj	_	_	N	buyer	n.PERSON	_	1:1	_	buyer beware	B-N-n.PERSON
+2	Beware	beware	VERB	VB	Mood=Imp|VerbForm=Fin	0	root	0:root	SpaceAfter=No	_	V	beware	v.cognition	_	1:2	_	_	I~-V-v.cognition
+3	!!	!!	PUNCT	.	_	2	punct	2:punct	_	_	PUNCT	!!	_	_	_	_	_	O-PUNCT
+
+# sent_id = reviews-001961-0002
+# text = Rusted out and unsafe cars sold here!
+# streusle_sent_id = ewtb.r.001961.2
+# mwe = Rusted_out and unsafe cars sold here !
+1	Rusted	rust	VERB	VBN	Tense=Past|VerbForm=Part	5	amod	5:amod	_	1:1	V.VPC.semi	rust out	v.stative	_	_	_	_	B-V.VPC.semi-v.stative
+2	out	out	ADP	RP	_	1	compound	1:compound	_	1:2	_	_	_	_	_	_	_	I_
+3	and	and	CCONJ	CC	_	4	cc	4:cc	_	_	CCONJ	and	_	_	_	_	_	O-CCONJ
+4	unsafe	unsafe	ADJ	JJ	Degree=Pos	1	conj	1:conj:and|5:amod	_	_	ADJ	unsafe	_	_	_	_	_	O-ADJ
+5	cars	car	NOUN	NNS	Number=Plur	6	nsubj:pass	6:nsubj:pass	_	_	N	car	n.ARTIFACT	_	_	_	_	O-N-n.ARTIFACT
+6	sold	sell	VERB	VBN	Tense=Past|VerbForm=Part	0	root	0:root	_	_	V	sell	v.possession	_	_	_	_	O-V-v.possession
+7	here	here	ADV	RB	PronType=Dem	6	advmod	6:advmod	SpaceAfter=No	_	ADV	here	_	_	_	_	_	O-ADV
+8	!	!	PUNCT	.	_	6	punct	6:punct	_	_	PUNCT	!	_	_	_	_	_	O-PUNCT
+
+# sent_id = reviews-001961-0003
+# text = Have a real mechanic check before you buy!!!!
+# streusle_sent_id = ewtb.r.001961.3
+# mwe = Have~ a real mechanic ~check before you buy !!!!
+1	Have	have	VERB	VB	Mood=Imp|VerbForm=Fin	0	root	0:root	_	_	V	have	v.social	_	1:1	_	have check	B-V-v.social
+2	a	a	DET	DT	Definite=Ind|PronType=Art	4	det	4:det	_	_	DET	a	_	_	_	_	_	o-DET
+3	real	real	ADJ	JJ	Degree=Pos	4	amod	4:amod	_	_	ADJ	real	_	_	_	_	_	o-ADJ
+4	mechanic	mechanic	NOUN	NN	Number=Sing	5	nsubj	5:nsubj	_	_	N	mechanic	n.PERSON	_	_	_	_	o-N-n.PERSON
+5	check	check	VERB	VB	VerbForm=Inf	1	ccomp	1:ccomp	_	_	V	check	v.cognition	_	1:2	_	_	I~-V-v.cognition
+6	before	before	SCONJ	IN	_	8	mark	8:mark	_	_	P	before	p.Time	p.Time	_	_	_	O-P-p.Time
+7	you	you	PRON	PRP	Case=Nom|Person=2|PronType=Prs	8	nsubj	8:nsubj	_	_	PRON	you	_	_	_	_	_	O-PRON
+8	buy	buy	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	5	advcl	5:advcl:before	SpaceAfter=No	_	V	buy	v.possession	_	_	_	_	O-V-v.possession
+9	!!!!	!!!!	PUNCT	.	_	1	punct	1:punct	_	_	PUNCT	!!!!	_	_	_	_	_	O-PUNCT

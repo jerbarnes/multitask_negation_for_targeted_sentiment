@@ -11,20 +11,20 @@ import multitask_negation_target
 from multitask_negation_target.tests import util
 
 #
-# For the non-crf tagger version tests see shared_softmax_tagger_test.py
+# For the crf tagger version tests see shared_crf_tagger_test.py
 #
 
-class SharedCrfTaggerTest(ModelTestCase):
+class SharedSoftmaxTaggerTest(ModelTestCase):
     DATA_DIR = util.FIXTURES_ROOT / "allen" / "dataset_readers" / "negation_speculation"
     MODEL_DIR = util.FIXTURES_ROOT / "allen" / "models" / "shared_crf_tagger"
 
     def setUp(self):
         super().setUp()
-        self.shared_only_fp = self.MODEL_DIR / "shared_only_experiment.jsonnet"
-        self.shared_model_fp = self.MODEL_DIR / "experiment_shared_encoder.jsonnet"
-        self.shared_skip_connections_model_fp = self.MODEL_DIR / "experiment_shared_encoder_skip_connections.jsonnet"
+        self.shared_only_fp = self.MODEL_DIR / "shared_only_softmax_experiment.jsonnet"
+        self.shared_model_fp = self.MODEL_DIR / "experiment_shared_encoder_softmax.jsonnet"
+        self.shared_skip_connections_model_fp = self.MODEL_DIR / "experiment_shared_encoder_skip_connections_softmax.jsonnet"
 
-        model_fp = self.MODEL_DIR / "experiment.jsonnet"
+        model_fp = self.MODEL_DIR / "experiment_softmax.jsonnet"
         data_fp = self.DATA_DIR / "conan_doyle_data.conllu"
         self.set_up_model(model_fp, data_fp,)
 

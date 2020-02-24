@@ -22,15 +22,8 @@
             "include_start_end_transitions": false,
             "label_namespace": "negation_labels",
             "label_encoding": "BIO",
-            "skip_connections": true,
-            "verbose_metrics": false,
-            "task_encoder": {
-                "type": "lstm",
-                "input_size": 500,
-                "hidden_size": 50,
-                "bidirectional": true,
-                "num_layers": 2
-            }
+            "skip_connections": false,
+            "verbose_metrics": false
         },
         "trainer": {
             "optimizer": {

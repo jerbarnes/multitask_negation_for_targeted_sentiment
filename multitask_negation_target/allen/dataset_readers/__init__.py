@@ -1,2 +1,3 @@
 from multitask_negation_target.allen.dataset_readers import negation_speculation
 from multitask_negation_target.allen.dataset_readers import targeted_sentiment
+from multitask_negation_target.allen.dataset_readers import streusle_conll
