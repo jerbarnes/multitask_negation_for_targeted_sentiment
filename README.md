@@ -117,10 +117,9 @@ To generate the data statistics in the table above run the following bash script
 ## Create dataset statistics for the U-POS, X-POS, Dependency Relations, SMWE, and Super Sense tagging
 In these auxilary tasks to get the vocabularly dataset statistics run the following:
 
-For the Streusle we included empty nodes which are tokens that have a decimal numbered `ID`.
+For the Streusle we included empty nodes which are tokens that have a decimal numbered `ID`. The paper associated with the Streusle dataset is [A Corpus and Model Integrating Multiword Expressions and Supersenses by Schneider and Smith 2015](https://www.aclweb.org/anthology/N15-1177/).
 
 For U-POS
-
 ``` bash
 allennlp dry-run ./resources/statistic_configs/en/streusle_u_pos.jsonnet -s /tmp/dry --include-package multitask_negation_target
 ```
@@ -333,6 +332,60 @@ For the MAMS dataset:
 python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/sfu/MAMS 5 ./data/models/en/mtl/sfu/MAMS --mtl
 ```
 
+#### POS tagging (Streusle data)
+Here the task is Universal POS tagging. When running the model once with one Bi-LSTM layer with a CRF decoder the POS tagging accuracy for test and validation respectively is:
+
+`94.3% and 94.26%`
+
+To run that model:
+``` bash
+allennlp train resources/model_configs/mtl/en/u_pos/pos.jsonnet -s /tmp/any --include-package multitask_negation_target
+```
+
+For the multi task learning models run the following for the respective datasets:
+
+Laptop
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/u_pos/laptop.jsonnet ./data/main_task/en/laptop/test.conll ./data/main_task/en/laptop/dev.conll ./data/results/en/mtl/u_pos/laptop 5 ./data/models/en/mtl/u_pos/laptop --mtl --aux_name upos
+```
+
+Restaurant
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/u_pos/restaurant.jsonnet ./data/main_task/en/restaurant/test.conll ./data/main_task/en/restaurant/dev.conll ./data/results/en/mtl/u_pos/restaurant 5 ./data/models/en/mtl/u_pos/restaurant --mtl --aux_name upos
+```
+
+MAMS
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/u_pos/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/u_pos/MAMS 5 ./data/models/en/mtl/u_pos/MAMS --mtl --aux_name upos
+```
+
+#### Dependency Relation tagging (Streusle data)
+Here the task is Dependency Relation tagging where we want to predict the dependency relation tag for a given token but not the dependency graph. When running the model once with one Bi-LSTM layer with a CRF decoder the Dependency Relation tagging accuracy for test and validation respectively is:
+
+`88.22% and 87.49%`
+
+To run that model:
+``` bash
+allennlp train resources/model_configs/mtl/en/dr/dr.jsonnet -s /tmp/any --include-package multitask_negation_target
+```
+
+For the multi task learning models run the following for the respective datasets:
+
+Laptop
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/dr/laptop.jsonnet ./data/main_task/en/laptop/test.conll ./data/main_task/en/laptop/dev.conll ./data/results/en/mtl/dr/laptop 5 ./data/models/en/mtl/dr/laptop --mtl --aux_name dr
+```
+
+Restaurant
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/dr/restaurant.jsonnet ./data/main_task/en/restaurant/test.conll ./data/main_task/en/restaurant/dev.conll ./data/results/en/mtl/dr/restaurant 5 ./data/models/en/mtl/dr/restaurant --mtl --aux_name dr
+```
+
+MAMS
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/dr/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/dr/MAMS 5 ./data/models/en/mtl/dr/MAMS --mtl --aux_name dr
+```
+
 #### SFU (Speculation)
 For the laptop dataset:
 ```
@@ -351,15 +404,6 @@ To run all of the experiments use the following script:
 ```
 ./run_all.sh
 ```
-
-### The [Streusle data](https://github.com/nert-nlp/streusle/blob/master/CONLLULEX.md)
-
-Dry run command in AllenNlp will produce a load of stats for us.
-
-4. UPOS
-8. Dep Relations
-11. Strong multi word expressions
-14. Super Sense tagging.
 
 ### Predicting on the Negation corpus
 The Laptop and Restaurant development/validation dataset splits have been re-annotated so that targets have been negated when possible. These two negation developments splits can be found [`./data/main_task/en/laptop/dev_neg.conll`](./data/main_task/en/laptop/dev_neg.conll) and [`./data/main_task/en/restaurant/dev_neg.conll`](./data/main_task/en/restaurant/dev_neg.conll) for the laptop and restaurant datasets respectively. These splits can therefore to some extent test how well the models perform on a large amount of negated target data. Therefore both the MTL and STL models that were trained in the previous section will now be tested on these two splits. To get these result run the following:
