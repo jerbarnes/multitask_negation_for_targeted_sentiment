@@ -159,7 +159,7 @@ if __name__ == '__main__':
                 raise FileNotFoundError('The model was not saved in the temp '
                                         f'directory {temp_save_model_fp}')
             if args.mtl:
-                temp_aux_save_model_fp = Path(temp_data_dir, 'task_negation_model.tar.gz')
+                temp_aux_save_model_fp = Path(temp_data_dir, f'task_{args.aux_name}_model.tar.gz')
                 if not Path(temp_aux_save_model_fp).exists():
                     raise FileNotFoundError('The model was not saved in the temp '
                                             f'directory {temp_aux_save_model_fp}')

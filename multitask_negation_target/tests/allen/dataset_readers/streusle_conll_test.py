@@ -11,7 +11,7 @@ class TestStreusle:
 
     @pytest.mark.parametrize("lazy", (True, False))
     def test_read_from_file(self, lazy: bool):
-        tag_2_index = ['UPOS', 'XPOS', 'DR', 'SMWE', 'SS']
+        tag_2_index = ['UPOS', 'XPOS', 'DR', 'SMWE', 'SS', 'LEXTAG']
         # SFU negation reader
         
 
@@ -21,8 +21,9 @@ class TestStreusle:
         expected_dr_1 = ['nsubj', 'root', 'punct']
         expected_smwe_1 = ['FALSE', 'FALSE', 'FALSE']
         expected_ss_1 = ['n.PERSON', 'v.cognition', 'NONE']
+        expected_lextag_1 = ['B-N-n.PERSON', 'I~-V-v.cognition', 'O-PUNCT']
         tags_1 = [expected_upos_1, expected_xpos_1, expected_dr_1, 
-                  expected_smwe_1, expected_ss_1]
+                  expected_smwe_1, expected_ss_1, expected_lextag_1]
 
         expected_tokens_2 = ['Rusted', 'out', 'and', 'unsafe', 'cars', 'sold', 
                              'here', '!']
@@ -35,8 +36,11 @@ class TestStreusle:
                            'FALSE', 'FALSE', 'FALSE']
         expected_ss_2 = ['v.stative', 'NONE', 'NONE', 'NONE', 'n.ARTIFACT', 
                          'v.possession', 'NONE', 'NONE']
+        expected_lextag_2 = ['B-V.VPC.semi-v.stative', 'I_', 'O-CCONJ', 'O-ADJ', 
+                             'O-N-n.ARTIFACT', 'O-V-v.possession', 'O-ADV', 
+                             'O-PUNCT']
         tags_2 = [expected_upos_2, expected_xpos_2, expected_dr_2, 
-                  expected_smwe_2, expected_ss_2]
+                  expected_smwe_2, expected_ss_2, expected_lextag_2]
 
         expected_tokens_3 = ['Have', 'a', 'real', 'mechanic', 'check', 'before', 
                              'you', 'buy', '!!!!']
@@ -49,8 +53,11 @@ class TestStreusle:
                            'FALSE', 'FALSE', 'FALSE', 'FALSE']
         expected_ss_3 = ['v.social', 'NONE', 'NONE', 'n.PERSON', 'v.cognition', 
                          'p.Time', 'NONE', 'v.possession', 'NONE']
+        expected_lextag_3 = ['B-V-v.social', 'o-DET', 'o-ADJ', 'o-N-n.PERSON', 
+                             'I~-V-v.cognition', 'O-P-p.Time', 'O-PRON', 
+                             'O-V-v.possession', 'O-PUNCT']
         tags_3 = [expected_upos_3, expected_xpos_3, expected_dr_3, 
-                  expected_smwe_3, expected_ss_3]
+                  expected_smwe_3, expected_ss_3, expected_lextag_3]
 
         for tag_index, tag_name in enumerate(tag_2_index):
             streusle_reader = StreusleDatasetReader(lazy=lazy, 

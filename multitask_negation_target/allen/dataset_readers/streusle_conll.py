@@ -36,6 +36,7 @@ class StreusleDatasetReader(DatasetReader):
     3. Dependency relations (DR) - Which is column number 8
     4. Strong Multi Word Expresion (SMWE) - Which is column number 11
     5. Super Sense tagging (SS) - Which is column number 14
+    6. LEXTAG - Which is column number 19
 
     Each line/sentence is seperated by a blank line where the top few lines 
     contains meta data in the form of `# some metadata`. 
@@ -48,7 +49,7 @@ class StreusleDatasetReader(DatasetReader):
         Specifies the namespace for the tag.
     tag_name : ``str`` the name of the tag you want the dataset reader to 
         produce e.g. `UPOS` for universal POS tags. List of acceptable tags are:
-        ``['UPOS', 'XPOS', 'DR', 'SMWE', 'SS']``
+        ``['UPOS', 'XPOS', 'DR', 'SMWE', 'SS', 'LEXTAG']``
     """
 
     def __init__(self, token_indexers: Dict[str, TokenIndexer] = None,
@@ -59,7 +60,8 @@ class StreusleDatasetReader(DatasetReader):
         self.label_namespace = label_namespace
 
         self.tag_name = tag_name
-        tag_2_column = {'UPOS': 3, 'XPOS': 4, 'DR': 7, 'SMWE': 10, 'SS': 13}
+        tag_2_column = {'UPOS': 3, 'XPOS': 4, 'DR': 7, 'SMWE': 10, 'SS': 13, 
+                        'LEXTAG': 18}
         self.tag_column = tag_2_column[tag_name]
 
     @overrides
@@ -104,6 +106,14 @@ class StreusleDatasetReader(DatasetReader):
                     for tag in tags:
                         if tag == '_':
                             temp_tags.append('NONE')
+                        else:
+                            temp_tags.append(tag)
+                    tags = temp_tags
+                elif self.tag_name == 'LEXTAG':
+                    temp_tags = []
+                    for tag in tags:
+                        if tag == '_':
+                            temp_tags.append('O')
                         else:
                             temp_tags.append(tag)
                     tags = temp_tags

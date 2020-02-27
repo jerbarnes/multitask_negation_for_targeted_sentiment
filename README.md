@@ -145,6 +145,11 @@ For SS
 allennlp dry-run ./resources/statistic_configs/en/streusle_ss.jsonnet -s /tmp/dry --include-package multitask_negation_target
 ```
 
+For LEXTAG
+``` bash
+allennlp dry-run ./resources/statistic_configs/en/streusle_lextag.jsonnet -s /tmp/dry --include-package multitask_negation_target
+```
+
 ### Dataset split statistics
 The tables below states the dataset **split** statistics:
 #### SFU Negation
@@ -384,6 +389,65 @@ python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/dr/resta
 MAMS
 ```
 python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/dr/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/dr/MAMS 5 ./data/models/en/mtl/dr/MAMS --mtl --aux_name dr
+```
+
+#### Lexical tagging (Streusle data)
+This is a complex BIO tagging task. Accuracy for test and validation respectively is:
+
+`76.94% and 77.94%`
+
+To run that model:
+``` bash
+allennlp train resources/model_configs/mtl/en/lextag/lextag.jsonnet -s /tmp/any --include-package multitask_negation_target
+```
+
+For the multi task learning models run the following for the respective datasets:
+
+Laptop
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/lextag/laptop.jsonnet ./data/main_task/en/laptop/test.conll ./data/main_task/en/laptop/dev.conll ./data/results/en/mtl/lextag/laptop 5 ./data/models/en/mtl/lextag/laptop --mtl --aux_name lextag
+```
+
+Restaurant
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/lextag/restaurant.jsonnet ./data/main_task/en/restaurant/test.conll ./data/main_task/en/restaurant/dev.conll ./data/results/en/mtl/lextag/restaurant 5 ./data/models/en/mtl/lextag/restaurant --mtl --aux_name lextag
+```
+
+MAMS
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/lextag/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/lextag/MAMS 5 ./data/models/en/mtl/lextag/MAMS --mtl --aux_name lextag
+```
+
+#### Lexical and Negation tagging (Streusle data)
+This is a complex BIO tagging task. Accuracy for test and validation respectively is:
+
+`76.94% and 77.94%`
+
+To run that model:
+``` bash
+allennlp train resources/model_configs/mtl/en/lextag/lextag.jsonnet -s /tmp/any --include-package multitask_negation_target
+```
+
+For the multi task learning models run the following for the respective datasets:
+
+Laptop
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/cd_lextag/laptop.jsonnet ./data/main_task/en/laptop/test.conll ./data/main_task/en/laptop/dev.conll ./data/results/en/mtl/cd_lextag/laptop 5 ./data/models/en/mtl/cd_lextag/laptop --mtl --aux_name lextag
+```
+
+Restaurant
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/cd_lextag/restaurant.jsonnet ./data/main_task/en/restaurant/test.conll ./data/main_task/en/restaurant/dev.conll ./data/results/en/mtl/cd_lextag/restaurant 5 ./data/models/en/mtl/cd_lextag/restaurant --mtl --aux_name lextag
+```
+
+MAMS
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/cd_lextag/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/cd_lextag/MAMS 5 ./data/models/en/mtl/cd_lextag/MAMS --mtl --aux_name lextag
+```
+
+#### Cross domain
+Using Dependency Relations as an Auxilary and then training on Restaurant and Testing on Laptop.
+``` bash
 ```
 
 #### SFU (Speculation)
