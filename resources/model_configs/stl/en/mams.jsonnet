@@ -9,7 +9,7 @@
       },
       "label_namespace": "sentiment_labels"
     },
-    "train_data_path": "./data/main_task/en/MAMS/train.conll", 
+    "train_data_path": "./data/main_task/en/MAMS/train.conll",
     "validation_data_path": "./data/main_task/en/MAMS/dev.conll",
     "test_data_path": "./data/main_task/en/MAMS/test.conll",
     "evaluate_on_test": true,

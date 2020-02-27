@@ -3,6 +3,7 @@ from typing import Dict, Optional, List, Any, cast
 from overrides import overrides
 import torch
 from torch.nn.modules.linear import Linear
+import torch.nn.functional as F
 
 from allennlp.common.checks import check_dimensions_match, ConfigurationError
 from allennlp.data import Vocabulary
@@ -13,6 +14,7 @@ from allennlp.models.model import Model
 from allennlp.nn import InitializerApplicator, RegularizerApplicator
 import allennlp.nn.util as util
 from allennlp.training.metrics import CategoricalAccuracy, SpanBasedF1Measure
+import numpy
 
 from multitask_negation_target.allen.models.negation_metrics import ScopeTokensMetric
 
@@ -29,10 +31,13 @@ class SharedCrfTagger(Model):
        be used for a different task
     2. A skip connection between the text field embedder and task ``Seq2SeqEncoder``
        which sits above the shared within the neural network. The skip connection
-       will therefore allow the task sepcific model to have the information
+       will therefore allow the task specific model to have the information
        from both the embedding and the shared ``Seq2SeqEncoder``. Without the
        skip connection the task layer will only have information from the
        shared ``Seq2SeqEncoder``.
+    3. The option for the task encoder to be None so that lower level tasks 
+       can only use the shared encoders, and have only access to task specific 
+       feedforward or projection layers.
 
     Parameters
     ----------
@@ -43,7 +48,8 @@ class SharedCrfTagger(Model):
     task_encoder : ``Seq2SeqEncoder``
         The encoder that we will use in between embedding tokens and predicting output tags.
         This is also the encoder that will be used after the `shared_encoder` if
-        the `shared_encoder` is used.
+        the `shared_encoder` is used. This can also be None and if so the 
+        `shared_encoder` has to exist. 
     label_namespace : ``str``, optional (default=``labels``)
         This is needed to compute the SpanBasedF1Measure metric.
         Unless you did something unusual, the default value should be what you want.
@@ -51,32 +57,38 @@ class SharedCrfTagger(Model):
         The encoder that is used between the embedding tokens and the `task_encoder`.
     skip_connections :  ``bool``, optional (default=``False``)
         If True will concatenate the output from the embedding layer to the
-        output from the `shared_encoder` before inputting to the `task_encoder`
+        output from the `shared_encoder` before inputting to the `task_encoder`.
+        This does not work when the task_encoder is None.
     feedforward : ``FeedForward``, optional, (default = None).
         An optional feedforward layer to apply after the encoder.
+    crf: ``bool``, default = True
+        Whether or not to use a CRF layer to decode. If False then uses a 
+        Softmax layer instead.
     label_encoding : ``str``, optional (default=``None``)
         Label encoding to use when calculating span f1 and constraining
         the CRF at decoding time . Valid options are "BIO", "BIOUL", "IOB1", "BMES".
         Required if ``calculate_span_f1`` or ``constrain_crf_decoding`` is true.
+        (CRF only)
     include_start_end_transitions : ``bool``, optional (default=``True``)
         Whether to include start and end transition parameters in the CRF.
+        (CRF only)
     constrain_crf_decoding : ``bool``, optional (default=``None``)
         If ``True``, the CRF is constrained at decoding time to
         produce valid sequences of tags. If this is ``True``, then
         ``label_encoding`` is required. If ``None`` and
         label_encoding is specified, this is set to ``True``.
         If ``None`` and label_encoding is not specified, it defaults
-        to ``False``.
+        to ``False``. (CRF only)
     calculate_span_f1 : ``bool``, optional (default=``None``)
         Calculate span-level F1 metrics during training. If this is ``True``, then
         ``label_encoding`` is required. If ``None`` and
         label_encoding is specified, this is set to ``True``.
         If ``None`` and label_encoding is not specified, it defaults
-        to ``False``.
+        to ``False``. (CRF only)
     dropout:  ``float``, optional (default=``None``)
     verbose_metrics : ``bool``, optional (default = False)
         If true, metrics will be returned per label class in addition
-        to the overall statistics.
+        to the overall statistics. (CRF only)
     initializer : ``InitializerApplicator``, optional (default=``InitializerApplicator()``)
         Used to initialize the model parameters.
     regularizer : ``RegularizerApplicator``, optional (default=``None``)
@@ -87,11 +99,12 @@ class SharedCrfTagger(Model):
         self,
         vocab: Vocabulary,
         text_field_embedder: TextFieldEmbedder,
-        task_encoder: Seq2SeqEncoder,
+        task_encoder: Optional[Seq2SeqEncoder] = None,
         label_namespace: str = "labels",
         shared_encoder: Optional[Seq2SeqEncoder] = None,
         skip_connections: bool = False,
         feedforward: Optional[FeedForward] = None,
+        crf: bool = True,
         label_encoding: Optional[str] = None,
         include_start_end_transitions: bool = True,
         constrain_crf_decoding: bool = None,
@@ -116,64 +129,67 @@ class SharedCrfTagger(Model):
             self.dropout = None
         self._feedforward = feedforward
 
+        if self.shared_encoder is None and self.task_encoder is None:
+            raise ConfigurationError('Both the shared and task encoder cannot be None')
+        if self.skip_connections and self.task_encoder is None:
+            raise ConfigurationError('When the task encoder is None, '
+                                     'skip connections are not used')
+
         if feedforward is not None:
             output_dim = feedforward.get_output_dim()
+        elif task_encoder is None:
+            output_dim = self.shared_encoder.get_output_dim()
         else:
             output_dim = self.task_encoder.get_output_dim()
         self.tag_projection_layer = TimeDistributed(Linear(output_dim, self.num_tags))
+        self.crf = crf
 
         # if  constrain_crf_decoding and calculate_span_f1 are not
         # provided, (i.e., they're None), set them to True
         # if label_encoding is provided and False if it isn't.
-        if constrain_crf_decoding is None:
-            constrain_crf_decoding = label_encoding is not None
-        if calculate_span_f1 is None:
-            calculate_span_f1 = label_encoding is not None
+        if crf:
+            if constrain_crf_decoding is None:
+                constrain_crf_decoding = label_encoding is not None
+            if calculate_span_f1 is None:
+                calculate_span_f1 = label_encoding is not None
 
-        self.label_encoding = label_encoding
-        if constrain_crf_decoding:
-            if not label_encoding:
-                raise ConfigurationError(
-                    "constrain_crf_decoding is True, but " "no label_encoding was specified."
-                )
-            labels = self.vocab.get_index_to_token_vocabulary(label_namespace)
-            constraints = allowed_transitions(label_encoding, labels)
-        else:
-            constraints = None
+            self.label_encoding = label_encoding
+            if constrain_crf_decoding:
+                if not label_encoding:
+                    raise ConfigurationError(
+                        "constrain_crf_decoding is True, but " "no label_encoding was specified."
+                    )
+                labels = self.vocab.get_index_to_token_vocabulary(label_namespace)
+                constraints = allowed_transitions(label_encoding, labels)
+            else:
+                constraints = None
 
-        self.include_start_end_transitions = include_start_end_transitions
-        self.crf = ConditionalRandomField(
-            self.num_tags, constraints, include_start_end_transitions=include_start_end_transitions
-        )
+            self.include_start_end_transitions = include_start_end_transitions
+            self.crf = ConditionalRandomField(
+                self.num_tags, constraints, include_start_end_transitions=include_start_end_transitions
+            )
 
         self.metrics = {
             "accuracy": CategoricalAccuracy(),
             "accuracy3": CategoricalAccuracy(top_k=3),
         }
-        self.calculate_span_f1 = calculate_span_f1
-        if calculate_span_f1:
-            if not label_encoding:
-                raise ConfigurationError(
-                    "calculate_span_f1 is True, but " "no label_encoding was specified."
+        if self.crf:
+            self.calculate_span_f1 = calculate_span_f1
+            if calculate_span_f1:
+                if not label_encoding:
+                    raise ConfigurationError(
+                        "calculate_span_f1 is True, but " "no label_encoding was specified."
+                    )
+                self._span_f1_metric = SpanBasedF1Measure(
+                    vocab, tag_namespace=label_namespace, label_encoding=label_encoding
                 )
-            self._span_f1_metric = SpanBasedF1Measure(
-                vocab, tag_namespace=label_namespace, label_encoding=label_encoding
-            )
 
-        self._f1_metric = ScopeTokensMetric(
-                vocab, tag_namespace=label_namespace, label_encoding=label_encoding)
+            self._f1_metric = ScopeTokensMetric(
+                    vocab, tag_namespace=label_namespace, label_encoding=label_encoding)
 
         if skip_connections and shared_encoder is None:
             raise ValueError('Cannot use skip connections useless there '
                              'is a shared encoder')
-
-        if feedforward is not None:
-            check_dimensions_match(
-                task_encoder.get_output_dim(),
-                feedforward.get_input_dim(),
-                "task encoder output dim",
-                "feedforward input dim",
-            )
 
         if shared_encoder is not None:
             if skip_connections:
@@ -187,11 +203,11 @@ class SharedCrfTagger(Model):
                 task_encoder.get_input_dim(),
                 shared_encoder_out_msg,
                 "task encoder input dim",)
-            else:
+            elif task_encoder is not None:
                 check_dimensions_match(
-                shared_encoder.get_output_dim(),
+                self.shared_encoder.get_output_dim(),
                 task_encoder.get_input_dim(),
-                "shared encoder output dim",
+                'shared encoder output dim',
                 "task encoder input dim",)
 
             check_dimensions_match(
@@ -207,6 +223,40 @@ class SharedCrfTagger(Model):
             "task encoder input dim",)
 
         initializer(self)
+
+    def get_softmax_labels(self, class_probabilities: torch.FloatTensor,
+                           mask: torch.Tensor) -> List[List[int]]:
+        '''
+        This method has copied a large chunck of code from the 
+        `SimpleTagger.decode <https://github.com/allenai/allennlp/blob/master/allennlp/models/simple_tagger.py>`_ 
+        method.
+        
+        Parameters
+        ----------
+        class_probabilities : A tensor containing the softmax scores for the 
+                              tags.
+        mask: A Tensor of 1's and 0's indicating whether a word exists.
+        
+        Returns
+        -------
+        A List of Lists where each inner list contains integers representing 
+        the most likely tag label index based on the softmax scores. Only
+        returns the tag label indexs for words that exist based on the mask
+        provided. 
+        '''
+        
+        all_predictions = class_probabilities.cpu().data.numpy()
+        prediction_mask = mask.cpu().data.numpy()
+        if all_predictions.ndim == 3:
+            predictions_list = [all_predictions[i] for i in range(all_predictions.shape[0])]
+        else:
+            predictions_list = [all_predictions]
+        all_tags_indices = []
+        for prediction_index, predictions in enumerate(predictions_list):
+            sequence_length = prediction_mask[prediction_index].sum()
+            tag_indices = numpy.argmax(predictions, axis=-1).tolist()[:sequence_length]
+            all_tags_indices.append(tag_indices)
+        return all_tags_indices
 
     @overrides
     def forward(
@@ -258,42 +308,57 @@ class SharedCrfTagger(Model):
             if self.dropout:
                 encoded_text = self.dropout(encoded_text)
 
-        if self.skip_connections:
-            encoded_text = torch.cat([encoded_text, embedded_text_input], dim=-1)
-
-        encoded_text = self.task_encoder(encoded_text, mask)
-        if self.dropout:
-            encoded_text = self.dropout(encoded_text)
+        if self.task_encoder:
+            if self.skip_connections:
+                encoded_text = torch.cat([encoded_text, embedded_text_input], dim=-1)
+            encoded_text = self.task_encoder(encoded_text, mask)
+            if self.dropout:
+                encoded_text = self.dropout(encoded_text)
 
         if self._feedforward is not None:
             encoded_text = self._feedforward(encoded_text)
 
         logits = self.tag_projection_layer(encoded_text)
-        best_paths = self.crf.viterbi_tags(logits, mask)
-
-        # Just get the tags and ignore the score.
-        predicted_tags = [x for x, y in best_paths]
+        
+        if self.crf:
+            best_paths = self.crf.viterbi_tags(logits, mask)
+            # Just get the tags and ignore the score.
+            predicted_tags = [x for x, y in best_paths]
+        else:
+            batch_size, sequence_length, _ = embedded_text_input.size()
+            reshaped_log_probs = logits.view(-1, self.num_tags)
+            class_probabilities = F.softmax(reshaped_log_probs, dim=-1).view([batch_size, 
+                                                                            sequence_length,
+                                                                            self.num_tags])
+            predicted_tags = self.get_softmax_labels(class_probabilities, mask)
 
         output = {"logits": logits, "mask": mask, "tags": predicted_tags}
 
         if tags is not None:
-            # Add negative log-likelihood as loss
-            log_likelihood = self.crf(logits, tags, mask)
+            if self.crf:
+                # Add negative log-likelihood as loss
+                log_likelihood = self.crf(logits, tags, mask)
 
-            output["loss"] = -log_likelihood
+                output["loss"] = -log_likelihood
 
-            # Represent viterbi tags as "class probabilities" that we can
-            # feed into the metrics
-            class_probabilities = logits * 0.0
-            for i, instance_tags in enumerate(predicted_tags):
-                for j, tag_id in enumerate(instance_tags):
-                    class_probabilities[i, j, tag_id] = 1
+                # Represent viterbi tags as "class probabilities" that we can
+                # feed into the metrics
+                class_probabilities = logits * 0.0
+                for i, instance_tags in enumerate(predicted_tags):
+                    for j, tag_id in enumerate(instance_tags):
+                        class_probabilities[i, j, tag_id] = 1
 
-            for metric in self.metrics.values():
-                metric(class_probabilities, tags, mask.float())
-            if self.calculate_span_f1:
-                self._span_f1_metric(class_probabilities, tags, mask.float())
-            self._f1_metric(class_probabilities, tags, mask.float())
+                for metric in self.metrics.values():
+                    metric(class_probabilities, tags, mask.float())
+                if self.calculate_span_f1:
+                    self._span_f1_metric(class_probabilities, tags, mask.float())
+                self._f1_metric(class_probabilities, tags, mask.float())
+            else:
+                loss = util.sequence_cross_entropy_with_logits(logits, tags, mask)
+                output["loss"] = loss
+                for metric in self.metrics.values():
+                    metric(logits, tags, mask.float())
+
         if metadata is not None:
             output["words"] = [x["words"] for x in metadata]
         return output
@@ -318,20 +383,20 @@ class SharedCrfTagger(Model):
         metrics_to_return = {
             metric_name: metric.get_metric(reset) for metric_name, metric in self.metrics.items()
         }
+        if self.crf:
+            # span level metrics
+            
+            if self.calculate_span_f1:
+                f1_dict = self._span_f1_metric.get_metric(reset=reset)
+                if self._verbose_metrics:
+                    metrics_to_return.update(f1_dict)
+                else:
+                    metrics_to_return.update({x: y for x, y in f1_dict.items() if "overall" in x})
 
-        # span level metrics
-        
-        if self.calculate_span_f1:
-            f1_dict = self._span_f1_metric.get_metric(reset=reset)
+            # token level metrics
+            token_f1_dict = self._f1_metric.get_metric(reset=reset)
             if self._verbose_metrics:
-                metrics_to_return.update(f1_dict)
+                metrics_to_return.update(token_f1_dict)
             else:
-                metrics_to_return.update({x: y for x, y in f1_dict.items() if "overall" in x})
-
-        # token level metrics
-        token_f1_dict = self._f1_metric.get_metric(reset=reset)
-        if self._verbose_metrics:
-            metrics_to_return.update(token_f1_dict)
-        else:
-            metrics_to_return.update({x: y for x, y in token_f1_dict.items() if "overall" in x})
+                metrics_to_return.update({x: y for x, y in token_f1_dict.items() if "overall" in x})
         return metrics_to_return

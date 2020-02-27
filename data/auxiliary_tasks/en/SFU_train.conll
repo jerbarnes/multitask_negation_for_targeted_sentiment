@@ -55087,11 +55087,9 @@ chineze@tampabay	O	O
 
 # domain - CARS
 # sentence -  New Year ! 
-	O	O
 New	O	O
 Year	O	O
 !	O	O
-	O	O
 
 # domain - CARS
 # sentence - But , my husband 's white 2002 Ford Taurus SE is bland , chintzy , nothing to be proud of .
@@ -232855,7 +232853,6 @@ diseased	O	O
 please	O	O
 be	O	O
 cautious	O	O
-	O	O
 each	O	O
 queasy	O	O
 chorus	O	O
@@ -232863,7 +232860,6 @@ will	O	O
 leave	O	O
 ya	O	O
 nauseous	O	O
-	O	O
 Each	O	O
 verse	O	O
 is	O	O
@@ -232871,7 +232867,6 @@ equipped	O	O
 with	O	O
 evil	O	O
 forces	O	O
-	O	O
 For	O	O
 teachin'	O	O
 your	O	O
@@ -232950,7 +232945,6 @@ ya	O	O
 wrist	O	O
 go	O	O
 bling	O	O
-	O	O
 That	O	O
 ya	O	O
 sh	O	O
@@ -232971,7 +232965,6 @@ thing	O	O
 in	O	O
 a	O	O
 thong	O	O
-	O	O
 Y'all	O	O
 ai	O	O
 n't	O	O
@@ -232984,12 +232977,10 @@ of	O	O
 bringin'	O	O
 it	O	O
 on	O	O
-	O	O
 Take	O	O
 my	O	O
 advice	O	O
 shorty	O	O
-	O	O
 Before	O	O
 I	O	O
 make	O	O
@@ -233298,7 +233289,6 @@ as	O	O
 I	O	O
 love	O	O
 pu**y	O	O
-	O	O
 you	O	O
 ca	O	O
 n't	O	O
@@ -245178,8 +245168,6 @@ you	O	O
 "	O	O
 suck	O	O
 my	O	O
-	O	O
-	O	O
 .	O	O
 "	O	O
 

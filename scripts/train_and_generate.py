@@ -84,6 +84,7 @@ if __name__ == '__main__':
     parser.add_argument('save_model_dir', type=parse_path, help=save_model_dir_help)
     parser.add_argument('--mtl', action='store_true', 
                         help=mtl_help)
+    parser.add_argument('--aux_name', default='negation', type=str)
     args = parser.parse_args()
     save_results_dir = args.save_results_dir
     # create save directory if it does not exist
@@ -126,7 +127,7 @@ if __name__ == '__main__':
                                   'cannot already exist for you to save a model to it')
         aux_model_save_fp = None
         if args.mtl:
-            aux_model_save_fp = Path(model_dir, f'task_negation_model_{run_number}.tar.gz')
+            aux_model_save_fp = Path(model_dir, f'task_{args.aux_name}_model_{run_number}.tar.gz')
             if aux_model_save_fp.exists():
                 raise FileExistsError(f'The model run file {aux_model_save_fp} '
                                       'cannot already exist for you to save a model to it')
@@ -158,7 +159,7 @@ if __name__ == '__main__':
                 raise FileNotFoundError('The model was not saved in the temp '
                                         f'directory {temp_save_model_fp}')
             if args.mtl:
-                temp_aux_save_model_fp = Path(temp_data_dir, 'task_negation_model.tar.gz')
+                temp_aux_save_model_fp = Path(temp_data_dir, f'task_{args.aux_name}_model.tar.gz')
                 if not Path(temp_aux_save_model_fp).exists():
                     raise FileNotFoundError('The model was not saved in the temp '
                                             f'directory {temp_aux_save_model_fp}')

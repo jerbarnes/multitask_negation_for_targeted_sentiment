@@ -114,6 +114,42 @@ To generate the data statistics in the table above run the following bash script
 ./scripts/negation_statistics.sh
 ```
 
+## Create dataset statistics for the U-POS, X-POS, Dependency Relations, SMWE, and Super Sense tagging
+In these auxilary tasks to get the vocabularly dataset statistics run the following:
+
+For the Streusle we included empty nodes which are tokens that have a decimal numbered `ID`. The paper associated with the Streusle dataset is [A Corpus and Model Integrating Multiword Expressions and Supersenses by Schneider and Smith 2015](https://www.aclweb.org/anthology/N15-1177/).
+
+For U-POS
+``` bash
+allennlp dry-run ./resources/statistic_configs/en/streusle_u_pos.jsonnet -s /tmp/dry --include-package multitask_negation_target
+```
+
+For X-POS
+``` bash
+allennlp dry-run ./resources/statistic_configs/en/streusle_x_pos.jsonnet -s /tmp/dry --include-package multitask_negation_target
+```
+
+For Dependency Relations
+``` bash
+allennlp dry-run ./resources/statistic_configs/en/streusle_dr.jsonnet -s /tmp/dry --include-package multitask_negation_target
+```
+
+For SMWE
+``` bash
+allennlp dry-run ./resources/statistic_configs/en/streusle_smwe.jsonnet -s /tmp/dry --include-package multitask_negation_target
+```
+Predicting True or False on the SMWE is highly in-balanced for the False class with 6987 in the True and 48598 in the False.
+
+For SS
+``` bash
+allennlp dry-run ./resources/statistic_configs/en/streusle_ss.jsonnet -s /tmp/dry --include-package multitask_negation_target
+```
+
+For LEXTAG
+``` bash
+allennlp dry-run ./resources/statistic_configs/en/streusle_lextag.jsonnet -s /tmp/dry --include-package multitask_negation_target
+```
+
 ### Dataset split statistics
 The tables below states the dataset **split** statistics:
 #### SFU Negation
@@ -150,7 +186,7 @@ To generate the data for this table above run `./scripts/negation_split_statisti
 To generate the data for this table above run `./scripts/negation_split_statistics.sh conandoyle negation`
 
 ## Experiments
-The experiments are performed to find out if using negation helps targeted sentiment analysis. The multi-task model will be a Bi-LSTM with 2 layers that feeds into a CRF, where the first layer is a shared layer between the tasks, the second and CRF layer will be task specific. The single task model will be the same Bi-LSTM with 2 layers that feeds into a CRF. Each model will also have a skip connection from the embedding layer to the second layer of the Bi-LSTM.
+The single task model uses a 2 layer Bi-LSTM with a projection layer that goes into CRF decoding layer, further there is a skip connection between the embedding and the 2nd layer Bi-LSTM layer. The multi task model uses the same 2 layer Bi-LSTM model but the auxiliary tasks only have access to the embedding and first Bi-LSTM layer which then feeds into a task specific projection layer which then uses either Softmax or CRF for decoding.
 
 Before running any of the experiments for the single and multi task models we perform a hyperparameter search for both models.
 
@@ -163,6 +199,11 @@ The tuning is performed on the smallest datasets which are the Laptop dataset fo
 The tuning is performed separately for the single and multi-task models. The single task model will only be tuned for the sentiment task and not the negation. Furthermore we tune the models by randomly sampling the parameters stated above within the range specified changining the random seed each time, of which these parameters are sampled 30 times in total for each model. From the 30 model runs the parameters from the best run based on the F1-Span measure from the validation set are selected for all of the experiments for that model.
 
 #### Multi Task Learning Tuning
+
+As [stanford-nlp](https://github.com/stanfordnlp/stanfordnlp) package is installed and due to [Ray](https://ray.readthedocs.io/en/latest/) that is used in [allentune](https://github.com/allenai/allentune), the `STANFORDNLP_TEST_HOME` environment variable has to be set before using `allentune` thus I did the following:
+``` bash
+export STANFORDNLP_TEST_HOME=~/stanfordnlp_test
+```
 
 Run the following:
 ``` bash
@@ -189,10 +230,10 @@ allentune plot \
     --performance-metric-field best_validation_f1-measure-overall \
     --performance-metric F1-Span
 ```
-The multi-task model found the following as the best parameters from run number 7 with a validation F1-Span score of 61.23%:
-1. lr = 0.0028
-2. shared/first layer hidden size = 100
-3. dropout = 0.5
+The multi-task model found the following as the best parameters from run number 24 with a validation F1-Span score of 60.17%:
+1. lr = 0.0019
+2. shared/first layer hidden size = 65
+3. dropout = 0.27
 Of which the plot of the F1-Span metric on the validation set against the number of runs can be seen [here](./resources/tuning/multi_task_tuning_laptop_performance.pdf).
 
 #### Single Task Learning Tuning
@@ -282,7 +323,7 @@ For the MAMS dataset:
 python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/conan_doyle/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/conan_doyle/MAMS 5 ./data/models/en/mtl/conan_doyle/MAMS --mtl
 ```
 
-#### SFU
+#### SFU (Negation)
 For the laptop dataset:
 ```
 python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu/laptop.jsonnet ./data/main_task/en/laptop/test.conll ./data/main_task/en/laptop/dev.conll ./data/results/en/mtl/sfu/laptop 5 ./data/models/en/mtl/sfu/laptop --mtl
@@ -294,6 +335,133 @@ python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu/rest
 For the MAMS dataset:
 ```
 python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/sfu/MAMS 5 ./data/models/en/mtl/sfu/MAMS --mtl
+```
+
+#### POS tagging (Streusle data)
+Here the task is Universal POS tagging. When running the model once with one Bi-LSTM layer with a CRF decoder the POS tagging accuracy for test and validation respectively is:
+
+`94.3% and 94.26%`
+
+To run that model:
+``` bash
+allennlp train resources/model_configs/mtl/en/u_pos/pos.jsonnet -s /tmp/any --include-package multitask_negation_target
+```
+
+For the multi task learning models run the following for the respective datasets:
+
+Laptop
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/u_pos/laptop.jsonnet ./data/main_task/en/laptop/test.conll ./data/main_task/en/laptop/dev.conll ./data/results/en/mtl/u_pos/laptop 5 ./data/models/en/mtl/u_pos/laptop --mtl --aux_name upos
+```
+
+Restaurant
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/u_pos/restaurant.jsonnet ./data/main_task/en/restaurant/test.conll ./data/main_task/en/restaurant/dev.conll ./data/results/en/mtl/u_pos/restaurant 5 ./data/models/en/mtl/u_pos/restaurant --mtl --aux_name upos
+```
+
+MAMS
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/u_pos/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/u_pos/MAMS 5 ./data/models/en/mtl/u_pos/MAMS --mtl --aux_name upos
+```
+
+#### Dependency Relation tagging (Streusle data)
+Here the task is Dependency Relation tagging where we want to predict the dependency relation tag for a given token but not the dependency graph. When running the model once with one Bi-LSTM layer with a CRF decoder the Dependency Relation tagging accuracy for test and validation respectively is:
+
+`88.22% and 87.49%`
+
+To run that model:
+``` bash
+allennlp train resources/model_configs/mtl/en/dr/dr.jsonnet -s /tmp/any --include-package multitask_negation_target
+```
+
+For the multi task learning models run the following for the respective datasets:
+
+Laptop
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/dr/laptop.jsonnet ./data/main_task/en/laptop/test.conll ./data/main_task/en/laptop/dev.conll ./data/results/en/mtl/dr/laptop 5 ./data/models/en/mtl/dr/laptop --mtl --aux_name dr
+```
+
+Restaurant
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/dr/restaurant.jsonnet ./data/main_task/en/restaurant/test.conll ./data/main_task/en/restaurant/dev.conll ./data/results/en/mtl/dr/restaurant 5 ./data/models/en/mtl/dr/restaurant --mtl --aux_name dr
+```
+
+MAMS
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/dr/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/dr/MAMS 5 ./data/models/en/mtl/dr/MAMS --mtl --aux_name dr
+```
+
+#### Lexical tagging (Streusle data)
+This is a complex BIO tagging task. Accuracy for test and validation respectively is:
+
+`76.94% and 77.94%`
+
+To run that model:
+``` bash
+allennlp train resources/model_configs/mtl/en/lextag/lextag.jsonnet -s /tmp/any --include-package multitask_negation_target
+```
+
+For the multi task learning models run the following for the respective datasets:
+
+Laptop
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/lextag/laptop.jsonnet ./data/main_task/en/laptop/test.conll ./data/main_task/en/laptop/dev.conll ./data/results/en/mtl/lextag/laptop 5 ./data/models/en/mtl/lextag/laptop --mtl --aux_name lextag
+```
+
+Restaurant
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/lextag/restaurant.jsonnet ./data/main_task/en/restaurant/test.conll ./data/main_task/en/restaurant/dev.conll ./data/results/en/mtl/lextag/restaurant 5 ./data/models/en/mtl/lextag/restaurant --mtl --aux_name lextag
+```
+
+MAMS
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/lextag/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/lextag/MAMS 5 ./data/models/en/mtl/lextag/MAMS --mtl --aux_name lextag
+```
+
+#### Lexical and Negation tagging (Streusle data)
+This is a complex BIO tagging task. Accuracy for test and validation respectively is:
+
+`76.94% and 77.94%`
+
+To run that model:
+``` bash
+allennlp train resources/model_configs/mtl/en/lextag/lextag.jsonnet -s /tmp/any --include-package multitask_negation_target
+```
+
+For the multi task learning models run the following for the respective datasets:
+
+Laptop
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/cd_lextag/laptop.jsonnet ./data/main_task/en/laptop/test.conll ./data/main_task/en/laptop/dev.conll ./data/results/en/mtl/cd_lextag/laptop 5 ./data/models/en/mtl/cd_lextag/laptop --mtl --aux_name lextag
+```
+
+Restaurant
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/cd_lextag/restaurant.jsonnet ./data/main_task/en/restaurant/test.conll ./data/main_task/en/restaurant/dev.conll ./data/results/en/mtl/cd_lextag/restaurant 5 ./data/models/en/mtl/cd_lextag/restaurant --mtl --aux_name lextag
+```
+
+MAMS
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/cd_lextag/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/cd_lextag/MAMS 5 ./data/models/en/mtl/cd_lextag/MAMS --mtl --aux_name lextag
+```
+
+#### Cross domain
+Using Dependency Relations as an Auxilary and then training on Restaurant and Testing on Laptop.
+``` bash
+```
+
+#### SFU (Speculation)
+For the laptop dataset:
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu_spec/laptop.jsonnet ./data/main_task/en/laptop/test.conll ./data/main_task/en/laptop/dev.conll ./data/results/en/mtl/sfu_spec/laptop 5 ./data/models/en/mtl/sfu_spec/laptop --mtl
+```
+For the Restaurant dataset:
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu_spec/restaurant.jsonnet ./data/main_task/en/restaurant/test.conll ./data/main_task/en/restaurant/dev.conll ./data/results/en/mtl/sfu_spec/restaurant 5 ./data/models/en/mtl/sfu_spec/restaurant --mtl
+```
+For the MAMS dataset:
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu_spec/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/sfu_spec/MAMS 5 ./data/models/en/mtl/sfu_spec/MAMS --mtl
 ```
 
 To run all of the experiments use the following script:
