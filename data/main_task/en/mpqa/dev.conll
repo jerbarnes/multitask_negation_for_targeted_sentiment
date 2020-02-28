@@ -11531,8 +11531,8 @@ But	O
 his	B-negative
 tough	I-negative
 stand	I-negative
-on	I-negative
-P'yongyang	U-uncertain-neutral
+on	L-negative
+P'yongyang	U-neutral
 has	O
 provoked	O
 concern	O
@@ -18850,9 +18850,9 @@ people	O
 who	O
 benefited	O
 from	O
-Mugabe	B-uncertain-both
-'s	I-uncertain-both
-reign	L-uncertain-both
+Mugabe	B-both
+'s	I-both
+reign	L-both
 ,	O
 are	O
 still	O
@@ -20601,7 +20601,7 @@ strong	O
 resolve	O
 to	O
 fight	O
-terrorism	U-uncertain-neutral
+terrorism	U-neutral
 .	O
 "	O
 
@@ -22954,10 +22954,10 @@ seemed	O
 anxious	O
 "	O
 to	O
-do	B-uncertain-both
-the	I-uncertain-both
-job	I-uncertain-both
-itself	L-uncertain-both
+do	B-both
+the	I-both
+job	I-both
+itself	L-both
 .	O
 
 ## Sent ID: non_fbis/08.14.55-18533:27

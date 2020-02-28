@@ -30422,11 +30422,11 @@ surprise	O
 They	B-neutral
 all	I-neutral
 want	I-neutral
-to	I-neutral
+to	L-neutral
 speak	B-positive
 with	I-positive
 me	L-positive
-.	I-neutral
+.	O
 
 ## Sent ID: non_fbis/06.25.38-22700:38
 They	I-neutral
@@ -30447,7 +30447,7 @@ government	I-neutral
 designated	I-neutral
 spiritual	I-neutral
 leader	L-neutral
-.	B-neutral
+.	O
 
 ## Sent ID: non_fbis/06.25.38-22700:39
 ``	O
