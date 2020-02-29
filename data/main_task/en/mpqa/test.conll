@@ -1496,8 +1496,8 @@ about	O
 the	B-negative
 volatility	I-negative
 of	I-negative
-stock	B-negative
-prices	L-negative
+stock	I-negative
+prices	I-negative
 and	I-negative
 the	I-negative
 role	I-negative
@@ -2044,7 +2044,7 @@ the	I-neutral
 Brazilian	I-neutral
 Government	I-neutral
 for	I-neutral
-Argentina	U-positive
+Argentina	L-neutral
 .	O
 
 ## Sent ID: 20011231/21.05.45-10422:8
@@ -8317,7 +8317,7 @@ portraying	O
 an	B-negative
 image	I-negative
 of	I-negative
-Venezuela	U-neutral
+Venezuela	L-negative
 that	O
 scares	O
 away	O
@@ -31916,7 +31916,7 @@ television	I-neutral
 networks	I-neutral
 opposed	I-neutral
 to	I-neutral
-him	U-negative
+him	L-neutral
 .	O
 
 ## Sent ID: non_fbis/08.11.35-9355:10
@@ -37668,7 +37668,7 @@ those	O
 who	O
 lost	B-negative
 loved	I-negative
-ones	U-positive
+ones	I-negative
 on	I-negative
 September	I-negative
 11	I-negative

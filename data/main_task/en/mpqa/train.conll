@@ -25638,7 +25638,7 @@ companies	I-negative
 seek	I-negative
 to	I-negative
 avoid	I-negative
-losses	U-positive
+losses	I-negative
 by	I-negative
 raising	I-negative
 prices	I-negative
@@ -64235,7 +64235,7 @@ population	I-negative
 will	I-negative
 rise	I-negative
 against	I-negative
-us	U-negative
+us	I-negative
 ,	I-negative
 seeing	I-negative
 all	I-negative
@@ -75149,9 +75149,9 @@ the	B-negative
 rising	I-negative
 tension	I-negative
 between	I-negative
-India	U-negative
+India	I-negative
 and	I-negative
-Pakistan	U-negative
+Pakistan	L-negative
 "	O
 ,	O
 the	O
@@ -78320,7 +78320,7 @@ think	I-positive
 the	I-positive
 worst	I-positive
 about	I-positive
-things	U-negative
+things	L-positive
 ,	O
 you	O
 can	O
@@ -93424,7 +93424,7 @@ to	I-positive
 countries	I-positive
 that	I-positive
 support	I-positive
-Israel	U-positive
+Israel	I-positive
 for	I-positive
 one	I-positive
 month	L-positive

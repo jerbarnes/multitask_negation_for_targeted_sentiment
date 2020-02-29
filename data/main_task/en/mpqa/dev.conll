@@ -6864,7 +6864,7 @@ and	I-positive
 policy	I-positive
 to	I-positive
 throw	I-positive
-us	U-positive
+us	I-positive
 from	I-positive
 the	I-positive
 island	L-positive
@@ -26257,7 +26257,7 @@ plotting	I-negative
 to	I-negative
 blow	I-negative
 up	I-negative
-US	U-both
+US	I-negative
 targets	I-negative
 there	L-negative
 .	O
