@@ -4437,7 +4437,7 @@ for	I-negative
 Beijing	I-negative
 's	I-negative
 support	I-negative
-on	I-negative
+on	L-negative
 issues	B-positive
 such	I-positive
 as	I-positive
@@ -5669,7 +5669,7 @@ pressure	I-negative
 to	I-negative
 back	I-negative
 down	I-negative
-from	I-negative
+from	L-negative
 his	B-both
 controversial	I-both
 land	I-both
@@ -10496,7 +10496,7 @@ imposing	B-positive
 a	I-positive
 weapons	I-positive
 embargo	I-positive
-on	I-positive
+on	L-positive
 Israel	B-negative
 and	I-negative
 the	I-negative
@@ -20294,7 +20294,7 @@ relations	O
 We	O
 hope	O
 US	U-neutral
-behaves	I-positive
+behaves	B-positive
 as	I-positive
 it	I-positive
 says	I-positive
@@ -25027,7 +25027,7 @@ network	O
 ,	O
 Burg	B-negative
 denounced	I-negative
-the	B-negative
+the	I-negative
 policy	L-negative
 ,	O
 much	O
@@ -25152,10 +25152,10 @@ Centennial	I-positive
 Journal	I-positive
 item	I-positive
 recognized	I-positive
-the	B-positive
+the	I-positive
 money-fund	I-positive
 concept	L-positive
-as	I-positive
+as	B-positive
 one	I-positive
 of	I-positive
 the	I-positive
@@ -26673,7 +26673,7 @@ with	O
 a	O
 hope	O
 that	O
-Mugabe	U-positive
+Mugabe	B-positive
 will	I-positive
 finally	I-positive
 deliver	I-positive
@@ -27041,7 +27041,7 @@ against	I-neutral
 what	I-neutral
 he	I-neutral
 called	I-neutral
-hostile	I-neutral
+hostile	L-neutral
 international	B-negative
 attention	L-negative
 .	O
@@ -31085,7 +31085,7 @@ our	I-positive
 full	I-positive
 support	I-positive
 to	I-positive
-the	B-positive
+the	I-positive
 George	I-positive
 W.	I-positive
 Bush	I-positive
@@ -33025,7 +33025,7 @@ know	I-positive
 become	I-positive
 interested	I-positive
 in	I-positive
-their	B-positive
+their	I-positive
 religion	L-positive
 because	O
 i	O
@@ -35429,7 +35429,7 @@ Asia.	O
 O	O
 
 ## Sent ID: xbank/wsj_0583:23
-company	L-negative
+company	U-negative
 has	O
 not	O
 been	O

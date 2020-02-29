@@ -15463,7 +15463,7 @@ supporters	O
 of	O
 the	B-positive
 idea	I-positive
-of	I-positive
+of	L-positive
 lying	B-negative
 on	I-negative
 a	I-negative
@@ -17876,7 +17876,7 @@ asking	O
 you	B-positive
 to	I-positive
 consider	I-positive
-sponsoring	B-positive
+sponsoring	I-positive
 one	I-positive
 of	I-positive
 our	I-positive
@@ -19571,7 +19571,7 @@ bruised	O
 by	O
 criticism	B-negative
 of	I-negative
-their	B-negative
+their	I-negative
 treatment	I-negative
 of	I-negative
 Taliban	I-negative
@@ -34504,7 +34504,7 @@ Department	I-negative
 's	I-negative
 criticism	I-negative
 of	I-negative
-Russia	B-negative
+Russia	I-negative
 's	I-negative
 human	I-negative
 rights	I-negative
@@ -37646,10 +37646,10 @@ ambushes	I-negative
 and	I-negative
 ,	I-negative
 boasted	I-negative
-of	I-negative
+of	L-negative
 plans	B-both
 to	I-both
-kill	I-both
+kill	L-both
 innocent	B-negative
 people	L-negative
 ,	O

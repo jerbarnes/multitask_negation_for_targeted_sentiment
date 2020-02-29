@@ -3606,12 +3606,12 @@ to	B-positive
 present	I-positive
 to	I-positive
 the	I-positive
-West	I-positive
+West	L-positive
 the	B-neutral
 Chechen	I-neutral
 independence	I-neutral
 movement	L-neutral
-as	I-positive
+as	B-positive
 a	I-positive
 chapter	I-positive
 of	I-positive
@@ -3747,7 +3747,7 @@ would	I-positive
 continue	I-positive
 to	I-positive
 encourage	I-positive
-political	B-positive
+political	I-positive
 dialogue	I-positive
 between	I-positive
 Moscow	I-positive
@@ -3795,7 +3795,7 @@ with	I-negative
 international	I-negative
 terrorist	I-negative
 groups	L-negative
-,	I-positive
+,	B-positive
 "	I-positive
 and	I-positive
 that	I-positive
@@ -3804,7 +3804,7 @@ accept	I-positive
 Putin	I-positive
 's	I-positive
 offer	I-positive
-to	B-positive
+to	I-positive
 make	I-positive
 peace	L-positive
 .	O
@@ -4707,7 +4707,7 @@ no	O
 sense	O
 to	B-positive
 demand	I-positive
-that	B-positive
+that	I-positive
 everything	I-positive
 be	I-positive
 done	I-positive
@@ -8745,7 +8745,7 @@ the	B-negative
 government	I-negative
 has	I-negative
 largely	I-negative
-ignored	I-negative
+ignored	L-negative
 Suhakam	B-neutral
 's	I-neutral
 maiden	I-neutral
@@ -9228,12 +9228,12 @@ based	O
 on	O
 his	B-negative
 defense	I-negative
-of	I-negative
+of	L-negative
 the	B-neutral
 1987	I-neutral
 'Ops	I-neutral
 Lalang	L-neutral
-'	I-negative
+'	B-negative
 where	I-negative
 more	I-negative
 than	I-negative
@@ -20511,14 +20511,14 @@ Jiang	O
 the	B-positive
 US	I-positive
 support	I-positive
-for	I-positive
+for	L-positive
 the	B-positive
 "	I-positive
 one	I-positive
 China	I-positive
 "	I-positive
 policy	L-positive
-as	I-positive
+as	B-positive
 well	I-positive
 as	I-positive
 its	I-positive
@@ -24400,7 +24400,7 @@ supporters	I-negative
 are	I-negative
 prepared	I-negative
 to	I-negative
-accept	I-negative
+accept	L-negative
 the	B-negative
 final	I-negative
 tally	L-negative
@@ -26962,7 +26962,7 @@ you	B-positive
 to	I-positive
 continue	I-positive
 to	I-positive
-support	I-positive
+support	L-positive
 the	B-positive
 mission	I-positive
 and	I-positive
@@ -27758,7 +27758,7 @@ received	I-positive
 from	I-positive
 the	I-positive
 European	I-positive
-Parliament	I-positive
+Parliament	L-positive
 to	B-positive
 secure	I-positive
 timely	I-positive
@@ -30429,7 +30429,7 @@ me	L-positive
 .	O
 
 ## Sent ID: non_fbis/06.25.38-22700:38
-They	I-neutral
+They	B-neutral
 all	I-neutral
 raise	I-neutral
 their	I-neutral
@@ -39859,7 +39859,7 @@ be	O
 able	O
 to	O
 achieve	O
-its	L-positive
+its	U-positive
 exalted	O
 objectives	O
 with	O
@@ -44417,7 +44417,7 @@ to	O
 buckle	O
 to	O
 pressure	B-positive
-to	I-positive
+to	L-positive
 suspend	B-both
 Zimbabwe	I-both
 from	I-both
@@ -48459,7 +48459,7 @@ Sept	I-positive
 .	L-positive
 
 ## Sent ID: temp_fbis/21.37.33-17834:13
-11	I-positive
+11	B-positive
 terrorist	I-positive
 attacks	I-positive
 on	I-positive
@@ -50604,7 +50604,7 @@ it	O
 can	O
 silence	O
 the	O
-justice-seeking	L-both
+justice-seeking	U-both
 cries	O
 of	O
 the	O
@@ -52970,7 +52970,7 @@ Just	O
 like	O
 the	O
 respect	O
-we've	L-positive
+we've	U-positive
 earned	O
 from	O
 U.S.	O
@@ -52985,7 +52985,7 @@ Just	O
 like	O
 the	O
 impact	O
-Goodwill's	L-positive
+Goodwill's	U-positive
 work	O
 has	O
 on	O
@@ -62502,7 +62502,7 @@ adopt	B-neutral
 Israeli	I-neutral
 claims	I-neutral
 and	I-neutral
-seek	I-neutral
+seek	L-neutral
 security	B-positive
 for	I-positive
 the	I-positive
@@ -65174,12 +65174,12 @@ that	I-positive
 you	I-positive
 believe	I-positive
 in	I-positive
-the	B-positive
+the	I-positive
 work	I-positive
 that	I-positive
 we	I-positive
 do	L-positive
-and	I-positive
+and	B-positive
 are	I-positive
 willing	I-positive
 to	I-positive
@@ -67786,9 +67786,9 @@ outcry	O
 when	O
 he	B-negative
 rejected	I-negative
-the	B-negative
+the	I-negative
 Kyoto	I-negative
-Protocol	L-negative
+Protocol	I-negative
 last	I-negative
 March	L-negative
 ,	O
@@ -68003,7 +68003,7 @@ calling	O
 on	O
 the	B-neutral
 U.S.	L-neutral
-to	I-positive
+to	B-positive
 take	I-positive
 leadership	I-positive
 in	I-positive
@@ -77612,7 +77612,7 @@ an	B-negative
 international	I-negative
 outcry	I-negative
 over	I-negative
-the	B-negative
+the	I-negative
 American	I-negative
 treatment	I-negative
 of	I-negative
@@ -93303,7 +93303,7 @@ also	I-negative
 supported	I-negative
 movements	I-negative
 that	I-negative
-opposed	I-negative
+opposed	L-negative
 American	B-positive
 intervention	I-positive
 in	I-positive
@@ -93362,7 +93362,7 @@ of	I-negative
 establishing	I-negative
 friendly	I-negative
 relations	I-negative
-with	I-negative
+with	L-negative
 certain	B-positive
 countries	I-positive
 that	I-positive
@@ -95291,12 +95291,12 @@ Pakistan	O
 ACEC	B-neutral
 has	I-neutral
 called	I-neutral
-for	I-neutral
+for	L-neutral
 donations	B-positive
 of	I-positive
 relief	I-positive
 goods	L-positive
-on	I-neutral
+on	B-neutral
 its	I-neutral
 Web	I-neutral
 site	I-neutral
@@ -102638,7 +102638,7 @@ is	O
 unequivocal	O
 in	O
 its	O
-U.S.	L-positive
+U.S.	U-positive
 support	O
 .	O
 
@@ -107016,7 +107016,7 @@ each	B-negative
 country	I-negative
 which	I-negative
 resisted	I-negative
-American	B-negative
+American	I-negative
 hegemony	L-negative
 was	O
 deemed	O
@@ -107566,7 +107566,7 @@ Chinese	O
 government	O
 denied	O
 a	B-negative
-requested	I-negative
+requested	L-negative
 visit	B-neutral
 by	I-neutral
 the	I-neutral
@@ -111035,7 +111035,7 @@ all	O
 his	O
 accomplishments	O
 ,	O
-Herod	U-negative
+Herod	B-negative
 was	I-neutral
 nevertheless	I-neutral
 hated	I-neutral
@@ -112421,7 +112421,7 @@ Palestine	I-positive
 that	I-positive
 also	I-positive
 respected	I-positive
-the	B-positive
+the	I-positive
 rights	I-positive
 of	I-positive
 existing	I-positive
