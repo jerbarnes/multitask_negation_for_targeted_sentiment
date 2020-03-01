@@ -1,5 +1,5 @@
 {
-    "task_speculation": {
+    "task_negation": {
         "dataset_reader": {
             "type": "negation_speculation",
             "token_indexers": {
@@ -8,12 +8,11 @@
                 "lowercase_tokens": true
                 }
             },
-            "tag_label": "speculation",
-            "label_namespace": "speculation_labels"
+            "label_namespace": "negation_labels"
         },
-        "train_data_path": "./data/auxiliary_tasks/en/SFU_train.conll", 
-        "validation_data_path": "./data/auxiliary_tasks/en/SFU_dev.conll",
-        "test_data_path": "./data/auxiliary_tasks/en/SFU_test.conll",
+        "train_data_path": "./data/auxiliary_tasks/en/conandoyle_train.conllu", 
+        "validation_data_path": "./data/auxiliary_tasks/en/conandoyle_dev.conllu",
+        "test_data_path": "./data/auxiliary_tasks/en/conandoyle_test.conllu",
         "model": {
             "type": "shared_crf_tagger",
             "constrain_crf_decoding": true,
@@ -21,7 +20,7 @@
             "dropout": 0.27,
             "regularizer": [[".*", {"type": "l2", "alpha": 0.0001}]],
             "include_start_end_transitions": false,
-            "label_namespace": "speculation_labels",
+            "label_namespace": "negation_labels",
             "label_encoding": "BIO",
             "skip_connections": false,
             "verbose_metrics": false
@@ -42,7 +41,7 @@
     },
     "task_sentiment": {
         "dataset_reader": {
-            "type": "target_conll",
+            "type": "mpqa",
             "token_indexers": {
                 "tokens": {
                 "type": "single_id",
@@ -51,9 +50,9 @@
             },
             "label_namespace": "sentiment_labels"
         },
-        "train_data_path": "./data/main_task/en/MAMS/train.conll", 
-        "validation_data_path": "./data/main_task/en/MAMS/dev.conll",
-        "test_data_path": "./data/main_task/en/MAMS/test.conll",
+        "train_data_path": "./data/main_task/en/mpqa/train.conll", 
+        "validation_data_path": "./data/main_task/en/mpqa/dev.conll",
+        "test_data_path": "./data/main_task/en/mpqa/test.conll",
         "model": {
             "type": "shared_crf_tagger",
             "constrain_crf_decoding": true,
@@ -110,7 +109,7 @@
     },
     "trainer": {
         "type": "multi_task_trainer",
-        "task_order": ["task_speculation", "task_sentiment"],
+        "task_order": ["task_negation", "task_sentiment"],
         "main_task": "task_sentiment"
     }
 }

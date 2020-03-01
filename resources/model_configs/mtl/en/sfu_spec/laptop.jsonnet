@@ -18,24 +18,18 @@
             "type": "shared_crf_tagger",
             "constrain_crf_decoding": true,
             "calculate_span_f1": true,
-            "dropout": 0.5,
+            "dropout": 0.27,
             "regularizer": [[".*", {"type": "l2", "alpha": 0.0001}]],
             "include_start_end_transitions": false,
             "label_namespace": "speculation_labels",
             "label_encoding": "BIO",
-            "skip_connections": true,
-            "verbose_metrics": false,
-            "task_encoder": {
-                "type": "lstm",
-                "input_size": 400,
-                "hidden_size": 50,
-                "bidirectional": true,
-                "num_layers": 1
-            }
+            "skip_connections": false,
+            "verbose_metrics": false
         },
         "trainer": {
             "optimizer": {
-                "type": "adam"
+                "type": "adam",
+                "lr": 0.0019
             },
             "validation_metric": "+f1-measure-overall",
             "num_epochs": 150,
@@ -64,7 +58,7 @@
             "type": "shared_crf_tagger",
             "constrain_crf_decoding": true,
             "calculate_span_f1": true,
-            "dropout": 0.5,
+            "dropout": 0.27,
             "regularizer": [[".*", {"type": "l2", "alpha": 0.0001}]],
             "include_start_end_transitions": false,
             "label_namespace": "sentiment_labels",
@@ -73,7 +67,7 @@
             "verbose_metrics": false,
             "task_encoder": {
                 "type": "lstm",
-                "input_size": 400,
+                "input_size": 430,
                 "hidden_size": 50,
                 "bidirectional": true,
                 "num_layers": 1
@@ -82,10 +76,10 @@
         "trainer": {
             "optimizer": {
                 "type": "adam",
-                "lr": 0.001
+                "lr": 0.0019
             },
             "validation_metric": "+f1-measure-overall",
-            "num_epochs": 3,
+            "num_epochs": 150,
             "grad_norm": 5.0,
             "patience": 10,
             "num_serialized_models_to_keep": 1,
@@ -105,7 +99,7 @@
         "shared_encoder": {
             "type": "lstm",
             "input_size": 300,
-            "hidden_size": 50,
+            "hidden_size": 65,
             "bidirectional": true,
             "num_layers": 1
         },

@@ -115,7 +115,8 @@ def get_labels(result_fp: Path, gold: bool, run_number: Optional[int] = None
                         raise IndexError(f'{line} {line_index} {run_number}')
                     labels.append(pred)
             else:
-                yield labels
+                if labels:
+                    yield labels
                 labels = []
         if labels:
             yield labels

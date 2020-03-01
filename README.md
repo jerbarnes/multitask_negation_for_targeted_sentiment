@@ -114,10 +114,26 @@ To generate the data statistics in the table above run the following bash script
 ./scripts/negation_statistics.sh
 ```
 
+## Create dataset statistics for MPQA
+``` bash
+export STANFORDNLP_TEST_HOME=~/stanfordnlp_test
+```
+
+``` bash
+allennlp dry-run ./resources/statistic_configs/en/mpqa.jsonnet -s /tmp/dry --include-package multitask_negation_target
+```
+
+1094 Training sentences that contain at least one target out of the 4195 sentences.
+
+
 ## Create dataset statistics for the U-POS, X-POS, Dependency Relations, SMWE, and Super Sense tagging
 In these auxilary tasks to get the vocabularly dataset statistics run the following:
 
 For the Streusle we included empty nodes which are tokens that have a decimal numbered `ID`. The paper associated with the Streusle dataset is [A Corpus and Model Integrating Multiword Expressions and Supersenses by Schneider and Smith 2015](https://www.aclweb.org/anthology/N15-1177/).
+
+``` bash
+export STANFORDNLP_TEST_HOME=~/stanfordnlp_test
+```
 
 For U-POS
 ``` bash
@@ -307,6 +323,16 @@ For the MAMS dataset:
 python ./scripts/train_and_generate.py ./resources/model_configs/stl/en/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/stl/MAMS 5 ./data/models/en/stl/MAMS
 ```
 
+For the MPQA dataset:
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/stl/en/mpqa.jsonnet ./data/main_task/en/mpqa/test.conll ./data/main_task/en/mpqa/dev.conll ./data/results/en/stl/mpqa 5 ./data/models/en/stl/mpqa
+```
+
+To run that model:
+``` bash
+allennlp train resources/model_configs/stl/en/mpqa.jsonnet -s /tmp/any --include-package multitask_negation_target
+```
+
 ### Multi task models
 #### Conan Doyle
 For the laptop dataset:
@@ -321,6 +347,11 @@ python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/conan_do
 For the MAMS dataset:
 ```
 python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/conan_doyle/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/conan_doyle/MAMS 5 ./data/models/en/mtl/conan_doyle/MAMS --mtl
+```
+
+For the MPQA dataset:
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/conan_doyle/mpqa.jsonnet ./data/main_task/en/mpqa/test.conll ./data/main_task/en/mpqa/dev.conll ./data/results/en/mtl/conan_doyle/mpqa 5 ./data/models/en/mtl/conan_doyle/mpqa --mtl
 ```
 
 #### SFU (Negation)
@@ -364,6 +395,11 @@ MAMS
 python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/u_pos/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/u_pos/MAMS 5 ./data/models/en/mtl/u_pos/MAMS --mtl --aux_name upos
 ```
 
+For the MPQA dataset:
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/u_pos/mpqa.jsonnet ./data/main_task/en/mpqa/test.conll ./data/main_task/en/mpqa/dev.conll ./data/results/en/mtl/u_pos/mpqa 5 ./data/models/en/mtl/u_pos/mpqa --mtl --aux_name upos
+```
+
 #### Dependency Relation tagging (Streusle data)
 Here the task is Dependency Relation tagging where we want to predict the dependency relation tag for a given token but not the dependency graph. When running the model once with one Bi-LSTM layer with a CRF decoder the Dependency Relation tagging accuracy for test and validation respectively is:
 
@@ -389,6 +425,11 @@ python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/dr/resta
 MAMS
 ```
 python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/dr/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/dr/MAMS 5 ./data/models/en/mtl/dr/MAMS --mtl --aux_name dr
+```
+
+MPQA
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/dr/mpqa.jsonnet ./data/main_task/en/mpqa/test.conll ./data/main_task/en/mpqa/dev.conll ./data/results/en/mtl/dr/mpqa 5 ./data/models/en/mtl/dr/mpqa --mtl --aux_name dr
 ```
 
 #### Lexical tagging (Streusle data)
@@ -451,6 +492,15 @@ Using Dependency Relations as an Auxilary and then training on Restaurant and Te
 ```
 
 #### SFU (Speculation)
+Baseline F1 Spec scores for test and validation:
+
+`42.9 and 56.6`
+
+To run that model:
+``` bash
+allennlp train resources/model_configs/mtl/en/sfu_spec/spec.jsonnet -s /tmp/any --include-package multitask_negation_target
+```
+
 For the laptop dataset:
 ```
 python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu_spec/laptop.jsonnet ./data/main_task/en/laptop/test.conll ./data/main_task/en/laptop/dev.conll ./data/results/en/mtl/sfu_spec/laptop 5 ./data/models/en/mtl/sfu_spec/laptop --mtl

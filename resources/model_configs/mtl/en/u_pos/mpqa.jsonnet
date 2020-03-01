@@ -1,37 +1,37 @@
 {
-    "task_speculation": {
+    "task_upos": {
         "dataset_reader": {
-            "type": "negation_speculation",
+            "type": "streusle",
             "token_indexers": {
                 "tokens": {
                 "type": "single_id",
                 "lowercase_tokens": true
                 }
             },
-            "tag_label": "speculation",
-            "label_namespace": "speculation_labels"
+            "tag_name": "UPOS",
+            "label_namespace": "u_pos"
         },
-        "train_data_path": "./data/auxiliary_tasks/en/SFU_train.conll", 
-        "validation_data_path": "./data/auxiliary_tasks/en/SFU_dev.conll",
-        "test_data_path": "./data/auxiliary_tasks/en/SFU_test.conll",
+        "train_data_path": "./data/auxiliary_tasks/en/streusle.ud_train.conllulex", 
+        "validation_data_path": "./data/auxiliary_tasks/en/streusle.ud_dev.conllulex",
+        "test_data_path": "./data/auxiliary_tasks/en/streusle.ud_test.conllulex",
         "model": {
             "type": "shared_crf_tagger",
-            "constrain_crf_decoding": true,
-            "calculate_span_f1": true,
+            "crf": true,
+            "include_start_end_transitions": false,
+            "constrain_crf_decoding": false,
+            "calculate_span_f1": false,
+            "verbose_metrics": false,
             "dropout": 0.27,
             "regularizer": [[".*", {"type": "l2", "alpha": 0.0001}]],
-            "include_start_end_transitions": false,
-            "label_namespace": "speculation_labels",
-            "label_encoding": "BIO",
+            "label_namespace": "u_pos",
             "skip_connections": false,
-            "verbose_metrics": false
         },
         "trainer": {
             "optimizer": {
                 "type": "adam",
                 "lr": 0.0019
             },
-            "validation_metric": "+f1-measure-overall",
+            "validation_metric": "+accuracy",
             "num_epochs": 150,
             "grad_norm": 5.0,
             "patience": 10,
@@ -42,7 +42,7 @@
     },
     "task_sentiment": {
         "dataset_reader": {
-            "type": "target_conll",
+            "type": "mpqa",
             "token_indexers": {
                 "tokens": {
                 "type": "single_id",
@@ -51,9 +51,9 @@
             },
             "label_namespace": "sentiment_labels"
         },
-        "train_data_path": "./data/main_task/en/MAMS/train.conll", 
-        "validation_data_path": "./data/main_task/en/MAMS/dev.conll",
-        "test_data_path": "./data/main_task/en/MAMS/test.conll",
+        "train_data_path": "./data/main_task/en/mpqa/train.conll", 
+        "validation_data_path": "./data/main_task/en/mpqa/dev.conll",
+        "test_data_path": "./data/main_task/en/mpqa/test.conll",
         "model": {
             "type": "shared_crf_tagger",
             "constrain_crf_decoding": true,
@@ -110,7 +110,7 @@
     },
     "trainer": {
         "type": "multi_task_trainer",
-        "task_order": ["task_speculation", "task_sentiment"],
+        "task_order": ["task_upos", "task_sentiment"],
         "main_task": "task_sentiment"
     }
 }
