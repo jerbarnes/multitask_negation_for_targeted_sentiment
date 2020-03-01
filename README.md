@@ -459,6 +459,11 @@ MAMS
 python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/lextag/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/lextag/MAMS 5 ./data/models/en/mtl/lextag/MAMS --mtl --aux_name lextag
 ```
 
+mpqa
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/lextag/mpqa.jsonnet ./data/main_task/en/mpqa/test.conll ./data/main_task/en/mpqa/dev.conll ./data/results/en/mtl/lextag/mpqa 5 ./data/models/en/mtl/lextag/mpqa --mtl --aux_name lextag
+```
+
 #### Lexical and Negation tagging (Streusle data)
 This is a complex BIO tagging task. Accuracy for test and validation respectively is:
 
