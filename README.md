@@ -491,11 +491,6 @@ MAMS
 python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/cd_lextag/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/cd_lextag/MAMS 5 ./data/models/en/mtl/cd_lextag/MAMS --mtl --aux_name lextag
 ```
 
-#### Cross domain
-Using Dependency Relations as an Auxilary and then training on Restaurant and Testing on Laptop.
-``` bash
-```
-
 #### SFU (Speculation)
 Baseline F1 Spec scores for test and validation:
 
@@ -508,15 +503,19 @@ allennlp train resources/model_configs/mtl/en/sfu_spec/spec.jsonnet -s /tmp/any 
 
 For the laptop dataset:
 ```
-python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu_spec/laptop.jsonnet ./data/main_task/en/laptop/test.conll ./data/main_task/en/laptop/dev.conll ./data/results/en/mtl/sfu_spec/laptop 5 ./data/models/en/mtl/sfu_spec/laptop --mtl
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu_spec/laptop.jsonnet ./data/main_task/en/laptop/test.conll ./data/main_task/en/laptop/dev.conll ./data/results/en/mtl/sfu_spec/laptop 5 ./data/models/en/mtl/sfu_spec/laptop --mtl --aux_name speculation
 ```
 For the Restaurant dataset:
 ```
-python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu_spec/restaurant.jsonnet ./data/main_task/en/restaurant/test.conll ./data/main_task/en/restaurant/dev.conll ./data/results/en/mtl/sfu_spec/restaurant 5 ./data/models/en/mtl/sfu_spec/restaurant --mtl
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu_spec/restaurant.jsonnet ./data/main_task/en/restaurant/test.conll ./data/main_task/en/restaurant/dev.conll ./data/results/en/mtl/sfu_spec/restaurant 5 ./data/models/en/mtl/sfu_spec/restaurant --mtl --aux_name speculation
 ```
 For the MAMS dataset:
 ```
-python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu_spec/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/sfu_spec/MAMS 5 ./data/models/en/mtl/sfu_spec/MAMS --mtl
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu_spec/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/sfu_spec/MAMS 5 ./data/models/en/mtl/sfu_spec/MAMS --mtl --aux_name speculation
+```
+For the MPQA dataset
+```
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu_spec/mpqa.jsonnet ./data/main_task/en/mpqa/test.conll ./data/main_task/en/mpqa/dev.conll ./data/results/en/mtl/sfu_spec/mpqa 5 ./data/models/en/mtl/sfu_spec/mpqa --mtl --aux_name speculation
 ```
 
 To run all of the experiments use the following script:
