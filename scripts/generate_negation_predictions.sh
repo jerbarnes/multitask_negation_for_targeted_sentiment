@@ -22,3 +22,18 @@ python ./scripts/generate.py ./data/models/en/mtl/sfu_spec/laptop ./data/main_ta
 python ./scripts/generate.py ./data/models/en/mtl/sfu_spec/laptop ./data/main_task/en/laptop/test_neg.conll ./data/results/en/mtl/sfu_spec/laptop --cuda
 python ./scripts/generate.py ./data/models/en/mtl/sfu_spec/restaurant ./data/main_task/en/restaurant/dev_neg.conll ./data/results/en/mtl/sfu_spec/restaurant --cuda
 python ./scripts/generate.py ./data/models/en/mtl/sfu_spec/MAMS ./data/main_task/en/restaurant/dev_neg.conll ./data/results/en/mtl/sfu_spec/MAMS --cuda
+# MTL UPOS
+python ./scripts/generate.py ./data/models/en/mtl/u_pos/laptop ./data/main_task/en/laptop/dev_neg.conll ./data/results/en/mtl/u_pos/laptop --cuda
+python ./scripts/generate.py ./data/models/en/mtl/u_pos/laptop ./data/main_task/en/laptop/test_neg.conll ./data/results/en/mtl/u_pos/laptop --cuda
+python ./scripts/generate.py ./data/models/en/mtl/u_pos/restaurant ./data/main_task/en/restaurant/dev_neg.conll ./data/results/en/mtl/u_pos/restaurant --cuda
+python ./scripts/generate.py ./data/models/en/mtl/u_pos/MAMS ./data/main_task/en/restaurant/dev_neg.conll ./data/results/en/mtl/u_pos/MAMS --cuda
+# MTL DR
+python ./scripts/generate.py ./data/models/en/mtl/dr/laptop ./data/main_task/en/laptop/dev_neg.conll ./data/results/en/mtl/dr/laptop --cuda
+python ./scripts/generate.py ./data/models/en/mtl/dr/laptop ./data/main_task/en/laptop/test_neg.conll ./data/results/en/mtl/dr/laptop --cuda
+python ./scripts/generate.py ./data/models/en/mtl/dr/restaurant ./data/main_task/en/restaurant/dev_neg.conll ./data/results/en/mtl/dr/restaurant --cuda
+python ./scripts/generate.py ./data/models/en/mtl/dr/MAMS ./data/main_task/en/restaurant/dev_neg.conll ./data/results/en/mtl/dr/MAMS --cuda
+# MTL LEXTAG
+python ./scripts/generate.py ./data/models/en/mtl/lextag/laptop ./data/main_task/en/laptop/dev_neg.conll ./data/results/en/mtl/lextag/laptop --cuda
+python ./scripts/generate.py ./data/models/en/mtl/lextag/laptop ./data/main_task/en/laptop/test_neg.conll ./data/results/en/mtl/lextag/laptop --cuda
+python ./scripts/generate.py ./data/models/en/mtl/lextag/restaurant ./data/main_task/en/restaurant/dev_neg.conll ./data/results/en/mtl/lextag/restaurant --cuda
+python ./scripts/generate.py ./data/models/en/mtl/lextag/MAMS ./data/main_task/en/restaurant/dev_neg.conll ./data/results/en/mtl/lextag/MAMS --cuda
