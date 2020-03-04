@@ -529,6 +529,11 @@ The Laptop and Restaurant development/validation dataset splits have been re-ann
 ./scripts/generate_negation_predictions.sh
 ```
 
+### Predicting on the Speculation Corpus
+``` bash
+./scripts/generate_spec_predictions.sh
+```
+
 ## Requirements
 
 1. Python >= 3.6
