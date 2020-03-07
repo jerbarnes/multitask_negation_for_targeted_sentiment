@@ -2,8 +2,8 @@ import os
 
 aux_tasks = {
        "conan_doyle": ["task_negation", "negation_speculation", "", "negation_labels", "./data/auxiliary_tasks/en/conandoyle_train.conllu", "./data/auxiliary_tasks/en/conandoyle_dev.conllu", "./data/auxiliary_tasks/en/conandoyle_test.conllu", "negation_labels"],
-       "sfu": ["task_negation", "negation_speculation", "", "negation_labels", "./data/auxiliary_tasks/en/SFU_train.conllu", "./data/auxiliary_tasks/en/SFU_dev.conllu", "./data/auxiliary_tasks/en/SFU_test.conllu", "negation_labels"],
-       "sfu_spec": ["task_speculation", "negation_speculation", '''"tag_label": "speculation",''', "speculation_labels", "./data/auxiliary_tasks/en/SFU_train.conllu", "./data/auxiliary_tasks/en/SFU_dev.conllu", "./data/auxiliary_tasks/en/SFU_test.conllu", "speculation_labels"],
+       "sfu": ["task_negation", "negation_speculation", "", "negation_labels", "./data/auxiliary_tasks/en/SFU_train.conll", "./data/auxiliary_tasks/en/SFU_dev.conll", "./data/auxiliary_tasks/en/SFU_test.conll", "negation_labels"],
+       "sfu_spec": ["task_speculation", "negation_speculation", '''"tag_label": "speculation",''', "speculation_labels", "./data/auxiliary_tasks/en/SFU_train.conll", "./data/auxiliary_tasks/en/SFU_dev.conll", "./data/auxiliary_tasks/en/SFU_test.conll", "speculation_labels"],
        "lextag": ["task_lextag", "streusle", '''"tag_name": "LEXTAG",''', "lextag", "./data/auxiliary_tasks/en/streusle.ud_train.conllulex", "./data/auxiliary_tasks/en/streusle.ud_dev.conllulex", "./data/auxiliary_tasks/en/streusle.ud_test.conllulex", "lextag"],
        "dr": ["task_dr", "streusle", '''"tag_name": "DR",''', "dr", "./data/auxiliary_tasks/en/streusle.ud_train.conllulex", "./data/auxiliary_tasks/en/streusle.ud_dev.conllulex", "./data/auxiliary_tasks/en/streusle.ud_test.conllulex", "dr"],
        "u_pos": ["task_u_pos", "streusle", '''"tag_name": "UPOS",''', "u_pos", "./data/auxiliary_tasks/en/streusle.ud_train.conllulex", "./data/auxiliary_tasks/en/streusle.ud_dev.conllulex", "./data/auxiliary_tasks/en/streusle.ud_test.conllulex", "u_pos"]
@@ -13,7 +13,7 @@ main_tasks = {
        "laptop": ["targeted_sentiment", "./data/main_task/en/laptop/train.conll", "./data/main_task/en/laptop/dev.conll", "./data/main_task/en/laptop/test.conll", "./resources/embeddings/en/laptop_model.tar.gz"],
        "restaurant": ["targeted_sentiment", "./data/main_task/en/restaurant/train.conll", "./data/main_task/en/restaurant/dev.conll", "./data/main_task/en/restaurant/test.conll", "./resources/embeddings/en/restaurant_model.tar.gz"],
        "mams": ["targeted_sentiment", "./data/main_task/en/MAMS/train.conll", "./data/main_task/en/MAMS/dev.conll", "./data/main_task/en/MAMS/test.conll", "./resources/embeddings/en/restaurant_model.tar.gz"],
-       "mpqa": ["mpqa", "./data/main_task/en/mpqa/train.conll", "./data/main_task/en/mpqa/dev.conll", "./data/main_task/en/mpqa/test.conll", "./resources/embeddings/en/transformer/elmo/2019.01.10.tar.gz"]
+       "mpqa": ["mpqa", "./data/main_task/en/mpqa/train.conll", "./data/main_task/en/mpqa/dev.conll", "./data/main_task/en/mpqa/test.conll", "./resources/embeddings/en/transformer-elmo-2019.01.10.tar.gz"]
 
 }
 

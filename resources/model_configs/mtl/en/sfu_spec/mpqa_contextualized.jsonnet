@@ -12,9 +12,9 @@
             "tag_label": "speculation",
             "label_namespace": "speculation_labels"
         },
-        "train_data_path": "./data/auxiliary_tasks/en/SFU_train.conllu",
-        "validation_data_path": "./data/auxiliary_tasks/en/SFU_dev.conllu",
-        "test_data_path": "./data/auxiliary_tasks/en/SFU_test.conllu",
+        "train_data_path": "./data/auxiliary_tasks/en/SFU_train.conll",
+        "validation_data_path": "./data/auxiliary_tasks/en/SFU_dev.conll",
+        "test_data_path": "./data/auxiliary_tasks/en/SFU_test.conll",
         "model": {
             "type": "shared_crf_tagger",
             "constrain_crf_decoding": true,
@@ -92,7 +92,7 @@
         "text_field_embedder": {
             "elmo": {
             "type": "bidirectional_lm_token_embedder",
-            "archive_file": "./resources/embeddings/en/transformer/elmo/2019.01.10.tar.gz",
+            "archive_file": "./resources/embeddings/en/transformer-elmo-2019.01.10.tar.gz",
             "bos_eos_tokens": ["<S>", "</S>"],
             "remove_bos_eos": true,
             "requires_grad": false

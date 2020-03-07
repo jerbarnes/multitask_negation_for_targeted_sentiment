@@ -1,6 +1,7 @@
+
 {
     "dataset_reader": {
-      "type": "target_conll",
+      "type": "targeted_sentiment",
       "token_indexers": {
         "elmo": {
           "type": "elmo_characters",

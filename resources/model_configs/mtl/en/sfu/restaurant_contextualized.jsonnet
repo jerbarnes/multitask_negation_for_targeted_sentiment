@@ -1,3 +1,4 @@
+
 {
     "task_negation": {
         "dataset_reader": {
@@ -8,11 +9,12 @@
                 "token_min_padding_length": 1
                 }
             },
+            
             "label_namespace": "negation_labels"
         },
-        "train_data_path": "./data/auxiliary_tasks/en/SFU_train.conllu",
-        "validation_data_path": "./data/auxiliary_tasks/en/SFU_dev.conllu",
-        "test_data_path": "./data/auxiliary_tasks/en/SFU_test.conllu",
+        "train_data_path": "./data/auxiliary_tasks/en/SFU_train.conll",
+        "validation_data_path": "./data/auxiliary_tasks/en/SFU_dev.conll",
+        "test_data_path": "./data/auxiliary_tasks/en/SFU_test.conll",
         "model": {
             "type": "shared_crf_tagger",
             "constrain_crf_decoding": true,

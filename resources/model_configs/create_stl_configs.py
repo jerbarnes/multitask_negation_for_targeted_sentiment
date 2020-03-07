@@ -4,7 +4,7 @@ main_tasks = {
        "laptop": ["targeted_sentiment", "./data/main_task/en/laptop/train.conll", "./data/main_task/en/laptop/dev.conll", "./data/main_task/en/laptop/test.conll", "./resources/embeddings/en/laptop_model.tar.gz"],
        "restaurant": ["targeted_sentiment", "./data/main_task/en/restaurant/train.conll", "./data/main_task/en/restaurant/dev.conll", "./data/main_task/en/restaurant/test.conll", "./resources/embeddings/en/restaurant_model.tar.gz"],
        "mams": ["targeted_sentiment", "./data/main_task/en/MAMS/train.conll", "./data/main_task/en/MAMS/dev.conll", "./data/main_task/en/MAMS/test.conll", "./resources/embeddings/en/restaurant_model.tar.gz"],
-       "mpqa": ["mpqa", "./data/main_task/en/mpqa/train.conll", "./data/main_task/en/mpqa/dev.conll", "./data/main_task/en/mpqa/test.conll", "./resources/embeddings/en/transformer/elmo/2019.01.10.tar.gz"]
+       "mpqa": ["mpqa", "./data/main_task/en/mpqa/train.conll", "./data/main_task/en/mpqa/dev.conll", "./data/main_task/en/mpqa/test.conll", "./resources/embeddings/en/transformer-elmo-2019.01.10.tar.gz"]
 
 }
 

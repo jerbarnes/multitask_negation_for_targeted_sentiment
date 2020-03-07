@@ -28,7 +28,7 @@
       "text_field_embedder": {
         "elmo": {
           "type": "bidirectional_lm_token_embedder",
-          "archive_file": "./resources/embeddings/en/transformer/elmo/2019.01.10.tar.gz",
+          "archive_file": "./resources/embeddings/en/transformer-elmo-2019.01.10.tar.gz",
           "bos_eos_tokens": ["<S>", "</S>"],
           "remove_bos_eos": true,
           "requires_grad": false

@@ -1,18 +1,20 @@
+
 {
-    "task_negation": {
+    "task_u_pos": {
         "dataset_reader": {
-            "type": "negation_speculation",
+            "type": "streusle",
             "token_indexers": {
                 "elmo": {
                 "type": "elmo_characters",
                 "token_min_padding_length": 1
                 }
             },
-            "label_namespace": "negation_labels"
+            "tag_name": "UPOS",
+            "label_namespace": "u_pos"
         },
-        "train_data_path": "./data/auxiliary_tasks/en/conandoyle_train.conllu",
-        "validation_data_path": "./data/auxiliary_tasks/en/conandoyle_dev.conllu",
-        "test_data_path": "./data/auxiliary_tasks/en/conandoyle_test.conllu",
+        "train_data_path": "./data/auxiliary_tasks/en/streusle.ud_train.conllulex",
+        "validation_data_path": "./data/auxiliary_tasks/en/streusle.ud_dev.conllulex",
+        "test_data_path": "./data/auxiliary_tasks/en/streusle.ud_test.conllulex",
         "model": {
             "type": "shared_crf_tagger",
             "constrain_crf_decoding": true,
@@ -20,7 +22,7 @@
             "dropout": 0.27,
             "regularizer": [[".*", {"type": "l2", "alpha": 0.0001}]],
             "include_start_end_transitions": false,
-            "label_namespace": "negation_labels",
+            "label_namespace": "u_pos",
             "label_encoding": "BIO",
             "skip_connections": false,
             "verbose_metrics": false
@@ -110,7 +112,7 @@
     },
     "trainer": {
         "type": "multi_task_trainer",
-        "task_order": ["task_negation", "task_sentiment"],
+        "task_order": ["task_u_pos", "task_sentiment"],
         "main_task": "task_sentiment"
     }
 }

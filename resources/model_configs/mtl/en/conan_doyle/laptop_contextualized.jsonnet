@@ -1,3 +1,4 @@
+
 {
     "task_negation": {
         "dataset_reader": {
@@ -8,6 +9,7 @@
                 "token_min_padding_length": 1
                 }
             },
+            
             "label_namespace": "negation_labels"
         },
         "train_data_path": "./data/auxiliary_tasks/en/conandoyle_train.conllu",
