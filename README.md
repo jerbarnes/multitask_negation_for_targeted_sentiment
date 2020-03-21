@@ -497,15 +497,43 @@ To run all of the experiments use the following script:
 ```
 
 ### Predicting on the Negation corpus
-The Laptop and Restaurant development/validation dataset splits have been re-annotated so that targets have been negated when possible. These two negation developments splits can be found [`./data/main_task/en/laptop/dev_neg.conll`](./data/main_task/en/laptop/dev_neg.conll) and [`./data/main_task/en/restaurant/dev_neg.conll`](./data/main_task/en/restaurant/dev_neg.conll) for the laptop and restaurant datasets respectively. These splits can therefore to some extent test how well the models perform on a large amount of negated target data. Therefore both the MTL and STL models that were trained in the previous section will now be tested on these two splits. To get these result run the following:
+The Laptop and Restaurant development/validation and test dataset splits have been re-annotated so that targets have been negated when possible, thus there are still samples in these splits that do not have any form of negation. These splits can therefore to some extent test how well the models perform on a large amount of negated target data. Therefore both the MTL and STL models that were trained in the previous section will now be tested on these two splits. To get these result run the following:
 ``` bash
 ./scripts/generate_negation_predictions.sh
 ```
 
+The negation corpus has also been filtered so that samples have to contain negation. This is to better isolate the negation phenonma, and therefore to better test the models capability on modelling negated samples. The script below runs the models on this smaller but more isolated negated data:
+``` bash
+./scripts/generate_negation_only_predictions.sh
+```
+
+The non-filtered negation data can be found:
+1. Laptop dataset: [Validation](./data/main_task/en/laptop/dev_neg.conll) and [Test](./data/main_task/en/laptop/test_neg.conll)
+2. Restaurant dataset: [Validation](./data/main_task/en/restaurant/dev_neg.conll) and [Test](./data/main_task/en/restaurant/test_neg.conll)
+
+The filtered negation data can be found:
+1. Laptop dataset: [Validation](./data/main_task/en/laptop/dev_neg_only.conll) and [Test](./data/main_task/en/laptop/test_neg_only.conll)
+2. Restaurant dataset: [Validation](./data/main_task/en/restaurant/dev_neg_only.conll) and [Test](./data/main_task/en/restaurant/test_neg_only.conll)
+
 ### Predicting on the Speculation Corpus
+The Laptop and Restaurant development/validation dataset split have been re-annotated so that targets have speculation added when possible, thus there are still samples in these splits that do not have any form of speculation. These splits can therefore to some extent test how well the models perform on a large amount of speculated target data. Therefore both the MTL and STL models that were trained in the previous section will now be tested on these two splits. To get these result run the following:
+
 ``` bash
 ./scripts/generate_spec_predictions.sh
 ```
+
+The speculation corpus has also been filtered so that samples have to contain speculation. This is to better isolate the speculation phenonma, and therefore to better test the models capability on modelling speculative samples. The script below runs the models on this smaller but more isolated speculative data:
+``` bash
+./scripts/generate_spec_only_predictions.sh
+```
+
+The non-filtered speculation data can be found:
+1. Laptop dataset: [Validation](./data/main_task/en/laptop/dev_spec.conll)
+2. Restaurant dataset: [Validation](./data/main_task/en/restaurant/dev_spec.conll)
+
+The filtered speculation data can be found:
+1. Laptop dataset: [Validation](./data/main_task/en/laptop/dev_spec_only.conll)
+2. Restaurant dataset: [Validation](./data/main_task/en/restaurant/dev_spec_only.conll)
 
 ## Requirements
 
