@@ -27,8 +27,9 @@ def create_input_sentences(conll_fp: Path) -> Iterable[List[Token]]:
             if line.strip():
                 tokens.append(Token(line.split()[0]))
             else:
-                yield(tokens)
-                tokens = []
+                if tokens:
+                    yield(tokens)
+                    tokens = []
         if tokens:
             yield tokens
 
@@ -39,6 +40,7 @@ def write_tags_to_file(conll_fp: Path, predicted_tags: List[List[str]]) -> None:
         temp_fp = Path(temp_dir, 'temp_file.conll')
         with conll_fp.open('r') as conll_file:
             with temp_fp.open('w+') as temp_file:
+                was_empty_line = True
                 for line in conll_file:
                     line = line.strip()
                     if line:
@@ -46,10 +48,14 @@ def write_tags_to_file(conll_fp: Path, predicted_tags: List[List[str]]) -> None:
                         line = f'{line} {pred_tag}\n'
                         temp_file.write(line)
                         conll_token_count += 1
+                        was_empty_line = False
+                    elif was_empty_line:
+                        temp_file.write('\n')
                     else:
                         temp_file.write('\n')
                         conll_line += 1
                         conll_token_count = 0
+                        was_empty_line = True
         with temp_fp.open('r') as temp_file:
             with conll_fp.open('w+') as conll_file:
                 for line in temp_file:

@@ -535,6 +535,12 @@ The filtered speculation data can be found:
 1. Laptop dataset: [Validation](./data/main_task/en/laptop/dev_spec_only.conll)
 2. Restaurant dataset: [Validation](./data/main_task/en/restaurant/dev_spec_only.conll)
 
+### Predicting on cross domain
+For each of the CWR we use them to predict on the other domains that they were not trained on.
+```
+./scripts/generate_cross_domain_predictions.sh
+```
+
 ## Requirements
 
 1. Python >= 3.6
