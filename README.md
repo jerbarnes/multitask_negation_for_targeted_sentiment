@@ -540,6 +540,9 @@ For each of the CWR we use them to predict on the other domains that they were n
 ```
 ./scripts/generate_cross_domain_predictions.sh
 ```
+The analysis for this can be seen [here.](./notebooks/Cross_Domain.ipynb)
+
+The main problem that can be seen is the poor recall rate for the target extraction.
 
 ## Requirements
 
