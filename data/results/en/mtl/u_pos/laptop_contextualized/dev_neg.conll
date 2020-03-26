@@ -58,7 +58,7 @@ me O O O O O O
 to O O O O O O
 remove O O O O O O
 the O O O O O O
-battery U-NEU U-NEG U-NEU U-NEG U-NEG U-NEG
+battery U-NEU U-NEG U-NEG U-NEG U-NEG U-NEG
 to O O O O O O
 reset O O O O O O
 PUNCT O O O O O O
@@ -78,9 +78,9 @@ extra O O O O O O
 to O O O O O O
 have O O O O O O
 the O O O O O O
-on O O O O B-NEU O
-site O O O O I-NEU O
-repair O O O O L-NEU O
+on O O O O O O
+site O O O O O O
+repair O O O O O O
 done O O O O O O
 PUNCT O O O O O O
 
@@ -126,9 +126,9 @@ the O O O O O O
 way O O O O O O
 the O O O O O O
 entire O O O O O O
-suite B-NEG B-POS B-POS B-POS B-POS B-POS
-of I-NEG I-POS I-POS I-POS I-POS I-POS
-software L-NEG L-POS L-POS L-POS L-POS L-POS
+suite B-NEG B-POS B-NEG O B-NEG B-POS
+of I-NEG I-POS I-NEG O I-NEG I-POS
+software L-NEG L-POS L-NEG U-POS L-NEG L-POS
 works O O O O O O
 together O O O O O O
 PUNCT O O O O O O
@@ -146,7 +146,7 @@ PUNCT O O O O O O
 but O O O O O O
 no O O O O O O
 painless O O O O O O
-syncing U-NEG O U-NEG O O O
+syncing U-NEG U-POS O O O O
 PUNCT O O O O O O
 did O O O O O O
 not O O O O O O
@@ -198,7 +198,7 @@ cover O O O O O O
 it O O O O O O
 under O O O O O O
 the O O O O O O
-warranty U-NEG U-NEU U-NEU U-NEU U-NEU U-NEU
+warranty U-NEG U-NEG U-NEU U-NEG U-NEU U-NEU
 PUNCT O O O O O O
 
 they O O O O O O
@@ -242,15 +242,15 @@ PUNCT O O O O O O
 i O O O O O O
 called O O O O O O
 their O O O O O O
-customer B-NEU B-NEG B-NEG B-NEU B-NEU B-NEU
-service I-NEU I-NEG I-NEG I-NEU I-NEU L-NEU
-number L-NEU L-NEG L-NEG L-NEU L-NEU O
+customer B-NEU B-NEG B-NEG B-NEG B-NEG B-NEG
+service I-NEU I-NEG I-NEG I-NEG I-NEG I-NEG
+number L-NEU L-NEG L-NEG L-NEG L-NEG L-NEG
 and O O O O O O
 was O O O O O O
 told O O O O O O
 that O O O O O O
 my O O O O O O
-warranty U-POS U-NEG U-NEG U-NEG U-NEG U-NEU
+warranty U-POS U-NEG U-NEG U-NEU U-NEG U-NEG
 had O O O O O O
 not O O O O O O
 expired O O O O O O
@@ -275,7 +275,7 @@ PUNCT O O O O O O
 
 not O O O O O O
 amazing O O O O O O
-quality U-NEG U-POS U-POS U-POS O U-POS
+quality U-NEG U-POS O U-POS U-POS U-POS
 PUNCT O O O O O O
 
 it O O O O O O
@@ -335,7 +335,7 @@ did O O O O O O
 not O O O O O O
 increase O O O O O O
 in O O O O O O
-speed U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+speed U-NEG U-POS U-NEG U-NEG U-NEG U-NEG
 PUNCT O O O O O O
 
 the O O O O O O
@@ -583,7 +583,7 @@ ease O O O O O O
 of O O O O O O
 use U-NEG U-POS U-POS U-POS U-POS U-POS
 PUNCT O O O O O O
-security U-NEG U-POS U-POS U-POS U-POS U-POS
+security U-NEG U-POS O U-POS U-POS U-POS
 PUNCT O O O O O O
 are O O O O O O
 not O O O O O O
@@ -630,17 +630,17 @@ is O O O O O O
 they O O O O O O
 generally O O O O O O
 use O O O O O O
-safari U-POS O O O O U-NEU
+safari U-POS O O O O O
 and O O O O O O
 i O O O O O O
 use O O O O O O
-safari U-POS O U-NEU O O O
+safari U-POS O O O O O
 but O O O O O O
 after O O O O O O
 i O O O O O O
 removed O O O O O O
 mozzilla B-NEG O O O O O
-firfox L-NEG O O O O U-NEU
+firfox L-NEG O O O O O
 i O O O O O O
 love O O O O O O
 every O O O O O O
@@ -654,11 +654,11 @@ not O O O O O O
 really O O O O O O
 that O O O O O O
 great O O O O O O
-battery U-NEG U-NEG U-POS U-NEG U-NEG U-NEG
+battery U-NEG U-NEG U-POS U-POS U-POS U-NEG
 PUNCT O O O O O O
-speed U-NEG U-POS U-NEG U-POS U-POS U-POS
+speed U-NEG U-POS U-POS U-POS U-POS U-POS
 PUNCT O O O O O O
-display U-NEG U-POS U-NEG U-POS U-NEG U-NEG
+display U-NEG O O U-POS U-POS U-NEG
 PUNCT O O O O O O
 
 they O O O O O O
@@ -667,17 +667,17 @@ everything O O O O O O
 else O O O O O O
 such O O O O O O
 as O O O O O O
-resolution U-POS U-NEG U-NEG U-NEG U-NEG U-NEG
+resolution U-POS O U-NEG U-NEG U-NEG U-NEG
 PUNCT O O O O O O
-appearance U-POS U-POS U-NEG U-POS U-POS U-POS
+appearance U-POS U-POS U-NEG U-POS U-NEG U-POS
 PUNCT O O O O O O
-cooling B-POS B-NEG B-NEG B-POS B-NEU B-POS
-system L-POS L-NEG L-NEG L-POS L-NEU L-POS
+cooling B-POS B-POS B-NEG B-NEG B-NEG B-NEG
+system L-POS L-POS L-NEG L-NEG L-NEG L-NEG
 PUNCT O O O O O O
 but O O O O O O
 not O O O O O O
-graphics B-NEG B-NEG B-NEG B-NEU B-NEU B-POS
-card L-NEG L-NEG L-NEG L-NEU L-NEU L-POS
+graphics B-NEG B-NEU B-NEG B-NEG B-NEG B-NEU
+card L-NEG L-NEU L-NEG L-NEG L-NEG L-NEU
 PUNCT O O O O O O
 etc O O O O O O
 PUNCT O O O O O O
@@ -694,8 +694,8 @@ the O O O O O O
 money O O O O O O
 for O O O O O O
 the O O O O O O
-wireless O O O O O O
-internet O O O O O O
+wireless O B-NEU O O O O
+internet O L-NEU O O O O
 PUNCT O O O O O O
 
 additional O O O O O O
@@ -707,8 +707,8 @@ installation L-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
 comes O O O O O O
 with O O O O O O
 some O O O O O O
-toshiba-specific O B-NEG O B-NEG O O
-software U-NEG L-NEG U-NEG L-NEG U-NEG U-NEG
+toshiba-specific O B-NEG B-NEG O B-NEG B-NEG
+software U-NEG L-NEG L-NEG U-NEG L-NEG L-NEG
 that O O O O O O
 may O O O O O O
 or O O O O O O
@@ -726,7 +726,7 @@ not O O O O O O
 a O O O O O O
 particularly O O O O O O
 high O O O O O O
-price B-POS U-NEG U-NEG U-NEG U-NEG U-NEG
+price B-POS U-POS U-NEG U-POS U-NEG U-NEG
 tag L-POS O O O O O
 PUNCT O O O O O O
 however O O O O O O
@@ -737,10 +737,10 @@ this O O O O O O
 PUNCT O O O O O O
 
 the O O O O O O
-processor U-NEG U-NEG U-POS U-POS U-POS U-POS
+processor U-NEG U-POS U-NEG U-NEU U-POS U-POS
 a O O O O O O
-amd O B-NEU B-NEU B-POS B-NEU B-POS
-semprom O L-NEU L-NEU L-POS L-NEU L-POS
+amd O B-POS B-NEG B-NEU B-NEU B-POS
+semprom O L-POS L-NEG L-NEU L-NEU L-POS
 at O O O O O O
 21 O O O O O O
 ghz O O O O O O
@@ -752,9 +752,9 @@ it O O O O O O
 does O O O O O O
 have O O O O O O
 the O O O O O O
-power O U-POS O U-POS O O
+power O U-POS U-POS U-POS U-POS U-POS
 for O O O O O O
-hd O U-POS O U-POS O O
+hd O U-POS O O U-POS U-POS
 or O O O O O O
 heavy O O O O O O
 computing U-POS O O O O O
@@ -853,8 +853,8 @@ did O O O O O O
 n't O O O O O O
 see O O O O O O
 any O O O O O O
-inbuilt B-POS O O O O B-NEG
-applications L-POS U-NEG U-NEG U-NEG U-NEG L-NEG
+inbuilt B-POS O O B-NEG O B-NEG
+applications L-POS U-NEG U-NEG L-NEG U-NEG L-NEG
 crashing O O O O O O
 and O O O O O O
 it O O O O O O
@@ -893,7 +893,7 @@ vista U-NEU U-NEG U-NEG U-NEG U-NEG U-NEG
 PUNCT O O O O O O
 i O O O O O O
 know O O O O O O
-vista U-NEU U-NEG U-NEG U-NEG U-NEG U-NEU
+vista U-NEU U-NEG U-NEG U-NEG U-NEG U-NEG
 is O O O O O O
 n't O O O O O O
 the O O O O O O
@@ -910,7 +910,7 @@ and O O O O O O
 it O O O O O O
 also O O O O O O
 has O O O O O O
-vista U-NEU U-NEG U-NEG U-NEG U-NEG U-POS
+vista U-NEU U-NEG U-NEG U-POS U-NEG U-NEG
 i O O O O O O
 can O O O O O O
 not O O O O O O
@@ -922,8 +922,8 @@ to O O O O O O
 get O O O O O O
 the O O O O O O
 next O O O O O O
-operating B-POS B-NEG B-NEG B-NEG B-NEU B-NEG
-system L-POS L-NEG L-NEG L-NEG L-NEU L-NEG
+operating B-POS B-NEG B-NEG B-NEG B-NEG B-NEG
+system L-POS L-NEG L-NEG L-NEG L-NEG L-NEG
 PUNCT O O O O O O
 
 that O O O O O O
@@ -960,7 +960,7 @@ not O O O O O O
 by O O O O O O
 a O O O O O O
 portable O O O O O O
-mouse U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+mouse U-NEG U-NEU U-NEG O U-NEG U-NEG
 which O O O O O O
 would O O O O O O
 not O O O O O O
@@ -1038,8 +1038,8 @@ upon O O O O O O
 giving O O O O O O
 them O O O O O O
 the O O O O O O
-serial O O O O O O
-number O O O O O O
+serial O O B-NEG O O O
+number O O L-NEG O O O
 the O O O O O O
 first O O O O O O
 thing O O O O O O
@@ -1053,7 +1053,7 @@ it O O O O O O
 was O O O O O O
 out O O O O O O
 of O O O O O O
-warranty U-NEU U-NEG U-NEU U-NEG U-NEU U-NEU
+warranty U-NEU U-NEU U-NEU U-NEG U-NEU U-NEG
 and O O O O O O
 i O O O O O O
 could O O O O O O
@@ -1075,7 +1075,7 @@ PUNCT O O O O O O
 and O O O O O O
 had O O O O O O
 no O O O O O O
-audio U-POS U-NEG U-NEG O U-NEG O
+audio U-POS U-NEG O O U-NEG O
 problems O O O O O O
 when O O O O O O
 1st O O O O O O
@@ -1124,10 +1124,10 @@ PUNCT O O O O O O
 
 i O O O O O O
 loaded O O O O O O
-windows B-NEG B-NEU B-NEU B-NEU B-NEU B-POS
-7 L-NEG L-NEU L-NEU L-NEU L-NEU L-POS
+windows B-NEG B-POS B-NEU B-NEU B-POS B-POS
+7 L-NEG L-POS L-NEU L-NEU L-POS L-POS
 via O O O O O O
-bootcamp U-NEG U-NEU U-NEU U-NEU U-NEU U-NEU
+bootcamp U-NEG U-NEU U-NEG U-NEU U-NEU U-POS
 but O O O O O O
 it O O O O O O
 does O O O O O O
@@ -1254,7 +1254,7 @@ box O O O O O O
 PUNCT O O O O O O
 
 the O O O O O O
-image U-NEG U-NEG U-POS U-POS U-POS U-POS
+image U-NEG U-POS U-POS U-POS U-POS U-POS
 is O O O O O O
 nt O O O O O O
 great O O O O O O
@@ -1323,7 +1323,7 @@ also O O O O O O
 it O O O O O O
 is O O O O O O
 light O O O O O O
-weight O O O O O O
+weight O O O U-POS O U-POS
 compared O O O O O O
 to O O O O O O
 others O O O O O O
@@ -1332,7 +1332,7 @@ PUNCT O O O O O O
 waiting O O O O O O
 for O O O O O O
 the O O O O O O
-i7 U-NEG O O U-NEG O O
+i7 U-NEG U-NEG U-NEG O O U-POS
 was O O O O O O
 not O O O O O O
 worth O O O O O O
@@ -1430,7 +1430,7 @@ that O O O O O O
 laptop O O O O O O
 PUNCT O O O O O O
 the O O O O O O
-price U-POS U-NEG U-NEG U-NEG U-NEG U-NEG
+price U-POS U-NEG U-NEG U-NEG U-NEG U-POS
 will O O O O O O
 stay O O O O O O
 the O O O O O O
@@ -1451,7 +1451,7 @@ mode O O O O O O
 PUNCT O O O O O O
 your O O O O O O
 laptop O O O O O O
-value U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+value U-NEG U-NEG O U-NEG U-NEG U-POS
 will O O O O O O
 drop O O O O O O
 10-20 O O O O O O
@@ -1572,7 +1572,7 @@ three O O O O O O
 years O O O O O O
 PUNCT O O O O O O
 
-games U-NEG U-NEG U-NEU U-NEG U-NEG U-NEU
+games U-NEG U-NEG O U-NEU U-NEG U-NEG
 being O O O O O O
 the O O O O O O
 main O O O O O O
@@ -1618,9 +1618,9 @@ PUNCT O O O O O O
 thank O O O O O O
 god O O O O O O
 for O O O O O O
-ctrl O B-NEG O O O O
-zbottom O I-NEG O O O O
-line O L-NEG O O O O
+ctrl O B-POS O O O O
+zbottom O I-POS O O O O
+line O L-POS O O O O
 PUNCT O O O O O O
 i O O O O O O
 've O O O O O O
@@ -1643,8 +1643,8 @@ PUNCT O O O O O O
 
 even O O O O O O
 with O O O O O O
-virus B-NEG B-NEU B-NEG B-NEU B-NEU B-NEU
-protection L-NEG L-NEU L-NEG L-NEU L-NEU L-NEU
+virus B-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
+protection L-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
 PUNCT O O O O O O
 it O O O O O O
 always O O O O O O
@@ -1666,8 +1666,8 @@ do O O O O O O
 n't O O O O O O
 like O O O O O O
 playing O O O O O O
-online O O O O O O
-games U-NEG U-NEU O O U-NEU O
+online O O B-NEU O O O
+games U-NEG U-NEU L-NEU O O O
 PUNCT O O O O O O
 so O O O O O O
 it O O O O O O
@@ -1681,8 +1681,8 @@ feature U-POS U-POS U-POS U-POS U-POS U-POS
 where O O O O O O
 i O O O O O O
 can O O O O O O
-dualboot O O O O O B-NEU
-windows U-POS U-NEU U-POS U-POS U-NEU L-NEU
+dualboot O B-POS B-POS O O O
+windows U-POS L-POS L-POS U-POS U-NEU U-POS
 PUNCT O O O O O O
 
 that O O O O O O
@@ -1739,7 +1739,7 @@ definitely O O O O O O
 not O O O O O O
 amazing O O O O O O
 for O O O O O O
-gaming U-NEG U-POS U-POS U-POS U-NEG U-NEG
+gaming U-NEG U-POS U-NEU U-NEG U-POS U-NEG
 PUNCT O O O O O O
 
 it O O O O O O
@@ -1782,9 +1782,9 @@ purchase O O O O O O
 the O O O O O O
 mbp O O O O O O
 15in O O O O O O
-intel O B-NEU B-NEU O B-NEU B-NEU
-core O I-NEU I-NEU O I-NEU I-NEU
-i5 O L-NEU L-NEU O L-NEU L-NEU
+intel O O B-NEU O B-POS B-POS
+core O O I-NEU O I-POS I-POS
+i5 O O L-NEU O L-POS L-POS
 after O O O O O O
 reading O O O O O O
 consumer O O O O O O
@@ -1823,8 +1823,8 @@ best O O O O O O
 buy O O O O O O
 PUNCT O O O O O O
 
-product B-NEU B-NEG O B-NEG O B-NEG
-support L-NEU L-NEG U-NEG L-NEG U-NEG L-NEG
+product B-NEU O B-NEG B-NEG B-NEG B-NEG
+support L-NEU U-NEG L-NEG L-NEG L-NEG L-NEG
 not O O O O O O
 so O O O O O O
 poor O O O O O O
@@ -1858,8 +1858,8 @@ takes O O O O O O
 2-3 O O O O O O
 days O O O O O O
 for O O O O O O
-turnaround O B-NEG B-NEG B-NEG B-NEG B-NEG
-time O L-NEG L-NEG L-NEG L-NEG L-NEG
+turnaround O O O B-NEG B-NEG B-NEG
+time O O O L-NEG L-NEG L-NEG
 PUNCT O O O O O O
 
 may O O O O O O
@@ -1868,8 +1868,8 @@ better O O O O O O
 for O O O O O O
 the O O O O O O
 occasional O O O O O O
-web O O O B-NEU O O
-surfer O O O L-NEU O O
+web O O B-NEU O O O
+surfer O O L-NEU O O O
 PUNCT O O O O O O
 
 not O O O O O O
@@ -1916,7 +1916,7 @@ PUNCT O O O O O O
 
 with O O O O O O
 the O O O O O O
-switch U-POS O O U-NEG U-NEG O
+switch U-POS U-NEG U-NEG O O O
 being O O O O O O
 at O O O O O O
 the O O O O O O
@@ -1947,13 +1947,13 @@ for O O O O O O
 what O O O O O O
 you O O O O O O
 wanted O O O O O O
-size U-NEU U-POS U-NEU U-POS U-POS U-NEU
+size U-NEU U-POS U-POS U-POS U-NEG U-POS
 PUNCT O O O O O O
-software U-NEU U-NEU U-NEU U-NEU U-POS U-NEU
+software U-NEU U-NEU U-POS U-NEU U-POS U-POS
 PUNCT O O O O O O
 options O O O O O O
 PUNCT O O O O O O
-hardware U-NEU U-NEU U-NEU U-NEU U-POS U-POS
+hardware U-NEU U-NEU U-POS U-NEU U-POS U-NEU
 and O O O O O O
 purchase O O O O O O
 the O O O O O O
@@ -1983,8 +1983,8 @@ have O O O O O O
 a O O O O O O
 5-6 O O O O O O
 hour O O O O O O
-battery B-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
-life L-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
+battery B-NEG B-POS B-NEG O B-POS B-NEG
+life L-NEG L-POS L-NEG O L-POS L-NEG
 PUNCT O O O O O O
 
 first O O O O O O
@@ -1993,9 +1993,9 @@ burned O O O O O O
 or O O O O O O
 fused O O O O O O
 the O O O O O O
-power B-NEG B-NEU B-NEU B-NEG B-NEG B-NEU
-adapter I-NEG I-NEU I-NEU I-NEG I-NEG I-NEU
-plug L-NEG L-NEU L-NEU L-NEG L-NEG L-NEU
+power B-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
+adapter I-NEG I-NEG I-NEG I-NEG I-NEG I-NEG
+plug L-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
 PUNCT O O O O O O
 
 toshiba O O O O O O
@@ -2006,8 +2006,8 @@ the O O O O O O
 issue O O O O O O
 if O O O O O O
 the O O O O O O
-extended B-NEU B-NEG B-NEG B-NEG B-NEG B-NEG
-warrenty L-NEU L-NEG L-NEG L-NEG L-NEG L-NEG
+extended B-NEU B-NEG B-NEG B-NEG B-NEG B-NEU
+warrenty L-NEU L-NEG L-NEG L-NEG L-NEG L-NEU
 is O O O O O O
 bought O O O O O O
 toshiba O O O O O O
@@ -2015,7 +2015,7 @@ will O O O O O O
 help O O O O O O
 PUNCT O O O O O O
 
-navigation U-NEG U-NEG U-NEG U-NEG U-NEG U-POS
+navigation U-NEG U-NEG U-NEG O U-NEG U-NEG
 through O O O O O O
 the O O O O O O
 computer O O O O O O
@@ -2049,7 +2049,7 @@ fan U-POS B-NEG B-NEG B-NEG B-NEG B-NEG
 noise O L-NEG L-NEG L-NEG L-NEG L-NEG
 PUNCT O O O O O O
 the O O O O O O
-fan U-POS U-NEG U-NEG U-NEG U-POS U-POS
+fan U-POS U-NEG U-NEG U-NEG U-NEG U-NEG
 made O O O O O O
 no O O O O O O
 noise O O O O O O
@@ -2095,10 +2095,10 @@ month O O O O O O
 PUNCT O O O O O O
 
 the O O O O O O
-capabilities O U-POS U-POS U-POS U-POS U-POS
+capabilities O U-POS U-POS U-POS O U-NEG
 using O O O O O O
 that O O O O O O
-program U-NEU U-NEU U-POS U-NEU U-POS U-POS
+program U-NEU U-POS U-POS U-POS U-NEU U-POS
 alone O O O O O O
 do O O O O O O
 n't O O O O O O
@@ -2114,8 +2114,8 @@ you O O O O O O
 ever O O O O O O
 see O O O O O O
 the O O O O O O
-spinning B-NEG B-NEG O O B-NEG O
-beachball L-NEG L-NEG O O L-NEG O
+spinning B-NEG O O O O O
+beachball L-NEG O O O O O
 come O O O O O O
 up O O O O O O
 when O O O O O O
@@ -2127,9 +2127,9 @@ n't O O O O O O
 PUNCT O O O O O O
 check O O O O O O
 the O O O O O O
-activity O B-NEU B-NEG B-NEG B-NEG B-NEU
-monitor O I-NEU I-NEG I-NEG I-NEG I-NEU
-app O L-NEU L-NEG L-NEG L-NEG L-NEU
+activity O B-NEG B-NEG B-NEG B-NEG B-NEG
+monitor O I-NEG I-NEG I-NEG I-NEG I-NEG
+app O L-NEG L-NEG L-NEG L-NEG L-NEG
 to O O O O O O
 see O O O O O O
 if O O O O O O
@@ -2159,8 +2159,8 @@ able O O O O O O
 to O O O O O O
 access O O O O O O
 wireless B-NEG B-POS O O O O
-internet I-NEG I-POS O B-POS O O
-access L-NEG L-POS O L-POS O O
+internet I-NEG I-POS O O B-POS O
+access L-NEG L-POS O O L-POS O
 PUNCT O O O O O O
 
 that O O O O O O
@@ -2273,7 +2273,7 @@ for O O O O O O
 PUNCT O O O O O O
 
 the O O O O O O
-pictures U-NEG O O O O O
+pictures U-NEG O O U-NEG O O
 are O O O O O O
 not O O O O O O
 as O O O O O O
@@ -2302,8 +2302,8 @@ have O O O O O O
 any O O O O O O
 sort O O O O O O
 of O O O O O O
-network B-NEU B-NEG B-NEG B-NEG B-NEG B-NEG
-capability L-NEU L-NEG L-NEG L-NEG L-NEG L-NEG
+network B-NEU B-NEG B-NEG O O B-NEG
+capability L-NEU L-NEG L-NEG O O L-NEG
 PUNCT O O O O O O
 
 it O O O O O O
@@ -2315,7 +2315,7 @@ everything O O O O O O
 and O O O O O O
 does O O O O O O
 n't O O O O O O
-run U-NEG O O U-POS O U-NEG
+run U-NEG O O O U-NEG O
 faster O O O O O O
 than O O O O O O
 an O O O O O O
@@ -2354,7 +2354,7 @@ it O O O O O O
 was O O O O O O
 not O O O O O O
 past O O O O O O
-warrenty U-POS U-NEG U-NEG U-NEG U-NEU U-NEG
+warrenty U-POS U-NEG U-NEU U-NEG U-NEG U-NEG
 PUNCT O O O O O O
 
 it O O O O O O
@@ -2393,9 +2393,9 @@ of O O O O O O
 it O O O O O O
 PUNCT O O O O O O
 installed O O O O O O
-openoffice U-NEU U-POS U-NEU U-POS U-NEU U-POS
+openoffice U-NEU U-POS U-POS U-NEU U-NEU U-NEU
 and O O O O O O
-firefox U-NEU U-NEU U-NEU U-NEU U-NEU U-POS
+firefox U-NEU U-NEU U-POS U-NEU U-NEU U-NEU
 PUNCT O O O O O O
 but O O O O O O
 it O O O O O O
@@ -2404,7 +2404,7 @@ not O O O O O O
 like O O O O O O
 i O O O O O O
 am O O O O O O
-operating O O O O U-POS O
+operating O O O O O U-POS
 an O O O O O O
 incredibly O O O O O O
 efficient O O O O O O
@@ -2439,12 +2439,12 @@ did O O O O O O
 not O O O O O O
 have O O O O O O
 great O O O O O O
-battery B-NEG B-NEG B-NEG B-POS B-NEG B-NEG
-life L-NEG L-NEG L-NEG L-POS L-NEG L-NEG
+battery B-NEG B-POS B-POS B-NEG B-POS B-NEG
+life L-NEG L-POS L-POS L-NEG L-POS L-NEG
 when O O O O O O
 it O O O O O O
 did O O O O O O
-work O O U-NEG O U-NEG U-NEG
+work O O O O U-NEG O
 PUNCT O O O O O O
 
 my O O O O O O
@@ -2456,24 +2456,24 @@ can O O O O O O
 not O O O O O O
 reg O O O O O O
 the O O O O O O
-product B-NEG B-NEG O B-NEG O O
-key L-NEG L-NEG O L-NEG O O
+product B-NEG O O O B-NEG O
+key L-NEG O O O L-NEG O
 PUNCT O O O O O O
 
 sure O O O O O O
 it O O O O O O
 has O O O O O O
 the O O O O O O
-one B-NEG O O O O O
-touch I-NEG B-NEG B-NEG B-NEG B-NEG B-POS
-keys L-NEG L-NEG L-NEG L-NEG L-NEG L-POS
+one B-NEG O O O O B-NEG
+touch I-NEG B-POS B-NEG B-POS B-POS I-NEG
+keys L-NEG L-POS L-NEG L-POS L-POS L-NEG
 but O O O O O O
 that O O O O O O
 was O O O O O O
 not O O O O O O
 the O O O O O O
 best O O O O O O
-feature O U-NEG U-NEG O U-POS U-POS
+feature O U-POS O O U-POS U-POS
 of O O O O O O
 the O O O O O O
 computer O O O O O O
@@ -2503,7 +2503,7 @@ do O O O O O O
 n't O O O O O O
 love O O O O O O
 the O O O O O O
-stability U-NEG O O U-NEG U-POS O
+stability U-NEG U-POS U-NEG O O U-POS
 of O O O O O O
 the O O O O O O
 mac B-NEG B-POS B-POS B-POS B-POS B-POS
@@ -2552,8 +2552,8 @@ statement O O O O O O
 of O O O O O O
 7 O O O O O O
 hour O O O O O O
-battery B-POS B-NEG B-NEG B-NEG B-NEG B-NEG
-life L-POS L-NEG L-NEG L-NEG L-NEG L-NEG
+battery B-POS B-POS B-NEG B-NEG B-NEG B-NEG
+life L-POS L-POS L-NEG L-NEG L-NEG L-NEG
 it O O O O O O
 's O O O O O O
 not O O O O O O
@@ -2605,7 +2605,7 @@ is O O O O O O
 n't O O O O O O
 a O O O O O O
 great O O O O O O
-program U-NEG O O U-POS O O
+program U-NEG U-POS O O O O
 for O O O O O O
 anyone O O O O O O
 who O O O O O O
@@ -2630,12 +2630,12 @@ did O O O O O O
 n't O O O O O O
 think O O O O O O
 the O O O O O O
-price U-NEG U-NEG U-POS U-POS U-POS U-POS
+price U-NEG U-NEG U-NEG U-POS U-POS U-NEG
 was O O O O O O
 great O O O O O O
 but O O O O O O
 the O O O O O O
-specs U-POS U-NEG U-NEG U-NEG U-POS U-POS
+specs U-POS U-NEG U-NEG U-NEG U-NEG U-NEG
 were O O O O O O
 PUNCT O O O O O O
 
@@ -2677,7 +2677,7 @@ not O O O O O O
 suggest O O O O O O
 purchasing O O O O O O
 a O O O O O O
-stand U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+stand U-NEG U-NEU U-NEG U-NEG U-NEG U-NEG
 however O O O O O O
 PUNCT O O O O O O
 due O O O O O O
@@ -2697,8 +2697,8 @@ not O O O O O O
 a O O O O O O
 very O O O O O O
 large O O O O O O
-heat B-POS B-POS O O O O
-sink L-POS L-POS O O O O
+heat B-POS O B-NEG O O O
+sink L-POS O L-NEG O O O
 PUNCT O O O O O O
 
 there O O O O O O
@@ -2773,9 +2773,9 @@ as O O O O O O
 the O O O O O O
 bios U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
 launched O O O O O O
-windows U-NEG U-NEU U-NEG U-NEU U-NEG U-NEU
+windows U-NEG U-NEU U-NEG U-NEG U-NEU U-NEG
 or O O O O O O
-winblows O U-NEU U-NEG O U-NEG O
+winblows O U-NEG U-NEG U-NEG O O
 PUNCT O O O O O O
 as O O O O O O
 i O O O O O O
@@ -2787,7 +2787,7 @@ PUNCT O O O O O O
 
 i O O O O O O
 run O O O O O O
-windows U-NEU U-NEU U-NEU U-NEU U-NEU U-NEU
+windows U-NEU U-POS U-NEU U-NEU U-NEU U-POS
 via O O O O O O
 bootcamp U-NEU U-NEU U-NEU U-NEU U-NEU U-NEU
 for O O O O O O
@@ -2808,8 +2808,8 @@ PUNCT O O O O O O
 i O O O O O O
 like O O O O O O
 my O O O O O O
-cad O O B-NEG O B-NEU B-NEU
-programs U-POS U-NEU L-NEG U-POS L-NEU L-NEU
+cad O B-NEU B-NEU B-POS O O
+programs U-POS L-NEU L-NEU L-POS U-POS U-NEU
 PUNCT O O O O O O
 
 i O O O O O O
@@ -2834,9 +2834,9 @@ PUNCT O O O O O O
 
 it O O O O O O
 took O O O O O O
-toshiba B-NEG B-NEG B-NEU B-NEG B-NEG B-NEU
-tech I-NEG I-NEG I-NEU I-NEG I-NEG I-NEU
-support L-NEG L-NEG L-NEU L-NEG L-NEG L-NEU
+toshiba B-NEG B-NEG B-NEG B-NEU B-NEG B-NEU
+tech I-NEG I-NEG I-NEG I-NEU I-NEG I-NEU
+support L-NEG L-NEG L-NEG L-NEU L-NEG L-NEU
 4 O O O O O O
 calls O O O O O O
 but O O O O O O
@@ -2849,9 +2849,9 @@ problem O O O O O O
 PUNCT O O O O O O
 
 the O O O O O O
-4 O O O B-POS B-POS B-POS
-usb O B-POS B-NEU I-POS I-POS I-POS
-ports O L-POS L-NEU L-POS L-POS L-POS
+4 O B-POS O B-POS B-POS B-POS
+usb O I-POS B-NEG I-POS I-POS I-POS
+ports O L-POS L-NEG L-POS L-POS L-POS
 are O O O O O O
 nice O O O O O O
 PUNCT O O O O O O
@@ -2889,8 +2889,8 @@ call O O O O O O
 a O O O O O O
 good O O O O O O
 after B-NEG O O O O O
-sales I-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
-service L-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
+sales I-NEG B-POS B-NEG B-NEG B-NEG B-NEG
+service L-NEG L-POS L-NEG L-NEG L-NEG L-NEG
 PUNCT O O O O O O
 
 it O O O O O O
@@ -2924,7 +2924,7 @@ always O O O O O O
 great O O O O O O
 about O O O O O O
 the O O O O O O
-aesthetics U-NEG U-NEG O U-NEG U-NEG U-NEG
+aesthetics U-NEG U-NEG U-NEG O U-NEG U-NEG
 of O O O O O O
 things O O O O O O
 PUNCT O O O O O O
@@ -2979,8 +2979,8 @@ it O O O O O O
 asks O O O O O O
 for O O O O O O
 a O O O O O O
-product O O O O O B-NEG
-key O O O O O L-NEG
+product O B-NEG B-NEG O B-NEG O
+key O L-NEG L-NEG O L-NEG O
 which O O O O O O
 did O O O O O O
 n't O O O O O O
@@ -3021,8 +3021,8 @@ yea O O O O O O
 PUNCT O O O O O O
 has O O O O O O
 a O O O O O O
-numeric B-POS B-NEG B-NEG B-NEG B-NEG O
-pad L-POS L-NEG L-NEG L-NEG L-NEG O
+numeric B-POS B-POS B-NEG B-NEU B-POS B-NEG
+pad L-POS L-POS L-NEG L-NEU L-POS L-NEG
 on O O O O O O
 the O O O O O O
 side O O O O O O
@@ -3046,8 +3046,8 @@ required O O O O O O
 PUNCT O O O O O O
 
 the O O O O O O
-battery B-NEG B-POS B-POS B-POS B-NEG B-POS
-life L-NEG L-POS L-POS L-POS L-NEG L-POS
+battery B-NEG B-POS B-POS B-POS B-POS B-NEG
+life L-NEG L-POS L-POS L-POS L-POS L-NEG
 is O O O O O O
 not O O O O O O
 amazing O O O O O O
@@ -3059,8 +3059,8 @@ outstanding O O O O O O
 PUNCT O O O O O O
 
 the O O O O O O
-hinge B-POS B-NEG B-POS B-NEG B-NEG B-NEG
-design L-POS L-NEG L-POS L-NEG L-NEG L-NEG
+hinge B-POS B-NEG B-NEG B-NEG B-NEG B-NEG
+design L-POS L-NEG L-NEG L-NEG L-NEG L-NEG
 does O O O O O O
 n't O O O O O O
 force O O O O O O
@@ -3068,7 +3068,7 @@ you O O O O O O
 to O O O O O O
 place O O O O O O
 various O O O O O O
-connections O O O U-NEG O O
+connections O O O O O O
 all O O O O O O
 around O O O O O O
 the O O O O O O
@@ -3133,7 +3133,7 @@ device O O O O O O
 serves O O O O O O
 all O O O O O O
 modern O O O O O O
-requirements O O O O O O
+requirements O U-POS O O O O
 is O O O O O O
 a O O O O O O
 very O O O O O O
@@ -3172,7 +3172,7 @@ existing O O O O O O
 32 O O O O O O
 bit O O O O O O
 old O O O O O O
-programs U-NEG U-NEU U-NEU U-NEU U-NEU U-NEG
+programs U-NEG U-NEU U-NEU U-NEU U-NEU U-NEU
 PUNCT O O O O O O
 
 it O O O O O O
@@ -3184,8 +3184,8 @@ does O O O O O O
 n't O O O O O O
 have O O O O O O
 better O O O O O O
-color B-NEG B-POS B-NEG B-POS B-POS B-NEG
-reproduction L-NEG L-POS L-NEG L-POS L-POS L-NEG
+color B-NEG B-POS B-POS B-POS B-POS B-POS
+reproduction L-NEG L-POS L-POS L-POS L-POS L-POS
 than O O O O O O
 i O O O O O O
 would O O O O O O
@@ -3219,16 +3219,16 @@ but O O O O O O
 not O O O O O O
 much O O O O O O
 better O O O O O O
-grafics B-NEG B-POS B-NEG O B-POS O
-card L-NEG L-POS L-NEG O L-POS O
-ati O B-POS B-NEU B-POS B-NEU B-NEU
-5870 O L-POS L-NEU L-POS L-NEU L-NEU
+grafics B-NEG B-POS O O O O
+card L-NEG L-POS O U-NEG O B-NEU
+ati O B-POS B-NEU O O I-NEU
+5870 O L-POS L-NEU O O L-NEU
 PUNCT O O O O O O
-8gb B-POS B-NEU B-NEU B-POS B-NEU B-POS
-ram I-POS I-NEU I-NEU I-POS I-NEU I-POS
-led I-POS I-NEU I-NEU I-POS I-NEU I-POS
-backlit I-POS I-NEU I-NEU I-POS I-NEU I-POS
-screen L-POS L-NEU L-NEU L-POS L-NEU L-POS
+8gb B-POS B-POS B-NEU B-NEU B-POS B-NEU
+ram I-POS L-POS I-NEU I-NEU I-POS I-NEU
+led I-POS B-POS I-NEU I-NEU I-POS I-NEU
+backlit I-POS I-POS I-NEU I-NEU I-POS I-NEU
+screen L-POS L-POS L-NEU L-NEU L-POS L-NEU
 PUNCT O O O O O O
 
 compared O O O O O O
@@ -3245,7 +3245,7 @@ not O O O O O O
 really O O O O O O
 a O O O O O O
 good O O O O O O
-value U-NEG O O O O O
+value U-NEG U-POS O U-POS U-POS O
 PUNCT O O O O O O
 but O O O O O O
 is O O O O O O
@@ -3354,15 +3354,15 @@ secure O O O O O O
 and O O O O O O
 easy O O O O O O
 to O O O O O O
-navigate U-NEG U-POS U-NEG U-POS U-NEG U-POS
+navigate U-NEG U-POS U-POS U-POS U-NEG U-POS
 PUNCT O O O O O O
 
 the O O O O O O
 machine O O O O O O
 has O O O O O O
 a O O O O O O
-bluray B-NEU B-NEG B-NEG B-NEU B-NEG B-NEU
-player L-NEU L-NEG L-NEG L-NEU L-NEG L-NEU
+bluray B-NEU B-POS B-NEG B-NEU B-NEG B-NEG
+player L-NEU L-POS L-NEG L-NEU L-NEG L-NEG
 the O O O O O O
 book U-NEG O O O O O
 has O O O O O O
@@ -3380,15 +3380,15 @@ your O O O O O O
 hdtv O O O O O O
 PUNCT O O O O O O
 
-asus O B-NEG O O O B-NEG
-facial B-NEG I-NEG B-NEG B-NEG B-NEG I-NEG
+asus O O O O B-NEG O
+facial B-NEG B-NEG B-NEG B-NEG I-NEG B-NEG
 recognition L-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
 does O O O O O O
 n't O O O O O O
 work O O O O O O
 but O O O O O O
-windows B-POS B-NEG B-POS B-NEG B-NEG B-NEG
-logon L-POS L-NEG L-POS L-NEG L-NEG L-NEG
+windows B-POS B-NEG B-NEG B-NEG B-POS B-NEG
+logon L-POS L-NEG L-NEG L-NEG L-POS L-NEG
 is O O O O O O
 ok O O O O O O
 PUNCT O O O O O O
@@ -3415,8 +3415,8 @@ PUNCT O O O O O O
 not O O O O O O
 very O O O O O O
 easy O O O O O O
-user B-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
-interface L-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
+user B-NEG B-NEG B-POS B-NEG B-NEG B-POS
+interface L-NEG L-NEG L-POS L-NEG L-NEG L-POS
 PUNCT O O O O O O
 
 i O O O O O O
@@ -3472,15 +3472,15 @@ in O O O O O O
 laptop O O O O O O
 until O O O O O O
 after O O O O O O
-warrenty U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+warrenty U-NEG U-NEG U-NEG U-NEG U-NEG U-NEU
 expired O O O O O O
 PUNCT O O O O O O
 
 after O O O O O O
 replacing O O O O O O
 the O O O O O O
-hard B-NEU B-NEG B-NEU B-NEG B-NEU B-NEU
-drive L-NEU L-NEG L-NEU L-NEG L-NEU L-NEU
+hard B-NEU B-NEG B-NEG B-NEU B-NEG B-NEG
+drive L-NEU L-NEG L-NEG L-NEU L-NEG L-NEG
 the O O O O O O
 battery U-POS U-NEG U-NEG U-NEG U-NEG U-NEG
 did O O O O O O
@@ -3502,7 +3502,7 @@ the O O O O O O
 easy O O O O O O
 to O O O O O O
 see O O O O O O
-screen U-POS U-POS O U-POS U-POS O
+screen U-POS U-POS O U-POS U-POS U-POS
 PUNCT O O O O O O
 but O O O O O O
 it O O O O O O
@@ -3527,7 +3527,7 @@ was O O O O O O
 sound B-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
 quality I-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
 via I-NEG O O O O O
-usb L-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+usb L-NEG U-NEG U-NEU U-NEG U-NEG U-NEG
 PUNCT O O O O O O
 
 i O O O O O O
@@ -3608,10 +3608,10 @@ PUNCT O O O O O O
 needs O O O O O O
 power O U-NEG U-NEG O O U-NEG
 and O O O O O O
-mouse B-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
-cable L-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
+mouse B-NEG B-NEU B-NEG B-NEG B-NEG B-NEG
+cable L-NEG L-NEU L-NEG L-NEG L-NEG L-NEG
 to O O O O O O
-plug O O O O O O
+plug O U-NEU O O U-NEG O
 in O O O O O O
 back O O O O O O
 instead O O O O O O
@@ -3626,9 +3626,9 @@ in O O O O O O
 the O O O O O O
 way O O O O O O
 of O O O O O O
-operating O O O U-NEG O B-NEG
-a O O O O O I-NEG
-mouse U-POS U-NEU U-NEG U-NEU U-NEU L-NEG
+operating O O O O U-NEG O
+a O O O O O O
+mouse U-POS U-NEU U-NEU U-NEU U-NEG U-NEU
 in O O O O O O
 small O O O O O O
 area O O O O O O
@@ -3662,7 +3662,7 @@ nearly O O O O O O
 every O O O O O O
 day O O O O O O
 and O O O O O O
-works O O O U-POS O O
+works O O O O O O
 great O O O O O O
 with O O O O O O
 my O O O O O O
@@ -3755,7 +3755,7 @@ used O O O O O O
 to O O O O O O
 the O O O O O O
 new O O O O O O
-system U-NEU U-POS U-POS O U-POS O
+system U-NEU U-POS U-POS O O U-POS
 PUNCT O O O O O O
 but O O O O O O
 you O O O O O O
@@ -3781,7 +3781,7 @@ and O O O O O O
 3 O O O O O O
 for O O O O O O
 my O O O O O O
-office O O O O O U-NEU
+office O O O O O O
 PUNCT O O O O O O
 
 the O O O O O O
@@ -3796,10 +3796,10 @@ sony O O O O O O
 jumped O O O O O O
 on O O O O O O
 early O O O O O O
-specifications O U-NEU O U-NEU O O
+specifications O U-NEU O O U-NEU O
 for O O O O O O
-vista U-NEG B-NEG U-NEG B-NEG B-POS U-NEG
-requirements O L-NEG O L-NEG L-POS O
+vista U-NEG B-NEG B-NEG U-NEG B-NEG B-NEG
+requirements O L-NEG L-NEG O L-NEG L-NEG
 from O O O O O O
 microsoft O O O O O O
 and O O O O O O
@@ -3867,7 +3867,7 @@ that O O O O O O
 i O O O O O O
 owned O O O O O O
 the O O O O O O
-warranty U-NEU U-NEU U-NEG U-NEU U-NEU U-NEU
+warranty U-NEU U-NEG U-NEU U-NEG U-NEU U-NEU
 PUNCT O O O O O O
 
 it O O O O O O
@@ -4021,8 +4021,8 @@ fixed O O O O O O
 PUNCT O O O O O O
 by O O O O O O
 a O O O O O O
-senior B-NEU O O O O O
-tech L-NEU U-NEG U-NEG O U-NEG U-NEG
+senior B-NEU O O O O B-NEG
+tech L-NEU U-NEG U-NEG U-NEG U-NEG L-NEG
 PUNCT O O O O O O
 
 i O O O O O O
@@ -4119,8 +4119,8 @@ PUNCT O O O O O O
 i O O O O O O
 work O O O O O O
 in O O O O O O
-film O O B-NEU O O B-NEU
-editing O O L-NEU O O L-NEU
+film O O B-NEU O B-NEU O
+editing O O L-NEU O L-NEU O
 and O O O O O O
 post O O O O O O
 production O O O O O O
@@ -4134,10 +4134,10 @@ that O O O O O O
 not O O O O O O
 only O O O O O O
 has O O O O O O
-power U-NEU U-POS U-POS U-POS U-POS U-NEU
+power U-NEU U-POS U-POS U-POS U-POS U-POS
 PUNCT O O O O O O
 but O O O O O O
-memory U-NEU U-POS U-POS U-POS U-POS U-NEU
+memory U-NEU U-POS U-NEG U-POS U-POS U-NEU
 and O O O O O O
 speed U-NEU U-POS U-POS U-POS U-POS U-POS
 as O O O O O O
@@ -4181,8 +4181,8 @@ unit O O O O O O
 PUNCT O O O O O O
 rewired O O O O O O
 the O O O O O O
-dc B-NEU B-NEG B-NEG B-NEG B-NEG B-NEU
-jack L-NEU L-NEG L-NEG L-NEG L-NEG L-NEU
+dc B-NEU B-NEG B-NEG B-NEG B-NEG B-NEG
+jack L-NEU L-NEG L-NEG L-NEG L-NEG L-NEG
 to O O O O O O
 the O O O O O O
 outside O O O O O O
@@ -4193,8 +4193,8 @@ PUNCT O O O O O O
 replaced O O O O O O
 the O O O O O O
 bad O O O O O O
-power B-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
-brick L-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
+power B-NEG U-NEG B-NEG O B-NEG B-NEG
+brick L-NEG O L-NEG O L-NEG L-NEG
 PUNCT O O O O O O
 
 it O O O O O O
@@ -4214,7 +4214,7 @@ and O O O O O O
 every O O O O O O
 so O O O O O O
 light O O O O O O
-weight O U-POS O O O O
+weight O O O U-POS U-POS O
 PUNCT O O O O O O
 
 i O O O O O O
@@ -4326,8 +4326,8 @@ of O O O O O O
 course O O O O O O
 for O O O O O O
 the O O O O O O
-screen B-POS B-POS B-NEG B-NEG B-NEG B-POS
-size L-POS L-POS L-NEG L-NEG L-NEG L-POS
+screen B-POS B-POS B-NEG B-NEG B-POS B-POS
+size L-POS L-POS L-NEG L-NEG L-POS L-POS
 PUNCT O O O O O O
 
 everything O O O O O O
@@ -4443,13 +4443,13 @@ especially O O O O O O
 if O O O O O O
 you O O O O O O
 enjoy O O O O O O
-technology O O O U-POS U-NEU O
+technology O U-POS O O O O
 PUNCT O O O O O O
 downloading O O O O O O
 pictures O O O O O O
 and O O O O O O
-graphic O B-NEU B-POS B-POS B-NEU O
-design O L-NEU L-POS L-POS L-NEU O
+graphic O B-POS B-POS B-NEU B-POS B-POS
+design O L-POS L-POS L-NEU L-POS L-POS
 PUNCT O O O O O O
 
 first O O O O O O
@@ -4468,15 +4468,15 @@ finger O O O O O O
 options O O O O O O
 for O O O O O O
 the O O O O O O
-mousepad U-POS U-POS U-POS U-POS U-POS U-POS
+mousepad U-POS U-NEU U-POS U-NEU U-POS U-POS
 that O O O O O O
 allow O O O O O O
 for O O O O O O
 quicker O O O O O O
-browsing U-POS B-POS B-NEU B-NEU U-POS O
-of O I-POS I-NEU I-NEU O O
-web O I-POS I-NEU I-NEU B-NEU B-POS
-pages O L-POS L-NEU L-NEU L-NEU L-POS
+browsing U-POS B-POS B-POS U-POS B-POS B-POS
+of O I-POS I-POS O I-POS I-POS
+web O I-POS I-POS O I-POS I-POS
+pages O L-POS L-POS O L-POS L-POS
 PUNCT O O O O O O
 
 we O O O O O O
@@ -4487,7 +4487,7 @@ n't O O O O O O
 find O O O O O O
 the O O O O O O
 best O O O O O O
-price U-NEG U-NEG U-POS U-POS U-POS U-POS
+price U-NEG U-POS U-POS U-POS U-POS U-POS
 at O O O O O O
 macconnection O O O O O O
 PUNCT O O O O O O
@@ -4563,8 +4563,8 @@ replaced O O O O O O
 twice O O O O O O
 PUNCT O O O O O O
 the O O O O O O
-mother B-NEG B-NEG B-NEG B-NEG B-NEU B-NEG
-board L-NEG L-NEG L-NEG L-NEG L-NEU L-NEG
+mother B-NEG B-NEU B-NEG B-NEG B-NEG B-NEG
+board L-NEG L-NEU L-NEG L-NEG L-NEG L-NEG
 once O O O O O O
 PUNCT O O O O O O
 the O O O O O O
@@ -4753,8 +4753,8 @@ is O O O O O O
 that O O O O O O
 they O O O O O O
 are O O O O O O
-virus O B-POS O B-POS O B-POS
-free O L-POS O L-POS O L-POS
+virus O O O O O O
+free O O O O O O
 PUNCT O O O O O O
 
 after O O O O O O
@@ -4811,7 +4811,7 @@ such O O O O O O
 as O O O O O O
 ilife U-NEU U-POS U-POS U-POS U-POS U-POS
 and O O O O O O
-iwork U-NEU U-POS U-POS U-POS U-POS U-POS
+iwork U-NEU U-POS O U-POS U-POS U-POS
 PUNCT O O O O O O
 i O O O O O O
 was O O O O O O
@@ -4853,19 +4853,19 @@ PUNCT O O O O O O
 there O O O O O O
 are O O O O O O
 no O O O O O O
-gold O B-NEG O O O O
-key O I-NEG O O O O
-numbers O L-NEG O O O O
+gold O O O O O O
+key O O O O O O
+numbers O O O O O O
 too O O O O O O
-intall O B-NEG O O O O
-programs U-NEG L-NEG U-NEG U-NEG U-NEG U-NEG
+intall O O B-NEG O O B-NEG
+programs U-NEG U-NEG L-NEG U-NEG U-NEG L-NEG
 PUNCT O O O O O O
 you O O O O O O
 must O O O O O O
 use O O O O O O
 the O O O O O O
-serial O B-NEG B-NEG B-NEG B-NEG B-NEG
-numbers O L-NEG L-NEG L-NEG L-NEG L-NEG
+serial O O B-NEG O B-NEG O
+numbers O O L-NEG O L-NEG O
 that O O O O O O
 it O O O O O O
 does O O O O O O
@@ -4898,7 +4898,7 @@ a O O O O O O
 little O O O O O O
 more O O O O O O
 custom O O O O O O
-ability O O U-POS O U-POS U-POS
+ability O U-POS O O O U-POS
 PUNCT O O O O O O
 do O O O O O O
 n't O O O O O O
@@ -4916,15 +4916,15 @@ more O O O O O O
 robust O O O O O O
 versions O O O O O O
 of O O O O O O
-win B-NEG B-POS B-POS B-NEU B-POS B-POS
-7 L-NEG L-POS L-POS L-NEU L-POS L-POS
+win B-NEG B-POS B-NEU B-NEU B-POS B-POS
+7 L-NEG L-POS L-NEU L-NEU L-POS L-POS
 PUNCT O O O O O O
 grab O O O O O O
 a O O O O O O
-2gb B-POS B-POS B-POS B-NEU B-POS B-POS
-stick I-POS I-POS I-POS I-NEU I-POS I-POS
-of I-POS I-POS I-POS I-NEU I-POS I-POS
-memory L-POS L-POS L-POS L-NEU L-POS L-POS
+2gb B-POS B-NEU B-POS B-POS B-POS B-POS
+stick I-POS I-NEU I-POS I-POS I-POS I-POS
+of I-POS I-NEU I-POS I-POS I-POS I-POS
+memory L-POS L-NEU L-POS L-POS L-POS L-POS
 instead O O O O O O
 to O O O O O O
 spice O O O O O O
@@ -5012,8 +5012,8 @@ from O O O O O O
 cluttered O O O O O O
 and O O O O O O
 confusing O O O O O O
-desktop B-NEG O O O O B-NEG
-icons L-NEG O O O O L-NEG
+desktop B-NEG B-POS O O O O
+icons L-NEG L-POS O O O O
 PUNCT O O O O O O
 
 buyer O O O O O O
@@ -5030,7 +5030,7 @@ is O O O O O O
 not O O O O O O
 easier O O O O O O
 to O O O O O O
-use U-NEG U-POS U-POS U-POS U-POS U-POS
+use U-NEG U-POS O U-POS U-POS U-POS
 than O O O O O O
 most O O O O O O
 i O O O O O O
@@ -5078,8 +5078,8 @@ get O O O O O O
 just O O O O O O
 a O O O O O O
 normal O O O O O O
-operating B-NEU B-NEU B-NEU B-NEU B-NEG B-NEG
-system L-NEU L-NEU L-NEU L-NEU L-NEG L-NEG
+operating B-NEU B-NEU B-NEG B-NEU B-NEU B-POS
+system L-NEU L-NEU L-NEG L-NEU L-NEU L-POS
 with O O O O O O
 trials O O O O O O
 of O O O O O O
@@ -5242,16 +5242,16 @@ PUNCT O O O O O O
 besides O O O O O O
 the O O O O O O
 added O O O O O O
-feature U-POS U-POS U-NEG U-POS U-POS U-POS
+feature U-POS U-POS U-POS U-POS U-NEU U-POS
 that O O O O O O
 the O O O O O O
-keyboard U-POS U-POS U-POS U-NEG U-POS U-POS
+keyboard U-POS U-POS U-POS U-POS U-NEG U-POS
 is O O O O O O
 lighted O O O O O O
 PUNCT O O O O O O
 
 the O O O O O O
-feel U-NEG O U-NEG U-POS U-POS U-POS
+feel U-NEG U-POS U-POS U-POS U-POS O
 of O O O O O O
 this O O O O O O
 machine O O O O O O
@@ -5298,7 +5298,7 @@ with O O O O O O
 it O O O O O O
 unlike O O O O O O
 no O O O O O O
-hardware U-POS U-NEG U-NEG U-NEG U-NEG U-NEG
+hardware U-POS U-NEG U-NEG O U-NEG U-NEG
 defects O O O O O O
 on O O O O O O
 past O O O O O O
@@ -5328,13 +5328,13 @@ PUNCT O O O O O O
 
 unlike O O O O O O
 the O O O O O O
-quality U-NEG U-NEG U-NEG U-POS O U-NEG
+quality U-NEG U-POS U-NEG U-POS U-NEG U-NEG
 PUNCT O O O O O O
 the O O O O O O
-engineering B-POS B-POS B-NEG B-POS B-POS B-NEG
-design L-POS L-POS L-NEG L-POS L-POS L-NEG
+engineering B-POS B-POS B-POS B-POS B-POS B-POS
+design L-POS L-POS L-POS L-POS L-POS L-POS
 and O O O O O O
-warranty U-POS U-NEG U-NEG U-POS U-NEG U-NEG
+warranty U-POS U-POS U-POS U-POS U-NEG U-POS
 are O O O O O O
 superior O O O O O O
 -- O O O O O O
@@ -5352,7 +5352,7 @@ so O O O O O O
 much O O O O O O
 fun O O O O O O
 to O O O O O O
-play O O U-POS O U-POS U-POS
+play O O O O O U-POS
 with O O O O O O
 PUNCT O O O O O O
 
@@ -5361,8 +5361,8 @@ is O O O O O O
 an O O O O O O
 improvement O O O O O O
 in O O O O O O
-customer B-POS B-NEG B-NEG B-POS B-NEG B-POS
-service L-POS L-NEG L-NEG L-POS L-NEG L-POS
+customer B-POS B-POS B-NEG B-NEG B-NEG B-NEG
+service L-POS L-POS L-NEG L-NEG L-NEG L-NEG
 but O O O O O O
 i O O O O O O
 would O O O O O O
@@ -5460,7 +5460,7 @@ take O O O O O O
 to O O O O O O
 bed O O O O O O
 and O O O O O O
-carry O O O O O U-POS
+carry O O O O O O
 around O O O O O O
 with O O O O O O
 me O O O O O O
@@ -5486,7 +5486,7 @@ is O O O O O O
 rubbing O O O O O O
 off O O O O O O
 the O O O O O O
-button B-NEG O O U-NEG U-NEG O
+button B-NEG U-NEG U-NEG O O O
 below I-NEG O O O O O
 the I-NEG O O O O O
 mouse I-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
@@ -5533,7 +5533,7 @@ mac O O O O O O
 PUNCT O O O O O O
 even O O O O O O
 on O O O O O O
-word U-NEG U-NEG U-NEG U-NEG O U-NEG
+word U-NEG O O O O O
 PUNCT O O O O O O
 resulting O O O O O O
 in O O O O O O
@@ -5554,7 +5554,7 @@ entirely O O O O O O
 and O O O O O O
 would O O O O O O
 n't O O O O O O
-power O O O O O O
+power O U-NEG O O O O
 on O O O O O O
 after O O O O O O
 intalling O O O O O O
@@ -5567,7 +5567,7 @@ had O O O O O O
 to O O O O O O
 have O O O O O O
 my O O O O O O
-hd U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+hd U-NEG U-NEG O U-NEG U-NEG U-NEG
 flashed O O O O O O
 and O O O O O O
 lost O O O O O O
@@ -5595,7 +5595,7 @@ things O O O O O O
 PUNCT O O O O O O
 when O O O O O O
 this O O O O O O
-update O U-NEG U-NEG O U-NEG U-NEG
+update O O O O O O
 was O O O O O O
 installed O O O O O O
 for O O O O O O
@@ -5619,7 +5619,7 @@ condition O O O O O O
 because O O O O O O
 when O O O O O O
 the O O O O O O
-update O U-NEG U-NEG O U-NEG U-NEG
+update O U-NEG U-NEG U-NEG U-NEG O
 was O O O O O O
 installed O O O O O O
 it O O O O O O
@@ -5643,7 +5643,7 @@ it O O O O O O
 on O O O O O O
 PUNCT O O O O O O
 
-applications U-POS U-POS U-POS U-NEG U-POS U-POS
+applications U-POS U-NEG U-NEG U-POS U-NEG U-NEG
 respond O O O O O O
 immediately O O O O O O
 not O O O O O O
@@ -5740,7 +5740,7 @@ birthday O O O O O O
 PUNCT O O O O O O
 
 the O O O O O O
-price U-NEG U-NEG U-POS U-POS U-POS U-POS
+price U-NEG U-POS U-POS U-POS U-POS U-POS
 is O O O O O O
 not O O O O O O
 great O O O O O O
@@ -5778,13 +5778,13 @@ able O O O O O O
 to O O O O O O
 load O O O O O O
 my O O O O O O
-garmin B-NEG B-NEG B-NEU B-NEU B-NEG B-NEU
-gps I-NEG I-NEG I-NEU I-NEU I-NEG I-NEU
-software L-NEG L-NEG L-NEU L-NEU L-NEG L-NEU
+garmin B-NEG B-NEU B-NEG B-NEU B-NEU B-NEU
+gps I-NEG I-NEU I-NEG I-NEU I-NEU I-NEU
+software L-NEG L-NEU L-NEG L-NEU L-NEU L-NEU
 or O O O O O O
 microsoft B-NEG B-NEU B-NEU B-NEU B-NEU B-NEU
-office I-NEG L-NEU L-NEU L-NEU L-NEU L-NEU
-2003 L-NEG O O O O O
+office I-NEG L-NEU L-NEU L-NEU I-NEU L-NEU
+2003 L-NEG O O O L-NEU O
 PUNCT O O O O O O
 
 a O O O O O O
@@ -5898,13 +5898,13 @@ PUNCT O O O O O O
 we O O O O O O
 also O O O O O O
 use O O O O O O
-paralles U-NEU O O O O U-NEU
+paralles U-NEU O O O O O
 so O O O O O O
 we O O O O O O
 can O O O O O O
 run O O O O O O
-virtual O O O O O B-NEU
-machines O O O O O L-NEU
+virtual O O O O O O
+machines O O O O O O
 of O O O O O O
 windows B-NEU B-NEU B-NEU B-NEU B-NEU B-NEU
 xp I-NEU I-NEU I-NEU I-NEU I-NEU I-NEU
@@ -5917,14 +5917,14 @@ premium L-NEU L-NEU L-NEU L-NEU L-NEU L-NEU
 PUNCT O O O O O O
 windows B-NEU B-NEU B-NEU B-NEU B-NEU B-NEU
 server I-NEU L-NEU I-NEU L-NEU I-NEU I-NEU
-enterprise I-NEU O I-NEU O I-NEU L-NEU
-2003 L-NEU O L-NEU O L-NEU O
+enterprise I-NEU O L-NEU O I-NEU L-NEU
+2003 L-NEU O O O L-NEU O
 PUNCT O O O O O O
 and O O O O O O
 windows B-NEU B-NEU B-NEU B-NEU B-NEU B-NEU
-server I-NEU L-NEU I-NEU L-NEU L-NEU I-NEU
-2008 I-NEU O I-NEU O O I-NEU
-enterprise L-NEU O L-NEU O O L-NEU
+server I-NEU L-NEU L-NEU L-NEU L-NEU I-NEU
+2008 I-NEU O O O O I-NEU
+enterprise L-NEU O O O O L-NEU
 PUNCT O O O O O O
 
 how O O O O O O
