@@ -201,7 +201,7 @@ PUNCT O O O O O O
 
 if O O O O O O
 the O O O O O O
-atmosphere U-NEU U-POS U-POS U-NEG U-NEG U-NEG
+atmosphere U-NEU U-POS U-NEG U-NEG U-POS U-NEG
 was O O O O O O
 unheralded O O O O O O
 PUNCT O O O O O O
@@ -211,7 +211,7 @@ impecible O O O O O O
 PUNCT O O O O O O
 or O O O O O O
 the O O O O O O
-food U-NEU U-POS U-NEG U-NEG U-POS U-POS
+food U-NEU U-NEG U-POS U-NEG U-POS U-POS
 magnifica O O O O O O
 n't O O O O O O
 PUNCT O O O O O O
@@ -262,13 +262,13 @@ eat O O O O O O
 PUNCT O O O O O O
 with O O O O O O
 soft O O O B-NEG O O
-shell B-POS B-NEG B-POS I-NEG O B-POS
-crab L-POS L-NEG L-POS L-NEG O L-POS
+shell B-POS B-POS O I-NEG B-NEG B-POS
+crab L-POS L-POS O L-NEG L-NEG L-POS
 hanging O O O O O O
 out O O O O O O
 of O O O O O O
 the O O O O O O
-roll O U-NEG U-POS O O O
+roll O U-POS O O U-NEG O
 PUNCT O O O O O O
 it O O O O O O
 is O O O O O O
@@ -335,8 +335,8 @@ PUNCT O O O O O O
 with O O O O O O
 classic O O O O O O
 upscale O O O O O O
-italian B-POS B-POS B-POS B-POS O B-POS
-decor L-POS L-POS L-POS L-POS U-POS L-POS
+italian B-POS B-POS O B-POS B-POS B-POS
+decor L-POS L-POS U-POS L-POS L-POS L-POS
 PUNCT O O O O O O
 
 what O O O O O O
@@ -352,7 +352,7 @@ wish O O O O O O
 they O O O O O O
 have O O O O O O
 authentic O O O O O O
-indian U-NEG U-POS O U-POS U-POS U-POS
+indian U-NEG O U-POS U-POS U-POS U-POS
 at O O O O O O
 amazin O O O O O O
 prices U-NEG U-POS U-POS U-POS U-POS U-POS
@@ -374,7 +374,7 @@ n't O O O O O O
 make O O O O O O
 for O O O O O O
 good O O O O O O
-pizza U-NEG U-POS U-NEG U-POS U-NEG U-POS
+pizza U-NEG U-NEG U-NEG U-POS U-POS U-POS
 unless O O O O O O
 someone O O O O O O
 knows O O O O O O
@@ -386,8 +386,8 @@ crust U-NEU U-POS U-POS U-POS U-POS U-POS
 right O O O O O O
 PUNCT O O O O O O
 
-tuk O O O O B-POS O
-tuk O O O O L-POS O
+tuk O O B-POS O O O
+tuk O O L-POS O O O
 is O O O O O O
 one O O O O O O
 of O O O O O O
@@ -423,7 +423,7 @@ the O O O O O O
 chef U-NEG U-POS U-POS U-POS U-POS U-POS
 PUNCT O O O O O O
 
-service U-NEG U-POS U-NEG U-NEG U-NEG U-NEG
+service U-NEG U-NEG U-NEG U-NEG U-POS U-NEG
 could O O O O O O
 be O O O O O O
 improved O O O O O O
@@ -446,7 +446,7 @@ PUNCT O O O O O O
 black O O O O O O
 PUNCT O O O O O O
 antique-seeming O O O O O O
-teapot U-POS U-POS O O U-POS O
+teapot U-POS O U-POS O U-POS O
 PUNCT O O O O O O
 for O O O O O O
 one O O O O O O
@@ -602,7 +602,7 @@ i O O O O O O
 must O O O O O O
 recommend O O O O O O
 a O O O O O O
-dish U-POS U-POS U-POS U-POS U-NEG U-POS
+dish U-POS U-POS U-NEG U-POS U-POS U-POS
 it O O O O O O
 must O O O O O O
 be O O O O O O
@@ -694,14 +694,14 @@ there O O O O O O
 is O O O O O O
 no O O O O O O
 traffic B-NEG O O O O O
-noise L-NEG O U-NEG U-NEG O O
+noise L-NEG U-NEG O U-NEG O O
 PUNCT O O O O O O
 
 if O O O O O O
 all O O O O O O
 the O O O O O O
-nyu O B-POS O O O O
-students O L-POS O O O O
+nyu O O O O B-POS O
+students O O O O L-POS O
 loved O O O O O O
 this O O O O O O
 place O O O O O O
@@ -768,8 +768,8 @@ PUNCT O O O O O O
 we O O O O O O
 love O O O O O O
 th O O O O O O
-pink O B-POS O O O O
-pony O L-POS O O O O
+pink O O O O B-POS O
+pony O O O O L-POS O
 PUNCT O O O O O O
 
 authentic O O O O O O
@@ -787,7 +787,7 @@ only O O O O O O
 eating O O O O O O
 one O O O O O O
 with O O O O O O
-meat U-NEU U-NEU U-NEG U-NEU U-NEG U-NEG
+meat U-NEU U-NEG U-NEG U-NEU U-NEU U-NEG
 because O O O O O O
 they O O O O O O
 tend O O O O O O
@@ -814,7 +814,7 @@ just O O O O O O
 odd O O O O O O
 PUNCT O O O O O O
 the O O O O O O
-place U-POS O U-NEG O O O
+place U-POS U-NEG O O O O
 attracts O O O O O O
 an O O O O O O
 eclectic O O O O O O
@@ -835,7 +835,7 @@ one O O O O O O
 of O O O O O O
 the O O O O O O
 greatest O O O O O O
-pizzerias O O O U-POS U-POS O
+pizzerias O O U-POS U-POS O O
 in O O O O O O
 existence O O O O O O
 PUNCT O O O O O O
@@ -853,7 +853,7 @@ turned O O O O O O
 up O O O O O O
 on O O O O O O
 the O O O O O O
-table O O O O U-NEU O
+table O O U-NEU O O O
 before O O O O O O
 we O O O O O O
 were O O O O O O
@@ -908,7 +908,7 @@ pay O O O O O O
 attention O O O O O O
 to O O O O O O
 the O O O O O O
-music U-NEU U-POS U-NEG U-POS U-NEG U-POS
+music U-NEU U-NEG U-NEG U-POS U-POS U-POS
 being O O O O O O
 piped O O O O O O
 in O O O O O O
@@ -916,12 +916,12 @@ PUNCT O O O O O O
 quite O O O O O O
 a O O O O O O
 weird O O O O O O
-selection O O O O U-NEG O
+selection O O U-NEG O O O
 PUNCT O O O O O O
 
 the O O O O O O
-dim B-NEU B-POS B-POS B-NEG B-NEG B-NEU
-sum L-NEU L-POS L-POS L-NEG L-NEG L-NEU
+dim B-NEU B-POS B-NEG B-NEG B-POS B-NEU
+sum L-NEU L-POS L-NEG L-NEG L-POS L-NEU
 was O O O O O O
 so-so O O O O O O
 PUNCT O O O O O O
@@ -963,7 +963,7 @@ enough O O O O O O
 to O O O O O O
 warrant O O O O O O
 that O O O O O O
-price U-NEG O U-NEG U-NEG U-NEG O
+price U-NEG U-NEG U-NEG U-NEG O O
 PUNCT O O O O O O
 
 if O O O O O O
@@ -1042,14 +1042,14 @@ n't O O O O O O
 know O O O O O O
 if O O O O O O
 the O O O O O O
-waitstaff U-NEU U-POS U-NEG U-NEG U-POS U-POS
+waitstaff U-NEU U-NEG U-POS U-NEG U-POS U-POS
 were O O O O O O
 very O O O O O O
 nice O O O O O O
 but O O O O O O
 they O O O O O O
 suggested O O O O O O
-swordfish U-POS O U-POS U-POS O U-POS
+swordfish U-POS U-POS O U-POS O U-POS
 for O O O O O O
 my O O O O O O
 husband O O O O O O
@@ -1074,11 +1074,11 @@ n't O O O O O O
 comment O O O O O O
 on O O O O O O
 their O O O O O O
-wine U-NEU B-NEU B-POS B-POS B-POS B-NEU
-list O L-NEU L-POS L-POS L-POS L-NEU
+wine U-NEU B-POS B-POS B-POS B-NEU B-NEU
+list O L-POS L-POS L-POS L-NEU L-NEU
 or O O O O O O
 their O O O O O O
-wine U-NEU U-POS U-NEU U-NEU U-NEU U-POS
+wine U-NEU U-NEU U-NEU U-NEU U-POS U-POS
 PUNCT O O O O O O
 
 if O O O O O O
@@ -1109,7 +1109,7 @@ back O O O O O O
 PUNCT O O O O O O
 
 great O O O O O O
-people O U-POS O U-POS U-POS O
+people O O U-POS U-POS U-POS O
 watching O O O O O O
 as O O O O O O
 others O O O O O O
@@ -1135,7 +1135,7 @@ us O O O O O O
 with O O O O O O
 a O O O O O O
 different O O O O O O
-starter U-POS U-POS U-NEU U-POS U-POS U-POS
+starter U-POS U-NEU U-POS U-POS U-POS U-POS
 PUNCT O O O O O O
 
 the O O O O O O
@@ -1145,7 +1145,7 @@ walk O O O O O O
 through O O O O O O
 the O O O O O O
 heavy O O O O O O
-vault O O O O U-NEG O
+vault O O U-NEG O O O
 like O O O O O O
 door U-NEU O O O O O
 PUNCT O O O O O O
@@ -1165,8 +1165,8 @@ going O O O O O O
 to O O O O O O
 have O O O O O O
 the O O O O O O
-dining O O O B-POS B-POS B-POS
-ride O O O L-POS L-POS L-POS
+dining O O B-POS B-POS O B-POS
+ride O O L-POS L-POS O L-POS
 of O O O O O O
 a O O O O O O
 lifetime O O O O O O
@@ -1250,7 +1250,7 @@ in O O O O O O
 addition O O O O O O
 to O O O O O O
 the O O O O O O
-sweetness O U-POS U-POS O O O
+sweetness O U-POS O O U-POS O
 PUNCT O O O O O O
 
 have O O O O O O
@@ -1304,7 +1304,7 @@ feeling O O O O O O
 stressed O O O O O O
 by O O O O O O
 the O O O O O O
-noise O U-NEG O O O O
+noise O O O O U-NEG O
 and O O O O O O
 congestion O O O O O O
 around O O O O O O
@@ -1331,9 +1331,9 @@ just O O O O O O
 as O O O O O O
 good O O O O O O
 as O O O O O O
-zabars O O O O B-POS B-POS
-barney O O O O I-POS I-POS
-greengrass O O O O L-POS L-POS
+zabars O O B-POS O O B-POS
+barney O O I-POS O O I-POS
+greengrass O O L-POS O O L-POS
 at O O O O O O
 a O O O O O O
 reasonable O O O O O O
@@ -1347,14 +1347,14 @@ PUNCT O O O O O O
 
 a O O O O O O
 few O O O O O O
-tips O U-POS O O O O
+tips O O O O U-POS O
 PUNCT O O O O O O
 if O O O O O O
 you O O O O O O
 skip O O O O O O
 the O O O O O O
-turnip B-NEU B-POS B-NEU B-POS B-POS B-POS
-cake L-NEU L-POS L-NEU L-POS L-POS L-POS
+turnip B-NEU B-NEU B-POS B-POS B-POS B-POS
+cake L-NEU L-NEU L-POS L-POS L-POS L-POS
 PUNCT O O O O O O
 try O O O O O O
 the O O O O O O
@@ -1376,9 +1376,9 @@ PUNCT O O O O O O
 and O O O O O O
 ordered O O O O O O
 the O O O O O O
-pre-theatre B-NEU O B-NEU B-NEU B-POS B-NEU
-3-course I-NEU O I-NEU I-NEU I-POS I-NEU
-dinner L-NEU O L-NEU L-NEU L-POS I-NEU
+pre-theatre B-NEU B-NEU B-POS B-NEU O B-NEU
+3-course I-NEU I-NEU I-POS I-NEU O I-NEU
+dinner L-NEU L-NEU L-POS L-NEU O I-NEU
 with O O O O O I-NEU
 wine B-NEU B-NEU B-NEU B-NEU B-NEU I-NEU
 flight L-NEU L-NEU L-NEU L-NEU L-NEU L-NEU
@@ -1431,7 +1431,7 @@ ordered O O O O O O
 many O O O O O O
 times O O O O O O
 for O O O O O O
-dinner U-NEU U-POS U-NEU U-NEU U-NEU U-NEU
+dinner U-NEU U-NEU U-NEU U-NEU U-POS U-NEU
 PUNCT O O O O O O
 
 the O O O O O O
@@ -1450,7 +1450,7 @@ been O O O O O O
 to O O O O O O
 this O O O O O O
 monster O O O O O O
-sushi O U-POS O O O O
+sushi O O O O U-POS O
 twice O O O O O O
 PUNCT O O O O O O
 the O O O O O O
@@ -1502,27 +1502,27 @@ peter O O O O O O
 favourite O O O O O O
 pizza U-POS B-POS B-POS B-POS B-POS B-POS
 with O I-POS I-POS I-POS I-POS I-POS
-prosciutto O L-POS L-POS I-POS I-POS I-POS
-and O O O I-POS I-POS I-POS
-baby O B-POS B-POS I-POS I-POS I-POS
+prosciutto O L-POS I-POS I-POS L-POS I-POS
+and O O I-POS I-POS O I-POS
+baby O B-POS I-POS I-POS B-POS I-POS
 arugula O L-POS L-POS L-POS L-POS L-POS
 is O O O O O O
 actually O O O O O O
 a O O O O O O
 margarite O B-POS B-POS B-POS B-POS B-POS
-pizza U-POS L-POS I-POS I-POS I-POS L-POS
-with O O I-POS I-POS I-POS O
-cold O B-POS I-POS I-POS I-POS B-POS
-prosciutto O L-POS I-POS I-POS I-POS I-POS
-and O O I-POS I-POS I-POS I-POS
-baby O B-POS I-POS I-POS I-POS I-POS
-arugula O L-POS I-POS I-POS I-POS L-POS
-on O O I-POS I-POS I-POS O
-top O O L-POS L-POS L-POS O
+pizza U-POS I-POS I-POS I-POS L-POS L-POS
+with O I-POS I-POS I-POS O O
+cold O I-POS I-POS I-POS B-POS B-POS
+prosciutto O I-POS I-POS I-POS L-POS I-POS
+and O I-POS I-POS I-POS O I-POS
+baby O I-POS I-POS I-POS B-POS I-POS
+arugula O I-POS I-POS I-POS L-POS L-POS
+on O I-POS I-POS I-POS O O
+top O L-POS L-POS L-POS O O
 PUNCT O O O O O O
 like O O O O O O
 a O O O O O O
-salad U-NEU U-POS U-NEG U-POS U-POS U-POS
+salad U-NEU U-NEG U-POS U-POS U-POS U-POS
 PUNCT O O O O O O
 
 if O O O O O O
@@ -1553,8 +1553,8 @@ go O O O O O O
 early O O O O O O
 for O O O O O O
 the O O O O O O
-pre-theater B-POS O B-POS B-POS B-POS B-POS
-prix-fixe L-POS O L-POS L-POS L-POS L-POS
+pre-theater B-POS B-POS B-POS B-POS O B-POS
+prix-fixe L-POS L-POS L-POS L-POS O L-POS
 PUNCT O O O O O O
 
 i O O O O O O
@@ -1692,7 +1692,7 @@ and O O O O O O
 both O O O O O O
 times O O O O O O
 the O O O O O O
-food U-POS U-POS U-NEU U-NEG U-POS U-POS
+food U-POS U-NEU U-POS U-NEG U-POS U-POS
 was O O O O O O
 fine O O O O O O
 PUNCT O O O O O O
@@ -1725,7 +1725,7 @@ they O O O O O O
 'd O O O O O O
 make O O O O O O
 a O O O O O O
-mint O U-POS U-POS O O O
+mint O U-POS O O U-POS O
 PUNCT O O O O O O
 
 a O O O O O O
@@ -1825,9 +1825,9 @@ be O O O O O O
 happier O O O O O O
 if O O O O O O
 the O O O O O O
-dim B-NEG B-NEU B-NEU B-NEG B-NEG B-NEG
-sum I-NEG I-NEU I-NEU I-NEG I-NEG I-NEG
-servings L-NEG L-NEU L-NEU L-NEG L-NEG L-NEG
+dim B-NEG B-NEU B-NEG B-NEG B-NEU B-NEG
+sum I-NEG I-NEU I-NEG I-NEG I-NEU I-NEG
+servings L-NEG L-NEU L-NEG L-NEG L-NEU L-NEG
 here O O O O O O
 were O O O O O O
 a O O O O O O
@@ -1843,7 +1843,7 @@ taj O O O O O O
 mahal O O O O O O
 offeres O O O O O O
 gret O O O O O O
-value U-NEU U-POS O O O O
+value U-NEU O O O U-POS O
 and O O O O O O
 great O O O O O O
 food U-NEU U-POS U-POS U-POS U-POS U-POS
@@ -1878,8 +1878,8 @@ to O O O O O O
 purchase O O O O O O
 a O O O O O O
 similarly O O O O O O
-priced B-POS B-POS B-NEU B-POS B-POS B-POS
-wine L-POS L-POS L-NEU L-POS L-POS L-POS
+priced B-POS B-NEU B-POS B-POS B-POS B-POS
+wine L-POS L-NEU L-POS L-POS L-POS L-POS
 that O O O O O O
 was O O O O O O
 n't O O O O O O
@@ -2004,7 +2004,7 @@ not O O O O O O
 sure O O O O O O
 if O O O O O O
 the O O O O O O
-soup U-NEU U-POS U-POS U-NEG U-NEG U-POS
+soup U-NEU U-POS U-NEG U-NEG U-POS U-POS
 is O O O O O O
 pretty O O O O O O
 good O O O O O O
@@ -2032,7 +2032,7 @@ PUNCT O O O O O O
 
 not O O O O O O
 the O O O O O O
-food U-NEU U-POS U-NEG U-NEG U-NEG U-NEG
+food U-NEU U-NEG U-NEG U-NEG U-POS U-NEG
 PUNCT O O O O O O
 not O O O O O O
 the O O O O O O
@@ -2096,7 +2096,7 @@ friendly O O O O O O
 and O O O O O O
 a O O O O O O
 great O O O O O O
-guy O U-POS O O U-POS U-POS
+guy O O U-POS O U-POS U-POS
 PUNCT O O O O O O
 i O O O O O O
 'd O O O O O O
@@ -2181,8 +2181,8 @@ know O O O O O O
 if O O O O O O
 they O O O O O O
 used O O O O O O
-shredded B-NEU O B-NEG B-NEG B-NEG B-NEU
-cheese L-NEU O L-NEG L-NEG L-NEG L-NEU
+shredded B-NEU B-NEG B-NEG B-NEG O B-NEU
+cheese L-NEU L-NEG L-NEG L-NEG O L-NEU
 on O O O O O O
 top O O O O O O
 PUNCT O O O O O O
@@ -2252,7 +2252,7 @@ could O O O O O O
 have O O O O O O
 all O O O O O O
 the O O O O O O
-dumplings U-POS U-POS U-NEG U-POS U-POS U-NEU
+dumplings U-POS U-NEG U-POS U-POS U-POS U-NEU
 to O O O O O O
 myself O O O O O O
 PUNCT O O O O O O
@@ -2332,8 +2332,8 @@ if O O O O O O
 it O O O O O O
 made O O O O O O
 my O O O O O O
-dining B-NEU O U-NEG O B-NEG O
-experience L-NEU O O O L-NEG O
+dining B-NEU U-NEG B-NEG O O O
+experience L-NEU O L-NEG O O O
 uncomfortable O O O O O O
 PUNCT O O O O O O
 
@@ -2388,22 +2388,22 @@ PUNCT O O O O O O
 my O O O O O O
 picks O O O O O O
 PUNCT O O O O O O
-guizhou B-POS B-POS O B-POS B-POS B-POS
-chicken L-POS L-POS O L-POS L-POS L-POS
+guizhou B-POS O B-POS B-POS B-POS B-POS
+chicken L-POS O L-POS L-POS L-POS L-POS
 PUNCT O O O O O O
-fish B-POS B-POS O B-POS O U-POS
-with I-POS I-POS O I-POS O O
-hot I-POS I-POS B-POS I-POS B-POS B-POS
+fish B-POS O O B-POS B-POS U-POS
+with I-POS O O I-POS I-POS O
+hot I-POS B-POS B-POS I-POS I-POS B-POS
 bean I-POS I-POS I-POS I-POS I-POS I-POS
 source L-POS L-POS L-POS L-POS L-POS L-POS
 PUNCT O O O O O O
 fish B-POS B-POS B-POS B-POS B-POS B-POS
-fillet I-POS I-POS I-POS I-POS L-POS I-POS
-in I-POS I-POS I-POS I-POS O I-POS
-spicy I-POS I-POS I-POS I-POS O I-POS
-source I-POS I-POS I-POS I-POS O I-POS
-special I-POS I-POS I-POS I-POS O I-POS
-menu L-POS L-POS L-POS L-POS U-POS L-POS
+fillet I-POS I-POS L-POS I-POS I-POS I-POS
+in I-POS I-POS O I-POS I-POS I-POS
+spicy I-POS I-POS O I-POS I-POS I-POS
+source I-POS I-POS O I-POS I-POS I-POS
+special I-POS I-POS O I-POS I-POS I-POS
+menu L-POS L-POS U-POS L-POS L-POS L-POS
 PUNCT O O O O O O
 
 thr O O O O O O
@@ -2430,7 +2430,7 @@ be O O O O O O
 expected O O O O O O
 PUNCT O O O O O O
 
-sushi U-NEU U-NEU U-NEU U-NEU U-NEG U-NEG
+sushi U-NEU U-NEU U-NEG U-NEU U-NEU U-NEG
 was O O O O O O
 n't O O O O O O
 anything O O O O O O
@@ -2454,9 +2454,9 @@ PUNCT O O O O O O
 
 this O O O O O O
 lovely O O O O O O
-french-asian O B-POS O B-POS O O
-fusion O I-POS O I-POS O O
-restaurant O L-POS O L-POS O O
+french-asian O O O B-POS B-POS O
+fusion O O O I-POS I-POS O
+restaurant O O O L-POS L-POS O
 stands O O O O O O
 out O O O O O O
 amongst O O O O O O
@@ -2498,7 +2498,7 @@ a O O O O O O
 joint O O O O O O
 in O O O O O O
 this O O O O O O
-price B-NEG O U-NEG O U-NEG O
+price B-NEG U-NEG U-NEG O O O
 category L-NEG O O O O O
 PUNCT O O O O O O
 
@@ -2536,7 +2536,7 @@ eats U-POS U-POS U-POS U-POS U-POS U-POS
 PUNCT O O O O O O
 
 the O O O O O O
-waitstaff U-NEG U-POS U-NEG U-NEG U-NEG U-NEG
+waitstaff U-NEG U-NEG U-NEG U-NEG U-POS U-NEG
 are O O O O O O
 all O O O O O O
 very O O O O O O
@@ -2563,7 +2563,7 @@ brought O O O O O O
 glasses O O O O O O
 and O O O O O O
 the O O O O O O
-bottle O O U-NEU O O O
+bottle O U-NEU O O O O
 PUNCT O O O O O O
 and O O O O O O
 just O O O O O O
@@ -2590,7 +2590,7 @@ delictable O O O O O O
 PUNCT O O O O O O
 but O O O O O O
 the O O O O O O
-service U-NEG U-POS U-NEG U-NEG U-POS U-NEG
+service U-NEG U-NEG U-POS U-NEG U-POS U-NEG
 professional O O O O O O
 could O O O O O O
 be O O O O O O
@@ -2657,11 +2657,11 @@ PUNCT O O O O O O
 always O O O O O O
 ask O O O O O O
 the O O O O O O
-bartender U-NEU U-POS O U-POS U-NEU U-NEU
+bartender U-NEU O U-NEU U-POS U-POS U-NEU
 for O O O O O O
 the O O O O O O
-seasonal B-POS B-POS B-POS B-POS O B-POS
-beer L-POS L-POS L-POS L-POS U-POS L-POS
+seasonal B-POS B-POS O B-POS B-POS B-POS
+beer L-POS L-POS U-POS L-POS L-POS L-POS
 PUNCT O O O O O O
 PUNCT O O O O O O
 PUNCT O O O O O O
@@ -2681,16 +2681,16 @@ PUNCT O O O O O O
 
 one O O O O O O
 less O O O O O O
-manhattanite O U-POS O O O O
+manhattanite O O O O U-POS O
 the O O O O O O
 better O O O O O O
 PUNCT O O O O O O
 
 fluke B-POS O O O O O
-sashimi L-POS B-POS O O O O
-drizzled O I-POS O O O O
-with O I-POS O O O O
-jalapeno-lime B-POS I-POS B-POS B-POS B-POS B-POS
+sashimi L-POS O O O B-POS O
+drizzled O O O O I-POS O
+with O O O O I-POS O
+jalapeno-lime B-POS B-POS B-POS B-POS I-POS B-POS
 olive I-POS I-POS I-POS I-POS I-POS I-POS
 oil L-POS L-POS L-POS L-POS L-POS L-POS
 PUNCT O O O O O O
@@ -2793,17 +2793,17 @@ would O O O O O O
 have O O O O O O
 liked O O O O O O
 the O O O O O O
-noodle B-NEG B-NEG B-NEU B-NEG B-NEG B-NEG
-dishes L-NEG L-NEG L-NEU L-NEG L-NEG L-NEG
+noodle B-NEG B-NEU B-NEG B-NEG B-NEG B-NEG
+dishes L-NEG L-NEU L-NEG L-NEG L-NEG L-NEG
 at O O O O O O
 rice O O O O O O
 avenue O O O O O O
 compared O O O O O O
 to O O O O O O
 their O O O O O O
-green B-NEU B-NEG B-NEU B-NEG B-NEG B-NEG
-curry I-NEU I-NEG I-NEU I-NEG I-NEG I-NEG
-dish L-NEU L-NEG L-NEU L-NEG L-NEG L-NEG
+green B-NEU B-NEU B-NEG B-NEG B-NEG B-NEG
+curry I-NEU I-NEU I-NEG I-NEG I-NEG I-NEG
+dish L-NEU L-NEU L-NEG L-NEG L-NEG L-NEG
 if O O O O O O
 they O O O O O O
 had O O O O O O
@@ -2839,7 +2839,7 @@ last O O O O O O
 saturday O O O O O O
 PUNCT O O O O O O
 
-service O U-POS U-NEU U-NEG U-NEU U-POS
+service O U-NEU U-NEU U-NEG U-POS U-POS
 was O O O O O O
 decent O O O O O O
 PUNCT O O O O O O
@@ -2917,7 +2917,7 @@ they O O O O O O
 might O O O O O O
 charge O O O O O O
 different O O O O O O
-prices U-NEG U-NEG O O U-NEU O
+prices U-NEG O U-NEU O U-NEG O
 all O O O O O O
 the O O O O O O
 time O O O O O O
@@ -2965,11 +2965,11 @@ cheaper O O O O O O
 compared O O O O O O
 to O O O O O O
 the O O O O O O
-quality O U-NEG O O O O
+quality O O O O U-NEG O
 of O O O O O O
-service U-NEG U-POS U-NEG U-POS U-POS U-POS
+service U-NEG U-NEG U-POS U-POS U-POS U-POS
 and O O O O O O
-food U-NEG U-POS U-NEG U-POS U-POS U-NEG
+food U-NEG U-NEG U-POS U-POS U-POS U-NEG
 PUNCT O O O O O O
 
 i O O O O O O
@@ -3161,7 +3161,7 @@ PUNCT O O O O O O
 for O O O O O O
 a O O O O O O
 regular O O O O O O
-slice O U-POS O O O O
+slice O O O O U-POS O
 and O O O O O O
 PUNCT O O O O O O
 400 O O O O O O
@@ -3170,10 +3170,10 @@ a O O O O O O
 slice O O O O O O
 with O O O O O O
 a O O O O O O
-mushroom O U-POS U-NEU O U-NEG U-POS
+mushroom O U-NEU U-NEG O U-POS U-POS
 PUNCT O O O O O O
 not O O O O O O
-mushrooms O U-POS U-NEG O U-NEG U-NEG
+mushrooms O U-NEG U-NEG O U-POS U-NEG
 PUNCT O O O O O O
 
 if O O O O O O
@@ -3245,9 +3245,9 @@ looking O O O O O O
 for O O O O O O
 a O O O O O O
 fine O O O O O O
-indian B-NEU B-POS O B-POS O O
-dining I-NEU I-POS O I-POS O O
-experience L-NEU L-POS O L-POS O O
+indian B-NEU O O B-POS B-POS O
+dining I-NEU O O I-POS I-POS O
+experience L-NEU O O L-POS L-POS O
 that O O O O O O
 was O O O O O O
 definitely O O O O O O
@@ -3279,9 +3279,9 @@ cake I-POS I-POS I-POS I-POS I-POS I-POS
 (warmed) L-POS L-POS L-POS I-POS L-POS I-POS
 with O O O I-POS O I-POS
 2 O O O I-POS O I-POS
-scoops O B-POS B-POS I-POS O I-POS
-of O I-POS I-POS I-POS O I-POS
-dulce B-POS I-POS I-POS I-POS B-POS I-POS
+scoops O B-POS O I-POS B-POS I-POS
+of O I-POS O I-POS I-POS I-POS
+dulce B-POS I-POS B-POS I-POS I-POS I-POS
 de I-POS I-POS I-POS I-POS I-POS I-POS
 leche I-POS I-POS I-POS I-POS I-POS I-POS
 gelato L-POS L-POS L-POS L-POS L-POS L-POS
@@ -3289,7 +3289,7 @@ PUNCT O O O O O O
 
 the O O O O O O
 best O O O O O O
-place O U-POS O U-POS O O
+place O O O U-POS U-POS O
 to O O O O O O
 bring O O O O O O
 kids O O O O O O
@@ -3304,7 +3304,7 @@ something O O O O O O
 different O O O O O O
 PUNCT O O O O O O
 
-restaurant O O O O U-NEG O
+restaurant O O U-NEG O O O
 was O O O O O O
 dirty O O O O O O
 and O O O O O O
@@ -3376,7 +3376,7 @@ dumplings U-POS U-POS U-POS U-POS U-POS U-POS
 should O O O O O O
 have O O O O O O
 been O O O O O O
-served O U-POS O U-POS U-POS U-POS
+served O O U-POS U-POS U-POS U-POS
 amid O O O O O O
 clean O O O O O O
 PUNCT O O O O O O
@@ -3409,8 +3409,8 @@ cute O O O O O O
 place U-POS U-POS U-POS U-POS U-POS U-POS
 PUNCT O O O O O O
 nice O O O O O O
-wait B-POS B-POS B-POS B-POS B-NEG B-POS
-staff L-POS L-POS L-POS L-POS L-NEG L-POS
+wait B-POS B-POS B-NEG B-POS B-POS B-POS
+staff L-POS L-POS L-NEG L-POS L-POS L-POS
 but O O O O O O
 would O O O O O O
 never O O O O O O
@@ -3432,7 +3432,7 @@ sure O O O O O O
 PUNCT O O O O O O
 
 the O O O O O O
-sicilian U-NEU U-POS U-POS U-POS O U-POS
+sicilian U-NEU U-POS O U-POS U-POS U-POS
 would O O O O O O
 be O O O O O O
 my O O O O O O
@@ -3460,8 +3460,8 @@ definitely O O O O O O
 be O O O O O O
 an O O O O O O
 excellent O O O O O O
-date O B-POS O B-POS O O
-spot U-NEU L-POS O L-POS O O
+date O O O B-POS B-POS O
+spot U-NEU O O L-POS L-POS O
 because O O O O O O
 of O O O O O O
 the O O O O O O
@@ -3565,11 +3565,11 @@ and O O O O O O
 raving O O O O O O
 about O O O O O O
 the O O O O O O
-food U-POS U-NEG U-NEG U-POS U-POS U-POS
+food U-POS U-NEG U-POS U-POS U-NEG U-POS
 PUNCT O O O O O O
 
 the O O O O O O
-pizza U-NEG U-POS U-POS U-POS U-NEG U-NEG
+pizza U-NEG U-POS U-NEG U-POS U-POS U-NEG
 should O O O O O O
 be O O O O O O
 yummier O O O O O O
@@ -3652,7 +3652,7 @@ but O O O O O O
 i O O O O O O
 wish O O O O O O
 the O O O O O O
-chef U-NEG U-POS U-NEG U-NEG U-NEG U-POS
+chef U-NEG U-NEG U-NEG U-NEG U-POS U-POS
 had O O O O O O
 greeted O O O O O O
 us O O O O O O
@@ -3666,7 +3666,7 @@ PUNCT O O O O O O
 even O O O O O O
 if O O O O O O
 the O O O O O O
-place U-NEG O U-NEG U-NEG U-NEG U-NEG
+place U-NEG U-NEG U-NEG U-NEG O U-NEG
 is O O O O O O
 small O O O O O O
 and O O O O O O
@@ -3693,7 +3693,7 @@ order O O O O O O
 and O O O O O O
 throw O O O O O O
 the O O O O O O
-food U-NEU U-NEU U-NEG U-NEG U-NEG U-NEU
+food U-NEU U-NEG U-NEG U-NEG U-NEU U-NEU
 down O O O O O O
 PUNCT O O O O O O
 rushing O O O O O O
@@ -3708,12 +3708,12 @@ been O O O O O O
 the O O O O O O
 pinnacle O O O O O O
 of O O O O O O
-indian B-NEG B-POS B-NEG O O B-NEG
-fast I-NEG I-POS I-NEG B-NEU O I-NEG
-food L-NEG L-POS L-NEG L-NEU O L-NEG
+indian B-NEG B-NEG O O B-POS B-NEG
+fast I-NEG I-NEG O B-NEU I-POS I-NEG
+food L-NEG L-NEG O L-NEU L-POS L-NEG
 all O O O O O O
-fast O B-POS B-NEG O O O
-foods O L-POS L-NEG O O O
+fast O B-NEG O O B-POS O
+foods O L-NEG O O L-POS O
 in O O O O O O
 my O O O O O O
 opinion O O O O O O
@@ -3735,7 +3735,7 @@ have O O O O O O
 to O O O O O O
 increase O O O O O O
 the O O O O O O
-service U-NEG U-POS U-POS U-POS U-NEG U-NEG
+service U-NEG U-POS U-NEG U-POS U-POS U-NEG
 a O O O O O O
 lot O O O O O O
 PUNCT O O O O O O
@@ -3745,7 +3745,7 @@ is O O O O O O
 barely O O O O O O
 romantic O O O O O O
 but O O O O O O
-management U-POS U-NEG U-POS U-NEG U-NEG U-NEG
+management U-POS U-POS U-NEG U-NEG U-NEG U-NEG
 tries O O O O O O
 PUNCT O O O O O O
 
@@ -3757,7 +3757,7 @@ deal O O O O O O
 with O O O O O O
 a O O O O O O
 crappy O O O O O O
-scene U-NEG U-NEG O O U-NEG U-NEG
+scene U-NEG O U-NEG O U-NEG U-NEG
 and O O O O O O
 annoying O O O O O O
 customers U-NEG O O O O O
@@ -3780,7 +3780,7 @@ remember O O O O O O
 if O O O O O O
 i O O O O O O
 found O O O O O O
-service U-NEU U-NEG U-POS U-NEG U-NEU U-NEG
+service U-NEU U-POS U-NEU U-NEG U-NEG U-NEG
 above O O O O O O
 average O O O O O O
 PUNCT O O O O O O
@@ -3843,7 +3843,7 @@ impossible O O O O O O
 to O O O O O O
 get O O O O O O
 a O O O O O O
-table U-NEU U-POS U-NEG U-POS U-NEG U-POS
+table U-NEU U-NEG U-NEG U-POS U-POS U-POS
 PUNCT O O O O O O
 so O O O O O O
 if O O O O O O
@@ -3909,7 +3909,7 @@ thawed O O O O O O
 PUNCT O O O O O O
 
 no O O O O O O
-food U-NEU U-POS O U-NEG U-NEU O
+food U-NEU O U-NEU U-NEG U-POS O
 snobs O O O O O O
 allowed O O O O O O
 PUNCT O O O O O O
@@ -3984,7 +3984,7 @@ longtime O O O O O O
 fan O O O O O O
 of O O O O O O
 holy O O O O O O
-basil O U-POS O U-POS O U-POS
+basil O O O U-POS U-POS U-POS
 in O O O O O O
 the O O O O O O
 east O O O O O O
@@ -3996,12 +3996,12 @@ i O O O O O O
 do O O O O O O
 believe O O O O O O
 their O O O O O O
-food U-NEG U-POS U-NEG U-NEG U-NEG U-NEG
+food U-NEG U-NEG U-NEG U-NEG U-POS U-NEG
 has O O O O O O
 slightly O O O O O O
 slipped O O O O O O
 in O O O O O O
-quality U-NEG O U-NEG U-NEG U-NEG O
+quality U-NEG U-NEG U-NEG U-NEG O O
 PUNCT O O O O O O
 i O O O O O O
 have O O O O O O
@@ -4047,8 +4047,8 @@ by O O O O O O
 far O O O O O O
 the O O O O O O
 best O O O O O O
-thai B-NEG B-POS O B-POS B-POS B-POS
-food L-NEG L-POS O L-POS L-POS L-POS
+thai B-NEG O B-POS B-POS B-POS B-POS
+food L-NEG O L-POS L-POS L-POS L-POS
 restaurant O O O O O O
 i O O O O O O
 've O O O O O O
@@ -4121,7 +4121,7 @@ this O O O O O O
 is O O O O O O
 a O O O O O O
 great O O O O O O
-place O O U-POS O O O
+place O U-POS O O O O
 PUNCT O O O O O O
 
 it O O O O O O
@@ -4164,7 +4164,7 @@ PUNCT O O O O O O
 b+ O O O O O O
 for O O O O O O
 the O O O O O O
-food U-POS U-POS U-NEG U-NEG U-NEG U-NEG
+food U-POS U-NEG U-NEG U-NEG U-POS U-NEG
 PUNCT O O O O O O
 f O O O O O O
 for O O O O O O
@@ -4560,7 +4560,7 @@ down O O O O O O
 PUNCT O O O O O O
 have O O O O O O
 a O O O O O O
-drink U-NEU U-POS U-NEU U-NEU U-NEU U-NEU
+drink U-NEU U-NEU U-NEU U-NEU U-POS U-NEU
 and O O O O O O
 conversations O O O O O O
 with O O O O O O
@@ -4585,11 +4585,11 @@ pearls I-POS I-POS I-POS I-POS I-POS I-POS
 PUNCT O O O O O O
 
 the O O O O O O
-ambiance U-POS U-POS O U-POS U-NEG U-NEU
+ambiance U-POS O U-NEG U-POS U-POS U-NEU
 is O O O O O O
 minimal O O O O O O
 the O O O O O O
-food U-NEG U-POS U-NEG U-POS U-NEG U-NEG
+food U-NEG U-NEG U-NEG U-POS U-POS U-NEG
 is O O O O O O
 not O O O O O O
 phenomenal O O O O O O
@@ -4632,7 +4632,7 @@ PUNCT O O O O O O
 inexpensive O O O O O O
 PUNCT O O O O O O
 the O O O O O O
-cost U-NEG U-POS O U-POS U-POS U-POS
+cost U-NEG O U-POS U-POS U-POS U-POS
 is O O O O O O
 through O O O O O O
 the O O O O O O
@@ -4641,7 +4641,7 @@ for O O O O O O
 better O O O O O O
 than O O O O O O
 average O O O O O O
-fare O U-NEG U-POS U-POS U-POS U-POS
+fare O U-POS U-POS U-POS U-NEG U-POS
 PUNCT O O O O O O
 
 i O O O O O O
@@ -4731,7 +4731,7 @@ but O O O O O O
 i O O O O O O
 wish O O O O O O
 the O O O O O O
-sushi U-NEG U-NEG U-POS U-POS U-NEG U-POS
+sushi U-NEG U-POS U-NEG U-POS U-NEG U-POS
 were O O O O O O
 better O O O O O O
 PUNCT O O O O O O
@@ -4810,7 +4810,7 @@ disappointed O O O O O O
 PUNCT O O O O O O
 
 the O O O O O O
-atmosphere U-NEU U-POS U-POS U-NEG U-NEU U-NEU
+atmosphere U-NEU U-POS U-NEU U-NEG U-POS U-NEU
 is O O O O O O
 nothing O O O O O O
 special O O O O O O
@@ -4827,7 +4827,7 @@ tokyo O O O O O O
 PUNCT O O O O O O
 
 the O O O O O O
-food U-NEG U-NEG O U-NEG U-NEG U-NEG
+food U-NEG O U-NEG U-NEG U-NEG U-NEG
 arrived O O O O O O
 20 O O O O O O
 minutes O O O O O O
@@ -4840,9 +4840,9 @@ and O O O O O O
 soggy O O O O O O
 PUNCT O O O O O O
 
-brava O B-POS B-POS O O O
-la O I-POS I-POS O O O
-pizza O L-POS L-POS O O O
+brava O B-POS O O B-POS O
+la O I-POS O O I-POS O
+pizza O L-POS O O L-POS O
 fresca O O O O O O
 PUNCT O O O O O O
 
@@ -4930,17 +4930,17 @@ up O O O O O O
 at O O O O O O
 least O O O O O O
 one O O O O O O
-frozen O O B-NEG O O O
-item O O L-NEG O O O
+frozen O B-NEG O O O O
+item O L-NEG O O O O
 though O O O O O O
 i O O O O O O
 'm O O O O O O
 not O O O O O O
 sure O O O O O O
 which O O O O O O
-dim B-NEG B-NEU B-NEU B-NEG B-NEG B-NEU
-sum I-NEG I-NEU I-NEU I-NEG I-NEG I-NEU
-dish L-NEG L-NEU L-NEU L-NEG L-NEG L-NEU
+dim B-NEG B-NEU B-NEG B-NEG B-NEU B-NEU
+sum I-NEG I-NEU I-NEG I-NEG I-NEU I-NEU
+dish L-NEG L-NEU L-NEG L-NEG L-NEU L-NEU
 it O O O O O O
 was O O O O O O
 PUNCT O O O O O O
@@ -4976,8 +4976,8 @@ also O O O O O O
 sometimes O O O O O O
 with O O O O O O
 some O O O O O O
-sea B-POS O B-POS O O O
-salt L-POS O L-POS O O O
+sea B-POS B-POS O O O O
+salt L-POS L-POS O O O O
 PUNCT O O O O O O
 
 my O O O O O O
@@ -5007,7 +5007,7 @@ did O O O O O O
 n't O O O O O O
 mention O O O O O O
 the O O O O O O
-specials U-NEU U-NEU O U-NEU U-NEU U-NEU
+specials U-NEU O U-NEU U-NEU U-NEU U-NEU
 PUNCT O O O O O O
 he O O O O O O
 did O O O O O O
@@ -5070,7 +5070,7 @@ consistent O O O O O O
 PUNCT O O O O O O
 
 for O O O O O O
-appetizers U-NEU U-NEU U-NEU U-NEU O U-POS
+appetizers U-NEU U-NEU O U-NEU U-NEU U-POS
 PUNCT O O O O O O
 i O O O O O O
 recommend O O O O O O
@@ -5093,13 +5093,13 @@ you O O O O O O
 try O O O O O O
 the O O O O O O
 times B-NEU O O O O O
-square I-NEU O B-POS O O O
-cocktail L-NEU U-POS L-POS O O O
+square I-NEU B-POS O O O O
+cocktail L-NEU L-POS O O U-POS O
 PUNCT O O O O O O
 ginger B-NEU B-POS B-POS B-POS B-POS B-POS
-lemonade I-NEU I-POS I-POS I-POS L-POS I-POS
-with I-NEU I-POS I-POS I-POS O I-POS
-vodka L-NEU L-POS L-POS L-POS O L-POS
+lemonade I-NEU I-POS L-POS I-POS I-POS I-POS
+with I-NEU I-POS O I-POS I-POS I-POS
+vodka L-NEU L-POS O L-POS L-POS L-POS
 also O O O O O O
 available O O O O O O
 without O O O O O O
@@ -5131,7 +5131,7 @@ come O O O O O O
 again O O O O O O
 PUNCT O O O O O O
 
-deliveries U-NEG U-POS U-NEG O U-NEG O
+deliveries U-NEG U-NEG U-NEG O U-POS O
 often O O O O O O
 take O O O O O O
 up O O O O O O
@@ -5180,11 +5180,11 @@ because O O O O O O
 of O O O O O O
 the O O O O O O
 delicate O O O O O O
-thin O B-POS O O O O
-crust U-NEG L-POS U-POS O U-POS O
+thin O O O O B-POS O
+crust U-NEG U-POS U-POS O L-POS O
 PUNCT O O O O O O
-take-out B-NEG B-POS B-NEG B-POS B-POS B-POS
-pies L-NEG L-POS L-NEG L-POS L-POS L-POS
+take-out B-NEG B-NEG B-POS B-POS B-POS B-POS
+pies L-NEG L-NEG L-POS L-POS L-POS L-POS
 get O O O O O O
 soggy O O O O O O
 in O O O O O O
@@ -5319,13 +5319,13 @@ PUNCT O O O O O O
 for O O O O O O
 instance O O O O O O
 PUNCT O O O O O O
-plates O O U-NEG U-NEG U-NEG U-NEG
+plates O U-NEG U-NEG U-NEG O U-NEG
 were O O O O O O
 just O O O O O O
 dumped O O O O O O
 on O O O O O O
 the O O O O O O
-table O O O O U-NEU O
+table O O U-NEU O O O
 PUNCT O O O O O O
 i O O O O O O
 was O O O O O O
@@ -5341,8 +5341,8 @@ PUNCT O O O O O O
 
 we O O O O O O
 had O O O O O O
-lava O B-POS B-NEU B-POS B-POS B-NEG
-cake O L-POS L-NEU L-POS L-POS L-NEG
+lava O B-NEU B-POS B-POS B-POS B-NEG
+cake O L-NEU L-POS L-POS L-POS L-NEG
 we O O O O O O
 ordered O O O O O O
 when O O O O O O
@@ -5382,16 +5382,16 @@ delicious O O O O O O
 PUNCT O O O O O O
 
 limited O O O O O O
-menu U-NEG U-POS U-NEG U-NEG U-NEG U-NEG
+menu U-NEG U-NEG U-NEG U-NEG U-POS U-NEG
 PUNCT O O O O O O
 no-so-fresh O O O O O O
-ingredients U-NEG U-POS U-NEG U-POS U-POS U-NEG
+ingredients U-NEG U-NEG U-POS U-POS U-POS U-NEG
 PUNCT O O O O O O
 thinly-sliced O O O O O O
 fish U-NEG U-POS U-POS U-NEG U-POS U-POS
 PUNCT O O O O O O
 fall-apart O O O O O O
-rice U-NEG U-NEG U-NEG U-NEG U-POS U-POS
+rice U-NEG U-NEG U-POS U-NEG U-NEG U-POS
 PUNCT O O O O O O
 
 i O O O O O O
@@ -5427,7 +5427,7 @@ PUNCT O O O O O O
 
 calling O O O O O O
 the O O O O O O
-place U-NEG O O O U-NEG O
+place U-NEG O U-NEG O O O
 hampton O O O O O O
 chutney O O O O O O
 co O O O O O O
@@ -5478,7 +5478,7 @@ tender O O O O O O
 so O O O O O O
 full O O O O O O
 of O O O O O O
-flavor O O U-POS U-POS O U-POS
+flavor O U-POS O U-POS O U-POS
 PUNCT O O O O O O
 the O O O O O O
 dessert U-POS U-POS U-POS U-POS U-POS U-POS
@@ -5566,15 +5566,15 @@ PUNCT O O O O O O
 
 an O O O O O O
 awesome O O O O O O
-organic O O O B-POS B-POS B-POS
-dog U-POS U-POS U-POS L-POS L-POS L-POS
+organic O O B-POS B-POS O B-POS
+dog U-POS U-POS L-POS L-POS U-POS L-POS
 PUNCT O O O O O O
 and O O O O O O
 a O O O O O O
 conscious O O O O O O
 eco O O O O O O
 friendly O O O O O O
-establishment U-POS O U-POS O U-POS U-POS
+establishment U-POS U-POS U-POS O O U-POS
 PUNCT O O O O O O
 
 trust O O O O O O
@@ -5601,7 +5601,7 @@ in O O O O O O
 la O O O O O O
 PUNCT O O O O O O
 
-delivery U-NEG U-POS U-NEG U-NEG U-POS U-NEG
+delivery U-NEG U-NEG U-POS U-NEG U-POS U-NEG
 can O O O O O O
 be O O O O O O
 spot O O O O O O
@@ -5632,7 +5632,7 @@ edge O O O O O O
 for O O O O O O
 a O O O O O O
 romantic O O O O O O
-dinner O U-POS O U-NEU U-POS U-NEU
+dinner O O U-POS U-NEU U-POS U-NEU
 PUNCT O O O O O O
 
 we O O O O O O
@@ -5696,7 +5696,7 @@ me O O O O O O
 started O O O O O O
 on O O O O O O
 the O O O O O O
-margaritas U-NEG U-NEG U-NEG U-NEG U-POS U-NEG
+margaritas U-NEG U-NEG U-POS U-NEG U-NEG U-NEG
 PUNCT O O O O O O
 either O O O O O O
 PUNCT O O O O O O
@@ -5708,8 +5708,8 @@ PUNCT O O O O O O
 and O O O O O O
 clean O O O O O O
 PUNCT O O O O O O
-bz O B-POS O O B-POS O
-grill O L-POS O O L-POS O
+bz O O B-POS O B-POS O
+grill O O L-POS O L-POS O
 stands O O O O O O
 apart O O O O O O
 from O O O O O O
@@ -5737,7 +5737,7 @@ PUNCT O O O O O O
 most O O O O O O
 of O O O O O O
 the O O O O O O
-booths U-POS U-POS U-NEG U-NEG U-NEG U-NEG
+booths U-POS U-NEG U-NEG U-NEG U-POS U-NEG
 allow O O O O O O
 you O O O O O O
 to O O O O O O
@@ -5755,8 +5755,8 @@ PUNCT O O O O O O
 paul U-POS O O O O O
 PUNCT O O O O O O
 the O O O O O O
-maitre O B-POS U-POS U-POS B-POS U-POS
-d O L-POS O O L-POS O
+maitre O U-POS B-POS U-POS B-POS U-POS
+d O O L-POS O L-POS O
 PUNCT O O O O O O
 PUNCT O O O O O O
 was O O O O O O
@@ -5774,7 +5774,7 @@ good O O O O O O
 experience O O O O O O
 
 the O O O O O O
-service U-POS U-POS O U-POS U-POS U-POS
+service U-POS O U-POS U-POS U-POS U-POS
 was O O O O O O
 extremely O O O O O O
 fast O O O O O O
@@ -5782,11 +5782,11 @@ and O O O O O O
 attentivethanks O O O O O O
 to O O O O O O
 the O O O O O O
-service U-POS O B-NEG B-NEG U-POS B-NEG
-button O O L-NEG L-NEG O L-NEG
+service U-POS B-NEG U-POS B-NEG O B-NEG
+button O L-NEG O L-NEG O L-NEG
 on O O O O O O
 your O O O O O O
-table O O O O U-NEU O
+table O O U-NEU O O O
 but O O O O O O
 i O O O O O O
 barely O O O O O O
@@ -5803,7 +5803,7 @@ PUNCT O O O O O O
 
 i O O O O O O
 wish O O O O O O
-prices O U-POS U-NEG U-POS U-POS O
+prices O U-NEG U-POS U-POS U-POS O
 were O O O O O O
 fair O O O O O O
 across O O O O O O
@@ -5811,16 +5811,16 @@ the O O O O O O
 board O O O O O O
 for O O O O O O
 both O O O O O O
-food U-NEG U-POS U-NEU U-NEU U-POS U-NEU
+food U-NEG U-NEU U-POS U-NEU U-POS U-NEU
 and O O O O O O
 bev U-NEG U-POS U-POS U-NEU U-POS U-NEU
 PUNCT O O O O O O
 
 stepping O O O O O O
 into O O O O O O
-casa B-NEG B-POS B-NEG B-NEG O O
-la I-NEG I-POS I-NEG I-NEG O O
-femme L-NEG L-POS L-NEG L-NEG O O
+casa B-NEG B-NEG O B-NEG B-POS O
+la I-NEG I-NEG O I-NEG I-POS O
+femme L-NEG L-NEG O L-NEG L-POS O
 last O O O O O O
 night O O O O O O
 should O O O O O O
@@ -5899,7 +5899,7 @@ five O O O O O O
 feet O O O O O O
 from O O O O O O
 your O O O O O O
-table O O U-POS U-NEU U-NEU U-NEU
+table O U-POS U-NEU U-NEU O U-NEU
 then O O O O O O
 hey O O O O O O
 PUNCT O O O O O O
@@ -5913,7 +5913,7 @@ PUNCT O O O O O O
 despite O O O O O O
 the O O O O O O
 confusing O O O O O O
-mirrors U-NEG U-NEG U-NEG O O U-NEG
+mirrors U-NEG U-NEG O O U-NEG U-NEG
 this O O O O O O
 will O O O O O O
 likely O O O O O O
@@ -5937,7 +5937,7 @@ wait O O O O O O
 PUNCT O O O O O O
 because O O O O O O
 the O O O O O O
-place U-NEG O U-NEG U-NEG U-NEG U-NEG
+place U-NEG U-NEG U-NEG U-NEG O U-NEG
 is O O O O O O
 pretty O O O O O O
 tiny O O O O O O
@@ -5949,8 +5949,8 @@ this O O O O O O
 is O O O O O O
 the O O O O O O
 best O O O O O O
-indian B-NEG B-POS O B-POS O O
-chinese L-NEG L-POS O L-POS O O
+indian B-NEG O O B-POS B-POS O
+chinese L-NEG O O L-POS L-POS O
 in O O O O O O
 the O O O O O O
 city O O O O O O
@@ -6034,7 +6034,7 @@ arrive O O O O O O
 late O O O O O O
 for O O O O O O
 our O O O O O O
-reservation O U-NEG U-NEU U-NEU U-NEU O
+reservation O U-NEU U-NEU U-NEU U-NEG O
 so O O O O O O
 i O O O O O O
 can O O O O O O
@@ -6047,13 +6047,13 @@ the O O O O O O
 wait U-NEU U-NEG U-NEG U-NEG U-NEG U-NEG
 for O O O O O O
 a O O O O O O
-table O O O U-NEG U-POS U-NEG
+table O O U-POS U-NEG O U-NEG
 PUNCT O O O O O O
 
 if O O O O O O
 only O O O O O O
 the O O O O O O
-hostess U-NEG U-POS U-NEG U-POS U-POS U-POS
+hostess U-NEG U-NEG U-POS U-POS U-POS U-POS
 had O O O O O O
 been O O O O O O
 pleasant O O O O O O
@@ -6076,7 +6076,7 @@ evening O O O O O O
 PUNCT O O O O O O
 
 the O O O O O O
-hostess O U-POS U-NEG U-NEG U-NEG U-NEG
+hostess O U-NEG U-NEG U-NEG U-POS U-NEG
 said O O O O O O
 wow O O O O O O
 that O O O O O O
@@ -6108,7 +6108,7 @@ more O O O O O O
 PUNCT O O O O O O
 so O O O O O O
 a O O O O O O
-table O U-POS O U-NEG U-NEG U-NEG
+table O O U-NEG U-NEG U-POS U-NEG
 for O O O O O O
 six O O O O O O
 please O O O O O O
@@ -6230,8 +6230,8 @@ you O O O O O O
 ware O O O O O O
 looking O O O O O O
 for O O O O O O
-korean O B-POS O B-POS O B-POS
-fusion O L-POS O L-POS O L-POS
+korean O O O B-POS B-POS B-POS
+fusion O O O L-POS L-POS L-POS
 PUNCT O O O O O O
 i O O O O O O
 suggest O O O O O O
@@ -6300,7 +6300,7 @@ world O O O O O O
 PUNCT O O O O O O
 
 for O O O O O O
-desserts O U-POS U-POS U-POS O U-POS
+desserts O U-POS O U-POS U-POS U-POS
 PUNCT O O O O O O
 we O O O O O O
 tried O O O O O O
@@ -6339,8 +6339,8 @@ PUNCT O O O O O O
 the O O O O O O
 concept O O O O O O
 of O O O O O O
-japanese B-NEG B-POS B-POS B-NEG B-NEG B-NEU
-tapas L-NEG L-POS L-POS L-NEG L-NEG L-NEU
+japanese B-NEG B-POS B-NEG B-NEG B-POS B-NEU
+tapas L-NEG L-POS L-NEG L-NEG L-POS L-NEU
 is O O O O O O
 newly O O O O O O
 created O O O O O O
@@ -6406,7 +6406,7 @@ fun O O O O O O
 PUNCT O O O O O O
 dumping O O O O O O
 our O O O O O O
-entrees O U-POS U-NEG U-NEU U-POS U-POS
+entrees O U-NEG U-POS U-NEU U-POS U-POS
 in O O O O O O
 front O O O O O O
 of O O O O O O
@@ -6414,7 +6414,7 @@ us O O O O O O
 halfway O O O O O O
 through O O O O O O
 our O O O O O O
-appetizer U-POS U-POS U-NEU U-POS U-POS U-POS
+appetizer U-POS U-NEU U-POS U-POS U-POS U-POS
 which O O O O O O
 was O O O O O O
 delicious O O O O O O
@@ -6456,11 +6456,11 @@ fantastic O O O O O O
 PUNCT O O O O O O
 but O O O O O O
 the O O O O O O
-people O O U-NEG U-NEG U-NEG U-NEG
+people O U-NEG U-NEG U-NEG O U-NEG
 who O O O O O O
 greet O O O O O O
 and O O O O O O
-seat O O U-NEG O U-NEG U-NEG
+seat O U-NEG U-NEG O O U-NEG
 you O O O O O O
 has O O O O O O
 been O O O O O O
@@ -6505,18 +6505,18 @@ who O O O O O O
 going O O O O O O
 to O O O O O O
 be O O O O O O
-seating O O U-NEG O O U-NEG
+seating O U-NEG O O O U-NEG
 you O O O O O O
 first O O O O O O
 PUNCT O O O O O O
 
-maitre-d U-NEG U-POS U-POS U-NEG U-NEG U-POS
+maitre-d U-NEG U-POS U-NEG U-NEG U-POS U-POS
 and O O O O O O
 get O O O O O O
 out O O O O O O
 
 the O O O O O O
-food U-POS U-NEU U-NEU U-NEU U-POS U-NEU
+food U-POS U-NEU U-POS U-NEU U-NEU U-NEU
 and O O O O O O
 service U-POS U-POS U-POS U-NEG U-POS U-NEU
 were O O O O O O
@@ -6535,14 +6535,14 @@ PUNCT O O O O O O
 while O O O O O O
 finishing O O O O O O
 our O O O O O O
-meals O O O U-NEU U-NEU O
+meals O O U-NEU U-NEU O O
 which O O O O O O
 included O O O O O O
 a O O O O O O
 high-end O O O O O O
-bottle B-POS B-POS B-NEU B-POS B-POS B-NEU
-of I-POS I-POS I-NEU I-POS I-POS I-NEU
-wine L-POS L-POS L-NEU L-POS L-POS L-NEU
+bottle B-POS B-NEU B-POS B-POS B-POS B-NEU
+of I-POS I-NEU I-POS I-POS I-POS I-NEU
+wine L-POS L-NEU L-POS L-POS L-POS L-NEU
 PUNCT O O O O O O
 our O O O O O O
 son O O O O O O
@@ -6604,7 +6604,7 @@ was O O O O O O
 ok O O O O O O
 PUNCT O O O O O O
 
-appetizers O U-NEG U-NEG U-NEU U-NEU U-NEG
+appetizers O U-NEG U-NEU U-NEU U-NEG U-NEG
 took O O O O O O
 nearly O O O O O O
 an O O O O O O
@@ -6640,4 +6640,4 @@ outstanding O O O O O O
 PUNCT O O O O O O
 
 bad O O O O O O
-staff U-NEG U-POS U-NEG U-NEG U-NEG U-NEG
+staff U-NEG U-NEG U-NEG U-NEG U-POS U-NEG

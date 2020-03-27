@@ -1,5876 +1,5876 @@
-the O O
-other O O
-day O O
-i O O
-had O O
-a O O
-presentation O O
-to O O
-do O O
-for O O
-a O O
-seminar O O
-at O O
-a O O
-large O O
-conference O O
-in O O
-town O O
-lots O O
-of O O
-people O O
-PUNCT O O
-little O O
-time O O
-to O O
-prep O O
-and O O
-have O O
-to O O
-set O O
-up O O
-a O O
-computer O O
-to O O
-a O O
-projector O O
-PUNCT O O
-etc O O
-PUNCT O O
-
-i O O
-took O O
-it O O
-back O O
-for O O
-an O O
-asus O O
-and O O
-same O O
-thing O O
-blue O O
-screen O O
-which O O
-required O O
-me O O
-to O O
-remove O O
-the O O
-battery U-NEU U-NEG
-to O O
-reset O O
-PUNCT O O
-
-toshiba O O
-does O O
-not O O
-send O O
-any O O
-one O O
-out O O
-unless O O
-you O O
-have O O
-paid O O
-extra O O
-to O O
-have O O
-the O O
-on O O
-site O O
-repair O O
-done O O
-PUNCT O O
-
-oh O O
-PUNCT O O
-boy O O
-PUNCT O O
-
-but O O
-while O O
-this O O
-is O O
-one O O
-big O O
-advantage O O
-as O O
-you O O
-may O O
-know O O
-from O O
-the O O
-company O O
-s O O
-recent O O
-commercials O O
-there O O
-are O O
-other O O
-things O O
-to O O
-consider O O
-before O O
-going O O
-with O O
-apple O O
-PUNCT O O
-
-i O O
-love O O
-the O O
-way O O
-the O O
-entire O O
-suite B-POS U-POS
-of I-POS O
-software L-POS U-POS
-works O O
-together O O
-PUNCT O O
-
-pairing O O
-it O O
-with O O
-an O O
-iphone O O
-is O O
-a O O
-pure O O
-pleasure O O
-PUNCT O O
-talk O O
-about O O
-painless O O
-syncing U-POS O
-PUNCT O O
-used O O
-to O O
-take O O
-me O O
-forever O O
-PUNCT O O
-now O O
-it O O
-'s O O
-a O O
-snap O O
-PUNCT O O
-
-i O O
-shopped O O
-around O O
-before O O
-buying O O
-PUNCT O O
-
-has O O
-met O O
-or O O
-exceeded O O
-my O O
-needs O O
-for O O
-a O O
-compact O O
-travel O O
-device O O
-PUNCT O O
-
-i O O
-sent O O
-it O O
-back O O
-to O O
-toshiba O O
-twice O O
-they O O
-covered O O
-it O O
-under O O
-the O O
-warranty U-POS U-NEG
-PUNCT O O
-
-they O O
-sent O O
-me O O
-a O O
-replacement O O
-part O O
-and O O
-without O O
-informing O O
-me O O
-are O O
-requiring O O
-that O O
-i O O
-return O O
-it O O
-within O O
-15 O O
-days O O
-or O O
-contact O O
-them O O
-and O O
-let O O
-them O O
-know O O
-the O O
-broken O O
-part O O
-will O O
-be O O
-returned O O
-later O O
-PUNCT O O
-
-in O O
-desparation O O
-PUNCT O O
-i O O
-called O O
-their O O
-customer B-NEU B-NEG
-service I-NEU L-NEG
-number L-NEU O
-and O O
-was O O
-told O O
-that O O
-my O O
-warranty U-NEG U-NEG
-had O O
-expired O O
-2 O O
-days O O
-old O O
-and O O
-that O O
-the O O
-priviledge O O
-of O O
-talking B-NEG O
-to I-NEG O
-a I-NEG O
-technician L-NEG O
-would O O
-cost O O
-me O O
-have O O
-your O O
-credit O O
-card O O
-ready O O
-PUNCT O O
-
-amazing O O
-quality U-POS U-POS
-PUNCT O O
-
-it O O
-does O O
-run O O
-a O O
-little O O
-warm O O
-but O O
-that O O
-is O O
-a O O
-negligible O O
-concern O O
-PUNCT O O
-
-what O O
-an O O
-elegant O O
-PUNCT O O
-wonderful O O
-machine O O
-PUNCT O O
-
-do O O
-you O O
-ever O O
-think O O
-hp O O
-would O O
-do O O
-that O O
-PUNCT O O
-never O O
-PUNCT O O
-
-we O O
-upgraded O O
-the O O
-memory U-NEU U-NEG
-to O O
-four O O
-gigabytes O O
-in O O
-order O O
-to O O
-take O O
-advantage O O
-of O O
-the O O
-performace U-POS U-POS
-increase O O
-in O O
-speed U-POS U-POS
-PUNCT O O
-
-the O O
-genius O O
-at O O
-the O O
-apple O O
-store O O
-advised O O
-me O O
-that O O
-there O O
-was O O
-nothing O O
-about O O
-my O O
-use O O
-of O O
-the O O
-computer O O
-that O O
-caused O O
-this O O
-failure O O
-PUNCT O O
-
-the O O
-apple O O
-mc371ll/a O O
-24ghz O O
-154-inch O O
-macbook O O
-pro O O
-notebook O O
-is O O
-a O O
-horrible O O
-waste O O
-of O O
-money O O
-PUNCT O O
-
-if O O
-you O O
-find O O
-yourself O O
-in O O
-the O O
-market O O
-for O O
-a O O
-new O O
-laptop O O
-and O O
-have O O
-the O O
-money O O
-do O O
-n't O O
-exclude O O
-looking O O
-at O O
-the O O
-mbps O O
-PUNCT O O
-
-those O O
-things O O
-are O O
-very O O
-important O O
-PUNCT O O
-vital O O
-even O O
-PUNCT O O
-
-i O O
-have O O
-now O O
-had O O
-it O O
-for O O
-15 O O
-months O O
-and O O
-love O O
-it O O
-PUNCT O O
-
-trying O O
-to O O
-balance O O
-all O O
-of O O
-my O O
-roles O O
-leaves O O
-very O O
-little O O
-time O O
-for O O
-me O O
-to O O
-do O O
-anything O O
-PUNCT O O
-so O O
-i O O
-want O O
-to O O
-manage O O
-my O O
-time O O
-i O O
-do O O
-have O O
-to O O
-be O O
-the O O
-most O O
-efficient O O
-PUNCT O O
-
-it O O
-would O O
-take O O
-up O O
-too O O
-much O O
-time O O
-to O O
-do O O
-reaearch O O
-for O O
-my O O
-papers O O
-and O O
-i O O
-would O O
-be O O
-up O O
-hours-just O O
-because O O
-the O O
-computer O O
-was O O
-too O O
-slow O O
-PUNCT O O
-
-i O O
-'m O O
-returning O O
-mine O O
-
-it O O
-weighed U-NEU O
-like O O
-seven B-NEU O
-pounds L-NEU O
-or O O
-something O O
-like O O
-that O O
-PUNCT O O
-
-with O O
-a O O
-healthy O O
-pessimism O O
-PUNCT O O
-i O O
-took O O
-the O O
-machine O O
-home O O
-and O O
-tried O O
-to O O
-find O O
-a O O
-flaw O O
-PUNCT O O
-
-and O O
-not O O
-to O O
-mention O O
-after O O
-using O O
-it O O
-for O O
-a O O
-few O O
-months O O
-or O O
-so O O
-PUNCT O O
-the O O
-battery U-NEG U-NEG
-will O O
-slowly O O
-less O O
-and O O
-less O O
-hold O O
-a O O
-charge O U-NEG
-until O O
-you O O
-ca O O
-n't O O
-leave O O
-it O O
-unplugged O O
-for O O
-more O O
-than O O
-5 O O
-minutes O O
-without O O
-the O O
-thing O O
-dying O O
-PUNCT O O
-
-it O O
-absolutely O O
-is O O
-more O O
-expensive O O
-than O O
-most O O
-pc O O
-laptops O O
-PUNCT O O
-but O O
-the O O
-ease O O
-of O O
-use U-POS U-POS
-PUNCT O O
-security U-POS U-POS
-PUNCT O O
-and O O
-minimal O O
-problems O O
-that O O
-have O O
-arisen O O
-make O O
-it O O
-well O O
-worth O O
-the O O
-pricetag O O
-PUNCT O O
-
-i O O
-wish O O
-the O O
-volume U-NEG U-NEG
-could O O
-be O O
-louder O O
-and O O
-the O O
-mouse U-NEG U-NEG
-did O O
-n't O O
-break O O
-after O O
-only O O
-a O O
-month O O
-PUNCT O O
-
-the O O
-only O O
-fact O O
-i O O
-do O O
-n't O O
-like O O
-about O O
-apples O O
-is O O
-they O O
-generally O O
-use O O
-safari U-NEG O
-and O O
-i O O
-do O O
-n't O O
-use O O
-safari U-NEG O
-but O O
-after O O
-i O O
-install O O
-mozzilla B-POS O
-firfox L-POS O
-i O O
-love O O
-every O O
-single O O
-bit O O
-about O O
-it O O
-PUNCT O O
-
-great O O
-battery U-POS U-NEG
-PUNCT O O
-speed U-POS U-POS
-PUNCT O O
-display U-POS U-POS
-PUNCT O O
-
-they O O
-improved O O
-nothing O O
-else O O
-such O O
-as O O
-resolution U-NEG U-POS
-PUNCT O O
-appearance U-NEG U-POS
-PUNCT O O
-cooling B-NEG B-NEG
-system L-NEG L-NEG
-PUNCT O O
-graphics B-NEG B-NEG
-card L-NEG L-NEG
-PUNCT O O
-etc O O
-PUNCT O O
-
-now O O
-he O O
-mows O O
-yards O O
-so O O
-he O O
-can O O
-earn O O
-the O O
-money O O
-for O O
-the O O
-wireless O B-NEG
-internet O L-NEG
-PUNCT O O
-
-additional O O
-caveat O O
-PUNCT O O
-the O O
-base B-NEG B-NEG
-installation L-NEG L-NEG
-comes O O
-with O O
-some O O
-toshiba-specific O O
-software U-NEG U-NEG
-that O O
-may O O
-or O O
-may O O
-not O O
-be O O
-to O O
-a O O
-user O O
-'s O O
-liking O O
-PUNCT O O
-
-high O O
-price B-NEG U-POS
-tag L-NEG O
-PUNCT O O
-however O O
-PUNCT O O
-
-buy O O
-this O O
-PUNCT O O
-
-the O O
-processor U-NEG U-POS
-a O O
-amd O O
-semprom O O
-at O O
-21 O O
-ghz O O
-is O O
-a O O
-bummer O O
-it O O
-does O O
-not O O
-have O O
-the O O
-power O O
-for O O
-hd O O
-or O O
-heavy O O
-computing U-NEG O
-PUNCT O O
-
-i O O
-love O O
-the O O
-15 O O
-macbook O O
-pro O O
-PUNCT O O
-
-breaks O O
-easily O O
-PUNCT O O
-
-they O O
-sent O O
-out O O
-the O O
-box O O
-right O O
-away O O
-for O O
-me O O
-to O O
-send O O
-in O O
-my O O
-computer O O
-PUNCT O O
-they O O
-paid O O
-postage O O
-and O O
-whatnot O O
-PUNCT O O
-but O O
-when O O
-i O O
-got O O
-my O O
-computer O O
-back O O
-it O O
-still O O
-was O O
-n't O O
-running U-NEG O
-right O O
-PUNCT O O
-and O O
-now O O
-my O O
-cd B-NEG B-NEG
-drive L-NEG L-NEG
-was O O
-n't O O
-reading O O
-anything O O
-PUNCT O O
-
-i O O
-bought O O
-this O O
-laptop O O
-was O O
-the O O
-worst O O
-laptop O O
-i O O
-'ve O O
-ever O O
-bought O O
-PUNCT O O
-
-yeah O O
-PUNCT O O
-of O O
-course O O
-smarty O O
-pants O O
-fix O O
-it O O
-nowaspect1 O O
-PUNCT O O
-compared O O
-to O O
-the O O
-early O O
-2011 O O
-edition O O
-i O O
-did O O
-see O O
-inbuilt B-NEG O
-applications L-NEG U-NEG
-crashing O O
-and O O
-it O O
-prompted O O
-me O O
-to O O
-send O O
-the O O
-report O O
-to O O
-apple O O
-which O O
-i O O
-promptly O O
-did O O
-PUNCT O O
-
-summary O O
-PUNCT O O
-dont O O
-buy O O
-hp O O
-PUNCT O O
-
-i O O
-think O O
-part O O
-of O O
-the O O
-problem O O
-with O O
-this O O
-computer O O
-is O O
-vista U-NEG U-NEG
-PUNCT O O
-yet O O
-i O O
-know O O
-vista U-NEG U-NEG
-is O O
-n't O O
-the O O
-entire O O
-issue O O
-because O O
-my O O
-latest O O
-purchase O O
-was O O
-my O O
-acer O O
-and O O
-it O O
-also O O
-has O O
-vista U-NEG U-NEG
-i O O
-should O O
-have O O
-waited O O
-the O O
-few O O
-months O O
-to O O
-get O O
-the O O
-next O O
-operating B-NEU B-NEG
-system L-NEU L-NEG
-PUNCT O O
-
-that O O
-whole O O
-experience O O
-was O O
-just O O
-ridiculous O O
-we O O
-sent O O
-it O O
-in O O
-and O O
-after O O
-they O O
-told O O
-us O O
-that O O
-we O O
-had O O
-to O O
-pay O O
-PUNCT O O
-175 O O
-to O O
-fix O O
-it O O
-we O O
-were O O
-like O O
-we O O
-will O O
-just O O
-by O O
-a O O
-portable O O
-mouse U-POS U-NEG
-which O O
-would O O
-be O O
-way O O
-cheaper O O
-but O O
-they O O
-refused O O
-to O O
-send O O
-the O O
-laptop O O
-back O O
-until O O
-we O O
-paid O O
-the O O
-PUNCT O O
-175 O O
-and O O
-it O O
-was O O
-fixed O O
-PUNCT O O
-
--i O O
-give O O
-up O O
-on O O
-my O O
-data O O
-PUNCT O O
-i O O
-just O O
-want O O
-a O O
-computer O O
-reasonably O O
-fast O O
-PUNCT O O
-
-it O O
-was O O
-shooting O O
-sparks O O
-PUNCT O O
-
-tech B-POS B-NEG
-support L-POS L-NEG
-tells O O
-me O O
-the O O
-latter O O
-problem O O
-is O O
-a O O
-power B-NEG B-NEG
-supply L-NEG L-NEG
-problem O O
-and O O
-have O O
-offered O O
-to O O
-fix O O
-it O O
-if O O
-it O O
-happens O O
-again O O
-PUNCT O O
-
-upon O O
-giving O O
-them O O
-the O O
-serial O O
-number O O
-the O O
-first O O
-thing O O
-i O O
-was O O
-told O O
-PUNCT O O
-was O O
-that O O
-it O O
-was O O
-out O O
-of O O
-warranty U-NEU U-NEG
-and O O
-i O O
-could O O
-pay O O
-to O O
-have O O
-it O O
-repaired O O
-PUNCT O O
-
-laptop O O
-was O O
-in O O
-new O O
-condition O O
-and O O
-operational O O
-PUNCT O O
-but O O
-for O O
-the O O
-audio U-NEG U-NEG
-problem O O
-when O O
-1st O O
-sent O O
-for O O
-repair O O
-PUNCT O O
-
-i O O
-was O O
-disappointed O O
-when O O
-i O O
-realized O O
-that O O
-the O O
-keyboard U-NEG U-NEG
-does O O
-n't O O
-light O O
-up O O
-on O O
-this O O
-model O O
-PUNCT O O
-
-the O O
-laptop O O
-was O O
-very O O
-easy O O
-to O O
-set B-POS O
-up L-POS O
-PUNCT O O
-
-well O O
-PUNCT O O
-maybe O O
-i O O
-was O O
-just O O
-very O O
-unlucky O O
-PUNCT O O
-
-i O O
-loaded O O
-windows B-POS B-NEG
-7 L-POS L-NEG
-via O O
-bootcamp U-POS U-POS
-and O O
-it O O
-works O U-POS
-flawlessly O O
-PUNCT O O
-
-i O O
-have O O
-never O O
-had O O
-to O O
-shut O O
-down O O
-the O O
-computer O O
-unexpectedly O O
-and O O
-the O O
-computer O O
-has O O
-never O O
-froze O O
-on O O
-me O O
-PUNCT O O
-
-i O O
-hate O O
-the O O
-display B-NEG U-NEG
-screen L-NEG O
-and O O
-i O O
-have O O
-done O O
-everything O O
-i O O
-could O O
-do O O
-the O O
-change O O
-it O O
-PUNCT O O
-
-this O O
-computer O O
-will O O
-last O O
-you O O
-at O O
-least O O
-7 O O
-years O O
-PUNCT O O
-thats O O
-an O O
-amazing O O
-life U-POS O
-spanned O O
-an O O
-electronic O O
-PUNCT O O
-
-i O O
-am O O
-very O O
-pleased O O
-with O O
-my O O
-purchase O O
-PUNCT O O
-
-i O O
-ca O O
-n't O O
-say O O
-enough O O
-of O O
-how O O
-satisfied O O
-i O O
-am O O
-with O O
-their O O
-product B-POS O
-and I-POS O
-help I-POS O
-aftermarket L-POS O
-PUNCT O O
-
--called O O
-machouse O O
-amsterdam O O
-to O O
-ask O O
-for O O
-a O O
-temporary O O
-replacement O O
-PUNCT O O
-no O O
-answer O O
-PUNCT O O
-
-i O O
-bought O O
-it O O
-during O O
-the O O
-recent O O
-comex O O
-it O O
-show O O
-PUNCT O O
-
-i O O
-have O O
-had O O
-nothing O O
-but O O
-problems O O
-since O O
-the O O
-day O O
-i O O
-took O O
-it O O
-out O O
-of O O
-the O O
-box O O
-PUNCT O O
-
-the O O
-image U-POS O
-is O O
-great O O
-PUNCT O O
-and O O
-the O O
-soud U-POS U-POS
-is O O
-excelent O O
-PUNCT O O
-
-where O O
-you O O
-click O O
-and O O
-hold O O
-and O O
-drag O O
-it O O
-picture O O
-PUNCT O O
-link O O
-PUNCT O O
-etc O O
-to O O
-where O O
-you O O
-want O O
-it O O
-PUNCT O O
-
-the O O
-macbook O O
-rarely O O
-requires O O
-a O O
-hard O O
-reboot O O
-PUNCT O O
-
-i O O
-love O O
-it O O
-PUNCT O O
-
-now O O
-for O O
-the O O
-hardware U-NEG U-NEG
-problems O O
-PUNCT O O
-
-it O O
-was O O
-an O O
-all O O
-around O O
-waste O O
-of O O
-money O O
-for O O
-me O O
-PUNCT O O
-
-also O O
-it O O
-is O O
-light O O
-weight O U-POS
-compared O O
-to O O
-others O O
-PUNCT O O
-
-waiting O O
-for O O
-the O O
-i7 U-POS U-NEG
-was O O
-well O O
-worth O O
-it O O
-PUNCT O O
-great O O
-value O U-POS
-for O O
-the O O
-price U-POS U-POS
-PUNCT O O
-
-i O O
-asked O O
-how O O
-they O O
-would O O
-determine O O
-that O O
-since O O
-there O O
-are O O
-no O O
-scratches O O
-PUNCT O O
-dents O O
-or O O
-other O O
-signs O O
-of O O
-damage O O
-and O O
-was O O
-told O O
-that O O
-was O O
-the O O
-only O O
-way O O
-this O O
-type O O
-of O O
-damage O O
-could O O
-happen O O
-PUNCT O O
-
-the O O
-macbook O O
-arrived O O
-in O O
-a O O
-nice O O
-twin B-POS O
-packing L-POS U-POS
-and O O
-sealed O O
-in O O
-the O O
-box O O
-PUNCT O O
-all O O
-the O O
-functions U-POS U-POS
-works O O
-great O O
-PUNCT O O
-
-reason O O
-why O O
-PUNCT O O
-it O O
-'s O O
-because O O
-when O O
-you O O
-buy O O
-it O O
-PUNCT O O
-you O O
-know O O
-first O O
-thing O O
-that O O
-you O O
-will O O
-not O O
-lose O O
-any O O
-value U-POS O
-for O O
-that O O
-laptop O O
-PUNCT O O
-the O O
-price U-POS U-NEG
-will O O
-stay O O
-the O O
-same O O
-for O O
-the O O
-next O O
-year O O
-PUNCT O O
-and O O
-even O O
-if O O
-apple O O
-does O O
-decides O O
-to O O
-change O O
-mode O O
-PUNCT O O
-your O O
-laptop O O
-value U-POS U-POS
-will O O
-only O O
-drop O O
-10-20 O O
-PUNCT O O
-PUNCT O O
-unlike O O
-pc O O
-laptops O O
-which O O
-drop O O
-more O O
-than O O
-80 O O
-PUNCT O O
-PUNCT O O
-
-so O O
-PUNCT O O
-buyers O O
-beware O O
-PUNCT O O
-
-do O O
-i O O
-like O O
-the O O
-computer O O
-PUNCT O O
-well O O
-PUNCT O O
-other O O
-than O O
-not O O
-getting O O
-viruses O O
-PUNCT O O
-i O O
-guess O O
-it O O
-is O O
-ok O O
-PUNCT O O
-
-its O O
-a O O
-dog O O
-plain O O
-and O O
-simple O O
-PUNCT O O
-
-my O O
-hp O O
-is O O
-very O O
-heavy O O
-PUNCT O O
-
-best O O
-buy O O
-was O O
-great O O
-as O O
-always O O
-and O O
-accepted O O
-the O O
-return O O
-and O O
-gave O O
-me O O
-another O O
-model O O
-1764 O O
-PUNCT O O
-
-i O O
-can O O
-actually O O
-get O O
-work O O
-done O O
-with O O
-this O O
-mac O O
-PUNCT O O
-and O O
-not O O
-fight O O
-with O O
-it O O
-like O O
-my O O
-tired O O
-old O O
-pc O O
-laptop O O
-PUNCT O O
-
-and O O
-i O O
-'m O O
-still O O
-paying O O
-the O O
-bloody O O
-financing O O
-PUNCT O O
-for O O
-a O O
-product O O
-which O O
-did O O
-n't O O
-last O O
-me O O
-at O O
-least O O
-three O O
-years O O
-PUNCT O O
-
-games U-NEG O
-being O O
-the O O
-main O O
-issue O O
-PUNCT O O
-
-while O O
-the O O
-computer O O
-seems O O
-to O O
-be O O
-set O O
-up O O
-in O O
-a O O
-common O O
-sense O O
-way O O
-rather O O
-than O O
-in O O
-geek-speak O O
-PUNCT O O
-there O O
-are O O
-certain O O
-quirks O O
-that O O
-can O O
-drive O O
-you O O
-crazy O O
-trying O O
-to O O
-deal O O
-with O O
-the O O
-pc O O
-world O O
-PUNCT O O
-
-thank O O
-god O O
-for O O
-ctrl O O
-zbottom O O
-line O O
-PUNCT O O
-i O O
-'ve O O
-been O O
-using O O
-laptops O O
-since O O
-the O O
-mid O O
-90s O O
-and O O
-probably O O
-the O O
-majority O O
-of O O
-brands O O
-out O O
-there O O
-PUNCT O O
-
-even O O
-with O O
-virus B-NEG B-NEG
-protection L-NEG L-NEG
-PUNCT O O
-it O O
-always O O
-turned O O
-off O O
-when O O
-updates U-NEG O
-were O O
-needed O O
-and O O
-installed O O
-PUNCT O O
-
-even O O
-so O O
-PUNCT O O
-i O O
-like O O
-playing O O
-online O O
-games U-NEU O
-PUNCT O O
-so O O
-it O O
-was O O
-wonderful O O
-that O O
-there O O
-is O O
-a O O
-feature U-POS O
-where O O
-i O O
-can O O
-dualboot O O
-windows U-POS U-NEG
-PUNCT O O
-
-that O O
-'s O O
-the O O
-downside O O
-for O O
-me O O
-PUNCT O O
-
-it O O
-has O O
-good O O
-speed U-POS U-POS
-and O O
-plenty O O
-of O O
-hard B-POS B-NEG
-drive I-POS L-NEG
-space L-POS O
-PUNCT O O
-
-it O O
-'s O O
-so O O
-useable O O
-and O O
-responsive O O
-PUNCT O O
-
-it O O
-has O O
-come O O
-into O O
-good O O
-use U-POS O
-for O O
-my O O
-finances O O
-PUNCT O O
-scheduling O O
-PUNCT O O
-my O O
-parents O O
-business O O
-expenses O O
-PUNCT O O
-and O O
-it O O
-is O O
-definitely O O
-amazing O O
-for O O
-gaming U-POS O
-PUNCT O O
-
-it O O
-was O O
-weird O O
-PUNCT O O
-
-i O O
-visited O O
-the O O
-apple O O
-store O O
-and O O
-was O O
-impressed O O
-with O O
-the O O
-17-inch O O
-macbook O O
-pro O O
-PUNCT O O
-
-looking O O
-to O O
-take O O
-my O O
-video O O
-and O O
-photo O O
-editing O O
-to O O
-the O O
-next O O
-level O O
-PUNCT O O
-i O O
-decided O O
-to O O
-purchase O O
-the O O
-mbp O O
-15in O O
-intel O O
-core O O
-i5 O O
-after O O
-reading O O
-consumer O O
-reviews O O
-as O O
-well O O
-as O O
-professional O O
-reviews O O
-of O O
-this O O
-laptop O O
-PUNCT O O
-
-it O O
-doesnt O O
-work U-NEG O
-worth O O
-a O O
-damn O O
-PUNCT O O
-
-i O O
-will O O
-be O O
-returning O O
-it O O
-and O O
-switching O O
-brands O O
-when O O
-i O O
-get O O
-to O O
-best O O
-buy O O
-PUNCT O O
-
-product B-NEG O
-support L-NEG U-NEG
-very O O
-poor O O
-as O O
-each O O
-phone O O
-call O O
-costs O O
-me O O
-long O O
-distan O O
-
-frustrated O O
-i O O
-hung O O
-up O O
-and O O
-tried O O
-to O O
-call O O
-back O O
-3 O O
-days O O
-later O O
-to O O
-be O O
-told O O
-that O O
-it O O
-takes O O
-2-3 O O
-days O O
-for O O
-turnaround O O
-time O O
-PUNCT O O
-
-may O O
-be O O
-better O O
-for O O
-the O O
-occasional O O
-web O O
-surfer O O
-PUNCT O O
-
-not O O
-super O O
-fancy O O
-PUNCT O O
-but O O
-not O O
-super O O
-expensive O O
-either O O
-PUNCT O O
-
-the O O
-lcd B-NEG B-NEG
-screen L-NEG L-NEG
-stopped O O
-working O O
-on O O
-mine O O
-after O O
-10 O O
-months O O
-PUNCT O O
-
-i O O
-'m O O
-going O O
-back O O
-to O O
-pc O O
-PUNCT O O
-
-great O O
-PUNCT O O
-quick O O
-laptop O O
-for O O
-the O O
-money O O
-PUNCT O O
-
-with O O
-the O O
-switch U-NEG O
-being O O
-at O O
-the O O
-top O O
-you O O
-need O O
-to O O
-memorize O O
-the O O
-key O U-NEG
-combination O O
-rather O O
-than O O
-just O O
-flicking O O
-a O O
-switch U-NEG O
-PUNCT O O
-
-until O O
-i O O
-bought O O
-the O O
-dell O O
-PUNCT O O
-i O O
-thought O O
-you O O
-just O O
-looked O O
-for O O
-what O O
-you O O
-wanted O O
-size U-NEU U-POS
-PUNCT O O
-software U-NEU U-NEG
-PUNCT O O
-options O O
-PUNCT O O
-hardware U-NEU U-POS
-and O O
-purchase O O
-the O O
-best O O
-deal O O
-you O O
-could O O
-find O O
-PUNCT O O
-
-it O O
-is O O
-easy O O
-to O O
-go O O
-from O O
-one O O
-keyboard U-NEU U-NEG
-to O O
-another O O
-PUNCT O O
-
-has O O
-a O O
-5-6 O O
-hour O O
-battery B-NEU B-POS
-life L-NEU L-POS
-PUNCT O O
-
-first O O
-it O O
-burned O O
-or O O
-fused O O
-the O O
-power B-NEG B-NEG
-adapter I-NEG L-NEG
-plug L-NEG O
-PUNCT O O
-
-toshiba O O
-is O O
-aware O O
-of O O
-the O O
-issue O O
-but O O
-unless O O
-the O O
-extended B-NEG B-NEG
-warrenty L-NEG L-NEG
-is O O
-bought O O
-toshiba O O
-will O O
-do O O
-nothing O O
-about O O
-it O O
-PUNCT O O
-
-navigation U-POS U-POS
-through O O
-the O O
-computer O O
-is O O
-far O O
-superior O O
-compared O O
-to O O
-windows B-NEG B-NEG
-operating I-NEG I-NEG
-systems L-NEG L-NEG
-PUNCT O O
-as O O
-well O O
-PUNCT O O
-
-once O O
-you O O
-go O O
-mac O O
-PUNCT O O
-you O O
-ca O O
-n't O O
-go O O
-back O O
-PUNCT O O
-
-fan U-NEG O
-noise O O
-PUNCT O O
-the O O
-fan U-NEG U-NEG
-made O O
-a O O
-constant O O
-hissing O O
-noise O O
-in O O
-the O O
-background O O
-PUNCT O O
-
-so O O
-needless O O
-to O O
-day O O
-PUNCT O O
-i O O
-'m O O
-not O O
-happy O O
-PUNCT O O
-
-plain O O
-and O O
-simple O O
-PUNCT O O
-itlaptop O O
-runs U-POS U-POS
-great O O
-and O O
-loads U-POS O
-fast O O
-PUNCT O O
-
-of O O
-course O O
-my O O
-warranty U-NEU U-NEG
-runs O O
-out O O
-next O O
-month O O
-PUNCT O O
-
-the O O
-capabilities O U-POS
-using O O
-that O O
-program U-POS U-POS
-alone O O
-made O O
-me O O
-want O O
-a O O
-mac O O
-PUNCT O O
-
-if O O
-you O O
-ever O O
-see O O
-the O O
-spinning B-NEG O
-beachball L-NEG O
-come O O
-up O O
-when O O
-you O O
-think O O
-it O O
-should O O
-n't O O
-PUNCT O O
-check O O
-the O O
-activity O O
-monitor O B-NEG
-app O L-NEG
-to O O
-see O O
-if O O
-the O O
-disk B-NEU B-NEG
-throughput L-NEU L-NEG
-has O O
-temporarily O O
-dropped O O
-to O O
-zero O O
-PUNCT O O
-
-i O O
-have O O
-found O O
-also O O
-PUNCT O O
-it O O
-is O O
-very O O
-easy O O
-to O O
-be O O
-able O O
-to O O
-access O O
-wireless B-POS O
-internet I-POS B-POS
-access L-POS L-POS
-PUNCT O O
-
-that O O
-was O O
-a O O
-big O O
-mistake O O
-PUNCT O O
-
-small O O
-enough O O
-to O O
-use O O
-on O O
-a O O
-long O O
-flight O O
-PUNCT O O
-light O O
-enough O O
-to O O
-carry U-POS O
-through O O
-airports O O
-and O O
-powerful O O
-enough O O
-to O O
-replace O O
-my O O
-desktop O O
-while O O
-on O O
-long O O
-business O O
-trips O O
-PUNCT O O
-
-if O O
-you O O
-are O O
-looking O O
-for O O
-a O O
-netbook O O
-pc O O
-do O O
-not O O
-buy O O
-from O O
-asus O O
-PUNCT O O
-PUNCT O O
-PUNCT O O
-
-we O O
-have O O
-n't O O
-had O O
-any O O
-problems O O
-with O O
-it O O
-at O O
-all O O
-PUNCT O O
-
-it O O
-meets O O
-all O O
-my O O
-needs O O
-for O O
-work O O
-and O O
-pleasure O O
-while O O
-traveling O O
-PUNCT O O
-
-he O O
-said O O
-quite O O
-a O O
-number O O
-of O O
-people O O
-had O O
-encountered O O
-this O O
-problem O O
-and O O
-said O O
-it O O
-is O O
-a O O
-common O O
-issue O O
-PUNCT O O
-
-much O O
-of O O
-which O O
-hp O O
-ended O O
-up O O
-paying O O
-for O O
-PUNCT O O
-
-the O O
-pictures U-POS O
-are O O
-clear O O
-as O O
-can O O
-be O O
-PUNCT O O
-
-you O O
-have O O
-to O O
-toss O O
-out O O
-the O O
-wifi B-NEG B-NEG
-card L-NEG L-NEG
-and O O
-replace O O
-it O O
-just O O
-to O O
-have O O
-any O O
-sort O O
-of O O
-network B-NEG B-NEG
-capability L-NEG L-NEG
-PUNCT O O
-
-it O O
-'s O O
-perfect O O
-for O O
-everything O O
-and O O
-runs U-POS U-POS
-faster O O
-than O O
-an O O
-average O O
-pc O O
-PUNCT O O
-
-then O O
-after O O
-paying O O
-for O O
-it O O
-to O O
-be O O
-examined O O
-i O O
-was O O
-told O O
-it O O
-was O O
-same O O
-problem O O
-cited O O
-on O O
-website O O
-but O O
-i O O
-'d O O
-have O O
-to O O
-pay O O
-anyways O O
-since O O
-it O O
-was O O
-past O O
-warrenty U-NEG U-NEG
-PUNCT O O
-
-it O O
-'s O O
-so O O
-bad O O
-that O O
-i O O
-'m O O
-thinking O O
-i O O
-only O O
-got O O
-half O O
-a O O
-battery U-NEG U-NEG
-or O O
-something O O
-PUNCT O O
-
-it O O
-is O O
-just O O
-slow O O
-slow O O
-slow O O
-PUNCT O O
-
-i O O
-wiped O O
-nearly O O
-everything O O
-off O O
-of O O
-it O O
-PUNCT O O
-installed O O
-openoffice U-NEU U-POS
-and O O
-firefox U-NEU U-POS
-PUNCT O O
-and O O
-i O O
-am O O
-operating O O
-an O O
-incredibly O O
-efficient O O
-and O O
-useful O O
-machine O O
-for O O
-a O O
-great O O
-price U-POS U-POS
-PUNCT O O
-
-overall O O
-i O O
-feel O O
-this O O
-netbook O O
-was O O
-poor O O
-quality U-NEG O
-PUNCT O O
-had O O
-poor O O
-performance U-NEG U-POS
-PUNCT O O
-although O O
-it O O
-did O O
-have O O
-great O O
-battery B-POS B-POS
-life L-POS L-POS
-when O O
-it O O
-did O O
-work O O
-PUNCT O O
-
-my O O
-only O O
-problem O O
-is O O
-i O O
-can O O
-not O O
-reg O O
-the O O
-product B-NEG O
-key L-NEG O
-PUNCT O O
-
-sure O O
-it O O
-has O O
-the O O
-one B-POS O
-touch I-POS B-POS
-keys L-POS L-POS
-but O O
-that O O
-was O O
-the O O
-best O O
-feature O O
-of O O
-the O O
-computer O O
-PUNCT O O
-
-i O O
-can O O
-do O O
-pretty O O
-much O O
-75 O O
-PUNCT O O
-of O O
-what O O
-i O O
-do O O
-on O O
-my O O
-desktop O O
-on O O
-my O O
-kitchen O O
-table O O
-PUNCT O O
-
-love O O
-the O O
-stability U-POS U-POS
-of O O
-the O O
-mac B-POS B-POS
-software L-POS L-POS
-and O O
-operating B-POS B-NEG
-system L-POS L-NEG
-PUNCT O O
-
-i O O
-left O O
-the O O
-place O O
-angrily O O
-PUNCT O O
-
-it O O
-is O O
-so O O
-great O O
-PUNCT O O
-i O O
-can O O
-hardly O O
-ever O O
-take O O
-my O O
-hands O O
-off O O
-it O O
-PUNCT O O
-
-my O O
-real O O
-problem O O
-with O O
-it O O
-PUNCT O O
-the O O
-statement O O
-of O O
-7 O O
-hour O O
-battery B-NEG B-POS
-life L-NEG L-POS
-is O O
-not O O
-just O O
-mere O O
-exaggeration O O
-PUNCT O O
-it O O
-'s O O
-a O O
-lie O O
-PUNCT O O
-
-she O O
-said O O
-wal O O
-mart O O
-rants O O
-and O O
-raves O O
-abouy O O
-carring O O
-dell O O
-because O O
-it O O
-'s O O
-a O O
-big O O
-name O O
-but O O
-they O O
-are O O
-a O O
-piece O O
-of O O
-garbage O O
-PUNCT O O
-
-i O O
-use O O
-iphoto U-POS O
-all O O
-the O O
-time O O
-PUNCT O O
-which O O
-is O O
-a O O
-great O O
-program U-POS O
-for O O
-anyone O O
-who O O
-is O O
-into O O
-photography O O
-PUNCT O O
-amateurs O O
-and O O
-experts O O
-alike O O
-PUNCT O O
-
-i O O
-hate O O
-it O O
-PUNCT O O
-
-i O O
-thought O O
-the O O
-price U-POS U-POS
-was O O
-great O O
-for O O
-the O O
-specs U-POS U-POS
-PUNCT O O
-
-just O O
-for O O
-a O O
-stupid O O
-cd O O
-PUNCT O O
-
-this O O
-just O O
-keeps O O
-having O O
-it O O
-'s O O
-hard B-NEG B-NEG
-drive L-NEG L-NEG
-replaced O O
-PUNCT O O
-
-i O O
-do O O
-not O O
-experience O O
-a O O
-lot O O
-of O O
-heat O O
-coming O O
-out O O
-of O O
-it O O
-PUNCT O O
-however O O
-i O O
-would O O
-highly O O
-suggest O O
-purchasing O O
-a O O
-stand U-NEU U-NEG
-however O O
-PUNCT O O
-due O O
-to O O
-the O O
-nature O O
-of O O
-the O O
-design U-NEG U-NEG
-of O O
-the O O
-macbook O O
-as O O
-it O O
-is O O
-one O O
-very O O
-large O O
-heat B-NEG B-NEG
-sink L-NEG L-NEG
-PUNCT O O
-
-there O O
-is O O
-no O O
-way O O
-i O O
-will O O
-buy O O
-a O O
-lg O O
-product O O
-in O O
-the O O
-future O O
-PUNCT O O
-
-maybe O O
-this O O
-is O O
-virus O O
-related O O
-PUNCT O O
-maybe O O
-not O O
-PUNCT O O
-but O O
-the O O
-computer O O
-has O O
-locked O O
-up O O
-many O O
-times O O
-PUNCT O O
-and O O
-on O O
-two O O
-occasions O O
-PUNCT O O
-the O O
-screen U-NEG U-NEG
-has O O
-simply O O
-gone O O
-black O O
-PUNCT O O
-
-using O O
-this O O
-machine O O
-is O O
-like O O
-a O O
-mild O O
-form O O
-of O O
-torture O O
-PUNCT O O
-
-whenever O O
-tried O O
-to O O
-turn O O
-it O O
-on O O
-PUNCT O O
-it O O
-would O O
-restart O O
-as O O
-soon O O
-as O O
-the O O
-bios U-NEG U-NEG
-launched O O
-windows U-NEG U-NEG
-or O O
-winblows O O
-PUNCT O O
-as O O
-i O O
-like O O
-ot O O
-call O O
-it O O
-PUNCT O O
-
-i O O
-run O O
-windows U-NEU U-NEG
-via O O
-bootcamp U-NEU U-NEG
-for O O
-the O O
-couple O O
-programs U-NEU U-POS
-i O O
-do O O
-not O O
-want O O
-to O O
-buy O O
-a O O
-mac O O
-version O O
-of O O
-PUNCT O O
-like O O
-my O O
-cad O O
-programs U-NEU O
-PUNCT O O
-
-i O O
-love O O
-this O O
-laptop O O
-PUNCT O O
-and O O
-use O O
-it O O
-everyday O O
-to O O
-do O O
-something O O
-PUNCT O O
-and O O
-never O O
-lets O O
-me O O
-down O O
-PUNCT O O
-
-it O O
-took O O
-toshiba B-NEG O
-tech I-NEG B-NEG
-support L-NEG L-NEG
-4 O O
-calls O O
-and O O
-4 O O
-different O O
-techs U-NEG O
-to O O
-correct O O
-the O O
-problem O O
-PUNCT O O
-
-the O O
-4 O O
-usb O B-NEG
-ports O L-NEG
-are O O
-nice O O
-PUNCT O O
-but O O
-the O O
-two O O
-on O O
-the O O
-side O O
-only O O
-work O O
-now O O
-and O O
-then O O
-PUNCT O O
-
-it O O
-out O O
-performs O O
-any O O
-other O O
-laptop O O
-on O O
-the O O
-market O O
-today O O
-PUNCT O O
-
-this O O
-is O O
-what O O
-i O O
-call O O
-a O O
-good O O
-after B-POS O
-sales I-POS B-NEG
-service L-POS L-NEG
-PUNCT O O
-
-it O O
-is O O
-short O O
-on O O
-space U-NEG O
-PUNCT O O
-and O O
-downloads U-NEG O
-always O O
-had O O
-problems O O
-being O O
-completed O O
-PUNCT O O
-or O O
-were O O
-said O O
-to O O
-be O O
-corrupted O O
-PUNCT O O
-PUNCT O O
-
-apple O O
-is O O
-always O O
-great O O
-about O O
-the O O
-aesthetics U-POS U-POS
-of O O
-things O O
-PUNCT O O
-they O O
-always O O
-come O O
-up O O
-with O O
-good O O
-looking O O
-products O O
-PUNCT O O
-
-the O O
-macbook O O
-pro O O
-is O O
-very O O
-sturdy O O
-and O O
-versatile O O
-PUNCT O O
-
-oh O O
-and O O
-it O O
-has O O
-word O O
-and O O
-stuff O O
-but O O
-its O O
-a O O
-trial O O
-verion O O
-so O O
-after O O
-about O O
-a O O
-month O O
-or O O
-so O O
-when O O
-you O O
-go O O
-to O O
-open O O
-it O O
-it O O
-asks O O
-for O O
-a O O
-product O O
-key O O
-which O O
-did O O
-n't O O
-come O O
-with O O
-the O O
-computer O O
-and O O
-even O O
-after O O
-clicking O O
-cancel O O
-it O O
-wont O O
-let O O
-you O O
-use O O
-it O O
-at O O
-all O O
-i O O
-use O O
-the O O
-old O O
-word B-POS B-NEG
-processer L-POS L-NEG
-which O O
-works O O
-good O O
-PUNCT O O
-
-oh O O
-yea O O
-PUNCT O O
-has O O
-no O O
-numeric B-NEG B-NEG
-pad L-NEG L-NEG
-on O O
-the O O
-side O O
-PUNCT O O
-
-it O O
-would O O
-be O O
-a O O
-load O O
-on O O
-long O O
-trips O O
-where O O
-a O O
-lot O O
-of O O
-walking O O
-is O O
-required O O
-PUNCT O O
-
-the O O
-battery B-POS B-POS
-life L-POS L-POS
-is O O
-amazing O O
-PUNCT O O
-the O O
-versitility U-POS U-POS
-is O O
-outstanding O O
-PUNCT O O
-
-the O O
-hinge B-NEG B-NEG
-design L-NEG L-NEG
-forced O O
-you O O
-to O O
-place O O
-various O O
-connections O O
-all O O
-around O O
-the O O
-computer O O
-PUNCT O O
-left O O
-right O O
-and O O
-front O O
-PUNCT O O
-
-i O O
-would O O
-definitely O O
-not O O
-go O O
-back O O
-to O O
-using O O
-a O O
-pc O O
-after O O
-using O O
-the O O
-mac O O
-PUNCT O O
-
-the O O
-screen B-POS U-POS
-graphics L-POS U-POS
-and O O
-clarity U-POS U-POS
-PUNCT O O
-and O O
-sharpness U-POS U-POS
-are O O
-great O O
-PUNCT O O
-
-strong O O
-performance U-POS U-POS
-in O O
-this O O
-device O O
-makes O O
-use U-POS O
-of O O
-fun O O
-and O O
-a O O
-strong O O
-sense O O
-of O O
-the O O
-era O O
-of O O
-speed U-POS U-POS
-this O O
-device O O
-serves O O
-all O O
-modern O O
-requirements O O
-is O O
-a O O
-very O O
-strong O O
-game O O
-and O O
-is O O
-very O O
-use U-POS O
-for O O
-designers O O
-PUNCT O O
-
-you O O
-will O O
-fall O O
-in O O
-love O O
-with O O
-it O O
-in O O
-no O O
-time O O
-PUNCT O O
-
-best O O
-thing O O
-is O O
-i O O
-can O O
-use O O
-existing O O
-32 O O
-bit O O
-old O O
-programs U-POS U-POS
-PUNCT O O
-
-it O O
-'s O O
-still O O
-beautiful O O
-and O O
-has O O
-better O O
-color B-POS U-POS
-reproduction L-POS U-POS
-than O O
-i O O
-could O O
-ever O O
-expect O O
-from O O
-a O O
-notebook O O
-PUNCT O O
-
-now O O
-am O O
-very O O
-aprehensive O O
-about O O
-toshiba O O
-laptops O O
-PUNCT O O
-
-overall O O
-PUNCT O O
-it O O
-'s O O
-ok O O
-PUNCT O O
-
-PUNCT O O
-awesome O O
-cooling B-POS B-NEG
-system L-POS L-NEG
-much O O
-better O O
-grafics B-POS U-POS
-card L-POS U-NEG
-ati O O
-5870 O O
-PUNCT O O
-8gb B-POS B-POS
-ram I-POS L-POS
-led I-POS O
-backlit I-POS B-POS
-screen L-POS L-POS
-PUNCT O O
-
-compared O O
-to O O
-similarly O O
-spec O O
-'d O O
-pcs O O
-PUNCT O O
-this O O
-machine O O
-is O O
-good O O
-value U-POS U-POS
-PUNCT O O
-well O O
-built U-POS U-POS
-and O O
-works U-POS O
-easily O O
-right O O
-out O O
-of O O
-the O O
-box O O
-PUNCT O O
-
-the O O
-cool O O
-thing O O
-about O O
-the O O
-mac O O
-book O O
-was O O
-that O O
-i O O
-went O O
-on O O
-my O O
-honeymoon O O
-and O O
-shot O O
-a O O
-bunch O O
-of O O
-pictures O O
-and O O
-movies O O
-with O O
-my O O
-iphone O O
-PUNCT O O
-then O O
-i O O
-came O O
-back O O
-and O O
-put O O
-them O O
-onto O O
-my O O
-macbook O O
-and O O
-made O O
-a O O
-pretty O O
-good O O
-dvd O O
-movie O O
-with O O
-all O O
-the O O
-pictures O O
-and O O
-videos O O
-from O O
-my O O
-trip O O
-PUNCT O O
-
-after O O
-4 O O
-days O O
-PUNCT O O
-being O O
-denied O O
-6 O O
-times O O
-and O O
-told O O
-off O O
-once O O
-PUNCT O O
-i O O
-managed O O
-to O O
-get O O
-through O O
-and O O
-was O O
-able O O
-to O O
-send O O
-them O O
-a O O
-scanned O O
-copy O O
-of O O
-the O O
-receipt O O
-PUNCT O O
-
-it O O
-was O O
-secure O O
-and O O
-easy O O
-to O O
-navigate U-POS U-POS
-PUNCT O O
-
-the O O
-machine O O
-has O O
-a O O
-bluray B-NEU B-NEG
-player L-NEU L-NEG
-the O O
-book U-NEG O
-has O O
-no O O
-mention O O
-of O O
-it O O
-or O O
-how O O
-to O O
-connect O O
-it O O
-to O O
-your O O
-hdtv O O
-PUNCT O O
-
-asus O O
-facial B-NEG B-NEG
-recognition L-NEG L-NEG
-does O O
-n't O O
-work O O
-and O O
-windows B-NEG B-NEG
-logon L-NEG L-NEG
-is O O
-n't O O
-either O O
-PUNCT O O
-
-so O O
-buyer O O
-beware O O
-when O O
-buying O O
-toshiba O O
-
-the O O
-minute O O
-you O O
-fire O O
-it O O
-up O O
-it O O
-'s O O
-all O O
-good O O
-PUNCT O O
-very O O
-easy O O
-user B-POS B-POS
-interface L-POS L-POS
-PUNCT O O
-
-i O O
-have O O
-had O O
-two O O
-toshiba O O
-satellite O O
-computers O O
-and O O
-while O O
-they O O
-are O O
-okay O O
-PUNCT O O
-they O O
-are O O
-in O O
-no O O
-way O O
-comparable O O
-to O O
-the O O
-mac O O
-PUNCT O O
-
-i O O
-actually O O
-contact O O
-toshiba O O
-before O O
-i O O
-started O O
-having O O
-problem O O
-and O O
-was O O
-given O O
-run O O
-around O O
-after O O
-i O O
-supplied O O
-serial O O
-number O O
-in O O
-order O O
-to O O
-delay O O
-me O O
-sending O O
-in O O
-laptop O O
-until O O
-after O O
-warrenty U-NEG U-NEG
-expired O O
-PUNCT O O
-
-after O O
-replacing O O
-the O O
-hard B-NEU B-NEG
-drive L-NEU L-NEG
-the O O
-battery U-NEG U-NEG
-stopped O O
-working O O
-3 O O
-months O O
-of O O
-use O O
-which O O
-was O O
-frustrating O O
-PUNCT O O
-
-i O O
-love O O
-the O O
-easy O O
-to O O
-see O O
-screen U-POS U-POS
-PUNCT O O
-and O O
-it O O
-works U-POS O
-well O O
-for O O
-work O O
-PUNCT O O
-persoal O O
-or O O
-just O O
-play O O
-PUNCT O O
-
-one O O
-drawback O O
-i O O
-noticed O O
-was O O
-sound B-NEG B-NEG
-quality I-NEG L-NEG
-via I-NEG O
-usb L-NEG O
-PUNCT O O
-
-i O O
-am O O
-not O O
-going O O
-to O O
-sit O O
-here O O
-and O O
-complain O O
-about O O
-it O O
-not O O
-having O O
-a O O
-cd O B-NEG
-drive O L-NEG
-and O O
-what O O
-not O O
-because O O
-it O O
-is O O
-a O O
-netbook O O
-PUNCT O O
-it O O
-is O O
-made O O
-to O O
-be O O
-compact O O
-and O O
-if O O
-you O O
-want O O
-all O O
-the O O
-other O O
-stuff O O
-get O O
-a O O
-laptop O O
-PUNCT O O
-
-i O O
-was O O
-psyched O O
-PUNCT O O
-
-if O O
-i O O
-have O O
-a O O
-few O O
-hundred O O
-dollars O O
-to O O
-spare O O
-PUNCT O O
-i O O
-'d O O
-buy O O
-the O O
-pro O O
-line O O
-though O O
-PUNCT O O
-the O O
-253 O O
-and O O
-266 O O
-ghz O O
-model O O
-PUNCT O O
-
-needs O O
-power O U-NEG
-and O O
-mouse B-NEG B-NEG
-cable L-NEG L-NEG
-to O O
-plug O O
-in O O
-back O O
-instead O O
-of O O
-side O O
-PUNCT O O
-in O O
-the O O
-way O O
-of O O
-operating O O
-a O O
-mouse U-NEG U-NEG
-in O O
-small O O
-area O O
-PUNCT O O
-
-it O O
-seems O O
-to O O
-be O O
-incompatible O O
-with O O
-everything O O
-else O O
-PUNCT O O
-
-we O O
-use O O
-the O O
-built B-NEU B-POS
-in I-NEU I-POS
-tools L-NEU L-POS
-often O O
-PUNCT O O
-itunes U-POS O
-is O O
-open O O
-nearly O O
-every O O
-day O O
-and O O
-works O O
-great O O
-with O O
-my O O
-iphone O O
-PUNCT O O
-
-the O O
-size U-POS U-POS
-of O O
-has O O
-actually O O
-help O O
-me O O
-out O O
-quite O O
-a O O
-bit O O
-by O O
-me O O
-being O O
-able O O
-to O O
-fit O O
-it O O
-in O O
-an O O
-already O O
-full O O
-backpack O O
-and O O
-to O O
-use O O
-it O O
-at O O
-a O O
-resturant O O
-where O O
-the O O
-food O O
-on O O
-the O O
-table O O
-is O O
-always O O
-so O O
-space O O
-consuming O O
-PUNCT O O
-
-we O O
-are O O
-addicted O O
-to O O
-the O O
-mac O O
-PUNCT O O
-
-maybe O O
-three O O
-or O O
-four O O
-months O O
-ago O O
-it O O
-started O O
-blinking O O
-all O O
-of O O
-the O O
-sudden O O
-PUNCT O O
-
-everything O O
-about O O
-a O O
-mac O O
-is O O
-wonderful O O
-PUNCT O O
-it O O
-takes O O
-a O O
-little O O
-used O O
-to O O
-learning O O
-and O O
-getting O O
-used O O
-to O O
-the O O
-new O O
-system U-NEU O
-PUNCT O O
-but O O
-you O O
-will O O
-learn O O
-fast O O
-and O O
-its O O
-all O O
-worth O O
-it O O
-PUNCT O O
-
-i O O
-also O O
-bought O O
-one O O
-for O O
-my O O
-wife O O
-PUNCT O O
-and O O
-3 O O
-for O O
-my O O
-office O O
-PUNCT O O
-
-the O O
-only O O
-thing O O
-i O O
-can O O
-imagine O O
-is O O
-that O O
-sony O O
-jumped O O
-on O O
-early O O
-specifications O O
-for O O
-vista U-NEG U-NEG
-requirements O O
-from O O
-microsoft O O
-and O O
-designed O O
-it O O
-to O O
-those O O
-inadequate O O
-requirements O O
-PUNCT O O
-
-the O O
-mouse O U-NEG
-is O O
-a O O
-little O O
-bit O O
-different O O
-than O O
-what O O
-you O O
-'re O O
-used O O
-to O O
-though O O
-it O O
-has O O
-one O O
-big O O
-flat O O
-panel O O
-and O O
-one O O
-full O O
-bar O O
-instead O O
-of O O
-two O O
-separate O O
-ones O O
-to O O
-click O O
-with O O
-but O O
-you O O
-get O O
-used O O
-to O O
-it O O
-quite O O
-quickly O O
-PUNCT O O
-
-it O O
-took O O
-several O O
-weeks O O
-just O O
-to O O
-get O O
-them O O
-to O O
-acknowledge O O
-that O O
-i O O
-owned O O
-the O O
-warranty U-NEG U-NEG
-PUNCT O O
-
-it O O
-was O O
-a O O
-huge O O
-monstrosity O O
-of O O
-a O O
-laptop O O
-PUNCT O O
-
--i O O
-propose O O
-that O O
-they O O
-can O O
-just O O
-swap O O
-the O O
-hard B-NEU B-NEG
-drives L-NEU L-NEG
-PUNCT O O
-
-so O O
-having O O
-the O O
-ac B-NEG B-NEG
-plug L-NEG L-NEG
-go O O
-out O O
-on O O
-me O O
-and O O
-get O O
-lose O O
-or O O
-i O O
-could O O
-actually O O
-here O O
-it O O
-inside O O
-my O O
-computer O O
-on O O
-two O O
-of O O
-the O O
-three O O
-times O O
-is O O
-not O O
-good O O
-PUNCT O O
-
-the O O
-computer O O
-is O O
-currently O O
-in O O
-west O O
-verginia O O
-doe O O
-to O O
-the O O
-method O O
-of O O
-shipping U-NEG U-NEG
-choosen O O
-by O O
-toshiba O O
-PUNCT O O
-
-i O O
-can O O
-see O O
-why O O
-the O O
-have O O
-soooo O O
-much O O
-money O O
-PUNCT O O
-
-iphoto U-POS O
-is O O
-great O O
-for O O
-adding O O
-pictures O O
-right O O
-to O O
-facebook O O
-and O O
-other O O
-social O O
-networking O O
-sites O O
-PUNCT O O
-
-in O O
-early O O
-may O O
-i O O
-got O O
-it O O
-back O O
-and O O
-this O O
-time O O
-i O O
-only O O
-had O O
-it O O
-back O O
-for O O
-1 O O
-day O O
-before O O
-it O O
-had O O
-a O O
-new O O
-issue O O
-so O O
-it O O
-was O O
-sent O O
-back O O
-in O O
-for O O
-the O O
-6th O O
-time O O
-they O O
-expedited O O
-the O O
-repairs O O
-so O O
-i O O
-was O O
-only O O
-supposed O O
-to O O
-have O O
-to O O
-be O O
-without O O
-it O O
-for O O
-3 O O
-days O O
-and O O
-it O O
-was O O
-supposed O O
-to O O
-be O O
-fixed O O
-PUNCT O O
-by O O
-a O O
-senior B-NEG O
-tech L-NEG O
-PUNCT O O
-
-i O O
-would O O
-never O O
-buy O O
-a O O
-dell O O
-again O O
-PUNCT O O
-
-for O O
-me O O
-PUNCT O O
-keys U-NEG U-NEG
-were O O
-starting O O
-to O O
-get O O
-stuck O O
-and O O
-would O O
-n't O O
-type O O
-very O O
-well O O
-PUNCT O O
-
-this O O
-is O O
-still O O
-a O O
-fairly O O
-good O O
-upgrade O O
-to O O
-a O O
-laptop O O
-that O O
-was O O
-about O O
-4 O O
-years O O
-old O O
-PUNCT O O
-
-the O O
-computer O O
-was O O
-shipped O O
-to O O
-their O O
-repair B-NEU B-NEG
-depot L-NEU L-NEG
-on O O
-june O O
-24 O O
-and O O
-returned O O
-on O O
-july O O
-2 O O
-seems O O
-like O O
-a O O
-short O O
-turn O O
-around O O
-time O O
-except O O
-the O O
-computer O O
-was O O
-not O O
-repaired O O
-when O O
-it O O
-was O O
-returned O O
-PUNCT O O
-
-my O O
-friends O O
-are O O
-in O O
-awe O O
-every O O
-time O O
-they O O
-come O O
-over O O
-PUNCT O O
-
-i O O
-work O O
-in O O
-film O O
-editing O O
-and O O
-post O O
-production O O
-PUNCT O O
-so O O
-i O O
-need O O
-a O O
-laptop O O
-that O O
-not O O
-only O O
-has O O
-power U-NEU O
-PUNCT O O
-but O O
-memory U-NEU U-NEG
-and O O
-speed U-NEU U-POS
-as O O
-well O O
-PUNCT O O
-
-at O O
-first O O
-when O O
-i O O
-got O O
-this O O
-product O O
-PUNCT O O
-i O O
-loved O O
-it O O
-PUNCT O O
-
-this O O
-is O O
-what O O
-a O O
-laptop O O
-is O O
-supposed O O
-to O O
-be O O
-PUNCT O O
-
-then O O
-i O O
-'ve O O
-fixed O O
-the O O
-dc B-NEU B-NEG
-jack L-NEU L-NEG
-inside O O
-the O O
-unit O O
-PUNCT O O
-rewired O O
-the O O
-dc B-NEU B-NEG
-jack L-NEU L-NEG
-to O O
-the O O
-outside O O
-of O O
-the O O
-laptop O O
-PUNCT O O
-replaced O O
-the O O
-power B-NEU B-NEG
-brick L-NEU L-NEG
-PUNCT O O
-
-it O O
-is O O
-easy O O
-to O O
-use U-POS U-POS
-PUNCT O O
-has O O
-great O O
-screen B-POS O
-quality L-POS U-POS
-PUNCT O O
-and O O
-every O O
-so O O
-light O O
-weight O O
-PUNCT O O
-
-i O O
-'ve O O
-been O O
-having O O
-endless O O
-problems O O
-since O O
-i O O
-bought O O
-the O O
-computer O O
-PUNCT O O
-only O O
-1 O O
-month O O
-ago O O
-
-i O O
-wanted O O
-to O O
-spend O O
-around O O
-PUNCT O O
-700 O O
-to O O
-PUNCT O O
-800 O O
-so O O
-i O O
-was O O
-directed O O
-to O O
-a O O
-nice O O
-looking O O
-hp O O
-laptop O O
-PUNCT O O
-
-i O O
-'ve O O
-had O O
-my O O
-macbook O O
-pro O O
-since O O
-august O O
-2009 O O
-PUNCT O O
-
-unfortunately O O
-PUNCT O O
-the O O
-laptop O O
-i O O
-purchased O O
-was O O
-also O O
-a O O
-dell O O
-and O O
-again O O
-PUNCT O O
-i O O
-have O O
-to O O
-say O O
-i O O
-hated O O
-it O O
-PUNCT O O
-
-this O O
-is O O
-the O O
-first O O
-time O O
-that O O
-i O O
-tried O O
-and O O
-owning O O
-a O O
-netbook O O
-although O O
-i O O
-have O O
-used O O
-3 O O
-different O O
-laptops O O
-in O O
-the O O
-past O O
-10 O O
-years O O
-PUNCT O O
-i O O
-find O O
-not O O
-much O O
-difference O O
-except O O
-of O O
-course O O
-for O O
-the O O
-screen B-NEU O
-size L-NEU U-POS
-PUNCT O O
-
-everything O O
-about O O
-the O O
-mac O O
-is O O
-not O O
-only O O
-visually O O
-appealing O O
-PUNCT O O
-but O O
-very O O
-easy O O
-to O O
-use U-POS U-POS
-PUNCT O O
-
-but O O
-if O O
-you O O
-ca O O
-n't O O
-make O O
-your O O
-product O O
-last O O
-more O O
-than O O
-a O O
-year O O
-PUNCT O O
-you O O
-will O O
-not O O
-get O O
-my O O
-business O O
-again O O
-PUNCT O O
-
-seems O O
-like O O
-maybe O O
-a O O
-bad O O
-shipment U-NEG O
-from O O
-toshiba O O
-PUNCT O O
-
-currently O O
-if O O
-i O O
-use O O
-the O O
-laptop O O
-i O O
-ca O O
-n't O O
-sit O O
-it O O
-on O O
-my O O
-lap O O
-because O O
-it O O
-will O O
-burn O O
-my O O
-legs O O
-PUNCT O O
-
-i O O
-can O O
-leave O O
-my O O
-macbook O O
-uncharged O O
-for O O
-upwards O O
-of O O
-eight O O
-hours O O
-and O O
-it O O
-wo O O
-n't O O
-even O O
-be O O
-dead O O
-PUNCT O O
-
-i O O
-do O O
-find O O
-that O O
-my O O
-macbook O O
-has O O
-a O O
-lot O O
-more O O
-bells O O
-and O O
-whistles O O
-than O O
-a O O
-normal O O
-pc O O
-especially O O
-if O O
-you O O
-enjoy O O
-technology O O
-PUNCT O O
-downloading O O
-pictures O O
-and O O
-graphic O O
-design O U-POS
-PUNCT O O
-
-first O O
-the O O
-screen U-NEG U-NEG
-goes O O
-completely O O
-out O O
-PUNCT O O
-
-i O O
-'m O O
-learning O O
-the O O
-finger O O
-options O O
-for O O
-the O O
-mousepad U-POS U-NEG
-that O O
-allow O O
-for O O
-quicker O O
-browsing U-POS U-POS
-of O O
-web O O
-pages O O
-PUNCT O O
-
-we O O
-researched O O
-and O O
-found O O
-the O O
-best O O
-price U-POS U-POS
-at O O
-macconnection O O
-PUNCT O O
-
-i O O
-droped O O
-this O O
-once O O
-from O O
-thetable O O
-when O O
-my O O
-baby O O
-girl O O
-grabed O O
-me O O
-one O O
-day O O
-and O O
-it O O
-is O O
-still O O
-working O O
-with O O
-no O O
-issues O O
-PUNCT O O
-
-returned O O
-it O O
-PUNCT O O
-
-it O O
-is O O
-a O O
-cheap O O
-throw O O
-together O O
-PUNCT O O
-
-it O O
-easily O O
-fits O O
-into O O
-most O O
-computer O O
-bags O O
-but O O
-does O O
-n't O O
-weigh O O
-down O O
-a O O
-backpack O O
-or O O
-satchel O O
-when O O
-being O O
-carried O O
-with O O
-spirals O O
-and/or O O
-textbooks O O
-PUNCT O O
-
-i O O
-actually O O
-had O O
-the O O
-hard B-NEG B-NEG
-drive L-NEG L-NEG
-replaced O O
-twice O O
-PUNCT O O
-the O O
-mother B-NEG B-NEG
-board L-NEG L-NEG
-once O O
-PUNCT O O
-the O O
-dvd B-NEG B-NEG
-drive L-NEG L-NEG
-twice O O
-PUNCT O O
-then O O
-they O O
-finally O O
-agreed O O
-to O O
-replace O O
-it O O
-PUNCT O O
-all O O
-of O O
-this O O
-in O O
-less O O
-than O O
-1 O O
-1/2 O O
-years O O
-PUNCT O O
-
-the O O
-guy O O
-then O O
-said O O
-that O O
-if O O
-i O O
-insist O O
-on O O
-having O O
-the O O
-hinge U-NEU U-NEG
-tightened O O
-PUNCT O O
-they O O
-can O O
-do O O
-it O O
-for O O
-me O O
-but O O
-i O O
-have O O
-to O O
-accept O O
-the O O
-condition O O
-after O O
-the O O
-repair O O
-PUNCT O O
-
-i O O
-'ve O O
-been O O
-a O O
-pc O O
-user O O
-and O O
-i O O
-just O O
-finally O O
-switched O O
-and O O
-i O O
-am O O
-never O O
-going O O
-back O O
-PUNCT O O
-
-will O O
-certainly O O
-use O O
-macconnection O O
-again O O
-PUNCT O O
-
-so O O
-you O O
-might O O
-ask O O
-PUNCT O O
-what O O
-did O O
-apple O O
-do O O
-for O O
-me O O
-PUNCT O O
-
-the O O
-ease O O
-of O O
-set B-POS B-POS
-up L-POS L-POS
-was O O
-terrific O O
-PUNCT O O
-
-this O O
-was O O
-around O O
-three O O
-years O O
-PUNCT O O
-maybe O O
-four O O
-years O O
-ago O O
-PUNCT O O
-
-please O O
-PUNCT O O
-anyone O O
-who O O
-is O O
-considering O O
-getting O O
-this O O
-computer O O
-PUNCT O O
-stop O O
-PUNCT O O
-
-i O O
-had O O
-my O O
-computer O O
-custom O O
-built O O
-from O O
-sonystylecom O O
-PUNCT O O
-
-this O O
-computer O O
-is O O
-really O O
-fast O O
-and O O
-i O O
-'m O O
-shocked O O
-as O O
-to O O
-how O O
-easy O O
-it O O
-is O O
-to O O
-get O O
-used O O
-to O O
-PUNCT O O
-
-from O O
-the O O
-get-go O O
-PUNCT O O
-the O O
-m6809 O O
-was O O
-unsteady O O
-in O O
-its O O
-operation U-NEG U-POS
-PUNCT O O
-
-one O O
-of O O
-the O O
-wonderful O O
-things O O
-about O O
-macs O O
-is O O
-that O O
-they O O
-are O O
-virus O O
-free O O
-PUNCT O O
-
-after O O
-5 O O
-months O O
-of O O
-failed O O
-repairs O O
-PUNCT O O
-requested O O
-a O O
-full O O
-refund O O
-but O O
-was O O
-refused O O
-and O O
-it O O
-still O O
-is O O
-not O O
-repaired O O
-and O O
-acer O O
-is O O
-indifferent O O
-to O O
-the O O
-issue O O
-PUNCT O O
-
-you O O
-better O O
-believe O O
-my O O
-next O O
-computer O O
-will O O
-be O O
-a O O
-mac O O
-PUNCT O O
-
-with O O
-all O O
-the O O
-programs U-NEU U-POS
-that O O
-came O O
-with O O
-it O O
-PUNCT O O
-such O O
-as O O
-ilife U-NEU U-POS
-and O O
-iwork U-NEU U-POS
-PUNCT O O
-i O O
-was O O
-set O O
-from O O
-the O O
-very O O
-beginning O O
-PUNCT O O
-
-best O O
-buy O O
-laughed O O
-when O O
-i O O
-told O O
-them O O
-they O O
-should O O
-replace O O
-it O O
-instead O O
-of O O
-expecting O O
-me O O
-to O O
-be O O
-without O O
-a O O
-computer O O
-again O O
-for O O
-another O O
-couple O O
-of O O
-weeks O O
-PUNCT O O
-
-there O O
-are O O
-no O O
-gold O O
-key O O
-numbers O O
-too O O
-intall O O
-programs U-NEG U-NEG
-PUNCT O O
-you O O
-must O O
-use O O
-the O O
-serial O O
-numbers O O
-that O O
-it O O
-does O O
-not O O
-accept O O
-and O O
-then O O
-things O O
-are O O
-limited O O
-as O O
-far O O
-a O O
-working O O
-because O O
-they O O
-are O O
-only O O
-good O O
-for O O
-a O O
-short O O
-time O O
-PUNCT O O
-
-if O O
-you O O
-want O O
-a O O
-little O O
-more O O
-custom O O
-ability O O
-PUNCT O O
-drop O O
-a O O
-few O O
-bucks O O
-and O O
-upgrade O O
-to O O
-one O O
-of O O
-the O O
-more O O
-robust O O
-versions O O
-of O O
-win B-POS B-POS
-7 L-POS L-POS
-and O O
-grab O O
-a O O
-2gb B-POS O
-stick I-POS O
-of I-POS O
-memory L-POS U-NEG
-to O O
-spice O O
-it O O
-all O O
-up O O
-a O O
-bit O O
-more O O
-PUNCT O O
-
-speakers U-NEG O
-too O O
-small O O
-to O O
-be O O
-of O O
-any O O
-real O O
-use O O
-PUNCT O O
-
-this O O
-is O O
-a O O
-great O O
-computer O O
-PUNCT O O
-
-the O O
-battery U-NEG U-NEG
-never O O
-held O O
-a O O
-charge U-NEG O
-longer O O
-than O O
-one O O
-hour O O
-and O O
-within O O
-two O O
-months O O
-PUNCT O O
-stopped O O
-holding O O
-a O O
-charge U-NEG U-NEG
-for O O
-more O O
-than O O
-ten O O
-minutes O O
-PUNCT O O
-
-i O O
-paid O O
-PUNCT O O
-800 O O
-for O O
-this O O
-computer O O
-from O O
-my O O
-school O O
-campus O O
-bookstore O O
-PUNCT O O
-
-the O O
-neat O O
-and O O
-organized O O
-icon B-POS U-POS
-list L-POS O
-is O O
-a O O
-welcome O O
-change O O
-from O O
-cluttered O O
-and O O
-confusing O O
-desktop B-NEG B-NEG
-icons L-NEG L-NEG
-PUNCT O O
-
-buyer O O
-beware O O
-PUNCT O O
-
-the O O
-toshiba O O
-laptop O O
-i O O
-am O O
-using O O
-is O O
-easier O O
-to O O
-use U-POS U-POS
-than O O
-most O O
-i O O
-have O O
-tried O O
-PUNCT O O
-
-the O O
-battery U-NEG U-NEG
-never O O
-held O O
-a O O
-charge U-NEG O
-longer O O
-than O O
-one O O
-hour O O
-and O O
-within O O
-two O O
-months O O
-PUNCT O O
-stopped O O
-holding O O
-a O O
-charge U-NEG U-NEG
-for O O
-more O O
-than O O
-ten O O
-minutes O O
-PUNCT O O
-
-see O O
-when O O
-it O O
-comes O O
-to O O
-laptops O O
-you O O
-buy O O
-it O O
-and O O
-get O O
-just O O
-a O O
-normal O O
-operating B-NEU B-NEG
-system L-NEU L-NEG
-with O O
-trials O O
-of O O
-must O O
-need O O
-stuff O O
-that O O
-should O O
-come O O
-with O O
-it O O
-PUNCT O O
-
-at O O
-first O O
-it O O
-'s O O
-like O O
-you O O
-'re O O
-in O O
-that O O
-honeymoon O O
-stage O O
-with O O
-your O O
-laptop O O
-PUNCT O O
-
-i O O
-especially O O
-like O O
-the O O
-backlit B-POS B-POS
-keyboard L-POS L-POS
-PUNCT O O
-
-besides O O
-the O O
-great O O
-look U-POS U-POS
-PUNCT O O
-it O O
-is O O
-a O O
-great O O
-machine O O
-PUNCT O O
-
-took O O
-it O O
-back O O
-as O O
-it O O
-was O O
-defective O O
-PUNCT O O
-
-this O O
-system O O
-is O O
-not O O
-worth O O
-the O O
-money O O
-or O O
-trouble O O
-trying O O
-to O O
-get O O
-it O O
-fix O O
-PUNCT O O
-
-i O O
-purchased O O
-it O O
-this O O
-year O O
-when O O
-my O O
-old O O
-hp O O
-laptop O O
-finally O O
-died O O
-and O O
-i O O
-was O O
-looking O O
-for O O
-something O O
-smaller O O
-and O O
-lighter O O
-than O O
-a O O
-laptop O O
-to O O
-carry O O
-around O O
-for O O
-classes O O
-and O O
-traveling O O
-PUNCT O O
-
-i O O
-bought O O
-this O O
-emachines O O
-notebook O O
-pc O O
-in O O
-january O O
-of O O
-this O O
-year O O
-and O O
-i O O
-am O O
-highly O O
-dissatisfied O O
-with O O
-it O O
-PUNCT O O
-
-even O O
-though O O
-the O O
-computer O O
-is O O
-larger O O
-they O O
-did O O
-not O O
-make O O
-the O O
-keyboard U-NEG U-NEG
-larger O O
-PUNCT O O
-
-it O O
-is O O
-very O O
-easy O O
-to O O
-type U-POS O
-on O O
-and O O
-feels O O
-great O O
-PUNCT O O
-besides O O
-the O O
-added O O
-feature U-POS U-POS
-that O O
-the O O
-keyboard U-POS U-NEG
-is O O
-lighted O O
-PUNCT O O
-
-the O O
-feel U-POS U-POS
-of O O
-this O O
-machine O O
-compared O O
-to O O
-the O O
-old O O
-macbook O O
-is O O
-far O O
-superior O O
-PUNCT O O
-
-thank O O
-you O O
-PUNCT O O
-
-i O O
-saved O O
-for O O
-this O O
-laptop O O
-for O O
-3 O O
-months O O
-and O O
-i O O
-can O O
-tell O O
-you O O
-personally O O
-it O O
-was O O
-worth O O
-the O O
-wait O O
-PUNCT O O
-
-i O O
-have O O
-had O O
-no O O
-problems O O
-with O O
-it O O
-unlike O O
-some O O
-hardware U-NEG U-NEG
-defects O O
-on O O
-past O O
-models O O
-PUNCT O O
-
-i O O
-have O O
-used O O
-different O O
-laptops O O
-in O O
-the O O
-past O O
-and O O
-i O O
-have O O
-to O O
-rate O O
-this O O
-one O O
-way O O
-above O O
-the O O
-rest O O
-PUNCT O O
-
-the O O
-quality U-POS U-POS
-PUNCT O O
-engineering B-POS B-POS
-design L-POS L-POS
-and O O
-warranty U-POS U-NEG
-are O O
-superior O O
--- O O
-covers O O
-damage O O
-from O O
-dropping O O
-the O O
-laptop O O
-PUNCT O O
-
-it O O
-is O O
-so O O
-much O O
-fun O O
-to O O
-play O O
-with O O
-PUNCT O O
-
-if O O
-this O O
-is O O
-an O O
-improvement O O
-in O O
-customer B-NEG B-NEG
-service L-NEG L-NEG
-then O O
-i O O
-would O O
-hate O O
-too O O
-see O O
-what O O
-it O O
-was O O
-before O O
-PUNCT O O
-
-sure O O
-PUNCT O O
-the O O
-initial O O
-out O O
-of O O
-pocket O O
-expense U-NEG O
-is O O
-greater O O
-PUNCT O O
-but O O
-that O O
-should O O
-not O O
-dissuade O O
-anyone O O
-from O O
-the O O
-fact O O
-that O O
-these O O
-machines O O
-run U-POS O
-like O O
-none O O
-other O O
-on O O
-the O O
-planet O O
-PUNCT O O
-and O O
-when O O
-i O O
-factor O O
-in O O
-all O O
-the O O
-money O O
-in O O
-that O O
-i O O
-wasted O O
-on O O
-geek O O
-squad O O
-and O O
-the O O
-latest O O
-patches O O
-to O O
-de-corrupt O O
-my O O
-infested O O
-pcs O O
-PUNCT O O
-it O O
-probably O O
-comes O O
-out O O
-about O O
-even O O
-anyhow O O
-PUNCT O O
-
-i O O
-am O O
-glad O O
-i O O
-did O O
-my O O
-research O O
-PUNCT O O
-
-the O O
-netbook O O
-is O O
-easier O O
-for O O
-me O O
-to O O
-take O O
-to O O
-bed O O
-and O O
-carry O O
-around O O
-with O O
-me O O
-PUNCT O O
-
-externally O O
-the O O
-keys U-NEG U-NEG
-on O O
-my O O
-keyboard U-NEG U-NEG
-are O O
-falling O O
-off O O
-PUNCT O O
-after O O
-a O O
-few O O
-uses O O
-the O O
-paint U-NEG U-NEG
-is O O
-rubbing O O
-off O O
-the O O
-button B-NEG U-NEG
-below I-NEG O
-the I-NEG O
-mouse I-NEG B-NEG
-pad L-NEG L-NEG
-and O O
-where O O
-the O O
-heals O O
-of O O
-my O O
-hands O O
-sit O O
-PUNCT O O
-and O O
-the O O
-screen U-NEG U-NEG
-has O O
-a O O
-terrible O O
-glare O O
-PUNCT O O
-
-the O O
-next O O
-time O O
-i O O
-had O O
-an O O
-issue O O
-my O O
-lightscribe U-NEG U-NEG
-would O O
-n't O O
-work O O
-PUNCT O O
-
-they O O
-don O O
-t O O
-translate O O
-from O O
-a O O
-mac O O
-PUNCT O O
-even O O
-on O O
-word U-NEG O
-PUNCT O O
-resulting O O
-in O O
-a O O
-ton O O
-of O O
-run-on O O
-sentences O O
-PUNCT O O
-
-in O O
-november O O
-my O O
-computer O O
-messed O O
-up O O
-entirely O O
-and O O
-would O O
-n't O O
-power O O
-on O O
-after O O
-intalling O O
-a O O
-windows B-NEU B-NEG
-update L-NEU L-NEG
-PUNCT O O
-i O O
-had O O
-to O O
-have O O
-my O O
-hd U-NEG O
-flashed O O
-and O O
-lost O O
-everything O O
-on O O
-it O O
-PUNCT O O
-including O O
-my O O
-school O O
-assignments O O
-and O O
-irriplaceable O O
-pictures O O
-that O O
-were O O
-only O O
-in O O
-digital O O
-format O O
-and O O
-several O O
-other O O
-things O O
-PUNCT O O
-when O O
-this O O
-update O O
-was O O
-installed O O
-for O O
-some O O
-reason O O
-i O O
-was O O
-unable O O
-to O O
-roll O O
-back O O
-the O O
-drivers U-NEG U-NEG
-and O O
-everything O O
-to O O
-an O O
-earlier O O
-working O O
-condition O O
-because O O
-when O O
-the O O
-update O O
-was O O
-installed O O
-it O O
-deleted O O
-my O O
-history O O
-PUNCT O O
-
-it O O
-has O O
-been O O
-plagued O O
-with O O
-problems O O
-since O O
-the O O
-day O O
-i O O
-turned O O
-it O O
-on O O
-PUNCT O O
-
-applications U-POS U-POS
-respond O O
-immediately O O
-not O O
-like O O
-the O O
-tired O O
-ms B-NEG B-NEG
-applications L-NEG L-NEG
-PUNCT O O
-
-when O O
-i O O
-turned O O
-it O O
-on O O
-PUNCT O O
-nothing O O
-PUNCT O O
-
-they O O
-freeze O O
-all O O
-the O O
-time O O
-PUNCT O O
-
-i O O
-sent O O
-it O O
-to O O
-them O O
-to O O
-fix O O
-in O O
-perfect O O
-condition O O
-but O O
-for O O
-what O O
-was O O
-wrong O O
-with O O
-it O O
-PUNCT O O
-
-after O O
-paying O O
-over O O
-PUNCT O O
-1000 O O
-for O O
-this O O
-computer O O
-PUNCT O O
-it O O
-was O O
-not O O
-worth O O
-it O O
-PUNCT O O
-
-very O O
-happy O O
-with O O
-my O O
-7th O O
-toshiba O O
-laptop O O
-PUNCT O O
-
-my O O
-wife O O
-recently O O
-purchased O O
-an O O
-apple O O
-macbook O O
-pro O O
-and O O
-our O O
-granddaughter O O
-fell O O
-in O O
-love O O
-with O O
-it O O
-and O O
-asked O O
-for O O
-one O O
-for O O
-her O O
-birthday O O
-PUNCT O O
-
-the O O
-price U-POS U-POS
-is O O
-great O O
-for O O
-this O O
-model O O
-PUNCT O O
-i O O
-only O O
-plan O O
-on O O
-using O O
-it O O
-for O O
-media O O
-in O O
-the O O
-entertainment O O
-room O O
-PUNCT O O
-
-it O O
-seemed O O
-to O O
-be O O
-a O O
-very O O
-nice O O
-laptop O O
-except O O
-i O O
-was O O
-not O O
-able O O
-to O O
-load O O
-my O O
-garmin B-NEG O
-gps I-NEG B-NEG
-software L-NEG L-NEG
-or O O
-microsoft B-NEG B-NEG
-office I-NEG L-NEG
-2003 L-NEG O
-PUNCT O O
-
-a O O
-tip O O
-for O O
-people O O
-looking O O
-into O O
-this O O
-computer O O
-PUNCT O O
-do O O
-not O O
-buy O O
-it O O
-save O O
-up O O
-a O O
-bit O O
-more O O
-money O O
-and O O
-buy O O
-a O O
-computer O O
-that O O
-will O O
-last O O
-PUNCT O O
-
-i O O
-was O O
-waiting O O
-for O O
-this O O
-model O O
-to O O
-be O O
-released O O
-since O O
-january O O
-PUNCT O O
-and O O
-have O O
-been O O
-holding O O
-off O O
-on O O
-buying O O
-a O O
-macbook O O
-pro O O
-until O O
-the O O
-new O O
-model O O
-came O O
-out O O
-PUNCT O O
-
-so O O
-i O O
-would O O
-not O O
-reccomend O O
-anyone O O
-buying O O
-this O O
-computer O O
-
-the O O
-best O O
-thing O O
-is O O
-even O O
-while O O
-doing O O
-almost O O
-ten O O
-or O O
-twenty O O
-things O O
-at O O
-once O O
-PUNCT O O
-it O O
-never O O
-slows O O
-down O O
-PUNCT O O
-
-i O O
-took O O
-it O O
-to O O
-the O O
-shop O O
-and O O
-they O O
-said O O
-it O O
-would O O
-cost O O
-too O O
-much O O
-to O O
-repair O O
-it O O
-PUNCT O O
-
-we O O
-also O O
-use O O
-paralles U-NEU O
-so O O
-we O O
-can O O
-run O O
-virtual O O
-machines O O
-of O O
-windows B-NEU B-NEG
-xp I-NEU L-NEG
-professional L-NEU O
-PUNCT O O
-windows B-NEU B-POS
-7 I-NEU L-POS
-home I-NEU O
-premium L-NEU O
-PUNCT O O
-windows B-NEU B-NEG
-server I-NEU L-NEG
-enterprise I-NEU O
-2003 L-NEU O
-PUNCT O O
-and O O
-windows B-NEU B-NEG
-server I-NEU L-NEG
-2008 I-NEU O
-enterprise L-NEU O
-PUNCT O O
-
-how O O
-toshiba O O
-handles O O
-the O O
-repair U-POS O
-seems O O
-to O O
-vary O O
-PUNCT O O
-some O O
-folks O O
-indicate O O
-that O O
-they O O
-were O O
-charged O O
-for O O
-even O O
-an O O
-intial O O
-fix O O
-PUNCT O O
-others O O
-had O O
-the O O
-repair U-POS O
-done O O
-5 O O
-times O O
-PUNCT O O
-
-i O O
-have O O
-a O O
-business O O
-website O O
-and O O
-every O O
-time O O
-i O O
-have O O
-to O O
-change O O
-something O O
-i O O
-have O O
-to O O
-go O O
-to O O
-the O O
-public O O
-library O O
-to O O
-use O O
-a O O
-pc O O
-PUNCT O O
+the O O O O O O
+other O O O O O O
+day O O O O O O
+i O O O O O O
+had O O O O O O
+a O O O O O O
+presentation O O O O O O
+to O O O O O O
+do O O O O O O
+for O O O O O O
+a O O O O O O
+seminar O O O O O O
+at O O O O O O
+a O O O O O O
+large O O O O O O
+conference O O O O O O
+in O O O O O O
+town O O O O O O
+lots O O O O O O
+of O O O O O O
+people O O O O O O
+PUNCT O O O O O O
+little O O O O O O
+time O O O O O O
+to O O O O O O
+prep O O O O O O
+and O O O O O O
+have O O O O O O
+to O O O O O O
+set O O O O O O
+up O O O O O O
+a O O O O O O
+computer O O O O O O
+to O O O O O O
+a O O O O O O
+projector O O O O O O
+PUNCT O O O O O O
+etc O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+took O O O O O O
+it O O O O O O
+back O O O O O O
+for O O O O O O
+an O O O O O O
+asus O O O O O O
+and O O O O O O
+same O O O O O O
+thing O O O O O O
+blue O O O O O O
+screen O O O O O O
+which O O O O O O
+required O O O O O O
+me O O O O O O
+to O O O O O O
+remove O O O O O O
+the O O O O O O
+battery U-NEU U-NEG U-NEG U-NEG U-NEG U-NEG
+to O O O O O O
+reset O O O O O O
+PUNCT O O O O O O
+
+toshiba O O O O O O
+does O O O O O O
+not O O O O O O
+send O O O O O O
+any O O O O O O
+one O O O O O O
+out O O O O O O
+unless O O O O O O
+you O O O O O O
+have O O O O O O
+paid O O O O O O
+extra O O O O O O
+to O O O O O O
+have O O O O O O
+the O O O O O O
+on O O O O O O
+site O O O O O O
+repair O O O O O O
+done O O O O O O
+PUNCT O O O O O O
+
+oh O O O O O O
+PUNCT O O O O O O
+boy O O O O O O
+PUNCT O O O O O O
+
+but O O O O O O
+while O O O O O O
+this O O O O O O
+is O O O O O O
+one O O O O O O
+big O O O O O O
+advantage O O O O O O
+as O O O O O O
+you O O O O O O
+may O O O O O O
+know O O O O O O
+from O O O O O O
+the O O O O O O
+company O O O O O O
+s O O O O O O
+recent O O O O O O
+commercials O O O O O O
+there O O O O O O
+are O O O O O O
+other O O O O O O
+things O O O O O O
+to O O O O O O
+consider O O O O O O
+before O O O O O O
+going O O O O O O
+with O O O O O O
+apple O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+love O O O O O O
+the O O O O O O
+way O O O O O O
+the O O O O O O
+entire O O O O O O
+suite B-POS B-POS B-POS B-POS B-POS B-POS
+of I-POS I-POS I-POS I-POS I-POS I-POS
+software L-POS L-POS L-POS L-POS L-POS L-POS
+works O O O O O O
+together O O O O O O
+PUNCT O O O O O O
+
+pairing O O O O O O
+it O O O O O O
+with O O O O O O
+an O O O O O O
+iphone O O O O O O
+is O O O O O O
+a O O O O O O
+pure O O O O O O
+pleasure O O O O O O
+PUNCT O O O O O O
+talk O O O O O O
+about O O O O O O
+painless O O O O O O
+syncing U-POS U-POS U-POS O U-POS O
+PUNCT O O O O O O
+used O O O O O O
+to O O O O O O
+take O O O O O O
+me O O O O O O
+forever O O O O O O
+PUNCT O O O O O O
+now O O O O O O
+it O O O O O O
+'s O O O O O O
+a O O O O O O
+snap O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+shopped O O O O O O
+around O O O O O O
+before O O O O O O
+buying O O O O O O
+PUNCT O O O O O O
+
+has O O O O O O
+met O O O O O O
+or O O O O O O
+exceeded O O O O O O
+my O O O O O O
+needs O O O O O O
+for O O O O O O
+a O O O O O O
+compact O O O O O O
+travel O O O O O O
+device O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+sent O O O O O O
+it O O O O O O
+back O O O O O O
+to O O O O O O
+toshiba O O O O O O
+twice O O O O O O
+they O O O O O O
+covered O O O O O O
+it O O O O O O
+under O O O O O O
+the O O O O O O
+warranty U-POS U-NEG U-NEU U-NEU U-NEU U-NEU
+PUNCT O O O O O O
+
+they O O O O O O
+sent O O O O O O
+me O O O O O O
+a O O O O O O
+replacement O O O O O O
+part O O O O O O
+and O O O O O O
+without O O O O O O
+informing O O O O O O
+me O O O O O O
+are O O O O O O
+requiring O O O O O O
+that O O O O O O
+i O O O O O O
+return O O O O O O
+it O O O O O O
+within O O O O O O
+15 O O O O O O
+days O O O O O O
+or O O O O O O
+contact O O O O O O
+them O O O O O O
+and O O O O O O
+let O O O O O O
+them O O O O O O
+know O O O O O O
+the O O O O O O
+broken O O O O O O
+part O O O O O O
+will O O O O O O
+be O O O O O O
+returned O O O O O O
+later O O O O O O
+PUNCT O O O O O O
+
+in O O O O O O
+desparation O O O O O O
+PUNCT O O O O O O
+i O O O O O O
+called O O O O O O
+their O O O O O O
+customer B-NEU B-NEG B-NEG B-NEG B-NEG B-NEG
+service I-NEU I-NEG I-NEG I-NEG I-NEG I-NEG
+number L-NEU L-NEG L-NEG L-NEG L-NEG L-NEG
+and O O O O O O
+was O O O O O O
+told O O O O O O
+that O O O O O O
+my O O O O O O
+warranty U-NEG U-NEG U-NEG U-NEU U-NEG U-NEG
+had O O O O O O
+expired O O O O O O
+2 O O O O O O
+days O O O O O O
+old O O O O O O
+and O O O O O O
+that O O O O O O
+the O O O O O O
+priviledge O O O O O O
+of O O O O O O
+talking B-NEG O O O O O
+to I-NEG O O O O O
+a I-NEG O O O O O
+technician L-NEG U-NEG U-NEG U-NEG U-NEG O
+would O O O O O O
+cost O O O O O O
+me O O O O O O
+have O O O O O O
+your O O O O O O
+credit O O O O O O
+card O O O O O O
+ready O O O O O O
+PUNCT O O O O O O
+
+amazing O O O O O O
+quality U-POS U-POS U-POS U-POS U-POS U-POS
+PUNCT O O O O O O
+
+it O O O O O O
+does O O O O O O
+run O O O O O O
+a O O O O O O
+little O O O O O O
+warm O O O O O O
+but O O O O O O
+that O O O O O O
+is O O O O O O
+a O O O O O O
+negligible O O O O O O
+concern O O O O O O
+PUNCT O O O O O O
+
+what O O O O O O
+an O O O O O O
+elegant O O O O O O
+PUNCT O O O O O O
+wonderful O O O O O O
+machine O O O O O O
+PUNCT O O O O O O
+
+do O O O O O O
+you O O O O O O
+ever O O O O O O
+think O O O O O O
+hp O O O O O O
+would O O O O O O
+do O O O O O O
+that O O O O O O
+PUNCT O O O O O O
+never O O O O O O
+PUNCT O O O O O O
+
+we O O O O O O
+upgraded O O O O O O
+the O O O O O O
+memory U-NEU U-NEU U-NEU U-NEU U-NEU U-NEU
+to O O O O O O
+four O O O O O O
+gigabytes O O O O O O
+in O O O O O O
+order O O O O O O
+to O O O O O O
+take O O O O O O
+advantage O O O O O O
+of O O O O O O
+the O O O O O O
+performace U-POS U-POS U-POS U-POS U-POS U-POS
+increase O O O O O O
+in O O O O O O
+speed U-POS U-POS U-POS U-POS U-POS U-POS
+PUNCT O O O O O O
+
+the O O O O O O
+genius O O O O O O
+at O O O O O O
+the O O O O O O
+apple O O O O O O
+store O O O O O O
+advised O O O O O O
+me O O O O O O
+that O O O O O O
+there O O O O O O
+was O O O O O O
+nothing O O O O O O
+about O O O O O O
+my O O O O O O
+use O O O O O O
+of O O O O O O
+the O O O O O O
+computer O O O O O O
+that O O O O O O
+caused O O O O O O
+this O O O O O O
+failure O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+apple O O O O O O
+mc371ll/a O O O O O O
+24ghz O O O O O O
+154-inch O O O O O O
+macbook O O O O O O
+pro O O O O O O
+notebook O O O O O O
+is O O O O O O
+a O O O O O O
+horrible O O O O O O
+waste O O O O O O
+of O O O O O O
+money O O O O O O
+PUNCT O O O O O O
+
+if O O O O O O
+you O O O O O O
+find O O O O O O
+yourself O O O O O O
+in O O O O O O
+the O O O O O O
+market O O O O O O
+for O O O O O O
+a O O O O O O
+new O O O O O O
+laptop O O O O O O
+and O O O O O O
+have O O O O O O
+the O O O O O O
+money O O O O O O
+do O O O O O O
+n't O O O O O O
+exclude O O O O O O
+looking O O O O O O
+at O O O O O O
+the O O O O O O
+mbps O O O O O O
+PUNCT O O O O O O
+
+those O O O O O O
+things O O O O O O
+are O O O O O O
+very O O O O O O
+important O O O O O O
+PUNCT O O O O O O
+vital O O O O O O
+even O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+have O O O O O O
+now O O O O O O
+had O O O O O O
+it O O O O O O
+for O O O O O O
+15 O O O O O O
+months O O O O O O
+and O O O O O O
+love O O O O O O
+it O O O O O O
+PUNCT O O O O O O
+
+trying O O O O O O
+to O O O O O O
+balance O O O O O O
+all O O O O O O
+of O O O O O O
+my O O O O O O
+roles O O O O O O
+leaves O O O O O O
+very O O O O O O
+little O O O O O O
+time O O O O O O
+for O O O O O O
+me O O O O O O
+to O O O O O O
+do O O O O O O
+anything O O O O O O
+PUNCT O O O O O O
+so O O O O O O
+i O O O O O O
+want O O O O O O
+to O O O O O O
+manage O O O O O O
+my O O O O O O
+time O O O O O O
+i O O O O O O
+do O O O O O O
+have O O O O O O
+to O O O O O O
+be O O O O O O
+the O O O O O O
+most O O O O O O
+efficient O O O O O O
+PUNCT O O O O O O
+
+it O O O O O O
+would O O O O O O
+take O O O O O O
+up O O O O O O
+too O O O O O O
+much O O O O O O
+time O O O O O O
+to O O O O O O
+do O O O O O O
+reaearch O O O O O O
+for O O O O O O
+my O O O O O O
+papers O O O O O O
+and O O O O O O
+i O O O O O O
+would O O O O O O
+be O O O O O O
+up O O O O O O
+hours-just O O O O O O
+because O O O O O O
+the O O O O O O
+computer O O O O O O
+was O O O O O O
+too O O O O O O
+slow O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+'m O O O O O O
+returning O O O O O O
+mine O O O O O O
+
+it O O O O O O
+weighed U-NEU O O O O O
+like O O O O O O
+seven B-NEU O O O O O
+pounds L-NEU O O O O O
+or O O O O O O
+something O O O O O O
+like O O O O O O
+that O O O O O O
+PUNCT O O O O O O
+
+with O O O O O O
+a O O O O O O
+healthy O O O O O O
+pessimism O O O O O O
+PUNCT O O O O O O
+i O O O O O O
+took O O O O O O
+the O O O O O O
+machine O O O O O O
+home O O O O O O
+and O O O O O O
+tried O O O O O O
+to O O O O O O
+find O O O O O O
+a O O O O O O
+flaw O O O O O O
+PUNCT O O O O O O
+
+and O O O O O O
+not O O O O O O
+to O O O O O O
+mention O O O O O O
+after O O O O O O
+using O O O O O O
+it O O O O O O
+for O O O O O O
+a O O O O O O
+few O O O O O O
+months O O O O O O
+or O O O O O O
+so O O O O O O
+PUNCT O O O O O O
+the O O O O O O
+battery U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+will O O O O O O
+slowly O O O O O O
+less O O O O O O
+and O O O O O O
+less O O O O O O
+hold O O O O O O
+a O O O O O O
+charge O U-NEG U-NEG U-NEG U-NEG U-NEG
+until O O O O O O
+you O O O O O O
+ca O O O O O O
+n't O O O O O O
+leave O O O O O O
+it O O O O O O
+unplugged O O O O O O
+for O O O O O O
+more O O O O O O
+than O O O O O O
+5 O O O O O O
+minutes O O O O O O
+without O O O O O O
+the O O O O O O
+thing O O O O O O
+dying O O O O O O
+PUNCT O O O O O O
+
+it O O O O O O
+absolutely O O O O O O
+is O O O O O O
+more O O O O O O
+expensive O O O O O O
+than O O O O O O
+most O O O O O O
+pc O O O O O O
+laptops O O O O O O
+PUNCT O O O O O O
+but O O O O O O
+the O O O O O O
+ease O O O O O O
+of O O O O O O
+use U-POS U-POS U-POS U-POS U-POS U-POS
+PUNCT O O O O O O
+security U-POS U-POS U-POS U-POS U-POS U-POS
+PUNCT O O O O O O
+and O O O O O O
+minimal O O O O O O
+problems O O O O O O
+that O O O O O O
+have O O O O O O
+arisen O O O O O O
+make O O O O O O
+it O O O O O O
+well O O O O O O
+worth O O O O O O
+the O O O O O O
+pricetag O U-POS U-POS U-POS U-POS U-POS
+PUNCT O O O O O O
+
+i O O O O O O
+wish O O O O O O
+the O O O O O O
+volume U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+could O O O O O O
+be O O O O O O
+louder O O O O O O
+and O O O O O O
+the O O O O O O
+mouse U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+did O O O O O O
+n't O O O O O O
+break O O O O O O
+after O O O O O O
+only O O O O O O
+a O O O O O O
+month O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+only O O O O O O
+fact O O O O O O
+i O O O O O O
+do O O O O O O
+n't O O O O O O
+like O O O O O O
+about O O O O O O
+apples O O O O O O
+is O O O O O O
+they O O O O O O
+generally O O O O O O
+use O O O O O O
+safari U-NEG O O O O O
+and O O O O O O
+i O O O O O O
+do O O O O O O
+n't O O O O O O
+use O O O O O O
+safari U-NEG O O O O O
+but O O O O O O
+after O O O O O O
+i O O O O O O
+install O O O O O O
+mozzilla B-POS O O O O O
+firfox L-POS O O O O O
+i O O O O O O
+love O O O O O O
+every O O O O O O
+single O O O O O O
+bit O O O O O O
+about O O O O O O
+it O O O O O O
+PUNCT O O O O O O
+
+great O O O O O O
+battery U-POS U-POS U-POS U-POS U-POS U-POS
+PUNCT O O O O O O
+speed U-POS U-POS U-POS U-POS U-POS U-POS
+PUNCT O O O O O O
+display U-POS U-POS U-POS U-POS U-POS U-POS
+PUNCT O O O O O O
+
+they O O O O O O
+improved O O O O O O
+nothing O O O O O O
+else O O O O O O
+such O O O O O O
+as O O O O O O
+resolution U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+PUNCT O O O O O O
+appearance U-NEG U-POS U-POS U-POS U-NEG U-POS
+PUNCT O O O O O O
+cooling B-NEG B-NEU B-NEG B-NEG B-NEG B-NEU
+system L-NEG L-NEU L-NEG L-NEG L-NEG L-NEU
+PUNCT O O O O O O
+graphics B-NEG B-NEU B-NEG B-NEU B-NEU B-NEU
+card L-NEG L-NEU L-NEG L-NEU L-NEU L-NEU
+PUNCT O O O O O O
+etc O O O O O O
+PUNCT O O O O O O
+
+now O O O O O O
+he O O O O O O
+mows O O O O O O
+yards O O O O O O
+so O O O O O O
+he O O O O O O
+can O O O O O O
+earn O O O O O O
+the O O O O O O
+money O O O O O O
+for O O O O O O
+the O O O O O O
+wireless O B-NEU O O O O
+internet O L-NEU O O O O
+PUNCT O O O O O O
+
+additional O O O O O O
+caveat O O O O O O
+PUNCT O O O O O O
+the O O O O O O
+base B-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
+installation L-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
+comes O O O O O O
+with O O O O O O
+some O O O O O O
+toshiba-specific O B-NEG B-NEG O B-NEG B-NEG
+software U-NEG L-NEG L-NEG U-NEG L-NEG L-NEG
+that O O O O O O
+may O O O O O O
+or O O O O O O
+may O O O O O O
+not O O O O O O
+be O O O O O O
+to O O O O O O
+a O O O O O O
+user O O O O O O
+'s O O O O O O
+liking O O O O O O
+PUNCT O O O O O O
+
+high O O O O O O
+price B-NEG U-POS U-POS U-POS U-POS U-POS
+tag L-NEG O O O O O
+PUNCT O O O O O O
+however O O O O O O
+PUNCT O O O O O O
+
+buy O O O O O O
+this O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+processor U-NEG U-NEG U-NEG U-NEU U-NEG U-NEG
+a O O O O O O
+amd O B-NEU B-NEG B-NEU B-NEU B-POS
+semprom O L-NEU L-NEG L-NEU L-NEU L-POS
+at O O O O O O
+21 O O O O O O
+ghz O O O O O O
+is O O O O O O
+a O O O O O O
+bummer O O O O O O
+it O O O O O O
+does O O O O O O
+not O O O O O O
+have O O O O O O
+the O O O O O O
+power O U-POS O O O U-NEU
+for O O O O O O
+hd O U-POS O O O U-POS
+or O O O O O O
+heavy O O O O O O
+computing U-NEG O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+love O O O O O O
+the O O O O O O
+15 O O O O O O
+macbook O O O O O O
+pro O O O O O O
+PUNCT O O O O O O
+
+breaks O O O O O O
+easily O O O O O O
+PUNCT O O O O O O
+
+they O O O O O O
+sent O O O O O O
+out O O O O O O
+the O O O O O O
+box O O O O O O
+right O O O O O O
+away O O O O O O
+for O O O O O O
+me O O O O O O
+to O O O O O O
+send O O O O O O
+in O O O O O O
+my O O O O O O
+computer O O O O O O
+PUNCT O O O O O O
+they O O O O O O
+paid O O O O O O
+postage O O O O O O
+and O O O O O O
+whatnot O O O O O O
+PUNCT O O O O O O
+but O O O O O O
+when O O O O O O
+i O O O O O O
+got O O O O O O
+my O O O O O O
+computer O O O O O O
+back O O O O O O
+it O O O O O O
+still O O O O O O
+was O O O O O O
+n't O O O O O O
+running U-NEG O O O O O
+right O O O O O O
+PUNCT O O O O O O
+and O O O O O O
+now O O O O O O
+my O O O O O O
+cd B-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
+drive L-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
+was O O O O O O
+n't O O O O O O
+reading O O O O O O
+anything O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+bought O O O O O O
+this O O O O O O
+laptop O O O O O O
+was O O O O O O
+the O O O O O O
+worst O O O O O O
+laptop O O O O O O
+i O O O O O O
+'ve O O O O O O
+ever O O O O O O
+bought O O O O O O
+PUNCT O O O O O O
+
+yeah O O O O O O
+PUNCT O O O O O O
+of O O O O O O
+course O O O O O O
+smarty O O O O O O
+pants O O O O O O
+fix O O O O O O
+it O O O O O O
+nowaspect1 O O O O O O
+PUNCT O O O O O O
+compared O O O O O O
+to O O O O O O
+the O O O O O O
+early O O O O O O
+2011 O O O O O O
+edition O O O O O O
+i O O O O O O
+did O O O O O O
+see O O O O O O
+inbuilt B-NEG O O B-NEG O B-NEG
+applications L-NEG U-NEG U-NEG L-NEG U-NEG L-NEG
+crashing O O O O O O
+and O O O O O O
+it O O O O O O
+prompted O O O O O O
+me O O O O O O
+to O O O O O O
+send O O O O O O
+the O O O O O O
+report O O O O O O
+to O O O O O O
+apple O O O O O O
+which O O O O O O
+i O O O O O O
+promptly O O O O O O
+did O O O O O O
+PUNCT O O O O O O
+
+summary O O O O O O
+PUNCT O O O O O O
+dont O O O O O O
+buy O O O O O O
+hp O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+think O O O O O O
+part O O O O O O
+of O O O O O O
+the O O O O O O
+problem O O O O O O
+with O O O O O O
+this O O O O O O
+computer O O O O O O
+is O O O O O O
+vista U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+PUNCT O O O O O O
+yet O O O O O O
+i O O O O O O
+know O O O O O O
+vista U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+is O O O O O O
+n't O O O O O O
+the O O O O O O
+entire O O O O O O
+issue O O O O O O
+because O O O O O O
+my O O O O O O
+latest O O O O O O
+purchase O O O O O O
+was O O O O O O
+my O O O O O O
+acer O O O O O O
+and O O O O O O
+it O O O O O O
+also O O O O O O
+has O O O O O O
+vista U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+i O O O O O O
+should O O O O O O
+have O O O O O O
+waited O O O O O O
+the O O O O O O
+few O O O O O O
+months O O O O O O
+to O O O O O O
+get O O O O O O
+the O O O O O O
+next O O O O O O
+operating B-NEU B-NEG B-NEG B-NEG B-NEG B-NEG
+system L-NEU L-NEG L-NEG L-NEG L-NEG L-NEG
+PUNCT O O O O O O
+
+that O O O O O O
+whole O O O O O O
+experience O O O O O O
+was O O O O O O
+just O O O O O O
+ridiculous O O O O O O
+we O O O O O O
+sent O O O O O O
+it O O O O O O
+in O O O O O O
+and O O O O O O
+after O O O O O O
+they O O O O O O
+told O O O O O O
+us O O O O O O
+that O O O O O O
+we O O O O O O
+had O O O O O O
+to O O O O O O
+pay O O O O O O
+PUNCT O O O O O O
+175 O O O O O O
+to O O O O O O
+fix O O O O O O
+it O O O O O O
+we O O O O O O
+were O O O O O O
+like O O O O O O
+we O O O O O O
+will O O O O O O
+just O O O O O O
+by O O O O O O
+a O O O O O O
+portable O O O O O O
+mouse U-POS U-NEU U-NEG O U-NEG U-NEG
+which O O O O O O
+would O O O O O O
+be O O O O O O
+way O O O O O O
+cheaper O O O O O O
+but O O O O O O
+they O O O O O O
+refused O O O O O O
+to O O O O O O
+send O O O O O O
+the O O O O O O
+laptop O O O O O O
+back O O O O O O
+until O O O O O O
+we O O O O O O
+paid O O O O O O
+the O O O O O O
+PUNCT O O O O O O
+175 O O O O O O
+and O O O O O O
+it O O O O O O
+was O O O O O O
+fixed O O O O O O
+PUNCT O O O O O O
+
+-i O O O O O O
+give O O O O O O
+up O O O O O O
+on O O O O O O
+my O O O O O O
+data O O O O O O
+PUNCT O O O O O O
+i O O O O O O
+just O O O O O O
+want O O O O O O
+a O O O O O O
+computer O O O O O O
+reasonably O O O O O O
+fast O O O O O O
+PUNCT O O O O O O
+
+it O O O O O O
+was O O O O O O
+shooting O O O O O O
+sparks O O O O O O
+PUNCT O O O O O O
+
+tech B-POS B-NEG B-NEG B-NEG B-NEG B-NEG
+support L-POS L-NEG L-NEG L-NEG L-NEG L-NEG
+tells O O O O O O
+me O O O O O O
+the O O O O O O
+latter O O O O O O
+problem O O O O O O
+is O O O O O O
+a O O O O O O
+power B-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
+supply L-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
+problem O O O O O O
+and O O O O O O
+have O O O O O O
+offered O O O O O O
+to O O O O O O
+fix O O O O O O
+it O O O O O O
+if O O O O O O
+it O O O O O O
+happens O O O O O O
+again O O O O O O
+PUNCT O O O O O O
+
+upon O O O O O O
+giving O O O O O O
+them O O O O O O
+the O O O O O O
+serial O O B-NEG O O O
+number O O L-NEG O O O
+the O O O O O O
+first O O O O O O
+thing O O O O O O
+i O O O O O O
+was O O O O O O
+told O O O O O O
+PUNCT O O O O O O
+was O O O O O O
+that O O O O O O
+it O O O O O O
+was O O O O O O
+out O O O O O O
+of O O O O O O
+warranty U-NEU U-NEU U-NEU U-NEG U-NEU U-NEG
+and O O O O O O
+i O O O O O O
+could O O O O O O
+pay O O O O O O
+to O O O O O O
+have O O O O O O
+it O O O O O O
+repaired O O O O O O
+PUNCT O O O O O O
+
+laptop O O O O O O
+was O O O O O O
+in O O O O O O
+new O O O O O O
+condition O O O O O O
+and O O O O O O
+operational O O O O O O
+PUNCT O O O O O O
+but O O O O O O
+for O O O O O O
+the O O O O O O
+audio U-NEG U-NEG O O U-NEG O
+problem O O O O O O
+when O O O O O O
+1st O O O O O O
+sent O O O O O O
+for O O O O O O
+repair O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+was O O O O O O
+disappointed O O O O O O
+when O O O O O O
+i O O O O O O
+realized O O O O O O
+that O O O O O O
+the O O O O O O
+keyboard U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+does O O O O O O
+n't O O O O O O
+light O O O O O O
+up O O O O O O
+on O O O O O O
+this O O O O O O
+model O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+laptop O O O O O O
+was O O O O O O
+very O O O O O O
+easy O O O O O O
+to O O O O O O
+set B-POS B-POS B-POS B-POS B-POS B-POS
+up L-POS L-POS L-POS L-POS L-POS L-POS
+PUNCT O O O O O O
+
+well O O O O O O
+PUNCT O O O O O O
+maybe O O O O O O
+i O O O O O O
+was O O O O O O
+just O O O O O O
+very O O O O O O
+unlucky O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+loaded O O O O O O
+windows B-POS B-POS B-POS B-POS B-POS B-POS
+7 L-POS L-POS L-POS L-POS L-POS L-POS
+via O O O O O O
+bootcamp U-POS U-POS U-POS U-POS U-POS U-POS
+and O O O O O O
+it O O O O O O
+works O U-POS U-POS O U-POS U-POS
+flawlessly O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+have O O O O O O
+never O O O O O O
+had O O O O O O
+to O O O O O O
+shut O O O O O O
+down O O O O O O
+the O O O O O O
+computer O O O O O O
+unexpectedly O O O O O O
+and O O O O O O
+the O O O O O O
+computer O O O O O O
+has O O O O O O
+never O O O O O O
+froze O O O O O O
+on O O O O O O
+me O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+hate O O O O O O
+the O O O O O O
+display B-NEG B-POS B-POS B-NEG B-NEG B-NEG
+screen L-NEG L-POS L-POS L-NEG L-NEG L-NEG
+and O O O O O O
+i O O O O O O
+have O O O O O O
+done O O O O O O
+everything O O O O O O
+i O O O O O O
+could O O O O O O
+do O O O O O O
+the O O O O O O
+change O O O O O O
+it O O O O O O
+PUNCT O O O O O O
+
+this O O O O O O
+computer O O O O O O
+will O O O O O O
+last O O O O O O
+you O O O O O O
+at O O O O O O
+least O O O O O O
+7 O O O O O O
+years O O O O O O
+PUNCT O O O O O O
+thats O O O O O O
+an O O O O O O
+amazing O O O O O O
+life U-POS O O O O O
+spanned O O O O O O
+an O O O O O O
+electronic O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+am O O O O O O
+very O O O O O O
+pleased O O O O O O
+with O O O O O O
+my O O O O O O
+purchase O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+ca O O O O O O
+n't O O O O O O
+say O O O O O O
+enough O O O O O O
+of O O O O O O
+how O O O O O O
+satisfied O O O O O O
+i O O O O O O
+am O O O O O O
+with O O O O O O
+their O O O O O O
+product B-POS O O O O O
+and I-POS O O O O O
+help I-POS O O O O O
+aftermarket L-POS O O O O O
+PUNCT O O O O O O
+
+-called O O O O O O
+machouse O O O O O O
+amsterdam O O O O O O
+to O O O O O O
+ask O O O O O O
+for O O O O O O
+a O O O O O O
+temporary O O O O O O
+replacement O O O O O O
+PUNCT O O O O O O
+no O O O O O O
+answer O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+bought O O O O O O
+it O O O O O O
+during O O O O O O
+the O O O O O O
+recent O O O O O O
+comex O O O O O O
+it O O O O O O
+show O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+have O O O O O O
+had O O O O O O
+nothing O O O O O O
+but O O O O O O
+problems O O O O O O
+since O O O O O O
+the O O O O O O
+day O O O O O O
+i O O O O O O
+took O O O O O O
+it O O O O O O
+out O O O O O O
+of O O O O O O
+the O O O O O O
+box O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+image U-POS U-POS U-POS U-POS U-POS U-POS
+is O O O O O O
+great O O O O O O
+PUNCT O O O O O O
+and O O O O O O
+the O O O O O O
+soud U-POS U-POS U-POS U-POS U-POS U-POS
+is O O O O O O
+excelent O O O O O O
+PUNCT O O O O O O
+
+where O O O O O O
+you O O O O O O
+click O O O O O O
+and O O O O O O
+hold O O O O O O
+and O O O O O O
+drag O O O O O O
+it O O O O O O
+picture O O O O O O
+PUNCT O O O O O O
+link O O O O O O
+PUNCT O O O O O O
+etc O O O O O O
+to O O O O O O
+where O O O O O O
+you O O O O O O
+want O O O O O O
+it O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+macbook O O O O O O
+rarely O O O O O O
+requires O O O O O O
+a O O O O O O
+hard O O O O O O
+reboot O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+love O O O O O O
+it O O O O O O
+PUNCT O O O O O O
+
+now O O O O O O
+for O O O O O O
+the O O O O O O
+hardware U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+problems O O O O O O
+PUNCT O O O O O O
+
+it O O O O O O
+was O O O O O O
+an O O O O O O
+all O O O O O O
+around O O O O O O
+waste O O O O O O
+of O O O O O O
+money O O O O O O
+for O O O O O O
+me O O O O O O
+PUNCT O O O O O O
+
+also O O O O O O
+it O O O O O O
+is O O O O O O
+light O O O O O O
+weight O O O U-POS O U-POS
+compared O O O O O O
+to O O O O O O
+others O O O O O O
+PUNCT O O O O O O
+
+waiting O O O O O O
+for O O O O O O
+the O O O O O O
+i7 U-POS U-POS U-POS O O U-POS
+was O O O O O O
+well O O O O O O
+worth O O O O O O
+it O O O O O O
+PUNCT O O O O O O
+great O O O O O O
+value O U-POS U-POS U-POS U-POS U-POS
+for O O O O O O
+the O O O O O O
+price U-POS U-POS U-POS U-POS U-POS U-POS
+PUNCT O O O O O O
+
+i O O O O O O
+asked O O O O O O
+how O O O O O O
+they O O O O O O
+would O O O O O O
+determine O O O O O O
+that O O O O O O
+since O O O O O O
+there O O O O O O
+are O O O O O O
+no O O O O O O
+scratches O O O O O O
+PUNCT O O O O O O
+dents O O O O O O
+or O O O O O O
+other O O O O O O
+signs O O O O O O
+of O O O O O O
+damage O O O O O O
+and O O O O O O
+was O O O O O O
+told O O O O O O
+that O O O O O O
+was O O O O O O
+the O O O O O O
+only O O O O O O
+way O O O O O O
+this O O O O O O
+type O O O O O O
+of O O O O O O
+damage O O O O O O
+could O O O O O O
+happen O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+macbook O O O O O O
+arrived O O O O O O
+in O O O O O O
+a O O O O O O
+nice O O O O O O
+twin B-POS B-POS B-POS B-POS B-POS B-POS
+packing L-POS L-POS L-POS L-POS L-POS L-POS
+and O O O O O O
+sealed O O O O O O
+in O O O O O O
+the O O O O O O
+box O O O O O O
+PUNCT O O O O O O
+all O O O O O O
+the O O O O O O
+functions U-POS U-POS U-POS U-POS U-POS U-POS
+works O O O O O O
+great O O O O O O
+PUNCT O O O O O O
+
+reason O O O O O O
+why O O O O O O
+PUNCT O O O O O O
+it O O O O O O
+'s O O O O O O
+because O O O O O O
+when O O O O O O
+you O O O O O O
+buy O O O O O O
+it O O O O O O
+PUNCT O O O O O O
+you O O O O O O
+know O O O O O O
+first O O O O O O
+thing O O O O O O
+that O O O O O O
+you O O O O O O
+will O O O O O O
+not O O O O O O
+lose O O O O O O
+any O O O O O O
+value U-POS O O O O O
+for O O O O O O
+that O O O O O O
+laptop O O O O O O
+PUNCT O O O O O O
+the O O O O O O
+price U-POS U-NEG U-NEG U-NEG U-NEG U-POS
+will O O O O O O
+stay O O O O O O
+the O O O O O O
+same O O O O O O
+for O O O O O O
+the O O O O O O
+next O O O O O O
+year O O O O O O
+PUNCT O O O O O O
+and O O O O O O
+even O O O O O O
+if O O O O O O
+apple O O O O O O
+does O O O O O O
+decides O O O O O O
+to O O O O O O
+change O O O O O O
+mode O O O O O O
+PUNCT O O O O O O
+your O O O O O O
+laptop O O O O O O
+value U-POS U-NEG O U-NEG U-NEG U-POS
+will O O O O O O
+only O O O O O O
+drop O O O O O O
+10-20 O O O O O O
+PUNCT O O O O O O
+PUNCT O O O O O O
+unlike O O O O O O
+pc O O O O O O
+laptops O O O O O O
+which O O O O O O
+drop O O O O O O
+more O O O O O O
+than O O O O O O
+80 O O O O O O
+PUNCT O O O O O O
+PUNCT O O O O O O
+
+so O O O O O O
+PUNCT O O O O O O
+buyers O O O O O O
+beware O O O O O O
+PUNCT O O O O O O
+
+do O O O O O O
+i O O O O O O
+like O O O O O O
+the O O O O O O
+computer O O O O O O
+PUNCT O O O O O O
+well O O O O O O
+PUNCT O O O O O O
+other O O O O O O
+than O O O O O O
+not O O O O O O
+getting O O O O O O
+viruses O O O O O O
+PUNCT O O O O O O
+i O O O O O O
+guess O O O O O O
+it O O O O O O
+is O O O O O O
+ok O O O O O O
+PUNCT O O O O O O
+
+its O O O O O O
+a O O O O O O
+dog O O O O O O
+plain O O O O O O
+and O O O O O O
+simple O O O O O O
+PUNCT O O O O O O
+
+my O O O O O O
+hp O O O O O O
+is O O O O O O
+very O O O O O O
+heavy O O O O O O
+PUNCT O O O O O O
+
+best O O O O O O
+buy O O O O O O
+was O O O O O O
+great O O O O O O
+as O O O O O O
+always O O O O O O
+and O O O O O O
+accepted O O O O O O
+the O O O O O O
+return O O O O O O
+and O O O O O O
+gave O O O O O O
+me O O O O O O
+another O O O O O O
+model O O O O O O
+1764 O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+can O O O O O O
+actually O O O O O O
+get O O O O O O
+work O O O O O O
+done O O O O O O
+with O O O O O O
+this O O O O O O
+mac O O O O O O
+PUNCT O O O O O O
+and O O O O O O
+not O O O O O O
+fight O O O O O O
+with O O O O O O
+it O O O O O O
+like O O O O O O
+my O O O O O O
+tired O O O O O O
+old O O O O O O
+pc O O O O O O
+laptop O O O O O O
+PUNCT O O O O O O
+
+and O O O O O O
+i O O O O O O
+'m O O O O O O
+still O O O O O O
+paying O O O O O O
+the O O O O O O
+bloody O O O O O O
+financing O O O O O O
+PUNCT O O O O O O
+for O O O O O O
+a O O O O O O
+product O O O O O O
+which O O O O O O
+did O O O O O O
+n't O O O O O O
+last O O O O O O
+me O O O O O O
+at O O O O O O
+least O O O O O O
+three O O O O O O
+years O O O O O O
+PUNCT O O O O O O
+
+games U-NEG U-NEG O U-NEU U-NEG U-NEG
+being O O O O O O
+the O O O O O O
+main O O O O O O
+issue O O O O O O
+PUNCT O O O O O O
+
+while O O O O O O
+the O O O O O O
+computer O O O O O O
+seems O O O O O O
+to O O O O O O
+be O O O O O O
+set O O O O O O
+up O O O O O O
+in O O O O O O
+a O O O O O O
+common O O O O O O
+sense O O O O O O
+way O O O O O O
+rather O O O O O O
+than O O O O O O
+in O O O O O O
+geek-speak O O O O O O
+PUNCT O O O O O O
+there O O O O O O
+are O O O O O O
+certain O O O O O O
+quirks O O O O O O
+that O O O O O O
+can O O O O O O
+drive O O O O O O
+you O O O O O O
+crazy O O O O O O
+trying O O O O O O
+to O O O O O O
+deal O O O O O O
+with O O O O O O
+the O O O O O O
+pc O O O O O O
+world O O O O O O
+PUNCT O O O O O O
+
+thank O O O O O O
+god O O O O O O
+for O O O O O O
+ctrl O B-POS O O O O
+zbottom O I-POS O O O O
+line O L-POS O O O O
+PUNCT O O O O O O
+i O O O O O O
+'ve O O O O O O
+been O O O O O O
+using O O O O O O
+laptops O O O O O O
+since O O O O O O
+the O O O O O O
+mid O O O O O O
+90s O O O O O O
+and O O O O O O
+probably O O O O O O
+the O O O O O O
+majority O O O O O O
+of O O O O O O
+brands O O O O O O
+out O O O O O O
+there O O O O O O
+PUNCT O O O O O O
+
+even O O O O O O
+with O O O O O O
+virus B-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
+protection L-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
+PUNCT O O O O O O
+it O O O O O O
+always O O O O O O
+turned O O O O O O
+off O O O O O O
+when O O O O O O
+updates U-NEG O O O O O
+were O O O O O O
+needed O O O O O O
+and O O O O O O
+installed O O O O O O
+PUNCT O O O O O O
+
+even O O O O O O
+so O O O O O O
+PUNCT O O O O O O
+i O O O O O O
+like O O O O O O
+playing O O B-POS O O O
+online O O I-POS O O O
+games U-NEU U-NEU L-POS O O O
+PUNCT O O O O O O
+so O O O O O O
+it O O O O O O
+was O O O O O O
+wonderful O O O O O O
+that O O O O O O
+there O O O O O O
+is O O O O O O
+a O O O O O O
+feature U-POS U-POS U-POS U-POS U-POS U-POS
+where O O O O O O
+i O O O O O O
+can O O O O O O
+dualboot O B-POS B-POS O O O
+windows U-POS L-POS L-POS U-POS U-NEU U-POS
+PUNCT O O O O O O
+
+that O O O O O O
+'s O O O O O O
+the O O O O O O
+downside O O O O O O
+for O O O O O O
+me O O O O O O
+PUNCT O O O O O O
+
+it O O O O O O
+has O O O O O O
+good O O O O O O
+speed U-POS U-POS U-POS U-POS U-POS U-POS
+and O O O O O O
+plenty O O O O O O
+of O O O O O O
+hard B-POS B-POS B-POS B-POS B-POS B-POS
+drive I-POS I-POS I-POS I-POS I-POS I-POS
+space L-POS L-POS L-POS L-POS L-POS L-POS
+PUNCT O O O O O O
+
+it O O O O O O
+'s O O O O O O
+so O O O O O O
+useable O O O O O O
+and O O O O O O
+responsive O O O O O O
+PUNCT O O O O O O
+
+it O O O O O O
+has O O O O O O
+come O O O O O O
+into O O O O O O
+good O O O O O O
+use U-POS O O O O O
+for O O O O O O
+my O O O O O O
+finances O O O O O O
+PUNCT O O O O O O
+scheduling O O O O O O
+PUNCT O O O O O O
+my O O O O O O
+parents O O O O O O
+business O O O O O O
+expenses O O O O O O
+PUNCT O O O O O O
+and O O O O O O
+it O O O O O O
+is O O O O O O
+definitely O O O O O O
+amazing O O O O O O
+for O O O O O O
+gaming U-POS U-POS U-POS U-POS U-POS U-POS
+PUNCT O O O O O O
+
+it O O O O O O
+was O O O O O O
+weird O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+visited O O O O O O
+the O O O O O O
+apple O O O O O O
+store O O O O O O
+and O O O O O O
+was O O O O O O
+impressed O O O O O O
+with O O O O O O
+the O O O O O O
+17-inch O O O O O O
+macbook O O O O O O
+pro O O O O O O
+PUNCT O O O O O O
+
+looking O O O O O O
+to O O O O O O
+take O O O O O O
+my O O O O O O
+video O O O O O O
+and O O O O O O
+photo O O O O O O
+editing O O O O O O
+to O O O O O O
+the O O O O O O
+next O O O O O O
+level O O O O O O
+PUNCT O O O O O O
+i O O O O O O
+decided O O O O O O
+to O O O O O O
+purchase O O O O O O
+the O O O O O O
+mbp O O O O O O
+15in O O O O O O
+intel O O B-NEU O B-POS B-POS
+core O O I-NEU O I-POS I-POS
+i5 O O L-NEU O L-POS L-POS
+after O O O O O O
+reading O O O O O O
+consumer O O O O O O
+reviews O O O O O O
+as O O O O O O
+well O O O O O O
+as O O O O O O
+professional O O O O O O
+reviews O O O O O O
+of O O O O O O
+this O O O O O O
+laptop O O O O O O
+PUNCT O O O O O O
+
+it O O O O O O
+doesnt O O O O O O
+work U-NEG O O O O U-NEG
+worth O O O O O O
+a O O O O O O
+damn O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+will O O O O O O
+be O O O O O O
+returning O O O O O O
+it O O O O O O
+and O O O O O O
+switching O O O O O O
+brands O O O O O O
+when O O O O O O
+i O O O O O O
+get O O O O O O
+to O O O O O O
+best O O O O O O
+buy O O O O O O
+PUNCT O O O O O O
+
+product B-NEG O B-NEG B-NEG B-NEG B-NEG
+support L-NEG U-NEG L-NEG L-NEG L-NEG L-NEG
+very O O O O O O
+poor O O O O O O
+as O O O O O O
+each O O O O O O
+phone O O O O O O
+call O O O O O O
+costs O O O O O O
+me O O O O O O
+long O O O O O O
+distan O O O O O O
+
+frustrated O O O O O O
+i O O O O O O
+hung O O O O O O
+up O O O O O O
+and O O O O O O
+tried O O O O O O
+to O O O O O O
+call O O O O O O
+back O O O O O O
+3 O O O O O O
+days O O O O O O
+later O O O O O O
+to O O O O O O
+be O O O O O O
+told O O O O O O
+that O O O O O O
+it O O O O O O
+takes O O O O O O
+2-3 O O O O O O
+days O O O O O O
+for O O O O O O
+turnaround O O O B-NEG B-NEG B-NEG
+time O O O L-NEG L-NEG L-NEG
+PUNCT O O O O O O
+
+may O O O O O O
+be O O O O O O
+better O O O O O O
+for O O O O O O
+the O O O O O O
+occasional O O O O O O
+web O O B-NEU O O O
+surfer O O L-NEU O O O
+PUNCT O O O O O O
+
+not O O O O O O
+super O O O O O O
+fancy O O O O O O
+PUNCT O O O O O O
+but O O O O O O
+not O O O O O O
+super O O O O O O
+expensive O O O O O O
+either O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+lcd B-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
+screen L-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
+stopped O O O O O O
+working O O O O O O
+on O O O O O O
+mine O O O O O O
+after O O O O O O
+10 O O O O O O
+months O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+'m O O O O O O
+going O O O O O O
+back O O O O O O
+to O O O O O O
+pc O O O O O O
+PUNCT O O O O O O
+
+great O O O O O O
+PUNCT O O O O O O
+quick O O O O O O
+laptop O O O O O O
+for O O O O O O
+the O O O O O O
+money O O O O O O
+PUNCT O O O O O O
+
+with O O O O O O
+the O O O O O O
+switch U-NEG U-NEG U-NEG O O O
+being O O O O O O
+at O O O O O O
+the O O O O O O
+top O O O O O O
+you O O O O O O
+need O O O O O O
+to O O O O O O
+memorize O O O O O O
+the O O O O O O
+key O B-NEG O O O O
+combination O L-NEG O O O O
+rather O O O O O O
+than O O O O O O
+just O O O O O O
+flicking O O O O O O
+a O O O O O O
+switch U-NEG O O O O O
+PUNCT O O O O O O
+
+until O O O O O O
+i O O O O O O
+bought O O O O O O
+the O O O O O O
+dell O O O O O O
+PUNCT O O O O O O
+i O O O O O O
+thought O O O O O O
+you O O O O O O
+just O O O O O O
+looked O O O O O O
+for O O O O O O
+what O O O O O O
+you O O O O O O
+wanted O O O O O O
+size U-NEU U-POS U-POS U-POS U-NEG U-POS
+PUNCT O O O O O O
+software U-NEU U-NEU U-POS U-NEU U-POS U-POS
+PUNCT O O O O O O
+options O O O O O O
+PUNCT O O O O O O
+hardware U-NEU U-NEU U-POS U-NEU U-POS U-NEU
+and O O O O O O
+purchase O O O O O O
+the O O O O O O
+best O O O O O O
+deal O O O O O O
+you O O O O O O
+could O O O O O O
+find O O O O O O
+PUNCT O O O O O O
+
+it O O O O O O
+is O O O O O O
+easy O O O O O O
+to O O O O O O
+go O O O O O O
+from O O O O O O
+one O O O O O O
+keyboard U-NEU U-NEU U-NEU U-NEU U-NEU U-NEU
+to O O O O O O
+another O O O O O O
+PUNCT O O O O O O
+
+has O O O O O O
+a O O O O O O
+5-6 O O O O O O
+hour O O O O O O
+battery B-NEU B-POS B-POS B-POS B-POS B-POS
+life L-NEU L-POS L-POS L-POS L-POS L-POS
+PUNCT O O O O O O
+
+first O O O O O O
+it O O O O O O
+burned O O O O O O
+or O O O O O O
+fused O O O O O O
+the O O O O O O
+power B-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
+adapter I-NEG I-NEG I-NEG I-NEG I-NEG I-NEG
+plug L-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
+PUNCT O O O O O O
+
+toshiba O O O O O O
+is O O O O O O
+aware O O O O O O
+of O O O O O O
+the O O O O O O
+issue O O O O O O
+but O O O O O O
+unless O O O O O O
+the O O O O O O
+extended B-NEG B-NEG B-NEG B-NEG B-NEG B-NEU
+warrenty L-NEG L-NEG L-NEG L-NEG L-NEG L-NEU
+is O O O O O O
+bought O O O O O O
+toshiba O O O O O O
+will O O O O O O
+do O O O O O O
+nothing O O O O O O
+about O O O O O O
+it O O O O O O
+PUNCT O O O O O O
+
+navigation U-POS U-POS U-POS U-POS U-POS U-POS
+through O O O O O O
+the O O O O O O
+computer O O O O O O
+is O O O O O O
+far O O O O O O
+superior O O O O O O
+compared O O O O O O
+to O O O O O O
+windows B-NEG B-POS B-NEG B-NEG B-NEG B-NEG
+operating I-NEG I-POS I-NEG I-NEG I-NEG I-NEG
+systems L-NEG L-POS L-NEG L-NEG L-NEG L-NEG
+PUNCT O O O O O O
+as O O O O O O
+well O O O O O O
+PUNCT O O O O O O
+
+once O O O O O O
+you O O O O O O
+go O O O O O O
+mac O O O O O O
+PUNCT O O O O O O
+you O O O O O O
+ca O O O O O O
+n't O O O O O O
+go O O O O O O
+back O O O O O O
+PUNCT O O O O O O
+
+fan U-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
+noise O L-NEG L-NEG L-NEG L-NEG L-NEG
+PUNCT O O O O O O
+the O O O O O O
+fan U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+made O O O O O O
+a O O O O O O
+constant O O O O O O
+hissing O O O O O O
+noise O O O O O O
+in O O O O O O
+the O O O O O O
+background O O O O O O
+PUNCT O O O O O O
+
+so O O O O O O
+needless O O O O O O
+to O O O O O O
+day O O O O O O
+PUNCT O O O O O O
+i O O O O O O
+'m O O O O O O
+not O O O O O O
+happy O O O O O O
+PUNCT O O O O O O
+
+plain O O O O O O
+and O O O O O O
+simple O O O O O O
+PUNCT O O O O O O
+itlaptop O O O O O O
+runs U-POS U-POS U-POS U-POS U-POS U-POS
+great O O O O O O
+and O O O O O O
+loads U-POS U-POS U-POS U-POS U-POS U-POS
+fast O O O O O O
+PUNCT O O O O O O
+
+of O O O O O O
+course O O O O O O
+my O O O O O O
+warranty U-NEU U-NEG U-NEG U-NEG U-NEG U-NEG
+runs O O O O O O
+out O O O O O O
+next O O O O O O
+month O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+capabilities O U-POS U-POS U-POS U-POS U-POS
+using O O O O O O
+that O O O O O O
+program U-POS U-POS U-POS U-POS U-POS U-POS
+alone O O O O O O
+made O O O O O O
+me O O O O O O
+want O O O O O O
+a O O O O O O
+mac O O O O O O
+PUNCT O O O O O O
+
+if O O O O O O
+you O O O O O O
+ever O O O O O O
+see O O O O O O
+the O O O O O O
+spinning B-NEG O O O O O
+beachball L-NEG O O O O O
+come O O O O O O
+up O O O O O O
+when O O O O O O
+you O O O O O O
+think O O O O O O
+it O O O O O O
+should O O O O O O
+n't O O O O O O
+PUNCT O O O O O O
+check O O O O O O
+the O O O O O O
+activity O B-NEG B-NEG B-NEG B-NEG B-NEG
+monitor O I-NEG I-NEG I-NEG I-NEG I-NEG
+app O L-NEG L-NEG L-NEG L-NEG L-NEG
+to O O O O O O
+see O O O O O O
+if O O O O O O
+the O O O O O O
+disk B-NEU B-NEG B-NEG B-NEG B-NEG B-NEG
+throughput L-NEU L-NEG L-NEG L-NEG L-NEG L-NEG
+has O O O O O O
+temporarily O O O O O O
+dropped O O O O O O
+to O O O O O O
+zero O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+have O O O O O O
+found O O O O O O
+also O O O O O O
+PUNCT O O O O O O
+it O O O O O O
+is O O O O O O
+very O O O O O O
+easy O O O O O O
+to O O O O O O
+be O O O O O O
+able O O O O O O
+to O O O O O O
+access O O O O O O
+wireless B-POS B-POS B-POS O O B-POS
+internet I-POS I-POS I-POS O B-POS I-POS
+access L-POS L-POS L-POS O L-POS L-POS
+PUNCT O O O O O O
+
+that O O O O O O
+was O O O O O O
+a O O O O O O
+big O O O O O O
+mistake O O O O O O
+PUNCT O O O O O O
+
+small O O O O O O
+enough O O O O O O
+to O O O O O O
+use O O O O O O
+on O O O O O O
+a O O O O O O
+long O O O O O O
+flight O O O O O O
+PUNCT O O O O O O
+light O O O O O O
+enough O O O O O O
+to O O O O O O
+carry U-POS O O O O O
+through O O O O O O
+airports O O O O O O
+and O O O O O O
+powerful O O O O O O
+enough O O O O O O
+to O O O O O O
+replace O O O O O O
+my O O O O O O
+desktop O O O O O O
+while O O O O O O
+on O O O O O O
+long O O O O O O
+business O O O O O O
+trips O O O O O O
+PUNCT O O O O O O
+
+if O O O O O O
+you O O O O O O
+are O O O O O O
+looking O O O O O O
+for O O O O O O
+a O O O O O O
+netbook O O O O O O
+pc O O O O O O
+do O O O O O O
+not O O O O O O
+buy O O O O O O
+from O O O O O O
+asus O O O O O O
+PUNCT O O O O O O
+PUNCT O O O O O O
+PUNCT O O O O O O
+
+we O O O O O O
+have O O O O O O
+n't O O O O O O
+had O O O O O O
+any O O O O O O
+problems O O O O O O
+with O O O O O O
+it O O O O O O
+at O O O O O O
+all O O O O O O
+PUNCT O O O O O O
+
+it O O O O O O
+meets O O O O O O
+all O O O O O O
+my O O O O O O
+needs O O O O O O
+for O O O O O O
+work O O O O O O
+and O O O O O O
+pleasure O O O O O O
+while O O O O O O
+traveling O O O O O O
+PUNCT O O O O O O
+
+he O O O O O O
+said O O O O O O
+quite O O O O O O
+a O O O O O O
+number O O O O O O
+of O O O O O O
+people O O O O O O
+had O O O O O O
+encountered O O O O O O
+this O O O O O O
+problem O O O O O O
+and O O O O O O
+said O O O O O O
+it O O O O O O
+is O O O O O O
+a O O O O O O
+common O O O O O O
+issue O O O O O O
+PUNCT O O O O O O
+
+much O O O O O O
+of O O O O O O
+which O O O O O O
+hp O O O O O O
+ended O O O O O O
+up O O O O O O
+paying O O O O O O
+for O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+pictures U-POS O O U-POS O O
+are O O O O O O
+clear O O O O O O
+as O O O O O O
+can O O O O O O
+be O O O O O O
+PUNCT O O O O O O
+
+you O O O O O O
+have O O O O O O
+to O O O O O O
+toss O O O O O O
+out O O O O O O
+the O O O O O O
+wifi B-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
+card L-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
+and O O O O O O
+replace O O O O O O
+it O O O O O O
+just O O O O O O
+to O O O O O O
+have O O O O O O
+any O O O O O O
+sort O O O O O O
+of O O O O O O
+network B-NEG B-NEG B-NEG O B-NEG B-NEG
+capability L-NEG L-NEG L-NEG O L-NEG L-NEG
+PUNCT O O O O O O
+
+it O O O O O O
+'s O O O O O O
+perfect O O O O O O
+for O O O O O O
+everything O O O O O O
+and O O O O O O
+runs U-POS U-POS U-POS U-POS U-POS U-POS
+faster O O O O O O
+than O O O O O O
+an O O O O O O
+average O O O O O O
+pc O O O O O O
+PUNCT O O O O O O
+
+then O O O O O O
+after O O O O O O
+paying O O O O O O
+for O O O O O O
+it O O O O O O
+to O O O O O O
+be O O O O O O
+examined O O O O O O
+i O O O O O O
+was O O O O O O
+told O O O O O O
+it O O O O O O
+was O O O O O O
+same O O O O O O
+problem O O O O O O
+cited O O O O O O
+on O O O O O O
+website O O O O O O
+but O O O O O O
+i O O O O O O
+'d O O O O O O
+have O O O O O O
+to O O O O O O
+pay O O O O O O
+anyways O O O O O O
+since O O O O O O
+it O O O O O O
+was O O O O O O
+past O O O O O O
+warrenty U-NEG U-NEG U-NEU U-NEG U-NEG U-NEG
+PUNCT O O O O O O
+
+it O O O O O O
+'s O O O O O O
+so O O O O O O
+bad O O O O O O
+that O O O O O O
+i O O O O O O
+'m O O O O O O
+thinking O O O O O O
+i O O O O O O
+only O O O O O O
+got O O O O O O
+half O O O O O O
+a O O O O O O
+battery U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+or O O O O O O
+something O O O O O O
+PUNCT O O O O O O
+
+it O O O O O O
+is O O O O O O
+just O O O O O O
+slow O O O O O O
+slow O O O O O O
+slow O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+wiped O O O O O O
+nearly O O O O O O
+everything O O O O O O
+off O O O O O O
+of O O O O O O
+it O O O O O O
+PUNCT O O O O O O
+installed O O O O O O
+openoffice U-NEU U-POS U-POS U-POS U-NEU U-POS
+and O O O O O O
+firefox U-NEU U-POS U-POS U-POS U-NEU U-POS
+PUNCT O O O O O O
+and O O O O O O
+i O O O O O O
+am O O O O O O
+operating O O O O U-POS U-POS
+an O O O O O O
+incredibly O O O O O O
+efficient O O O O O O
+and O O O O O O
+useful O O O O O O
+machine O O O O O O
+for O O O O O O
+a O O O O O O
+great O O O O O O
+price U-POS U-POS U-POS U-POS U-POS U-POS
+PUNCT O O O O O O
+
+overall O O O O O O
+i O O O O O O
+feel O O O O O O
+this O O O O O O
+netbook O O O O O O
+was O O O O O O
+poor O O O O O O
+quality U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+PUNCT O O O O O O
+had O O O O O O
+poor O O O O O O
+performance U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+PUNCT O O O O O O
+although O O O O O O
+it O O O O O O
+did O O O O O O
+have O O O O O O
+great O O O O O O
+battery B-POS B-POS B-POS B-NEG B-POS B-POS
+life L-POS L-POS L-POS L-NEG L-POS L-POS
+when O O O O O O
+it O O O O O O
+did O O O O O O
+work O O O O O O
+PUNCT O O O O O O
+
+my O O O O O O
+only O O O O O O
+problem O O O O O O
+is O O O O O O
+i O O O O O O
+can O O O O O O
+not O O O O O O
+reg O O O O O O
+the O O O O O O
+product B-NEG O O O B-NEG O
+key L-NEG O O O L-NEG O
+PUNCT O O O O O O
+
+sure O O O O O O
+it O O O O O O
+has O O O O O O
+the O O O O O O
+one B-POS O O O O B-POS
+touch I-POS B-POS B-POS B-POS B-POS I-POS
+keys L-POS L-POS L-POS L-POS L-POS L-POS
+but O O O O O O
+that O O O O O O
+was O O O O O O
+the O O O O O O
+best O O O O O O
+feature O U-POS O U-POS U-POS U-POS
+of O O O O O O
+the O O O O O O
+computer O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+can O O O O O O
+do O O O O O O
+pretty O O O O O O
+much O O O O O O
+75 O O O O O O
+PUNCT O O O O O O
+of O O O O O O
+what O O O O O O
+i O O O O O O
+do O O O O O O
+on O O O O O O
+my O O O O O O
+desktop O O O O O O
+on O O O O O O
+my O O O O O O
+kitchen O O O O O O
+table O O O O O O
+PUNCT O O O O O O
+
+love O O O O O O
+the O O O O O O
+stability U-POS U-POS U-POS U-POS U-POS U-POS
+of O O O O O O
+the O O O O O O
+mac B-POS B-POS B-POS B-POS B-POS B-POS
+software L-POS L-POS L-POS L-POS L-POS L-POS
+and O O O O O O
+operating B-POS B-POS B-POS B-POS B-POS B-POS
+system L-POS L-POS L-POS L-POS L-POS L-POS
+PUNCT O O O O O O
+
+i O O O O O O
+left O O O O O O
+the O O O O O O
+place O O O O O O
+angrily O O O O O O
+PUNCT O O O O O O
+
+it O O O O O O
+is O O O O O O
+so O O O O O O
+great O O O O O O
+PUNCT O O O O O O
+i O O O O O O
+can O O O O O O
+hardly O O O O O O
+ever O O O O O O
+take O O O O O O
+my O O O O O O
+hands O O O O O O
+off O O O O O O
+it O O O O O O
+PUNCT O O O O O O
+
+my O O O O O O
+real O O O O O O
+problem O O O O O O
+with O O O O O O
+it O O O O O O
+PUNCT O O O O O O
+the O O O O O O
+statement O O O O O O
+of O O O O O O
+7 O O O O O O
+hour O O O O O O
+battery B-NEG B-POS B-NEG B-NEG B-NEG B-NEG
+life L-NEG L-POS L-NEG L-NEG L-NEG L-NEG
+is O O O O O O
+not O O O O O O
+just O O O O O O
+mere O O O O O O
+exaggeration O O O O O O
+PUNCT O O O O O O
+it O O O O O O
+'s O O O O O O
+a O O O O O O
+lie O O O O O O
+PUNCT O O O O O O
+
+she O O O O O O
+said O O O O O O
+wal O O O O O O
+mart O O O O O O
+rants O O O O O O
+and O O O O O O
+raves O O O O O O
+abouy O O O O O O
+carring O O O O O O
+dell O O O O O O
+because O O O O O O
+it O O O O O O
+'s O O O O O O
+a O O O O O O
+big O O O O O O
+name O O O O O O
+but O O O O O O
+they O O O O O O
+are O O O O O O
+a O O O O O O
+piece O O O O O O
+of O O O O O O
+garbage O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+use O O O O O O
+iphoto U-POS U-POS U-POS U-POS U-POS U-POS
+all O O O O O O
+the O O O O O O
+time O O O O O O
+PUNCT O O O O O O
+which O O O O O O
+is O O O O O O
+a O O O O O O
+great O O O O O O
+program U-POS U-POS U-POS O U-POS U-POS
+for O O O O O O
+anyone O O O O O O
+who O O O O O O
+is O O O O O O
+into O O O O O O
+photography O O O O O O
+PUNCT O O O O O O
+amateurs O O O O O O
+and O O O O O O
+experts O O O O O O
+alike O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+hate O O O O O O
+it O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+thought O O O O O O
+the O O O O O O
+price U-POS U-POS U-POS U-POS U-POS U-POS
+was O O O O O O
+great O O O O O O
+for O O O O O O
+the O O O O O O
+specs U-POS U-POS U-POS U-POS U-NEG U-POS
+PUNCT O O O O O O
+
+just O O O O O O
+for O O O O O O
+a O O O O O O
+stupid O O O O O O
+cd O O O O O O
+PUNCT O O O O O O
+
+this O O O O O O
+just O O O O O O
+keeps O O O O O O
+having O O O O O O
+it O O O O O O
+'s O O O O O O
+hard B-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
+drive L-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
+replaced O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+do O O O O O O
+not O O O O O O
+experience O O O O O O
+a O O O O O O
+lot O O O O O O
+of O O O O O O
+heat O O O O O O
+coming O O O O O O
+out O O O O O O
+of O O O O O O
+it O O O O O O
+PUNCT O O O O O O
+however O O O O O O
+i O O O O O O
+would O O O O O O
+highly O O O O O O
+suggest O O O O O O
+purchasing O O O O O O
+a O O O O O O
+stand U-NEU U-NEU U-NEG U-NEU U-NEG U-POS
+however O O O O O O
+PUNCT O O O O O O
+due O O O O O O
+to O O O O O O
+the O O O O O O
+nature O O O O O O
+of O O O O O O
+the O O O O O O
+design U-NEG U-POS U-NEG U-NEG U-NEG U-POS
+of O O O O O O
+the O O O O O O
+macbook O O O O O O
+as O O O O O O
+it O O O O O O
+is O O O O O O
+one O O O O O O
+very O O O O O O
+large O O O O O O
+heat B-NEG O B-NEU O O O
+sink L-NEG O L-NEU O O O
+PUNCT O O O O O O
+
+there O O O O O O
+is O O O O O O
+no O O O O O O
+way O O O O O O
+i O O O O O O
+will O O O O O O
+buy O O O O O O
+a O O O O O O
+lg O O O O O O
+product O O O O O O
+in O O O O O O
+the O O O O O O
+future O O O O O O
+PUNCT O O O O O O
+
+maybe O O O O O O
+this O O O O O O
+is O O O O O O
+virus O O O O O O
+related O O O O O O
+PUNCT O O O O O O
+maybe O O O O O O
+not O O O O O O
+PUNCT O O O O O O
+but O O O O O O
+the O O O O O O
+computer O O O O O O
+has O O O O O O
+locked O O O O O O
+up O O O O O O
+many O O O O O O
+times O O O O O O
+PUNCT O O O O O O
+and O O O O O O
+on O O O O O O
+two O O O O O O
+occasions O O O O O O
+PUNCT O O O O O O
+the O O O O O O
+screen U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+has O O O O O O
+simply O O O O O O
+gone O O O O O O
+black O O O O O O
+PUNCT O O O O O O
+
+using O O O O O O
+this O O O O O O
+machine O O O O O O
+is O O O O O O
+like O O O O O O
+a O O O O O O
+mild O O O O O O
+form O O O O O O
+of O O O O O O
+torture O O O O O O
+PUNCT O O O O O O
+
+whenever O O O O O O
+tried O O O O O O
+to O O O O O O
+turn O O O O O O
+it O O O O O O
+on O O O O O O
+PUNCT O O O O O O
+it O O O O O O
+would O O O O O O
+restart O O O O O O
+as O O O O O O
+soon O O O O O O
+as O O O O O O
+the O O O O O O
+bios U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+launched O O O O O O
+windows U-NEG U-NEU U-NEG U-NEG U-NEU U-NEG
+or O O O O O O
+winblows O U-NEG U-NEG U-NEG O O
+PUNCT O O O O O O
+as O O O O O O
+i O O O O O O
+like O O O O O O
+ot O O O O O O
+call O O O O O O
+it O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+run O O O O O O
+windows U-NEU U-POS U-NEU U-NEU U-NEU U-POS
+via O O O O O O
+bootcamp U-NEU U-NEU U-NEU U-NEU U-NEU U-NEU
+for O O O O O O
+the O O O O O O
+couple O O O O O O
+programs U-NEU U-NEU U-NEU U-NEU U-NEU U-NEU
+i O O O O O O
+do O O O O O O
+not O O O O O O
+want O O O O O O
+to O O O O O O
+buy O O O O O O
+a O O O O O O
+mac O O O O O O
+version O O O O O O
+of O O O O O O
+PUNCT O O O O O O
+like O O O O O O
+my O O O O O O
+cad O B-NEU B-NEU O O O
+programs U-NEU L-NEU L-NEU U-NEU U-NEU U-NEU
+PUNCT O O O O O O
+
+i O O O O O O
+love O O O O O O
+this O O O O O O
+laptop O O O O O O
+PUNCT O O O O O O
+and O O O O O O
+use O O O O O O
+it O O O O O O
+everyday O O O O O O
+to O O O O O O
+do O O O O O O
+something O O O O O O
+PUNCT O O O O O O
+and O O O O O O
+never O O O O O O
+lets O O O O O O
+me O O O O O O
+down O O O O O O
+PUNCT O O O O O O
+
+it O O O O O O
+took O O O O O O
+toshiba B-NEG B-NEG B-NEG B-NEU B-NEU B-NEU
+tech I-NEG I-NEG I-NEG I-NEU I-NEU I-NEU
+support L-NEG L-NEG L-NEG L-NEU L-NEU L-NEU
+4 O O O O O O
+calls O O O O O O
+and O O O O O O
+4 O O O O O O
+different O O O O O O
+techs U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+to O O O O O O
+correct O O O O O O
+the O O O O O O
+problem O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+4 O B-POS O B-POS B-POS B-POS
+usb O I-POS B-NEG I-POS I-POS I-POS
+ports O L-POS L-NEG L-POS L-POS L-POS
+are O O O O O O
+nice O O O O O O
+PUNCT O O O O O O
+but O O O O O O
+the O O O O O O
+two O O O O O O
+on O O O O O O
+the O O O O O O
+side O O O O O O
+only O O O O O O
+work O O O O O O
+now O O O O O O
+and O O O O O O
+then O O O O O O
+PUNCT O O O O O O
+
+it O O O O O O
+out O O O O O O
+performs O O O O O O
+any O O O O O O
+other O O O O O O
+laptop O O O O O O
+on O O O O O O
+the O O O O O O
+market O O O O O O
+today O O O O O O
+PUNCT O O O O O O
+
+this O O O O O O
+is O O O O O O
+what O O O O O O
+i O O O O O O
+call O O O O O O
+a O O O O O O
+good O O O O O O
+after B-POS O O O O O
+sales I-POS B-POS B-NEG B-NEG B-NEG B-NEG
+service L-POS L-POS L-NEG L-NEG L-NEG L-NEG
+PUNCT O O O O O O
+
+it O O O O O O
+is O O O O O O
+short O O O O O O
+on O O O O O O
+space U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+PUNCT O O O O O O
+and O O O O O O
+downloads U-NEG O O O O O
+always O O O O O O
+had O O O O O O
+problems O O O O O O
+being O O O O O O
+completed O O O O O O
+PUNCT O O O O O O
+or O O O O O O
+were O O O O O O
+said O O O O O O
+to O O O O O O
+be O O O O O O
+corrupted O O O O O O
+PUNCT O O O O O O
+PUNCT O O O O O O
+
+apple O O O O O O
+is O O O O O O
+always O O O O O O
+great O O O O O O
+about O O O O O O
+the O O O O O O
+aesthetics U-POS U-POS U-POS O U-POS U-POS
+of O O O O O O
+things O O O O O O
+PUNCT O O O O O O
+they O O O O O O
+always O O O O O O
+come O O O O O O
+up O O O O O O
+with O O O O O O
+good O O O O O O
+looking O O O O O O
+products O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+macbook O O O O O O
+pro O O O O O O
+is O O O O O O
+very O O O O O O
+sturdy O O O O O O
+and O O O O O O
+versatile O O O O O O
+PUNCT O O O O O O
+
+oh O O O O O O
+and O O O O O O
+it O O O O O O
+has O O O O O O
+word O O O O O O
+and O O O O O O
+stuff O O O O O O
+but O O O O O O
+its O O O O O O
+a O O O O O O
+trial O O O O O O
+verion O O O O O O
+so O O O O O O
+after O O O O O O
+about O O O O O O
+a O O O O O O
+month O O O O O O
+or O O O O O O
+so O O O O O O
+when O O O O O O
+you O O O O O O
+go O O O O O O
+to O O O O O O
+open O O O O O O
+it O O O O O O
+it O O O O O O
+asks O O O O O O
+for O O O O O O
+a O O O O O O
+product O B-NEG B-NEG O B-NEG O
+key O L-NEG L-NEG O L-NEG O
+which O O O O O O
+did O O O O O O
+n't O O O O O O
+come O O O O O O
+with O O O O O O
+the O O O O O O
+computer O O O O O O
+and O O O O O O
+even O O O O O O
+after O O O O O O
+clicking O O O O O O
+cancel O O O O O O
+it O O O O O O
+wont O O O O O O
+let O O O O O O
+you O O O O O O
+use O O O O O O
+it O O O O O O
+at O O O O O O
+all O O O O O O
+i O O O O O O
+use O O O O O O
+the O O O O O O
+old O O O O O O
+word B-POS B-NEG B-NEG B-NEG B-NEG B-POS
+processer L-POS L-NEG L-NEG L-NEG L-NEG L-POS
+which O O O O O O
+works O O O O O O
+good O O O O O O
+PUNCT O O O O O O
+
+oh O O O O O O
+yea O O O O O O
+PUNCT O O O O O O
+has O O O O O O
+no O O O O O O
+numeric B-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
+pad L-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
+on O O O O O O
+the O O O O O O
+side O O O O O O
+PUNCT O O O O O O
+
+it O O O O O O
+would O O O O O O
+be O O O O O O
+a O O O O O O
+load O O O O O O
+on O O O O O O
+long O O O O O O
+trips O O O O O O
+where O O O O O O
+a O O O O O O
+lot O O O O O O
+of O O O O O O
+walking O O O O O O
+is O O O O O O
+required O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+battery B-POS B-POS B-POS B-POS B-POS B-POS
+life L-POS L-POS L-POS L-POS L-POS L-POS
+is O O O O O O
+amazing O O O O O O
+PUNCT O O O O O O
+the O O O O O O
+versitility U-POS U-POS U-POS U-POS U-POS U-POS
+is O O O O O O
+outstanding O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+hinge B-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
+design L-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
+forced O O O O O O
+you O O O O O O
+to O O O O O O
+place O O O O O O
+various O O O O O O
+connections O O O O O O
+all O O O O O O
+around O O O O O O
+the O O O O O O
+computer O O O O O O
+PUNCT O O O O O O
+left O O O O O O
+right O O O O O O
+and O O O O O O
+front O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+would O O O O O O
+definitely O O O O O O
+not O O O O O O
+go O O O O O O
+back O O O O O O
+to O O O O O O
+using O O O O O O
+a O O O O O O
+pc O O O O O O
+after O O O O O O
+using O O O O O O
+the O O O O O O
+mac O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+screen B-POS B-POS B-POS B-POS B-POS B-POS
+graphics L-POS L-POS L-POS L-POS L-POS L-POS
+and O O O O O O
+clarity U-POS U-POS U-POS U-POS U-POS U-POS
+PUNCT O O O O O O
+and O O O O O O
+sharpness U-POS U-POS U-POS U-POS U-POS U-POS
+are O O O O O O
+great O O O O O O
+PUNCT O O O O O O
+
+strong O O O O O O
+performance U-POS U-POS U-POS U-POS U-POS U-POS
+in O O O O O O
+this O O O O O O
+device O O O O O O
+makes O O O O O O
+use U-POS O O O O O
+of O O O O O O
+fun O O O O O O
+and O O O O O O
+a O O O O O O
+strong O O O O O O
+sense O O O O O O
+of O O O O O O
+the O O O O O O
+era O O O O O O
+of O O O O O O
+speed U-POS U-POS U-POS U-POS U-POS U-POS
+this O O O O O O
+device O O O O O O
+serves O O O O O O
+all O O O O O O
+modern O O O O O O
+requirements O U-POS O O O O
+is O O O O O O
+a O O O O O O
+very O O O O O O
+strong O O O O O O
+game O O O O O O
+and O O O O O O
+is O O O O O O
+very O O O O O O
+use U-POS O O O O O
+for O O O O O O
+designers O O O O O O
+PUNCT O O O O O O
+
+you O O O O O O
+will O O O O O O
+fall O O O O O O
+in O O O O O O
+love O O O O O O
+with O O O O O O
+it O O O O O O
+in O O O O O O
+no O O O O O O
+time O O O O O O
+PUNCT O O O O O O
+
+best O O O O O O
+thing O O O O O O
+is O O O O O O
+i O O O O O O
+can O O O O O O
+use O O O O O O
+existing O O O O O O
+32 O O O O O O
+bit O O O O O O
+old O O O O O O
+programs U-POS U-NEU U-NEU U-POS U-POS U-NEU
+PUNCT O O O O O O
+
+it O O O O O O
+'s O O O O O O
+still O O O O O O
+beautiful O O O O O O
+and O O O O O O
+has O O O O O O
+better O O O O O O
+color B-POS B-POS B-POS B-POS B-POS B-POS
+reproduction L-POS L-POS L-POS L-POS L-POS L-POS
+than O O O O O O
+i O O O O O O
+could O O O O O O
+ever O O O O O O
+expect O O O O O O
+from O O O O O O
+a O O O O O O
+notebook O O O O O O
+PUNCT O O O O O O
+
+now O O O O O O
+am O O O O O O
+very O O O O O O
+aprehensive O O O O O O
+about O O O O O O
+toshiba O O O O O O
+laptops O O O O O O
+PUNCT O O O O O O
+
+overall O O O O O O
+PUNCT O O O O O O
+it O O O O O O
+'s O O O O O O
+ok O O O O O O
+PUNCT O O O O O O
+
+PUNCT O O O O O O
+awesome O O O O O O
+cooling B-POS B-POS B-POS B-POS B-POS B-POS
+system L-POS L-POS L-POS L-POS L-POS L-POS
+much O O O O O O
+better O O O O O O
+grafics B-POS B-POS B-POS B-POS O B-NEU
+card L-POS L-POS L-POS L-POS O I-NEU
+ati O B-POS B-NEU B-NEU B-POS I-NEU
+5870 O L-POS L-NEU L-NEU L-POS L-NEU
+PUNCT O O O O O O
+8gb B-POS B-POS B-POS B-NEU B-POS B-NEU
+ram I-POS L-POS I-POS I-NEU I-POS I-NEU
+led I-POS B-POS I-POS I-NEU I-POS I-NEU
+backlit I-POS I-POS I-POS I-NEU I-POS I-NEU
+screen L-POS L-POS L-POS L-NEU L-POS L-NEU
+PUNCT O O O O O O
+
+compared O O O O O O
+to O O O O O O
+similarly O O O O O O
+spec O O O O O O
+'d O O O O O O
+pcs O O O O O O
+PUNCT O O O O O O
+this O O O O O O
+machine O O O O O O
+is O O O O O O
+good O O O O O O
+value U-POS U-POS U-POS U-POS U-POS U-POS
+PUNCT O O O O O O
+well O O O O O O
+built U-POS U-POS U-POS U-POS U-POS U-POS
+and O O O O O O
+works U-POS U-POS U-POS U-POS U-POS U-POS
+easily O O O O O O
+right O O O O O O
+out O O O O O O
+of O O O O O O
+the O O O O O O
+box O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+cool O O O O O O
+thing O O O O O O
+about O O O O O O
+the O O O O O O
+mac O O O O O O
+book O O O O O O
+was O O O O O O
+that O O O O O O
+i O O O O O O
+went O O O O O O
+on O O O O O O
+my O O O O O O
+honeymoon O O O O O O
+and O O O O O O
+shot O O O O O O
+a O O O O O O
+bunch O O O O O O
+of O O O O O O
+pictures O O O O O O
+and O O O O O O
+movies O O O O O O
+with O O O O O O
+my O O O O O O
+iphone O O O O O O
+PUNCT O O O O O O
+then O O O O O O
+i O O O O O O
+came O O O O O O
+back O O O O O O
+and O O O O O O
+put O O O O O O
+them O O O O O O
+onto O O O O O O
+my O O O O O O
+macbook O O O O O O
+and O O O O O O
+made O O O O O O
+a O O O O O O
+pretty O O O O O O
+good O O O O O O
+dvd O O O O O O
+movie O O O O O O
+with O O O O O O
+all O O O O O O
+the O O O O O O
+pictures O O O O O O
+and O O O O O O
+videos O O O O O O
+from O O O O O O
+my O O O O O O
+trip O O O O O O
+PUNCT O O O O O O
+
+after O O O O O O
+4 O O O O O O
+days O O O O O O
+PUNCT O O O O O O
+being O O O O O O
+denied O O O O O O
+6 O O O O O O
+times O O O O O O
+and O O O O O O
+told O O O O O O
+off O O O O O O
+once O O O O O O
+PUNCT O O O O O O
+i O O O O O O
+managed O O O O O O
+to O O O O O O
+get O O O O O O
+through O O O O O O
+and O O O O O O
+was O O O O O O
+able O O O O O O
+to O O O O O O
+send O O O O O O
+them O O O O O O
+a O O O O O O
+scanned O O O O O O
+copy O O O O O O
+of O O O O O O
+the O O O O O O
+receipt O O O O O O
+PUNCT O O O O O O
+
+it O O O O O O
+was O O O O O O
+secure O O O O O O
+and O O O O O O
+easy O O O O O O
+to O O O O O O
+navigate U-POS U-POS U-POS U-POS U-POS U-POS
+PUNCT O O O O O O
+
+the O O O O O O
+machine O O O O O O
+has O O O O O O
+a O O O O O O
+bluray B-NEU B-POS B-NEG B-NEU B-NEG B-NEG
+player L-NEU L-POS L-NEG L-NEU L-NEG L-NEG
+the O O O O O O
+book U-NEG O O O O O
+has O O O O O O
+no O O O O O O
+mention O O O O O O
+of O O O O O O
+it O O O O O O
+or O O O O O O
+how O O O O O O
+to O O O O O O
+connect O O O O O O
+it O O O O O O
+to O O O O O O
+your O O O O O O
+hdtv O O O O O O
+PUNCT O O O O O O
+
+asus O O O O O O
+facial B-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
+recognition L-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
+does O O O O O O
+n't O O O O O O
+work O O O O O O
+and O O O O O O
+windows B-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
+logon L-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
+is O O O O O O
+n't O O O O O O
+either O O O O O O
+PUNCT O O O O O O
+
+so O O O O O O
+buyer O O O O O O
+beware O O O O O O
+when O O O O O O
+buying O O O O O O
+toshiba O O O O O O
+
+the O O O O O O
+minute O O O O O O
+you O O O O O O
+fire O O O O O O
+it O O O O O O
+up O O O O O O
+it O O O O O O
+'s O O O O O O
+all O O O O O O
+good O O O O O O
+PUNCT O O O O O O
+very O O O O O O
+easy O O O O O O
+user B-POS B-POS B-POS B-POS B-POS B-POS
+interface L-POS L-POS L-POS L-POS L-POS L-POS
+PUNCT O O O O O O
+
+i O O O O O O
+have O O O O O O
+had O O O O O O
+two O O O O O O
+toshiba O O O O O O
+satellite O O O O O O
+computers O O O O O O
+and O O O O O O
+while O O O O O O
+they O O O O O O
+are O O O O O O
+okay O O O O O O
+PUNCT O O O O O O
+they O O O O O O
+are O O O O O O
+in O O O O O O
+no O O O O O O
+way O O O O O O
+comparable O O O O O O
+to O O O O O O
+the O O O O O O
+mac O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+actually O O O O O O
+contact O O O O O O
+toshiba O O O O O O
+before O O O O O O
+i O O O O O O
+started O O O O O O
+having O O O O O O
+problem O O O O O O
+and O O O O O O
+was O O O O O O
+given O O O O O O
+run O O O O O O
+around O O O O O O
+after O O O O O O
+i O O O O O O
+supplied O O O O O O
+serial O O O O O O
+number O O O O O O
+in O O O O O O
+order O O O O O O
+to O O O O O O
+delay O O O O O O
+me O O O O O O
+sending O O O O O O
+in O O O O O O
+laptop O O O O O O
+until O O O O O O
+after O O O O O O
+warrenty U-NEG U-NEG U-NEG U-NEG U-NEG U-NEU
+expired O O O O O O
+PUNCT O O O O O O
+
+after O O O O O O
+replacing O O O O O O
+the O O O O O O
+hard B-NEU B-NEG B-NEG B-NEG B-NEG B-NEG
+drive L-NEU L-NEG L-NEG L-NEG L-NEG L-NEG
+the O O O O O O
+battery U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+stopped O O O O O O
+working O O O O O O
+3 O O O O O O
+months O O O O O O
+of O O O O O O
+use O O O O O O
+which O O O O O O
+was O O O O O O
+frustrating O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+love O O O O O O
+the O O O O O O
+easy O O O O O O
+to O O O O O O
+see O O O O O O
+screen U-POS U-POS U-POS U-POS U-POS U-POS
+PUNCT O O O O O O
+and O O O O O O
+it O O O O O O
+works U-POS U-POS U-POS O U-POS O
+well O O O O O O
+for O O O O O O
+work O O O O O O
+PUNCT O O O O O O
+persoal O O O O O O
+or O O O O O O
+just O O O O O O
+play O O O O O U-POS
+PUNCT O O O O O O
+
+one O O O O O O
+drawback O O O O O O
+i O O O O O O
+noticed O O O O O O
+was O O O O O O
+sound B-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
+quality I-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
+via I-NEG O O O O O
+usb L-NEG U-NEG U-NEU U-NEG U-NEG U-NEG
+PUNCT O O O O O O
+
+i O O O O O O
+am O O O O O O
+not O O O O O O
+going O O O O O O
+to O O O O O O
+sit O O O O O O
+here O O O O O O
+and O O O O O O
+complain O O O O O O
+about O O O O O O
+it O O O O O O
+not O O O O O O
+having O O O O O O
+a O O O O O O
+cd O B-NEG B-NEG B-NEG B-NEG B-NEG
+drive O L-NEG L-NEG L-NEG L-NEG L-NEG
+and O O O O O O
+what O O O O O O
+not O O O O O O
+because O O O O O O
+it O O O O O O
+is O O O O O O
+a O O O O O O
+netbook O O O O O O
+PUNCT O O O O O O
+it O O O O O O
+is O O O O O O
+made O O O O O O
+to O O O O O O
+be O O O O O O
+compact O O O O O O
+and O O O O O O
+if O O O O O O
+you O O O O O O
+want O O O O O O
+all O O O O O O
+the O O O O O O
+other O O O O O O
+stuff O O O O O O
+get O O O O O O
+a O O O O O O
+laptop O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+was O O O O O O
+psyched O O O O O O
+PUNCT O O O O O O
+
+if O O O O O O
+i O O O O O O
+have O O O O O O
+a O O O O O O
+few O O O O O O
+hundred O O O O O O
+dollars O O O O O O
+to O O O O O O
+spare O O O O O O
+PUNCT O O O O O O
+i O O O O O O
+'d O O O O O O
+buy O O O O O O
+the O O O O O O
+pro O O O O O O
+line O O O O O O
+though O O O O O O
+PUNCT O O O O O O
+the O O O O O O
+253 O O O O O O
+and O O O O O O
+266 O O O O O O
+ghz O O O O O O
+model O O O O O O
+PUNCT O O O O O O
+
+needs O O O O O O
+power O U-NEG U-NEG O O U-NEG
+and O O O O O O
+mouse B-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
+cable L-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
+to O O O O O O
+plug O U-NEU O O U-NEG O
+in O O O O O O
+back O O O O O O
+instead O O O O O O
+of O O O O O O
+side O O O O O O
+PUNCT O O O O O O
+in O O O O O O
+the O O O O O O
+way O O O O O O
+of O O O O O O
+operating O O O O U-NEG B-NEG
+a O O O O O I-NEG
+mouse U-NEG U-NEU U-NEU U-NEU U-NEG L-NEG
+in O O O O O O
+small O O O O O O
+area O O O O O O
+PUNCT O O O O O O
+
+it O O O O O O
+seems O O O O O O
+to O O O O O O
+be O O O O O O
+incompatible O O O O O O
+with O O O O O O
+everything O O O O O O
+else O O O O O O
+PUNCT O O O O O O
+
+we O O O O O O
+use O O O O O O
+the O O O O O O
+built B-NEU B-POS B-POS B-POS B-POS B-POS
+in I-NEU I-POS I-POS I-POS I-POS I-POS
+tools L-NEU L-POS L-POS L-POS L-POS L-POS
+often O O O O O O
+PUNCT O O O O O O
+itunes U-POS U-POS U-POS U-POS U-POS U-POS
+is O O O O O O
+open O O O O O O
+nearly O O O O O O
+every O O O O O O
+day O O O O O O
+and O O O O O O
+works O O O O O O
+great O O O O O O
+with O O O O O O
+my O O O O O O
+iphone O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+size U-POS U-POS U-POS U-POS U-POS U-POS
+of O O O O O O
+has O O O O O O
+actually O O O O O O
+help O O O O O O
+me O O O O O O
+out O O O O O O
+quite O O O O O O
+a O O O O O O
+bit O O O O O O
+by O O O O O O
+me O O O O O O
+being O O O O O O
+able O O O O O O
+to O O O O O O
+fit O O O O O O
+it O O O O O O
+in O O O O O O
+an O O O O O O
+already O O O O O O
+full O O O O O O
+backpack O O O O O O
+and O O O O O O
+to O O O O O O
+use O O O O O O
+it O O O O O O
+at O O O O O O
+a O O O O O O
+resturant O O O O O O
+where O O O O O O
+the O O O O O O
+food O O O O O O
+on O O O O O O
+the O O O O O O
+table O O O O O O
+is O O O O O O
+always O O O O O O
+so O O O O O O
+space O O O O O O
+consuming O O O O O O
+PUNCT O O O O O O
+
+we O O O O O O
+are O O O O O O
+addicted O O O O O O
+to O O O O O O
+the O O O O O O
+mac O O O O O O
+PUNCT O O O O O O
+
+maybe O O O O O O
+three O O O O O O
+or O O O O O O
+four O O O O O O
+months O O O O O O
+ago O O O O O O
+it O O O O O O
+started O O O O O O
+blinking O O O O O O
+all O O O O O O
+of O O O O O O
+the O O O O O O
+sudden O O O O O O
+PUNCT O O O O O O
+
+everything O O O O O O
+about O O O O O O
+a O O O O O O
+mac O O O O O O
+is O O O O O O
+wonderful O O O O O O
+PUNCT O O O O O O
+it O O O O O O
+takes O O O O O O
+a O O O O O O
+little O O O O O O
+used O O O O O O
+to O O O O O O
+learning O O O O O O
+and O O O O O O
+getting O O O O O O
+used O O O O O O
+to O O O O O O
+the O O O O O O
+new O O O O O O
+system U-NEU U-POS U-POS O O U-POS
+PUNCT O O O O O O
+but O O O O O O
+you O O O O O O
+will O O O O O O
+learn O O O O O O
+fast O O O O O O
+and O O O O O O
+its O O O O O O
+all O O O O O O
+worth O O O O O O
+it O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+also O O O O O O
+bought O O O O O O
+one O O O O O O
+for O O O O O O
+my O O O O O O
+wife O O O O O O
+PUNCT O O O O O O
+and O O O O O O
+3 O O O O O O
+for O O O O O O
+my O O O O O O
+office O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+only O O O O O O
+thing O O O O O O
+i O O O O O O
+can O O O O O O
+imagine O O O O O O
+is O O O O O O
+that O O O O O O
+sony O O O O O O
+jumped O O O O O O
+on O O O O O O
+early O O O O O O
+specifications O U-NEU O O U-NEU O
+for O O O O O O
+vista U-NEG B-NEG B-NEG U-NEG B-NEG B-NEG
+requirements O L-NEG L-NEG O L-NEG L-NEG
+from O O O O O O
+microsoft O O O O O O
+and O O O O O O
+designed O O O O O O
+it O O O O O O
+to O O O O O O
+those O O O O O O
+inadequate O O O O O O
+requirements O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+mouse O U-NEG U-NEG U-NEG U-NEG U-NEG
+is O O O O O O
+a O O O O O O
+little O O O O O O
+bit O O O O O O
+different O O O O O O
+than O O O O O O
+what O O O O O O
+you O O O O O O
+'re O O O O O O
+used O O O O O O
+to O O O O O O
+though O O O O O O
+it O O O O O O
+has O O O O O O
+one O O O O O O
+big O O O O O O
+flat O O O O O O
+panel O O O O O O
+and O O O O O O
+one O O O O O O
+full O O O O O O
+bar O O O O O O
+instead O O O O O O
+of O O O O O O
+two O O O O O O
+separate O O O O O O
+ones O O O O O O
+to O O O O O O
+click O O O O O O
+with O O O O O O
+but O O O O O O
+you O O O O O O
+get O O O O O O
+used O O O O O O
+to O O O O O O
+it O O O O O O
+quite O O O O O O
+quickly O O O O O O
+PUNCT O O O O O O
+
+it O O O O O O
+took O O O O O O
+several O O O O O O
+weeks O O O O O O
+just O O O O O O
+to O O O O O O
+get O O O O O O
+them O O O O O O
+to O O O O O O
+acknowledge O O O O O O
+that O O O O O O
+i O O O O O O
+owned O O O O O O
+the O O O O O O
+warranty U-NEG U-NEG U-NEU U-NEG U-NEU U-NEU
+PUNCT O O O O O O
+
+it O O O O O O
+was O O O O O O
+a O O O O O O
+huge O O O O O O
+monstrosity O O O O O O
+of O O O O O O
+a O O O O O O
+laptop O O O O O O
+PUNCT O O O O O O
+
+-i O O O O O O
+propose O O O O O O
+that O O O O O O
+they O O O O O O
+can O O O O O O
+just O O O O O O
+swap O O O O O O
+the O O O O O O
+hard B-NEU B-NEU B-NEU B-NEU B-NEU B-NEU
+drives L-NEU L-NEU L-NEU L-NEU L-NEU L-NEU
+PUNCT O O O O O O
+
+so O O O O O O
+having O O O O O O
+the O O O O O O
+ac B-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
+plug L-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
+go O O O O O O
+out O O O O O O
+on O O O O O O
+me O O O O O O
+and O O O O O O
+get O O O O O O
+lose O O O O O O
+or O O O O O O
+i O O O O O O
+could O O O O O O
+actually O O O O O O
+here O O O O O O
+it O O O O O O
+inside O O O O O O
+my O O O O O O
+computer O O O O O O
+on O O O O O O
+two O O O O O O
+of O O O O O O
+the O O O O O O
+three O O O O O O
+times O O O O O O
+is O O O O O O
+not O O O O O O
+good O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+computer O O O O O O
+is O O O O O O
+currently O O O O O O
+in O O O O O O
+west O O O O O O
+verginia O O O O O O
+doe O O O O O O
+to O O O O O O
+the O O O O O O
+method O O O O O O
+of O O O O O O
+shipping U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+choosen O O O O O O
+by O O O O O O
+toshiba O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+can O O O O O O
+see O O O O O O
+why O O O O O O
+the O O O O O O
+have O O O O O O
+soooo O O O O O O
+much O O O O O O
+money O O O O O O
+PUNCT O O O O O O
+
+iphoto U-POS U-POS U-POS U-POS U-POS U-POS
+is O O O O O O
+great O O O O O O
+for O O O O O O
+adding O O O O O O
+pictures O O O O O O
+right O O O O O O
+to O O O O O O
+facebook O O O O O O
+and O O O O O O
+other O O O O O O
+social O O O O O O
+networking O O O O O O
+sites O O O O O O
+PUNCT O O O O O O
+
+in O O O O O O
+early O O O O O O
+may O O O O O O
+i O O O O O O
+got O O O O O O
+it O O O O O O
+back O O O O O O
+and O O O O O O
+this O O O O O O
+time O O O O O O
+i O O O O O O
+only O O O O O O
+had O O O O O O
+it O O O O O O
+back O O O O O O
+for O O O O O O
+1 O O O O O O
+day O O O O O O
+before O O O O O O
+it O O O O O O
+had O O O O O O
+a O O O O O O
+new O O O O O O
+issue O O O O O O
+so O O O O O O
+it O O O O O O
+was O O O O O O
+sent O O O O O O
+back O O O O O O
+in O O O O O O
+for O O O O O O
+the O O O O O O
+6th O O O O O O
+time O O O O O O
+they O O O O O O
+expedited O O O O O O
+the O O O O O O
+repairs O O O O O O
+so O O O O O O
+i O O O O O O
+was O O O O O O
+only O O O O O O
+supposed O O O O O O
+to O O O O O O
+have O O O O O O
+to O O O O O O
+be O O O O O O
+without O O O O O O
+it O O O O O O
+for O O O O O O
+3 O O O O O O
+days O O O O O O
+and O O O O O O
+it O O O O O O
+was O O O O O O
+supposed O O O O O O
+to O O O O O O
+be O O O O O O
+fixed O O O O O O
+PUNCT O O O O O O
+by O O O O O O
+a O O O O O O
+senior B-NEG O O O O B-NEG
+tech L-NEG U-NEG O U-NEG U-NEG L-NEG
+PUNCT O O O O O O
+
+i O O O O O O
+would O O O O O O
+never O O O O O O
+buy O O O O O O
+a O O O O O O
+dell O O O O O O
+again O O O O O O
+PUNCT O O O O O O
+
+for O O O O O O
+me O O O O O O
+PUNCT O O O O O O
+keys U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+were O O O O O O
+starting O O O O O O
+to O O O O O O
+get O O O O O O
+stuck O O O O O O
+and O O O O O O
+would O O O O O O
+n't O O O O O O
+type O O O O O O
+very O O O O O O
+well O O O O O O
+PUNCT O O O O O O
+
+this O O O O O O
+is O O O O O O
+still O O O O O O
+a O O O O O O
+fairly O O O O O O
+good O O O O O O
+upgrade O O O O O O
+to O O O O O O
+a O O O O O O
+laptop O O O O O O
+that O O O O O O
+was O O O O O O
+about O O O O O O
+4 O O O O O O
+years O O O O O O
+old O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+computer O O O O O O
+was O O O O O O
+shipped O O O O O O
+to O O O O O O
+their O O O O O O
+repair B-NEU B-NEU B-NEU B-NEU B-NEU B-NEU
+depot L-NEU L-NEU L-NEU L-NEU L-NEU L-NEU
+on O O O O O O
+june O O O O O O
+24 O O O O O O
+and O O O O O O
+returned O O O O O O
+on O O O O O O
+july O O O O O O
+2 O O O O O O
+seems O O O O O O
+like O O O O O O
+a O O O O O O
+short O O O O O O
+turn O O O O O O
+around O O O O O O
+time O O O O O O
+except O O O O O O
+the O O O O O O
+computer O O O O O O
+was O O O O O O
+not O O O O O O
+repaired O O O O O O
+when O O O O O O
+it O O O O O O
+was O O O O O O
+returned O O O O O O
+PUNCT O O O O O O
+
+my O O O O O O
+friends O O O O O O
+are O O O O O O
+in O O O O O O
+awe O O O O O O
+every O O O O O O
+time O O O O O O
+they O O O O O O
+come O O O O O O
+over O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+work O O O O O O
+in O O O O O O
+film O O B-NEU O B-NEU O
+editing O O L-NEU O L-NEU O
+and O O O O O O
+post O O O O O O
+production O O O O O O
+PUNCT O O O O O O
+so O O O O O O
+i O O O O O O
+need O O O O O O
+a O O O O O O
+laptop O O O O O O
+that O O O O O O
+not O O O O O O
+only O O O O O O
+has O O O O O O
+power U-NEU U-POS U-POS U-POS U-POS U-POS
+PUNCT O O O O O O
+but O O O O O O
+memory U-NEU U-POS U-NEG U-POS U-POS U-NEU
+and O O O O O O
+speed U-NEU U-POS U-POS U-POS U-POS U-POS
+as O O O O O O
+well O O O O O O
+PUNCT O O O O O O
+
+at O O O O O O
+first O O O O O O
+when O O O O O O
+i O O O O O O
+got O O O O O O
+this O O O O O O
+product O O O O O O
+PUNCT O O O O O O
+i O O O O O O
+loved O O O O O O
+it O O O O O O
+PUNCT O O O O O O
+
+this O O O O O O
+is O O O O O O
+what O O O O O O
+a O O O O O O
+laptop O O O O O O
+is O O O O O O
+supposed O O O O O O
+to O O O O O O
+be O O O O O O
+PUNCT O O O O O O
+
+then O O O O O O
+i O O O O O O
+'ve O O O O O O
+fixed O O O O O O
+the O O O O O O
+dc B-NEU B-NEG B-NEG B-NEG B-NEG B-NEG
+jack L-NEU L-NEG L-NEG L-NEG L-NEG L-NEG
+inside O O O O O O
+the O O O O O O
+unit O O O O O O
+PUNCT O O O O O O
+rewired O O O O O O
+the O O O O O O
+dc B-NEU B-NEU B-NEG B-NEG B-NEG B-NEG
+jack L-NEU L-NEU L-NEG L-NEG L-NEG L-NEG
+to O O O O O O
+the O O O O O O
+outside O O O O O O
+of O O O O O O
+the O O O O O O
+laptop O O O O O O
+PUNCT O O O O O O
+replaced O O O O O O
+the O O O O O O
+power B-NEU B-NEU B-NEG O B-NEU B-NEU
+brick L-NEU L-NEU L-NEG O L-NEU L-NEU
+PUNCT O O O O O O
+
+it O O O O O O
+is O O O O O O
+easy O O O O O O
+to O O O O O O
+use U-POS U-POS U-POS U-POS U-POS U-POS
+PUNCT O O O O O O
+has O O O O O O
+great O O O O O O
+screen B-POS B-POS B-POS B-POS B-POS B-POS
+quality L-POS L-POS L-POS L-POS L-POS L-POS
+PUNCT O O O O O O
+and O O O O O O
+every O O O O O O
+so O O O O O O
+light O O O O O O
+weight O O O U-POS U-POS O
+PUNCT O O O O O O
+
+i O O O O O O
+'ve O O O O O O
+been O O O O O O
+having O O O O O O
+endless O O O O O O
+problems O O O O O O
+since O O O O O O
+i O O O O O O
+bought O O O O O O
+the O O O O O O
+computer O O O O O O
+PUNCT O O O O O O
+only O O O O O O
+1 O O O O O O
+month O O O O O O
+ago O O O O O O
+
+i O O O O O O
+wanted O O O O O O
+to O O O O O O
+spend O O O O O O
+around O O O O O O
+PUNCT O O O O O O
+700 O O O O O O
+to O O O O O O
+PUNCT O O O O O O
+800 O O O O O O
+so O O O O O O
+i O O O O O O
+was O O O O O O
+directed O O O O O O
+to O O O O O O
+a O O O O O O
+nice O O O O O O
+looking O O O O O O
+hp O O O O O O
+laptop O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+'ve O O O O O O
+had O O O O O O
+my O O O O O O
+macbook O O O O O O
+pro O O O O O O
+since O O O O O O
+august O O O O O O
+2009 O O O O O O
+PUNCT O O O O O O
+
+unfortunately O O O O O O
+PUNCT O O O O O O
+the O O O O O O
+laptop O O O O O O
+i O O O O O O
+purchased O O O O O O
+was O O O O O O
+also O O O O O O
+a O O O O O O
+dell O O O O O O
+and O O O O O O
+again O O O O O O
+PUNCT O O O O O O
+i O O O O O O
+have O O O O O O
+to O O O O O O
+say O O O O O O
+i O O O O O O
+hated O O O O O O
+it O O O O O O
+PUNCT O O O O O O
+
+this O O O O O O
+is O O O O O O
+the O O O O O O
+first O O O O O O
+time O O O O O O
+that O O O O O O
+i O O O O O O
+tried O O O O O O
+and O O O O O O
+owning O O O O O O
+a O O O O O O
+netbook O O O O O O
+although O O O O O O
+i O O O O O O
+have O O O O O O
+used O O O O O O
+3 O O O O O O
+different O O O O O O
+laptops O O O O O O
+in O O O O O O
+the O O O O O O
+past O O O O O O
+10 O O O O O O
+years O O O O O O
+PUNCT O O O O O O
+i O O O O O O
+find O O O O O O
+not O O O O O O
+much O O O O O O
+difference O O O O O O
+except O O O O O O
+of O O O O O O
+course O O O O O O
+for O O O O O O
+the O O O O O O
+screen B-NEU B-NEG B-NEG B-NEG B-POS B-POS
+size L-NEU L-NEG L-NEG L-NEG L-POS L-POS
+PUNCT O O O O O O
+
+everything O O O O O O
+about O O O O O O
+the O O O O O O
+mac O O O O O O
+is O O O O O O
+not O O O O O O
+only O O O O O O
+visually O O O O O O
+appealing O O O O O O
+PUNCT O O O O O O
+but O O O O O O
+very O O O O O O
+easy O O O O O O
+to O O O O O O
+use U-POS U-POS U-POS U-POS U-POS U-POS
+PUNCT O O O O O O
+
+but O O O O O O
+if O O O O O O
+you O O O O O O
+ca O O O O O O
+n't O O O O O O
+make O O O O O O
+your O O O O O O
+product O O O O O O
+last O O O O O O
+more O O O O O O
+than O O O O O O
+a O O O O O O
+year O O O O O O
+PUNCT O O O O O O
+you O O O O O O
+will O O O O O O
+not O O O O O O
+get O O O O O O
+my O O O O O O
+business O O O O O O
+again O O O O O O
+PUNCT O O O O O O
+
+seems O O O O O O
+like O O O O O O
+maybe O O O O O O
+a O O O O O O
+bad O O O O O O
+shipment U-NEG O O O O O
+from O O O O O O
+toshiba O O O O O O
+PUNCT O O O O O O
+
+currently O O O O O O
+if O O O O O O
+i O O O O O O
+use O O O O O O
+the O O O O O O
+laptop O O O O O O
+i O O O O O O
+ca O O O O O O
+n't O O O O O O
+sit O O O O O O
+it O O O O O O
+on O O O O O O
+my O O O O O O
+lap O O O O O O
+because O O O O O O
+it O O O O O O
+will O O O O O O
+burn O O O O O O
+my O O O O O O
+legs O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+can O O O O O O
+leave O O O O O O
+my O O O O O O
+macbook O O O O O O
+uncharged O O O O O O
+for O O O O O O
+upwards O O O O O O
+of O O O O O O
+eight O O O O O O
+hours O O O O O O
+and O O O O O O
+it O O O O O O
+wo O O O O O O
+n't O O O O O O
+even O O O O O O
+be O O O O O O
+dead O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+do O O O O O O
+find O O O O O O
+that O O O O O O
+my O O O O O O
+macbook O O O O O O
+has O O O O O O
+a O O O O O O
+lot O O O O O O
+more O O O O O O
+bells O O O O O O
+and O O O O O O
+whistles O O O O O O
+than O O O O O O
+a O O O O O O
+normal O O O O O O
+pc O O O O O O
+especially O O O O O O
+if O O O O O O
+you O O O O O O
+enjoy O O O O O O
+technology O U-POS O O O O
+PUNCT O O O O O O
+downloading O O O O O O
+pictures O O O O O O
+and O O O O O O
+graphic O B-POS B-POS B-NEU B-POS B-POS
+design O L-POS L-POS L-NEU L-POS L-POS
+PUNCT O O O O O O
+
+first O O O O O O
+the O O O O O O
+screen U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+goes O O O O O O
+completely O O O O O O
+out O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+'m O O O O O O
+learning O O O O O O
+the O O O O O O
+finger O O O O O O
+options O O O O O O
+for O O O O O O
+the O O O O O O
+mousepad U-POS U-NEU U-POS U-NEU U-POS U-POS
+that O O O O O O
+allow O O O O O O
+for O O O O O O
+quicker O O O O O O
+browsing U-POS B-POS B-POS U-POS B-POS B-POS
+of O I-POS I-POS O I-POS I-POS
+web O I-POS I-POS O I-POS I-POS
+pages O L-POS L-POS O L-POS L-POS
+PUNCT O O O O O O
+
+we O O O O O O
+researched O O O O O O
+and O O O O O O
+found O O O O O O
+the O O O O O O
+best O O O O O O
+price U-POS U-POS U-POS U-POS U-POS U-POS
+at O O O O O O
+macconnection O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+droped O O O O O O
+this O O O O O O
+once O O O O O O
+from O O O O O O
+thetable O O O O O O
+when O O O O O O
+my O O O O O O
+baby O O O O O O
+girl O O O O O O
+grabed O O O O O O
+me O O O O O O
+one O O O O O O
+day O O O O O O
+and O O O O O O
+it O O O O O O
+is O O O O O O
+still O O O O O O
+working O O O O O O
+with O O O O O O
+no O O O O O O
+issues O O O O O O
+PUNCT O O O O O O
+
+returned O O O O O O
+it O O O O O O
+PUNCT O O O O O O
+
+it O O O O O O
+is O O O O O O
+a O O O O O O
+cheap O O O O O O
+throw O O O O O O
+together O O O O O O
+PUNCT O O O O O O
+
+it O O O O O O
+easily O O O O O O
+fits O O O O O O
+into O O O O O O
+most O O O O O O
+computer O O O O O O
+bags O O O O O O
+but O O O O O O
+does O O O O O O
+n't O O O O O O
+weigh O O O O O O
+down O O O O O O
+a O O O O O O
+backpack O O O O O O
+or O O O O O O
+satchel O O O O O O
+when O O O O O O
+being O O O O O O
+carried O O O O O O
+with O O O O O O
+spirals O O O O O O
+and/or O O O O O O
+textbooks O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+actually O O O O O O
+had O O O O O O
+the O O O O O O
+hard B-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
+drive L-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
+replaced O O O O O O
+twice O O O O O O
+PUNCT O O O O O O
+the O O O O O O
+mother B-NEG B-NEU B-NEG B-NEG B-NEG B-NEG
+board L-NEG L-NEU L-NEG L-NEG L-NEG L-NEG
+once O O O O O O
+PUNCT O O O O O O
+the O O O O O O
+dvd B-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
+drive L-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
+twice O O O O O O
+PUNCT O O O O O O
+then O O O O O O
+they O O O O O O
+finally O O O O O O
+agreed O O O O O O
+to O O O O O O
+replace O O O O O O
+it O O O O O O
+PUNCT O O O O O O
+all O O O O O O
+of O O O O O O
+this O O O O O O
+in O O O O O O
+less O O O O O O
+than O O O O O O
+1 O O O O O O
+1/2 O O O O O O
+years O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+guy O O O O O O
+then O O O O O O
+said O O O O O O
+that O O O O O O
+if O O O O O O
+i O O O O O O
+insist O O O O O O
+on O O O O O O
+having O O O O O O
+the O O O O O O
+hinge U-NEU U-NEG U-NEG U-NEG U-NEG U-NEG
+tightened O O O O O O
+PUNCT O O O O O O
+they O O O O O O
+can O O O O O O
+do O O O O O O
+it O O O O O O
+for O O O O O O
+me O O O O O O
+but O O O O O O
+i O O O O O O
+have O O O O O O
+to O O O O O O
+accept O O O O O O
+the O O O O O O
+condition O O O O O O
+after O O O O O O
+the O O O O O O
+repair O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+'ve O O O O O O
+been O O O O O O
+a O O O O O O
+pc O O O O O O
+user O O O O O O
+and O O O O O O
+i O O O O O O
+just O O O O O O
+finally O O O O O O
+switched O O O O O O
+and O O O O O O
+i O O O O O O
+am O O O O O O
+never O O O O O O
+going O O O O O O
+back O O O O O O
+PUNCT O O O O O O
+
+will O O O O O O
+certainly O O O O O O
+use O O O O O O
+macconnection O O O O O O
+again O O O O O O
+PUNCT O O O O O O
+
+so O O O O O O
+you O O O O O O
+might O O O O O O
+ask O O O O O O
+PUNCT O O O O O O
+what O O O O O O
+did O O O O O O
+apple O O O O O O
+do O O O O O O
+for O O O O O O
+me O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+ease O O O O O O
+of O O O O O O
+set B-POS B-POS B-POS B-POS B-POS B-POS
+up L-POS L-POS L-POS L-POS L-POS L-POS
+was O O O O O O
+terrific O O O O O O
+PUNCT O O O O O O
+
+this O O O O O O
+was O O O O O O
+around O O O O O O
+three O O O O O O
+years O O O O O O
+PUNCT O O O O O O
+maybe O O O O O O
+four O O O O O O
+years O O O O O O
+ago O O O O O O
+PUNCT O O O O O O
+
+please O O O O O O
+PUNCT O O O O O O
+anyone O O O O O O
+who O O O O O O
+is O O O O O O
+considering O O O O O O
+getting O O O O O O
+this O O O O O O
+computer O O O O O O
+PUNCT O O O O O O
+stop O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+had O O O O O O
+my O O O O O O
+computer O O O O O O
+custom O O O O O O
+built O O O O O O
+from O O O O O O
+sonystylecom O O O O O O
+PUNCT O O O O O O
+
+this O O O O O O
+computer O O O O O O
+is O O O O O O
+really O O O O O O
+fast O O O O O O
+and O O O O O O
+i O O O O O O
+'m O O O O O O
+shocked O O O O O O
+as O O O O O O
+to O O O O O O
+how O O O O O O
+easy O O O O O O
+it O O O O O O
+is O O O O O O
+to O O O O O O
+get O O O O O O
+used O O O O O O
+to O O O O O O
+PUNCT O O O O O O
+
+from O O O O O O
+the O O O O O O
+get-go O O O O O O
+PUNCT O O O O O O
+the O O O O O O
+m6809 O O O O O O
+was O O O O O O
+unsteady O O O O O O
+in O O O O O O
+its O O O O O O
+operation U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+PUNCT O O O O O O
+
+one O O O O O O
+of O O O O O O
+the O O O O O O
+wonderful O O O O O O
+things O O O O O O
+about O O O O O O
+macs O O O O O O
+is O O O O O O
+that O O O O O O
+they O O O O O O
+are O O O O O O
+virus O O O O O O
+free O O O O O O
+PUNCT O O O O O O
+
+after O O O O O O
+5 O O O O O O
+months O O O O O O
+of O O O O O O
+failed O O O O O O
+repairs O O O O O O
+PUNCT O O O O O O
+requested O O O O O O
+a O O O O O O
+full O O O O O O
+refund O O O O O O
+but O O O O O O
+was O O O O O O
+refused O O O O O O
+and O O O O O O
+it O O O O O O
+still O O O O O O
+is O O O O O O
+not O O O O O O
+repaired O O O O O O
+and O O O O O O
+acer O O O O O O
+is O O O O O O
+indifferent O O O O O O
+to O O O O O O
+the O O O O O O
+issue O O O O O O
+PUNCT O O O O O O
+
+you O O O O O O
+better O O O O O O
+believe O O O O O O
+my O O O O O O
+next O O O O O O
+computer O O O O O O
+will O O O O O O
+be O O O O O O
+a O O O O O O
+mac O O O O O O
+PUNCT O O O O O O
+
+with O O O O O O
+all O O O O O O
+the O O O O O O
+programs U-NEU U-POS U-POS U-POS U-POS U-POS
+that O O O O O O
+came O O O O O O
+with O O O O O O
+it O O O O O O
+PUNCT O O O O O O
+such O O O O O O
+as O O O O O O
+ilife U-NEU U-POS U-POS U-POS U-POS U-POS
+and O O O O O O
+iwork U-NEU U-POS O U-POS U-POS U-POS
+PUNCT O O O O O O
+i O O O O O O
+was O O O O O O
+set O O O O O O
+from O O O O O O
+the O O O O O O
+very O O O O O O
+beginning O O O O O O
+PUNCT O O O O O O
+
+best O O O O O O
+buy O O O O O O
+laughed O O O O O O
+when O O O O O O
+i O O O O O O
+told O O O O O O
+them O O O O O O
+they O O O O O O
+should O O O O O O
+replace O O O O O O
+it O O O O O O
+instead O O O O O O
+of O O O O O O
+expecting O O O O O O
+me O O O O O O
+to O O O O O O
+be O O O O O O
+without O O O O O O
+a O O O O O O
+computer O O O O O O
+again O O O O O O
+for O O O O O O
+another O O O O O O
+couple O O O O O O
+of O O O O O O
+weeks O O O O O O
+PUNCT O O O O O O
+
+there O O O O O O
+are O O O O O O
+no O O O O O O
+gold O O O O O O
+key O O O O O O
+numbers O O O O O O
+too O O O O O O
+intall O O B-NEG O O B-NEG
+programs U-NEG U-NEG L-NEG U-NEG U-NEG L-NEG
+PUNCT O O O O O O
+you O O O O O O
+must O O O O O O
+use O O O O O O
+the O O O O O O
+serial O O B-NEG O B-NEG O
+numbers O O L-NEG O L-NEG O
+that O O O O O O
+it O O O O O O
+does O O O O O O
+not O O O O O O
+accept O O O O O O
+and O O O O O O
+then O O O O O O
+things O O O O O O
+are O O O O O O
+limited O O O O O O
+as O O O O O O
+far O O O O O O
+a O O O O O O
+working O O O O O O
+because O O O O O O
+they O O O O O O
+are O O O O O O
+only O O O O O O
+good O O O O O O
+for O O O O O O
+a O O O O O O
+short O O O O O O
+time O O O O O O
+PUNCT O O O O O O
+
+if O O O O O O
+you O O O O O O
+want O O O O O O
+a O O O O O O
+little O O O O O O
+more O O O O O O
+custom O O O O O O
+ability O U-POS O O O U-POS
+PUNCT O O O O O O
+drop O O O O O O
+a O O O O O O
+few O O O O O O
+bucks O O O O O O
+and O O O O O O
+upgrade O O O O O O
+to O O O O O O
+one O O O O O O
+of O O O O O O
+the O O O O O O
+more O O O O O O
+robust O O O O O O
+versions O O O O O O
+of O O O O O O
+win B-POS B-POS B-POS B-NEU B-POS B-POS
+7 L-POS L-POS L-POS L-NEU L-POS L-POS
+and O O O O O O
+grab O O O O O O
+a O O O O O O
+2gb B-POS B-NEU B-POS B-POS B-POS B-POS
+stick I-POS I-NEU I-POS I-POS I-POS I-POS
+of I-POS I-NEU I-POS I-POS I-POS I-POS
+memory L-POS L-NEU L-POS L-POS L-POS L-POS
+to O O O O O O
+spice O O O O O O
+it O O O O O O
+all O O O O O O
+up O O O O O O
+a O O O O O O
+bit O O O O O O
+more O O O O O O
+PUNCT O O O O O O
+
+speakers U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+too O O O O O O
+small O O O O O O
+to O O O O O O
+be O O O O O O
+of O O O O O O
+any O O O O O O
+real O O O O O O
+use O O O O O O
+PUNCT O O O O O O
+
+this O O O O O O
+is O O O O O O
+a O O O O O O
+great O O O O O O
+computer O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+battery U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+never O O O O O O
+held O O O O O O
+a O O O O O O
+charge U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+longer O O O O O O
+than O O O O O O
+one O O O O O O
+hour O O O O O O
+and O O O O O O
+within O O O O O O
+two O O O O O O
+months O O O O O O
+PUNCT O O O O O O
+stopped O O O O O O
+holding O O O O O O
+a O O O O O O
+charge U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+for O O O O O O
+more O O O O O O
+than O O O O O O
+ten O O O O O O
+minutes O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+paid O O O O O O
+PUNCT O O O O O O
+800 O O O O O O
+for O O O O O O
+this O O O O O O
+computer O O O O O O
+from O O O O O O
+my O O O O O O
+school O O O O O O
+campus O O O O O O
+bookstore O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+neat O O O O O O
+and O O O O O O
+organized O O O O O O
+icon B-POS O O O O O
+list L-POS O O O O O
+is O O O O O O
+a O O O O O O
+welcome O O O O O O
+change O O O O O O
+from O O O O O O
+cluttered O O O O O O
+and O O O O O O
+confusing O O O O O O
+desktop B-NEG B-POS O O O O
+icons L-NEG L-POS O O O O
+PUNCT O O O O O O
+
+buyer O O O O O O
+beware O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+toshiba O O O O O O
+laptop O O O O O O
+i O O O O O O
+am O O O O O O
+using O O O O O O
+is O O O O O O
+easier O O O O O O
+to O O O O O O
+use U-POS U-POS U-POS U-POS U-POS U-POS
+than O O O O O O
+most O O O O O O
+i O O O O O O
+have O O O O O O
+tried O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+battery U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+never O O O O O O
+held O O O O O O
+a O O O O O O
+charge U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+longer O O O O O O
+than O O O O O O
+one O O O O O O
+hour O O O O O O
+and O O O O O O
+within O O O O O O
+two O O O O O O
+months O O O O O O
+PUNCT O O O O O O
+stopped O O O O O O
+holding O O O O O O
+a O O O O O O
+charge U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+for O O O O O O
+more O O O O O O
+than O O O O O O
+ten O O O O O O
+minutes O O O O O O
+PUNCT O O O O O O
+
+see O O O O O O
+when O O O O O O
+it O O O O O O
+comes O O O O O O
+to O O O O O O
+laptops O O O O O O
+you O O O O O O
+buy O O O O O O
+it O O O O O O
+and O O O O O O
+get O O O O O O
+just O O O O O O
+a O O O O O O
+normal O O O O O O
+operating B-NEU B-NEU B-NEG B-NEU B-NEU B-POS
+system L-NEU L-NEU L-NEG L-NEU L-NEU L-POS
+with O O O O O O
+trials O O O O O O
+of O O O O O O
+must O O O O O O
+need O O O O O O
+stuff O O O O O O
+that O O O O O O
+should O O O O O O
+come O O O O O O
+with O O O O O O
+it O O O O O O
+PUNCT O O O O O O
+
+at O O O O O O
+first O O O O O O
+it O O O O O O
+'s O O O O O O
+like O O O O O O
+you O O O O O O
+'re O O O O O O
+in O O O O O O
+that O O O O O O
+honeymoon O O O O O O
+stage O O O O O O
+with O O O O O O
+your O O O O O O
+laptop O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+especially O O O O O O
+like O O O O O O
+the O O O O O O
+backlit B-POS B-POS B-POS B-POS B-POS B-POS
+keyboard L-POS L-POS L-POS L-POS L-POS L-POS
+PUNCT O O O O O O
+
+besides O O O O O O
+the O O O O O O
+great O O O O O O
+look U-POS U-POS U-POS U-POS U-POS U-POS
+PUNCT O O O O O O
+it O O O O O O
+is O O O O O O
+a O O O O O O
+great O O O O O O
+machine O O O O O O
+PUNCT O O O O O O
+
+took O O O O O O
+it O O O O O O
+back O O O O O O
+as O O O O O O
+it O O O O O O
+was O O O O O O
+defective O O O O O O
+PUNCT O O O O O O
+
+this O O O O O O
+system O U-NEG U-NEG U-NEG U-NEG U-NEG
+is O O O O O O
+not O O O O O O
+worth O O O O O O
+the O O O O O O
+money O O O O O O
+or O O O O O O
+trouble O O O O O O
+trying O O O O O O
+to O O O O O O
+get O O O O O O
+it O O O O O O
+fix O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+purchased O O O O O O
+it O O O O O O
+this O O O O O O
+year O O O O O O
+when O O O O O O
+my O O O O O O
+old O O O O O O
+hp O O O O O O
+laptop O O O O O O
+finally O O O O O O
+died O O O O O O
+and O O O O O O
+i O O O O O O
+was O O O O O O
+looking O O O O O O
+for O O O O O O
+something O O O O O O
+smaller O O O O O O
+and O O O O O O
+lighter O O O O O O
+than O O O O O O
+a O O O O O O
+laptop O O O O O O
+to O O O O O O
+carry O O O O O O
+around O O O O O O
+for O O O O O O
+classes O O O O O O
+and O O O O O O
+traveling O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+bought O O O O O O
+this O O O O O O
+emachines O O O O O O
+notebook O O O O O O
+pc O O O O O O
+in O O O O O O
+january O O O O O O
+of O O O O O O
+this O O O O O O
+year O O O O O O
+and O O O O O O
+i O O O O O O
+am O O O O O O
+highly O O O O O O
+dissatisfied O O O O O O
+with O O O O O O
+it O O O O O O
+PUNCT O O O O O O
+
+even O O O O O O
+though O O O O O O
+the O O O O O O
+computer O O O O O O
+is O O O O O O
+larger O O O O O O
+they O O O O O O
+did O O O O O O
+not O O O O O O
+make O O O O O O
+the O O O O O O
+keyboard U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+larger O O O O O O
+PUNCT O O O O O O
+
+it O O O O O O
+is O O O O O O
+very O O O O O O
+easy O O O O O O
+to O O O O O O
+type U-POS O O O O U-POS
+on O O O O O O
+and O O O O O O
+feels O O O O O O
+great O O O O O O
+PUNCT O O O O O O
+besides O O O O O O
+the O O O O O O
+added O O O O O O
+feature U-POS U-POS U-POS U-POS U-POS U-POS
+that O O O O O O
+the O O O O O O
+keyboard U-POS U-POS U-POS U-POS U-POS U-POS
+is O O O O O O
+lighted O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+feel U-POS U-POS U-POS U-POS U-POS U-POS
+of O O O O O O
+this O O O O O O
+machine O O O O O O
+compared O O O O O O
+to O O O O O O
+the O O O O O O
+old O O O O O O
+macbook O O O O O O
+is O O O O O O
+far O O O O O O
+superior O O O O O O
+PUNCT O O O O O O
+
+thank O O O O O O
+you O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+saved O O O O O O
+for O O O O O O
+this O O O O O O
+laptop O O O O O O
+for O O O O O O
+3 O O O O O O
+months O O O O O O
+and O O O O O O
+i O O O O O O
+can O O O O O O
+tell O O O O O O
+you O O O O O O
+personally O O O O O O
+it O O O O O O
+was O O O O O O
+worth O O O O O O
+the O O O O O O
+wait O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+have O O O O O O
+had O O O O O O
+no O O O O O O
+problems O O O O O O
+with O O O O O O
+it O O O O O O
+unlike O O O O O O
+some O O O O O O
+hardware U-NEG U-NEG U-NEG O U-NEG U-NEG
+defects O O O O O O
+on O O O O O O
+past O O O O O O
+models O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+have O O O O O O
+used O O O O O O
+different O O O O O O
+laptops O O O O O O
+in O O O O O O
+the O O O O O O
+past O O O O O O
+and O O O O O O
+i O O O O O O
+have O O O O O O
+to O O O O O O
+rate O O O O O O
+this O O O O O O
+one O O O O O O
+way O O O O O O
+above O O O O O O
+the O O O O O O
+rest O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+quality U-POS U-POS U-NEG U-POS U-POS U-POS
+PUNCT O O O O O O
+engineering B-POS B-POS B-POS B-POS B-POS B-POS
+design L-POS L-POS L-POS L-POS L-POS L-POS
+and O O O O O O
+warranty U-POS U-POS U-POS U-POS U-POS U-POS
+are O O O O O O
+superior O O O O O O
+-- O O O O O O
+covers O O O O O O
+damage O O O O O O
+from O O O O O O
+dropping O O O O O O
+the O O O O O O
+laptop O O O O O O
+PUNCT O O O O O O
+
+it O O O O O O
+is O O O O O O
+so O O O O O O
+much O O O O O O
+fun O O O O O O
+to O O O O O O
+play O O O O O U-POS
+with O O O O O O
+PUNCT O O O O O O
+
+if O O O O O O
+this O O O O O O
+is O O O O O O
+an O O O O O O
+improvement O O O O O O
+in O O O O O O
+customer B-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
+service L-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
+then O O O O O O
+i O O O O O O
+would O O O O O O
+hate O O O O O O
+too O O O O O O
+see O O O O O O
+what O O O O O O
+it O O O O O O
+was O O O O O O
+before O O O O O O
+PUNCT O O O O O O
+
+sure O O O O O O
+PUNCT O O O O O O
+the O O O O O O
+initial O O O O O O
+out O O O O O O
+of O O O O O O
+pocket O O O O O O
+expense U-NEG O O O O O
+is O O O O O O
+greater O O O O O O
+PUNCT O O O O O O
+but O O O O O O
+that O O O O O O
+should O O O O O O
+not O O O O O O
+dissuade O O O O O O
+anyone O O O O O O
+from O O O O O O
+the O O O O O O
+fact O O O O O O
+that O O O O O O
+these O O O O O O
+machines O O O O O O
+run U-POS O O O O O
+like O O O O O O
+none O O O O O O
+other O O O O O O
+on O O O O O O
+the O O O O O O
+planet O O O O O O
+PUNCT O O O O O O
+and O O O O O O
+when O O O O O O
+i O O O O O O
+factor O O O O O O
+in O O O O O O
+all O O O O O O
+the O O O O O O
+money O O O O O O
+in O O O O O O
+that O O O O O O
+i O O O O O O
+wasted O O O O O O
+on O O O O O O
+geek O O O O O O
+squad O O O O O O
+and O O O O O O
+the O O O O O O
+latest O O O O O O
+patches O O O O O O
+to O O O O O O
+de-corrupt O O O O O O
+my O O O O O O
+infested O O O O O O
+pcs O O O O O O
+PUNCT O O O O O O
+it O O O O O O
+probably O O O O O O
+comes O O O O O O
+out O O O O O O
+about O O O O O O
+even O O O O O O
+anyhow O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+am O O O O O O
+glad O O O O O O
+i O O O O O O
+did O O O O O O
+my O O O O O O
+research O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+netbook O O O O O O
+is O O O O O O
+easier O O O O O O
+for O O O O O O
+me O O O O O O
+to O O O O O O
+take O O O O O O
+to O O O O O O
+bed O O O O O O
+and O O O O O O
+carry O O O O O O
+around O O O O O O
+with O O O O O O
+me O O O O O O
+PUNCT O O O O O O
+
+externally O O O O O O
+the O O O O O O
+keys U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+on O O O O O O
+my O O O O O O
+keyboard U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+are O O O O O O
+falling O O O O O O
+off O O O O O O
+PUNCT O O O O O O
+after O O O O O O
+a O O O O O O
+few O O O O O O
+uses O O O O O O
+the O O O O O O
+paint U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+is O O O O O O
+rubbing O O O O O O
+off O O O O O O
+the O O O O O O
+button B-NEG U-NEG U-NEG O O O
+below I-NEG O O O O O
+the I-NEG O O O O O
+mouse I-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
+pad L-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
+and O O O O O O
+where O O O O O O
+the O O O O O O
+heals O O O O O O
+of O O O O O O
+my O O O O O O
+hands O O O O O O
+sit O O O O O O
+PUNCT O O O O O O
+and O O O O O O
+the O O O O O O
+screen U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+has O O O O O O
+a O O O O O O
+terrible O O O O O O
+glare O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+next O O O O O O
+time O O O O O O
+i O O O O O O
+had O O O O O O
+an O O O O O O
+issue O O O O O O
+my O O O O O O
+lightscribe U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+would O O O O O O
+n't O O O O O O
+work O O O O O O
+PUNCT O O O O O O
+
+they O O O O O O
+don O O O O O O
+t O O O O O O
+translate O O O O O O
+from O O O O O O
+a O O O O O O
+mac O O O O O O
+PUNCT O O O O O O
+even O O O O O O
+on O O O O O O
+word U-NEG O O O O O
+PUNCT O O O O O O
+resulting O O O O O O
+in O O O O O O
+a O O O O O O
+ton O O O O O O
+of O O O O O O
+run-on O O O O O O
+sentences O O O O O O
+PUNCT O O O O O O
+
+in O O O O O O
+november O O O O O O
+my O O O O O O
+computer O O O O O O
+messed O O O O O O
+up O O O O O O
+entirely O O O O O O
+and O O O O O O
+would O O O O O O
+n't O O O O O O
+power O U-NEG O O O O
+on O O O O O O
+after O O O O O O
+intalling O O O O O O
+a O O O O O O
+windows B-NEU B-NEG B-NEG B-NEG B-NEG B-NEG
+update L-NEU L-NEG L-NEG L-NEG L-NEG L-NEG
+PUNCT O O O O O O
+i O O O O O O
+had O O O O O O
+to O O O O O O
+have O O O O O O
+my O O O O O O
+hd U-NEG U-NEG O U-NEG U-NEG U-NEG
+flashed O O O O O O
+and O O O O O O
+lost O O O O O O
+everything O O O O O O
+on O O O O O O
+it O O O O O O
+PUNCT O O O O O O
+including O O O O O O
+my O O O O O O
+school O O O O O O
+assignments O O O O O O
+and O O O O O O
+irriplaceable O O O O O O
+pictures O O O O O O
+that O O O O O O
+were O O O O O O
+only O O O O O O
+in O O O O O O
+digital O O O O O O
+format O O O O O O
+and O O O O O O
+several O O O O O O
+other O O O O O O
+things O O O O O O
+PUNCT O O O O O O
+when O O O O O O
+this O O O O O O
+update O O O O O O
+was O O O O O O
+installed O O O O O O
+for O O O O O O
+some O O O O O O
+reason O O O O O O
+i O O O O O O
+was O O O O O O
+unable O O O O O O
+to O O O O O O
+roll O O O O O O
+back O O O O O O
+the O O O O O O
+drivers U-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
+and O O O O O O
+everything O O O O O O
+to O O O O O O
+an O O O O O O
+earlier O O O O O O
+working O O O O O O
+condition O O O O O O
+because O O O O O O
+when O O O O O O
+the O O O O O O
+update O U-NEG U-NEG U-NEG U-NEG O
+was O O O O O O
+installed O O O O O O
+it O O O O O O
+deleted O O O O O O
+my O O O O O O
+history O O O O O O
+PUNCT O O O O O O
+
+it O O O O O O
+has O O O O O O
+been O O O O O O
+plagued O O O O O O
+with O O O O O O
+problems O O O O O O
+since O O O O O O
+the O O O O O O
+day O O O O O O
+i O O O O O O
+turned O O O O O O
+it O O O O O O
+on O O O O O O
+PUNCT O O O O O O
+
+applications U-POS U-NEG U-NEG U-POS U-NEG U-NEG
+respond O O O O O O
+immediately O O O O O O
+not O O O O O O
+like O O O O O O
+the O O O O O O
+tired O O O O O O
+ms B-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
+applications L-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
+PUNCT O O O O O O
+
+when O O O O O O
+i O O O O O O
+turned O O O O O O
+it O O O O O O
+on O O O O O O
+PUNCT O O O O O O
+nothing O O O O O O
+PUNCT O O O O O O
+
+they O O O O O O
+freeze O O O O O O
+all O O O O O O
+the O O O O O O
+time O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+sent O O O O O O
+it O O O O O O
+to O O O O O O
+them O O O O O O
+to O O O O O O
+fix O O O O O O
+in O O O O O O
+perfect O O O O O O
+condition O O O O O O
+but O O O O O O
+for O O O O O O
+what O O O O O O
+was O O O O O O
+wrong O O O O O O
+with O O O O O O
+it O O O O O O
+PUNCT O O O O O O
+
+after O O O O O O
+paying O O O O O O
+over O O O O O O
+PUNCT O O O O O O
+1000 O O O O O O
+for O O O O O O
+this O O O O O O
+computer O O O O O O
+PUNCT O O O O O O
+it O O O O O O
+was O O O O O O
+not O O O O O O
+worth O O O O O O
+it O O O O O O
+PUNCT O O O O O O
+
+very O O O O O O
+happy O O O O O O
+with O O O O O O
+my O O O O O O
+7th O O O O O O
+toshiba O O O O O O
+laptop O O O O O O
+PUNCT O O O O O O
+
+my O O O O O O
+wife O O O O O O
+recently O O O O O O
+purchased O O O O O O
+an O O O O O O
+apple O O O O O O
+macbook O O O O O O
+pro O O O O O O
+and O O O O O O
+our O O O O O O
+granddaughter O O O O O O
+fell O O O O O O
+in O O O O O O
+love O O O O O O
+with O O O O O O
+it O O O O O O
+and O O O O O O
+asked O O O O O O
+for O O O O O O
+one O O O O O O
+for O O O O O O
+her O O O O O O
+birthday O O O O O O
+PUNCT O O O O O O
+
+the O O O O O O
+price U-POS U-POS U-POS U-POS U-POS U-POS
+is O O O O O O
+great O O O O O O
+for O O O O O O
+this O O O O O O
+model O O O O O O
+PUNCT O O O O O O
+i O O O O O O
+only O O O O O O
+plan O O O O O O
+on O O O O O O
+using O O O O O O
+it O O O O O O
+for O O O O O O
+media O O O O O O
+in O O O O O O
+the O O O O O O
+entertainment O O O O O O
+room O O O O O O
+PUNCT O O O O O O
+
+it O O O O O O
+seemed O O O O O O
+to O O O O O O
+be O O O O O O
+a O O O O O O
+very O O O O O O
+nice O O O O O O
+laptop O O O O O O
+except O O O O O O
+i O O O O O O
+was O O O O O O
+not O O O O O O
+able O O O O O O
+to O O O O O O
+load O O O O O O
+my O O O O O O
+garmin B-NEG B-NEU B-NEG B-NEU B-NEU B-NEU
+gps I-NEG I-NEU I-NEG I-NEU I-NEU I-NEU
+software L-NEG L-NEU L-NEG L-NEU L-NEU L-NEU
+or O O O O O O
+microsoft B-NEG B-NEU B-NEU B-NEU B-NEU B-NEU
+office I-NEG L-NEU L-NEU L-NEU I-NEU L-NEU
+2003 L-NEG O O O L-NEU O
+PUNCT O O O O O O
+
+a O O O O O O
+tip O O O O O O
+for O O O O O O
+people O O O O O O
+looking O O O O O O
+into O O O O O O
+this O O O O O O
+computer O O O O O O
+PUNCT O O O O O O
+do O O O O O O
+not O O O O O O
+buy O O O O O O
+it O O O O O O
+save O O O O O O
+up O O O O O O
+a O O O O O O
+bit O O O O O O
+more O O O O O O
+money O O O O O O
+and O O O O O O
+buy O O O O O O
+a O O O O O O
+computer O O O O O O
+that O O O O O O
+will O O O O O O
+last O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+was O O O O O O
+waiting O O O O O O
+for O O O O O O
+this O O O O O O
+model O O O O O O
+to O O O O O O
+be O O O O O O
+released O O O O O O
+since O O O O O O
+january O O O O O O
+PUNCT O O O O O O
+and O O O O O O
+have O O O O O O
+been O O O O O O
+holding O O O O O O
+off O O O O O O
+on O O O O O O
+buying O O O O O O
+a O O O O O O
+macbook O O O O O O
+pro O O O O O O
+until O O O O O O
+the O O O O O O
+new O O O O O O
+model O O O O O O
+came O O O O O O
+out O O O O O O
+PUNCT O O O O O O
+
+so O O O O O O
+i O O O O O O
+would O O O O O O
+not O O O O O O
+reccomend O O O O O O
+anyone O O O O O O
+buying O O O O O O
+this O O O O O O
+computer O O O O O O
+
+the O O O O O O
+best O O O O O O
+thing O O O O O O
+is O O O O O O
+even O O O O O O
+while O O O O O O
+doing O O O O O O
+almost O O O O O O
+ten O O O O O O
+or O O O O O O
+twenty O O O O O O
+things O O O O O O
+at O O O O O O
+once O O O O O O
+PUNCT O O O O O O
+it O O O O O O
+never O O O O O O
+slows O O O O O O
+down O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+took O O O O O O
+it O O O O O O
+to O O O O O O
+the O O O O O O
+shop O O O O O O
+and O O O O O O
+they O O O O O O
+said O O O O O O
+it O O O O O O
+would O O O O O O
+cost O O O O O O
+too O O O O O O
+much O O O O O O
+to O O O O O O
+repair O O O O O O
+it O O O O O O
+PUNCT O O O O O O
+
+we O O O O O O
+also O O O O O O
+use O O O O O O
+paralles U-NEU O O O O O
+so O O O O O O
+we O O O O O O
+can O O O O O O
+run O O O O O O
+virtual O O O O O O
+machines O O O O O O
+of O O O O O O
+windows B-NEU B-NEU B-NEU B-NEU B-NEU B-NEU
+xp I-NEU I-NEU I-NEU I-NEU I-NEU I-NEU
+professional L-NEU L-NEU L-NEU L-NEU L-NEU L-NEU
+PUNCT O O O O O O
+windows B-NEU B-NEU B-NEU B-NEU B-NEU B-NEU
+7 I-NEU I-NEU I-NEU I-NEU I-NEU I-NEU
+home I-NEU I-NEU I-NEU I-NEU I-NEU I-NEU
+premium L-NEU L-NEU L-NEU L-NEU L-NEU L-NEU
+PUNCT O O O O O O
+windows B-NEU B-NEU B-NEU B-NEU B-NEU B-NEU
+server I-NEU L-NEU I-NEU L-NEU I-NEU I-NEU
+enterprise I-NEU O L-NEU O I-NEU L-NEU
+2003 L-NEU O O O L-NEU O
+PUNCT O O O O O O
+and O O O O O O
+windows B-NEU B-NEU B-NEU B-NEU B-NEU B-NEU
+server I-NEU L-NEU L-NEU L-NEU L-NEU I-NEU
+2008 I-NEU O O O O I-NEU
+enterprise L-NEU O O O O L-NEU
+PUNCT O O O O O O
+
+how O O O O O O
+toshiba O O O O O O
+handles O O O O O O
+the O O O O O O
+repair U-POS O O O O O
+seems O O O O O O
+to O O O O O O
+vary O O O O O O
+PUNCT O O O O O O
+some O O O O O O
+folks O O O O O O
+indicate O O O O O O
+that O O O O O O
+they O O O O O O
+were O O O O O O
+charged O O O O O O
+for O O O O O O
+even O O O O O O
+an O O O O O O
+intial O O O O O O
+fix O O O O O O
+PUNCT O O O O O O
+others O O O O O O
+had O O O O O O
+the O O O O O O
+repair U-POS O O O O O
+done O O O O O O
+5 O O O O O O
+times O O O O O O
+PUNCT O O O O O O
+
+i O O O O O O
+have O O O O O O
+a O O O O O O
+business O O O O O O
+website O O O O O O
+and O O O O O O
+every O O O O O O
+time O O O O O O
+i O O O O O O
+have O O O O O O
+to O O O O O O
+change O O O O O O
+something O O O O O O
+i O O O O O O
+have O O O O O O
+to O O O O O O
+go O O O O O O
+to O O O O O O
+the O O O O O O
+public O O O O O O
+library O O O O O O
+to O O O O O O
+use O O O O O O
+a O O O O O O
+pc O O O O O O
+PUNCT O O O O O O
 
