@@ -1,5 +1,5 @@
+-e git+git://github.com/apmoore1/target-extraction.git@v0.0.2#egg=target-extraction
 allennlp==0.9.0
 pylint
 pytest
 -e git+git://github.com/allenai/allentune@master#egg=allentune
--e git+git://github.com/apmoore1/target-extraction.git@master#egg=target-extraction

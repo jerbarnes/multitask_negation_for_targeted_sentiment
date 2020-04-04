@@ -540,9 +540,19 @@ For each of the CWR we use them to predict on the other domains that they were n
 ```
 ./scripts/generate_cross_domain_predictions.sh
 ```
-The analysis for this can be seen [here.](./notebooks/Cross_Domain.ipynb)
 
-The main problem that can be seen is the poor recall rate for the target extraction.
+As the MPQA trained models and dataset use a different sentiment label mapping (they use positive, neutral, and negative labels instead of POS, NEU, and NEG respectively that all other models and datasets use) we need to change the labels so they are all the same. To do this run the following command once and only once:
+``` bash
+python scripts/cross_domain_change_labels.py True
+```
+
+As the generation of the cross domain results takes a long time on the Google Colab notebook, we generate a JSON file of the results that can be used in the Google Colab notebook, to create the results:
+``` bash
+python scripts/cross_domain_change_labels.py False
+```
+The JSON file is saved at `data/results/en/cross_domain/results.json`.
+
+The Google Colab notebook of the analysis for this can be seen [here.](./notebooks/Cross_Domain.ipynb)
 
 ## Requirements
 

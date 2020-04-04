@@ -60,24 +60,24 @@ PUNCT O O O O O O
 
 i O O O O O O
 expected O O O O O O
-so O O O O O B-positive
-as O O O O O I-positive
-it O O O O O I-positive
-'s O O O O O I-positive
-an O O O O O I-positive
-apple O O O O O I-positive
-product O O O O O I-positive
-PUNCT O O O O O L-positive
+so O O O O O B-POS
+as O O O O O I-POS
+it O O O O O I-POS
+'s O O O O O I-POS
+an O O O O O I-POS
+apple O O O O O I-POS
+product O O O O O I-POS
+PUNCT O O O O O L-POS
 but O O O O O O
 i O O O O O O
 was O O O O O O
 glad O O O O O O
 to O O O O O O
-see O B-positive B-positive O B-positive B-positive
-my O I-positive I-positive O I-positive I-positive
-expectations O I-positive L-positive O I-positive I-positive
-exceeded O I-positive O O I-positive I-positive
-PUNCT O L-positive O O L-positive L-positive
+see O B-POS B-POS O B-POS B-POS
+my O I-POS I-POS O I-POS I-POS
+expectations O I-POS L-POS O I-POS I-POS
+exceeded O I-POS O O I-POS I-POS
+PUNCT O L-POS O O L-POS L-POS
 this O O O O O O
 is O O O O O O
 the O O O O O O
@@ -166,14 +166,14 @@ i O O O O O O
 am O O O O O O
 extremely O O O O O O
 happy O O O O O O
-to O O B-positive B-positive B-positive O
-be O B-positive I-positive I-positive I-positive B-positive
-back O I-positive I-positive I-positive I-positive I-positive
-to O I-positive I-positive I-positive I-positive I-positive
-an O I-positive I-positive I-positive I-positive I-positive
-apple B-POS I-positive L-positive I-positive I-positive I-positive
-os L-POS I-positive O I-positive I-positive I-positive
-PUNCT O L-positive O L-positive L-positive L-positive
+to O O B-POS B-POS B-POS O
+be O B-POS I-POS I-POS I-POS B-POS
+back O I-POS I-POS I-POS I-POS I-POS
+to O I-POS I-POS I-POS I-POS I-POS
+an O I-POS I-POS I-POS I-POS I-POS
+apple B-POS I-POS L-POS I-POS I-POS I-POS
+os L-POS I-POS O I-POS I-POS I-POS
+PUNCT O L-POS O L-POS L-POS L-POS
 
 this O O O O O O
 mac O O O O O O
@@ -209,14 +209,14 @@ i O O O O O O
 am O O O O O O
 pleased O O O O O O
 with O O O O O O
-the O O B-positive B-positive O B-positive
-fast O O I-positive I-positive O I-positive
-log B-POS O I-positive I-positive O I-positive
-on L-POS O I-positive I-positive O I-positive
-PUNCT O O I-positive L-positive O I-positive
-speedy O O I-positive O O I-positive
-wifi B-POS O I-positive O O I-positive
-connection L-POS O L-positive O O L-positive
+the O O B-POS B-POS O B-POS
+fast O O I-POS I-POS O I-POS
+log B-POS O I-POS I-POS O I-POS
+on L-POS O I-POS I-POS O I-POS
+PUNCT O O I-POS L-POS O I-POS
+speedy O O I-POS O O I-POS
+wifi B-POS O I-POS O O I-POS
+connection L-POS O L-POS O O L-POS
 and O O O O O O
 the O O O O O O
 long O O O O O O
@@ -258,9 +258,9 @@ all O O O O O O
 of O O O O O O
 us O O O O O O
 contemplating O O O O O O
-the O O O O O B-positive
-decision O O O O O I-positive
-PUNCT O O O O O L-positive
+the O O O O O B-POS
+decision O O O O O I-POS
+PUNCT O O O O O L-POS
 the O O O O O O
 mac O O O O O O
 mini O O O O O O
@@ -416,9 +416,9 @@ PUNCT O O O O O O
 
 i O O O O O O
 enjoy O O O O O O
-having O O B-positive B-positive O B-positive
-apple O O I-positive I-positive O I-positive
-products O O L-positive L-positive O L-positive
+having O O B-POS B-POS O B-POS
+apple O O I-POS I-POS O I-POS
+products O O L-POS L-POS O L-POS
 PUNCT O O O O O O
 
 i O O O O O O
@@ -459,9 +459,9 @@ i O O O O O O
 am O O O O O O
 really O O O O O O
 liking O O O O O O
-windows B-POS O O O O B-positive
-8 L-POS O O O O I-positive
-PUNCT O O O O O L-positive
+windows B-POS O O O O B-POS
+8 L-POS O O O O I-POS
+PUNCT O O O O O L-POS
 
 the O O O O O O
 baterry U-POS O O O O O
@@ -552,14 +552,14 @@ am O O O O O O
 fully O O O O O O
 satisfied O O O O O O
 with O O O O O O
-the O O B-positive B-neutral B-positive B-positive
-performance U-POS O L-positive I-neutral I-positive I-positive
-that O O O I-neutral I-positive I-positive
-the O O O I-neutral I-positive I-positive
-computer O O O I-neutral I-positive I-positive
-has O O O I-neutral I-positive I-positive
-supplied O O O I-neutral I-positive I-positive
-PUNCT O O O L-neutral L-positive L-positive
+the O O B-POS B-NEU B-POS B-POS
+performance U-POS O L-POS I-NEU I-POS I-POS
+that O O O I-NEU I-POS I-POS
+the O O O I-NEU I-POS I-POS
+computer O O O I-NEU I-POS I-POS
+has O O O I-NEU I-POS I-POS
+supplied O O O I-NEU I-POS I-POS
+PUNCT O O O L-NEU L-POS L-POS
 
 i O O O O O O
 'm O O O O O O
@@ -582,10 +582,10 @@ you O O O O O O
 so O O O O O O
 much O O O O O O
 for O O O O O O
-the O B-positive O B-positive O O
-great O I-positive O I-positive O O
-item O I-positive O I-positive O O
-PUNCT O L-positive O L-positive O O
+the O B-POS O B-POS O O
+great O I-POS O I-POS O O
+item O I-POS O I-POS O O
+PUNCT O L-POS O L-POS O O
 
 this O O O O O O
 laptop O O O O O O
@@ -683,11 +683,11 @@ everything O O O O O O
 i O O O O O O
 needed O O O O O O
 and O O O O O O
-the O O O B-positive O O
-price U-POS O O I-positive O O
-was O O O I-positive O O
-great O O O I-positive O O
-PUNCT O O O L-positive O O
+the O O O B-POS O O
+price U-POS O O I-POS O O
+was O O O I-POS O O
+great O O O I-POS O O
+PUNCT O O O L-POS O O
 
 it O O O O O O
 's O O O O O O
@@ -716,8 +716,8 @@ acer O O O O O O
 laptop O O O O O O
 PUNCT O O O O O O
 
-this O O O O O B-positive
-thing O O O O O L-positive
+this O O O O O B-POS
+thing O O O O O L-POS
 is O O O O O O
 awesome O O O O O O
 PUNCT O O O O O O
@@ -800,9 +800,9 @@ fell O O O O O O
 in O O O O O O
 love O O O O O O
 with O O O O O O
-this O O O B-positive B-positive B-positive
-thing O O O I-positive L-positive I-positive
-PUNCT O O O L-positive O L-positive
+this O O O B-POS B-POS B-POS
+thing O O O I-POS L-POS I-POS
+PUNCT O O O L-POS O L-POS
 
 everything O O O O O O
 is O O O O O O
@@ -829,11 +829,11 @@ far O O O O O O
 PUNCT O O O O O O
 and O O O O O O
 hope O O O O O O
-it O O O O B-positive O
-stays O O O O I-positive O
-like O O O O I-positive O
-that O O O O I-positive O
-PUNCT O O O O L-positive O
+it O O O O B-POS O
+stays O O O O I-POS O
+like O O O O I-POS O
+that O O O O I-POS O
+PUNCT O O O O L-POS O
 
 this O O O O O O
 laptop O O O O O O
@@ -876,8 +876,8 @@ not O O O O O O
 though O O O O O O
 PUNCT O O O O O O
 
-this O O O O O B-positive
-device O O O O O L-positive
+this O O O O O B-POS
+device O O O O O L-POS
 has O O O O O O
 met O O O O O O
 my O O O O O O
@@ -996,10 +996,10 @@ was O O O O O O
 extremely O O O O O O
 happy O O O O O O
 with O O O O O O
-the O B-positive O B-positive B-positive B-positive
-os U-POS I-positive O I-positive I-positive I-positive
-itself O I-positive O I-positive I-positive I-positive
-PUNCT O L-positive O L-positive L-positive L-positive
+the O B-POS O B-POS B-POS B-POS
+os U-POS I-POS O I-POS I-POS I-POS
+itself O I-POS O I-POS I-POS I-POS
+PUNCT O L-POS O L-POS L-POS L-POS
 
 i O O O O O O
 was O O O O O O
@@ -1077,13 +1077,13 @@ the O O O O O O
 first O O O O O O
 to O O O O O O
 recommend O O O O O O
-an O O O O B-positive B-positive
-air O O O O I-positive I-positive
-for O O O O I-positive I-positive
-truly O O O O I-positive I-positive
-portable B-POS O O O I-positive I-positive
-computing L-POS O O O I-positive I-positive
-PUNCT O O O O L-positive L-positive
+an O O O O B-POS B-POS
+air O O O O I-POS I-POS
+for O O O O I-POS I-POS
+truly O O O O I-POS I-POS
+portable B-POS O O O I-POS I-POS
+computing L-POS O O O I-POS I-POS
+PUNCT O O O O L-POS L-POS
 
 i O O O O O O
 would O O O O O O
@@ -1273,11 +1273,11 @@ PUNCT O O O O O O
 i O O O O O O
 would O O O O O O
 suggest O O O O O O
-this O O O O O B-positive
-product O O O O O I-positive
-to O O O O O I-positive
-anyone O O O O O I-positive
-PUNCT O O O O O L-positive
+this O O O O O B-POS
+product O O O O O I-POS
+to O O O O O I-POS
+anyone O O O O O I-POS
+PUNCT O O O O O L-POS
 
 with O O O O O O
 no O O O O O O
@@ -1287,8 +1287,8 @@ i O O O O O O
 'm O O O O O O
 happy O O O O O O
 with O O O O O O
-this O B-positive B-positive B-positive B-positive B-positive
-purchase O L-positive L-positive L-positive L-positive L-positive
+this O B-POS B-POS B-POS B-POS B-POS
+purchase O L-POS L-POS L-POS L-POS L-POS
 because O O O O O O
 i O O O O O O
 saved O O O O O O
@@ -1310,22 +1310,22 @@ PUNCT O O O O O O
 
 i O O O O O O
 needed O O O O O O
-something O O O B-positive O O
-affordable O O O I-positive O O
-from O O O I-positive O O
-apple O O O L-positive O O
+something O O O B-POS O O
+affordable O O O I-POS O O
+from O O O I-POS O O
+apple O O O L-POS O O
 and O O O O O O
 was O O O O O O
 tired O O O O O O
 of O O O O O O
-dealing O O B-negative B-negative B-negative B-negative
-with O O I-negative I-negative I-negative I-negative
-pc O O I-negative I-negative I-negative I-negative
-laptop O O L-negative L-negative L-negative I-negative
-after O O O O O I-negative
-pc O O O O O I-negative
-laptop O O O O O I-negative
-PUNCT O O O O O L-negative
+dealing O O B-NEG B-NEG B-NEG B-NEG
+with O O I-NEG I-NEG I-NEG I-NEG
+pc O O I-NEG I-NEG I-NEG I-NEG
+laptop O O L-NEG L-NEG L-NEG I-NEG
+after O O O O O I-NEG
+pc O O O O O I-NEG
+laptop O O O O O I-NEG
+PUNCT O O O O O L-NEG
 
 just O O O O O O
 bit O O O O O O
@@ -1376,17 +1376,17 @@ PUNCT O O O O O O
 i O O O O O O
 really O O O O O O
 like O O O O O O
-the O B-positive B-positive B-positive B-positive B-positive
-size U-POS L-positive L-positive L-positive L-positive L-positive
+the O B-POS B-POS B-POS B-POS B-POS
+size U-POS L-POS L-POS L-POS L-POS L-POS
 and O O O O O O
 i O O O O O O
 'm O O O O O O
 a O O O O O O
 fan O O O O O O
 of O O O O O O
-the O O O O O B-positive
-acers O O O O O I-positive
-PUNCT O O O O O L-positive
+the O O O O O B-POS
+acers O O O O O I-POS
+PUNCT O O O O O L-POS
 
 this O O O O O O
 is O O O O O O
@@ -1406,12 +1406,12 @@ PUNCT O O O O O O
 i O O O O O O
 opted O O O O O O
 for O O O O O O
-the O B-positive O O O O
-squaretrade B-POS I-positive O O O O
-3-year I-POS I-positive O O O O
-computer I-POS I-positive O O O O
-accidental I-POS I-positive O O O O
-protection I-POS L-positive O O O O
+the O B-POS O O O O
+squaretrade B-POS I-POS O O O O
+3-year I-POS I-POS O O O O
+computer I-POS I-POS O O O O
+accidental I-POS I-POS O O O O
+protection I-POS L-POS O O O O
 warranty L-POS O O O O O
 PUNCT O O O O O O
 1500-2000 O O O O O O
@@ -1539,11 +1539,11 @@ i O O O O O O
 have O O O O O O
 always O O O O O O
 wanted O O O O O O
-a O B-positive B-positive B-positive B-positive B-positive
-macbook O I-positive I-positive I-positive I-positive I-positive
-proalways O I-positive L-positive I-positive I-positive I-positive
-PUNCT O L-positive O I-positive I-positive I-positive
-PUNCT O O O L-positive L-positive L-positive
+a O B-POS B-POS B-POS B-POS B-POS
+macbook O I-POS I-POS I-POS I-POS I-POS
+proalways O I-POS L-POS I-POS I-POS I-POS
+PUNCT O L-POS O I-POS I-POS I-POS
+PUNCT O O O L-POS L-POS L-POS
 
 the O O O O O O
 reason O O O O O O
@@ -1605,10 +1605,10 @@ he O O O O O O
 's O O O O O O
 thrilled O O O O O O
 with O O O O O O
-his O B-positive B-positive B-positive B-positive B-positive
-new O I-positive I-positive I-positive I-positive I-positive
-laptop O I-positive I-positive I-positive I-positive I-positive
-PUNCT O L-positive L-positive L-positive L-positive L-positive
+his O B-POS B-POS B-POS B-POS B-POS
+new O I-POS I-POS I-POS I-POS I-POS
+laptop O I-POS I-POS I-POS I-POS I-POS
+PUNCT O L-POS L-POS L-POS L-POS L-POS
 
 amazing O O O O O O
 product O O O O O O
@@ -1840,14 +1840,14 @@ i O O O O O O
 really O O O O O O
 do O O O O O O
 love O O O O O O
-it O O U-positive U-positive U-positive U-positive
+it O O U-POS U-POS U-POS U-POS
 and O O O O O O
 i O O O O O O
 'm O O O O O O
 happy O O O O O O
-it O O B-positive O O B-positive
-was O O I-positive O O I-positive
-economical O O L-positive O O L-positive
+it O O B-POS O O B-POS
+was O O I-POS O O I-POS
+economical O O L-POS O O L-POS
 and O O O O O O
 i O O O O O O
 'm O O O O O O
@@ -1923,15 +1923,15 @@ i O O O O O O
 would O O O O O O
 recommend O O O O O O
 to O O O O O O
-any O O O O B-positive O
-one O O O O I-positive O
-lloking O O O O I-positive O
-for O O O O I-positive O
-a O B-positive B-positive B-positive I-positive B-positive
-first O I-positive I-positive I-positive I-positive I-positive
-class O I-positive I-positive I-positive I-positive I-positive
-computer O I-positive I-positive I-positive I-positive I-positive
-PUNCT O L-positive L-positive L-positive L-positive L-positive
+any O O O O B-POS O
+one O O O O I-POS O
+lloking O O O O I-POS O
+for O O O O I-POS O
+a O B-POS B-POS B-POS I-POS B-POS
+first O I-POS I-POS I-POS I-POS I-POS
+class O I-POS I-POS I-POS I-POS I-POS
+computer O I-POS I-POS I-POS I-POS I-POS
+PUNCT O L-POS L-POS L-POS L-POS L-POS
 
 i O O O O O O
 do O O O O O O
@@ -1939,9 +1939,9 @@ not O O O O O O
 like O O O O O O
 too O O O O O O
 much O O O O O O
-windows B-NEG O O B-negative O O
-8 L-NEG O O I-negative O O
-PUNCT O O O L-negative O O
+windows B-NEG O O B-NEG O O
+8 L-NEG O O I-NEG O O
+PUNCT O O O L-NEG O O
 
 startup B-NEG O O O O O
 times L-NEG O O O O O
@@ -2005,8 +2005,8 @@ can O O O O O O
 i O O O O O O
 ask O O O O O O
 for O O O O O O
-PUNCT O O O O B-positive O
-PUNCT O O O O L-positive O
+PUNCT O O O O B-POS O
+PUNCT O O O O L-POS O
 
 this O O O O O O
 mouse U-POS O O O O O
@@ -2103,10 +2103,10 @@ windows B-NEG O O O O O
 8 L-NEG O O O O O
 and O O O O O O
 hated O O O O O O
-it O O U-negative U-negative O B-positive
-PUNCT O O O O O I-positive
-PUNCT O O O O O I-positive
-PUNCT O O O O O L-positive
+it O O U-NEG U-NEG O B-POS
+PUNCT O O O O O I-POS
+PUNCT O O O O O I-POS
+PUNCT O O O O O L-POS
 
 the O O O O O O
 price O O O O O O
@@ -2162,8 +2162,8 @@ i O O O O O O
 do O O O O O O
 not O O O O O O
 like O O O O O O
-win8 U-NEG O O B-negative O O
-PUNCT O O O L-negative O O
+win8 U-NEG O O B-NEG O O
+PUNCT O O O L-NEG O O
 
 i O O O O O O
 have O O O O O O
@@ -2257,11 +2257,11 @@ PUNCT O O O O O O
 
 i O O O O O O
 wanted O O O O O O
-it O O O O O U-positive
+it O O O O O U-POS
 for O O O O O O
-it O O B-positive O O O
-'s O O I-positive O O O
-mobility U-POS O L-positive O O O
+it O O B-POS O O O
+'s O O I-POS O O O
+mobility U-POS O L-POS O O O
 and O O O O O O
 man O O O O O O
 PUNCT O O O O O O
@@ -2394,8 +2394,8 @@ very O O O O O O
 much O O O O O O
 impressed O O O O O O
 with O O O O O O
-me O O O O B-positive O
-PUNCT O O O O L-positive O
+me O O O O B-POS O
+PUNCT O O O O L-POS O
 
 this O O O O O O
 was O O O O O O
@@ -2449,7 +2449,7 @@ find O O O O O O
 i O O O O O O
 really O O O O O O
 liked O O O O O O
-PUNCT O O O U-positive O O
+PUNCT O O O U-POS O O
 
 the O O O O O O
 settings U-NEG O O O O O
@@ -2510,8 +2510,8 @@ PUNCT O O O O O O
 thank O O O O O O
 goodness O O O O O O
 for O O O O O O
-openoffice U-POS O U-positive B-positive B-positive B-positive
-PUNCT O O O L-positive L-positive L-positive
+openoffice U-POS O U-POS B-POS B-POS B-POS
+PUNCT O O O L-POS L-POS L-POS
 
 awesome O O O O O O
 form B-POS O O O O O
@@ -2548,14 +2548,14 @@ i O O O O O O
 am O O O O O O
 astounded O O O O O O
 that O O O O O O
-i O O O O O B-negative
-had O O O O O I-negative
-n't O O O O O I-negative
-made O O O O O I-negative
-the O O O O O I-negative
-switch O O O O O I-negative
-sooner O O O O O I-negative
-PUNCT O O O O O L-negative
+i O O O O O B-NEG
+had O O O O O I-NEG
+n't O O O O O I-NEG
+made O O O O O I-NEG
+the O O O O O I-NEG
+switch O O O O O I-NEG
+sooner O O O O O I-NEG
+PUNCT O O O O O L-NEG
 
 its O O O O O O
 perfect O O O O O O
@@ -2567,12 +2567,12 @@ PUNCT O O O O O O
 
 i O O O O O O
 love O O O O O O
-the O B-positive O B-positive B-positive B-positive
-keyboard U-POS I-positive O L-positive I-positive L-positive
-and O I-positive O O I-positive O
-the O I-positive O O I-positive O
-screen U-POS I-positive O O I-positive O
-PUNCT O L-positive O O L-positive O
+the O B-POS O B-POS B-POS B-POS
+keyboard U-POS I-POS O L-POS I-POS L-POS
+and O I-POS O O I-POS O
+the O I-POS O O I-POS O
+screen U-POS I-POS O O I-POS O
+PUNCT O L-POS O O L-POS O
 
 i O O O O O O
 find O O O O O O
@@ -2661,9 +2661,9 @@ impressed O O O O O O
 with O O O O O O
 everything O O O O O O
 about O O O O O O
-this O B-positive B-positive B-positive B-positive B-positive
-computer O I-positive I-positive I-positive I-positive I-positive
-PUNCT O L-positive L-positive L-positive L-positive L-positive
+this O B-POS B-POS B-POS B-POS B-POS
+computer O I-POS I-POS I-POS I-POS I-POS
+PUNCT O L-POS L-POS L-POS L-POS L-POS
 
 so O O O O O O
 this O O O O O O
@@ -2675,7 +2675,7 @@ and O O O O O O
 i O O O O O O
 highly O O O O O O
 suggest O O O O O O
-it O O O U-positive O O
+it O O O U-POS O O
 PUNCT O O O O O O
 
 the O O O O O O
@@ -2847,7 +2847,7 @@ which O O O O O O
 i O O O O O O
 highly O O O O O O
 recommend O O O O O O
-PUNCT O O U-positive U-positive U-positive O
+PUNCT O O U-POS U-POS U-POS O
 
 i O O O O O O
 bought O O O O O O
@@ -2882,12 +2882,12 @@ PUNCT O O O O O O
 
 i O O O O O O
 wanted O O O O O O
-a O B-positive B-positive B-positive B-positive B-positive
-simple O I-positive I-positive I-positive I-positive I-positive
-PUNCT O I-positive I-positive I-positive I-positive I-positive
-reliable O I-positive I-positive I-positive I-positive I-positive
-laptop O I-positive I-positive I-positive I-positive I-positive
-PUNCT O L-positive L-positive L-positive L-positive L-positive
+a O B-POS B-POS B-POS B-POS B-POS
+simple O I-POS I-POS I-POS I-POS I-POS
+PUNCT O I-POS I-POS I-POS I-POS I-POS
+reliable O I-POS I-POS I-POS I-POS I-POS
+laptop O I-POS I-POS I-POS I-POS I-POS
+PUNCT O L-POS L-POS L-POS L-POS L-POS
 
 cheaper O O O O O O
 than O O O O O O
@@ -2920,11 +2920,11 @@ PUNCT O O O O O O
 extremely O O O O O O
 disappointed O O O O O O
 with O O O O O O
-the O O B-negative B-negative B-negative B-positive
-way O O I-negative I-negative L-negative I-positive
-it O O L-negative I-negative O I-positive
-is O O O I-negative O I-positive
-PUNCT O O O L-negative O L-positive
+the O O B-NEG B-NEG B-NEG B-POS
+way O O I-NEG I-NEG L-NEG I-POS
+it O O L-NEG I-NEG O I-POS
+is O O O I-NEG O I-POS
+PUNCT O O O L-NEG O L-POS
 
 never O O O O O O
 been O O O O O O
@@ -2952,11 +2952,11 @@ does O O O O O O
 everything O O O O O O
 i O O O O O O
 wanted O O O O O O
-this O B-positive B-positive B-positive B-positive B-positive
-laptop O I-positive I-positive I-positive I-positive I-positive
-to O I-positive I-positive I-positive I-positive I-positive
-do O I-positive L-positive I-positive I-positive I-positive
-PUNCT O L-positive O L-positive L-positive L-positive
+this O B-POS B-POS B-POS B-POS B-POS
+laptop O I-POS I-POS I-POS I-POS I-POS
+to O I-POS I-POS I-POS I-POS I-POS
+do O I-POS L-POS I-POS I-POS I-POS
+PUNCT O L-POS O L-POS L-POS L-POS
 
 besides O O O O O O
 PUNCT O O O O O O
@@ -3034,11 +3034,11 @@ very O O O O O O
 impressed O O O O O O
 PUNCT O O O O O O
 thank O O O O O O
-you O O U-positive U-positive O B-positive
-apple O O O O O I-positive
-and O O O O O I-positive
-amazon O O O O O I-positive
-PUNCT O O O O O L-positive
+you O O U-POS U-POS O B-POS
+apple O O O O O I-POS
+and O O O O O I-POS
+amazon O O O O O I-POS
+PUNCT O O O O O L-POS
 
 yes O O O O O O
 PUNCT O O O O O O
@@ -3323,7 +3323,7 @@ exactly O O O O O O
 what O O O O O O
 i O O O O O O
 wanted O O O O O O
-PUNCT O O O U-positive O O
+PUNCT O O O U-POS O O
 and O O O O O O
 it O O O O O O
 has O O O O O O
@@ -3682,13 +3682,13 @@ not O O O O O O
 something O O O O O O
 you O O O O O O
 want O O O O O O
-to O O O B-positive B-positive B-positive
-miss O O O I-positive I-positive I-positive
-out O O O I-positive I-positive I-positive
-on O O O I-positive I-positive I-positive
-PUNCT O O O I-positive I-positive I-positive
-PUNCT O O O I-positive I-positive I-positive
-PUNCT O O O L-positive L-positive L-positive
+to O O O B-POS B-POS B-POS
+miss O O O I-POS I-POS I-POS
+out O O O I-POS I-POS I-POS
+on O O O I-POS I-POS I-POS
+PUNCT O O O I-POS I-POS I-POS
+PUNCT O O O I-POS I-POS I-POS
+PUNCT O O O L-POS L-POS L-POS
 
 one O O O O O O
 more O O O O O O
@@ -3844,9 +3844,9 @@ mac O O O O O O
 and O O O O O O
 am O O O O O O
 glad O O O O O O
-i O O O O B-positive B-positive
-did O O O O I-positive I-positive
-PUNCT O O O O L-positive L-positive
+i O O O O B-POS B-POS
+did O O O O I-POS I-POS
+PUNCT O O O O L-POS L-POS
 
 i O O O O O O
 have O O O O O O
@@ -4012,10 +4012,10 @@ am O O O O O O
 very O O O O O O
 happy O O O O O O
 with O O O O O O
-my O O O O B-positive B-positive
-first O O O O I-positive I-positive
-mac O O O O I-positive I-positive
-PUNCT O O O O L-positive L-positive
+my O O O O B-POS B-POS
+first O O O O I-POS I-POS
+mac O O O O I-POS I-POS
+PUNCT O O O O L-POS L-POS
 
 easy O O O O O O
 to O O O O O O
@@ -4221,19 +4221,19 @@ mac O O O O O O
 's O O O O O O
 complain O O O O O O
 about O O O O O O
-anything O O O O B-negative B-negative
-PUNCT O O O O L-negative L-negative
+anything O O O O B-NEG B-NEG
+PUNCT O O O O L-NEG L-NEG
 
 my O O O O O O
 wife O O O O O O
 was O O O O O O
 so O O O O O O
 excited O O O O O O
-to O O O O B-positive B-positive
-open O O B-positive O I-positive I-positive
-the O O I-positive O I-positive I-positive
-box O O I-positive O I-positive I-positive
-PUNCT O O L-positive O L-positive L-positive
+to O O O O B-POS B-POS
+open O O B-POS O I-POS I-POS
+the O O I-POS O I-POS I-POS
+box O O I-POS O I-POS I-POS
+PUNCT O O L-POS O L-POS L-POS
 but O O O O O O
 quickly O O O O O O
 came O O O O O O
@@ -4262,14 +4262,14 @@ PUNCT O O O O O O
 
 i O O O O O O
 wanted O O O O O O
-a O B-positive B-positive B-positive B-positive B-positive
-computer O I-positive L-positive I-positive I-positive L-positive
-that O I-positive O I-positive I-positive O
-was O I-positive O I-positive I-positive O
-quite O I-positive O I-positive I-positive O
-PUNCT O L-positive O I-positive I-positive O
-fast O O O I-positive I-positive O
-PUNCT O O O L-positive L-positive O
+a O B-POS B-POS B-POS B-POS B-POS
+computer O I-POS L-POS I-POS I-POS L-POS
+that O I-POS O I-POS I-POS O
+was O I-POS O I-POS I-POS O
+quite O I-POS O I-POS I-POS O
+PUNCT O L-POS O I-POS I-POS O
+fast O O O I-POS I-POS O
+PUNCT O O O L-POS L-POS O
 and O O O O O O
 that O O O O O O
 had O O O O O O
@@ -4294,7 +4294,7 @@ is O O O O O O
 i O O O O O O
 am O O O O O O
 impressed O O O O O O
-PUNCT O O O U-positive O O
+PUNCT O O O U-POS O O
 
 it O O O O O O
 suddenly O O O O O O
@@ -4308,7 +4308,7 @@ did O O O O O O
 everything O O O O O O
 we O O O O O O
 expected O O O O O O
-PUNCT O O O U-positive O O
+PUNCT O O O U-POS O O
 
 harddrive U-NEG O O O O O
 was O O O O O O
@@ -4405,19 +4405,19 @@ PUNCT O O O O O O
 i O O O O O O
 'm O O O O O O
 hoping O O O O O O
-the O B-positive B-positive B-positive O B-positive
-rest O I-positive I-positive I-positive O I-positive
-of O I-positive I-positive I-positive O I-positive
-the O I-positive I-positive I-positive O I-positive
-features O I-positive L-positive I-positive O L-positive
-will O I-positive O I-positive O O
-be O I-positive O I-positive O O
-the O I-positive O I-positive O O
-signature O I-positive O I-positive O O
-quality O I-positive O I-positive O O
-of O I-positive O I-positive O O
-apple O I-positive O I-positive O O
-PUNCT O L-positive O L-positive O O
+the O B-POS B-POS B-POS O B-POS
+rest O I-POS I-POS I-POS O I-POS
+of O I-POS I-POS I-POS O I-POS
+the O I-POS I-POS I-POS O I-POS
+features O I-POS L-POS I-POS O L-POS
+will O I-POS O I-POS O O
+be O I-POS O I-POS O O
+the O I-POS O I-POS O O
+signature O I-POS O I-POS O O
+quality O I-POS O I-POS O O
+of O I-POS O I-POS O O
+apple O I-POS O I-POS O O
+PUNCT O L-POS O L-POS O O
 
 i O O O O O O
 use O O O O O O
@@ -4451,7 +4451,7 @@ is O O O O O O
 bright O O O O O O
 and O O O O O O
 gorgeous O O O O O O
-PUNCT O O O U-positive O O
+PUNCT O O O U-POS O O
 
 also O O O O O O
 is O O O O O O
@@ -4494,15 +4494,15 @@ i O O O O O O
 am O O O O O O
 very O O O O O O
 satisfied O O O O O O
-PUNCT O O O U-positive O O
+PUNCT O O O U-POS O O
 
 if O O O O O O
 you O O O O O O
 want O O O O O O
-more O O B-positive B-positive B-positive O
-information O O I-positive I-positive I-positive O
-on O O I-positive I-positive I-positive O
-macs O O L-positive L-positive L-positive O
+more O O B-POS B-POS B-POS O
+information O O I-POS I-POS I-POS O
+on O O I-POS I-POS I-POS O
+macs O O L-POS L-POS L-POS O
 i O O O O O O
 suggest O O O O O O
 going O O O O O O
@@ -4662,12 +4662,12 @@ i O O O O O O
 was O O O O O O
 amazed O O O O O O
 at O O O O O O
-how O O O B-negative O O
-fast O O O I-negative O O
-the O O O I-negative B-positive B-positive
-delivery U-POS O O I-negative I-positive I-positive
-was O O O I-negative I-positive I-positive
-PUNCT O O O L-negative L-positive L-positive
+how O O O B-NEG O O
+fast O O O I-NEG O O
+the O O O I-NEG B-POS B-POS
+delivery U-POS O O I-NEG I-POS I-POS
+was O O O I-NEG I-POS I-POS
+PUNCT O O O L-NEG L-POS L-POS
 
 good O O O O O O
 computer O O O O O O
@@ -4719,10 +4719,10 @@ i O O O O O O
 am O O O O O O
 so O O O O O O
 happy O O O O O O
-i O O O O O B-positive
-bought O O O O O I-positive
-it O O O O O I-positive
-PUNCT O O O O O L-positive
+i O O O O O B-POS
+bought O O O O O I-POS
+it O O O O O I-POS
+PUNCT O O O O O L-POS
 
 let O O O O O O
 me O O O O O O
@@ -4735,32 +4735,32 @@ i O O O O O O
 was O O O O O O
 highly O O O O O O
 reluctant O O O O O O
-to O O B-negative O B-negative B-negative
-spend O O I-negative O I-negative I-negative
-so O O I-negative O I-negative I-negative
-much O O I-negative O I-negative I-negative
-money O O I-negative O I-negative I-negative
-on O O I-negative O I-negative I-negative
-a O O I-negative O I-negative I-negative
-laptop O O L-negative O I-negative I-negative
-PUNCT O O O O L-negative L-negative
+to O O B-NEG O B-NEG B-NEG
+spend O O I-NEG O I-NEG I-NEG
+so O O I-NEG O I-NEG I-NEG
+much O O I-NEG O I-NEG I-NEG
+money O O I-NEG O I-NEG I-NEG
+on O O I-NEG O I-NEG I-NEG
+a O O I-NEG O I-NEG I-NEG
+laptop O O L-NEG O I-NEG I-NEG
+PUNCT O O O O L-NEG L-NEG
 
 i O O O O O O
 like O O O O O O
-the O B-positive B-positive B-positive B-positive B-positive
-design U-POS I-positive I-positive I-positive I-positive I-positive
-and O I-positive I-positive I-positive I-positive I-positive
-ease O I-positive I-positive I-positive I-positive I-positive
-of O I-positive I-positive I-positive I-positive I-positive
-use O I-positive I-positive I-positive I-positive I-positive
-with O I-positive I-positive I-positive I-positive I-positive
-the O I-positive I-positive I-positive I-positive I-positive
-keyboard U-POS I-positive I-positive I-positive I-positive I-positive
-PUNCT O L-positive I-positive I-positive L-positive L-positive
-plenty O O I-positive I-positive O O
-of O O I-positive I-positive O O
-ports U-POS O L-positive I-positive O O
-PUNCT O O O L-positive O O
+the O B-POS B-POS B-POS B-POS B-POS
+design U-POS I-POS I-POS I-POS I-POS I-POS
+and O I-POS I-POS I-POS I-POS I-POS
+ease O I-POS I-POS I-POS I-POS I-POS
+of O I-POS I-POS I-POS I-POS I-POS
+use O I-POS I-POS I-POS I-POS I-POS
+with O I-POS I-POS I-POS I-POS I-POS
+the O I-POS I-POS I-POS I-POS I-POS
+keyboard U-POS I-POS I-POS I-POS I-POS I-POS
+PUNCT O L-POS I-POS I-POS L-POS L-POS
+plenty O O I-POS I-POS O O
+of O O I-POS I-POS O O
+ports U-POS O L-POS I-POS O O
+PUNCT O O O L-POS O O
 
 apple O O O O O O
 is O O O O O O
@@ -4835,12 +4835,12 @@ PUNCT O O O O O O
 
 i O O O O O O
 like O O O O O O
-the O O O B-positive B-positive O
-lighted B-POS O O I-positive I-positive O
-screen L-POS O O I-positive I-positive O
-at O O O I-positive I-positive O
-night O O O I-positive I-positive O
-PUNCT O O O L-positive L-positive O
+the O O O B-POS B-POS O
+lighted B-POS O O I-POS I-POS O
+screen L-POS O O I-POS I-POS O
+at O O O I-POS I-POS O
+night O O O I-POS I-POS O
+PUNCT O O O L-POS L-POS O
 
 it O O O O O O
 's O O O O O O
@@ -4944,8 +4944,8 @@ am O O O O O O
 not O O O O O O
 happy O O O O O O
 with O O O O O O
-my O B-positive B-positive B-negative B-negative B-positive
-purchase O L-positive L-positive L-negative L-negative L-positive
+my O B-POS B-POS B-NEG B-NEG B-POS
+purchase O L-POS L-POS L-NEG L-NEG L-POS
 
 it O O O O O O
 's O O O O O O
@@ -5125,10 +5125,10 @@ PUNCT O O O O O O
 
 i O O O O O O
 like O O O O O O
-the O B-positive B-positive B-positive B-positive B-positive
-operating B-POS I-positive I-positive I-positive I-positive I-positive
-system L-POS L-positive L-positive I-positive I-positive L-positive
-PUNCT O O O L-positive L-positive O
+the O B-POS B-POS B-POS B-POS B-POS
+operating B-POS I-POS I-POS I-POS I-POS I-POS
+system L-POS L-POS L-POS I-POS I-POS L-POS
+PUNCT O O O L-POS L-POS O
 
 i O O O O O O
 wish O O O O O O
@@ -5144,10 +5144,10 @@ PUNCT O O O O O O
 
 i O O O O O O
 love O O O O O O
-the O B-positive O B-positive B-positive B-positive
-form B-POS I-positive O I-positive I-positive I-positive
-factor L-POS I-positive O I-positive I-positive I-positive
-PUNCT O L-positive O L-positive L-positive L-positive
+the O B-POS O B-POS B-POS B-POS
+form B-POS I-POS O I-POS I-POS I-POS
+factor L-POS I-POS O I-POS I-POS I-POS
+PUNCT O L-POS O L-POS L-POS L-POS
 
 i O O O O O O
 have O O O O O O
@@ -5322,29 +5322,29 @@ PUNCT O O O O O O
 
 i O O O O O O
 love O O O O O O
-this O B-positive B-positive B-positive B-positive B-positive
-piece O I-positive I-positive I-positive I-positive I-positive
-of O I-positive I-positive I-positive I-positive I-positive
-equipment O I-positive L-positive I-positive I-positive I-positive
-PUNCT O L-positive O L-positive L-positive L-positive
+this O B-POS B-POS B-POS B-POS B-POS
+piece O I-POS I-POS I-POS I-POS I-POS
+of O I-POS I-POS I-POS I-POS I-POS
+equipment O I-POS L-POS I-POS I-POS I-POS
+PUNCT O L-POS O L-POS L-POS L-POS
 it O O O O O O
 will O O O O O O
 be O O O O O O
 hard O O O O O O
-to O O O O B-positive O
-go O O O O I-positive O
-back O O O O I-positive O
-to O O O O I-positive O
-other O O O O I-positive O
-type O O O O I-positive O
-of O O O O I-positive O
-laptop O O O O I-positive O
-after O O O O I-positive O
-using O O O O I-positive O
-a O O O O I-positive O
-macbook O O O O I-positive O
-pro O O O O I-positive O
-PUNCT O O O O L-positive O
+to O O O O B-POS O
+go O O O O I-POS O
+back O O O O I-POS O
+to O O O O I-POS O
+other O O O O I-POS O
+type O O O O I-POS O
+of O O O O I-POS O
+laptop O O O O I-POS O
+after O O O O I-POS O
+using O O O O I-POS O
+a O O O O I-POS O
+macbook O O O O I-POS O
+pro O O O O I-POS O
+PUNCT O O O O L-POS O
 
 very O O O O O O
 nice O O O O O O
@@ -5355,8 +5355,8 @@ PUNCT O O O O O O
 very O O O O O O
 disappointed O O O O O O
 with O O O O O O
-apple O O B-negative B-negative B-positive B-positive
-PUNCT O O L-negative L-negative L-positive L-positive
+apple O O B-NEG B-NEG B-POS B-POS
+PUNCT O O L-NEG L-NEG L-POS L-POS
 
 this O O O O O O
 macbook O O O O O O
@@ -5487,13 +5487,13 @@ PUNCT O O O O O O
 i O O O O O O
 just O O O O O O
 hope O O O O O O
-this O B-positive O O O B-positive
-expensive O I-positive O O O I-positive
-laptop O L-positive O O O I-positive
-does O O O O O I-positive
-n't O O O O O I-positive
-go O O O O O I-positive
-dead O O O O O L-positive
+this O B-POS O O O B-POS
+expensive O I-POS O O O I-POS
+laptop O L-POS O O O I-POS
+does O O O O O I-POS
+n't O O O O O I-POS
+go O O O O O I-POS
+dead O O O O O L-POS
 like O O O O O O
 my O O O O O O
 friendsit O O O O O O
@@ -5697,15 +5697,15 @@ i O O O O O O
 overall O O O O O O
 pleased O O O O O O
 with O O O O O O
-the O B-positive B-positive B-positive B-positive B-positive
-interface U-POS I-positive I-positive I-positive I-positive I-positive
-and O I-positive I-positive I-positive I-positive I-positive
-the O I-positive I-positive I-positive I-positive I-positive
-portability U-POS I-positive I-positive I-positive I-positive I-positive
-of O I-positive I-positive I-positive I-positive I-positive
-this O I-positive I-positive I-positive I-positive I-positive
-product O L-positive L-positive I-positive I-positive I-positive
-PUNCT O O O L-positive L-positive L-positive
+the O B-POS B-POS B-POS B-POS B-POS
+interface U-POS I-POS I-POS I-POS I-POS I-POS
+and O I-POS I-POS I-POS I-POS I-POS
+the O I-POS I-POS I-POS I-POS I-POS
+portability U-POS I-POS I-POS I-POS I-POS I-POS
+of O I-POS I-POS I-POS I-POS I-POS
+this O I-POS I-POS I-POS I-POS I-POS
+product O L-POS L-POS I-POS I-POS I-POS
+PUNCT O O O L-POS L-POS L-POS
 
 so O O O O O O
 when O O O O O O
@@ -5731,13 +5731,13 @@ with O O O O O O
 it O O O O O O
 PUNCT O O O O O O
 
-this O O O O B-positive B-positive
-item O O O O I-positive I-positive
-is O O O O I-positive I-positive
-a O O O O I-positive I-positive
-beautiful O O O O I-positive I-positive
-piece O O O O I-positive I-positive
-PUNCT O O O O L-positive L-positive
+this O O O O B-POS B-POS
+item O O O O I-POS I-POS
+is O O O O I-POS I-POS
+a O O O O I-POS I-POS
+beautiful O O O O I-POS I-POS
+piece O O O O I-POS I-POS
+PUNCT O O O O L-POS L-POS
 it O O O O O O
 works U-POS O O O O O
 well O O O O O O
@@ -5759,9 +5759,9 @@ decided O O O O O O
 that O O O O O O
 she O O O O O O
 wanted O O O O O O
-a O B-positive B-positive B-positive B-positive B-positive
-laptop O I-positive I-positive I-positive I-positive I-positive
-PUNCT O L-positive L-positive L-positive L-positive L-positive
+a O B-POS B-POS B-POS B-POS B-POS
+laptop O I-POS I-POS I-POS I-POS I-POS
+PUNCT O L-POS L-POS L-POS L-POS L-POS
 
 it O O O O O O
 was O O O O O O
@@ -5853,8 +5853,8 @@ one O O O O O O
 myself O O O O O O
 and O O O O O O
 love O O O O O O
-it O O U-positive U-positive U-positive B-positive
-PUNCT O O O O O L-positive
+it O O U-POS U-POS U-POS B-POS
+PUNCT O O O O O L-POS
 
 it O O O O O O
 has O O O O O O
@@ -5876,7 +5876,7 @@ is O O O O O O
 especially O O O O O O
 disheartening O O O O O O
 when O O O O O O
-apple O O O O U-positive O
+apple O O O O U-POS O
 prides O O O O O O
 itself O O O O O O
 as O O O O O O
@@ -5982,13 +5982,13 @@ PUNCT O O O O O O
 
 so O O O O O O
 glad O O O O O O
-i O O O O O B-positive
-have O O O O O I-positive
-gone O O O O O I-positive
-this O O O O O I-positive
-route O O O O O I-positive
-PUNCT O O O O O I-positive
-PUNCT O O O O O L-positive
+i O O O O O B-POS
+have O O O O O I-POS
+gone O O O O O I-POS
+this O O O O O I-POS
+route O O O O O I-POS
+PUNCT O O O O O I-POS
+PUNCT O O O O O L-POS
 
 it O O O O O O
 wakes U-POS O O O O O
@@ -6024,9 +6024,9 @@ this O O O O O O
 laptop O O O O O O
 PUNCT O O O O O O
 
-the O O O O O B-positive
-customer B-POS O O O O I-positive
-service L-POS O O O O L-positive
+the O O O O O B-POS
+customer B-POS O O O O I-POS
+service L-POS O O O O L-POS
 is O O O O O O
 terrific O O O O O O
 PUNCT O O O O O O
@@ -6081,12 +6081,12 @@ i O O O O O O
 found O O O O O O
 myself O O O O O O
 wanting O O O O O O
-something O B-positive B-positive B-negative O B-positive
-smaller O I-positive I-positive I-negative O I-positive
-and O I-positive I-positive I-negative O I-positive
-less O I-positive I-positive I-negative O I-positive
-cumbersome O I-positive I-positive I-negative O I-positive
-PUNCT O L-positive L-positive L-negative O L-positive
+something O B-POS B-POS B-NEG O B-POS
+smaller O I-POS I-POS I-NEG O I-POS
+and O I-POS I-POS I-NEG O I-POS
+less O I-POS I-POS I-NEG O I-POS
+cumbersome O I-POS I-POS I-NEG O I-POS
+PUNCT O L-POS L-POS L-NEG O L-POS
 not O O O O O O
 to O O O O O O
 mention O O O O O O
@@ -6213,11 +6213,11 @@ PUNCT O O O O O O
 
 i O O O O O O
 like O O O O O O
-coming O B-positive O O B-positive O
-back O I-positive O O I-positive O
-to O I-positive O O I-positive O
-mac B-POS I-positive O O I-positive O
-os L-POS L-positive O O L-positive O
+coming O B-POS O O B-POS O
+back O I-POS O O I-POS O
+to O I-POS O O I-POS O
+mac B-POS I-POS O O I-POS O
+os L-POS L-POS O O L-POS O
 but O O O O O O
 this O O O O O O
 laptop O O O O O O
@@ -6257,13 +6257,13 @@ safely O O O O O O
 PUNCT O O O O O O
 
 i O O O O O O
-finally O O O B-positive O O
-own O O O I-positive O O
-a O O O I-positive O O
-piece O O O I-positive O O
-of O O O I-positive O O
-computing O O O I-positive O O
-equipment O O O L-positive O O
+finally O O O B-POS O O
+own O O O I-POS O O
+a O O O I-POS O O
+piece O O O I-POS O O
+of O O O I-POS O O
+computing O O O I-POS O O
+equipment O O O L-POS O O
 that O O O O O O
 i O O O O O O
 do O O O O O O
@@ -6335,11 +6335,11 @@ PUNCT O O O O O O
 
 i O O O O O O
 like O O O O O O
-the O B-positive B-positive B-positive B-positive B-positive
-design U-POS I-positive I-positive I-positive I-positive I-positive
-and O I-positive I-positive I-positive I-positive I-positive
-its O I-positive I-positive I-positive I-positive I-positive
-features U-POS L-positive L-positive L-positive L-positive L-positive
+the O B-POS B-POS B-POS B-POS B-POS
+design U-POS I-POS I-POS I-POS I-POS I-POS
+and O I-POS I-POS I-POS I-POS I-POS
+its O I-POS I-POS I-POS I-POS I-POS
+features U-POS L-POS L-POS L-POS L-POS L-POS
 but O O O O O O
 there O O O O O O
 are O O O O O O
@@ -6347,10 +6347,10 @@ somethings O O O O O O
 i O O O O O O
 think O O O O O O
 needs O O O O O O
-to O O O O O B-positive
-be O O O O O I-positive
-improved O O O O O I-positive
-PUNCT O O O O O L-positive
+to O O O O O B-POS
+be O O O O O I-POS
+improved O O O O O I-POS
+PUNCT O O O O O L-POS
 
 there O O O O O O
 were O O O O O O
@@ -6375,12 +6375,12 @@ understand O O O O O O
 i O O O O O O
 should O O O O O O
 call O O O O O O
-apple B-NEU B-positive B-positive O B-positive O
-tech I-NEU I-positive I-positive O I-positive O
-support L-NEU L-positive L-positive O L-positive O
+apple B-NEU B-POS B-POS O B-POS O
+tech I-NEU I-POS I-POS O I-POS O
+support L-NEU L-POS L-POS O L-POS O
 about O O O O O O
-any O O O B-positive O O
-variableswhich O O O L-positive O O
+any O O O B-POS O O
+variableswhich O O O L-POS O O
 is O O O O O O
 my O O O O O O
 purpose O O O O O O
@@ -6408,12 +6408,12 @@ after O O O O O O
 being O O O O O O
 disappointed O O O O O O
 with O O O O O O
-spec U-NEG O B-negative O O O
-of O O I-negative O O O
-the O O I-negative O O O
-new O O I-negative O O O
-27 O O I-negative O O O
-imacs O O L-negative O O O
+spec U-NEG O B-NEG O O O
+of O O I-NEG O O O
+the O O I-NEG O O O
+new O O I-NEG O O O
+27 O O I-NEG O O O
+imacs O O L-NEG O O O
 PUNCT O O O O O O
 
 it O O O O O O
@@ -6444,13 +6444,13 @@ are O O O O O O
 just O O O O O O
 looking O O O O O O
 for O O O O O O
-a O B-positive O B-positive B-positive O
-more O I-positive O I-positive I-positive O
-efficient O I-positive O I-positive I-positive O
-way O I-positive O I-positive I-positive O
-to O I-positive O I-positive I-positive O
-do O I-positive O I-positive I-positive O
-things O L-positive O L-positive L-positive O
+a O B-POS O B-POS B-POS O
+more O I-POS O I-POS I-POS O
+efficient O I-POS O I-POS I-POS O
+way O I-POS O I-POS I-POS O
+to O I-POS O I-POS I-POS O
+do O I-POS O I-POS I-POS O
+things O L-POS O L-POS L-POS O
 
 its O O O O O O
 fast O O O O O O
@@ -6605,14 +6605,14 @@ only O O O O O O
 thing O O O O O O
 i O O O O O O
 dislike O O O O O O
-is O O B-negative O O O
-the O O I-negative B-negative B-negative B-negative
-touchpad U-NEG O I-negative I-negative I-negative I-negative
-PUNCT O O I-negative L-negative L-negative L-negative
-alot O O I-negative O O O
-of O O I-negative O O O
-the O O I-negative O O O
-times O O L-negative O O O
+is O O B-NEG O O O
+the O O I-NEG B-NEG B-NEG B-NEG
+touchpad U-NEG O I-NEG I-NEG I-NEG I-NEG
+PUNCT O O I-NEG L-NEG L-NEG L-NEG
+alot O O I-NEG O O O
+of O O I-NEG O O O
+the O O I-NEG O O O
+times O O L-NEG O O O
 its O O O O O O
 unresponsive O O O O O O
 and O O O O O O
@@ -6622,18 +6622,18 @@ i O O O O O O
 do O O O O O O
 n't O O O O O O
 want O O O O O O
-it O O O B-negative B-negative B-negative
-too O O O I-negative I-negative I-negative
-PUNCT O O O I-negative L-negative L-negative
-i O O O I-negative O O
-would O O O I-negative O O
-recommend O O O I-negative O O
-using O O O I-negative B-positive O
-a O O O I-negative I-positive O
-mouse U-NEU O O I-negative I-positive O
-with O O O I-negative I-positive O
-it O O O I-negative I-positive O
-PUNCT O O O L-negative L-positive O
+it O O O B-NEG B-NEG B-NEG
+too O O O I-NEG I-NEG I-NEG
+PUNCT O O O I-NEG L-NEG L-NEG
+i O O O I-NEG O O
+would O O O I-NEG O O
+recommend O O O I-NEG O O
+using O O O I-NEG B-POS O
+a O O O I-NEG I-POS O
+mouse U-NEU O O I-NEG I-POS O
+with O O O I-NEG I-POS O
+it O O O I-NEG I-POS O
+PUNCT O O O L-NEG L-POS O
 
 yeah O O O O O O
 PUNCT O O O O O O
@@ -6686,9 +6686,9 @@ the O O O O O O
 product O O O O O O
 they O O O O O O
 want O O O O O O
-to O O O O B-positive B-positive
-offer O O O B-positive I-positive I-positive
-PUNCT O O O L-positive L-positive L-positive
+to O O O O B-POS B-POS
+offer O O O B-POS I-POS I-POS
+PUNCT O O O L-POS L-POS L-POS
 
 it O O O O O O
 came O O O O O O
@@ -6753,12 +6753,12 @@ i O O O O O O
 am O O O O O O
 please O O O O O O
 with O O O O O O
-the O O O B-positive O O
-products O O O I-positive O O
-ease O O O I-positive O O
-of O O O I-positive O O
-use U-POS O O I-positive O O
-PUNCT O O O L-positive O O
+the O O O B-POS O O
+products O O O I-POS O O
+ease O O O I-POS O O
+of O O O I-POS O O
+use U-POS O O I-POS O O
+PUNCT O O O L-POS O O
 out O O O O O O
 of O O O O O O
 the O O O O O O
@@ -6878,10 +6878,10 @@ i O O O O O O
 'm O O O O O O
 glad O O O O O O
 that O O O O O O
-i O O B-positive O B-positive B-positive
-did O O I-positive O I-positive I-positive
-it O O L-positive O I-positive I-positive
-PUNCT O O O O L-positive L-positive
+i O O B-POS O B-POS B-POS
+did O O I-POS O I-POS I-POS
+it O O L-POS O I-POS I-POS
+PUNCT O O O O L-POS L-POS
 
 perfect O O O O O O
 for O O O O O O
@@ -6923,18 +6923,18 @@ i O O O O O O
 'm O O O O O O
 glad O O O O O O
 i O O O O O O
-finally O O B-positive O B-positive B-positive
-got O O I-positive O I-positive I-positive
-the O O I-positive O I-positive I-positive
-macbook O O I-positive O I-positive I-positive
-pro O O I-positive O I-positive I-positive
-PUNCT O O L-positive O L-positive L-positive
+finally O O B-POS O B-POS B-POS
+got O O I-POS O I-POS I-POS
+the O O I-POS O I-POS I-POS
+macbook O O I-POS O I-POS I-POS
+pro O O I-POS O I-POS I-POS
+PUNCT O O L-POS O L-POS L-POS
 
 i O O O O O O
 was O O O O O O
 always O O O O O O
 against O O O O O O
-them O O O U-negative U-negative U-negative
+them O O O U-NEG U-NEG U-NEG
 but O O O O O O
 now O O O O O O
 i O O O O O O
@@ -7258,11 +7258,11 @@ PUNCT O O O O O O
 
 i O O O O O O
 love O O O O O O
-the O B-positive O B-positive B-positive B-positive
-quick O I-positive O I-positive I-positive I-positive
-start B-POS I-positive O I-positive I-positive I-positive
-up L-POS I-positive O I-positive I-positive I-positive
-PUNCT O L-positive O L-positive L-positive L-positive
+the O B-POS O B-POS B-POS B-POS
+quick O I-POS O I-POS I-POS I-POS
+start B-POS I-POS O I-POS I-POS I-POS
+up L-POS I-POS O I-POS I-POS I-POS
+PUNCT O L-POS O L-POS L-POS L-POS
 
 yes O O O O O O
 PUNCT O O O O O O
@@ -7348,18 +7348,18 @@ PUNCT O O O O O O
 
 i O O O O O O
 want O O O O O O
-the O B-positive O B-positive B-positive B-positive
-portability U-POS I-positive O I-positive I-positive I-positive
-of O I-positive O I-positive I-positive I-positive
-a O I-positive O I-positive I-positive I-positive
-tablet O I-positive O I-positive I-positive I-positive
-PUNCT O L-positive O L-positive I-positive L-positive
-without O O O O I-positive O
-the O O O O I-positive O
-limitations O O O O I-positive O
-of O O O O I-positive O
-a O O O O I-positive O
-tablet O O O O L-positive O
+the O B-POS O B-POS B-POS B-POS
+portability U-POS I-POS O I-POS I-POS I-POS
+of O I-POS O I-POS I-POS I-POS
+a O I-POS O I-POS I-POS I-POS
+tablet O I-POS O I-POS I-POS I-POS
+PUNCT O L-POS O L-POS I-POS L-POS
+without O O O O I-POS O
+the O O O O I-POS O
+limitations O O O O I-POS O
+of O O O O I-POS O
+a O O O O I-POS O
+tablet O O O O L-POS O
 and O O O O O O
 that O O O O O O
 's O O O O O O
@@ -7389,13 +7389,13 @@ i O O O O O O
 'm O O O O O O
 finally O O O O O O
 glad O O O O O O
-to O O O B-positive O B-positive
-have O O B-positive I-positive B-positive I-positive
-joined O O I-positive I-positive I-positive I-positive
-the O O I-positive I-positive I-positive I-positive
-mac O O I-positive I-positive I-positive I-positive
-revolution O O L-positive I-positive I-positive I-positive
-PUNCT O O O L-positive L-positive L-positive
+to O O O B-POS O B-POS
+have O O B-POS I-POS B-POS I-POS
+joined O O I-POS I-POS I-POS I-POS
+the O O I-POS I-POS I-POS I-POS
+mac O O I-POS I-POS I-POS I-POS
+revolution O O L-POS I-POS I-POS I-POS
+PUNCT O O O L-POS L-POS L-POS
 
 mac B-POS O O O O O
 tutorials L-POS O O O O O
@@ -7408,13 +7408,13 @@ it O O O O O O
 broke O O O O O O
 i O O O O O O
 wanted O O O O O O
-another O O B-positive B-positive B-positive B-positive
-acer O O L-positive L-positive L-positive L-positive
+another O O B-POS B-POS B-POS B-POS
+acer O O L-POS L-POS L-POS L-POS
 and O O O O O O
 chose O O O O O O
-the O O O O O B-positive
-v5 O O O O O I-positive
-PUNCT O O O O O L-positive
+the O O O O O B-POS
+v5 O O O O O I-POS
+PUNCT O O O O O L-POS
 
 the O O O O O O
 technical B-NEG O O O O O
@@ -7443,7 +7443,7 @@ i O O O O O O
 called O O O O O O
 technical B-NEU O O O O O
 support L-NEU O O O O O
-PUNCT O O O U-positive O O
+PUNCT O O O U-POS O O
 
 nothing O O O O O O
 about O O O O O O
@@ -7453,8 +7453,8 @@ i O O O O O O
 do O O O O O O
 n't O O O O O O
 love O O O O O O
-PUNCT O O B-positive O O O
-apple O O L-positive O O O
+PUNCT O O B-POS O O O
+apple O O L-POS O O O
 always O O O O O O
 makes O O O O O O
 a O O O O O O
@@ -7730,10 +7730,10 @@ was O O O O O O
 wonderful O O O O O O
 deal O O O O O O
 for O O O O O O
-the O O O O O B-positive
-wonderful O O O O O I-positive
-product O O O O O I-positive
-PUNCT O O O O O L-positive
+the O O O O O B-POS
+wonderful O O O O O I-POS
+product O O O O O I-POS
+PUNCT O O O O O L-POS
 
 it O O O O O O
 completely O O O O O O
@@ -7772,7 +7772,7 @@ i O O O O O O
 am O O O O O O
 pleased O O O O O O
 to O O O O O O
-report O O O U-positive O O
+report O O O U-POS O O
 that O O O O O O
 it O O O O O O
 is O O O O O O
@@ -7979,8 +7979,8 @@ mine O O O O O O
 right O O O O O O
 now O O O O O O
 hoping O O O O O O
-the O O B-positive O O O
-cable U-POS O L-positive O O O
+the O O B-POS O O O
+cable U-POS O L-POS O O O
 will O O O O O O
 stay O O O O O O
 nice O O O O O O
@@ -8181,17 +8181,17 @@ i O O O O O O
 really O O O O O O
 happy O O O O O O
 with O O O O O O
-the O B-positive B-positive B-positive B-positive B-positive
-move O I-positive I-positive I-positive I-positive I-positive
-PUNCT O L-positive L-positive L-positive L-positive L-positive
+the O B-POS B-POS B-POS B-POS B-POS
+move O I-POS I-POS I-POS I-POS I-POS
+PUNCT O L-POS L-POS L-POS L-POS L-POS
 
 no O O O O O O
 complaints O O O O O O
 for O O O O O O
-an O O O B-negative O B-negative
-apple O O O I-negative O I-negative
-product O O O I-negative O I-negative
-PUNCT O O O L-negative O L-negative
+an O O O B-NEG O B-NEG
+apple O O O I-NEG O I-NEG
+product O O O I-NEG O I-NEG
+PUNCT O O O L-NEG O L-NEG
 
 the O O O O O O
 new O O O O O O
@@ -8304,9 +8304,9 @@ am O O O O O O
 very O O O O O O
 satisfied O O O O O O
 with O O O O O O
-the O B-positive B-positive B-positive B-positive B-positive
-mini O I-positive I-positive I-positive I-positive I-positive
-PUNCT O L-positive L-positive L-positive L-positive L-positive
+the O B-POS B-POS B-POS B-POS B-POS
+mini O I-POS I-POS I-POS I-POS I-POS
+PUNCT O L-POS L-POS L-POS L-POS L-POS
 
 the O O O O O O
 audio B-NEG O O O O O
@@ -8336,14 +8336,14 @@ year O O O O O O
 and O O O O O O
 i O O O O O O
 needed O O O O O O
-a O B-positive O O O O
-cheaper O I-positive O O O O
-PUNCT O I-positive O O O O
-quality O I-positive O O O O
-computer O I-positive O O O O
-for O I-positive O O O O
-the O I-positive O O O O
-goals O L-positive O O O O
+a O B-POS O O O O
+cheaper O I-POS O O O O
+PUNCT O I-POS O O O O
+quality O I-POS O O O O
+computer O I-POS O O O O
+for O I-POS O O O O
+the O I-POS O O O O
+goals O L-POS O O O O
 i O O O O O O
 am O O O O O O
 trying O O O O O O
@@ -8433,7 +8433,7 @@ very O O O O O O
 very O O O O O O
 highly O O O O O O
 recommended O O O O O O
-PUNCT O O O U-positive O O
+PUNCT O O O U-POS O O
 
 PUNCT O O O O O O
 i O O O O O O
@@ -8441,14 +8441,14 @@ am O O O O O O
 only O O O O O O
 interested O O O O O O
 in O O O O O O
-the O O O O O B-positive
-154 O O O O O I-positive
-mcbook O O O O O I-positive
-pro O O O O O I-positive
-model O O O O O I-positive
-PUNCT O O O O O I-positive
-md103ll/a O O O O O I-positive
-PUNCT O O O O O L-positive
+the O O O O O B-POS
+154 O O O O O I-POS
+mcbook O O O O O I-POS
+pro O O O O O I-POS
+model O O O O O I-POS
+PUNCT O O O O O I-POS
+md103ll/a O O O O O I-POS
+PUNCT O O O O O L-POS
 
 i O O O O O O
 do O O O O O O
@@ -8554,12 +8554,12 @@ i O O O O O O
 was O O O O O O
 so O O O O O O
 excited O O O O O O
-to O O B-positive O B-positive B-positive
-get O O I-positive O I-positive I-positive
-this O O I-positive O L-positive I-positive
-in O O I-positive O O I-positive
-the O O I-positive O O I-positive
-mail O O L-positive O O L-positive
+to O O B-POS O B-POS B-POS
+get O O I-POS O I-POS I-POS
+this O O I-POS O L-POS I-POS
+in O O I-POS O O I-POS
+the O O I-POS O O I-POS
+mail O O L-POS O O L-POS
 i O O O O O O
 nearly O O O O O O
 gave O O O O O O
@@ -8665,9 +8665,9 @@ PUNCT O O O O O O
 
 i O O O O O O
 like O O O O O O
-the O B-positive B-positive B-positive B-positive B-positive
-mini O I-positive I-positive I-positive I-positive I-positive
-mac O L-positive L-positive L-positive L-positive L-positive
+the O B-POS B-POS B-POS B-POS B-POS
+mini O I-POS I-POS I-POS I-POS I-POS
+mac O L-POS L-POS L-POS L-POS L-POS
 it O O O O O O
 was O O O O O O
 easy O O O O O O
@@ -9025,13 +9025,13 @@ i O O O O O O
 was O O O O O O
 concerned O O O O O O
 that O O O O O O
-the O B-negative B-negative B-negative B-negative B-negative
-downgrade O I-negative I-negative I-negative I-negative I-negative
-to O I-negative I-negative I-negative I-negative I-negative
-the O I-negative I-negative I-negative I-negative I-negative
-regular B-POS I-negative I-negative I-negative I-negative I-negative
-hard I-POS I-negative I-negative I-negative I-negative I-negative
-drive L-POS L-negative L-negative L-negative L-negative L-negative
+the O B-NEG B-NEG B-NEG B-NEG B-NEG
+downgrade O I-NEG I-NEG I-NEG I-NEG I-NEG
+to O I-NEG I-NEG I-NEG I-NEG I-NEG
+the O I-NEG I-NEG I-NEG I-NEG I-NEG
+regular B-POS I-NEG I-NEG I-NEG I-NEG I-NEG
+hard I-POS I-NEG I-NEG I-NEG I-NEG I-NEG
+drive L-POS L-NEG L-NEG L-NEG L-NEG L-NEG
 would O O O O O O
 make O O O O O O
 it O O O O O O
@@ -9043,17 +9043,17 @@ need O O O O O O
 not O O O O O O
 have O O O O O O
 worried O O O O O O
-PUNCT O O O B-negative O B-negative
-this O O O I-negative O I-negative
-machine O O O L-negative O I-negative
-is O O O O O I-negative
-the O O O O O I-negative
-fastest O O O O O I-negative
-i O O O O O I-negative
-have O O O O O I-negative
-ever O O O O O I-negative
-owned O O O O O I-negative
-PUNCT O O O O O L-negative
+PUNCT O O O B-NEG O B-NEG
+this O O O I-NEG O I-NEG
+machine O O O L-NEG O I-NEG
+is O O O O O I-NEG
+the O O O O O I-NEG
+fastest O O O O O I-NEG
+i O O O O O I-NEG
+have O O O O O I-NEG
+ever O O O O O I-NEG
+owned O O O O O I-NEG
+PUNCT O O O O O L-NEG
 
 this O O O O O O
 one O O O O O O
@@ -9093,10 +9093,10 @@ PUNCT O O O O O O
 
 i O O O O O O
 hope O O O O O O
-this O B-positive B-positive B-positive B-positive B-positive
-review O I-positive L-positive L-positive L-positive I-positive
-helps O I-positive O O O I-positive
-PUNCT O L-positive O O O L-positive
+this O B-POS B-POS B-POS B-POS B-POS
+review O I-POS L-POS L-POS L-POS I-POS
+helps O I-POS O O O I-POS
+PUNCT O L-POS O O O L-POS
 
 however O O O O O O
 PUNCT O O O O O O
@@ -9306,7 +9306,7 @@ five O O O O O O
 stars O O O O O O
 would O O O O O O
 recommend O O O O O O
-PUNCT O O O U-positive O O
+PUNCT O O O U-POS O O
 
 the O O O O O O
 troubleshooting O O O O O O
@@ -9433,18 +9433,18 @@ i O O O O O O
 did O O O O O O
 not O O O O O O
 want O O O O O O
-windows B-NEG O O B-negative O B-negative
-8 L-NEG O O I-negative O I-negative
-PUNCT O O O L-negative O L-negative
+windows B-NEG O O B-NEG O B-NEG
+8 L-NEG O O I-NEG O I-NEG
+PUNCT O O O L-NEG O L-NEG
 
 was O O O O O O
 skeptical O O O O O O
 about O O O O O O
-buying O O B-positive B-positive B-negative B-positive
-an O O I-positive I-positive I-negative I-positive
-electronic O O I-positive I-positive I-negative I-positive
-item O O I-positive I-positive I-negative I-positive
-online O O L-positive L-positive L-negative L-positive
+buying O O B-POS B-POS B-NEG B-POS
+an O O I-POS I-POS I-NEG I-POS
+electronic O O I-POS I-POS I-NEG I-POS
+item O O I-POS I-POS I-NEG I-POS
+online O O L-POS L-POS L-NEG L-POS
 but O O O O O O
 it O O O O O O
 turned O O O O O O
@@ -9496,10 +9496,10 @@ how O O O O O O
 much O O O O O O
 i O O O O O O
 love O O O O O O
-my O B-positive O O B-positive B-positive
-new O I-positive O O I-positive I-positive
-mac O I-positive O O I-positive I-positive
-PUNCT O L-positive O O L-positive L-positive
+my O B-POS O O B-POS B-POS
+new O I-POS O O I-POS I-POS
+mac O I-POS O O I-POS I-POS
+PUNCT O L-POS O O L-POS L-POS
 
 the O O O O O O
 speakers O O O O O O
@@ -9538,7 +9538,7 @@ its O O O O O O
 everything O O O O O O
 mac O O O O O O
 offers O O O O O O
-PUNCT O O O U-positive O O
+PUNCT O O O U-POS O O
 
 nice O O O O O O
 packing U-POS O O O O O
@@ -9561,9 +9561,9 @@ this O O O O O O
 because O O O O O O
 i O O O O O O
 wanted O O O O O O
-something O B-positive B-positive B-positive B-positive B-positive
-different O I-positive I-positive I-positive I-positive I-positive
-PUNCT O L-positive L-positive L-positive L-positive L-positive
+something O B-POS B-POS B-POS B-POS B-POS
+different O I-POS I-POS I-POS I-POS I-POS
+PUNCT O L-POS L-POS L-POS L-POS L-POS
 even O O O O O O
 though O O O O O O
 i O O O O O O
@@ -9607,9 +9607,9 @@ PUNCT O O O O O O
 i O O O O O O
 also O O O O O O
 wanted O O O O O O
-windows B-POS O B-positive O B-positive B-positive
-7 L-POS O I-positive O I-positive I-positive
-PUNCT O O L-positive O L-positive L-positive
+windows B-POS O B-POS O B-POS B-POS
+7 L-POS O I-POS O I-POS I-POS
+PUNCT O O L-POS O L-POS L-POS
 which O O O O O O
 this O O O O O O
 one O O O O O O
@@ -9626,11 +9626,11 @@ little O O O O O O
 bit O O O O O O
 uncomfortable O O O O O O
 in O O O O O O
-using O O O O B-negative O
-the O O O B-neutral I-negative O
-mac B-NEG O O I-neutral I-negative O
-system L-NEG O O I-neutral I-negative O
-PUNCT O O O L-neutral L-negative O
+using O O O O B-NEG O
+the O O O B-NEU I-NEG O
+mac B-NEG O O I-NEU I-NEG O
+system L-NEG O O I-NEU I-NEG O
+PUNCT O O O L-NEU L-NEG O
 
 i O O O O O O
 am O O O O O O
@@ -9783,13 +9783,13 @@ a O O O O O O
 little O O O O O O
 concerned O O O O O O
 about O O O O O O
-the O O B-negative O B-negative B-negative
-touch B-POS O I-negative O I-negative I-negative
-pad L-POS O I-negative O I-negative I-negative
-based O O I-negative O I-negative I-negative
-on O O I-negative O I-negative I-negative
-reviews O O I-negative O I-negative I-negative
-PUNCT O O L-negative O L-negative L-negative
+the O O B-NEG O B-NEG B-NEG
+touch B-POS O I-NEG O I-NEG I-NEG
+pad L-POS O I-NEG O I-NEG I-NEG
+based O O I-NEG O I-NEG I-NEG
+on O O I-NEG O I-NEG I-NEG
+reviews O O I-NEG O I-NEG I-NEG
+PUNCT O O L-NEG O L-NEG L-NEG
 but O O O O O O
 i O O O O O O
 've O O O O O O
@@ -10264,8 +10264,8 @@ a O O O O O O
 couple O O O O O O
 weeks O O O O O O
 since O O O O O O
-the O O O B-positive O O
-purchase O O O L-positive O O
+the O O O B-POS O O
+purchase O O O L-POS O O
 and O O O O O O
 i O O O O O O
 'm O O O O O O
@@ -10285,10 +10285,10 @@ many O O O O O O
 people O O O O O O
 complain O O O O O O
 about O O O O O O
-the O B-negative B-negative B-negative B-negative B-negative
-new O I-negative I-negative I-negative I-negative I-negative
-os U-NEG I-negative I-negative I-negative I-negative I-negative
-PUNCT O L-negative L-negative L-negative L-negative L-negative
+the O B-NEG B-NEG B-NEG B-NEG B-NEG
+new O I-NEG I-NEG I-NEG I-NEG I-NEG
+os U-NEG I-NEG I-NEG I-NEG I-NEG I-NEG
+PUNCT O L-NEG L-NEG L-NEG L-NEG L-NEG
 and O O O O O O
 it O O O O O O
 's O O O O O O
@@ -10335,13 +10335,13 @@ PUNCT O O O O O O
 but O O O O O O
 i O O O O O O
 wanted O O O O O O
-the O B-positive O B-positive B-positive B-positive
-pro O I-positive O I-positive I-positive L-positive
-for O I-positive O I-positive I-positive O
-the O I-positive O I-positive I-positive O
-cd/dvd B-POS I-positive O I-positive I-positive O
-player L-POS I-positive O I-positive I-positive O
-PUNCT O L-positive O L-positive L-positive O
+the O B-POS O B-POS B-POS B-POS
+pro O I-POS O I-POS I-POS L-POS
+for O I-POS O I-POS I-POS O
+the O I-POS O I-POS I-POS O
+cd/dvd B-POS I-POS O I-POS I-POS O
+player L-POS I-POS O I-POS I-POS O
+PUNCT O L-POS O L-POS L-POS O
 
 i O O O O O O
 might O O O O O O
@@ -10416,30 +10416,30 @@ but O O O O O O
 im O O O O O O
 glad O O O O O O
 that O O O O O O
-i O O B-positive O O B-positive
-did O O I-positive O O I-positive
-PUNCT O O L-positive O O L-positive
+i O O B-POS O O B-POS
+did O O I-POS O O I-POS
+PUNCT O O L-POS O O L-POS
 
 i O O O O O O
 love O O O O O O
-it O O U-positive U-positive U-positive U-positive
+it O O U-POS U-POS U-POS U-POS
 and O O O O O O
 would O O O O O O
 recommend O O O O O O
-it O O U-positive U-negative U-positive U-positive
+it O O U-POS U-NEG U-POS U-POS
 to O O O O O O
 everyone O O O O O O
 who O O O O O O
 is O O O O O O
 tired O O O O O O
 of O O O O O O
-the O B-negative B-negative B-negative B-negative B-negative
-constant O I-negative I-negative I-negative I-negative I-negative
-attention O I-negative I-negative I-negative I-negative I-negative
-pc O I-negative I-negative I-negative I-negative I-negative
-'s O I-negative I-negative I-negative I-negative I-negative
-require O I-negative I-negative I-negative I-negative I-negative
-PUNCT O L-negative L-negative L-negative L-negative L-negative
+the O B-NEG B-NEG B-NEG B-NEG B-NEG
+constant O I-NEG I-NEG I-NEG I-NEG I-NEG
+attention O I-NEG I-NEG I-NEG I-NEG I-NEG
+pc O I-NEG I-NEG I-NEG I-NEG I-NEG
+'s O I-NEG I-NEG I-NEG I-NEG I-NEG
+require O I-NEG I-NEG I-NEG I-NEG I-NEG
+PUNCT O L-NEG L-NEG L-NEG L-NEG L-NEG
 
 i O O O O O O
 was O O O O O O
@@ -10686,15 +10686,15 @@ that O O O O O O
 i O O O O O O
 needed O O O O O O
 to O O O O O O
-buy O O O O B-positive O
-a O B-positive O O I-positive O
-word B-NEU I-positive O O I-positive O
-processing I-NEU I-positive O O I-positive O
-program L-NEU I-positive O O I-positive O
-to O I-positive O O I-positive O
-do O I-positive O O I-positive O
-so O I-positive O O I-positive O
-PUNCT O L-positive O O L-positive O
+buy O O O O B-POS O
+a O B-POS O O I-POS O
+word B-NEU I-POS O O I-POS O
+processing I-NEU I-POS O O I-POS O
+program L-NEU I-POS O O I-POS O
+to O I-POS O O I-POS O
+do O I-POS O O I-POS O
+so O I-POS O O I-POS O
+PUNCT O L-POS O O L-POS O
 
 this O O O O O O
 version O O O O O O
@@ -10845,25 +10845,25 @@ something O O O O O O
 so O O O O O O
 i O O O O O O
 recommend O O O O O O
-getting O O O O B-positive B-positive
-a O O O O I-positive I-positive
-case U-NEU O O O I-positive I-positive
-to O O O O I-positive I-positive
-protect O O O O I-positive I-positive
-it O O O O I-positive I-positive
-PUNCT O O O O L-positive L-positive
+getting O O O O B-POS B-POS
+a O O O O I-POS I-POS
+case U-NEU O O O I-POS I-POS
+to O O O O I-POS I-POS
+protect O O O O I-POS I-POS
+it O O O O I-POS I-POS
+PUNCT O O O O L-POS L-POS
 
 i O O O O O O
 wanted O O O O O O
 to O O O O O O
 explore O O O O O O
-what O O O B-positive O O
-the O O O I-positive O B-positive
-mac O O O I-positive O I-positive
-was O O O I-positive O I-positive
-all O O O I-positive O I-positive
-about O O O I-positive O I-positive
-PUNCT O O O L-positive O L-positive
+what O O O B-POS O O
+the O O O I-POS O B-POS
+mac O O O I-POS O I-POS
+was O O O I-POS O I-POS
+all O O O I-POS O I-POS
+about O O O I-POS O I-POS
+PUNCT O O O L-POS O L-POS
 
 i O O O O O O
 got O O O O O O
@@ -10953,10 +10953,10 @@ from O O O O O O
 people O O O O O O
 saying O O O O O O
 to O O O O O O
-buy O O O O B-negative O
-directly O O O O I-negative O
-from O O O O I-negative O
-apple O O O O L-negative O
+buy O O O O B-NEG O
+directly O O O O I-NEG O
+from O O O O I-NEG O
+apple O O O O L-NEG O
 and O O O O O O
 i O O O O O O
 was O O O O O O
@@ -10970,7 +10970,7 @@ and O O O O O O
 am O O O O O O
 overly O O O O O O
 impressed O O O O O O
-PUNCT O O O U-positive O O
+PUNCT O O O U-POS O O
 
 the O O O O O O
 case U-NEG O O O O O
@@ -11018,9 +11018,9 @@ old O O O O O O
 school O O O O O O
 and O O O O O O
 hate O O O O O O
-the O B-positive B-negative O B-negative O
-pad U-NEG I-positive I-negative O I-negative O
-PUNCT O L-positive L-negative O L-negative O
+the O B-POS B-NEG O B-NEG O
+pad U-NEG I-POS I-NEG O I-NEG O
+PUNCT O L-POS L-NEG O L-NEG O
 but O O O O O O
 knew O O O O O O
 that O O O O O O
@@ -11109,8 +11109,8 @@ thing O O O O O O
 i O O O O O O
 dislike O O O O O O
 about O O O O O O
-this O O B-negative O O O
-laptop O O L-negative O O O
+this O O B-NEG O O O
+laptop O O L-NEG O O O
 are O O O O O O
 the O O O O O O
 rubber B-NEG O O O O O
@@ -11410,40 +11410,40 @@ PUNCT O O O O O O
 very O O O O O O
 happy O O O O O O
 with O O O O O O
-my O B-positive B-positive B-positive B-positive B-positive
-purchase O I-positive I-positive I-positive I-positive I-positive
-PUNCT O L-positive L-positive L-positive L-positive L-positive
+my O B-POS B-POS B-POS B-POS B-POS
+purchase O I-POS I-POS I-POS I-POS I-POS
+PUNCT O L-POS L-POS L-POS L-POS L-POS
 
 i O O O O O O
 like O O O O O O
-the O B-positive B-positive B-positive B-positive B-positive
-brightness U-POS I-positive I-positive I-positive I-positive I-positive
-and O I-positive I-positive I-positive I-positive I-positive
-adjustments U-POS I-positive I-positive I-positive I-positive I-positive
-PUNCT O L-positive L-positive L-positive L-positive L-positive
+the O B-POS B-POS B-POS B-POS B-POS
+brightness U-POS I-POS I-POS I-POS I-POS I-POS
+and O I-POS I-POS I-POS I-POS I-POS
+adjustments U-POS I-POS I-POS I-POS I-POS I-POS
+PUNCT O L-POS L-POS L-POS L-POS L-POS
 
 i O O O O O O
 'm O O O O O O
 so O O O O O O
 happy O O O O O O
 with O O O O O O
-my O B-positive O B-positive B-positive B-positive
-macbook O I-positive O I-positive I-positive I-positive
-pro O I-positive O I-positive I-positive I-positive
-PUNCT O L-positive O L-positive L-positive L-positive
+my O B-POS O B-POS B-POS B-POS
+macbook O I-POS O I-POS I-POS I-POS
+pro O I-POS O I-POS I-POS I-POS
+PUNCT O L-POS O L-POS L-POS L-POS
 
 i O O O O O O
 only O O O O O O
 wish O O O O O O
-this O B-positive O B-positive B-positive B-positive
-mac O I-positive O L-positive L-positive I-positive
-had O I-positive O O O I-positive
-a O I-positive O O O I-positive
-cd/dvd B-NEU I-positive O O O I-positive
-player L-NEU I-positive O O O I-positive
-built O I-positive O O O I-positive
-in O I-positive O O O I-positive
-PUNCT O L-positive O O O L-positive
+this O B-POS O B-POS B-POS B-POS
+mac O I-POS O L-POS L-POS I-POS
+had O I-POS O O O I-POS
+a O I-POS O O O I-POS
+cd/dvd B-NEU I-POS O O O I-POS
+player L-NEU I-POS O O O I-POS
+built O I-POS O O O I-POS
+in O I-POS O O O I-POS
+PUNCT O L-POS O O O L-POS
 
 the O O O O O O
 only O O O O O O
@@ -11487,18 +11487,18 @@ PUNCT O O O O O O
 so O O O O O O
 happy O O O O O O
 with O O O O O O
-this O B-positive B-positive B-positive B-positive B-positive
-purchase O I-positive I-positive I-positive I-positive I-positive
-PUNCT O L-positive L-positive L-positive L-positive L-positive
+this O B-POS B-POS B-POS B-POS B-POS
+purchase O I-POS I-POS I-POS I-POS I-POS
+PUNCT O L-POS L-POS L-POS L-POS L-POS
 i O O O O O O
 just O O O O O O
 wish O O O O O O
-it O O O O B-positive B-positive
-came O O O O I-positive I-positive
-with O O O O I-positive I-positive
-microsoft B-NEU O O O I-positive I-positive
-word L-NEU O O O I-positive I-positive
-PUNCT O O O O L-positive L-positive
+it O O O O B-POS B-POS
+came O O O O I-POS I-POS
+with O O O O I-POS I-POS
+microsoft B-NEU O O O I-POS I-POS
+word L-NEU O O O I-POS I-POS
+PUNCT O O O O L-POS L-POS
 
 it O O O O O O
 is O O O O O O
@@ -11563,11 +11563,11 @@ PUNCT O O O O O O
 
 i O O O O O O
 love O O O O O O
-everything O O O B-positive O O
-about O O O I-positive O O
-this O B-positive B-positive I-positive B-positive B-positive
-computer O I-positive L-positive I-positive I-positive I-positive
-PUNCT O L-positive O L-positive L-positive L-positive
+everything O O O B-POS O O
+about O O O I-POS O O
+this O B-POS B-POS I-POS B-POS B-POS
+computer O I-POS L-POS I-POS I-POS I-POS
+PUNCT O L-POS O L-POS L-POS L-POS
 
 i O O O O O O
 found O O O O O O
@@ -11647,18 +11647,18 @@ i O O O O O O
 do O O O O O O
 n't O O O O O O
 want O O O O O O
-to O O O B-negative B-negative B-negative
-run O O B-negative I-negative I-negative I-negative
-a O O I-negative I-negative I-negative I-negative
-computer O O L-negative I-negative I-negative I-negative
-PUNCT O O O L-negative L-negative L-negative
+to O O O B-NEG B-NEG B-NEG
+run O O B-NEG I-NEG I-NEG I-NEG
+a O O I-NEG I-NEG I-NEG I-NEG
+computer O O L-NEG I-NEG I-NEG I-NEG
+PUNCT O O O L-NEG L-NEG L-NEG
 i O O O O O O
 want O O O O O O
-to O O O B-positive B-positive B-positive
-use O O O I-positive I-positive I-positive
-a O O O I-positive I-positive I-positive
-computer O O O I-positive I-positive I-positive
-PUNCT O O O L-positive L-positive L-positive
+to O O O B-POS B-POS B-POS
+use O O O I-POS I-POS I-POS
+a O O O I-POS I-POS I-POS
+computer O O O I-POS I-POS I-POS
+PUNCT O O O L-POS L-POS L-POS
 
 i O O O O O O
 have O O O O O O
@@ -11785,18 +11785,18 @@ happy O O O O O O
 and O O O O O O
 excited O O O O O O
 about O O O O O O
-this O B-positive B-positive B-positive B-positive B-positive
-product O I-positive I-positive I-positive I-positive I-positive
-PUNCT O L-positive L-positive L-positive L-positive L-positive
+this O B-POS B-POS B-POS B-POS B-POS
+product O I-POS I-POS I-POS I-POS I-POS
+PUNCT O L-POS L-POS L-POS L-POS L-POS
 
 i O O O O O O
 am O O O O O O
 loving O O O O O O
-the O B-positive B-positive B-positive B-positive B-positive
-fast O I-positive I-positive I-positive I-positive I-positive
-performance U-POS L-positive L-positive I-positive I-positive L-positive
-also O O O I-positive I-positive O
-PUNCT O O O L-positive L-positive O
+the O B-POS B-POS B-POS B-POS B-POS
+fast O I-POS I-POS I-POS I-POS I-POS
+performance U-POS L-POS L-POS I-POS I-POS L-POS
+also O O O I-POS I-POS O
+PUNCT O O O L-POS L-POS O
 
 i O O O O O O
 had O O O O O O
@@ -11889,13 +11889,13 @@ i O O O O O O
 did O O O O O O
 n't O O O O O O
 want O O O O O O
-to O O B-negative O B-negative B-negative
-spend O O I-negative O I-negative I-negative
-another O O I-negative O I-negative I-negative
-thousand O O I-negative O I-negative I-negative
-on O O I-negative O I-negative I-negative
-a O O I-negative O I-negative I-negative
-laptop O O L-negative O L-negative L-negative
+to O O B-NEG O B-NEG B-NEG
+spend O O I-NEG O I-NEG I-NEG
+another O O I-NEG O I-NEG I-NEG
+thousand O O I-NEG O I-NEG I-NEG
+on O O I-NEG O I-NEG I-NEG
+a O O I-NEG O I-NEG I-NEG
+laptop O O L-NEG O L-NEG L-NEG
 since O O O O O O
 my O O O O O O
 work O O O O O O
@@ -12023,9 +12023,9 @@ PUNCT O O O O O O
 but O O O O O O
 i O O O O O O
 love O O O O O O
-it O O U-positive O O B-positive
-already O O O O O I-positive
-PUNCT O O O O O L-positive
+it O O U-POS O O B-POS
+already O O O O O I-POS
+PUNCT O O O O O L-POS
 
 the O O O O O O
 os U-POS O O O O O
@@ -12109,8 +12109,8 @@ PUNCT O O O O O O
 
 i O O O O O O
 like O O O O O O
-itunes U-POS O O B-positive O B-positive
-PUNCT O O O L-positive O L-positive
+itunes U-POS O O B-POS O B-POS
+PUNCT O O O L-POS O L-POS
 the O O O O O O
 apparent O O O O O O
 security U-POS O O O O O
@@ -12190,8 +12190,8 @@ some O O O O O O
 people O O O O O O
 complained O O O O O O
 about O O O O O O
-hdmi U-NEU O O B-negative O O
-issues O O O L-negative O O
+hdmi U-NEU O O B-NEG O O
+issues O O O L-NEG O O
 but O O O O O O
 they O O O O O O
 released O O O O O O
@@ -12242,13 +12242,13 @@ i O O O O O O
 will O O O O O O
 not O O O O O O
 hesitate O O O O O O
-to O O O B-negative O O
-recommend O O O I-negative O O
-it O O U-positive I-negative O O
-to O O O I-negative O O
-family O O O I-negative O O
-and O O O I-negative O O
-friends O O O L-negative O O
+to O O O B-NEG O O
+recommend O O O I-NEG O O
+it O O U-POS I-NEG O O
+to O O O I-NEG O O
+family O O O I-NEG O O
+and O O O I-NEG O O
+friends O O O L-NEG O O
 
 i O O O O O O
 called O O O O O O
@@ -12459,8 +12459,8 @@ people O O O O O O
 might O O O O O O
 complain O O O O O O
 about O O O O O O
-low O O O B-negative B-negative B-negative
-res U-POS O O L-negative L-negative L-negative
+low O O O B-NEG B-NEG B-NEG
+res U-POS O O L-NEG L-NEG L-NEG
 which O O O O O O
 i O O O O O O
 think O O O O O O
