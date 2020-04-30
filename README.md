@@ -554,6 +554,13 @@ The JSON file is saved at `data/results/en/cross_domain/results.json`.
 
 The Google Colab notebook of the analysis for this can be seen [here.](./notebooks/Cross_Domain.ipynb)
 
+### Creating detailed sentiment analysis results
+The results in the paper that are associated with Distinct Sentiment (DS) and Strict Text ACcuracy (STAC) are created using the following two scripts. The first generates the results for those metrics/subsets and stores them in the following JSON file. The second produces the graphs and tables in the paper.
+
+``` bash
+python scripts/generate_detailed_sentiment_results.py ./data/results/en/ ./data/results/detailed_sentiment_results.json
+```
+
 ## Requirements
 
 1. Python >= 3.6
