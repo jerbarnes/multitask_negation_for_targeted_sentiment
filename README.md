@@ -561,7 +561,7 @@ The results in the paper that are associated with Distinct Sentiment (DS) and St
 python scripts/generate_detailed_sentiment_results.py ./data/results/en/ ./data/results/detailed_sentiment_results.json
 ```
 
-The results are then displayed in the following notebook.
+The results are then displayed in the following [notebook.](./notebooks/Multi_task_detailed_sentiment_metrics.ipynb)
 
 ## Requirements
 
