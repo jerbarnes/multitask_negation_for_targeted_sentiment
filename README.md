@@ -237,20 +237,11 @@ allentune report \
     --log-dir logs/multi_task_laptop_conan_search/ \
     --performance-metric best_validation_f1-measure-overall \
     --model multi-task
-allentune plot \
-    --data-name Laptop \
-    --subplot 1 1 \
-    --figsize 10 10 \
-    --result-file logs/multi_task_laptop_conan_search/results.jsonl \
-    --output-file resources/tuning/multi_task_tuning_laptop_performance.pdf \
-    --performance-metric-field best_validation_f1-measure-overall \
-    --performance-metric F1-Span
 ```
 The multi-task model found the following as the best parameters from run number 24 with a validation F1-Span score of 60.17%:
 1. lr = 0.0019
 2. shared/first layer hidden size = 65
 3. dropout = 0.27
-Of which the plot of the F1-Span metric on the validation set against the number of runs can be seen [here](./resources/tuning/multi_task_tuning_laptop_performance.pdf).
 
 #### Single Task Learning Tuning
 
@@ -271,21 +262,26 @@ allentune report \
     --log-dir logs/single_task_laptop_search/ \
     --performance-metric best_validation_f1-measure-overall \
     --model single-task
-allentune plot \
-    --data-name Laptop \
-    --subplot 1 1 \
-    --figsize 10 10 \
-    --result-file logs/single_task_laptop_search/results.jsonl \
-    --output-file resources/tuning/single_task_tuning_laptop_performance.pdf \
-    --performance-metric-field best_validation_f1-measure-overall \
-    --performance-metric F1-Span
 ```
 
 The single-task model found the following as the best parameters from run number 7 with a validation F1-Span score of 61.56%:
 1. lr = 0.0015
 2. shared/first layer hidden size = 60
 3. dropout = 0.5
-Of which the plot of the F1-Span metric on the validation set against the number of runs can be seen [here](./resources/tuning/single_task_tuning_laptop_performance.pdf).
+
+#### Plotting the expected validation score
+To get a plot of the two STL and MTL models expected validation scores, you first have to copy the results from the [STL](./logs/single_task_laptop_search/results.jsonl) and [MTL](./logs/multi_task_laptop_conan_search/results.jsonl) together into a new file. Of which we have done this [here](./logs/other_result.jsonl). With this new combined file run the following to create the plot, which can be found [here](./resources/tuning/combined_tuning_laptop_performance.pdf):
+``` bash
+allentune plot \
+    --data-name Laptop \
+    --subplots 1 1 \
+    --figsize 10 10 \
+    --plot-errorbar \
+    --result-file logs/other_result.jsonl \
+    --output-file resources/tuning/combined_tuning_laptop_performance.pdf \
+    --performance-metric-field best_validation_f1-measure-overall \
+    --performance-metric F1-Span
+```
 
 ### Example of how to run the Single-Task System
 You can use the allennlp train command here:
