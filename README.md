@@ -466,8 +466,12 @@ python number_parameters.py
 
 ### Inference time
 This test the inference time for the following models after they have been loaded into memory:
-1. [STL]()
-2. [MTL SFU]()
+1. [STL GloVe](http://ucrel-web.lancs.ac.uk/moorea/research/multitask_negation_for_targeted_sentiment/models/en/stl/laptop/)
+2. [STL CWR](http://ucrel-web.lancs.ac.uk/moorea/research/multitask_negation_for_targeted_sentiment/models/en/stl/laptop_contextualized/)
+3. [MTL SFU GloVe](http://ucrel-web.lancs.ac.uk/moorea/research/multitask_negation_for_targeted_sentiment/models/en/mtl/sfu/laptop/)
+4. [MTL SFU CWR](http://ucrel-web.lancs.ac.uk/moorea/research/multitask_negation_for_targeted_sentiment/models/en/mtl/sfu/laptop_contextualized/)
+
+**NOTE** If you go to any of the model links we use model_0.tar.gz
 
 Both of the models will have been trained on the Laptop dataset. Additionally the links associated to the models above will take you to the location where you can download those models. The inference times will be tested on the Laptop test dataset which contains 800 sentences. Further the models will be tested on the following hardware:
 1. GPU - GeForce GTX 1060 6GB
