@@ -283,85 +283,69 @@ allentune plot \
     --performance-metric F1-Span
 ```
 
-### Example of how to run the Single-Task System
+### Example of how to Train the Single-Task System using AllenNLP train command
 You can use the allennlp train command here:
 ```
 allennlp train resources/model_configs/targeted_sentiment_laptop_baseline.jsonnet -s /tmp/any --include-package multitask_negation_target
 ```
-
-### Example of how to run the Multi-Task System
+### Example of how to Train the Multi-Task System using AllenNLP train command
 You can use the allennlp train command here:
 ```
 allennlp train resources/model_configs/multi_task_trainer.jsonnet -s /tmp/any --include-package multitask_negation_target
 ```
 
-### Single task models
-In all of the experiments the python script has the following argument signature:
+### Mass experiments setup
+The previous two subsections describe how to just train one model on one dataset, in the paper we trained each model 5 times and there were numerous models (1 STL and 6 MTL) and 4 datasets. Thus to do this we created two scripts. The first script trains a model e.g. STL on one dataset 5 times and then saves the 5 models including the respective auxiliary task models where applicable and also saves the result. The second script runs the first script across all of the models and datasets.
+
+The first python script has the following argument signature:
 1. Model config file path
 2. Main task test data file path
 3. Main task development/validation data file path
 4. Folder to save the results too. This folder will contain two files a `test.conll` and `dev.conll` each of these files will contain the predicted results for the associated data split. The files will have the following structure: `Token#Gold Label#Predicted Label 1#Predicted Label 2`. Where the `#` indicates whitespace and the number of predicted labels is determined by the number of times the model has been ran.
-5. Number of times to run the model to overcome the random seed problem. In all of the experiments below they are ran 5 times.
+5. Number of times to run the model -- in all of our experiments we run the model 5 times thus this is always 5 in our case.
+6. Folder to save the trained model(s) too. If you are training an MTL model then the auxiliary task model(s) will also be saved here.
+7. OPTIONAL FLAG `--mtl` is required if you are training an MTL model.
+8. OPTIONAL FLAG `--aux_name` the name of auxilary task is required if training an MTL model. By default this is `negation` but if a `negation` task is not being trained than the name of the task from the model config is required e.g. for u_pos the task name is `task_u_pos` thus you remove the `task_` to get the `aux_name` which in this case is `u_pos`.
 
-#### Targeted Sentiment
+And an example of running this script is shown below, whereby this runs the STL model with GloVe vectors 5 times on the Laptop dataset:
 
-For the laptop dataset:
-```
+``` bash
 python ./scripts/train_and_generate.py ./resources/model_configs/stl/en/laptop.jsonnet ./data/main_task/en/laptop/test.conll ./data/main_task/en/laptop/dev.conll ./data/results/en/stl/laptop 5 ./data/models/en/stl/laptop
 ```
-For the Restaurant dataset:
-```
-python ./scripts/train_and_generate.py ./resources/model_configs/stl/en/restaurant.jsonnet ./data/main_task/en/restaurant/test.conll ./data/main_task/en/restaurant/dev.conll ./data/results/en/stl/restaurant 5 ./data/models/en/stl/restaurant
-```
 
-For the MAMS dataset:
-```
-python ./scripts/train_and_generate.py ./resources/model_configs/stl/en/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/stl/MAMS 5 ./data/models/en/stl/MAMS
-```
+The MTL models can be run in a similar way but does require a few extra flags. Thus the example below shows the MTL (UPOS) model run 5 times with CWR on the MAMS dataset:
 
-For the MPQA dataset:
-```
-python ./scripts/train_and_generate.py ./resources/model_configs/stl/en/mpqa.jsonnet ./data/main_task/en/mpqa/test.conll ./data/main_task/en/mpqa/dev.conll ./data/results/en/stl/mpqa 5 ./data/models/en/stl/mpqa
-```
-
-To run that model:
 ``` bash
-allennlp train resources/model_configs/stl/en/mpqa.jsonnet -s /tmp/any --include-package multitask_negation_target
+python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/u_pos/mams_contextualized.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/u_pos/MAMS_contextualized 5 ./data/models/en/mtl/u_pos/MAMS_contextualized --mtl --aux_name upos
 ```
+
+The second python script which trains all of the models and makes the predictions for the standard datasets is this script:
+```
+./run_all.sh
+```
+
+
 
 ### Multi task models
 #### Conan Doyle
-For the laptop dataset:
-```
-python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/conan_doyle/laptop.jsonnet ./data/main_task/en/laptop/test.conll ./data/main_task/en/laptop/dev.conll ./data/results/en/mtl/conan_doyle/laptop 5 ./data/models/en/mtl/conan_doyle/laptop --mtl
-```
-For the Restaurant dataset:
-```
-python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/conan_doyle/restaurant.jsonnet ./data/main_task/en/restaurant/test.conll ./data/main_task/en/restaurant/dev.conll ./data/results/en/mtl/conan_doyle/restaurant 5 ./data/models/en/mtl/conan_doyle/restaurant --mtl
+Baseline Span-F1 negation scores for test and validation:
+
+`85.18% and 83.84%`
+
+To run that model:
+``` bash
+allennlp train resources/model_configs/mtl/en/conan_doyle/negation.jsonnet -s /tmp/any --include-package multitask_negation_target
 ```
 
-For the MAMS dataset:
-```
-python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/conan_doyle/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/conan_doyle/MAMS 5 ./data/models/en/mtl/conan_doyle/MAMS --mtl
-```
-
-For the MPQA dataset:
-```
-python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/conan_doyle/mpqa.jsonnet ./data/main_task/en/mpqa/test.conll ./data/main_task/en/mpqa/dev.conll ./data/results/en/mtl/conan_doyle/mpqa 5 ./data/models/en/mtl/conan_doyle/mpqa --mtl
-```
 
 #### SFU (Negation)
-For the laptop dataset:
-```
-python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu/laptop.jsonnet ./data/main_task/en/laptop/test.conll ./data/main_task/en/laptop/dev.conll ./data/results/en/mtl/sfu/laptop 5 ./data/models/en/mtl/sfu/laptop --mtl
-```
-For the Restaurant dataset:
-```
-python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu/restaurant.jsonnet ./data/main_task/en/restaurant/test.conll ./data/main_task/en/restaurant/dev.conll ./data/results/en/mtl/sfu/restaurant 5 ./data/models/en/mtl/sfu/restaurant --mtl
-```
-For the MAMS dataset:
-```
-python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/sfu/MAMS 5 ./data/models/en/mtl/sfu/MAMS --mtl
+Baseline Span-F1 negation scores for test and validation:
+
+`69.20% and 68.09%`
+
+To run that model:
+``` bash
+allennlp train resources/model_configs/mtl/en/sfu/negation.jsonnet -s /tmp/any --include-package multitask_negation_target
 ```
 
 #### POS tagging (Streusle data)
@@ -374,28 +358,6 @@ To run that model:
 allennlp train resources/model_configs/mtl/en/u_pos/pos.jsonnet -s /tmp/any --include-package multitask_negation_target
 ```
 
-For the multi task learning models run the following for the respective datasets:
-
-Laptop
-```
-python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/u_pos/laptop.jsonnet ./data/main_task/en/laptop/test.conll ./data/main_task/en/laptop/dev.conll ./data/results/en/mtl/u_pos/laptop 5 ./data/models/en/mtl/u_pos/laptop --mtl --aux_name upos
-```
-
-Restaurant
-```
-python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/u_pos/restaurant.jsonnet ./data/main_task/en/restaurant/test.conll ./data/main_task/en/restaurant/dev.conll ./data/results/en/mtl/u_pos/restaurant 5 ./data/models/en/mtl/u_pos/restaurant --mtl --aux_name upos
-```
-
-MAMS
-```
-python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/u_pos/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/u_pos/MAMS 5 ./data/models/en/mtl/u_pos/MAMS --mtl --aux_name upos
-```
-
-For the MPQA dataset:
-```
-python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/u_pos/mpqa.jsonnet ./data/main_task/en/mpqa/test.conll ./data/main_task/en/mpqa/dev.conll ./data/results/en/mtl/u_pos/mpqa 5 ./data/models/en/mtl/u_pos/mpqa --mtl --aux_name upos
-```
-
 #### Dependency Relation tagging (Streusle data)
 Here the task is Dependency Relation tagging where we want to predict the dependency relation tag for a given token but not the dependency graph. When running the model once with one Bi-LSTM layer with a CRF decoder the Dependency Relation tagging accuracy for test and validation respectively is:
 
@@ -404,28 +366,6 @@ Here the task is Dependency Relation tagging where we want to predict the depend
 To run that model:
 ``` bash
 allennlp train resources/model_configs/mtl/en/dr/dr.jsonnet -s /tmp/any --include-package multitask_negation_target
-```
-
-For the multi task learning models run the following for the respective datasets:
-
-Laptop
-```
-python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/dr/laptop.jsonnet ./data/main_task/en/laptop/test.conll ./data/main_task/en/laptop/dev.conll ./data/results/en/mtl/dr/laptop 5 ./data/models/en/mtl/dr/laptop --mtl --aux_name dr
-```
-
-Restaurant
-```
-python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/dr/restaurant.jsonnet ./data/main_task/en/restaurant/test.conll ./data/main_task/en/restaurant/dev.conll ./data/results/en/mtl/dr/restaurant 5 ./data/models/en/mtl/dr/restaurant --mtl --aux_name dr
-```
-
-MAMS
-```
-python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/dr/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/dr/MAMS 5 ./data/models/en/mtl/dr/MAMS --mtl --aux_name dr
-```
-
-MPQA
-```
-python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/dr/mpqa.jsonnet ./data/main_task/en/mpqa/test.conll ./data/main_task/en/mpqa/dev.conll ./data/results/en/mtl/dr/mpqa 5 ./data/models/en/mtl/dr/mpqa --mtl --aux_name dr
 ```
 
 #### Lexical tagging (Streusle data)
@@ -438,58 +378,14 @@ To run that model:
 allennlp train resources/model_configs/mtl/en/lextag/lextag.jsonnet -s /tmp/any --include-package multitask_negation_target
 ```
 
-For the multi task learning models run the following for the respective datasets:
-
-Laptop
-```
-python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/lextag/laptop.jsonnet ./data/main_task/en/laptop/test.conll ./data/main_task/en/laptop/dev.conll ./data/results/en/mtl/lextag/laptop 5 ./data/models/en/mtl/lextag/laptop --mtl --aux_name lextag
-```
-
-Restaurant
-```
-python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/lextag/restaurant.jsonnet ./data/main_task/en/restaurant/test.conll ./data/main_task/en/restaurant/dev.conll ./data/results/en/mtl/lextag/restaurant 5 ./data/models/en/mtl/lextag/restaurant --mtl --aux_name lextag
-```
-
-MAMS
-```
-python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/lextag/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/lextag/MAMS 5 ./data/models/en/mtl/lextag/MAMS --mtl --aux_name lextag
-```
-
-mpqa
-```
-python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/lextag/mpqa.jsonnet ./data/main_task/en/mpqa/test.conll ./data/main_task/en/mpqa/dev.conll ./data/results/en/mtl/lextag/mpqa 5 ./data/models/en/mtl/lextag/mpqa --mtl --aux_name lextag
-```
-
 #### SFU (Speculation)
-Baseline F1 Spec scores for test and validation:
+Baseline Span-F1 Spec scores for test and validation:
 
 `42.9 and 56.6`
 
 To run that model:
 ``` bash
 allennlp train resources/model_configs/mtl/en/sfu_spec/spec.jsonnet -s /tmp/any --include-package multitask_negation_target
-```
-
-For the laptop dataset:
-```
-python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu_spec/laptop.jsonnet ./data/main_task/en/laptop/test.conll ./data/main_task/en/laptop/dev.conll ./data/results/en/mtl/sfu_spec/laptop 5 ./data/models/en/mtl/sfu_spec/laptop --mtl --aux_name speculation
-```
-For the Restaurant dataset:
-```
-python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu_spec/restaurant.jsonnet ./data/main_task/en/restaurant/test.conll ./data/main_task/en/restaurant/dev.conll ./data/results/en/mtl/sfu_spec/restaurant 5 ./data/models/en/mtl/sfu_spec/restaurant --mtl --aux_name speculation
-```
-For the MAMS dataset:
-```
-python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu_spec/mams.jsonnet ./data/main_task/en/MAMS/test.conll ./data/main_task/en/MAMS/dev.conll ./data/results/en/mtl/sfu_spec/MAMS 5 ./data/models/en/mtl/sfu_spec/MAMS --mtl --aux_name speculation
-```
-For the MPQA dataset
-```
-python ./scripts/train_and_generate.py ./resources/model_configs/mtl/en/sfu_spec/mpqa.jsonnet ./data/main_task/en/mpqa/test.conll ./data/main_task/en/mpqa/dev.conll ./data/results/en/mtl/sfu_spec/mpqa 5 ./data/models/en/mtl/sfu_spec/mpqa --mtl --aux_name speculation
-```
-
-To run all of the experiments use the following script:
-```
-./run_all.sh
 ```
 
 ### Predicting on the Negation corpus
@@ -532,6 +428,8 @@ The filtered speculation data can be found:
 2. Restaurant dataset: [Validation](./data/main_task/en/restaurant/dev_spec_only.conll)
 
 ### Predicting on cross domain
+**THIS IS NOT IN THE PAPER AND IS ONLY EXPERIMENTAL AT THE MOMENT**
+
 For each of the CWR we use them to predict on the other domains that they were not trained on.
 ```
 ./scripts/generate_cross_domain_predictions.sh
@@ -551,6 +449,7 @@ The JSON file is saved at `data/results/en/cross_domain/results.json`.
 The Google Colab notebook of the analysis for this can be seen [here.](./notebooks/Cross_Domain.ipynb)
 
 ### Creating detailed sentiment analysis results
+**THIS IS NOT IN THE PAPER AND IS ONLY EXPERIMENTAL AT THE MOMENT**
 The results in the paper that are associated with Distinct Sentiment (DS) and Strict Text ACcuracy (STAC) are created using the following script. The results that the script generates for those metrics/subsets are stored in the following JSON file.
 
 ``` bash
@@ -560,23 +459,78 @@ python scripts/generate_detailed_sentiment_results.py ./data/results/en/ ./data/
 The results are then displayed in the following [notebook.](./notebooks/Multi_task_detailed_sentiment_metrics.ipynb)
 
 ### Number of parameters
-To find the number of additional parameters the MTL models add, run the following:
+To find the statistics for the number of parameters in the different models run:
 ``` bash
 python number_parameters.py
 ```
 
+### Inference time
+This test the inference time for the following models after they have been loaded into memory:
+1. [STL]()
+2. [MTL SFU]()
+
+Both of the models will have been trained on the Laptop dataset. Additionally the links associated to the models above will take you to the location where you can download those models. The inference times will be tested on the Laptop test dataset which contains 800 sentences. Further the models will be tested on the following hardware:
+1. GPU - GeForce GTX 1060 6GB
+2. CPU - AMD Ryzen 5 1600
+
+And with the following batch sizes:
+1. 1
+2. 8
+3. 16
+4. 32
+
+The computer also had 16GB of RAM. Additional the computer will run the model 5 times and time each run and report the minimum and maximum run times. Minimum times are recommended by the [python timeit library](https://docs.python.org/3/library/timeit.html) and maximum is reported to show the potential distribution.
+
+To run these inference time testing run the following:
+``` bash
+python inference_time.py
+```
+
+It will print out a Latex table of results, which when converted to markdown look like the following:
+
+| Embedding | Model | Batch Size | Device | Min Time | Max Time |
+| --------- | ----- | ---------- | ------ | -------- | -------- |
+| GloVe     | STL   | 1          | CPU    |    10.24 |  10.45   |
+| GloVe     | STL   | 8          | CPU    |    7.00  |  7.21    |
+| GloVe     | STL   | 16         | CPU    |    6.67  |  6.91    |
+| GloVe     | STL   | 32         | CPU    |    6.35  |  6.51    |
+| GloVe     | MTL   | 1          | CPU    |    10.06 |  10.26   |
+| GloVe     | MTL   | 8          | CPU    |    7.05  |  7.19    |
+| GloVe     | MTL   | 16         | CPU    |    6.90  |  6.99    |
+| GloVe     | MTL   | 32         | CPU    |    6.41  |  6.46    |
+| GloVe     | STL   | 1          | GPU    |    9.24  |  9.26    |
+| GloVe     | STL   | 8          | GPU    |    6.58  |  6.67    |
+| GloVe     | STL   | 16         | GPU    |    6.34  |  6.36    |
+| GloVe     | STL   | 32         | GPU    |    6.12  |  6.26    |
+| GloVe     | MTL   | 1          | GPU    |    9.43  |  9.49    |
+| GloVe     | MTL   | 8          | GPU    |    6.60  |  6.70    |
+| GloVe     | MTL   | 16         | GPU    |    6.26  |  6.55    |
+| GloVe     | MTL   | 32         | GPU    |    6.10  |  6.20    |
+| CWR       | STL   | 1          | CPU    |    64.79 | 71.26    |
+| CWR       | STL   | 8          | CPU    |    43.62 | 49.70    |
+| CWR       | STL   | 16         | CPU    |    47.06 | 48.41    |
+| CWR       | STL   | 32         | CPU    |    56.76 | 62.77    |
+| CWR       | MTL   | 1          | CPU    |    64.01 | 67.90    |
+| CWR       | MTL   | 8          | CPU    |    49.05 | 50.00    |
+| CWR       | MTL   | 16         | CPU    |    53.74 | 56.42    |
+| CWR       | MTL   | 32         | CPU    |    55.33 | 55.79    |
+| CWR       | STL   | 1          | GPU    |    23.26 | 23.79    |
+| CWR       | STL   | 8          | GPU    |    8.82  | 9.09     |
+| CWR       | STL   | 16         | GPU    |    8.57  | 8.86     |
+| CWR       | STL   | 32         | GPU    |    8.45  | 9.78     |
+| CWR       | MTL   | 1          | GPU    |    23.81 | 23.97    |
+| CWR       | MTL   | 8          | GPU    |    9.19  | 9.49     |
+| CWR       | MTL   | 16         | GPU    |    8.54  | 8.92     |
+| CWR       | MTL   | 32         | GPU    |    8.43  | 8.70     |
+
+Also this data is stored in the following file [./inference_save.json](./inference_save.json)
+
 ## Requirements
 
-1. Python >= 3.6
-2. `pip install .` 
-3. If you are developing or want to run the tests `pip install -r requirements.txt`
-3. sklearn  ```pip install -U scikit-learn```
-4. Pytorch ```pip install torch torchvision```
+1. Python >= 3.6.1
+2. `pip install -r requirements.txt`
+3. `pip install .` 
 
 ## Run the tests:
-`python -m pytest`
 
-## Other ideas
-1. Having a shared and task specific Bi-LSTM layers at the moment all Bi-LSTM layers are shared
-2. The affect of having very little sentiment data and all of the negated data
-3. The affect of pre-trained word embeddings, if random does multi-task/transfer help a lot more.
+`python -m pytest`

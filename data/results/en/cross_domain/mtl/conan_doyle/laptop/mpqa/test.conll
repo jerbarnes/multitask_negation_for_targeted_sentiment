@@ -713,7 +713,7 @@ be O O O O O O
 maintained O O O O O O
 at O O O O O O
 any O O O O O O
-cost O U-NEG O U-NEG O O
+cost O U-NEG U-NEG O O O
 . O O O O O O
 
 
@@ -887,8 +887,8 @@ detention O O O O O O
 
 
 No O O O O O O
-court O B-NEG B-NEG O O B-NEG
-case O L-NEG L-NEG O O L-NEG
+court O O O B-NEG O O
+case O O O L-NEG O O
 was O O O O O O
 made O O O O O O
 against O O O O O O
@@ -1314,7 +1314,7 @@ START O O O O O O
 
 Some O O O O O O
 lousy O O O O O O
-earnings O O O U-NEG O O
+earnings O O O O O O
 reports O O O O O O
 whacked O O O O O O
 the O O O O O O
@@ -1323,7 +1323,7 @@ market O O O O O O
 , O O O O O O
 but O O O O O O
 bond O O O O O O
-prices O U-NEG O U-NEG U-NEG U-NEG
+prices O U-NEG U-NEG U-NEG U-NEG U-NEG
 fell O O O O O O
 only O O O O O O
 slightly O O O O O O
@@ -1359,8 +1359,8 @@ trading O O O O O O
 
 
 Long-term O O O O O O
-Treasury O O B-NEG O O O
-bonds O O L-NEG O O O
+Treasury O O O O O O
+bonds O O O O O O
 ended O O O O O O
 slightly O O O O O O
 higher O O O O O O
@@ -1404,8 +1404,8 @@ have O O O O O O
 complained O O O O O O
 that O O O O O O
 third-quarter B-NEU O O O O O
-corporate I-NEU O O O O B-NEG
-earnings L-NEU O O O O L-NEG
+corporate I-NEU O O O O O
+earnings L-NEU O U-NEG O O O
 have O O O O O O
 n't O O O O O O
 been O O O O O O
@@ -1444,7 +1444,7 @@ lower O O O O O O
 after O O O O O O
 reporting O O O O O O
 lower-than-expected O O O O O O
-earnings O O O O U-NEG O
+earnings O O O O O O
 after O O O O O O
 the O O O O O O
 stock O O O O O O
@@ -1471,9 +1471,9 @@ they O O O O O O
 each O O O O O O
 reported O O O O O O
 their B-NEG O O O O O
-core I-NEG B-NEG B-NEG O O B-NEG
-auto I-NEG I-NEG I-NEG B-NEG B-NEG I-NEG
-operations I-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
+core I-NEG B-NEG O B-NEG B-NEG B-NEG
+auto I-NEG I-NEG O I-NEG I-NEG I-NEG
+operations I-NEG L-NEG O L-NEG L-NEG L-NEG
 were I-NEG O O O O O
 net I-NEG O O O O O
 losers L-NEG O O O O O
@@ -1496,15 +1496,15 @@ about O O O O O O
 the B-NEG O O O O O
 volatility I-NEG O O O O O
 of I-NEG O O O O O
-stock I-NEG B-NEG O O O O
-prices I-NEG L-NEG O U-NEG O U-NEG
+stock I-NEG O O B-NEG B-NEG O
+prices I-NEG O O L-NEG L-NEG O
 and I-NEG O O O O O
 the I-NEG O O O O O
 role I-NEG O O O O O
 of I-NEG O O O O O
 computer-aided I-NEG O O O O O
-program I-NEG B-NEG B-POS B-NEG B-NEU O
-trading L-NEG L-NEG L-POS L-NEG L-NEU O
+program I-NEG O O O O O
+trading L-NEG O O O O O
 . O O O O O O
 
 
@@ -1535,7 +1535,7 @@ Exchange O O O O O O
 that O O O O O O
 fell O O O O O O
 in O O O O O O
-price O U-NEG U-NEG U-NEG U-POS U-NEG
+price O U-NEG O U-POS O U-NEG
 yesterday O O O O O O
 exceeded O O O O O O
 1,000 O O O O O O
@@ -1635,7 +1635,7 @@ as O O O O O O
 a O O O O O O
 pillar O O O O O O
 of O O O O O O
-support O O U-NEU O O O
+support O O O O O O
 for O O O O O O
 the O O O O O O
 equity O O O O O O
@@ -1644,8 +1644,8 @@ market O O O O O O
 
 
 The O O O O O O
-bond O B-NEG O B-NEG B-NEG B-NEG
-market O L-NEG O L-NEG L-NEG L-NEG
+bond O B-NEG O B-NEG B-NEG O
+market O L-NEG O L-NEG L-NEG O
 was O O O O O O
 unmoved O O O O O O
 by O O O O O O
@@ -1679,7 +1679,7 @@ the O O O O O O
 data O O O O O O
 that O O O O O O
 showed O O O O O O
-prices O O O U-NEG U-NEG U-NEG
+prices O U-NEG O U-NEG O U-NEG
 rising O O O O O O
 at O O O O O O
 a O O O O O O
@@ -1721,8 +1721,8 @@ activity O O O O O O
 : O O O O O O
 
 
-Stock O B-NEG B-NEG O O B-NEG
-prices O L-NEG L-NEG U-NEG U-NEG L-NEG
+Stock O O O O B-NEG O
+prices O U-POS U-NEG U-NEG L-NEG U-NEG
 fell O O O O O O
 sharply O O O O O O
 in O O O O O O
@@ -1731,7 +1731,7 @@ trading O O O O O O
 . O O O O O O
 
 
-Volume O U-NEG U-NEG U-NEG U-POS U-NEG
+Volume O U-NEG U-NEU U-NEG U-NEU U-NEG
 on O O O O O O
 the O O O O O O
 New O O O O O O
@@ -1760,7 +1760,7 @@ to O O O O O O
 
 
 Bond O O O O O O
-prices O U-NEG U-NEG U-NEG U-NEG U-NEG
+prices O U-POS U-NEG U-NEG U-NEG U-NEG
 were O O O O O O
 barely O O O O O O
 higher O O O O O O
@@ -1770,8 +1770,8 @@ higher O O O O O O
 The O O O O O O
 Treasury O O O O O O
 's O O O O O O
-benchmark O O B-NEG O O O
-30-year O O L-NEG O O O
+benchmark O O O O B-NEG O
+30-year O O O O L-NEG O
 rose O O O O O O
 fractionally O O O O O O
 . O O O O O O
@@ -2038,7 +2038,7 @@ parties O O O O O O
 defended O O O O O O
 more B-NEU O O O O O
 concrete I-NEU O O O O O
-support I-NEU U-NEG O O O O
+support I-NEU O O O O O
 from I-NEU O O O O O
 the I-NEU O O O O O
 Brazilian I-NEU O O O O O
@@ -2189,7 +2189,7 @@ affirmed O O O O O O
 . O O O O O O
 
 
-PSDB O O U-NEG O O U-NEU
+PSDB O O O O O O
 [ O O O O O O
 Brazilian O O O O O O
 Social O O O O O O
@@ -2369,7 +2369,7 @@ country I-POS O O O O O
 abdicates I-POS O O O O O
 its I-POS O O O O O
 financial I-POS O O O O O
-autonomy L-POS O O U-NEG O O
+autonomy L-POS O O O O O
 . O O O O O O
 
 
@@ -2399,7 +2399,7 @@ Lack O O O O O O
 of O O O O O O
 Alternative O O O O O O
 for O O O O O O
-Power O U-NEG U-NEG O O U-NEG
+Power O U-NEG U-NEG U-NEG U-NEG O
 
 
 Political O O O O O O
@@ -2538,7 +2538,7 @@ longer O O O O O O
 important O O O O O O
 because O O O O O O
 the O O O O O O
-focus O U-NEG U-NEG U-NEG O U-NEG
+focus O O O U-NEG U-NEG O
 now O O O O O O
 is O O O O O O
 on O O O O O O
@@ -2581,7 +2581,7 @@ The O O O O O O
 concern O O O O O O
 now O O O O O O
 is O O O O O O
-security U-NEU O O O O O
+security U-NEU O U-POS O O O
 . O O O O O O
 
 
@@ -2714,8 +2714,8 @@ Taleban O O O O O O
 fighters O O O O O O
 " O O O O O O
 with O O O O O O
-military O B-NEG B-NEU B-NEU B-NEU B-NEU
-hardware O L-NEG L-NEU L-NEU L-NEU L-NEU
+military O B-NEG O O O B-POS
+hardware O L-NEG O O U-NEU L-POS
 " O O O O O O
 have O O O O O O
 already O O O O O O
@@ -2770,7 +2770,7 @@ such O O O O O O
 forces O O O O O O
 on O O O O O O
 the O O O O O O
-border O U-NEG O O O O
+border O O O O O O
 with O O O O O O
 Uzbekistan O O O O O O
 . O O O O O O
@@ -2910,8 +2910,8 @@ the O O O O O O
 General O O O O O O
 Corporation O O O O O O
 for O O O O O O
-Environment O O O B-NEU O O
-Protection O O O L-NEU O O
+Environment O O O O O O
+Protection O O O O O O
 ( O O O O O O
 GCEP O O O O O O
 ) O O O O O O
@@ -2962,8 +2962,8 @@ for O O O O O O
 signing O O O O O O
 of O O O O O O
 the O O O O O O
-environmental O B-NEG O O O O
-agreement O L-NEG O O O O
+environmental O O O O O O
+agreement O O O O O O
 had O O O O O O
 not O O O O O O
 been O O O O O O
@@ -3454,7 +3454,7 @@ determination O O O O O O
 to O O O O O O
 stay O O O O O O
 in O O O O O O
-power O O O O O O
+power O O O O U-POS O
 by O O O O O O
 every O O O O O O
 possible O O O O O O
@@ -3579,12 +3579,12 @@ box O O O O O O
 
 
 The O O O O O O
-independence O O O O O O
+independence O O O O U-NEG O
 of O O O O O O
 Zimbabwe O O O O O O
 's O O O O O O
-justice O O B-NEG O B-NEG B-NEG
-system O U-NEG L-NEG U-NEG L-NEG L-NEG
+justice O O O O O O
+system O U-NEG O U-NEG U-NEG O
 was O O O O O O
 compromised O O O O O O
 . O O O O O O
@@ -3665,8 +3665,8 @@ revealed O O O O O O
 
 This O O O O O O
 " O O O O O O
-fait O B-NEG O O O B-NEG
-accompli O L-NEG O O O L-NEG
+fait O O O B-NEG O O
+accompli O O O L-NEG O O
 " O O O O O O
 in O O O O O O
 Zimbabwe O O O O O O
@@ -3892,7 +3892,7 @@ serious O O O O O O
 about O O O O O O
 " O O O O O O
 good O O O O O O
-governance O O U-NEG O O O
+governance O O O O O O
 " O O O O O O
 as O O O O O O
 a O O O O O O
@@ -4119,7 +4119,7 @@ losing O O O O O O
 his O O O O O O
 party O O O O O O
 's O O O O O O
-support O U-NEG U-NEG U-NEG O O
+support O U-NEG O O O U-NEG
 . O O O O O O
 
 
@@ -4189,7 +4189,7 @@ from O O O O O O
 1989-99 O O O O O O
 , O O O O O O
 withdrew O O O O O O
-support O U-NEG U-NEG O O U-NEG
+support O O O O O O
 from O O O O O O
 Rodriguez B-NEG O O O O O
 Saa L-NEG O O O O O
@@ -4589,9 +4589,9 @@ coast O O O O O O
 guard O O O O O O
 and O O O O O O
 the O O O O O O
-border O B-NEG O O B-NEG O
-police O I-NEG O O L-NEG O
-. O L-NEG O O O O
+border O O O O O O
+police O O O O O O
+. O O O O O O
 " O O O O O O
 
 
@@ -4740,7 +4740,7 @@ decade O O O O O O
 , O O O O O O
 providing O O O O O O
 monetary O O O O O O
-stability O O O U-POS U-POS O
+stability O U-POS O O U-POS O
 and O O O O O O
 zero O O O O O O
 inflation O O O O O O
@@ -4964,7 +4964,7 @@ diplomacy O O O O O O
 Once O O O O O O
 coming O O O O O O
 to O O O O O O
-power O U-NEG O O O O
+power O O O O O O
 , O O O O O O
 Bush O O O O O O
 insisted O O O O O O
@@ -4972,12 +4972,12 @@ on O O O O O O
 deploying B-NEU O O O O O
 the I-NEU O O O O O
 National I-NEU O O O O O
-Missile I-NEU O B-NEU B-NEG B-NEU O
-Defense I-NEU B-NEG I-NEU I-NEG I-NEU B-NEU
-System L-NEU L-NEG L-NEU L-NEG L-NEU L-NEU
+Missile I-NEU O O O O O
+Defense I-NEU B-NEU O O O O
+System L-NEU L-NEU O O O O
 [ O O O O O O
-NMD O O B-NEU B-NEG O B-NEU
-] O O L-NEU L-NEG O L-NEU
+NMD O O O O O O
+] O O O O O O
 . O O O O O O
 
 
@@ -5045,7 +5045,7 @@ Anti-Ballistic I-POS O O O O O
 Missile I-POS O O O O O
 Treaty L-POS O O O O O
 [ O O O O O O
-AMD O U-NEG O O O O
+AMD O O O O O O
 ] O O O O O O
 by O O O O O O
 flashing O O O O O O
@@ -5123,8 +5123,8 @@ thus O O O O O O
 has O O O O O O
 lost O O O O O O
 its O O O O O O
-binding O B-NEG B-NEG O B-NEG O
-force O L-NEG L-NEG O L-NEG O
+binding O O O O O O
+force O O O O O O
 . O O O O O O
 
 
@@ -5175,8 +5175,8 @@ test O O O O O O
 frequency O O O O O O
 of O O O O O O
 the O O O O O O
-anti-missile O B-NEG B-POS B-NEU B-POS B-NEU
-system O L-NEG L-POS L-NEU L-POS L-NEU
+anti-missile O B-NEU B-NEU B-POS B-POS B-NEG
+system O L-NEU L-NEU L-POS L-POS L-NEG
 
 
 Even O O O O O O
@@ -5185,7 +5185,7 @@ the O O O O O O
 adoption O O O O O O
 of O O O O O O
 the O O O O O O
-resolution O U-NEG U-NEG U-NEG U-NEG O
+resolution O U-NEG O U-NEG O U-NEG
 on O O O O O O
 " O O O O O O
 maintaining O O O O O O
@@ -5267,9 +5267,9 @@ being O O O O O O
 the O O O O O O
 " O O O O O O
 sole O O O O O O
-super O O O O O B-POS
-power O O O O O I-POS
-. O O O O O L-POS
+super O O O O O O
+power O O O O O O
+. O O O O O O
 " O O O O O O
 
 
@@ -5400,8 +5400,8 @@ claimed O O O O O O
 that O O O O O O
 " O O O O O O
 US O O O O O O
-crew O O O O B-NEG O
-members O O O O L-NEG O
+crew O O O O O O
+members O O O O O O
 were O O O O O O
 detained O O O O O O
 by O O O O O O
@@ -5432,8 +5432,8 @@ fact O O O O O O
 that O O O O O O
 the O O O O O O
 US O O O O O O
-crew O O O O B-NEG O
-members O O O O L-NEG O
+crew O O O O O O
+members O O O O O O
 were O O O O O O
 still O O O O O O
 in O O O O O O
@@ -5566,9 +5566,9 @@ would O O O O O O
 not O O O O O O
 enforce O O O O O O
 the O O O O O O
-" O B-NEG O O O O
-Kyoto O I-NEG O O B-NEG B-NEG
-Protocol O L-NEG O O L-NEG L-NEG
+" O O O O O O
+Kyoto O B-NEG O O O O
+Protocol O L-NEG O O O O
 " O O O O O O
 which O O O O O O
 is O O O O O O
@@ -5602,21 +5602,21 @@ In O O O O O O
 July O O O O O O
 , O O O O O O
 the O O O O O O
-Bush O O B-NEG O O O
-administration O O L-NEG U-NEG O O
+Bush O O O O O O
+administration O O O O O O
 decided O O O O O O
 to O O O O O O
 let O O O O O O
 the O O O O O O
 " O O O O O O
-Comprehensive O O O O B-NEU O
-Test O O O O I-NEU O
-Ban O O O O I-NEU O
-Treaty O O O O I-NEU O
-" O O O O I-NEU O
-" O O O O I-NEU O
-freeze O O O O I-NEU O
-" O O O O L-NEU O
+Comprehensive O O O O O O
+Test O O O O O O
+Ban O O O O O O
+Treaty O O O O O O
+" O O O O O O
+" O O O O O O
+freeze O O O O O O
+" O O O O O O
 in O O O O O O
 the O O O O O O
 Senate O O O O O O
@@ -5632,9 +5632,9 @@ that O O O O O O
 decision O O O O O O
 , O O O O O O
 the O O O O O O
-US O O B-NEG O O O
-negotiation O O I-NEG B-NEG O B-NEG
-representative O O L-NEG L-NEG O L-NEG
+US O O O O O O
+negotiation O O O O O O
+representative O O O O O O
 Marie O O O O O O
 Chevrier O O O O O O
 announced O O O O O O
@@ -5642,8 +5642,8 @@ in O O O O O O
 Geneva O O O O O O
 that O O O O O O
 the O O O O O O
-Bush O O B-NEG O O O
-administration O O L-NEG O O O
+Bush O O O O O O
+administration O O O O U-NEG O
 would O O O O O O
 not O O O O O O
 support O O O O O O
@@ -5675,8 +5675,8 @@ convention O O O O O O
 
 
 The O O O O O O
-Bush O B-NEG B-NEG O O O
-administration O L-NEG L-NEG O O O
+Bush O O O O B-NEG O
+administration O U-NEG O O L-NEG O
 either O O O O O O
 refuses O O O O O O
 to O O O O O O
@@ -5710,7 +5710,7 @@ security I-POS O O O O O
 and I-POS O O O O O
 economy I-POS O O O O O
 and I-POS O O O O O
-globalization L-POS O U-POS O O O
+globalization L-POS O O O O O
 . O O O O O O
 
 
@@ -5726,7 +5726,7 @@ the I-NEG O O O O O
 international I-NEG O O O O O
 treaties I-NEG O O O O O
 , I-NEG O O O O O
-mechanisms I-NEG U-NEG U-NEG U-NEG O U-NEG
+mechanisms I-NEG U-NEG O O U-POS U-NEG
 , I-NEG O O O O O
 and I-NEG O O O O O
 organizations I-NEG O O O O O
@@ -5788,7 +5788,7 @@ and O O O O O O
 expressed O O O O O O
 sympathy O O O O O O
 and O O O O O O
-support O O U-NEU O O O
+support O U-NEG O O O O
 to O O O O O O
 the B-both O O O O O
 American I-both O O O O O
@@ -6623,7 +6623,7 @@ when O O O O O O
 she's O O O O O O
 surrounded O O O O O O
 by O O O O O O
-support O U-NEG U-NEG U-NEU O O
+support O U-NEG O U-NEG U-NEG O
 . O O O O O O
 
 
@@ -6772,7 +6772,7 @@ by O O O O O O
 ; O O O O O O
 enhanced O O O O O O
 school O O O O O O
-performance O U-NEG U-POS U-POS U-POS O
+performance O O O U-POS U-POS U-POS
 ; O O O O O O
 and O O O O O O
 improved O O O O O O
@@ -6793,7 +6793,7 @@ Big O O O O O O
 Sisters O O O O O O
 one-to-one O O O O O O
 mentoring O O O O O O
-program O U-POS U-POS U-POS U-POS U-NEU
+program O U-POS U-NEU U-POS U-POS U-POS
 helps O O O O O O
 change O O O O O O
 lives O O O O O O
@@ -6835,7 +6835,7 @@ This O O O O O O
 money O O O O O O
 maintains O O O O O O
 the B-POS O O O O O
-infrastructure L-POS U-POS U-POS U-POS U-POS U-POS
+infrastructure L-POS U-POS U-POS U-POS U-POS O
 that O O O O O O
 fosters O O O O O O
 and O O O O O O
@@ -6862,11 +6862,11 @@ and O O O O O O
 ongoing O O O O O O
 supervision O O O O O O
 and O O O O O O
-support O O U-POS O U-POS U-NEU
+support O U-POS U-NEU U-POS U-POS O
 by O O O O O O
 a O O O O O O
-professional O O B-NEU O B-POS O
-staff O O L-NEU U-NEU L-POS U-NEU
+professional O O O O B-POS O
+staff O O O O L-POS O
 . O O O O O O
 
 
@@ -6959,7 +6959,7 @@ each O O O O O O
 congregation O O O O O O
 pledged O O O O O O
 its O O O O O O
-support O U-NEG O O U-POS O
+support O O O O O O
 of O O O O O O
 one O O O O O O
 Big O O O O O O
@@ -7011,7 +7011,7 @@ BEIJING O O O O O O
 April O O O O O O
 11 O O O O O O
 ( O O O O O O
-AFP O O O U-NEG O O
+AFP O O O O O O
 ) O O O O O O
 - O O O O O O
 China O O O O O O
@@ -7353,8 +7353,8 @@ last I-NEU O O O O O
 month I-NEU O O O O O
 by I-NEU O O O O O
 US I-NEU O O O O O
-Deputy I-NEU O B-NEU O O O
-Defense I-NEU O L-NEU O O O
+Deputy I-NEU O O O O O
+Defense I-NEU O O O O O
 Secretary I-NEU O O O O O
 Paul I-NEU O O O O O
 Wolfowitz I-NEU O O O O O
@@ -7440,9 +7440,9 @@ oppose O O O O O O
 the B-NEG O O O O O
 use I-NEG O O O O O
 of I-NEG O O O O O
-force L-NEG U-NEG B-NEG O O B-NEG
-. O O L-NEG O O I-NEG
-" O O O O O L-NEG
+force L-NEG O O O O O
+. O O O O O O
+" O O O O O O
 
 
 Wolfowitz O O O O O O
@@ -7642,7 +7642,7 @@ what I-NEG O O O O O
 is I-NEG O O O O O
 a I-NEG O O O O O
 democratic I-NEG O O O O O
-system L-NEG O O U-NEG O O
+system L-NEG U-NEG O O O O
 . O O O O O O
 " O O O O O O
 
@@ -8419,8 +8419,8 @@ the O O O O O O
 video O O O O O O
 from O O O O O O
 an O O O O O O
-intelligence O O O O O B-NEU
-agent O O O O O L-NEU
+intelligence O O B-NEU O O O
+agent O O L-NEU O O O
 . O O O O O O
 
 
@@ -8911,9 +8911,9 @@ The O O O O O O
 report O O O O O O
 also O O O O O O
 cites O O O O O O
-Democratic O O O O O O
-Action O O O O O O
-leader O O O O O O
+Democratic O O O B-NEG O O
+Action O O O I-NEG O O
+leader O O O L-NEG O O
 Claudio O O O O O O
 Fermin O O O O O O
 , O O O O O O
@@ -9080,7 +9080,7 @@ the O O O O O O
 protection O O O O O O
 of O O O O O O
 crude O O O O O O
-prices O U-NEG U-NEG U-NEG O U-NEG
+prices O O O U-NEG U-NEG U-NEG
 and O O O O O O
 the O O O O O O
 war O O O O O O
@@ -9177,8 +9177,8 @@ the O O O O O O
 General O O O O O O
 Corporation O O O O O O
 for O O O O O O
-Environment O O O B-NEU O O
-Protection O O O L-NEU O O
+Environment O O O O O O
+Protection O O O O O O
 ( O O O O O O
 GCEP O O O O O O
 ) O O O O O O
@@ -9229,8 +9229,8 @@ for O O O O O O
 signing O O O O O O
 of O O O O O O
 the O O O O O O
-environmental O B-NEG O O O O
-agreement O L-NEG O O O O
+environmental O O O O O O
+agreement O O O O O O
 had O O O O O O
 not O O O O O O
 been O O O O O O
@@ -9539,7 +9539,7 @@ the O O O O O O
 detention O O O O O O
 camp O O O O O O
 reaches O O O O O O
-capacity O O U-NEU O O O
+capacity O O O O O O
 , O O O O O O
 reporters O O O O O O
 are O O O O O O
@@ -9640,8 +9640,8 @@ Caribbean O O O O O O
 serve O O O O O O
 as O O O O O O
 the O O O O O O
-postcard O O O O O B-POS
-backdrop O O O O O L-POS
+postcard O O O O O O
+backdrop O O O O O O
 . O O O O O O
 
 
@@ -9661,7 +9661,7 @@ the O O O O O O
 west O O O O O O
 , O O O O O O
 the O O O O O O
-noise O U-NEG U-NEG O O O
+noise O O O O O O
 is O O O O O O
 deafening O O O O O O
 . O O O O O O
@@ -9671,8 +9671,8 @@ Almost O O O O O O
 immediately O O O O O O
 a O O O O O O
 crack O O O O O O
-security O B-NEG O O O O
-force O L-NEG O O O O
+security O O O O O O
+force O O O O O O
 of O O O O O O
 mostly O O O O O O
 baby-faced O O O O O O
@@ -9687,8 +9687,8 @@ They O O O O O O
 wear O O O O O O
 black O O O O O O
 baseball O O O O O O
-leg O O B-NEU B-NEU O O
-guards O O L-NEU L-NEU O O
+leg O O O O O O
+guards O O O O O O
 and O O O O O O
 bulletproof O O O O O O
 vests O O O O O O
@@ -9708,9 +9708,9 @@ with O O O O O O
 machine O O O O O O
 guns O O O O O O
 and O O O O O O
-40mm O O O O B-NEU O
-grenade O O O O I-NEU O
-launchers O O O O L-NEU O
+40mm O O O O O O
+grenade O O O O O O
+launchers O O O O O O
 take O O O O O O
 their O O O O O O
 positions O O O O O O
@@ -9906,14 +9906,14 @@ Walk O O O O O O
 ! O O O O O O
 " O O O O O O
 the O O O O O O
-guards O O O U-NEU U-POS O
+guards O O O O U-NEU O
 shout O O O O O O
 . O O O O O O
 
 
 " O O O O O O
-Shut O B-POS B-POS B-POS B-POS B-POS
-up O L-POS L-POS L-POS L-POS L-POS
+Shut O B-NEG B-POS B-POS B-POS B-POS
+up O L-NEG L-POS L-POS L-POS L-POS
 ! O O O O O O
 
 
@@ -10173,7 +10173,7 @@ filling O O O O O O
 the O O O O O O
 camp O O O O O O
 to O O O O O O
-capacity O U-NEG U-POS O O U-NEU
+capacity O U-POS O O U-POS O
 . O O O O O O
 
 
@@ -10210,7 +10210,7 @@ They O O O O O O
 refused O O O O O O
 to O O O O O O
 allow O O O O O O
-cameras O O O U-NEG O O
+cameras O U-NEG O O O O
 . O O O O O O
 
 
@@ -10348,7 +10348,7 @@ Cross O O O O O O
 
 
 The O O O O O O
-routine O O U-NEU O O O
+routine O O U-NEU O U-NEU O
 includes O O O O O O
 a O O O O O O
 delousing O O O O O O
@@ -10530,8 +10530,8 @@ roofs O O O O O O
 
 
 The O O O O O O
-Halogen O B-POS B-NEU B-POS B-NEU B-NEG
-lights O L-POS L-NEU L-POS L-NEU L-NEG
+Halogen O B-NEG B-NEU B-POS B-NEU B-POS
+lights O L-NEG L-NEU L-POS L-NEU L-POS
 stay O O O O O O
 on O O O O O O
 all O O O O O O
@@ -10825,7 +10825,7 @@ happen O O O O O O
 
 
 The O O O O O O
-guards O O O O O U-NEU
+guards O O O O O O
 mostly O O O O O O
 communicate O O O O O O
 with O O O O O O
@@ -11104,14 +11104,14 @@ answer O O O O O O
 
 
 Concertina O O O O O O
-wire O O U-NEU U-NEU U-POS U-NEU
+wire O O U-NEU O U-NEU O
 and O O O O O O
-nine O O B-NEU O O O
-guard O O I-NEU O O O
-towers O O I-NEU O O O
-surround O O I-NEU O O B-NEU
-Camp O O I-NEU O O L-NEU
-X-Ray O O L-NEU O O O
+nine O O O O O O
+guard O O O O O O
+towers O O O O O O
+surround O O O O O O
+Camp O O O O O O
+X-Ray O O O O O O
 . O O O O O O
 
 
@@ -11142,7 +11142,7 @@ other O O O O O O
 parts O O O O O O
 of O O O O O O
 the O O O O O O
-base O O O U-NEG U-NEG U-NEG
+base O U-NEG O U-NEG O O
 , O O O O O O
 the O O O O O O
 camp O O O O O O
@@ -11252,11 +11252,11 @@ built O O O O O O
 wood O O O O O O
 buildings O O O O O O
 with O O O O O O
-air O O O O B-NEU O
-conditioners O O O O L-NEU O
+air O O O O O O
+conditioners O O O O O O
 and O O O O O O
 no O O O O O O
-windows O U-NEG U-NEG U-NEU O U-NEG
+windows O U-NEG O O O U-NEG
 . O O O O O O
 
 
@@ -11278,7 +11278,7 @@ behind O O O O O O
 One O O O O O O
 of O O O O O O
 the O O O O O O
-guards O O O O U-NEG O
+guards O O O U-NEG U-NEU O
 puts O O O O O O
 a O O O O O O
 hand O O O O O O
@@ -11304,7 +11304,7 @@ to O O O O O O
 " O O O O O O
 provide O O O O O O
 positive O O O O O O
-control O O U-NEG O O O
+control O U-NEG O O O O
 , O O O O O O
 " O O O O O O
 says O O O O O O
@@ -11511,7 +11511,7 @@ says O O O O O O
 
 " O O O O O O
 The O O O O O O
-security O O O O O O
+security O U-POS O O U-NEG O
 here O O O O O O
 I O O O O O O
 would O O O O O O
@@ -11667,10 +11667,10 @@ agreement O O O O O O
 
 
 The O O O O O O
-growth O O B-NEG O O B-NEG
-of O O I-NEG O O I-NEG
-the O O I-NEG O O I-NEG
-base O U-NEG L-NEG U-NEG O L-NEG
+growth O O O O O O
+of O O O O O O
+the O O O O O O
+base O O O O U-POS U-NEG
 has O O O O O O
 left O O O O O O
 Camp O O O O O O
@@ -11829,15 +11829,15 @@ ceilings O O O O O O
 
 
 The O O O O O O
-staff O U-NEG U-NEG U-NEG U-NEG U-NEU
+staff O U-NEG O U-NEG U-NEG U-NEG
 calls O O O O O O
 it O O O O O O
 a O O O O O O
 " O O O O O O
-temper O O B-NEU B-NEU B-NEU B-NEU
-tent O O L-NEU L-NEU L-NEU I-NEU
-. O O O O O I-NEU
-" O O O O O L-NEU
+temper O O O O O O
+tent O O O O O O
+. O O O O O O
+" O O O O O O
 
 
 On O O O O O O
@@ -12059,7 +12059,7 @@ The O O O O O O
 pressure O O U-NEG O O O
 on O O O O O O
 the O O O O O O
-eye O O O U-NEG O O
+eye O O O O O O
 had O O O O O O
 become O O O O O O
 unbearable O O O O O O
@@ -12110,7 +12110,7 @@ operation O O O O O O
 
 
 The O O O O O O
-staff O U-POS O U-NEG U-POS O
+staff O U-POS U-POS U-POS O O
 gives O O O O O O
 reporters O O O O O O
 a O O O O O O
@@ -12142,7 +12142,7 @@ walks O O O O O O
 through O O O O O O
 , O O O O O O
 the O O O O O O
-staff O U-NEG U-NEG U-NEG O U-NEG
+staff O U-NEG O U-NEG U-NEG O
 rolls O O O O O O
 out O O O O O O
 a O O O O O O
@@ -12183,13 +12183,13 @@ face O O O O O O
 
 In O O O O O O
 the O O O O O O
-recovery O B-NEG B-NEU O O B-NEG
-room O L-NEG L-NEU O O L-NEG
+recovery O O O O B-NEG O
+room O O O O L-NEG O
 , O O O O O O
 the O O O O O O
 patient O O O O O O
 's O O O O O O
-body O O O U-NEG O U-NEG
+body O O O O O O
 starts O O O O O O
 trembling O O O O O O
 . O O O O O O
@@ -12265,7 +12265,7 @@ job O O O O O O
 , O O O O O O
 buddy O O O O O O
 . O O O O O O
-" O O O U-NEU O O
+" O O O O O O
 
 
 Finally O O O O O O
@@ -12309,8 +12309,8 @@ sleep O O O O O O
 
 
 The O O O O O O
-medical O O B-NEG B-NEG O B-NEG
-staff O O L-NEG L-NEG O L-NEG
+medical O B-NEG O B-NEG B-NEG B-NEG
+staff O L-NEG O L-NEG L-NEG L-NEG
 relies O O O O O O
 on O O O O O O
 linguists O O O O O O
@@ -12387,7 +12387,7 @@ Urinate O O O O O O
 . O O O O O O
 
 
-Arm O O O O U-POS O
+Arm O O O O O O
 . O O O O O O
 
 
@@ -12395,7 +12395,7 @@ Hand O O O O O O
 . O O O O O O
 
 
-Leg O O O O O O
+Leg O O O U-POS O O
 . O O O O O O
 
 
@@ -12547,7 +12547,7 @@ he O O O O O O
 says O O O O O O
 , O O O O O O
 the O O O O O O
-operation O U-NEG U-NEG U-NEG U-NEG U-NEG
+operation O U-NEG O O U-NEG U-NEG
 will O O O O O O
 move O O O O O O
 to O O O O O O
@@ -12556,11 +12556,11 @@ part O O O O O O
 of O O O O O O
 Guantanamo O O O O O O
 called O O O O O O
-Radio O B-NEG O O O O
-Range O L-NEG O U-NEG O O
+Radio O O O O O O
+Range O O O O O O
 , O O O O O O
 where O O O O O O
-utilities O U-NEG U-NEU U-NEU U-NEU U-NEU
+utilities O U-NEU U-NEU O U-NEU U-POS
 are O O O O O O
 more O O O O O O
 readily O O O O O O
@@ -12587,8 +12587,8 @@ approval O O O O O O
 before O O O O O O
 building O O O O O O
 for O O O O O O
-Radio O B-NEG B-NEG B-NEG B-NEG B-NEG
-Range O L-NEG L-NEG L-NEG L-NEG L-NEG
+Radio O O O O O O
+Range O O O O O O
 begins O O O O O O
 . O O O O O O
 
@@ -12600,7 +12600,7 @@ with O O O O O O
 the O O O O O O
 camp O O O O O O
 at O O O O O O
-capacity O O O O O U-NEU
+capacity O O O O O O
 , O O O O O O
 flights O O O O O O
 here O O O O O O
@@ -13139,7 +13139,7 @@ reports O O O O O O
 , O O O O O O
 and O O O O O O
 intelligence O O O O O O
-service O O O O O O
+service O U-POS O O O O
 and O O O O O O
 interrogation O O O O O O
 reports O O O O O O
@@ -13147,7 +13147,7 @@ reports O O O O O O
 
 
 The O O O O O O
-lawyers O O O O U-NEG O
+lawyers O O O U-NEG U-NEG O
 refused O O O O O O
 to O O O O O O
 reveal O O O O O O
@@ -13261,9 +13261,9 @@ lawyers O O O O O O
 expect O O O O O O
 that O O O O O O
 the O O O O O O
-Public O B-NEG O O B-NEG O
-Prosecution O I-NEG B-NEG B-NEG I-NEG B-NEU
-Office O L-NEG L-NEG L-NEG L-NEG L-NEU
+Public O O O O B-NEG O
+Prosecution O B-NEG B-NEU B-NEG I-NEG B-NEG
+Office O L-NEG L-NEU L-NEG L-NEG L-NEG
 will O O O O O O
 request O O O O O O
 Israel O O O O O O
@@ -13650,7 +13650,7 @@ exalted O O O O O O
 objectives O O O O O O
 with O O O O O O
 the O O O O O O
-support O U-NEG U-NEG U-NEG U-POS U-POS
+support O U-NEG U-POS O U-POS U-POS
 of O O O O O O
 the O O O O O O
 people O O O O O O
@@ -13999,7 +13999,7 @@ in O O O O O O
 order O O O O O O
 to O O O O O O
 boost B-POS O O O O O
-prices I-POS U-NEG O U-NEG U-NEG U-NEG
+prices I-POS O O O O U-NEG
 in I-POS O O O O O
 the I-POS O O O O O
 world I-POS O O O O O
@@ -14245,14 +14245,14 @@ a I-NEG O O O O O
 graph I-NEG O O O O O
 of I-NEG O O O O O
 the I-NEG O O O O O
-air I-NEG B-NEG O O B-NEG O
-temperature I-NEG L-NEG O O L-NEG O
+air I-NEG O O O O O
+temperature I-NEG O O O O O
 of I-NEG O O O O O
 the I-NEG O O O O O
 earth I-NEG O O O O O
 's I-NEG O O O O O
-surface I-NEG O O O B-NEG O
-stratum I-NEG O O O L-NEG O
+surface I-NEG O O O O O
+stratum I-NEG O O O O O
 was I-NEG O O O O O
 inexorably I-NEG O O O O O
 moving I-NEG O O O O O
@@ -14512,7 +14512,7 @@ earth O O O O O O
 . O O O O O O
 
 
-Cooling O U-NEG U-NEU O O U-NEG
+Cooling O O O O O O
 aerosols O O O O O O
 dispersed O O O O O O
 over O O O O O O
@@ -14535,9 +14535,9 @@ nights O O O O O O
 True O O O O O O
 , O O O O O O
 the O O O O O O
-sun-screening O B-NEG B-NEG B-NEG O B-NEG
-space O I-NEG I-NEG I-NEG O I-NEG
-umbrella O L-NEG L-NEG L-NEG O L-NEG
+sun-screening O B-NEG B-NEG B-POS B-NEG O
+space O L-NEG L-NEG L-POS L-NEG O
+umbrella O O O O O O
 ( O O O O O O
 the O O O O O O
 author O O O O O O
@@ -14672,7 +14672,7 @@ Incredible O O O O O O
 
 
 The O O O O O O
-speaker O U-NEG O U-NEG O U-NEG
+speaker O U-NEG O O O U-NEG
 's O O O O O O
 ardor O O O O O O
 was O O O O O O
@@ -14921,7 +14921,7 @@ never O O O O O O
 occurred O O O O O O
 with O O O O O O
 such O O O O O O
-speed O U-NEG U-NEG U-NEG U-NEG U-NEG
+speed O U-NEG U-NEG U-POS U-NEG U-NEG
 . O O O O O O
 
 
@@ -14979,7 +14979,7 @@ for O O O O O O
 them O O O O O O
 , O O O O O O
 the O O O O O O
-scientist O O O O O O
+scientist O O O U-NEG O O
 continues O O O O O O
 , O O O O O O
 " O O O O O O
@@ -15079,8 +15079,8 @@ the O O O O O O
 increase O O O O O O
 in O O O O O O
 the O O O O O O
-greenhouse O B-NEG O O O O
-effect O L-NEG O O O O
+greenhouse O O O O O O
+effect O O O O O O
 . O O O O O O
 " O O O O O O
 
@@ -15188,8 +15188,8 @@ and O O O O O O
 the O O O O O O
 US O O O O O O
 the O O O O O O
-Kyoto O O O O B-NEG O
-Protocol O O O O L-NEG O
+Kyoto O B-NEG O B-NEG B-NEG O
+Protocol O L-NEG O L-NEG L-NEG O
 will O O O O O O
 die O O O O O O
 . O O O O O O
@@ -15386,7 +15386,7 @@ the O O O O O O
 terms O O O O O O
 of O O O O O O
 the O O O O O O
-protocol O O O U-NEG O U-NEG
+protocol O O U-NEU O O O
 will O O O O O O
 lead O O O O O O
 to O O O O O O
@@ -15523,8 +15523,8 @@ the O O O O O O
 position O O O O O O
 of O O O O O O
 the O O O O O O
-diplomatic O B-NEG B-NEG B-NEG B-NEG B-NEG
-service O L-NEG L-NEG L-NEG L-NEG L-NEG
+diplomatic O B-NEG B-NEG B-NEG B-NEG B-POS
+service O L-NEG L-NEG L-NEG L-NEG L-POS
 , O O O O O O
 we O O O O O O
 proceed O O O O O O
@@ -15553,35 +15553,35 @@ solve O O O O O O
 the O O O O O O
 problems O O O O O O
 of O O O O O O
-environmental O O O O O O
-protection O O O O O O
+environmental O B-NEG O O O O
+protection O L-NEG O O O O
 on O O O O O O
 our O O O O O O
 own O O O O O O
 ... O O O O O O
 The O O O O O O
-Kyoto O B-NEG B-NEG O B-NEG B-NEG
-mechanism O L-NEG L-NEG O L-NEG L-NEG
+Kyoto O B-NEG O B-NEG B-NEG O
+mechanism O L-NEG O L-NEG L-NEG O
 is O O O O O O
 costly O O O O O O
 , O O O O O O
 but O O O O O O
 its O O O O O O
-value O U-NEG O U-NEG U-NEG O
+value O O O O O O
 lies O O O O O O
 in O O O O O O
 the O O O O O O
 fact O O O O O O
 that O O O O O O
 its O O O O O O
-implementation O U-NEG O U-NEG U-NEG U-NEG
+implementation O U-NEG O U-NEG O U-NEG
 has O O O O O O
 been O O O O O O
 tied O O O O O O
 to O O O O O O
 the O O O O O O
-market O O O O B-NEG O
-mechanism O U-NEG O U-NEG L-NEG U-NEG
+market O O O O O O
+mechanism O U-NEG O O O O
 , O O O O O O
 that O O O O O O
 is O O O O O O
@@ -15634,8 +15634,8 @@ in O O O O O O
 the O O O O O O
 development O O O O O O
 of O O O O O O
-nature-conservation O B-NEG O O O B-NEG
-technologies O L-NEG O O O L-NEG
+nature-conservation O O O O O O
+technologies O O O O O O
 . O O O O O O
 
 
@@ -15704,11 +15704,11 @@ to O O O O O O
 recall O O O O O O
 that O O O O O O
 the O O O O O O
-energy O B-NEG O B-NEG O O
-requirements O L-NEG O L-NEG O O
+energy O O O O O B-NEG
+requirements O O O O O L-NEG
 of O O O O O O
-Russian O B-NEG O B-NEG O O
-output O L-NEG O L-NEG O O
+Russian O O O O O O
+output O O O O O O
 are O O O O O O
 among O O O O O O
 the O O O O O O
@@ -15821,8 +15821,8 @@ or O O O O O O
 heard O O O O O O
 about O O O O O O
 the O O O O O O
-Kyoto O O O O O O
-Protocol O O O O O O
+Kyoto O O O B-POS O O
+Protocol O O O L-POS O O
 ! O O O O O O
 
 
@@ -16033,8 +16033,8 @@ accords O O O O O O
 What O O O O O O
 Preceded O O O O O O
 the O O O O O O
-Kyoto O B-NEG B-NEU O B-NEG B-NEG
-Protocol O L-NEG L-NEU O L-NEG L-NEG
+Kyoto O B-NEG O B-NEG B-NEG O
+Protocol O L-NEG O L-NEG L-NEG O
 ? O O O O O O
 
 
@@ -16044,11 +16044,11 @@ preceded O O O O O O
 by O O O O O O
 the O O O O O O
 UN O O O O O O
-Framework O O B-NEU O O O
-Convention O O L-NEU O O O
+Framework O O O O O O
+Convention O O O O O O
 on O O O O O O
-Climate O O B-NEU O O O
-Change O O L-NEU O O O
+Climate O O O O O O
+Change O O O O O O
 . O O O O O O
 
 
@@ -16230,8 +16230,8 @@ Energy O O O O O O
 Russia O O O O O O
 's O O O O O O
 total O O O O O O
-carbon-dioxide O B-NEG O O O O
-emissions O L-NEG O O O O
+carbon-dioxide O O O O O O
+emissions O O O O O O
 in O O O O O O
 2008-2012 O O O O O O
 will O O O O O O
@@ -16286,12 +16286,12 @@ Background O O O O O O
 
 
 The O O O O O O
-Ecological-Economic O O B-NEG O O O
-Meaning O O L-NEG O O O
-of O O O O O O
-the O O O O O O
-Kyoto O O O B-POS B-POS O
-Protocol O O O L-POS L-POS O
+Ecological-Economic O B-POS O B-NEG O O
+Meaning O I-POS O I-NEG O O
+of O I-POS O I-NEG O O
+the O I-POS O I-NEG O O
+Kyoto O I-POS O I-NEG O O
+Protocol O L-POS O L-NEG O O
 
 
 This O O O O O O
@@ -16324,8 +16324,8 @@ for O O O O O O
 economic O O O O O O
 mechanisms O O O O O O
 of O O O O O O
-international O O B-POS B-POS O B-NEU
-cooperation O O L-POS L-POS O L-NEU
+international O B-POS B-POS O B-POS O
+cooperation O L-POS L-POS O L-POS O
 . O O O O O O
 
 
@@ -16375,11 +16375,11 @@ is O O O O O O
 a O O O O O O
 problem O O O O O O
 of O O O O O O
-energy O B-POS B-NEG B-POS B-NEG B-NEG
-efficiency O L-POS L-NEG L-POS L-NEG L-NEG
+energy O B-NEG B-POS B-POS O O
+efficiency O L-NEG L-POS L-POS O O
 and O O O O O O
-energy O B-POS B-NEG B-POS B-POS B-NEG
-saving O L-POS L-NEG L-POS L-POS L-NEG
+energy O O O O O O
+saving O O O O O O
 . O O O O O O
 
 
@@ -16476,8 +16476,8 @@ of O O O O O O
 
 
 The O O O O O O
-reduction O O B-NEG O O O
-level O O L-NEG O O O
+reduction O O O O O O
+level O O O O O O
 varies O O O O O O
 . O O O O O O
 
@@ -16718,8 +16718,8 @@ and O O O O O O
 establishing O O O O O O
 a O O O O O O
 special O O O O O O
-registration O B-NEG B-NEU B-NEG B-NEG B-NEU
-center O L-NEG L-NEU L-NEG L-NEG L-NEU
+registration O B-NEG B-NEU B-NEU B-NEU B-POS
+center O L-NEG L-NEU L-NEU L-NEU L-POS
 to O O O O O O
 maintain O O O O O O
 records O O O O O O
@@ -16742,8 +16742,8 @@ of O O O O O O
 a O O O O O O
 record-keeping O O O O O O
 and O O O O O O
-monitoring O B-NEG B-NEG B-POS B-POS B-NEG
-system O L-NEG L-NEG L-POS L-POS L-NEG
+monitoring O B-NEG B-NEG B-NEG B-NEG B-NEG
+system O L-NEG L-NEG L-NEG L-NEG L-NEG
 is O O O O O O
 neither O O O O O O
 very O O O O O O
@@ -16825,14 +16825,14 @@ uniform O O O O O O
 If O O O O O O
 the O O O O O O
 mean O O O O O O
-temperature O U-NEG U-NEG U-NEG O O
+temperature O O O O U-NEG O
 rises O O O O O O
 by O O O O O O
 2 O O O O O O
 degrees O O O O O O
 , O O O O O O
 the O O O O O O
-range O U-NEG O U-NEG O O
+range O O O O O O
 of O O O O O O
 fluctuations O O O O O O
 will O O O O O O
@@ -16908,13 +16908,13 @@ happen O O O O O O
 to O O O O O O
 industrial O O O O O O
 and O O O O O O
-transport O O B-NEG O O O
-facilities O O L-NEG O O O
+transport O O O O O O
+facilities O O O O O O
 , O O O O O O
-housing O U-NEG O O O O
+housing O O O O O O
 and O O O O O O
 other O O O O O O
-infrastructure O O U-NEG O O O
+infrastructure O U-NEG O O U-NEG O
 that O O O O O O
 were O O O O O O
 built O O O O O O
@@ -16934,7 +16934,7 @@ The O O O O O O
 unbalancing O O O O O O
 of O O O O O O
 the O O O O O O
-climate O U-NEG O U-NEG O O
+climate O O O O O O
 will O O O O O O
 have O O O O O O
 a O O O O O O
@@ -16962,7 +16962,7 @@ to O O O O O O
 multiply O O O O O O
 will O O O O O O
 unprecedented O O O O O O
-speed O U-NEG U-NEG U-NEG U-NEG U-NEG
+speed O U-POS U-POS U-POS U-POS U-POS
 . O O O O O O
 
 
@@ -17172,8 +17172,8 @@ life O O O O O O
 of O O O O O O
 a O O O O O O
 real O O O O O O
-climatic O B-NEG O O O O
-system O L-NEG O O O O
+climatic O O O O O O
+system O O O O O O
 . O O O O O O
 
 
@@ -17302,7 +17302,7 @@ a O O O O O O
 result O O O O O O
 , O O O O O O
 the O O O O O O
-temperature O U-NEG U-NEG U-NEG U-NEG U-NEG
+temperature O U-NEG O O U-NEG U-NEG
 does O O O O O O
 n't O O O O O O
 change O O O O O O
@@ -17333,7 +17333,7 @@ to O O O O O O
 ? O O O O O O
 
 
-Dispersion O U-NEG U-NEG U-NEG U-NEG O
+Dispersion O O U-NEG U-NEG O O
 is O O O O O O
 less O O O O O O
 active O O O O O O
@@ -17426,7 +17426,7 @@ less O O O O O O
 ventilation O O O O O O
 of O O O O O O
 the O O O O O O
-atmosphere O O O O O O
+atmosphere O O O O U-NEU O
 as O O O O O O
 a O O O O O O
 whole O O O O O O
@@ -17456,8 +17456,8 @@ way O O O O O O
 
 
 The O O O O O O
-Kyoto O O O O B-NEG O
-Protocol O O O O L-NEG O
+Kyoto O B-NEG O O B-NEG O
+Protocol O L-NEG O O L-NEG O
 proposes O O O O O O
 adapting O O O O O O
 to O O O O O O
@@ -17473,7 +17473,7 @@ proposals O O O O O O
 there O O O O O O
 to O O O O O O
 erect O O O O O O
-screens O O O U-NEG U-NEU O
+screens O O O O O O
 or O O O O O O
 to O O O O O O
 shoot O O O O O O
@@ -17581,7 +17581,7 @@ suspend O O O O O O
 some O O O O O O
 umbrella O O O O O O
 , O O O O O O
-screen O O O U-NEG O O
+screen O O O O O O
 or O O O O O O
 something O O O O O O
 else O O O O O O
@@ -17615,30 +17615,30 @@ job O O O O O O
 Monday O O O O O O
 and O O O O O O
 wrapped O O O O O O
-thermal O B-NEU B-NEU B-NEU B-NEU B-NEU
-covers O L-NEU L-NEU L-NEU L-NEU L-NEU
+thermal O O O O B-NEU O
+covers O O O O L-NEU O
 around O O O O O O
 a O O O O O O
 pair O O O O O O
 of O O O O O O
-motors O O O O O O
+motors O O O O U-NEU O
 that O O O O O O
 turn O O O O O O
 the O O O O O O
 International O O O O O O
-Space O O B-NEU O O O
-Station O O L-NEU O O O
+Space O O O O O O
+Station O O O O O O
 's O O O O O O
 giant O O O O O O
-solar O B-NEG B-NEU B-NEU B-NEU B-NEU
-wings O L-NEG L-NEU L-NEU L-NEU L-NEU
+solar O B-POS O O O B-NEU
+wings O L-POS O O O L-NEU
 . O O O O O O
 
 
 NASA O O O O O O
 hopes O O O O O O
 the B-POS O O O O O
-covers I-POS O O U-POS U-NEU U-NEU
+covers I-POS O O O U-NEU U-NEU
 will I-POS O O O O O
 shield I-POS O O O O O
 the I-POS O O O O O
@@ -17648,7 +17648,7 @@ the I-POS O O O O O
 temperature I-POS O O O O O
 extremes I-POS O O O O O
 of I-POS O O O O O
-space I-POS O O U-POS O O
+space I-POS O O O O O
 and I-POS O O O O O
 eliminate I-POS O O O O O
 power I-POS O O O O O
@@ -17659,11 +17659,11 @@ stalls L-POS O O O O O
 
 
 The O O O O O O
-motors O U-NEG U-NEU U-NEG U-NEG U-NEG
+motors O U-NEG O O U-NEG U-NEG
 keep O O O O O O
 the O O O O O O
-solar O B-NEG B-NEU B-POS B-NEU B-NEU
-wings O L-NEG L-NEU L-POS L-NEU L-NEU
+solar O O O B-NEU B-NEU B-NEG
+wings O O O L-NEU L-NEU L-NEG
 pointing O O O O O O
 toward O O O O O O
 the O O O O O O
@@ -17692,8 +17692,8 @@ onto O O O O O O
 the O O O O O O
 ship O O O O O O
 's O O O O O O
-robot O O O O B-NEU O
-arm O O O O L-NEU O
+robot O O O O O O
+arm O O O O O O
 for O O O O O O
 a O O O O O O
 50-foot O O O O O O
@@ -17772,12 +17772,12 @@ participants O O O O O O
 in O O O O O O
 our O O O O O O
 community-based O O O O O O
-programs O U-NEU U-NEU U-NEU O U-NEU
+programs O O O O O O
 . O O O O O O
 
 
 These O O O O O O
-programs O U-POS U-POS U-POS U-POS U-NEU
+programs O U-POS U-POS U-POS U-NEU U-POS
 focus O O O O O O
 on O O O O O O
 keeping O O O O O O
@@ -17957,8 +17957,8 @@ Sincerely O O O O O O
 Opinion O O O O O O
 " O O O O O O
 U.S. O O O O O O
-Human O B-NEG O B-NEG O O
-Rights O L-NEG O L-NEG O O
+Human O O O B-NEG O O
+Rights O O O L-NEG O O
 Claims O O O O O O
 Only O O O O O O
 Empty O O O O O O
@@ -18018,11 +18018,11 @@ provide O O O O O O
 any O O O O O O
 evidence O O O O O O
 in O O O O O O
-support O O U-NEG O U-NEG O
+support O O O O O O
 of O O O O O O
 its O O O O O O
 baseless O O O O O O
-charges O U-NEG U-NEG U-NEG U-NEG U-NEG
+charges O U-NEG O U-NEG U-NEG U-NEG
 . O O O O O O
 
 
@@ -18039,8 +18039,8 @@ Islamic O O O O O O
 Republic O O O O O O
 enjoys O O O O O O
 no O O O O O O
-social O O O O O O
-base O O O O O O
+social O O O O B-NEG O
+base O O O O L-NEG O
 and O O O O O O
 is O O O O O O
 an O O O O O O
@@ -18197,8 +18197,8 @@ Al-Qaeda O O O O O O
 prisoners O O O O O O
 at O O O O O O
 its O O O O O O
-military O B-NEG B-NEG O B-NEG B-NEG
-base O L-NEG L-NEG O L-NEG L-NEG
+military O O O O O O
+base O O O O O O
 at O O O O O O
 Guantanamo O O O O O O
 Bay O O O O O O
@@ -18209,7 +18209,7 @@ Indeed O O O O O O
 , O O O O O O
 the O O O O O O
 U.S O O O O O O
-Administration O O O O O O
+Administration O O U-NEG O O O
 , O O O O O O
 which O O O O O O
 claims O O O O O O
@@ -18514,8 +18514,8 @@ is O O O O O O
 squeezing O O O O O O
 Taiwan O O O O O O
 's O O O O O O
-development O B-NEG O O O O
-space O L-NEG O O O O
+development O O O O O O
+space O O O O O O
 in O O O O O O
 the O O O O O O
 world O O O O O O
@@ -18545,7 +18545,7 @@ democracy O O O O O O
 and O O O O O O
 obtains O O O O O O
 the O O O O O O
-support O U-NEG U-NEG U-NEG O U-NEG
+support O U-NEG O O O O
 of O O O O O O
 overseas B-POS O O O O O
 Chinese I-POS O O O O O
@@ -18587,8 +18587,8 @@ relations O O O O O O
 
 
 The O O O O O O
-buffer O B-NEG B-NEG B-NEG B-NEG B-NEG
-zones O L-NEG L-NEG L-NEG L-NEG L-NEG
+buffer O B-NEG O B-NEG B-POS B-NEG
+zones O L-NEG O L-NEG L-POS L-NEG
 that O O O O O O
 Ariel O O O O O O
 Sharon O O O O O O
@@ -18707,14 +18707,14 @@ with O O O O O O
 walls O O O O O O
 and O O O O O O
 razor O O O O O O
-wire O O O O O O
+wire O O O O U-POS O
 , O O O O O O
 might O O O O O O
 provide O O O O O O
 Israel O O O O O O
 its O O O O O O
 long-desired O O O O O O
-security U-POS O O O O O
+security U-POS O O U-POS O O
 and O O O O O O
 might O O O O O O
 free O O O O O O
@@ -18749,7 +18749,7 @@ occupation L-NEG O O O O O
 
 
 But O O O O O O
-separation O U-NEG U-NEG U-NEG U-NEG U-NEG
+separation O U-NEG O O U-NEG U-NEG
 will O O O O O O
 not O O O O O O
 mean O O O O O O
@@ -18815,7 +18815,7 @@ with O O O O O O
 Israel O O O O O O
 's O O O O O O
 superior O O O O O O
-ability O O U-NEG O O O
+ability O O O O O O
 to O O O O O O
 punish O O O O O O
 Palestinians O O O O O O
@@ -18823,7 +18823,7 @@ does O O O O O O
 not O O O O O O
 provide O O O O O O
 the B-both O O O O O
-security L-both O U-NEG O O O
+security L-both U-NEG O O U-NEG O
 that O O O O O O
 Israelis O O O O O O
 are O O O O O O
@@ -18871,7 +18871,7 @@ to O O O O O O
 Israel O O O O O O
 's O O O O O O
 pre-1967 O O O O O O
-borders O U-NEG O O O O
+borders O O O O O O
 . O O O O O O
 
 
@@ -18879,8 +18879,8 @@ Practically O O O O O O
 speaking O O O O O O
 , O O O O O O
 a O O O O O O
-buffer O B-NEG B-NEG B-NEG B-NEG B-NEG
-zone O L-NEG L-NEG L-NEG L-NEG L-NEG
+buffer O B-NEG O O B-NEG B-NEG
+zone O L-NEG O O L-NEG L-NEG
 will O O O O O O
 be O O O O O O
 near O O O O O O
@@ -18891,8 +18891,8 @@ erect O O O O O O
 
 
 A O O O O O O
-physical O B-NEG O O O O
-border O L-NEG O O O O
+physical O O O O O O
+border O O O O O O
 between O O O O O O
 Israel O O O O O O
 and O O O O O O
@@ -18919,7 +18919,7 @@ Gaza O O O O O O
 
 
 Unilateral O O O O O O
-separation O U-NEG U-NEG U-NEG U-NEG U-NEG
+separation O U-NEG U-NEG O U-NEG U-NEG
 without O O O O O O
 a O O O O O O
 negotiated O O O O O O
@@ -19073,8 +19073,8 @@ the O O O O O O
 violence O O O O O O
 and O O O O O O
 the O O O O O O
-buffer O U-NEG O U-NEG O U-NEG
-idea O O O O O O
+buffer O O O U-NEG B-NEG U-NEG
+idea O O O O L-NEG O
 buttresses O O O O O O
 this O O O O O O
 long-standing O O O O O O
@@ -19195,7 +19195,7 @@ anybody O O O O O O
 believe O O O O O O
 that O O O O O O
 the O O O O O O
-intifada O O O O O O
+intifada O O O O U-NEG O
 can O O O O O O
 end O O O O O O
 as O O O O O O
@@ -19358,7 +19358,7 @@ inclinations O O O O O O
 to O O O O O O
 gain O O O O O O
 more O O O O O O
-power O U-NEG O O O O
+power O O O O O O
 . O O O O O O
 
 
@@ -19407,7 +19407,7 @@ tried I-NEG O O O O O
 to I-NEG O O O O O
 stack I-NEG O O O O O
 the I-NEG O O O O O
-board I-NEG O O U-NEG O O
+board I-NEG O O O O O
 of I-NEG O O O O O
 the I-NEG O O O O O
 state-owned I-NEG O O O O O
@@ -19422,7 +19422,7 @@ favor L-NEG O O O O O
 The O O O O O O
 company O O O O O O
 's O O O O O O
-executives O O O O U-NEG U-NEG
+executives O O O O O O
 revolted O O O O O O
 , O O O O O O
 threatening O O O O O O
@@ -19506,10 +19506,10 @@ international O O O O O O
 pressure O O O O O O
 and O O O O O O
 renewed O O O O O O
-domestic O B-NEG B-NEG B-NEG B-NEG B-NEG
-support O L-NEG I-NEG L-NEG L-NEG L-NEG
-for O O I-NEG O O O
-Chavez U-POS O L-NEG O O O
+domestic O B-NEG O B-NEG B-NEG O
+support O L-NEG O L-NEG L-NEG O
+for O O O O O O
+Chavez U-POS O O O O O
 forced O O O O O O
 the O O O O O O
 generals O O O O O O
@@ -19517,14 +19517,14 @@ to O O O O O O
 let O O O O O O
 him O O O O O O
 take O O O O O O
-office O O O O O U-NEG
+office O O O O O O
 again O O O O O O
 . O O O O O O
 
 
 The O O O O O O
-Bush O O B-POS O O O
-administration O O L-POS O O O
+Bush O O O O O O
+administration O O O O O O
 all O O O O O O
 but O O O O O O
 welcomed O O O O O O
@@ -19717,8 +19717,8 @@ concrete O O O O O O
 floors O O O O O O
 of O O O O O O
 their O O O O O O
-8ft-square O O O O B-NEU O
-cages O O O O L-NEU O
+8ft-square O O O O O O
+cages O O O O O O
 , O O O O O O
 the O O O O O O
 blistering O O O O O O
@@ -19782,8 +19782,8 @@ at O O O O O O
 the O O O O O O
 ready O O O O O O
 , O O O O O O
-stand O B-NEU B-NEU B-NEU B-NEU B-NEU
-guard O L-NEU L-NEU L-NEU L-NEU L-NEU
+stand O O O O O B-POS
+guard O O O O O L-POS
 . O O O O O O
 
 
@@ -20014,14 +20014,14 @@ day O O O O O O
 
 They O O O O O O
 get O O O O O O
-granola O O O B-POS O O
-bars O O O L-POS O O
+granola O O O O O O
+bars O O O O O O
 , O O O O O O
 a O O O O O O
 box O O O O O O
 of O O O O O O
-apple O O O O B-POS O
-jacks O O O O L-POS O
+apple O B-POS O O B-POS B-POS
+jacks O L-POS O O L-POS L-POS
 and O O O O O O
 fresh O O O O O O
 fruit O O O O O O
@@ -20077,7 +20077,7 @@ of O O O O O O
 their O O O O O O
 tents O O O O O O
 saw O O O O O O
-service O O U-NEU U-NEG U-POS U-NEG
+service O O O U-NEG O O
 in O O O O O O
 the O O O O O O
 Korean O O O O O O
@@ -20163,7 +20163,7 @@ promises O O O O O O
 " O O O O O O
 a O O O O O O
 gentle O O O O O O
-formula O U-POS O O O O
+formula O O O O O O
 to O O O O O O
 restore O O O O O O
 moisture O O O O O O
@@ -20317,7 +20317,7 @@ Monte O O O O O O
 Webster O O O O O O
 , O O O O O O
 an O O O O O O
-MP O O O O O U-NEU
+MP O O O O O O
 . O O O O O O
 
 
@@ -20610,7 +20610,7 @@ would O O O O O O
 improve O O O O O O
 once O O O O O O
 permanent O O O O O O
-facilities O U-NEG O O O O
+facilities O O O O O O
 were O O O O O O
 built O O O O O O
 . O O O O O O
@@ -20628,19 +20628,19 @@ hammer O O O O O O
 away O O O O O O
 as O O O O O O
 an O O O O O O
-interrogation O O O O B-NEU O
-centre O O O O L-NEU O
+interrogation O O O O O O
+centre O O O O O O
 and O O O O O O
 new O O O O O O
-cages O U-NEU O U-NEU U-NEU U-NEU
+cages O O O O U-NEU U-NEU
 are O O O O O O
 finished O O O O O O
 . O O O O O O
 
 
 The O O O O O O
-target O B-NEG B-NEU O B-POS B-POS
-capacity O L-NEG L-NEU U-POS L-POS L-POS
+target O B-NEG O O B-NEU O
+capacity O L-NEG U-POS U-POS L-NEU O
 is O O O O O O
 2,000 O O O O O O
 . O O O O O O
@@ -21026,7 +21026,7 @@ on O O O O O O
 the O O O O O O
 battle O O O O O O
 of O O O O O O
-endurance O O U-NEG U-NEG U-NEG O
+endurance O U-NEG O O O O
 that O O O O O O
 must O O O O O O
 follow O O O O O O
@@ -21169,7 +21169,7 @@ but O O O O O O
 not O O O O O O
 yet O O O O O O
 eliminated O O O O O O
-network O U-NEG O U-NEG O O
+network O O U-NEG U-NEG U-NEG U-NEG
 will O O O O O O
 play O O O O O O
 its O O O O O O
@@ -21219,7 +21219,7 @@ most O O O O O O
 
 The O O O O O O
 whole O O O O O O
-operation O U-NEG U-POS U-NEG O U-NEG
+operation O U-NEG O O O U-NEG
 against O O O O O O
 terrorism O O O O O O
 can O O O O O O
@@ -21250,7 +21250,7 @@ have O O O O O O
 sat O O O O O O
 back O O O O O O
 with O O O O O O
-arms O U-NEG O U-NEG O O
+arms O O O O O O
 folded O O O O O O
 would O O O O O O
 have O O O O O O
@@ -21319,7 +21319,7 @@ robbery O O O O O O
 However O O O O O O
 , O O O O O O
 the O O O O O O
-foundation O U-NEG O O O O
+foundation O O O O O O
 warned O O O O O O
 that O O O O O O
 the B-NEG O O O O O
@@ -21437,8 +21437,8 @@ of O O O O O O
 such O O O O O O
 attacks O O O O O O
 is O O O O O O
-sea O B-NEG O O B-NEU O
-jack O L-NEG O O L-NEU O
+sea O O O O O O
+jack O O O O O O
 for O O O O O O
 ransom O O O O O O
 . O O O O O O
@@ -21527,12 +21527,12 @@ addition O O O O O O
 , O O O O O O
 an O O O O O O
 Indonesian-registered O O O O O O
-ship O U-NEG O U-NEG O O
+ship O O O U-NEG O O
 was O O O O O O
 attacked O O O O O O
 and O O O O O O
 the O O O O O O
-crews O O U-NEG O O O
+crews O O O U-NEG O O
 from O O O O O O
 two O O O O O O
 ships O O O O O O
@@ -21771,8 +21771,8 @@ the O O O O O O
 importance O O O O O O
 of O O O O O O
 the O O O O O O
-Pilot O B-NEG B-NEG B-NEG O B-NEG
-Program O L-NEG L-NEG L-NEG O L-NEG
+Pilot O O O O B-NEG O
+Program O O O O L-NEG O
 for O O O O O O
 Protection O O O O O O
 of O O O O O O
@@ -21786,7 +21786,7 @@ German O O O O O O
 participation O O O O O O
 in O O O O O O
 the O O O O O O
-program O U-NEU U-NEU U-NEU U-POS U-NEU
+program O U-NEU U-NEU O O O
 . O O O O O O
 
 
@@ -22194,8 +22194,8 @@ pending O O O O O O
 expansion O O O O O O
 of O O O O O O
 outdoor O O O O O O
-jail O O O O B-NEG O
-facilities O O O O L-NEG O
+jail O O O O O O
+facilities O O O O O O
 at O O O O O O
 the O O O O O O
 American O O O O O O
@@ -22301,10 +22301,10 @@ cells O O O O O O
 
 
 The O O O O O O
-detainees O O B-NEG O O O
-at O O I-NEG O O O
-" O O I-NEG O O O
-Gitmo O O L-NEG O O O
+detainees O O O O O O
+at O O O O O O
+" O O O O O O
+Gitmo O O O O O O
 , O O O O O O
 " O O O O O O
 as O O O O O O
@@ -22417,8 +22417,8 @@ ITAR-TASS O O O O O O
 
 
 The O O O O O O
-official O B-POS B-NEG O O O
-programme O L-POS L-NEG O O O
+official O O O B-NEG O O
+programme O O O L-NEG O O
 of O O O O O O
 Kasyanov O O O O O O
 's O O O O O O
@@ -22461,8 +22461,8 @@ this O O O O O O
 , O O O O O O
 the O O O O O O
 Russian O O O O O O
-prime O O B-NEU O O O
-minister O O L-NEU O O O
+prime O O O O O O
+minister O O O O O O
 is O O O O O O
 scheduled O O O O O O
 to O O O O O O
@@ -22474,8 +22474,8 @@ Natsagiyn O O O O O O
 Bagabandi O O O O O O
 and O O O O O O
 the O O O O O O
-parliamentary O B-NEG O O O B-NEU
-speaker O L-NEG O U-NEU O L-NEU
+parliamentary O O O O O O
+speaker O O O O O O
 , O O O O O O
 Sanzhbegiyn O O O O O O
 Tumur-Ochir O O O O O O
@@ -22615,7 +22615,7 @@ states O O O O O O
 and O O O O O O
 the B-NEU O O O O O
 common I-NEU O O O O O
-border I-NEU U-NEG O O O O
+border I-NEU O O O O O
 stretching I-NEU O O O O O
 for I-NEU O O O O O
 3,500 I-NEU O O O O O
@@ -22734,7 +22734,7 @@ explosive-laden O O O O O O
 boat O O O O O O
 tried O O O O O O
 to O O O O O O
-ram O U-NEG O U-NEG O O
+ram O O O O O O
 a O O O O O O
 navy O O O O O O
 gunboat O O O O O O
@@ -22869,7 +22869,7 @@ said O O O O O O
 
 " O O O O O O
 The O O O O O O
-ship O U-NEG U-NEG U-NEG U-NEG U-NEG
+ship O U-NEG O U-NEG U-NEG U-NEG
 had O O O O O O
 been O O O O O O
 about O O O O O O
@@ -22913,7 +22913,7 @@ moment O O O O O O
 He O O O O O O
 said O O O O O O
 the O O O O O O
-ship O U-NEG U-NEG U-NEG U-NEG U-NEG
+ship O O O U-NEG U-NEG U-NEG
 was O O O O O O
 a O O O O O O
 regular O O O O O O
@@ -23463,8 +23463,8 @@ at O O O O O O
 9:55 O O O O O O
 A.M. O O O O O O
 the O O O O O O
-Secret O O B-NEG O O O
-Service O U-NEG L-NEG U-NEG O U-NEG
+Secret O O O O O O
+Service O U-NEG O O O O
 , O O O O O O
 the O O O O O O
 President's O O O O O O
@@ -23534,8 +23534,8 @@ people O O O O O O
 
 
 The O O O O O O
-Secret O B-POS B-NEG B-POS O B-NEG
-Service O L-POS L-NEG L-POS U-POS L-NEG
+Secret O B-NEG O O B-POS O
+Service O L-NEG U-POS U-POS L-POS U-POS
 was O O O O O O
 also O O O O O O
 interested O O O O O O
@@ -23558,8 +23558,8 @@ party L-POS O O O O O
 The O O O O O O
 President O O O O O O
 's O O O O O O
-military O B-POS B-POS O B-NEU B-NEU
-aide O L-POS L-POS O L-NEU L-NEU
+military O O O O O O
+aide O O O O O O
 , O O O O O O
 an O O O O O O
 Air O O O O O O
@@ -23604,9 +23604,9 @@ personnel O O O O O O
 from O O O O O O
 the O O O O O O
 local O O O O O O
-Secret O B-NEG O O B-NEG O
-Service O I-NEG O B-NEG I-NEG O
-office O L-NEG O L-NEG L-NEG O
+Secret O O O O O O
+Service O O O O O O
+office O O O O O O
 were O O O O O O
 still O O O O O O
 en O O O O O O
@@ -23638,8 +23638,8 @@ had O O O O O O
 no O O O O O O
 phones O O O O O O
 or O O O O O O
-electrical O B-NEG O O O B-NEU
-outlets O L-NEG O O O L-NEU
+electrical O B-NEG O O O B-NEG
+outlets O L-NEG O O O L-NEG
 . O O O O O O
 
 
@@ -23657,10 +23657,10 @@ remarks O O O O O O
 , O O O O O O
 while O O O O O O
 the O O O O O O
-lead O B-NEG B-NEG O B-NEG O
-Secret O I-NEG I-NEG B-NEG I-NEG B-NEG
-Service O I-NEG I-NEG I-NEG I-NEG I-NEG
-agent O L-NEG L-NEG L-NEG L-NEG L-NEG
+lead O O O O O B-NEG
+Secret O B-NEG O B-NEG O I-NEG
+Service O I-NEG B-NEU I-NEG B-NEG I-NEG
+agent O L-NEG L-NEU L-NEG L-NEG L-NEG
 reviewed O O O O O O
 the O O O O O O
 security O O O O O O
@@ -23710,8 +23710,8 @@ discussed O O O O O O
 once O O O O O O
 again O O O O O O
 the O O O O O O
-Secret O B-NEG B-NEG O O O
-Service O L-NEG L-NEG U-NEG O U-NEG
+Secret O O O O O O
+Service O U-NEG O U-NEG O O
 recommended O O O O O O
 against O O O O O O
 returning O O O O O O
@@ -23727,9 +23727,9 @@ agreed O O O O O O
 
 
 Offutt O O O O O O
-Air O B-NEG B-NEG O B-POS B-NEG
-Force O I-NEG I-NEG O I-POS I-NEG
-Base O L-NEG L-NEG O L-POS L-NEG
+Air O O O O O O
+Force O O O O O O
+Base O O O O O O
 in O O O O O O
 Nebraska O O O O O O
 was O O O O O O
@@ -23740,8 +23740,8 @@ its O O O O O O
 elaborate O O O O O O
 command O O O O O O
 and O O O O O O
-control O B-NEG B-POS B-POS B-POS O
-facilities O L-NEG L-POS L-POS L-POS O
+control O B-POS O B-POS O B-POS
+facilities O L-POS O L-POS O L-POS
 , O O O O O O
 and O O O O O O
 because O O O O O O
@@ -23757,8 +23757,8 @@ persons O O O O O O
 
 
 The O O O O O O
-Secret O B-NEG B-NEG B-NEG B-NEG O
-Service O L-NEG L-NEG L-NEG L-NEG U-NEG
+Secret O B-NEG O O B-NEG O
+Service O L-NEG U-POS O L-NEG U-NEG
 wanted O O O O O O
 a B-POS O O O O O
 place I-POS O O O O O
@@ -23825,13 +23825,13 @@ and O O O O O O
 that O O O O O O
 Director O O O O O O
 of O O O O O O
-Central O O O O O B-NEG
-Intelligence O O O O O L-NEG
+Central O O O O O O
+Intelligence O O O O O O
 George O O O O O O
 Tenet O O O O O O
 said O O O O O O
 the O O O O O O
-agency O O O O O U-NEG
+agency O O O O O O
 was O O O O O O
 still O O O O O O
 assessing O O O O O O
@@ -23891,8 +23891,8 @@ an O O O O O O
 increased O O O O O O
 state O O O O O O
 of O O O O O O
-military O O B-NEU O O O
-readiness O O L-NEU O O O
+military O O O O O O
+readiness O O O O O O
 . O O O O O O
 
 
@@ -23977,7 +23977,7 @@ nation O O O O O O
 's O O O O O O
 borders O O O O O O
 and O O O O O O
-ports O U-NEG O O O U-NEU
+ports O U-NEU O O U-NEU O
 . O O O O O O
 
 
@@ -24008,9 +24008,9 @@ One O O O O O O
 back O O O O O O
 to O O O O O O
 Andrews O O O O O O
-Air O O B-NEU O O O
-Force O O I-NEU O O O
-Base O O L-NEU O O O
+Air O O O O O O
+Force O O O O O O
+Base O O O O O O
 . O O O O O O
 
 
@@ -24160,9 +24160,9 @@ director O O O O O O
 of O O O O O O
 the O O O O O O
 Federal O O O O O O
-Emergency O B-NEG B-NEU O B-NEU O
-Management O I-NEG I-NEU O I-NEU O
-Agency O L-NEG L-NEU O L-NEU O
+Emergency O O O O O O
+Management O O O O O O
+Agency O O O O O O
 . O O O O O O
 
 
@@ -24273,9 +24273,9 @@ as O O O O O O
 
 
 Organizing O O O O O O
-federal O O B-NEU O B-NEU O
-emergency O O I-NEU O I-NEU B-NEU
-assistance O O L-NEU O L-NEU L-NEU
+federal O O O O O O
+emergency O O O O O O
+assistance O O O O O O
 . O O O O O O
 
 
@@ -24292,8 +24292,8 @@ to O O O O O O
 give O O O O O O
 about O O O O O O
 the O O O O O O
-air O B-NEG B-NEG B-NEG B-NEG B-NEG
-quality O L-NEG L-NEG L-NEG L-NEG L-NEG
+air O B-NEG O O O B-NEG
+quality O L-NEG O O O L-NEG
 in O O O O O O
 Lower O O O O O O
 Manhattan O O O O O O
@@ -24321,8 +24321,8 @@ eventually O O O O O O
 setting O O O O O O
 up O O O O O O
 a O O O O O O
-federal O O B-NEU O O O
-compensation O O L-NEU O O O
+federal O O O O O O
+compensation O O O O O O
 fund O O O O O O
 and O O O O O O
 defining O O O O O O
@@ -24339,8 +24339,8 @@ it O O O O O O
 
 
 Determining O O O O O O
-federal O O B-NEU O O O
-assistance O O L-NEU O O O
+federal O O O O O O
+assistance O O O O O O
 . O O O O O O
 
 
@@ -24387,8 +24387,8 @@ whole O O O O O O
 
 
 Restoring O O O O O O
-civil O O B-NEU O O O
-aviation O O L-NEU O O O
+civil O O O O O O
+aviation O O O O O O
 . O O O O O O
 
 
@@ -24474,14 +24474,14 @@ and O O O O O O
 how O O O O O O
 to O O O O O O
 return O O O O O O
-border O U-NEG O O O O
+border O O O O O O
 and O O O O O O
-port O B-NEG B-NEU B-NEU O O
-security O L-NEG L-NEU L-NEU O O
+port O O O B-NEG B-NEU O
+security O O O L-NEG L-NEU O
 to O O O O O O
 more O O O O O O
 normal O O O O O O
-operations O O O O O U-NEU
+operations O O O O O O
 . O O O O O O
 
 
@@ -24544,7 +24544,7 @@ task O O O O O O
 , O O O O O O
 none O O O O O O
 had O O O O O O
-security O O O O O O
+security O O U-NEU O U-NEU O
 as O O O O O O
 its O O O O O O
 primary O O O O O O
@@ -24606,17 +24606,17 @@ would O O O O O O
 be O O O O O O
 a O O O O O O
 homeland O O O O O O
-security O O O O O B-NEU
-adviser O O O O O L-NEU
+security O O O O O O
+adviser O O O O O O
 and O O O O O O
-Homeland O O B-NEU O O B-NEU
-Security O O L-NEU O O L-NEU
+Homeland O O O O O O
+Security O O O O O O
 Council-paralleling O O O O O O
 the O O O O O O
 National O O O O O O
-Security O O B-NEU B-NEU B-NEU B-NEU
-Council O O I-NEU I-NEU I-NEU I-NEU
-system O O L-NEU L-NEU L-NEU L-NEU
+Security O B-NEU O O O O
+Council O I-NEU O O O O
+system O L-NEU O O O O
 . O O O O O O
 
 
@@ -24670,9 +24670,9 @@ September O O O O O O
 , O O O O O O
 Immigration O O O O O O
 and O O O O O O
-Naturalization O B-NEG O O B-NEG O
-Service O I-NEG B-NEG B-NEG I-NEG B-NEG
-agents O L-NEG L-NEG L-NEG L-NEG L-NEG
+Naturalization O B-NEG O B-NEG O O
+Service O I-NEG O I-NEG B-NEG O
+agents O L-NEG O L-NEG L-NEG O
 working O O O O O O
 in O O O O O O
 cooperation O O O O O O
@@ -24870,9 +24870,9 @@ very O O O O O O
 difficult O O O O O O
 to O O O O O O
 reach O O O O O O
-law O O O O O O
-enforcement O O O O O O
-officials O O O O O O
+law O O O B-NEG O O
+enforcement O O O I-NEG O O
+officials O O O L-NEG O O
 , O O O O O O
 who O O O O O O
 were O O O O O O
@@ -24885,13 +24885,13 @@ leads O O O O O O
 
 
 The O O O O O O
-clearance O B-NEG B-NEG B-NEG O B-NEG
-process O L-NEG L-NEG L-NEG O L-NEG
+clearance O B-NEG B-NEG B-NEG B-POS B-NEG
+process O L-NEG L-NEG L-NEG L-POS L-NEG
 approved O O O O O O
 by O O O O O O
 the O O O O O O
-Justice O O O O O O
-Department O O O O O O
+Justice O B-NEG O O O O
+Department O L-NEG O O O O
 was O O O O O O
 time-consuming O O O O O O
 , O O O O O O
@@ -24927,7 +24927,7 @@ lawfully O O O O O O
 held O O O O O O
 on O O O O O O
 immigration O O O O O O
-charges O O O U-NEG O O
+charges O O O O O O
 . O O O O O O
 
 
@@ -24972,7 +24972,7 @@ of O O O O O O
 the O O O O O O
 U.S. O O O O O O
 Marshals O O O O O O
-Service O U-NEG O O O O
+Service O O O O U-POS O
 . O O O O O O
 
 
@@ -24981,8 +24981,8 @@ inspector O O O O O O
 general O O O O O O
 of O O O O O O
 the O O O O O O
-Justice O O O O O O
-Department O O O O O O
+Justice O B-NEG O B-NEG O O
+Department O L-NEG O L-NEG O O
 found O O O O O O
 significant O O O O O O
 problems O O O O O O
@@ -25009,8 +25009,8 @@ benefits O O O O O O
 of O O O O O O
 the O O O O O O
 9/11 O O O O O O
-detainee O O O B-NEG O B-NEU
-program O O O L-NEG O L-NEU
+detainee O O O O O O
+program O O O O O O
 , O O O O O O
 the O O O O O O
 Justice O O O O O O
@@ -25096,7 +25096,7 @@ forced O O O O O O
 al O O O O O O
 Qaeda O O O O O O
 to O O O O O O
-operate O O O O O U-NEG
+operate O O O O O O
 less O O O O O O
 freely O O O O O O
 in O O O O O O
@@ -25271,7 +25271,7 @@ attacks O O O O O O
 
 
 The O O O O O O
-administration O U-NEG O O O O
+administration O U-NEG O O O U-NEG
 developed O O O O O O
 a O O O O O O
 proposal O O O O O O
@@ -25485,8 +25485,8 @@ video O O O O O O
 teleconferences O O O O O O
 of O O O O O O
 the O O O O O O
-interagency O B-NEG B-NEG O O O
-group O L-NEG L-NEG O O O
+interagency O O O O B-NEU O
+group O O O O L-NEU O
 Clarke O O O O O O
 chaired O O O O O O
 , O O O O O O
@@ -25677,7 +25677,7 @@ media O O O O O O
 None O O O O O O
 of O O O O O O
 the O O O O O O
-officials O O O O O O
+officials O O O O U-NEG O
 we O O O O O O
 interviewed O O O O O O
 recalled O O O O O O
@@ -25750,16 +25750,16 @@ departed O O O O O O
 
 
 The O O O O O O
-Federal O B-NEG B-NEG O O O
-Aviation O I-NEG I-NEG B-NEG B-NEU B-NEU
-Administration O I-NEG I-NEG I-NEG I-NEU I-NEU
-representative O L-NEG L-NEG L-NEG L-NEU L-NEU
+Federal O B-NEG O O O O
+Aviation O I-NEG O B-NEG O B-NEG
+Administration O I-NEG B-NEU I-NEG B-NEU I-NEG
+representative O L-NEG L-NEU L-NEG L-NEU L-NEG
 working O O O O O O
 in O O O O O O
 the O O O O O O
-FBI O O O B-NEG B-NEU B-NEU
-operations O O O I-NEG I-NEU I-NEU
-center O O O L-NEG L-NEU L-NEU
+FBI O B-NEG O O O O
+operations O I-NEG O O O O
+center O L-NEG O O O O
 made O O O O O O
 sure O O O O O O
 that O O O O O O
@@ -25812,7 +25812,7 @@ that O O O O O O
 none O O O O O O
 of O O O O O O
 the O O O O O O
-passengers O O O O O O
+passengers O O O O U-NEG O
 was O O O O O O
 connected O O O O O O
 to O O O O O O
@@ -25999,20 +25999,20 @@ Mueller O O O O O O
 
 From O O O O O O
 the O O O O O O
-White O O B-NEU O O O
-House O O I-NEU O O O
-staff O O L-NEU O O O
+White O O O O O O
+House O O O O O O
+staff O O O O O O
 , O O O O O O
 National O O O O O O
-Security O B-NEU B-NEU O B-POS O
-Advisor O L-NEU L-NEU O L-POS O
+Security O O O O O O
+Advisor O O O O O O
 Condoleezza O O O O O O
 Rice O O O O O O
 and O O O O O O
 Chief O O O O O O
 of O O O O O O
-Staff O O B-NEU O O O
-Card O O L-NEU O O O
+Staff O O O O O O
+Card O O O O O O
 were O O O O O O
 part O O O O O O
 of O O O O O O
@@ -26470,9 +26470,9 @@ visiting O O O O O O
 head O O O O O O
 of O O O O O O
 Pakistan's O O O O O O
-military O B-NEG B-NEU B-NEU B-POS B-NEU
-intelligence O I-NEG I-NEU I-NEU I-POS I-NEU
-service O L-NEG L-NEU L-NEU L-POS L-NEU
+military O O O O B-POS O
+intelligence O O O O I-POS O
+service O O O O L-POS O
 , O O O O O O
 Mahmud O O O O O O
 Ahmed O O O O O O
@@ -26687,8 +26687,8 @@ Pakistan O O O O O O
 will O O O O O O
 need O O O O O O
 full O O O O O O
-US O B-NEG B-NEG O O O
-support O L-NEG L-NEG O O O
+US O O O O O O
+support O O O O O O
 as O O O O O O
 it O O O O O O
 proceeds O O O O O O
@@ -26728,7 +26728,7 @@ would O O O O O O
 pay O O O O O O
 a O O O O O O
 domestic O O O O O O
-price O O U-NEG U-NEG U-POS O
+price O U-POS U-POS U-POS U-POS U-NEG
 . O O O O O O
 
 
@@ -26798,8 +26798,8 @@ Rumsfeld O O O O O O
 to O O O O O O
 develop O O O O O O
 a O O O O O O
-military O O B-NEU O O O
-plan O O L-NEU O O O
+military O O O O O O
+plan O O O O O O
 against O O O O O O
 the O O O O O O
 Taliban O O O O O O
@@ -26974,9 +26974,9 @@ comply I-POS O O O O O
 with I-POS O O O O O
 all I-POS O O O O O
 UN I-POS O O O O O
-Security I-POS O O O B-NEG O
-Council I-POS O O O I-NEG O
-resolutions L-POS O O U-POS L-NEG O
+Security I-POS O O O O O
+Council I-POS O O O O O
+resolutions L-POS O O O O O
 . O O O O O O
 
 
@@ -27027,8 +27027,8 @@ infrastructure O O O O O O
 
 
 The O O O O O O
-State O O O O O O
-Department O O O O O O
+State O B-NEG O O O O
+Department O L-NEG O O O O
 did O O O O O O
 not O O O O O O
 expect O O O O O O
@@ -27082,7 +27082,7 @@ countries O O O O O O
 according O O O O O O
 to O O O O O O
 their O O O O O O
-capabilities O O U-NEU O U-POS O
+capabilities O O O O U-POS O
 and O O O O O O
 resources O O O O O O
 . O O O O O O
@@ -27165,7 +27165,7 @@ quickly O O O O O O
 realized O O O O O O
 that O O O O O O
 the O O O O O O
-administration O U-NEG U-NEG U-NEG O O
+administration O O O U-NEG O U-NEG
 would O O O O O O
 have O O O O O O
 to O O O O O O
@@ -27244,9 +27244,9 @@ Afghanistan O O O O O O
 
 The O O O O O O
 existing O O O O O O
-Infinite O B-NEG B-NEG O O O
-Resolve O I-NEG I-NEG B-NEG B-NEG B-NEG
-options O L-NEG L-NEG L-NEG L-NEG L-NEG
+Infinite O O B-NEG B-NEG O O
+Resolve O B-NEG I-NEG I-NEG B-NEG O
+options O L-NEG L-NEG L-NEG L-NEG O
 did O O O O O O
 not O O O O O O
 , O O O O O O
@@ -27326,10 +27326,10 @@ Black O O O O O O
 chief O O O O O O
 of O O O O O O
 the O O O O O O
-DCI O U-NEU O O O O
+DCI O O O O O O
 's O O O O O O
 Counterterrorist O O O O O O
-Center O O O U-NEU O U-NEU
+Center O O O O O O
 . O O O O O O
 
 
@@ -27342,8 +27342,8 @@ collecting O O O O O O
 intelligence O O O O O O
 and O O O O O O
 mounting O O O O O O
-covert O O O O O B-NEU
-operations O O O O O L-NEU
+covert O O O O O O
+operations O O O O O O
 . O O O O O O
 
 
@@ -27432,11 +27432,11 @@ on O O O O O O
 the O O O O O O
 Infinite O O O O O O
 Resolve O O O O O O
-" O O O O O B-NEG
-phased O O O O O I-NEG
-campaign O O O O O I-NEG
-" O O O O O I-NEG
-plan O O O O O L-NEG
+" O O O O O O
+phased O O O O O O
+campaign O O O O O O
+" O O O O O O
+plan O O O O O O
 the O O O O O O
 Pentagon O O O O O O
 had O O O O O O
@@ -27597,8 +27597,8 @@ develop O O O O O O
 a O O O O O O
 plan O O O O O O
 for O O O O O O
-homeland O O O O O B-NEU
-defense O O O O O L-NEU
+homeland O O O O O O
+defense O O O O O O
 . O O O O O O
 
 
@@ -27763,8 +27763,8 @@ Finally O O O O O O
 , O O O O O O
 he O O O O O O
 directed O O O O O O
-Treasury O O B-NEU O O O
-Secretary O O L-NEU O O O
+Treasury O O O O O O
+Secretary O O O O O O
 Paul O O O O O O
 O'Neill O O O O O O
 to O O O O O O
@@ -27874,7 +27874,7 @@ demands O O O O O O
 
 Omar O O O O O O
 's O O O O O O
-response O O U-NEG O O O
+response O U-NEG U-NEG U-NEG U-NEG O
 was O O O O O O
 " O O O O O O
 not O O O O O O
@@ -27888,7 +27888,7 @@ points O O O O O O
 
 But O O O O O O
 the O O O O O O
-administration O U-NEG U-NEG U-NEG U-NEG O
+administration O U-NEG U-NEG U-NEG U-NEG U-NEG
 knew O O O O O O
 that O O O O O O
 the O O O O O O
@@ -27905,9 +27905,9 @@ Ladin O O O O O O
 
 The O O O O O O
 pre-9/11 O O O O O O
-draft O O B-NEG O O O
-presidential O O I-NEG O O O
-directive O O L-NEG O O O
+draft O O O O O O
+presidential O O O O O O
+directive O O O O O O
 on O O O O O O
 al O O O O O O
 Qaeda O O O O O O
@@ -27983,8 +27983,8 @@ a O O O O O O
 determination O O O O O O
 to O O O O O O
 use O O O O O O
-military O B-NEU B-NEU O O O
-force O L-NEU L-NEU O O O
+military O O O O O O
+force O O O O O O
 if O O O O O O
 necessary O O O O O O
 to O O O O O O
@@ -28029,8 +28029,8 @@ group O O O O O O
 
 The O O O O O O
 old O O O O O O
-draft O B-NEG B-NEG O B-NEG O
-directive O L-NEG L-NEG O L-NEG O
+draft O B-NEG O O O B-NEG
+directive O L-NEG O O O L-NEG
 on O O O O O O
 al O O O O O O
 Qaeda O O O O O O
@@ -28059,8 +28059,8 @@ networks O O O O O O
 dry O O O O O O
 up O O O O O O
 their O O O O O O
-financial O B-NEG B-NEG B-NEG B-POS B-NEG
-support O L-NEG L-NEG L-NEG L-POS L-NEG
+financial O B-NEG O B-NEG B-POS B-NEG
+support O L-NEG O L-NEG L-POS L-NEG
 , O O O O O O
 and O O O O O O
 prevent O O O O O O
@@ -28100,7 +28100,7 @@ AND O O O O O O
 THE O O O O O O
 QUESTION O O O O O O
 OF O O O O O O
-IRAQ O U-NEG U-NEG O O O
+IRAQ O O O O O O
 President O O O O O O
 Bush O O O O O O
 had O O O O O O
@@ -28172,7 +28172,7 @@ apparent O O O O O O
 sophistication O O O O O O
 of O O O O O O
 the O O O O O O
-operation O U-POS U-POS U-POS U-POS O
+operation O U-POS U-POS O O O
 and O O O O O O
 some O O O O O O
 of O O O O O O
@@ -28195,8 +28195,8 @@ told O O O O O O
 us O O O O O O
 he O O O O O O
 recalled O O O O O O
-Iraqi O O B-NEG O O O
-support O O L-NEG O O O
+Iraqi O O O B-NEG O O
+support O O O L-NEG O O
 for O O O O O O
 Palestinian O O O O O O
 suicide O O O O O O
@@ -28328,7 +28328,7 @@ tasking O O O O O O
 , O O O O O O
 Clarke O O O O O O
 's O O O O O O
-office O O U-NEG O O O
+office O O O O O O
 sent O O O O O O
 a O O O O O O
 memo O O O O O O
@@ -28389,7 +28389,7 @@ found O O O O O O
 no O O O O O O
 " O O O O O O
 compelling O O O O O O
-case O U-NEG U-NEG O O U-NEG
+case O O O U-NEG O O
 " O O O O O O
 that O O O O O O
 Iraq O O O O O O
@@ -28473,7 +28473,7 @@ event O O O O O O
 Arguing O O O O O O
 that O O O O O O
 the O O O O O O
-case O U-NEG U-NEG O O U-NEG
+case O O O O O O
 for O O O O O O
 links O O O O O O
 between O O O O O O
@@ -28578,7 +28578,7 @@ He O O O O O O
 thought O O O O O O
 the O O O O O O
 U.S. O O O O O O
-response O O U-POS O O O
+response O O O O O O
 should O O O O O O
 consider O O O O O O
 a O O O O O O
@@ -28754,8 +28754,8 @@ terrorism O O O O O O
 
 
 A O O O O O O
-Defense O B-NEU B-NEU O O O
-Department O L-NEU L-NEU O O O
+Defense O O O O O O
+Department O O O O O O
 paper O O O O O O
 for O O O O O O
 the O O O O O O
@@ -28937,7 +28937,7 @@ Wolfowitz B-NEG O O O O O
 argument L-NEG O O O O O
 " O O O O O O
 much O O O O O O
-weight O U-NEG U-NEG U-NEG U-NEG U-NEG
+weight O U-NEG U-NEG U-NEG O U-NEG
 . O O O O O O
 
 
@@ -29028,7 +29028,7 @@ September O O O O O O
 he O O O O O O
 said O O O O O O
 the O O O O O O
-focus O U-NEG O U-NEG O U-NEG
+focus O O O O O O
 would O O O O O O
 be O O O O O O
 on O O O O O O
@@ -29078,8 +29078,8 @@ further O O O O O O
 discussion O O O O O O
 of O O O O O O
 " O O O O O O
-phase O B-NEU O O O O
-two O L-NEU O O O O
+phase O O O O O O
+two O O O O O O
 " O O O O O O
 of O O O O O O
 the O O O O O O
@@ -29093,8 +29093,8 @@ President O O O O O O
 Bush O O O O O O
 ordered O O O O O O
 the O O O O O O
-Defense O O B-NEU O B-NEU O
-Department O O L-NEU O L-NEU O
+Defense O O O O O O
+Department O O O O O O
 to O O O O O O
 be O O O O O O
 ready O O O O O O
@@ -29132,7 +29132,7 @@ continued O O O O O O
 to O O O O O O
 press O O O O O O
 the O O O O O O
-case O O O O O U-NEU
+case O O O O O O
 for O O O O O O
 dealing O O O O O O
 with O O O O O O
@@ -29238,8 +29238,8 @@ attack O O O O O O
 on O O O O O O
 the O O O O O O
 World O O O O O O
-Trade O O O O B-NEG O
-Center O O O U-NEG L-NEG O
+Trade O O O O O O
+Center O O O O O O
 . O O O O O O
 
 
@@ -30105,10 +30105,10 @@ Justice O O O O O O
 , O O O O O O
 " O O O O O O
 the O O O O O O
-operation O U-NEG U-NEG U-NEG O U-NEG
+operation O O O O O O
 's O O O O O O
-code O O O O O B-NEG
-word O O O O O L-NEG
+code O O O B-NEG O O
+word O O O L-NEG O O
 was O O O O O O
 changed-to O O O O O O
 avoid O O O O O O
@@ -30132,7 +30132,7 @@ name O O O O O O
 still O O O O O O
 used O O O O O O
 for O O O O O O
-operations O O O O O U-NEG
+operations O O O O O O
 in O O O O O O
 Afghanistan O O O O O O
 : O O O O O O
@@ -30271,8 +30271,8 @@ basing O O O O O O
 arrangements O O O O O O
 contemplated O O O O O O
 for O O O O O O
-Phase O O B-NEG O O O
-One O O L-NEG O O O
+Phase O O O B-NEG O O
+One O O O L-NEG O O
 were O O O O O O
 substantially O O O O O O
 secured-after O O O O O O
@@ -30423,8 +30423,8 @@ forces O O O O O O
 , O O O O O O
 with O O O O O O
 limited O O O O O O
-U.S. O B-NEG O O O O
-support O L-NEG U-NEG U-NEG O U-NEG
+U.S. O O O O O O
+support O U-NEG O O O O
 , O O O O O O
 engaged O O O O O O
 al O O O O O O
@@ -30541,10 +30541,10 @@ armed O O O O O O
 forces O O O O O O
 call O O O O O O
 " O O O O O O
-security O O U-NEU O O O
+security O O O O O O
 and O O O O O O
-stability O B-NEG B-NEU B-POS B-NEU B-NEU
-operations O L-NEG L-NEU L-POS L-NEU L-NEU
+stability O B-NEU O O O O
+operations O L-NEU O O O O
 . O O O O O O
 
 
@@ -30634,8 +30634,8 @@ Atef O O O O O O
 al O O O O O O
 Qaeda O O O O O O
 's O O O O O O
-military O O O O O B-NEU
-commander O O O O O L-NEU
+military O O O O O O
+commander O O O O O O
 and O O O O O O
 a O O O O O O
 principal O O O O O O
@@ -30678,9 +30678,9 @@ experience O O O O O O
 , O O O O O O
 cash O O O O O O
 , O O O O O O
-covert O B-POS O O O O
-action O I-POS O O O O
-capabilities O L-POS O O O O
+covert O O O O O O
+action O O O O O O
+capabilities O O O O O O
 , O O O O O O
 and O O O O O O
 entrï¿½e O O O O O O
@@ -30697,15 +30697,15 @@ the O O O O O O
 U.S. O O O O O O
 military O O O O O O
 offered O O O O O O
-combat O O B-POS O O O
-expertise O O L-POS O O O
+combat O O O O O O
+expertise O O O O O O
 , O O O O O O
-firepower O O U-POS O U-POS O
+firepower O O O O O O
 , O O O O O O
-logistics O O U-POS O O O
+logistics O O O O O O
 , O O O O O O
 and O O O O O O
-communications O O U-POS O O O
+communications O O O O O O
 . O O O O O O
 
 
@@ -30745,8 +30745,8 @@ Interfax O O O O O O
 - O O O O O O
 The O O O O O O
 Russian O O O O O O
-Aerospace O B-NEG B-NEG B-NEG B-NEG B-NEG
-Agency O L-NEG L-NEG L-NEG L-NEG L-NEG
+Aerospace O B-NEG B-NEG B-NEG B-NEG B-POS
+Agency O L-NEG L-NEG L-NEG L-NEG L-POS
 is O O O O O O
 continuing O O O O O O
 its O O O O O O
@@ -30783,12 +30783,12 @@ Thursday O O O O O O
 
 
 The O O O O O O
-agency O O O O O O
+agency O O O O U-NEU O
 has O O O O O O
 received O O O O O O
 three O O O O O O
 official O O O O O O
-applications O O O O O U-NEU
+applications O O O O U-NEU O
 for O O O O O O
 a O O O O O O
 commercial O O O O O O
@@ -30799,13 +30799,13 @@ flight O O O O O O
 A O O O O O O
 source O O O O O O
 in O O O O O O
-space O O U-NEG O O O
+space O O O O O O
 circles O O O O O O
 told O O O O O O
 Interfax O O O O O O
 that O O O O O O
 the O O O O O O
-applications O U-NEU U-NEG U-NEG U-NEU U-NEU
+applications O U-NEG U-NEU U-NEU U-NEU U-NEG
 came O O O O O O
 from O O O O O O
 one O O O O O O
@@ -30831,11 +30831,11 @@ established O O O O O O
 rules O O O O O O
 , O O O O O O
 the O O O O O O
-agency O O O O O U-NEG
+agency O O O O O O
 is O O O O O O
 processing O O O O O O
 the O O O O O O
-applications O U-NEU U-NEU U-NEU U-POS U-NEU
+applications O U-NEU U-NEU O U-NEU U-NEU
 . O O O O O O
 
 
@@ -30913,9 +30913,9 @@ space O O O O O O
 
 
 The O O O O O O
-Russian O O B-NEG O O O
-pop O O I-NEG O O O
-group O O L-NEG O O O
+Russian O O O O O O
+pop O O O O O O
+group O O O O O O
 Na-Na O O O O O O
 has O O O O O O
 not O O O O O O
@@ -30945,8 +30945,8 @@ year O O O O O O
 However O O O O O O
 , O O O O O O
 the O O O O O O
-Russian O O B-NEG O O O
-Aerospace O B-NEG I-NEG B-NEG B-NEG B-NEG
+Russian O O O O O O
+Aerospace O B-NEG B-NEG B-NEG B-NEG B-NEG
 Agency O L-NEG L-NEG L-NEG L-NEG L-NEG
 told O O O O O O
 Interfax O O O O O O
@@ -30957,7 +30957,7 @@ not O O O O O O
 received O O O O O O
 any O O O O O O
 official O O O O O O
-applications O U-NEG U-NEG U-NEG O O
+applications O U-NEG U-NEG U-NEG U-NEG O
 from O O O O O O
 either O O O O O O
 the O O O O O O
@@ -31032,9 +31032,9 @@ Thursday O O O O O O
 
 
 The O O O O O O
-set O O B-NEG O O O
-of O O I-NEG O O O
-services O U-NEG L-NEG U-NEG O U-NEG
+set O B-NEG O O O O
+of O I-NEG O O O O
+services O L-NEG O O O U-NEG
 related O O O O O O
 to O O O O O O
 a O O O O O O
@@ -31114,8 +31114,8 @@ The O O O O O O
 report O O O O O O
 by O O O O O O
 the O O O O O O
-Information O B-NEG O O O O
-Office O L-NEG O O O O
+Information O O O O O O
+Office O O O O O O
 of O O O O O O
 the O O O O O O
 State O O O O O O
@@ -31193,13 +31193,13 @@ George I-NEG O O O O O
 W. I-NEG O O O O O
 Bush I-NEG O O O O O
 's I-NEG O O O O O
-administration L-NEG O U-NEU O O O
+administration L-NEG O O O O O
 for O O O O O O
 withdrawing O O O O O O
 from O O O O O O
 the O O O O O O
-Kyoto O O O O O O
-Protocol O O O O O O
+Kyoto O O O B-NEG O O
+Protocol O O O L-NEG O O
 on O O O O O O
 cutting O O O O O O
 greenhouse O O O O O O
@@ -31262,8 +31262,8 @@ of O O O O O O
 world O O O O O O
 judge O O O O O O
 of O O O O O O
-human O B-NEG O B-NEG O O
-rights O L-NEG O L-NEG O O
+human O O B-NEG O O O
+rights O O L-NEG O O O
 ' O O O O O O
 has O O O O O O
 distorted O O O O O O
@@ -31316,8 +31316,8 @@ said O O O O O O
 START O O O O O O
 
 
-Sun O O B-NEG O O O
-Microsystems O O L-NEG O O O
+Sun O O O O O O
+Microsystems O O O O O O
 Inc O O O O O O
 . O O O O O O
 
@@ -31325,7 +31325,7 @@ Inc O O O O O O
 snapping O O O O O O
 back O O O O O O
 to O O O O O O
-profitability O U-NEG O U-NEG U-NEG O
+profitability O O O O O O
 after O O O O O O
 its O O O O O O
 first O O O O O O
@@ -31535,7 +31535,7 @@ April O O O O O O
 But O O O O O O
 problems B-NEG O O O O O
 in I-NEG O O O O O
-manufacturing I-NEG U-NEG O U-NEG U-NEG O
+manufacturing I-NEG O O O O O
 , I-NEG O O O O O
 forecasting I-NEG O O O O O
 demand I-NEG O O O O O
@@ -31547,9 +31547,9 @@ out I-NEG O O O O O
 of I-NEG O O O O O
 a I-NEG O O O O O
 new I-NEG O O O O O
-management I-NEG B-NEG B-NEG B-NEG B-NEG B-NEG
-information I-NEG I-NEG I-NEG I-NEG I-NEG I-NEG
-system L-NEG L-NEG L-NEG L-NEG L-NEG L-NEG
+management I-NEG B-NEG B-NEG O B-NEG O
+information I-NEG I-NEG I-NEG O I-NEG O
+system L-NEG L-NEG L-NEG O L-NEG O
 made O O O O O O
 it O O O O O O
 extremely O O O O O O
@@ -31604,7 +31604,7 @@ that O O O O O O
 hurt O O O O O O
 Sun O O O O O O
 's O O O O O O
-performance O U-NEG U-NEG U-NEG U-NEG U-NEG
+performance O U-NEG U-NEU U-NEG U-NEG O
 earlier O O O O O O
 this O O O O O O
 year O O O O O O
@@ -31623,7 +31623,7 @@ indicated O O O O O O
 that O O O O O O
 Sun O O O O O O
 's O O O O O O
-profitability O U-NEG O U-NEG U-NEG U-NEG
+profitability O U-NEG O U-NEG U-POS O
 should O O O O O O
 increase O O O O O O
 throughout O O O O O O
@@ -31718,7 +31718,7 @@ Venezuela O O O O O O
 
 CARACAS O O O O O O
 ( O O O O O O
-AFP O U-NEG O O O O
+AFP O O O O O O
 ) O O O O O O
 - O O O O O O
 Here O O O O O O
@@ -31821,7 +31821,7 @@ and O O O O O O
 ` O O O O O O
 intolerant O O O O O O
 ' O O O O O O
-response O O O O O O
+response O O U-POS O O O
 to O O O O O O
 their O O O O O O
 demands O O O O O O
@@ -32182,7 +32182,7 @@ military O O O O O O
 leaders O O O O O O
 say O O O O O O
 their O O O O O O
-support O U-NEG U-POS U-POS U-POS U-NEG
+support O U-POS U-POS U-NEG U-POS U-NEG
 of O O O O O O
 Carmona U-POS O O O O O
 is O O O O O O
@@ -32588,13 +32588,13 @@ early I-POS O O O O O
 implentation I-POS O O O O O
 of I-POS O O O O O
 the I-POS O O O O O
-Kyoto I-POS O O O O O
-protocol L-POS O O O O O
+Kyoto I-POS B-NEG O O O O
+protocol L-POS L-NEG O O O O
 . O O O O O O
 
 
 The O O O O O O
-implementation O U-NEG U-NEG U-NEG O O
+implementation O O O O O U-NEG
 documents O O O O O O
 , O O O O O O
 being O O O O O O
@@ -32637,22 +32637,22 @@ states O O O O O O
 how O O O O O O
 to O O O O O O
 implement O O O O O O
-Agenda O O B-NEU O B-NEU B-NEU
-21 O O L-NEU O L-NEU L-NEU
+Agenda O O O O O O
+21 O O O O O O
 -- O O O O O O
 a O O O O O O
 U.N. O O O O O O
 global O O O O O O
-action O B-NEU B-NEU B-NEU B-NEU B-NEU
-program O L-NEU L-NEU L-NEU L-NEU L-NEU
+action O O O O O B-POS
+program O O O O O L-POS
 for O O O O O O
-environmental O B-NEU O O O O
-restoration O L-NEU O O O O
+environmental O O O O O O
+restoration O O O O O O
 , O O O O O O
 preservation O O O O O O
 and O O O O O O
-social O B-NEU O O O O
-development O L-NEU O O O O
+social O O O O O O
+development O O O O O O
 . O O O O O O
 
 
@@ -32695,8 +32695,8 @@ would O O O O O O
 give O O O O O O
 financial O O O O O O
 and O O O O O O
-technical O B-NEG B-NEG B-NEG O O
-support O L-NEG L-NEG L-NEG O O
+technical O B-NEG O O O B-NEG
+support O L-NEG O O O L-NEG
 to O O O O O O
 those O O O O O O
 countries O O O O O O
@@ -32782,8 +32782,8 @@ out I-both O O O O O
 implementation I-both O O O O O
 of I-both O O O O O
 the I-both O O O O O
-Kyoto I-both B-NEG O O O O
-Protocol I-both L-NEG O O O O
+Kyoto I-both O O O O O
+Protocol I-both O O O O O
 at I-both O O O O O
 an I-both O O O O O
 appropriate I-both O O O O O
@@ -32887,7 +32887,7 @@ draft L-POS O O O O O
 
 
 The O O O O O O
-Cabinet O O U-NEU O O O
+Cabinet O O O O O O
 endorsed O O O O O O
 for O O O O O O
 Diet O O O O O O
@@ -32939,7 +32939,7 @@ has O O O O O O
 already O O O O O O
 adopted O O O O O O
 a O O O O O O
-framework O U-NEG U-NEG O O U-NEG
+framework O U-NEG U-NEU U-NEG O O
 that O O O O O O
 would O O O O O O
 achieve O O O O O O
@@ -32959,7 +32959,7 @@ the O O O O O O
 Diet O O O O O O
 ratifies O O O O O O
 the O O O O O O
-protocol O O O O O U-NEU
+protocol O O O O O O
 , O O O O O O
 work O O O O O O
 will O O O O O O
@@ -32992,7 +32992,7 @@ defended O O O O O O
 his B-both O O O O O
 declaration I-both O O O O O
 of I-both O O O O O
-support I-both O U-NEG O O O
+support I-both O O O O O
 for I-both O O O O O
 the I-both O O O O O
 interim I-both O O O O O
@@ -33577,8 +33577,8 @@ do O O O O O O
 you O O O O O O
 feel O O O O O O
 about O O O O O O
-gun O B-NEU O B-NEG O B-POS
-control O L-NEU O L-NEG O L-POS
+gun O O O B-NEG O O
+control O O O L-NEG O O
 
 
 uh O O O O O O
@@ -33952,8 +33952,8 @@ problem O O O O O O
 i O O O O O O
 have O O O O O O
 with O O O O O O
-gun O B-NEG B-NEG B-NEG O O
-control O L-NEG L-NEG L-NEG O O
+gun O B-NEG O B-NEG B-NEG B-NEG
+control O L-NEG O L-NEG L-NEG L-NEG
 is O O O O O O
 that O O O O O O
 they O O O O O O
@@ -33991,8 +33991,8 @@ anyway O O O O O O
 
 like O O O O O O
 the O O O O O O
-bumper O B-NEG B-NEG B-POS B-POS B-POS
-sticker O L-NEG L-NEG L-POS L-POS L-POS
+bumper O B-POS B-NEG B-POS B-NEG B-POS
+sticker O L-POS L-NEG L-POS L-NEG L-POS
 it O O O O O O
 's O O O O O O
 true O O O O O O
@@ -34158,12 +34158,12 @@ yeah O O O O O O
 i O O O O O O
 have O O O O O O
 have O O O O O O
-gun O O B-NEU O O O
-gun O O L-NEU O O O
+gun O O O O O O
+gun O O O O O O
 have O O O O O O
 have O O O O O O
-gun O B-NEU B-NEU O O O
-management O L-NEU L-NEU O O O
+gun O O O O O O
+management O O O O O O
 101 O O O O O O
 
 
@@ -34210,8 +34210,8 @@ graduation O O O O O O
 
 
 God O O O O O O
-gun O B-NEG B-NEG O O B-NEG
-control O L-NEG L-NEG O O L-NEG
+gun O O O O O O
+control O O O O O O
 it O O O O O O
 's O O O O O O
 it O O O O O O
@@ -34283,8 +34283,8 @@ have O O O O O O
 any O O O O O O
 kind O O O O O O
 of O O O O O O
-gun O B-NEG O O O O
-control O L-NEG O O O O
+gun O B-NEG O O B-NEG O
+control O L-NEG O O L-NEG O
 but O O O O O O
 then O O O O O O
 of O O O O O O
@@ -34506,8 +34506,8 @@ criticism I-NEG O O O O O
 of I-NEG O O O O O
 Russia I-NEG O O O O O
 's I-NEG O O O O O
-human I-NEG B-NEG O B-NEG O O
-rights I-NEG L-NEG O L-NEG O O
+human I-NEG O O O O O
+rights I-NEG O O O O O
 record L-NEG O O O O O
 and O O O O O O
 objected O O O O O O
@@ -34593,9 +34593,9 @@ The O O O O O O
 State O O O O O O
 Department O O O O O O
 's O O O O O O
-annual O O B-NEG O O O
-human O B-NEG I-NEG B-NEG O O
-rights O L-NEG L-NEG L-NEG O O
+annual O O O O O O
+human O O O O O O
+rights O O O O O O
 report O O O O O O
 , O O O O O O
 which O O O O O O
@@ -34635,8 +34635,8 @@ little O O O O O O
 respect O O O O O O
 for O O O O O O
 basic B-NEG O O O O O
-human I-NEG O O B-NEG O O
-rights L-NEG O O L-NEG O O
+human I-NEG O O O O O
+rights L-NEG O O O O O
 and O O O O O O
 there O O O O O O
 were O O O O O O
@@ -35149,8 +35149,8 @@ the O O O O O O
 common O O O O O O
 foreign O O O O O O
 and O O O O O O
-security O O B-NEG O O O
-policy O O L-NEG O O O
+security O O O O O O
+policy O O O O O O
 ( O O O O O O
 CFSP O O O O O O
 ) O O O O O O
@@ -35197,7 +35197,7 @@ collectively O O O O O O
 expressed O O O O O O
 their O O O O O O
 full O O O O O O
-support O U-NEG U-NEG O U-NEG U-NEG
+support O U-NEG O O O O
 to O O O O O O
 the B-POS O O O O O
 Middle I-POS O O O O O
@@ -35218,7 +35218,7 @@ undertake L-POS O O O O O
 
 " O O O O O O
 This O O O O O O
-support O U-NEG U-POS U-NEG U-POS U-NEG
+support O U-NEG U-NEG U-POS U-POS U-NEG
 will O O O O O O
 be O O O O O O
 an O O O O O O
@@ -35233,7 +35233,7 @@ whom O O O O O O
 we O O O O O O
 renew O O O O O O
 our O O O O O O
-support O U-NEG U-NEG U-NEU O U-NEU
+support O U-NEG O O O O
 in O O O O O O
 his O O O O O O
 difficult O O O O O O
@@ -35272,7 +35272,7 @@ The O O O O O O
 prospects O O O O O O
 for O O O O O O
 the O O O O O O
-construction O O O U-NEG O O
+construction O O O O O O
 of O O O O O O
 a O O O O O O
 new O O O O O O
@@ -35322,8 +35322,8 @@ Chirica O O O O O O
 says O O O O O O
 that O O O O O O
 the O O O O O O
-VVER-1000 O O O O O O
-technology O U-NEG O O O O
+VVER-1000 O B-NEG O O B-NEG O
+technology O L-NEG O U-NEG L-NEG O
 to O O O O O O
 be O O O O O O
 contributed O O O O O O
@@ -35348,8 +35348,8 @@ and O O O O O O
 German O O O O O O
 supervision O O O O O O
 and O O O O O O
-automation O O O O B-POS B-POS
-systems O O O O L-POS L-POS
+automation O B-POS O O O O
+systems O L-POS O O O O
 . O O O O O O
 
 
@@ -35437,7 +35437,7 @@ also O O O O O O
 built O O O O O O
 on O O O O O O
 CANDU O O O O O O
-technology O O U-NEG O O U-NEG
+technology O O U-POS O U-NEU O
 and O O O O O O
 estimated O O O O O O
 to O O O O O O
@@ -35476,7 +35476,7 @@ technology O O O O O O
 equipment O O O O O O
 , O O O O O O
 and O O O O O O
-services O O U-NEG U-NEG U-NEG U-NEG
+services O U-NEG O O U-NEG O
 would O O O O O O
 cost O O O O O O
 Romania O O O O O O
@@ -35569,7 +35569,7 @@ which O O O O O O
 include O O O O O O
 a O O O O O O
 generation O O O O O O
-price O U-POS U-POS U-NEG U-POS U-NEU
+price O U-POS U-NEU U-POS U-POS U-NEG
 of O O O O O O
 $ O O O O O O
 12/MWh O O O O O O
@@ -35580,10 +35580,10 @@ The O O O O O O
 price O U-POS U-POS U-POS U-POS U-POS
 for O O O O O O
 the O O O O O O
-energy O O B-NEG U-POS O O
-generated O O I-NEG O O O
-at O O I-NEG O O O
-Cernavoda O O L-NEG O O O
+energy O O O O O O
+generated O O O O O O
+at O O O O O O
+Cernavoda O O O O O O
 is O O O O O O
 some O O O O O O
 $ O O O O O O
@@ -35611,8 +35611,8 @@ energy O O O O O O
 generated O O O O O O
 by O O O O O O
 the O O O O O O
-thermal O B-NEU B-NEG O O O
-plants O L-NEU L-NEG O O O
+thermal O O O O O O
+plants O O O O O O
 . O O O O O O
 
 
@@ -35622,7 +35622,7 @@ STRASBOURG O O O O O O
 Nov O O O O O O
 29 O O O O O O
 ( O O O O O O
-AFP O O O U-NEG O O
+AFP O O O O O O
 ) O O O O O O
 -- O O O O O O
 Three O O O O O O
@@ -35651,8 +35651,8 @@ for I-NEG O O O O O
 the I-NEG O O O O O
 violation I-NEG O O O O O
 of I-NEG O O O O O
-human I-NEG B-NEG O O O O
-rights L-NEG L-NEG O O O O
+human I-NEG O O O O O
+rights L-NEG O O O O O
 . O O O O O O
 
 
@@ -35664,7 +35664,7 @@ Europe O O O O O O
 the O O O O O O
 Organization O O O O O O
 for O O O O O O
-Security O O U-NEU O O O
+Security O O O O O O
 and O O O O O O
 Cooperation O O O O O O
 in O O O O O O
@@ -35678,8 +35678,8 @@ UN O O O O O O
 High O O O O O O
 Commissioner O O O O O O
 for O O O O O O
-Human O B-NEG O B-NEG O O
-Rights O L-NEG O L-NEG O O
+Human O O O O O O
+Rights O O O O O O
 said O O O O O O
 they O O O O O O
 were O O O O O O
@@ -35757,8 +35757,8 @@ UN O O O O O O
 High O O O O O O
 Commissioner O O O O O O
 for O O O O O O
-Human O O B-NEU O O O
-Rights O O L-NEU O O O
+Human O O O O O O
+Rights O O O O O O
 Mary O O O O O O
 Robinson O O O O O O
 , O O O O O O
@@ -35780,7 +35780,7 @@ of O O O O O O
 the O O O O O O
 OSCE O O O O O O
 's O O O O O O
-Office O O U-NEG O U-POS O
+Office O O O O U-POS O
 for O O O O O O
 Democratic O O O O O O
 Institutions O O O O O O
@@ -35962,7 +35962,7 @@ it O O O O O O
 said O O O O O O
 were O O O O O O
 essential O O O O O O
-rights O O O O O O
+rights O O O U-NEG O O
 that O O O O O O
 could O O O O O O
 not O O O O O O
@@ -36107,8 +36107,8 @@ government O O O O O O
 was O O O O O O
 the O O O O O O
 worst O O O O O O
-human O O O O O O
-rights O O O O O O
+human O O O B-NEG O O
+rights O O O L-NEG O O
 violator O O O O O O
 in O O O O O O
 the O O O O O O
@@ -36204,8 +36204,8 @@ persons O O O O O O
 detained O O O O O O
 by O O O O O O
 the O O O O O O
-security O O O O O O
-forces O O O O O O
+security O O O O B-NEG O
+forces O O O O L-NEG O
 . O O O O O O
 
 
@@ -36810,9 +36810,9 @@ growth O O O O O O
 by O O O O O O
 reducing O O O O O O
 " O O O O O O
-greenhouse O B-NEG O B-NEG O O
-gas O I-NEG O I-NEG B-NEG O
-intensity O L-NEG O L-NEG L-NEG O
+greenhouse O O O O O O
+gas O O O O O O
+intensity O O O O O O
 " O O O O O O
 -- O O O O O O
 the O O O O O O
@@ -36821,7 +36821,7 @@ of O O O O O O
 emissions O O O O O O
 to O O O O O O
 economic O O O O O O
-output O U-NEG O O O O
+output O O O O O O
 -- O O O O O O
 by O O O O O O
 a O O O O O O
@@ -37041,9 +37041,9 @@ report O O O O O O
 that O O O O O O
 only O O O O O O
 the O O O O O O
-internal O B-NEG O O O O
-ratification O I-NEG O O O O
-processes O L-NEG O O O O
+internal O O O O O O
+ratification O O O O O O
+processes O O O O O O
 in O O O O O O
 each O O O O O O
 of O O O O O O
@@ -37141,8 +37141,8 @@ emphasizes O O O O O O
 that O O O O O O
 for O O O O O O
 the O O O O O O
-Kyoto O B-NEG O O O O
-Protocol O L-NEG O O O O
+Kyoto O O O O O O
+Protocol O O O O O O
 to O O O O O O
 be O O O O O O
 able O O O O O O
@@ -37236,8 +37236,8 @@ in O O O O O O
 the O O O O O O
 fight O O O O O O
 against O O O O O O
-climate O O O O B-NEG O
-change O O O O L-NEG O
+climate O O O O O O
+change O O O O O O
 " O O O O O O
 . O O O O O O
 
@@ -37245,7 +37245,7 @@ change O O O O L-NEG O
 
 Stretching O O O O O O
 The O O O O O O
-Case O U-NEU U-NEU U-NEU U-NEU U-NEG
+Case O O O O O O
 For O O O O O O
 Inhumanity O O O O O O
 
@@ -37347,8 +37347,8 @@ transfer I-NEG O O O O O
 to I-NEG O O O O O
 protect I-NEG O O O O O
 the I-NEG O O O O O
-military I-NEG O B-NEU O B-NEU O
-personnel I-NEG O L-NEU O L-NEU O
+military I-NEG O O O O O
+personnel I-NEG O O O O O
 guarding I-NEG O O O O O
 them L-NEG O O O O O
 . O O O O O O
@@ -37441,8 +37441,8 @@ halal O O O O O O
 , O O O O O O
 cereal O O O O O O
 and O O O O O O
-granola O O O B-NEU O O
-bars O O O L-NEU O O
+granola O O O O O O
+bars O O O O O O
 . O O O O O O
 
 
@@ -38041,8 +38041,8 @@ change O O O O O O
 , O O O O O O
 a O O O O O O
 `` O O O O O O
-red O O O B-NEG O O
-light O O O L-NEG O O
+red O O O O O O
+light O O O O O O
 '' O O O O O O
 has O O O O O O
 been O O O O O O
@@ -38146,7 +38146,7 @@ raise O O O O O O
 the O O O O O O
 earth O O O O O O
 's O O O O O O
-temperature O O O O O O
+temperature O O O O U-NEU O
 and O O O O O O
 change O O O O O O
 the O O O O O O
@@ -38301,8 +38301,8 @@ statistics O O O O O O
 released O O O O O O
 by O O O O O O
 International O O O O O O
-Energy O O B-NEG O O O
-Agency O O L-NEG O O O
+Energy O O O O O O
+Agency O O O O O O
 ( O O O O O O
 IEA O O O O O O
 ) O O O O O O
@@ -38511,8 +38511,8 @@ to O O O O O O
 gradually O O O O O O
 change O O O O O O
 our O O O O O O
-energy O O B-NEU O O O
-structure O O L-NEU O O O
+energy O O O O O O
+structure O O O O O O
 and O O O O O O
 reduce O O O O O O
 greenhouse O O O O O O
@@ -38675,9 +38675,9 @@ contentious O O O O O O
 issues O O O O O O
 such O O O O O O
 as O O O O O O
-emission O B-NEG O O O O
-reduction O I-NEG O O O O
-mechanisms O L-NEG O O O O
+emission O O O O O O
+reduction O O O O O O
+mechanisms O O O O O O
 and O O O O O O
 targets O O O O O O
 , O O O O O O
@@ -38692,7 +38692,7 @@ effect O O O O O O
 
 
 The O O O O O O
-protocol O O O O O O
+protocol O U-NEG O O O U-NEG
 faced O O O O O O
 danger O O O O O O
 of O O O O O O
@@ -38811,7 +38811,7 @@ In O O O O O O
 order O O O O O O
 for O O O O O O
 the O O O O O O
-protocol O O O O O O
+protocol O O O O O U-NEG
 to O O O O O O
 be O O O O O O
 implemented O O O O O O
@@ -39115,7 +39115,7 @@ about O O O O O O
 the O O O O O O
 moguls O O O O O O
 of O O O O O O
-technology O U-NEG O U-NEG O U-NEU
+technology O O O O O U-NEG
 now O O O O O O
 as O O O O O O
 they O O O O O O
@@ -39180,8 +39180,8 @@ watch O O O O O O
 
 
 The O O O O O O
-smart-boy O O O O O O
-technologist O O O O O O
+smart-boy O O O B-NEG O O
+technologist O O O L-NEG O O
 is O O O O O O
 now O O O O O O
 being O O O O O O
@@ -39246,7 +39246,7 @@ while O O O O O O
 you O O O O O O
 think O O O O O O
 of O O O O O O
-Case O O U-NEU O O O
+Case O O O O O O
 , O O O O O O
 you O O O O O O
 also O O O O O O
@@ -39347,7 +39347,7 @@ the O O O O O O
 insular O O O O O O
 culture O O O O O O
 of O O O O O O
-Microsoft O U-NEG U-NEG O O O
+Microsoft O O O O O O
 did O O O O O O
 not O O O O O O
 look O O O O O O
@@ -39413,7 +39413,7 @@ sure O O O O O O
 , O O O O O O
 since O O O O O O
 its B-NEU O O O O O
-employees L-NEU O O O O O
+employees L-NEU O O U-NEG O O
 would O O O O O O
 have O O O O O O
 been O O O O O O
@@ -39475,8 +39475,8 @@ sitting O O O O O O
 I O O O O O O
 think O O O O O O
 the O O O O O O
-Microsoft O B-NEG O O B-NEG B-NEG
-trial O L-NEG O O L-NEG L-NEG
+Microsoft O B-NEG B-POS O O O
+trial O L-NEG L-POS O O O
 has O O O O O O
 been O O O O O O
 the O O O O O O
@@ -39564,7 +39564,7 @@ of O O O O O O
 them O O O O O O
 because O O O O O O
 the O O O O O O
-Internet O O O O O O
+Internet O O O O U-NEG O
 allows O O O O O O
 and O O O O O O
 encourages O O O O O O
@@ -39737,8 +39737,8 @@ Shuttle O O O O O O
 Atlantis O O O O O O
 thunders O O O O O O
 toward O O O O O O
-space O B-NEG B-NEG O B-NEU B-POS
-station O L-NEG L-NEG O L-NEU L-POS
+space O O O O B-NEU O
+station O O O O L-NEU O
 
 
 CAPE O O O O O O
@@ -39750,7 +39750,7 @@ and O O O O O O
 a O O O O O O
 truckload O O O O O O
 of O O O O O O
-hardware O U-POS U-NEU U-POS U-NEU U-NEU
+hardware O U-POS O U-POS O U-NEG
 are O O O O O O
 racing O O O O O O
 toward O O O O O O
@@ -39765,8 +39765,8 @@ blastoff O O O O O O
 Monday O O O O O O
 of O O O O O O
 the O O O O O O
-space O B-NEU B-NEU O B-NEU O
-shuttle O L-NEU L-NEU O L-NEU O
+space O O O O O O
+shuttle O O O O O O
 Atlantis O O O O O O
 . O O O O O O
 
@@ -39793,8 +39793,8 @@ designed O O O O O O
 to O O O O O O
 get O O O O O O
 the O O O O O O
-space O B-NEG O O O O
-station O L-NEG O O O O
+space O O O O O O
+station O O O O O O
 closer O O O O O O
 to O O O O O O
 completion O O O O O O
@@ -39819,8 +39819,8 @@ thundered O O O O O O
 off O O O O O O
 the O O O O O O
 seaside O O O O O O
-launch O B-NEG B-NEU B-NEU B-NEU B-NEU
-pad O L-NEG L-NEU L-NEU L-NEU L-NEU
+launch O B-NEU O O B-NEU B-NEU
+pad O L-NEU O O L-NEU L-NEU
 at O O O O O O
 4:44 O O O O O O
 p.m O O O O O O
@@ -39834,10 +39834,10 @@ marred O O O O O O
 the O O O O O O
 countdown O O O O O O
 as O O O O O O
-engineers O O O O O U-NEG
+engineers O O O U-NEG O O
 frantically O O O O O O
 reloaded O O O O O O
-software O U-NEG U-NEG U-NEG U-NEU U-NEU
+software O U-NEG U-POS U-NEG U-NEU U-NEG
 , O O O O O O
 finishing O O O O O O
 the O O O O O O
@@ -39861,10 +39861,10 @@ delay O O O O O O
 caused O O O O O O
 when O O O O O O
 a O O O O O O
-liquid O B-NEG B-NEG O B-NEG B-NEG
-hydrogen O I-NEG I-NEG B-NEG I-NEG I-NEG
-vent O I-NEG I-NEG I-NEG I-NEG I-NEG
-pipe O L-NEG L-NEG L-NEG L-NEG L-NEG
+liquid O B-NEG O B-NEG B-NEG B-NEG
+hydrogen O I-NEG O I-NEG I-NEG I-NEG
+vent O I-NEG O I-NEG I-NEG I-NEG
+pipe O L-NEG O L-NEG L-NEG L-NEG
 sprung O O O O O O
 a O O O O O O
 leak O O O O O O
@@ -39961,16 +39961,16 @@ will O O O O O O
 install O O O O O O
 the O O O O O O
 '' O O O O O O
-keystone O B-NEU B-NEU B-NEU B-NEU B-NEU
-'' O I-NEU I-NEU I-NEU I-NEU I-NEU
-center O I-NEU I-NEU I-NEU I-NEU I-NEU
-support O I-NEU I-NEU I-NEU I-NEU I-NEU
-unit O L-NEU L-NEU L-NEU L-NEU L-NEU
+keystone O B-NEU O O O O
+'' O I-NEU O O O O
+center O I-NEU B-NEU B-NEG O B-NEU
+support O I-NEU L-NEU I-NEG B-NEU I-NEU
+unit O L-NEU O L-NEG L-NEU L-NEU
 for O O O O O O
 the O O O O O O
-International O O B-NEU O B-NEU O
-Space O O I-NEU O I-NEU O
-Station O O L-NEU O L-NEU O
+International O O O O O O
+Space O O O O O O
+Station O O O O O O
 . O O O O O O
 
 
@@ -39981,7 +39981,7 @@ The O O O O O O
 '' O O O O O O
 S-Zero O O O O O O
 '' O O O O O O
-structure O U-NEG O O O O
+structure O O O O O O
 's O O O O O O
 first O O O O O O
 job O O O O O O
@@ -39998,7 +39998,7 @@ nearly O O O O O O
 an O O O O O O
 acre O O O O O O
 in O O O O O O
-size O O O O U-NEG O
+size O O O O O O
 , O O O O O O
 stretching O O O O O O
 more O O O O O O
@@ -40007,7 +40007,7 @@ a O O O O O O
 football O O O O O O
 field O O O O O O
 in O O O O O O
-length O O O U-NEU U-NEG O
+length O O O O O O
 . O O O O O O
 
 
@@ -40279,8 +40279,8 @@ tone O O O O O O
 in O O O O O O
 the O O O O O O
 China O O O O O O
-human O O O B-NEG O O
-rights O O O L-NEG O O
+human O O O O O O
+rights O O O O O O
 report O O O O O O
 . O O O O O O
 
@@ -40289,8 +40289,8 @@ But O O O O O O
 it O O O O O O
 nevertheless O O O O O O
 uses O O O O O O
-human O O O O O O
-rights O O O O O O
+human O O O B-NEG O O
+rights O O O L-NEG O O
 issues O O O O O O
 to O O O O O O
 slander O O O O O O
@@ -40360,8 +40360,8 @@ also O O O O O O
 seen O O O O O O
 the O O O O O O
 ever-improving O O O O O O
-human O O O O O O
-rights O O O O O O
+human O O O B-POS O O
+rights O O O L-POS O O
 in O O O O O O
 the O O O O O O
 Tibet O O O O O O
@@ -40500,9 +40500,9 @@ update O O O O O O
 the O O O O O O
 palace O O O O O O
 's O O O O O O
-fire O B-NEG B-NEU O B-NEU O
-safety O I-NEG I-NEU O I-NEU B-NEU
-facilities O L-NEG L-NEU O L-NEU L-NEU
+fire O O O O O O
+safety O O O O O O
+facilities O O O O O O
 . O O O O O O
 
 
@@ -40546,8 +40546,8 @@ in O O O O O O
 the O O O O O O
 so-called O O O O O O
 China O O O O O O
-human O O O O O O
-rights O O O O O O
+human O O O B-NEG O O
+rights O O O L-NEG O O
 report O O O O O O
 compiled O O O O O O
 by O O O O O O
@@ -40698,7 +40698,7 @@ July O O O O O O
 
 " O O O O O O
 His O O O O O O
-behaviour O O O O O U-NEG
+behaviour O O O O O O
 has O O O O O O
 violated O O O O O O
 the O O O O O O
@@ -40812,8 +40812,8 @@ printed O O O O O O
 
 The O O O O O O
 US O O O O O O
-human O O O B-NEG O O
-rights O O O L-NEG O O
+human O O O O O O
+rights O O O O O O
 report O O O O O O
 also O O O O O O
 accuses O O O O O O
@@ -40869,8 +40869,8 @@ Uighur I-NEG O O O O O
 activists I-NEG O O O O O
 under I-NEG O O O O O
 the I-NEG O O O O O
-anti-terrorism I-NEG B-NEG O O B-NEU O
-umbrella L-NEG L-NEG O O L-NEU O
+anti-terrorism I-NEG O O O O O
+umbrella L-NEG O O O O O
 . O O O O O O
 " O O O O O O
 
@@ -41387,7 +41387,7 @@ better O O O O O O
 and O O O O O O
 improve O O O O O O
 the O O O O O O
-quality O O O O U-POS O
+quality O O O O O O
 of O O O O O O
 our O O O O O O
 life O O O O O O
@@ -41483,7 +41483,7 @@ the O O O O O O
 various O O O O O O
 agencies O O O O O O
 , O O O O O O
-programs O U-NEU U-NEU U-NEU U-POS U-NEU
+programs O U-POS O O O O
 , O O O O O O
 and O O O O O O
 systems O O O O O O
@@ -41547,7 +41547,7 @@ to I-POS O O O O O
 the I-POS O O O O O
 programs I-POS U-POS U-POS U-POS U-POS U-POS
 and I-POS O O O O O
-services I-POS U-POS U-POS U-POS U-POS U-POS
+services I-POS U-POS U-POS U-POS U-POS O
 that I-POS O O O O O
 can I-POS O O O O O
 best I-POS O O O O O
@@ -41603,7 +41603,7 @@ as O O O O O O
 well O O O O O O
 as O O O O O O
 an O O O O O O
-application O O U-NEU O O O
+application O U-NEU O O U-NEU O
 with O O O O O O
 various O O O O O O
 options O O O O O O
@@ -41717,8 +41717,8 @@ a O O O O O O
 restructuring O O O O O O
 to O O O O O O
 boost O O O O O O
-shareholder O O O O B-NEG O
-value O O O O L-NEG O
+shareholder O O O O O O
+value O O O O O O
 . O O O O O O
 
 
@@ -41824,9 +41824,9 @@ billion O O O O O O
 . O O O O O O
 
 
-Courtaulds O O B-NEG O O O
-' O O I-NEG O O O
-spinoff O O L-NEG O O O
+Courtaulds O O O O O O
+' O O O O O O
+spinoff O O O O O O
 reflects O O O O O O
 pressure O O O O O O
 on O O O O O O
@@ -41835,7 +41835,7 @@ industry O O O O O O
 to O O O O O O
 boost O O O O O O
 share O O O O O O
-prices O O O U-NEG O U-NEG
+prices O O O U-NEG U-NEG O
 beyond O O O O O O
 the O O O O O O
 reach O O O O O O
@@ -41898,8 +41898,8 @@ Courtaulds O O O O O O
 textile O O O O O O
 operations O O O O O O
 had O O O O O O
-operating O O B-NEG O O O
-profit O O L-NEG O O O
+operating O B-NEG O O O O
+profit O L-NEG O O O O
 of O O O O O O
 # O O O O O O
 50 O O O O O O
@@ -41931,7 +41931,7 @@ boost O O O O O O
 the O O O O O O
 company O O O O O O
 's O O O O O O
-value O O O O O U-NEG
+value O O O U-POS O O
 by O O O O O O
 5 O O O O O O
 % O O O O O O
@@ -41948,7 +41948,7 @@ will O O O O O O
 carry O O O O O O
 a O O O O O O
 higher O O O O O O
-price O U-NEG O U-NEG O U-NEG
+price O O U-NEU O O O
 earnings O O O O O O
 multiple O O O O O O
 than O O O O O O
@@ -42179,8 +42179,8 @@ the O O O O O O
 UN O O O O O O
 Oil O O O O O O
 for O O O O O O
-Food O O O O B-NEU O
-program O O O U-NEU L-NEU O
+Food O O O O O O
+program O O O O O O
 . O O O O O O
 
 
@@ -42359,10 +42359,10 @@ this O O O O O O
 , O O O O O O
 Russia O O O O O O
 's O O O O O O
-Zarubezhneft O O B-NEU O O O
-foreign O O I-NEU O O O
-trade O O I-NEU O O O
-organization O O L-NEU O O O
+Zarubezhneft O O O O O O
+foreign O O O O O O
+trade O O O O O O
+organization O O O O O O
 secured O O O O O O
 45 O O O O O O
 contracts O O O O O O
@@ -42429,15 +42429,15 @@ partners L-NEU O O O O O
 
 
 Russian O O O O O O
-ship O U-NEG O U-NEG U-NEG O
+ship O U-NEG O U-NEG U-NEG U-NEG
 might O O O O O O
 have O O O O O O
 missed O O O O O O
 proper O O O O O O
 linkup O O O O O O
 with O O O O O O
-space O B-NEG B-NEG B-NEG B-NEG B-NEG
-station O L-NEG L-NEG L-NEG L-NEG L-NEG
+space O O B-NEU B-NEG B-NEG O
+station O O L-NEU L-NEG L-NEG O
 
 
 CAPE O O O O O O
@@ -42448,9 +42448,9 @@ AP O O O O O O
 ) O O O O O O
 -- O O O O O O
 A O O O O O O
-Russian O B-NEG O O O O
-supply O I-NEG O O O O
-ship O L-NEG O O O O
+Russian O O O O O O
+supply O O O O O O
+ship O O O O O O
 docked O O O O O O
 to O O O O O O
 the O O O O O O
@@ -42489,8 +42489,8 @@ tonight O O O O O O
 planned O O O O O O
 launch O O O O O O
 of O O O O O O
-space O B-NEG O O O O
-shuttle O L-NEG O O O O
+space O O O O O O
+shuttle O O O O O O
 Endeavour O O O O O O
 on O O O O O O
 a O O O O O O
@@ -42506,7 +42506,7 @@ is O O O O O O
 that O O O O O O
 a B-NEG O O O O O
 loose I-NEG O O O O O
-fit I-NEG U-NEG O U-NEG O U-NEG
+fit I-NEG O O U-NEG O O
 might I-NEG O O O O O
 damage I-NEG O O O O O
 the I-NEG O O O O O
@@ -42515,19 +42515,19 @@ complex I-NEG O O O O O
 because I-NEG O O O O O
 of I-NEG O O O O O
 the I-NEG O O O O O
-force I-NEG U-NEG U-NEG U-NEG U-NEG O
+force I-NEG U-NEG U-NEG U-NEG U-NEG U-NEG
 imparted I-NEG O O O O O
 by I-NEG O O O O O
 a I-NEG O O O O O
-docking I-NEG B-NEG B-NEG B-NEG B-NEU B-NEU
-shuttle L-NEG L-NEG L-NEG L-NEG L-NEU L-NEU
+docking I-NEG B-NEG B-NEU B-NEG B-NEG B-NEG
+shuttle L-NEG L-NEG L-NEU L-NEG L-NEG L-NEG
 . O O O O O O
 
 
 The O O O O O O
 unmanned O O O O O O
 Progress O O O O O O
-ship O O O U-POS U-POS O
+ship O O O O O O
 , O O O O O O
 carrying O O O O O O
 more O O O O O O
@@ -42578,8 +42578,8 @@ NASA O O O O O O
 later O O O O O O
 said O O O O O O
 Russian O O O O O O
-flight O B-NEG B-NEG B-NEG B-NEG B-NEG
-controllers O L-NEG L-NEG L-NEG L-NEG L-NEG
+flight O B-NEG B-NEG B-NEG O B-NEG
+controllers O L-NEG L-NEG L-NEG O L-NEG
 outside O O O O O O
 Moscow O O O O O O
 did O O O O O O
@@ -42590,7 +42590,7 @@ expected O O O O O O
 indication O O O O O O
 that O O O O O O
 the O O O O O O
-hooks O U-NEG U-NEG U-NEG U-NEG O
+hooks O U-NEG O U-NEG U-NEG U-NEG
 had O O O O O O
 closed O O O O O O
 and O O O O O O
@@ -42599,17 +42599,17 @@ latched O O O O O O
 
 
 The O O O O O O
-space O B-NEG B-NEG B-NEG B-NEG B-NEG
-station O L-NEG L-NEG L-NEG L-NEG L-NEG
+space O B-NEG O O B-NEG B-NEG
+station O L-NEG O O L-NEG L-NEG
 's O O O O O O
-steering O B-NEG B-NEG B-NEG B-NEG B-NEG
-system O L-NEG L-NEG L-NEG L-NEG L-NEG
+steering O B-NEG O B-NEG B-NEG B-NEG
+system O L-NEG O L-NEG L-NEG L-NEG
 , O O O O O O
 turned O O O O O O
 off O O O O O O
 for O O O O O O
 the O O O O O O
-docking O U-NEG O U-NEG O U-NEU
+docking O O O O U-NEU U-NEG
 , O O O O O O
 remained O O O O O O
 off O O O O O O
@@ -42652,11 +42652,11 @@ back O O O O O O
 on O O O O O O
 after O O O O O O
 Russian O O O O O O
-engineers O O O O O U-NEG
+engineers O O O O O O
 determined O O O O O O
 the O O O O O O
-supply O U-NEG B-NEG U-NEG B-NEG B-NEG
-ship O U-NEG L-NEG O L-NEG L-NEG
+supply O B-NEG B-NEG B-NEG B-NEG U-NEG
+ship O L-NEG L-NEG L-NEG L-NEG O
 was O O O O O O
 attached O O O O O O
 securely O O O O O O
@@ -42666,14 +42666,14 @@ the O O O O O O
 steering O B-NEG O B-NEG B-NEG B-NEG
 system O L-NEG O L-NEG L-NEG L-NEG
 to O O O O O O
-operate O O O U-NEG O O
+operate O O O O O O
 . O O O O O O
 
 
 Russia O O O O O O
 's O O O O O O
-Mission O B-NEG B-NEG B-POS B-POS B-NEG
-Control O L-NEG L-NEG L-POS L-POS L-NEG
+Mission O B-NEG O B-NEG B-NEG B-NEG
+Control O L-NEG O L-NEG L-NEG L-NEG
 worked O O O O O O
 into O O O O O O
 the O O O O O O

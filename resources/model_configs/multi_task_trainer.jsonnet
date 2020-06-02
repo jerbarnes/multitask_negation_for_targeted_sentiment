@@ -23,7 +23,7 @@
             "label_namespace": "negation_labels",
             "label_encoding": "BIO",
             "skip_connections": false,
-            "verbose_metrics": false
+            "verbose_metrics": true
         },
         "trainer": {
             "optimizer": {
@@ -61,7 +61,7 @@
             "label_namespace": "sentiment_labels",
             "label_encoding": "BIOUL",
             "skip_connections": true,
-            "verbose_metrics": false,
+            "verbose_metrics": true,
             "task_encoder": {
                 "type": "lstm",
                 "input_size": 500,
