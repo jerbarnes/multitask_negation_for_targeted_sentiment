@@ -414,7 +414,7 @@ The Laptop and Restaurant development/validation dataset split have been re-anno
 ./scripts/generate_spec_predictions.sh
 ```
 
-The speculation corpus has also been filtered so that samples have to contain speculation. This is to better isolate the speculation phenonma, and therefore to better test the models capability on modelling speculative samples. The script below runs the models on this smaller but more isolated speculative data:
+The speculation corpus has also been filtered so that samples have to contain speculation. This is to better isolate the speculation phenomena, and therefore to better test the models capability on modelling speculative samples. The script below runs the models on this smaller but more isolated speculative data:
 ``` bash
 ./scripts/generate_spec_only_predictions.sh
 ```
@@ -424,8 +424,8 @@ The non-filtered speculation data can be found:
 2. Restaurant dataset: [Validation](./data/main_task/en/restaurant/dev_spec.conll)
 
 The filtered speculation data can be found:
-1. Laptop dataset: [Validation](./data/main_task/en/laptop/dev_spec_only.conll)
-2. Restaurant dataset: [Validation](./data/main_task/en/restaurant/dev_spec_only.conll)
+1. Laptop dataset: [Validation](./data/main_task/en/laptop/dev_spec_only.conll) and [Test](./data/main_task/en/laptop/test_spec_only.conll)
+2. Restaurant dataset: [Validation](./data/main_task/en/restaurant/dev_spec_only.conll) and [Test](./data/main_task/en/restaurant/test_spec_only.conll)
 
 ### Predicting on cross domain
 **THIS IS NOT IN THE PAPER AND IS ONLY EXPERIMENTAL AT THE MOMENT**
