@@ -450,7 +450,7 @@ The Google Colab notebook of the analysis for this can be seen [here.](./noteboo
 
 ### Creating detailed sentiment analysis results
 **THIS IS NOT IN THE PAPER AND IS ONLY EXPERIMENTAL AT THE MOMENT**
-The results in the paper that are associated with Distinct Sentiment (DS) and Strict Text ACcuracy (STAC) are created using the following script. The results that the script generates for those metrics/subsets are stored in the following JSON file.
+The results created here are Distinct Sentiment (DS) and Strict Text ACcuracy (STAC) using the following script. The results that the script generates for those metrics/subsets are stored in the following JSON file.
 
 ``` bash
 python scripts/generate_detailed_sentiment_results.py ./data/results/en/ ./data/results/detailed_sentiment_results.json
