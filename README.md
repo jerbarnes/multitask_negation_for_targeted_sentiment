@@ -201,6 +201,17 @@ To generate the data for this table above run `./scripts/negation_split_statisti
 
 To generate the data for this table above run `./scripts/negation_split_statistics.sh conandoyle negation`
 
+## The Negated and Speculative Aspect Based Sentiment Analysis datasets
+
+The Development and Test splits for the negated and speculative only Aspect Based Sentiment Analysis datasets that have been annotated by one of the authors of this work can be found:
+
+1. Laptop<sub>*Neg*</sub> -- [Development](./data/main_task/en/laptop/dev_neg_only.conll), [Test](./data/main_task/en/laptop/test_neg_only.conll)
+2. Laptop<sub>*Spec*</sub> -- [Development](./data/main_task/en/laptop/dev_spec_only.conll), [Test](./data/main_task/en/laptop/test_spec_only.conll)
+3. Restaurant<sub>*Neg*</sub> -- [Development](./data/main_task/en/restaurant/dev_neg_only.conll), [Test](./data/main_task/en/restaurant/test_neg_only.conll)
+4. Restaurant<sub>*Spec*</sub> -- [Development](./data/main_task/en/restaurant/dev_spec_only.conll), [Test](./data/main_task/en/restaurant/test_spec_only.conll)
+
+Within these datasets only negated or speculative sentiments exist.
+
 ## Experiments
 The single task model uses a 2 layer Bi-LSTM with a projection layer that goes into CRF decoding layer, further there is a skip connection between the embedding and the 2nd layer Bi-LSTM layer. The multi task model uses the same 2 layer Bi-LSTM model but the auxiliary tasks only have access to the embedding and first Bi-LSTM layer which then feeds into a task specific projection layer which then uses either Softmax or CRF for decoding.
 
