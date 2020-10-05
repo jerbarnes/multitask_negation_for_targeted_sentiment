@@ -82,7 +82,7 @@ Within these 4 datasets/splits only negated (*Neg*) or speculative (*Spec*) sent
 #### Auxiliary datasets
 
 | Dataset     | Task       | Format | Split locations | 
-|-------------|-------------|-------------------|---------------------|---------------|---------------------|
+|-------------|------------|--------|-----------------|
 | (CD) [Conan Doyle](https://www.aclweb.org/anthology/S12-1035.pdf)        | Negation scope detection    | BIO CONLL format     | [Train](./data/auxiliary_tasks/en/conandoyle_train.conllu), [Development](data/auxiliary_tasks/en/conandoyle_dev.conllu), [Test](data/auxiliary_tasks/en/conandoyle_test.conllu)       |
 | (SFU) [SFU review corpus](https://www.aclweb.org/anthology/L12-1298/)        | Negation scope detection | BIO CONLL format         | [Train](./data/auxiliary_tasks/en/conandoyle_train.conllu), [Development](data/auxiliary_tasks/en/conandoyle_dev.conllu), [Test](data/auxiliary_tasks/en/conandoyle_test.conllu)         |
 | (SPEC) [SFU review corpus](https://www.aclweb.org/anthology/L12-1298/) | Speculation scope detection    | BIO CONLL format     | [Train](./data/auxiliary_tasks/en/SFU_train.conll), [Development](./data/auxiliary_tasks/en/SFU_dev.conll), [Test](./data/auxiliary_tasks/en/SFU_test.conll)       |
