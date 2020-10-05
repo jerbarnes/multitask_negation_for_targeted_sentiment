@@ -9,7 +9,7 @@ This repository contains the code, challenge datasets for negation and speculati
    1. [Install/Requirements](#install/requirements)
    2. [Datasets](#datasets)
       1. [Main train and evaluate datasets](#main-train-and-evaluate-datasets)
-      2. [Negated and Speculative challenge datasets (evaluate only datasets)](#negated-and-speculative-challenge-datasets-(evaluate-only-datasets))
+      2. [Negated and Speculative challenge datasets (evaluate only datasets)](#negated-and-speculative-challenge-datasets-evaluate-only-datasets)
       3. [Auxiliary datasets](#auxiliary-datasets)
     3. [Resources](#resources)
 3. [Experiments](#experiments)
@@ -263,7 +263,7 @@ The second python script which trains all of the models and makes the prediction
 
 ### Predicting on the Negation Challenge corpus
 
-These are the *Neg* datasets from the [Negated and Speculative challenge datasets (evaluate only datasets) section](#negated-and-speculative-challenge-datasets-(evaluate-only-datasets))
+These are the *Neg* datasets from the [Negated and Speculative challenge datasets (evaluate only datasets) section](#negated-and-speculative-challenge-datasets-evaluate-only-datasets)
 
 ``` bash
 ./scripts/generate_negation_only_predictions.sh
@@ -272,7 +272,7 @@ These are the *Neg* datasets from the [Negated and Speculative challenge dataset
 
 ### Predicting on the Speculation Challenge Corpus
 
-These are the *Spec* datasets from the [Negated and Speculative challenge datasets (evaluate only datasets) section](#negated-and-speculative-challenge-datasets-(evaluate-only-datasets))
+These are the *Spec* datasets from the [Negated and Speculative challenge datasets (evaluate only datasets) section](#negated-and-speculative-challenge-datasets-evaluate-only-datasets)
 
 ``` bash
 ./scripts/generate_spec_only_predictions.sh
