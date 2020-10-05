@@ -5,8 +5,8 @@ This repository contains the code, challenge datasets for negation and speculati
 **Table of contents:**
 
 1. [Paper Abstract](#paper-abstract)
-2. [Installation/Requirements, Datasets, and Resources used](#installation/requirements,-datasets,-and-resources)
-   1. [Install/Requirements](#install/requirements)
+2. [Installation/Requirements, Datasets, and Resources used](#installationrequirements-datasets-and-resources)
+   1. [Install/Requirements](#installrequirements)
    2. [Datasets](#datasets)
       1. [Main train and evaluate datasets](#main-train-and-evaluate-datasets)
       2. [Negated and Speculative challenge datasets (evaluate only datasets)](#negated-and-speculative-challenge-datasets-evaluate-only-datasets)
@@ -25,7 +25,7 @@ This repository contains the code, challenge datasets for negation and speculati
    7. [Number of parameters](#number-of-parameters)
    8. [Inference time](#inference-time)
 4. [Models](#models)
-5. [Analysis/Notebooks](#analysis/notebooks)
+5. [Analysis/Notebooks](#analysisnotebooks)
 
 ## Paper Abstract
 
