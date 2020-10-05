@@ -26,6 +26,7 @@ This repository contains the code, challenge datasets for negation and speculati
    8. [Inference time](#inference-time)
 4. [Models](#models)
 5. [Analysis/Notebooks](#analysisnotebooks)
+6. [Acknowledgements](#acknowledgements)
 
 ## Paper Abstract
 
@@ -415,3 +416,7 @@ The notebooks [./notebooks](./notebooks) (all notebooks can be loaded using Goog
 The results on the 4 main datasets: Laptop, Restaurant, MAMS, and MPQA see the [./notebooks/Main_Evaluation.ipynb](./notebooks/Main_Evaluation.ipynb) notebook.
 
 The results on the Laptop and Restaurant negation and speculation challenge datasets, that was created from this work, see the [./notebooks/Negation_Evaluation.ipynb](./notebooks/Negation_Evaluation.ipynb) and [./notebooks/Speculation_Evaluation.ipynb](./notebooks/Speculation_Evaluation.ipynb) notebooks. 
+
+## Acknowledgements
+
+This work has been carried out as part of the [SANT project (Sentiment Analysis for Norwegian Text)](https://www.mn.uio.no/ifi/english/research/projects/sant/), funded by the Research Council of Norway (grant number 270908). Andrew has been funded by Lancaster University by an EPSRC Doctoral Training Grant. The authors thank the [UCREL research centre](http://ucrel.lancs.ac.uk/) for hosting the models created from this research. 
