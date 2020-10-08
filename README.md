@@ -259,13 +259,13 @@ The Development and Test splits for the negated and speculative only TSA dataset
 
 Within these 4 datasets/splits only negated (*Neg*) or speculative (*Spec*) sentiments exist. All of the samples within these datasets have come from the development/test splits of the standard Laptop or Restaurant dataset and in cases have been changed so that the sentiment is either negated or speculative.
 
-Below shows three sentences, the original, negated, and speculative. These sentences show case negated and speculative sentiment that is within these negated and speculative datasets. The tokens in **bold** are those that have been added to the original sentence, the target `sushi` is either positive, negative, or neutral in the original, negated, and speculative cases. 
+Below shows three sentences, the original, negated, and speculative. These sentences show case negated and speculative sentiment that is within these negated and speculative datasets. The tokens in **bold** are those that have been added to the original sentence, the target `sushi` is either <span style="color:blue;">positive</span>, <span style="color:red;">negative</span>, or <span style="color:gray;">neutral</span> in the original, negated, and speculative cases. 
 
 | Type | Sentence |
 |------|----------|
-| original | this is good, inexpensive <span class="text-blue mb-2">sushi</span>. |
-| negated | this is **not** good, inexpensive <span class="text-red mb-2">sushi</span>. |
-|speculative | **I'm not sure if** this is good, inexpensive <span class="text-gray mb-2">sushi</span>. |
+| original | this is good, inexpensive <span style="color:blue;">sushi</span>. |
+| negated | this is **not** good, inexpensive <span style="color:red;">sushi</span>. |
+|speculative | **I'm not sure if** this is good, inexpensive <span style="color:gray;">sushi</span>. |
 
 
 The dataset statistics for these negated and speculative TSA datasets can be seen below, split into train, development, and test splits. The table below can be generated using the following script (script can also produce the table in `markdown`, `latex`, and without any options `pandas dataframe`):
