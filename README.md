@@ -68,6 +68,185 @@ An example of TSA task in `BIOUL` format (this example comes from the MAMS devel
 |-----|-------|--------|--------|-----|---|--------|----------|----|---------|---|-----|---|-----|-----------|----|-----|---------|---|
 | O   | B-NEG | I-NEG  | L-NEG  | O   | O | O      | O        | O  | O       | O | O   | O | O   | O         | O  | O   | U-POS   | O |
 
+The dataset statistics for these four datasets can be seen below, split into train, development, and test splits. **NOTE** only the MPQA dataset contains the `BOTH` label. Furthermore the MPQA dataset within the data itself represents the labels as `positive`, `neutral`, `negative`, and `both` for the `POS`, `NEU`, `NEG`, and `BOTH` shown in the table below. The table below can be generated using the following script (script can also produce the table in `markdown`, `latex`, and without any options `pandas dataframe`):
+
+`python data/main_task/en/sentiment_dataset_stats.py --main-datasets --to-html`
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="8" halign="left">train</th>
+      <th colspan="8" halign="left">dev</th>
+      <th colspan="8" halign="left">test</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>sents.</th>
+      <th>targs.</th>
+      <th>len.</th>
+      <th>mult.</th>
+      <th>POS</th>
+      <th>NEU</th>
+      <th>NEG</th>
+      <th>BOTH</th>
+      <th>sents.</th>
+      <th>targs.</th>
+      <th>len.</th>
+      <th>mult.</th>
+      <th>POS</th>
+      <th>NEU</th>
+      <th>NEG</th>
+      <th>BOTH</th>
+      <th>sents.</th>
+      <th>targs.</th>
+      <th>len.</th>
+      <th>mult.</th>
+      <th>POS</th>
+      <th>NEU</th>
+      <th>NEG</th>
+      <th>BOTH</th>
+    </tr>
+    <tr>
+      <th>dataset</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>laptop</th>
+      <td>2741</td>
+      <td>2044</td>
+      <td>1.5</td>
+      <td>136</td>
+      <td>19.86</td>
+      <td>43.20</td>
+      <td>36.94</td>
+      <td>0.00</td>
+      <td>304</td>
+      <td>256</td>
+      <td>1.5</td>
+      <td>18</td>
+      <td>17.97</td>
+      <td>40.62</td>
+      <td>41.41</td>
+      <td>0.0</td>
+      <td>800</td>
+      <td>634</td>
+      <td>1.6</td>
+      <td>38</td>
+      <td>26.03</td>
+      <td>53.47</td>
+      <td>20.50</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>restaurant</th>
+      <td>3490</td>
+      <td>3896</td>
+      <td>1.4</td>
+      <td>312</td>
+      <td>15.79</td>
+      <td>60.04</td>
+      <td>24.18</td>
+      <td>0.00</td>
+      <td>387</td>
+      <td>414</td>
+      <td>1.4</td>
+      <td>34</td>
+      <td>12.32</td>
+      <td>65.22</td>
+      <td>22.46</td>
+      <td>0.0</td>
+      <td>2158</td>
+      <td>2288</td>
+      <td>1.4</td>
+      <td>136</td>
+      <td>11.49</td>
+      <td>66.61</td>
+      <td>21.90</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>MAMS</th>
+      <td>4297</td>
+      <td>11162</td>
+      <td>1.3</td>
+      <td>4287</td>
+      <td>45.06</td>
+      <td>30.22</td>
+      <td>24.72</td>
+      <td>0.00</td>
+      <td>500</td>
+      <td>1329</td>
+      <td>1.3</td>
+      <td>498</td>
+      <td>45.45</td>
+      <td>30.25</td>
+      <td>24.30</td>
+      <td>0.0</td>
+      <td>500</td>
+      <td>1332</td>
+      <td>1.3</td>
+      <td>499</td>
+      <td>45.50</td>
+      <td>29.88</td>
+      <td>24.62</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>mpqa</th>
+      <td>4195</td>
+      <td>1264</td>
+      <td>6.3</td>
+      <td>94</td>
+      <td>13.29</td>
+      <td>43.91</td>
+      <td>39.08</td>
+      <td>3.72</td>
+      <td>1389</td>
+      <td>400</td>
+      <td>5.4</td>
+      <td>29</td>
+      <td>17.00</td>
+      <td>42.50</td>
+      <td>37.00</td>
+      <td>3.5</td>
+      <td>1620</td>
+      <td>365</td>
+      <td>6.7</td>
+      <td>22</td>
+      <td>19.18</td>
+      <td>33.15</td>
+      <td>41.37</td>
+      <td>6.3</td>
+    </tr>
+  </tbody>
+</table>
+
 
 #### Negated and Speculative challenge datasets (evaluate only datasets)
 
@@ -79,6 +258,145 @@ The Development and Test splits for the negated and speculative only TSA dataset
 4. Restaurant<sub>*Spec*</sub> -- [Development](./data/main_task/en/restaurant/dev_spec_only.conll), [Test](./data/main_task/en/restaurant/test_spec_only.conll)
 
 Within these 4 datasets/splits only negated (*Neg*) or speculative (*Spec*) sentiments exist. All of the samples within these datasets have come from the development/test splits of the standard Laptop or Restaurant dataset and in cases have been changed so that the sentiment is either negated or speculative.
+
+Below shows three sentences, the original, negated, and speculative. These sentences show case negated and speculative sentiment that is within these negated and speculative datasets. The tokens in **bold** are those that have been added to the original sentence, the target `sushi` is either positive, negative, or neutral in the original, negated, and speculative cases. 
+
+| Type | Sentence |
+|------|----------|
+| original | this is good, inexpensive <span class="text-blue mb-2">sushi</span>. |
+| negated | this is **not** good, inexpensive <span class="text-red mb-2">sushi</span>. |
+|speculative | **I'm not sure if** this is good, inexpensive <span class="text-gray mb-2">sushi</span>. |
+
+
+The dataset statistics for these negated and speculative TSA datasets can be seen below, split into train, development, and test splits. The table below can be generated using the following script (script can also produce the table in `markdown`, `latex`, and without any options `pandas dataframe`):
+
+`python data/main_task/en/sentiment_dataset_stats.py --challenge-datasets --to-html`
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="8" halign="left">dev</th>
+      <th colspan="8" halign="left">test</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>sents.</th>
+      <th>targs.</th>
+      <th>len.</th>
+      <th>mult.</th>
+      <th>POS</th>
+      <th>NEU</th>
+      <th>NEG</th>
+      <th>BOTH</th>
+      <th>sents.</th>
+      <th>targs.</th>
+      <th>len.</th>
+      <th>mult.</th>
+      <th>POS</th>
+      <th>NEU</th>
+      <th>NEG</th>
+      <th>BOTH</th>
+    </tr>
+    <tr>
+      <th>dataset</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>laptop_neg</th>
+      <td>147</td>
+      <td>181</td>
+      <td>1.5</td>
+      <td>41</td>
+      <td>17.13</td>
+      <td>47.51</td>
+      <td>35.36</td>
+      <td>0.0</td>
+      <td>401</td>
+      <td>464</td>
+      <td>1.6</td>
+      <td>79</td>
+      <td>26.72</td>
+      <td>50.00</td>
+      <td>23.28</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>laptop_spec</th>
+      <td>110</td>
+      <td>142</td>
+      <td>1.4</td>
+      <td>10</td>
+      <td>50.70</td>
+      <td>33.10</td>
+      <td>16.20</td>
+      <td>0.0</td>
+      <td>208</td>
+      <td>220</td>
+      <td>1.5</td>
+      <td>19</td>
+      <td>38.18</td>
+      <td>41.36</td>
+      <td>20.45</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>restaurant_neg</th>
+      <td>198</td>
+      <td>274</td>
+      <td>1.4</td>
+      <td>61</td>
+      <td>16.42</td>
+      <td>51.09</td>
+      <td>32.48</td>
+      <td>0.0</td>
+      <td>818</td>
+      <td>1013</td>
+      <td>1.4</td>
+      <td>161</td>
+      <td>15.00</td>
+      <td>52.81</td>
+      <td>32.18</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>restaurant_spec</th>
+      <td>138</td>
+      <td>200</td>
+      <td>1.3</td>
+      <td>35</td>
+      <td>30.00</td>
+      <td>41.00</td>
+      <td>29.00</td>
+      <td>0.0</td>
+      <td>400</td>
+      <td>451</td>
+      <td>1.4</td>
+      <td>49</td>
+      <td>16.85</td>
+      <td>43.46</td>
+      <td>39.69</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
 
 #### Auxiliary datasets
 
@@ -420,3 +738,6 @@ The results on the Laptop and Restaurant negation and speculation challenge data
 ## Acknowledgements
 
 This work has been carried out as part of the [SANT project (Sentiment Analysis for Norwegian Text)](https://www.mn.uio.no/ifi/english/research/projects/sant/), funded by the Research Council of Norway (grant number 270908). Andrew has been funded by Lancaster University by an EPSRC Doctoral Training Grant. The authors thank the [UCREL research centre](http://ucrel.lancs.ac.uk/) for hosting the models created from this research. 
+
+
+/home/andrew/Desktop/multitask_negation_for_targeted_sentiment/data/main_task/en/laptop/train.conll
