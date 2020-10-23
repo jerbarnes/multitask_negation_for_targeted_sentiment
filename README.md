@@ -1,6 +1,6 @@
 # Multi-task Learning of Negation and Speculation for Targeted Sentiment Classification
 
-This repository contains the code, challenge datasets for negation and speculation for Targeted Sentiment Analysis (TSA), and links to the models created from the code described in following paper: [Multi-task Learning of Negation and Speculation for Targeted Sentiment Classification]().
+This repository contains the code, challenge datasets for negation and speculation for Targeted Sentiment Analysis (TSA), and links to the models created from the code described in following paper: [Multi-task Learning of Negation and Speculation for Targeted Sentiment Classification](https://arxiv.org/abs/2010.08318).
 
 **Table of contents:**
 
@@ -729,7 +729,7 @@ Also in each of these folders also contains the saved auxiliary task model which
 
 ## Analysis/Notebooks
 
-The notebooks [./notebooks](./notebooks) (all notebooks can be loaded using Google Colab) store all of the evaluation results which generate the tables within the paper and run/produce the statistical significance test results that are within those tables in the paper.
+The notebooks [./notebooks](./notebooks) (all notebooks can be loaded using Google Colab) store all of the evaluation results which generate the tables within the [paper](https://arxiv.org/abs/2010.08318) and run/produce the statistical significance test results that are within those tables in the [paper](https://arxiv.org/abs/2010.08318).
 
 The results on the 4 main datasets: Laptop, Restaurant, MAMS, and MPQA see the [./notebooks/Main_Evaluation.ipynb](./notebooks/Main_Evaluation.ipynb) notebook.
 
