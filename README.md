@@ -30,13 +30,14 @@ This repository contains the code, challenge datasets for negation and speculati
 
 ## Paper Abstract
 
-The majority of work in targeted sentiment analysis has concentrated on finding better methods to improve the overall results. Within this paper we show that these models are not robust to linguistic phenomena, specifically negation and speculation. In this paper, we propose a multi-task learning method to incorporate information from syntactic and semantic auxiliary tasks, including negation and speculation scope detection, to create models that are more robust to these phenomena. Further we create two challenge datasets to evaluate model performance on negated and speculative samples. We find that multi-task models and transfer learning from a language model can improve performance on these challenge datasets. However the results indicate that there is still much room for improvement in making our models more robust to linguistic phenomena such as negation and speculation.
+The majority of work in targeted sentiment analysis has concentrated on finding better methods to improve the overall results. Within this paper we show that these models are not robust to linguistic phenomena, specifically negation and speculation. In this paper, we propose a multi-task learning method to incorporate information from syntactic and semantic auxiliary tasks, including negation and speculation scope detection, to create English-language models that are more robust to these phenomena. Further we create two challenge datasets to evaluate model performance on negated and speculative samples. We find that multi-task models and transfer learning via language modelling can improve performance on these challenge datasets, but the overall performances indicate that there is still much room for improvement. We release both the datasets and the source code at [https://github.com/jerbarnes/multitask_negation_for_targeted_sentiment](https://github.com/jerbarnes/multitask_negation_for_targeted_sentiment).
 
 ## Installation/Requirements, Datasets, and Resources
 
 ### Install/Requirements
 
 1. Python >= 3.6.1
+2. Requires PyTorch version 1.2.0. This needs to be installed first and also depends on whether you would like to install the GPU or CPU version, see the following to install [Pytorch 1.2.0 and it's variants of GPU or CPU version.](https://pytorch.org/get-started/previous-versions/#v120)
 2. `pip install -r requirements.txt`
 3. `pip install .` 
 
@@ -549,7 +550,7 @@ allennlp train resources/model_configs/multi_task_trainer.jsonnet -s /tmp/any --
 
 **In all experiments the embedding whether that is GloVe or CWR is frozen as in the embedding layer(s) does not get tuned during training.**. This can be changed within the model configurations.
 
-The previous two subsections describe how to just train one model on one dataset, in the paper we trained each model 5 times and there were numerous models (1 STL and 6 MTL) and 4 datasets. Thus to do this we created two scripts. The first script trains a model e.g. STL on one dataset 5 times and then saves the 5 models including the respective auxiliary task models where applicable and also saves the result. The second script runs the first script across all of the models and datasets.
+The previous two subsections describe how to just train one model on one dataset, in the [paper](https://arxiv.org/abs/2010.08318) we trained each model 5 times and there were numerous models (1 STL and 6 MTL) and 4 datasets. Thus to do this we created two scripts. The first script trains a model e.g. STL on one dataset 5 times and then saves the 5 models including the respective auxiliary task models where applicable and also saves the result. The second script runs the first script across all of the models and datasets.
 
 The first python script has the following argument signature:
 1. Model config file path
@@ -599,6 +600,8 @@ These are the *Spec* datasets from the [Negated and Speculative challenge datase
 
 ### Number of parameters
 
+(We assume that all of the models are stored in the following directory `./data/models`, see the [Models](#models) section for more details on how to download the trained models.)
+
 To find the statistics for the number of parameters in the different models run:
 
 ``` bash
@@ -606,6 +609,8 @@ python number_parameters.py
 ```
 
 ### Inference time
+
+(We assume that all of the models are stored in the following directory `./data/models`, see the [Models](#models) section for more details on how to download the trained models.)
 
 This tests the inference time for the following models after they have been loaded into memory:
 
@@ -676,7 +681,7 @@ Also this data is stored in the following file [./inference_save.json](./inferen
 
 ## Models
 
-All of the models from the [Mass experiments setup section](#mass-experiments-setup), which are all of the models that were created from the experiments that are declared in the [paper]() can be found at [https://ucrel-web.lancs.ac.uk/moorea/research/multitask_negation_for_targeted_sentiment/models/en/](https://ucrel-web.lancs.ac.uk/moorea/research/multitask_negation_for_targeted_sentiment/models/en/). These models are saved as AllenNLP models and [can be load, using `load_archive`, as shown in the documentation](https://docs.allennlp.org/v1.1.0/api/models/archival/#load_archive). An example of loading a model, in python (assuming you have saved a model to `./data/models/en/stl/laptop_contextualized/model_0.tar.gz`):
+All of the models from the [Mass experiments setup section](#mass-experiments-setup), which are all of the models that were created from the experiments that are declared in the [paper](https://arxiv.org/abs/2010.08318) can be found at [https://ucrel-web.lancs.ac.uk/moorea/research/multitask_negation_for_targeted_sentiment/models/en/](https://ucrel-web.lancs.ac.uk/moorea/research/multitask_negation_for_targeted_sentiment/models/en/). These models are saved as AllenNLP models and [can be load, using `load_archive`, as shown in the documentation](https://docs.allennlp.org/v1.1.0/api/models/archival/#load_archive). An example of loading a model, in python (assuming you have saved a model to `./data/models/en/stl/laptop_contextualized/model_0.tar.gz`):
 
 ``` python
 from pathlib import Path
@@ -738,6 +743,3 @@ The results on the Laptop and Restaurant negation and speculation challenge data
 ## Acknowledgements
 
 This work has been carried out as part of the [SANT project (Sentiment Analysis for Norwegian Text)](https://www.mn.uio.no/ifi/english/research/projects/sant/), funded by the Research Council of Norway (grant number 270908). Andrew has been funded by Lancaster University by an EPSRC Doctoral Training Grant. The authors thank the [UCREL research centre](http://ucrel.lancs.ac.uk/) for hosting the models created from this research. 
-
-
-/home/andrew/Desktop/multitask_negation_for_targeted_sentiment/data/main_task/en/laptop/train.conll

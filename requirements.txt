@@ -1,5 +1,8 @@
--e git+git://github.com/apmoore1/target-extraction.git@v0.0.2#egg=target-extraction
+jupyter==1.0.0
+pandas>=1.0.0
+tabulate
+git+git://github.com/apmoore1/target-extraction.git@v0.0.2#egg=target-extraction
 allennlp==0.9.0
 pylint
 pytest
--e git+git://github.com/allenai/allentune@master#egg=allentune
+git+git://github.com/allenai/allentune@fd0e70eb32ef58d6811d81e85de913c019bb5dc4#egg=allentune

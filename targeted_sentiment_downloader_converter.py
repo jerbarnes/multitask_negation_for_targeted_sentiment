@@ -7,15 +7,15 @@ from target_extraction.tokenizers import spacy_tokenizer
 
 from multitask_negation_target import utils
 
-laptop_train_url = "https://raw.githubusercontent.com/lixin4ever/E2E-TBSA/master/data_conll/laptop14_train.txt"
-laptop_dev_url = "https://raw.githubusercontent.com/lixin4ever/E2E-TBSA/master/data_conll/laptop14_dev.txt"
-laptop_test_url = "https://raw.githubusercontent.com/lixin4ever/E2E-TBSA/master/data_conll/laptop14_test.txt"
+laptop_train_url = "https://raw.githubusercontent.com/lixin4ever/E2E-TBSA/b2491be09133e9331a286c9d826d4c5b8c0a6671/data_conll/laptop14_train.txt"
+laptop_dev_url = "https://raw.githubusercontent.com/lixin4ever/E2E-TBSA/b2491be09133e9331a286c9d826d4c5b8c0a6671/data_conll/laptop14_dev.txt"
+laptop_test_url = "https://raw.githubusercontent.com/lixin4ever/E2E-TBSA/b2491be09133e9331a286c9d826d4c5b8c0a6671/data_conll/laptop14_test.txt"
 
 laptop_urls = [laptop_train_url, laptop_dev_url, laptop_test_url]
 
-restaurant_train_url = "https://raw.githubusercontent.com/lixin4ever/E2E-TBSA/master/data_conll/rest_total_train.txt"
-restaurant_dev_url = "https://raw.githubusercontent.com/lixin4ever/E2E-TBSA/master/data_conll/rest_total_dev.txt"
-restaurant_test_url = "https://raw.githubusercontent.com/lixin4ever/E2E-TBSA/master/data_conll/rest_total_test.txt"
+restaurant_train_url = "https://raw.githubusercontent.com/lixin4ever/E2E-TBSA/b2491be09133e9331a286c9d826d4c5b8c0a6671/data_conll/rest_total_train.txt"
+restaurant_dev_url = "https://raw.githubusercontent.com/lixin4ever/E2E-TBSA/b2491be09133e9331a286c9d826d4c5b8c0a6671/data_conll/rest_total_dev.txt"
+restaurant_test_url = "https://raw.githubusercontent.com/lixin4ever/E2E-TBSA/b2491be09133e9331a286c9d826d4c5b8c0a6671/data_conll/rest_total_test.txt"
 
 restaurant_urls = [restaurant_train_url, restaurant_dev_url, restaurant_test_url]
 
