@@ -20,9 +20,9 @@ local SENTIMENT_DROPOUT = std.extVar("SENTIMENT_DROPOUT");
         },
         "label_namespace": "sentiment_labels"
     },
-    "train_data_path": "/home/andrew/Desktop/multitask_negation_for_targeted_sentiment/data/main_task/en/laptop/train.conll", 
-    "validation_data_path": "/home/andrew/Desktop/multitask_negation_for_targeted_sentiment/data/main_task/en/laptop/dev.conll",
-    "test_data_path": "/home/andrew/Desktop/multitask_negation_for_targeted_sentiment/data/main_task/en/laptop/test.conll",
+    "train_data_path": "../../../data/main_task/en/laptop/train.conll", 
+    "validation_data_path": "../../../data/main_task/en/laptop/dev.conll",
+    "test_data_path": "../../../data/main_task/en/laptop/test.conll",
     "evaluate_on_test": true,
     "model": {
         "type": "shared_crf_tagger",
@@ -39,7 +39,7 @@ local SENTIMENT_DROPOUT = std.extVar("SENTIMENT_DROPOUT");
             "tokens": {
                 "type": "embedding",
                 "embedding_dim": 300,
-                "pretrained_file": "/home/andrew/Desktop/multitask_negation_for_targeted_sentiment/resources/embeddings/en/glove.840B.300d.txt",
+                "pretrained_file": "../../../resources/embeddings/en/glove.840B.300d.txt",
                 "trainable": false
             }
         },
