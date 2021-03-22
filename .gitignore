@@ -11,3 +11,6 @@ resources/tuning/single_task_tuning_restaurant_performance.pdf
 resources/tuning/tuning_configs/multi_task_restaurant_conan.jsonnet
 resources/tuning/tuning_configs/single_task_restaurant.jsonnet
 data/models
+!data/main_task/en/get_data_stats.py
+!data/main_task/en/filter_data.py
+!data/main_task/en/sentiment_dataset_stats.py
