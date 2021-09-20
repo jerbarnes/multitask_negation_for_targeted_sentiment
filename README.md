@@ -1,6 +1,6 @@
 # Multi-task Learning of Negation and Speculation for Targeted Sentiment Classification
 
-This repository contains the code, challenge datasets for negation and speculation for Targeted Sentiment Analysis (TSA), and links to the models created from the code described in following paper: [Multi-task Learning of Negation and Speculation for Targeted Sentiment Classification](https://arxiv.org/abs/2010.08318).
+This repository contains the code, challenge datasets for negation and speculation for Targeted Sentiment Analysis (TSA), and links to the models created from the code described in following paper: [Multi-task Learning of Negation and Speculation for Targeted Sentiment Classification](https://aclanthology.org/2021.naacl-main.227/).
 
 **Table of contents:**
 
@@ -550,7 +550,7 @@ allennlp train resources/model_configs/multi_task_trainer.jsonnet -s /tmp/any --
 
 **In all experiments the embedding whether that is GloVe or CWR is frozen as in the embedding layer(s) does not get tuned during training.**. This can be changed within the model configurations.
 
-The previous two subsections describe how to just train one model on one dataset, in the [paper](https://arxiv.org/abs/2010.08318) we trained each model 5 times and there were numerous models (1 STL and 6 MTL) and 4 datasets. Thus to do this we created two scripts. The first script trains a model e.g. STL on one dataset 5 times and then saves the 5 models including the respective auxiliary task models where applicable and also saves the result. The second script runs the first script across all of the models and datasets.
+The previous two subsections describe how to just train one model on one dataset, in the [paper](https://aclanthology.org/2021.naacl-main.227/) we trained each model 5 times and there were numerous models (1 STL and 6 MTL) and 4 datasets. Thus to do this we created two scripts. The first script trains a model e.g. STL on one dataset 5 times and then saves the 5 models including the respective auxiliary task models where applicable and also saves the result. The second script runs the first script across all of the models and datasets.
 
 The first python script has the following argument signature:
 1. Model config file path
@@ -681,7 +681,7 @@ Also this data is stored in the following file [./inference_save.json](./inferen
 
 ## Models
 
-All of the models from the [Mass experiments setup section](#mass-experiments-setup), which are all of the models that were created from the experiments that are declared in the [paper](https://arxiv.org/abs/2010.08318) can be found at [https://ucrel-web.lancs.ac.uk/moorea/research/multitask_negation_for_targeted_sentiment/models/en/](https://ucrel-web.lancs.ac.uk/moorea/research/multitask_negation_for_targeted_sentiment/models/en/). These models are saved as AllenNLP models and [can be load, using `load_archive`, as shown in the documentation](https://docs.allennlp.org/v1.1.0/api/models/archival/#load_archive). An example of loading a model, in python (assuming you have saved a model to `./data/models/en/stl/laptop_contextualized/model_0.tar.gz`):
+All of the models from the [Mass experiments setup section](#mass-experiments-setup), which are all of the models that were created from the experiments that are declared in the [paper](https://aclanthology.org/2021.naacl-main.227/) can be found at [https://ucrel-web.lancs.ac.uk/moorea/research/multitask_negation_for_targeted_sentiment/models/en/](https://ucrel-web.lancs.ac.uk/moorea/research/multitask_negation_for_targeted_sentiment/models/en/). These models are saved as AllenNLP models and [can be load, using `load_archive`, as shown in the documentation](https://docs.allennlp.org/v1.1.0/api/models/archival/#load_archive). An example of loading a model, in python (assuming you have saved a model to `./data/models/en/stl/laptop_contextualized/model_0.tar.gz`):
 
 ``` python
 from pathlib import Path
@@ -734,7 +734,7 @@ Also in each of these folders also contains the saved auxiliary task model which
 
 ## Analysis/Notebooks
 
-The notebooks [./notebooks](./notebooks) (all notebooks can be loaded using Google Colab) store all of the evaluation results which generate the tables within the [paper](https://arxiv.org/abs/2010.08318) and run/produce the statistical significance test results that are within those tables in the [paper](https://arxiv.org/abs/2010.08318).
+The notebooks [./notebooks](./notebooks) (all notebooks can be loaded using Google Colab) store all of the evaluation results which generate the tables within the [paper](https://aclanthology.org/2021.naacl-main.227/) and run/produce the statistical significance test results that are within those tables in the [paper](https://aclanthology.org/2021.naacl-main.227/).
 
 The results on the 4 main datasets: Laptop, Restaurant, MAMS, and MPQA see the [./notebooks/Main_Evaluation.ipynb](./notebooks/Main_Evaluation.ipynb) notebook.
 
